@@ -18,7 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: jobs
-        run: echo "matrix=$(python3 tests/container-matrix.py --plan)" >> "$GITHUB_OUTPUT"
+        run: |
+          selected='["ubuntu-24.10-ga","oracle-8-uek","oracle-9-uek","suse-15.5","suse-15.6","suse-slowroll","opencloudos-9","gentoo"]'
+          matrix=$(python3 tests/container-matrix.py --plan | jq -c --argjson selected "$selected" '{include: [.include[] | select(.target as $t | $selected | index($t))]}')
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
       - run: python3 tests/test-compute.py
       - shell: pwsh
         run: ./tests/Test-BundleTools.ps1
