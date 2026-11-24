@@ -7,7 +7,7 @@ on:
         required: true
         default: snapshot
   push:
-    tags: ['v*']
+    branches: [compute-preflight]
 permissions:
   contents: read
 jobs:
