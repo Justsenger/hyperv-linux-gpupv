@@ -31,6 +31,7 @@
 #include <linux/anon_inodes.h>
 #include <linux/mman.h>
 
+#include <linux/uaccess.h>
 #include "dxgkrnl.h"
 #include "dxgvmbus.h"
 #include "dxgsyncfile.h"

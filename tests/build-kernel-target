@@ -13,9 +13,6 @@ deb)
     for f in /etc/apt/sources.list /etc/apt/sources.list.d/*.sources; do
         test -f "$f" || continue
         sed -i 's,http://,https://,g' "$f"
-        if [ "$ARCHIVE" = yes ]; then
-            sed -Ei 's,(archive.ubuntu.com/ubuntu|security.ubuntu.com/ubuntu|ports.ubuntu.com/ubuntu-ports),old-releases.ubuntu.com/ubuntu,g' "$f"
-        fi
     done
     if [ -n "${REPO_KEY:-}" ]; then
         retry apt-get update
@@ -28,22 +25,45 @@ deb)
     update_sources() {
         apt-get -o Acquire::Retries=3 -o APT::Update::Error-Mode=any update
     }
-    if ! retry update_sources; then
-        . /etc/os-release
+    . /etc/os-release
+    if [ "$ARCHIVE" = yes ] && ! update_sources; then
+        case "$VERSION_CODENAME" in
+            plucky) snapshot=20250801T000000Z;;
+            questing) snapshot=20260301T000000Z;;
+            *) echo "Unknown archived Ubuntu suite: $VERSION_CODENAME" >&2; exit 1;;
+        esac
+        for suite in "$VERSION_CODENAME" "$VERSION_CODENAME-updates" "$VERSION_CODENAME-security"; do
+            echo "deb [check-valid-until=no] https://snapshot.ubuntu.com/ubuntu/$snapshot/ $suite main universe"
+        done >/etc/apt/linuxpv-snapshot.list
+        printf '%s\n' 'Dir::Etc::sourcelist "linuxpv-snapshot.list";' 'Dir::Etc::sourceparts "-";' >/etc/apt/apt.conf.d/99linuxpv-snapshot
+    fi
+    install_deb_tools() {
+        update_sources && apt-get install -y --no-install-recommends gcc make kmod libelf-dev ca-certificates curl $PACKAGES
+    }
+    if ! retry install_deb_tools; then
         test "${VERSION_CODENAME:-}" = bullseye || exit 1
-        # Signed snapshots of both archives, including the matching kbuild dependencies.
         cat >/etc/apt/linuxpv-snapshot.list <<'SOURCES'
 deb [check-valid-until=no] https://snapshot.debian.org/archive/debian/20260805T000000Z/ bullseye main
 deb [check-valid-until=no] https://snapshot.debian.org/archive/debian-security/20260805T000000Z/ bullseye-security main
 SOURCES
         printf '%s\n' 'Dir::Etc::sourcelist "linuxpv-snapshot.list";' 'Dir::Etc::sourceparts "-";' >/etc/apt/apt.conf.d/99linuxpv-snapshot
-        retry update_sources
+        retry install_deb_tools
     fi
-    retry apt-get install -y --no-install-recommends gcc make kmod libelf-dev ca-certificates curl $PACKAGES
     ;;
 rpm)
+    . /etc/os-release
     manager=$(command -v dnf || command -v tdnf || command -v yum)
-    retry "$manager" -y install gcc make kmod elfutils-libelf-devel ca-certificates curl $PACKAGES
+    case " $PACKAGES " in
+        *" kernel-uek-devel "*)
+            . /etc/os-release
+            repo="https://yum.oracle.com/repo/OracleLinux/OL${VERSION_ID%%.*}/UEKR7/$(uname -m)"
+            key=$(find /etc/pki/rpm-gpg -name "RPM-GPG-KEY-oracle-ol${VERSION_ID%%.*}" | head -1)
+            test -f "$key"
+            printf '%s\n' '[linuxpv_uek7]' 'name=Oracle UEK R7' "baseurl=$repo" 'gpgcheck=1' "gpgkey=file://$key" >/etc/yum.repos.d/linuxpv-uek7.repo
+            ;;
+    esac
+    retry "$manager" -y install gcc binutils make kmod elfutils-libelf-devel ca-certificates $PACKAGES
+    if [ -n "$HEADER_URL" ] && ! command -v curl >/dev/null; then retry "$manager" -y install curl; fi
     ;;
 suse)
     if [ "$REPO_LINE" = slowroll ]; then
@@ -59,6 +79,9 @@ suse)
     done
     ;;
 arch)
+    if pacman --help --sync | grep -q -- '--disable-sandbox'; then
+        sed -i '/^\[options\]$/a DisableSandbox' /etc/pacman.conf
+    fi
     retry pacman -Syu --noconfirm --needed gcc make kmod libelf curl
     for pattern in $PACKAGES; do
         case "$pattern" in *'*'*) pkg=$(pacman -Slq | grep -E '^linux[0-9]+-headers$' | sort -V | tail -1);; *) pkg=$pattern;; esac
@@ -91,8 +114,19 @@ for kdir in /lib/modules/*/build /usr/src/kernels/* /usr/src/linux-headers-* /us
     test -n "$release" || release=$(cat "$kdir/include/config/kernel.release")
     dest="/out/$release"
     if [ -f "$dest/dxgkrnl.ko" ]; then continue; fi
+    if [ "$FAMILY" = deb ]; then
+        major=$(sed -n 's/^CONFIG_GCC_VERSION=//p' "$kdir/include/config/auto.conf")
+        if [ -n "$major" ] && [ "$major" -gt 0 ]; then
+            compiler="gcc-$((major / 10000))"
+            if ! command -v "$compiler" >/dev/null; then retry apt-get install -y "$compiler"; fi
+            export CC="$compiler"
+        fi
+    fi
     if grep -qs '^CONFIG_CC_IS_CLANG=y' "$kdir/include/config/auto.conf"; then
         case "$FAMILY" in arch) retry pacman -S --needed --noconfirm clang llvm lld;; deb) retry apt-get install -y clang llvm lld;; rpm) retry "$manager" -y install clang llvm lld;; suse) retry zypper --non-interactive install clang llvm lld;; esac
+    fi
+    if [ "${ID:-}" = azurelinux ] && grep -qs '^CONFIG_X86_KERNEL_IBT=y' "$kdir/include/config/auto.conf"; then
+        export KCFLAGS=-fcf-protection=branch
     fi
     tree="/tmp/linuxpv-kbuild/$release"
     mkdir -p "$tree"

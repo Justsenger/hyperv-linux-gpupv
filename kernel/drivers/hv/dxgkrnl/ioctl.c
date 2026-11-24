@@ -18,6 +18,7 @@
 #include <linux/mman.h>
 #include <linux/pid_namespace.h>
 
+#include <linux/uaccess.h>
 #include "dxgkrnl.h"
 #include "dxgvmbus.h"
 #include "dxgsyncfile.h"
