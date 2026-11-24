@@ -39,7 +39,8 @@ def main():
     header=t.get("headers",{})
     if header and (urlsplit(header["url"]).scheme!="https" or not re.fullmatch("[0-9a-f]{64}",header["sha256"]) or header["format"] not in ("deb","rpm","tar")):
         raise ValueError("Expected HTTPS header URL with format and SHA-256")
-    env={"TARGET_ARCH":args.arch,"FAMILY":t["family"],"PACKAGES":" ".join(p.format(debarch=debarch) for p in t["packages"]),
+    packages=t.get("packagesByArch",{}).get(args.arch,t["packages"])
+    env={"TARGET_ARCH":args.arch,"FAMILY":t["family"],"PACKAGES":" ".join(p.format(debarch=debarch) for p in packages),
          "REPO_KEY":t.get("keyFingerprint",""),"ARCHIVE":"yes" if t.get("archive") else "no","REPO_LINE":t.get("repo",""),
          "HEADER_URL":header.get("url",""),"HEADER_SHA":header.get("sha256",""),"HEADER_FORMAT":header.get("format","")}
     out=args.output.resolve()/args.target

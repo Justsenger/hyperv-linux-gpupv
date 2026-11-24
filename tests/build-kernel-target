@@ -64,6 +64,11 @@ rpm)
             ;;
     esac
     retry "$manager" -y install gcc binutils gawk make kmod elfutils-libelf-devel ca-certificates $PACKAGES
+    if [ "$ID" = ol ] && [ "$PACKAGES" = kernel-devel ] && ! rpm -q kernel-devel; then
+        rpm -qa 'kernel*devel*'
+        echo 'Oracle RHCK headers are unavailable. A UEK provider cannot satisfy the RHCK target.' >&2
+        exit 1
+    fi
     if [ -n "$HEADER_URL" ] && ! command -v curl >/dev/null; then retry "$manager" -y install curl; fi
     ;;
 suse)
@@ -102,7 +107,7 @@ arch)
     ;;
 gentoo)
     retry emerge-webrsync
-    if ! emerge --quiet-build=y --getbinpkg sys-apps/kmod $PACKAGES >/tmp/linuxpv-emerge.log 2>&1; then
+    if ! USE="${USE:-} -initramfs" emerge --quiet-build=y --getbinpkg sys-apps/kmod $PACKAGES >/tmp/linuxpv-emerge.log 2>&1; then
         tail -160 /tmp/linuxpv-emerge.log
         exit 1
     fi
@@ -130,8 +135,33 @@ for kdir in /lib/modules/*/build /usr/src/kernels/* /usr/src/linux-headers-* /us
     test -s "$kdir/Module.symvers" || continue
     release=$(sed -n 's/^#define UTS_RELEASE "\(.*\)"/\1/p' "$kdir/include/generated/utsrelease.h" 2>/dev/null || :)
     test -n "$release" || release=$(cat "$kdir/include/config/kernel.release")
+    echo "Target kernel $release ($TARGET_ARCH)"
+    if ! grep -qw vmbus_open "$kdir/Module.symvers"; then
+        grep -hE '^(CONFIG_HYPERV=|# CONFIG_HYPERV is not set)' "$kdir/.config" "$kdir/include/config/auto.conf" 2>/dev/null || :
+        echo "Kernel $release has no exported vmbus_open in Module.symvers; Hyper-V VMBus is required." >&2
+        exit 1
+    fi
     dest="/out/$release"
     if [ -f "$dest/dxgkrnl.ko" ]; then continue; fi
+    if [ "${ID:-}" = ol ] && [ "${VERSION_ID%%.*}" = 8 ] && [ "$PACKAGES" = kernel-uek-devel ]; then
+        major=$(sed -n 's/^CONFIG_GCC_VERSION=//p' "$kdir/include/config/auto.conf")
+        toolset="gcc-toolset-$((major / 10000))"
+        retry "$manager" -y install "$toolset-gcc"
+        export PATH="/opt/rh/$toolset/root/usr/bin:$PATH"
+    fi
+    objtool="$kdir/tools/objtool/objtool"
+    if [ "${ID:-}" = fedora ] && [ "$TARGET_ARCH" = x86_64 ] && [ -x "$objtool" ] &&
+       ldd "$objtool" | grep -q 'libopcodes-2.47.50.20261029.so => not found'; then
+        # Keep Rawhide's installed toolchain. Supply its kernel-devel objtool's exact ABI.
+        retry "$manager" -y install cpio rpm-build
+        rpmfile=/tmp/linuxpv-objtool-binutils.rpm
+        retry curl -fsSL https://kojipkgs.fedoraproject.org/packages/binutils/2.47.50/30.fc46/x86_64/binutils-2.47.50-30.fc46.x86_64.rpm -o "$rpmfile"
+        echo "d5671174f05a16f180c9cb178b0468eb521e61f0c6496a496f5a3d9eef73f55b  $rpmfile" | sha256sum -c -
+        rpmkeys --checksig "$rpmfile"
+        mkdir -p /tmp/linuxpv-objtool
+        (cd /tmp/linuxpv-objtool && rpm2cpio "$rpmfile" | cpio -id './usr/lib64/libopcodes*.so' './usr/lib64/libbfd*.so')
+        export LD_LIBRARY_PATH="/tmp/linuxpv-objtool/usr/lib64${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+    fi
     if [ "$FAMILY" = deb ]; then
         major=$(sed -n 's/^CONFIG_GCC_VERSION=//p' "$kdir/include/config/auto.conf")
         if [ -n "$major" ] && [ "$major" -gt 0 ]; then

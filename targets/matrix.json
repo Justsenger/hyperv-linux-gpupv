@@ -516,7 +516,12 @@
       "arch": [
         "x86_64",
         "aarch64"
-      ]
+      ],
+      "packagesByArch": {
+        "aarch64": [
+          "kernel6.12-devel"
+        ]
+      }
     },
     {
       "id": "azure-3.0",
