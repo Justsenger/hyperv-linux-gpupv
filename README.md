@@ -1,6 +1,8 @@
 # hyperv-linux-gpupv · 第一阶段计算版
 
-将 Windows Hyper-V 分区 GPU 提供给可写的 glibc Linux 来宾。一个虚拟机可以使用一张或多张 GPU。宿主机无需安装 WSL。按宿主架构选择 `linuxpv-bundle-x86_64-<version>.zip` 或 `linuxpv-bundle-aarch64-<version>.zip`，用同批 `SHA256SUMS` 校验。当前试构建的 x86_64 和 aarch64 部署包分别包含 166 和 118 个预编译内核版本。[本轮实测及覆盖范围](COMPATIBILITY.md)
+将 Windows Hyper-V 分区 GPU 提供给可写的 glibc Linux 来宾。一个虚拟机可以使用一张或多张 GPU。宿主机无需安装 WSL。按宿主架构选择 `linuxpv-bundle-x86_64-<version>.zip` 或 `linuxpv-bundle-aarch64-<version>.zip`，用同批 `SHA256SUMS` 校验。
+
+**第一阶段 v0.1.0-rc1 已完成双架构打包。** 共 284 个预编译内核组合（x86_64 166 个，aarch64 118 个）。在 Debian 12 x86_64（`6.1.0-56-amd64`）上，RTX 2060 和 Iris Xe 均通过普通用户 D3D12 计算校验，RTX 2060 另通过 CUDA 校验。开启 Secure Boot 并录入 MOK 后，重启加载签名模块及双卡计算均已通过。ARM64 已通过原生构建与部署包校验，待真机 GPU 计算实测。[本轮实测及覆盖范围](COMPATIBILITY.md)
 
 ## 安装
 
@@ -10,7 +12,7 @@
 
 ```powershell
 ./host/gpupv-host.ps1 list
-$b = './dist/phase1/linuxpv-bundle-x86_64-phase1-local.2.zip'
+$b = './linuxpv-bundle-x86_64-v0.1.0-rc1.zip'
 $cards = 'NVIDIA GeForce RTX 2060','Intel(R) Iris(R) Xe Graphics'
 ./host/gpupv-host.ps1 doctor -Bundle $b
 ./host/gpupv-host.ps1 iso -Bundle $b -Gpu $cards -Output ./gpu.iso -VMName '你的虚拟机'
@@ -22,7 +24,7 @@ sudo mkdir -p /mnt/gpupv && sudo mount -o ro -L GPUPV /mnt/gpupv && sudo sh /mnt
 
 已挂载时直接执行 `sudo sh /mnt/gpupv/guest/setup`。SSH 已配置公钥、主机密钥及非交互 sudo 的来宾也可运行 `./host/gpupv-host.ps1 push -Gpu $cards -Bundle $b -Destination user@vm`。部署完成后由登录用户执行设备检查。
 
-本机已经合成并实测的 RTX 2060 + Iris Xe 双卡 UDF 位于 `dist/local-media/`，同目录有独立摘要。该光盘包含本机 DriverStore 厂商文件，仅用于本机来宾部署。公开发版使用 `dist/phase1/` 中的两个架构包和源码包。
+本机已经合成并实测的 RTX 2060 + Iris Xe 双卡 UDF 位于 `dist/local-media/`，同目录有独立摘要。该光盘包含本机 DriverStore 厂商文件，仅用于本机来宾部署。本版部署包、源码包和校验清单见 [v0.1.0-rc1 Release](https://github.com/Justsenger/hyperv-linux-gpupv/releases/tag/v0.1.0-rc1)。
 
 ## 验证和卸载
 
