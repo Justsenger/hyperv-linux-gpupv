@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
       - id: jobs
         run: |
-          selected='["ubuntu-24.10-ga","oracle-8-uek","oracle-9-uek","suse-15.5","suse-15.6","suse-slowroll","opencloudos-9","gentoo"]'
+          selected='["oracle-8","oracle-9","oracle-8-uek","fedora-rawhide","amazon-2023","gentoo","debian-11","debian-11-security-archive","openeuler-22.03-lts","openeuler-24.03-lts","archlinuxarm","opencloudos-8"]'
           matrix=$(python3 tests/container-matrix.py --plan | jq -c --argjson selected "$selected" '{include: [.include[] | select(.target as $t | $selected | index($t))]}')
           echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
       - run: python3 tests/test-compute.py
