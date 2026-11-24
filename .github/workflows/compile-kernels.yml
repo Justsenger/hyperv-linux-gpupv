@@ -1,0 +1,30 @@
+name: Refresh native module artifacts
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.jobs.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: jobs
+        run: echo "matrix=$(python3 tests/container-matrix.py --plan)" >> "$GITHUB_OUTPUT"
+      - run: python3 tests/test-compute.py
+      - shell: pwsh
+        run: ./tests/Test-BundleTools.ps1
+  module:
+    needs: plan
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tests/container-matrix.py --arch "${{ matrix.arch }}" --target "${{ matrix.target }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: modules-${{ matrix.arch }}-${{ matrix.target }}
+          path: out
+          if-no-files-found: error

@@ -155,7 +155,12 @@ def doctor():
         problems.append("Ubuntu 5.4 GA 缺少所需页固定接口，请升级到 HWE。")
     if not any(p.read_text().strip()=="0x008e" and (p.parent/"vendor").read_text().strip()=="0x1414"
                for p in Path("/sys/bus/pci/devices").glob("*/device")):
-        problems.append("缺少 GPU-PV PCI 设备 1414:008e。请检查 GPU 分区和 pci_hyperv；Ubuntu 请安装匹配的 linux-modules-extra。")
+        driver = Path("/sys/bus/vmbus/drivers/hv_pci")
+        if not driver.exists() and shutil.which("modinfo") and sp.run(
+                ["modinfo", "pci_hyperv"], stdout=sp.DEVNULL, stderr=sp.DEVNULL).returncode:
+            problems.append("缺少 pci_hyperv 驱动。请检查 CONFIG_PCI_HYPERV，Ubuntu 来宾请安装与当前内核匹配的 linux-modules-extra。")
+        else:
+            problems.append("未枚举 GPU-PV PCI 设备 1414:008e。请检查 VM 的 GPU 分区分配及 pci_hyperv 驱动绑定。")
     for tool in tools:
         if not shutil.which(tool):
             problems.append(f"缺少 {tool}，请从本发行版官方介质补装。")

@@ -26,6 +26,8 @@ def main():
         if not re.fullmatch(r"[a-z0-9][a-z0-9.-]*",t["id"]):
             raise ValueError("Invalid target")
         for arch in t["arch"]:
+            if arch in t.get("excluded", {}):
+                continue
             jobs.append(dict(target=t["id"],arch=arch,runner=RUNNERS[arch]))
     if len({(j["target"],j["arch"]) for j in jobs})!=len(jobs):
         raise ValueError("Duplicate target")

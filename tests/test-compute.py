@@ -21,7 +21,7 @@ class Contract(unittest.TestCase):
         plan=json.loads(subprocess.check_output([sys.executable,str(ROOT/"tests/container-matrix.py"),"--plan"]))
         for row in plan["include"]:
             self.assertEqual(row["runner"],{"x86_64":"ubuntu-24.04","aarch64":"ubuntu-24.04-arm"}[row["arch"]])
-        self.assertEqual([r["arch"] for r in plan["include"] if r["target"]=="archlinuxarm"],["aarch64"])
+        self.assertEqual([r for r in plan["include"] if r["target"]=="archlinuxarm"],[])
 
     def test_architectures(self):
         for arch,machine in (("x86_64",62),("aarch64",183)):

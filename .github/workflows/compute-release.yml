@@ -8,39 +8,12 @@ on:
         default: snapshot
   push:
     branches: [compute-preflight]
+    tags: ["v*"]
 permissions:
   contents: read
+  actions: read
 jobs:
-  plan:
-    runs-on: ubuntu-24.04
-    outputs:
-      matrix: ${{ steps.jobs.outputs.matrix }}
-    steps:
-      - uses: actions/checkout@v4
-      - id: jobs
-        run: |
-          selected='["oracle-8","oracle-9","oracle-8-uek","fedora-rawhide","amazon-2023","gentoo","debian-11","debian-11-security-archive","openeuler-22.03-lts","openeuler-24.03-lts","archlinuxarm","opencloudos-8"]'
-          matrix=$(python3 tests/container-matrix.py --plan | jq -c --argjson selected "$selected" '{include: [.include[] | select(.target as $t | $selected | index($t))]}')
-          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
-      - run: python3 tests/test-compute.py
-      - shell: pwsh
-        run: ./tests/Test-BundleTools.ps1
-  module:
-    needs: plan
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
-    runs-on: ${{ matrix.runner }}
-    steps:
-      - uses: actions/checkout@v4
-      - run: python3 tests/container-matrix.py --arch "${{ matrix.arch }}" --target "${{ matrix.target }}"
-      - uses: actions/upload-artifact@v4
-        with:
-          name: modules-${{ matrix.arch }}-${{ matrix.target }}
-          path: out
-          if-no-files-found: error
   bundle:
-    needs: module
     strategy:
       matrix:
         include:
@@ -50,12 +23,14 @@ jobs:
     env:
       ARCH: ${{ matrix.arch }}
       VERSION: ${{ inputs.version || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
-        with:
-          pattern: modules-${{ matrix.arch }}-*
-          path: pool
+      - run: python3 tests/test-compute.py
+      - shell: pwsh
+        run: ./tests/Test-BundleTools.ps1
+      - name: Restore verified native modules
+        run: python3 release/restore-pool.py "$ARCH" pool
       - name: Build compute probe on glibc 2.28
         run: |
           docker run --rm -v "$PWD:/src" -w /src almalinux:8 sh -ec 'dnf -y --enablerepo=powertools install gcc-c++ libstdc++-static && sh guest/build-probe /src/probe'
@@ -68,6 +43,15 @@ jobs:
           other=x86_64
           if [ "$ARCH" = x86_64 ]; then other=aarch64; fi
           if python3 tests/check-bundle.py "$zip" "$other"; then exit 1; fi
+      - name: Record package inventory
+        run: |
+          python3 - <<'PY'
+          import glob, hashlib, json, zipfile
+          path, = glob.glob("output/*.zip")
+          with zipfile.ZipFile(path) as archive:
+              m = json.loads(archive.read("manifest.json"))
+          print("PACKAGE", path, len(m["kernels"]), len(m["libraries"]), hashlib.sha256(open(path,"rb").read()).hexdigest())
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: bundle-${{ matrix.arch }}
@@ -97,4 +81,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.ref_name }}
-        run: gh release create "$TAG" --verify-tag --generate-notes output/*
+        run: |
+          args=(--verify-tag --generate-notes)
+          if [[ "$TAG" == *-* ]]; then args+=(--prerelease); fi
+          gh release create "$TAG" "${args[@]}" output/*

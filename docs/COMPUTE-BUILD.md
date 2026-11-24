@@ -20,20 +20,8 @@ python3 build.py --output-dir dist/phase1
 {"id":"nas-kernel","arch":["aarch64"],"image":"debian:12","family":"deb","packages":[],"headers":{"format":"tar","url":"https://example.org/kernel-headers.tar","sha256":"<64位十六进制摘要>"}}
 ```
 
-私有矩阵可作为同一结构的 JSON 传给 `--matrix`。全矩阵使用 GitHub 公开仓原生 x64 和 ARM64 runner，各 job 的日志是该批次的编译凭证。包仓失效、历史内核不可取得或缺少可匹配的头文件时对应 job 失败，发布 job 也会停止。通过 workflow_dispatch 可先生成 Actions 产物。推送 v 开头的标签会在全批通过后创建 GitHub Release。需在仓库启用 Actions，并允许 release job 的 contents: write。
+私有矩阵可用 --matrix 指定。Refresh native module artifacts 在原生 Linux runner 编译适用目标。Compute bundles 从经校验的模块池生成双架构部署包，并在两个包均通过检查后生成源码包与 SHA256SUMS。
 
-```sh
-git init -b main
-git add .github .gitattributes .gitignore README.md LICENSE COMPATIBILITY.md PROGRESS.md build.py docs guest host kernel release targets tests artifacts
-git commit -m "Build native x64 and ARM64 GPU-PV compute bundles"
-git remote add origin 'https://github.com/OWNER/REPO.git'
-git push -u origin main
-gh workflow run compute-release.yml --ref main -f version=preflight
-gh run list --workflow compute-release.yml
-# 审阅该次完整结果后再决定正式版本号
-git tag -a v1.0.0 -m "GPU-PV compute v1.0.0"
-git push origin v1.0.0
-```
 
 公开源码包排除微软二进制。部署包根据 host/wsl-runtime.json 固定提交和 SHA-256 收集对应架构的三份微软专有运行库。宿主物理 GPU 的 UMD 在本机合盘时加入。使用、分发微软或厂商二进制按各自许可执行。
 
@@ -57,3 +45,9 @@ sudo docker run --rm --privileged \
 ```
 
 在已安装驱动的测试 VM 中，以普通用户执行 `sh tests/compute-acceptance "$HOME/compute-log"` 收集数值结果与该窗口内核日志。RTX 2060 + Iris Xe、CUDA 和 Intel OpenCL 均已就绪时，`sh tests/isolate-dual-compute` 会单独运行 NVML、D3D12、CUDA、OpenCL，将各自的输出、退出码和内核日志写入 `$HOME/compute-isolated/`。测试用户需能执行非交互 sudo 来标记和读取内核日志。
+
+## 已验证模块池与发布
+
+`targets/prebuilt-pool.json` 固定每个架构与内核 release 的生产作业、目标名和模块 SHA-256。打包作业从本仓库的 Actions artifacts 恢复这些文件，逐个校验后生成部署包。相同架构和 release 只收录一份；编译次数和发行版别名不增加模块数量。修改 kernel 源树或生产 artifacts 过期时需使用 Refresh native module artifacts 手动构建并更新锁表。保留正式 ZIP 和 SHA256SUMS 可长期离线部署。每次推送 compute-preflight 分支或手动运行 Compute bundles 可验证成品；推送 v 开头标签才触发 GitHub Release，带连字符的标签标记为 prerelease。
+
+`targets/matrix.json` 中 excluded 记录每个架构退出默认编译门槛的原因。OpenCloudOS 8 缺少页固定接口。Debian 11 与 openEuler 22.03 的 ARM64 头文件缺少 Hyper-V 架构头；openEuler 24.03、Arch Linux ARM、Amazon Linux 2023 的已测 ARM64 内核缺少 VMBus 导出。Oracle ARM64 仅提供 UEK，Slowroll ARM64 仓库缺少原生开发包，这两项按发行方供包情况单列。

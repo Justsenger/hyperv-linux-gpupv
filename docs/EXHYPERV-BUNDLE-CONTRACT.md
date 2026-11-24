@@ -35,3 +35,11 @@ sudo mkdir -p /mnt/gpupv && { mountpoint -q /mnt/gpupv || sudo mount -o ro "$(su
 ```
 
 已录入 MOK 或关闭 Secure Boot 时可一次完成。首次录入由管理员在 shim 菜单确认。安装后以 video 组普通用户执行 `gpupv-guest verify`，可选视频步骤使用 `--with-video`。卸载执行 `sudo gpupv-guest uninstall`。光盘上的私有宿主 UMD 仅用于该宿主的部署；公开源码归档与按架构发布的微软运行库部署包分别生成。
+
+## 接入与验收
+
+ExHyperV 先按目标来宾架构选择 ZIP，用同一发行版本的 SHA256SUMS 校验整包，再校验 manifest 中的每个 SHA-256。合盘时保留 guest/d3d12-compute，设置 Linux 可执行权限由安装器完成。可用 `python3 tests/check-bundle.py <zip> <arch>` 在解包前执行与 CI 一致的契约检查。
+
+来宾按 uname -m 和 uname -r 精确匹配模块，并用 modinfo 复核 name、vermagic、srcversion。匹配时只需 Python、kmod、udev 等运行工具，可在无 gcc、make 和 headers 的系统安装。未命中时从 kernel/ 编译，需要对应内核头与编译器。Secure Boot 已关闭时跳过 MOK；开启时使用本地受信任密钥和 OpenSSL CMS 签名预编译模块。首次信任需管理员完成 MOK 录入。
+
+纯算力验收以普通用户执行 `gpupv-guest verify` 的退出码、逐卡硬件 PCI 标识与数值回读为准。该命令默认不运行视频编解码。Debian x86_64 双卡已有 D3D12 Dispatch、CUDA 和 OpenCL 数值证据。ARM64 CI 覆盖模块 ELF、探针和整包校验；ARM64 GPU 实测需要相应的 Hyper-V 宿主。[双卡原始输出](../artifacts/reports/phase1/final-ssh/compute.txt)

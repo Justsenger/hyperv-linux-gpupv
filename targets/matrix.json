@@ -154,7 +154,10 @@
       "arch": [
         "x86_64",
         "aarch64"
-      ]
+      ],
+      "excluded": {
+        "aarch64": "Packaged headers lack asm/hyperv-tlfs.h"
+      }
     },
     {
       "id": "debian-12",
@@ -215,7 +218,10 @@
         "x86_64",
         "aarch64"
       ],
-      "repo": "deb [check-valid-until=no] https://snapshot.debian.org/archive/debian-security/20260805T000000Z/ bullseye-security main"
+      "repo": "deb [check-valid-until=no] https://snapshot.debian.org/archive/debian-security/20260805T000000Z/ bullseye-security main",
+      "excluded": {
+        "aarch64": "Packaged headers lack asm/hyperv-tlfs.h"
+      }
     },
     {
       "id": "debian-12-backports",
@@ -336,7 +342,10 @@
       "arch": [
         "x86_64",
         "aarch64"
-      ]
+      ],
+      "excluded": {
+        "aarch64": "Oracle supplies UEK only on Arm; RHCK unavailable"
+      }
     },
     {
       "id": "oracle-8-uek",
@@ -360,7 +369,10 @@
       "arch": [
         "x86_64",
         "aarch64"
-      ]
+      ],
+      "excluded": {
+        "aarch64": "Oracle supplies UEK only on Arm; RHCK unavailable"
+      }
     },
     {
       "id": "oracle-9-uek",
@@ -468,7 +480,10 @@
       "arch": [
         "x86_64",
         "aarch64"
-      ]
+      ],
+      "excluded": {
+        "aarch64": "Packaged headers lack asm/hyperv-tlfs.h"
+      }
     },
     {
       "id": "openeuler-24.03-lts",
@@ -480,7 +495,10 @@
       "arch": [
         "x86_64",
         "aarch64"
-      ]
+      ],
+      "excluded": {
+        "aarch64": "Packaged kernel does not export vmbus_open"
+      }
     },
     {
       "id": "opencloudos-8",
@@ -492,7 +510,11 @@
       "arch": [
         "x86_64",
         "aarch64"
-      ]
+      ],
+      "excluded": {
+        "x86_64": "5.4.241 oc8 lacks pin_user_pages_fast",
+        "aarch64": "5.4.241 oc8 lacks pin_user_pages_fast"
+      }
     },
     {
       "id": "opencloudos-9",
@@ -521,6 +543,9 @@
         "aarch64": [
           "kernel6.12-devel"
         ]
+      },
+      "excluded": {
+        "aarch64": "6.1 and 6.12.115 lack exported VMBus symbols"
       }
     },
     {
@@ -611,7 +636,10 @@
         "x86_64",
         "aarch64"
       ],
-      "repo": "slowroll"
+      "repo": "slowroll",
+      "excluded": {
+        "aarch64": "No native kernel-default-devel in the configured Slowroll repositories"
+      }
     },
     {
       "id": "arch-linux",
@@ -702,7 +730,10 @@
       ],
       "arch": [
         "aarch64"
-      ]
+      ],
+      "excluded": {
+        "aarch64": "Packaged kernel does not export vmbus_open"
+      }
     },
     {
       "id": "kali",
