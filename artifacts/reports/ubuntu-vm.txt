@@ -1,0 +1,10 @@
+Checkpoint-VM: D:\linux-pv\tests\New-TestVM.ps1:35
+Line |
+  35 |  Checkpoint-VM -VM $vm -SnapshotName gpupv-test-clean
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | 检查点操作失败。  无法创建检查点。  “gpupv-test-c8b75bda4e0c4e7d8611a23cd485e8eb”的检查点操作失败。(虚拟机 ID
+     | 5D5FA8CD-4414-4E84-9E86-DBF25178A1DE)  “gpupv-test-c8b75bda4e0c4e7d8611a23cd485e8eb”无法使用磁盘
+     | D:\linux-pv\.test\gpupv-test-c8b75bda4e0c4e7d8611a23cd485e8eb\gpupv-test-root.vhdx 创建检查点所需的存储:
+     | 由于虚拟磁盘系统限制，无法完成请求的操作。虚拟硬盘文件必须是未压缩和未加密的文件，并且不能是稀疏文件。 (0xC03A001A)。(虚拟机 ID 5D5FA8CD-4414-4E84-9E86-DBF25178A1DE)
+
+

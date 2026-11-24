@@ -1,0 +1,288 @@
+Loading repository data...
+Warning: Repository 'Update repository of openSUSE Backports' metadata expired since 2026-07-10 11:19:15 UTC.
+Warning: Repository 'Update Repository (Debug)' metadata expired since 2026-10-13 22:33:14 UTC.
+Warning: Repository 'Main Update Repository' metadata expired since 2026-10-13 22:33:04 UTC.
+
+    Warning: Repository metadata expired: Check if 'autorefresh' is turned on (zypper lr), otherwise
+    manually refresh the repository (zypper ref). If this does not solve the issue, it could be that
+    you are using a broken mirror or the server has actually discontinued to support the repository.
+
+Reading installed packages...
+'gawk' is already installed.
+No update candidate for 'gawk-4.2.1-150000.3.6.1.x86_64'. The highest available version is already installed.
+'kmod' is already installed.
+No update candidate for 'kmod-29-150600.13.6.1.x86_64'. The highest available version is already installed.
+Resolving package dependencies...
+
+The following 36 NEW packages are going to be installed:
+  cpp cpp7 dwarves fipscheck gcc gcc7 glibc-devel kernel-default-devel kernel-devel kernel-macros libasan4 libatomic1 libcilkrts5 libdwarves1 libelf-devel libfipscheck1 libfreebl3 libgomp1 libisl15 libitm1 liblsan0 libmpc3 libmpfr6 libmpx2 libmpxwrappers2 libsoftokn3 libtsan0 libubsan0 libxcrypt-devel linux-glibc-devel make mozilla-nss mozilla-nss-tools pesign pesign-obs-integration zlib-devel
+
+36 new packages to install.
+
+Package download size:    67.3 MiB
+
+Package install size change:
+              |     187.1 MiB  required by packages that will be installed
+   187.1 MiB  |  -      0 B    released by packages that will be removed
+
+Backend:  classic_rpmtrans
+Continue? [y/n/v/...? shows all options] (y): y
+Retrieving: libdwarves1-1.25-150600.1.4.x86_64 (Main Repository) (1/36),  89.5 KiB    
+Retrieving: libdwarves1-1.25-150600.1.4.x86_64.rpm [..done]
+Retrieving: libisl15-0.18-1.443.x86_64 (Main Repository) (2/36), 550.6 KiB    
+Retrieving: libisl15-0.18-1.443.x86_64.rpm [...done (200.1 KiB/s)]
+Retrieving: libmpfr6-4.0.2-3.3.1.x86_64 (Main Repository) (3/36), 216.1 KiB    
+Retrieving: libmpfr6-4.0.2-3.3.1.x86_64.rpm [...done (196.1 KiB/s)]
+Retrieving: libmpx2-8.2.1+r264010-150000.1.6.4.x86_64 (Main Repository) (4/36),  19.4 KiB    
+Retrieving: libmpx2-8.2.1+r264010-150000.1.6.4.x86_64.rpm [..done]
+Retrieving: libmpxwrappers2-8.2.1+r264010-150000.1.6.4.x86_64 (Main Repository) (5/36),  18.1 KiB    
+Retrieving: libmpxwrappers2-8.2.1+r264010-150000.1.6.4.x86_64.rpm [..done]
+Retrieving: libtsan0-11.3.0+git1637-150000.1.11.2.x86_64 (Main Repository) (6/36), 328.9 KiB    
+Retrieving: libtsan0-11.3.0+git1637-150000.1.11.2.x86_64.rpm [...done (190.8 KiB/s)]
+Retrieving: libxcrypt-devel-4.4.15-150300.4.7.1.x86_64 (Main Repository) (7/36),  32.6 KiB    
+Retrieving: libxcrypt-devel-4.4.15-150300.4.7.1.x86_64.rpm [..done (1.1 KiB/s)]
+Retrieving: linux-glibc-devel-6.4-150600.2.17.x86_64 (Main Repository) (8/36),   1.2 MiB    
+Retrieving: linux-glibc-devel-6.4-150600.2.17.x86_64.rpm [....done (969.3 KiB/s)]
+Retrieving: make-4.2.1-7.3.2.x86_64 (Main Repository) (9/36), 281.7 KiB    
+Retrieving: make-4.2.1-7.3.2.x86_64.rpm [...done (213.5 KiB/s)]
+Retrieving: dwarves-1.25-150600.1.4.x86_64 (Main Repository) (10/36), 113.4 KiB    
+Retrieving: dwarves-1.25-150600.1.4.x86_64.rpm [..done]
+Retrieving: libmpc3-1.1.0-1.47.x86_64 (Main Repository) (11/36),  49.6 KiB    
+Retrieving: libmpc3-1.1.0-1.47.x86_64.rpm [..done]
+Retrieving: fipscheck-1.7.0-150600.3.3.2.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (12/36),  19.2 KiB    
+Retrieving: fipscheck-1.7.0-150600.3.3.2.x86_64.rpm [..not found]
+Retrieving: fipscheck-1.7.0-150600.3.3.2.x86_64.rpm [..done]
+Retrieving: libfipscheck1-1.7.0-150600.3.3.2.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (13/36),  15.8 KiB    
+Retrieving: libfipscheck1-1.7.0-150600.3.3.2.x86_64.rpm [.done]
+Retrieving: kernel-macros-6.4.0-150600.23.103.1.noarch (Update repository with updates from SUSE Linux Enterprise 15) (14/36),   4.6 MiB    
+Retrieving: kernel-macros-6.4.0-150600.23.103.1.noarch.rpm [.....done (2.0 MiB/s)]
+Retrieving: libasan4-7.5.0+r278197-150000.4.44.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (15/36), 364.1 KiB    
+Retrieving: libasan4-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..done (315.1 KiB/s)]
+Retrieving: libatomic1-15.2.0+git10201-150000.1.9.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (16/36),  21.6 KiB    
+Retrieving: libatomic1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [.done]
+Retrieving: libcilkrts5-7.5.0+r278197-150000.4.44.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (17/36),  67.5 KiB    
+Retrieving: libcilkrts5-7.5.0+r278197-150000.4.44.1.x86_64.rpm [.done]
+Retrieving: libfreebl3-3.112.3-150400.3.63.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (18/36), 454.9 KiB    
+Retrieving: libfreebl3-3.112.3-150400.3.63.1.x86_64.rpm [.done]
+Retrieving: libgomp1-15.2.0+git10201-150000.1.9.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (19/36), 165.3 KiB    
+Retrieving: libgomp1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [.done]
+Retrieving: libitm1-15.2.0+git10201-150000.1.9.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (20/36),  38.1 KiB    
+Retrieving: libitm1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [.done]
+Retrieving: liblsan0-15.2.0+git10201-150000.1.9.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (21/36), 204.0 KiB    
+Retrieving: liblsan0-15.2.0+git10201-150000.1.9.1.x86_64.rpm [.done]
+Retrieving: libubsan0-7.5.0+r278197-150000.4.44.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (22/36), 140.7 KiB    
+Retrieving: libubsan0-7.5.0+r278197-150000.4.44.1.x86_64.rpm [.done]
+Retrieving: glibc-devel-2.38-150600.14.46.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (23/36), 651.4 KiB    
+Retrieving: glibc-devel-2.38-150600.14.46.1.x86_64.rpm [.done]
+Retrieving: cpp7-7.5.0+r278197-150000.4.44.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (24/36),   7.9 MiB    
+Retrieving: cpp7-7.5.0+r278197-150000.4.44.1.x86_64.rpm [....done (7.2 MiB/s)]
+Retrieving: kernel-devel-6.4.0-150600.23.103.1.noarch (Update repository with updates from SUSE Linux Enterprise 15) (25/36),  19.5 MiB    
+Retrieving: kernel-devel-6.4.0-150600.23.103.1.noarch.rpm [........done (19.4 MiB/s)]
+Retrieving: mozilla-nss-3.112.3-150400.3.63.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (26/36), 811.8 KiB    
+Retrieving: mozilla-nss-3.112.3-150400.3.63.1.x86_64.rpm [..done (351.8 KiB/s)]
+Retrieving: libsoftokn3-3.112.3-150400.3.63.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (27/36), 334.6 KiB    
+Retrieving: libsoftokn3-3.112.3-150400.3.63.1.x86_64.rpm [.done]
+Retrieving: zlib-devel-1.2.13-150500.4.6.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (28/36), 121.0 KiB    
+Retrieving: zlib-devel-1.2.13-150500.4.6.1.x86_64.rpm [.done]
+Retrieving: gcc7-7.5.0+r278197-150000.4.44.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (29/36),  19.7 MiB    
+Retrieving: gcc7-7.5.0+r278197-150000.4.44.1.x86_64.rpm [.......done (16.9 MiB/s)]
+Retrieving: pesign-0.112-150000.4.23.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (30/36), 105.9 KiB    
+Retrieving: pesign-0.112-150000.4.23.1.x86_64.rpm [.done]
+Retrieving: mozilla-nss-tools-3.112.3-150400.3.63.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (31/36), 591.1 KiB    
+Retrieving: mozilla-nss-tools-3.112.3-150400.3.63.1.x86_64.rpm [.done]
+Retrieving: libelf-devel-0.185-150400.5.8.3.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (32/36), 740.8 KiB    
+Retrieving: libelf-devel-0.185-150400.5.8.3.x86_64.rpm [..done (521.5 KiB/s)]
+Retrieving: pesign-obs-integration-10.2+git20210804.ff18da1-150600.10.3.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (33/36),  39.0 KiB    
+Retrieving: pesign-obs-integration-10.2+git20210804.ff18da1-150600.10.3.1.x86_64.rpm [.done]
+Retrieving: cpp-7-3.9.1.x86_64 (Main Repository) (34/36),   9.4 KiB    
+Retrieving: cpp-7-3.9.1.x86_64.rpm [..done]
+Retrieving: gcc-7-3.9.1.x86_64 (Main Repository) (35/36),  10.4 KiB    
+Retrieving: gcc-7-3.9.1.x86_64.rpm [..done]
+Retrieving: kernel-default-devel-6.4.0-150600.23.103.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (36/36),   8.0 MiB    
+Retrieving: kernel-default-devel-6.4.0-150600.23.103.1.x86_64.rpm [....done (7.2 MiB/s)]
+
+Checking for file conflicts: [...................done]
+( 1/36) Installing: libdwarves1-1.25-150600.1.4.x86_64 [..done]
+( 2/36) Installing: libisl15-0.18-1.443.x86_64 [..done]
+( 3/36) Installing: libmpfr6-4.0.2-3.3.1.x86_64 [..done]
+( 4/36) Installing: libmpx2-8.2.1+r264010-150000.1.6.4.x86_64 [..done]
+( 5/36) Installing: libmpxwrappers2-8.2.1+r264010-150000.1.6.4.x86_64 [..done]
+( 6/36) Installing: libtsan0-11.3.0+git1637-150000.1.11.2.x86_64 [..done]
+( 7/36) Installing: libxcrypt-devel-4.4.15-150300.4.7.1.x86_64 [..done]
+( 8/36) Installing: linux-glibc-devel-6.4-150600.2.17.x86_64 [....done]
+( 9/36) Installing: make-4.2.1-7.3.2.x86_64 [..done]
+(10/36) Installing: dwarves-1.25-150600.1.4.x86_64 [..done]
+(11/36) Installing: libmpc3-1.1.0-1.47.x86_64 [..done]
+(12/36) Installing: fipscheck-1.7.0-150600.3.3.2.x86_64 [..done]
+(13/36) Installing: libfipscheck1-1.7.0-150600.3.3.2.x86_64 [..done]
+(14/36) Installing: kernel-macros-6.4.0-150600.23.103.1.noarch [..done]
+(15/36) Installing: libasan4-7.5.0+r278197-150000.4.44.1.x86_64 [..done]
+(16/36) Installing: libatomic1-15.2.0+git10201-150000.1.9.1.x86_64 [..done]
+(17/36) Installing: libcilkrts5-7.5.0+r278197-150000.4.44.1.x86_64 [..done]
+(18/36) Installing: libfreebl3-3.112.3-150400.3.63.1.x86_64 [..done]
+(19/36) Installing: libgomp1-15.2.0+git10201-150000.1.9.1.x86_64 [..done]
+(20/36) Installing: libitm1-15.2.0+git10201-150000.1.9.1.x86_64 [..done]
+(21/36) Installing: liblsan0-15.2.0+git10201-150000.1.9.1.x86_64 [..done]
+(22/36) Installing: libubsan0-7.5.0+r278197-150000.4.44.1.x86_64 [..done]
+(23/36) Installing: glibc-devel-2.38-150600.14.46.1.x86_64 [...done]
+(24/36) Installing: cpp7-7.5.0+r278197-150000.4.44.1.x86_64 [.......done]
+(25/36) Installing: kernel-devel-6.4.0-150600.23.103.1.noarch [.................................done]
+(26/36) Installing: mozilla-nss-3.112.3-150400.3.63.1.x86_64 [...done]
+(27/36) Installing: libsoftokn3-3.112.3-150400.3.63.1.x86_64 [..done]
+(28/36) Installing: zlib-devel-1.2.13-150500.4.6.1.x86_64 [...done]
+(29/36) Installing: gcc7-7.5.0+r278197-150000.4.44.1.x86_64 [...................................done]
+(30/36) Installing: pesign-0.112-150000.4.23.1.x86_64 [...done]
+(31/36) Installing: mozilla-nss-tools-3.112.3-150400.3.63.1.x86_64 [..done]
+(32/36) Installing: libelf-devel-0.185-150400.5.8.3.x86_64 [..done]
+(33/36) Installing: pesign-obs-integration-10.2+git20210804.ff18da1-150600.10.3.1.x86_64 [..done]
+(34/36) Installing: cpp-7-3.9.1.x86_64 [..done]
+(35/36) Installing: gcc-7-3.9.1.x86_64 [..done]
+(36/36) Installing: kernel-default-devel-6.4.0-150600.23.103.1.x86_64 [.......done]
+Loading repository data...
+Warning: Repository 'Update repository of openSUSE Backports' metadata expired since 2026-07-10 11:19:15 UTC.
+Warning: Repository 'Update Repository (Debug)' metadata expired since 2026-10-13 22:33:14 UTC.
+Warning: Repository 'Main Update Repository' metadata expired since 2026-10-13 22:33:04 UTC.
+
+    Warning: Repository metadata expired: Check if 'autorefresh' is turned on (zypper lr), otherwise
+    manually refresh the repository (zypper ref). If this does not solve the issue, it could be that
+    you are using a broken mirror or the server has actually discontinued to support the repository.
+
+Reading installed packages...
+Resolving package dependencies...
+
+The following NEW package is going to be installed:
+  kernel-default-6.4.0-150600.23.103.1
+
+The following package requires a system reboot:
+  kernel-default-6.4.0-150600.23.103.1
+
+1 new package to install.
+
+Package download size:   115.0 MiB
+
+Package install size change:
+              |     189.5 MiB  required by packages that will be installed
+   189.5 MiB  |  -      0 B    released by packages that will be removed
+
+    Note: System reboot required.
+
+Backend:  classic_rpmtrans
+Continue? [y/n/v/...? shows all options] (y): y
+Retrieving: kernel-default-6.4.0-150600.23.103.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (1/1), 115.0 MiB    
+Retrieving: kernel-default-6.4.0-150600.23.103.1.x86_64.rpm [..not found]
+Retrieving: kernel-default-6.4.0-150600.23.103.1.x86_64.rpm [....................................................................................done (9.5 MiB/s)]
+
+Checking for file conflicts: [........done]
+(1/1) Installing: kernel-default-6.4.0-150600.23.103.1.x86_64 [..............................................................................................
+dracut[I]: Executing: /usr/bin/dracut -f /boot/initrd-6.4.0-150600.23.103-default 6.4.0-150600.23.103-default
+dracut[I]: Module 'systemd-coredump' will not be installed, because command 'coredumpctl' could not be found!
+dracut[I]: Module 'systemd-coredump' will not be installed, because command '/usr/lib/systemd/systemd-coredump' could not be found!
+dracut[I]: Module 'systemd-networkd' will not be installed, because command 'networkctl' could not be found!
+dracut[I]: Module 'systemd-networkd' will not be installed, because command '/usr/lib/systemd/systemd-networkd' could not be found!
+dracut[I]: Module 'systemd-networkd' will not be installed, because command '/usr/lib/systemd/systemd-networkd-wait-online' could not be found!
+dracut[I]: Module 'systemd-pcrphase' will not be installed, because command '/usr/lib/systemd/systemd-pcrphase' could not be found!
+dracut[I]: Module 'systemd-portabled' will not be installed, because command 'portablectl' could not be found!
+dracut[I]: Module 'systemd-portabled' will not be installed, because command '/usr/lib/systemd/systemd-portabled' could not be found!
+dracut[I]: Module 'systemd-resolved' will not be installed, because command 'resolvectl' could not be found!
+dracut[I]: Module 'systemd-resolved' will not be installed, because command '/usr/lib/systemd/systemd-resolved' could not be found!
+dracut[I]: Module 'dbus-broker' will not be installed, because command 'dbus-broker' could not be found!
+dracut[I]: Module 'rngd' will not be installed, because command 'rngd' could not be found!
+dracut[I]: Module 'connman' will not be installed, because command 'connmand' could not be found!
+dracut[I]: Module 'connman' will not be installed, because command 'connmanctl' could not be found!
+dracut[I]: Module 'connman' will not be installed, because command 'connmand-wait-online' could not be found!
+dracut[I]: Module 'network-manager' will not be installed, because command 'NetworkManager' could not be found!
+dracut[I]: 62bluetooth: Could not find any command of '/usr/lib/bluetooth/bluetoothd /usr/libexec/bluetooth/bluetoothd'!
+dracut[I]: Module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut[I]: Module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
+dracut[I]: Module 'pcsc' will not be installed, because command 'pcscd' could not be found!
+dracut[I]: Module 'tpm2-tss' will not be installed, because command 'tpm2' could not be found!
+dracut[I]: Module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+dracut[I]: Module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+dracut[I]: Module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+dracut[I]: Module 'nvmf' will not be installed, because command 'nvme' could not be found!
+dracut[I]: Module 'nvmf' will not be installed, because command 'jq' could not be found!
+dracut[I]: Module 'biosdevname' will not be installed, because command 'biosdevname' could not be found!
+dracut[I]: Module 'memstrack' will not be installed, because command 'memstrack' could not be found!
+dracut[I]: memstrack is not available
+dracut[I]: If you need to use rd.memdebug>=4, please install memstrack and procps-ng
+dracut[I]: Module 'squash' will not be installed, because command 'mksquashfs' could not be found!
+dracut[I]: Module 'squash' will not be installed, because command 'unsquashfs' could not be found!
+dracut[I]: Module 'systemd-coredump' will not be installed, because command 'coredumpctl' could not be found!
+dracut[I]: Module 'systemd-coredump' will not be installed, because command '/usr/lib/systemd/systemd-coredump' could not be found!
+dracut[I]: Module 'systemd-pcrphase' will not be installed, because command '/usr/lib/systemd/systemd-pcrphase' could not be found!
+dracut[I]: Module 'systemd-portabled' will not be installed, because command 'portablectl' could not be found!
+dracut[I]: Module 'systemd-portabled' will not be installed, because command '/usr/lib/systemd/systemd-portabled' could not be found!
+dracut[I]: Module 'systemd-resolved' will not be installed, because command 'resolvectl' could not be found!
+dracut[I]: Module 'systemd-resolved' will not be installed, because command '/usr/lib/systemd/systemd-resolved' could not be found!
+dracut[I]: Module 'dbus-broker' will not be installed, because command 'dbus-broker' could not be found!
+dracut[I]: Module 'rngd' will not be installed, because command 'rngd' could not be found!
+dracut[I]: Module 'connman' will not be installed, because command 'connmand' could not be found!
+dracut[I]: Module 'connman' will not be installed, because command 'connmanctl' could not be found!
+dracut[I]: Module 'connman' will not be installed, because command 'connmand-wait-online' could not be found!
+dracut[I]: Module 'network-manager' will not be installed, because command 'NetworkManager' could not be found!
+dracut[I]: 62bluetooth: Could not find any command of '/usr/lib/bluetooth/bluetoothd /usr/libexec/bluetooth/bluetoothd'!
+dracut[I]: Module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut[I]: Module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
+dracut[I]: Module 'pcsc' will not be installed, because command 'pcscd' could not be found!
+dracut[I]: Module 'tpm2-tss' will not be installed, because command 'tpm2' could not be found!
+dracut[I]: Module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+dracut[I]: Module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+dracut[I]: Module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+dracut[I]: Module 'nvmf' will not be installed, because command 'nvme' could not be found!
+dracut[I]: Module 'nvmf' will not be installed, because command 'jq' could not be found!
+dracut[I]: Module 'memstrack' will not be installed, because command 'memstrack' could not be found!
+dracut[I]: memstrack is not available
+dracut[I]: If you need to use rd.memdebug>=4, please install memstrack and procps-ng
+dracut[I]: Module 'squash' will not be installed, because command 'mksquashfs' could not be found!
+dracut[I]: Module 'squash' will not be installed, because command 'unsquashfs' could not be found!
+dracut[I]: *** Including module: systemd ***
+dracut[I]: *** Including module: systemd-initrd ***
+dracut[I]: *** Including module: i18n ***
+dracut[I]: *** Including module: kernel-modules ***
+dracut[I]: *** Including module: kernel-modules-extra ***
+dracut[I]: *** Including module: rootfs-block ***
+dracut[I]: *** Including module: suse-btrfs ***
+dracut[I]: *** Including module: suse-xfs ***
+dracut[I]: *** Including module: terminfo ***
+dracut[I]: *** Including module: udev-rules ***
+dracut[I]: *** Including module: dracut-systemd ***
+dracut[I]: *** Including module: haveged ***
+dracut[I]: *** Including module: usrmount ***
+dracut[I]: *** Including module: base ***
+dracut[I]: *** Including module: fs-lib ***
+dracut[I]: *** Including module: shutdown ***
+dracut[I]: *** Including module: suse ***
+dracut[I]: *** Including module: suse-initrd ***
+dracut[I]: *** Including modules done ***
+dracut[I]: *** Installing kernel module dependencies ***
+dracut[I]: *** Installing kernel module dependencies done ***
+dracut[I]: *** Resolving executable dependencies ***
+dracut[I]: *** Resolving executable dependencies done ***
+dracut[I]: *** Hardlinking files ***
+dracut[I]: *** Hardlinking files done ***
+dracut[I]: *** Generating early-microcode cpio image ***
+dracut[I]: *** Store current command line parameters ***
+dracut[I]: Stored kernel commandline:
+dracut[I]:  root=UUID=c0315130-1892-487d-aea2-911fe0697089 rootfstype=xfs rootflags=rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota
+dracut[I]: *** Stripping files ***
+dracut[I]: *** Stripping files done ***
+dracut[I]: *** Creating image file '/boot/initrd-6.4.0-150600.23.103-default' ***
+dracut[I]: *** Creating initramfs image file '/boot/initrd-6.4.0-150600.23.103-default' done ***
+CA enrolled. Skip /etc/uefi/certs/76B6A6A0.crt
+done]
+Running post-transaction scripts [...done]
+Generating grub configuration file ...
+Warning: Requested serial terminal but GRUB_SERIAL_COMMAND is unspecified. Default parameters will be used.
+Found linux image: /boot/vmlinuz-6.4.0-150600.23.146-default
+Found initrd image: /boot/initrd-6.4.0-150600.23.146-default
+Found linux image: /boot/vmlinuz-6.4.0-150600.23.103-default
+Found initrd image: /boot/initrd-6.4.0-150600.23.103-default
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+saved_entry=Advanced options for openSUSE-Leap-15.6>openSUSE-Leap-15.6, with Linux 6.4.0-150600.23.103-default
+Selected matching distribution kernel 6.4.0-150600.23.103-default
+Running timer as unit: run-r5a884ce7edee47e0b557b355948201b8.timer
+Will run service as unit: run-r5a884ce7edee47e0b557b355948201b8.service

@@ -1,0 +1,29 @@
+{
+  "start": "2026-11-24T08:55:00.0000000",
+  "through": "2026-11-24T12:50:05.0963429+08:00",
+  "guest": "gpupv-test-edd76370b8ce425ea2e349e00c0c789d",
+  "vmId": "11ec5592-4022-4474-860e-b7d43822a6ed",
+  "channels": [
+    "Microsoft-Windows-DxgKrnl-Operational",
+    "Microsoft-Windows-DxgKrnl-Admin"
+  ],
+  "counts": [
+    {
+      "id": "446",
+      "count": 42
+    },
+    {
+      "id": "447",
+      "count": 42
+    },
+    {
+      "id": "454",
+      "count": 57
+    },
+    {
+      "id": "455",
+      "count": 57
+    }
+  ],
+  "matchingGuestEvents": []
+}

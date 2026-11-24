@@ -1,0 +1,540 @@
+#!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
+import sys
+sys.dont_write_bytecode = True
+
+import argparse
+from collections import Counter
+import contextlib
+import ctypes.util
+import fcntl
+import grp
+import hashlib
+import json
+import os
+from pathlib import Path
+import platform
+import re
+import shutil
+import signal
+import stat
+import subprocess as sp
+import sysconfig
+import tempfile
+
+BUNDLE = Path(__file__).resolve().parents[1]
+HOME = Path("/opt/hyperv-linux-gpupv")
+RELEASE = platform.release()
+HEADERS = Path("/lib/modules") / RELEASE / "build"
+WSL = Path("/usr/lib/wsl")
+REQUIRED = ("libdxcore.so", "libd3d12.so", "libd3d12core.so")
+os.environ["PATH"] = "/usr/sbin:/sbin:" + os.environ.get("PATH","/usr/bin:/bin")
+
+
+def mesa_files():
+    triplet = sysconfig.get_config_var("MULTIARCH")
+    dirs = [Path("/usr/lib64/dri"),Path("/usr/lib/dri")]
+    if triplet:
+        dirs.append(Path("/usr/lib") / triplet / "dri")
+    return [p for p in (d / "d3d12_drv_video.so" for d in dirs) if p.is_file()]
+
+
+def fail(reason):
+    raise RuntimeError(reason)
+
+
+def copy_install_tree(source,dest):
+    shutil.copytree(source,dest,copy_function=shutil.copyfile)
+    for directory,_,files in os.walk(dest):
+        os.chmod(directory,0o755)
+        for name in files:
+            os.chmod(os.path.join(directory,name),0o644)
+
+
+def secure_boot():
+    if not Path("/sys/firmware/efi").exists():
+        return False
+    variables = list(Path("/sys/firmware/efi/efivars").glob("SecureBoot-*"))
+    if len(variables) != 1:
+        fail("无法读取 Secure Boot 状态，请检查 efivarfs。")
+    flag = variables[0].read_bytes()[4:]
+    if flag not in (b"\0", b"\1"):
+        fail("Invalid Secure Boot variable")
+    return flag == b"\1"
+
+
+def adapters(device):
+    cards = device.get("adapters", [device])
+    if not isinstance(cards, list) or not cards:
+        fail("device.json must identify at least one adapter")
+    for card in cards:
+        pkg = card["package"]
+        if not re.fullmatch(r"[A-Za-z0-9_.-]+", pkg) or pkg in (".", ".."):
+            fail("Invalid driver package directory")
+    return cards
+
+
+def elf(path, arch, types):
+    with path.open("rb") as f:
+        h = f.read(64)
+    if (len(h) != 64 or h[:6] != b"\x7fELF\x02\x01" or
+        int.from_bytes(h[16:18],"little") not in types or
+        int.from_bytes(h[18:20],"little") != {"x86_64":62,"aarch64":183}.get(arch)):
+        fail("ELF architecture/type mismatch: " + str(path))
+
+
+def bundle_info():
+    path = BUNDLE / "manifest.json"
+    if not path.exists():
+        return None
+    meta = json.loads(path.read_text())
+    if meta["schemaVersion"] != 1 or meta["arch"] != platform.machine():
+        fail("部署包架构或 schemaVersion 与来宾不匹配")
+    return meta
+
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def prebuilt(meta):
+    if BUNDLE == HOME and (HOME/"install.json").is_file():
+        info = check_owner()
+        if info.get("complete") and info["release"] == RELEASE and not info.get("dkms"):
+            path = HOME/"dxgkrnl.ko"
+            if digest(path) != info["module_sha256"]:
+                fail("Installed module checksum mismatch")
+            return path
+        return None
+    if meta is None:
+        return None
+    entries = json.loads((BUNDLE/"prebuilt/index.json").read_text())
+    if entries != meta["kernels"]:
+        fail("Prebuilt index differs from deployment manifest")
+    matches = [item for item in entries if item["release"] == RELEASE and item["arch"] == meta["arch"]]
+    if not matches:
+        return None
+    path = BUNDLE/"prebuilt"/meta["arch"]/RELEASE/"dxgkrnl.ko"
+    if len(matches) != 1 or digest(path) != matches[0]["sha256"]:
+        fail("Prebuilt module checksum mismatch")
+    elf(path, meta["arch"], (1,))
+    for field in ("name","vermagic","srcversion"):
+        actual = sp.check_output(["modinfo","-F",field,str(path)],universal_newlines=True).strip()
+        if actual != matches[0][field]:
+            fail("Prebuilt module metadata mismatch: "+field)
+    if matches[0]["name"] != "dxgkrnl" or matches[0]["vermagic"].split()[0] != RELEASE:
+        fail("Incompatible prebuilt module")
+    return path
+
+
+def doctor():
+    problems = []
+    try:
+        libc = os.confstr("CS_GNU_LIBC_VERSION") or ""
+    except (ValueError, OSError):
+        libc = ""
+    if not libc.startswith("glibc "):
+        problems.append("需要 glibc 来宾。请使用发行版的 glibc 镜像。")
+    try:
+        grp.getgrnam("video")
+    except KeyError:
+        problems.append("未找到 video 组。请先创建该组并将需要访问显卡的用户加入其中。")
+    if os.statvfs("/").f_flag & os.ST_RDONLY or Path("/etc/NIXOS").exists() or Path("/run/ostree-booted").exists():
+        problems.append("当前系统使用只读或不可变根目录。请使用可写的普通虚拟机镜像。")
+    secure_boot()
+    meta = bundle_info()
+    module = prebuilt(meta)
+    tools = ["modprobe", "modinfo", "depmod", "ldconfig", "udevadm"]
+    if module is None:
+        release_files = (HEADERS / "include/generated/utsrelease.h", HEADERS / "include/config/kernel.release")
+        if not any(p.is_file() and RELEASE in re.findall(r'[^"\s]+', p.read_text()) for p in release_files):
+            problems.append(f"缺少当前内核 {RELEASE} 的匹配头文件。请安装 linux-headers 或 kernel-devel。")
+        conf = HEADERS/"include/config/auto.conf"
+        tools += ["make", "clang" if conf.exists() and "CONFIG_CC_IS_CLANG=y" in conf.read_text() else "gcc"]
+    if RELEASE.startswith("5.4.") and "Ubuntu" in platform.version():
+        problems.append("Ubuntu 5.4 GA 缺少所需页固定接口，请升级到 HWE。")
+    if not any(p.read_text().strip()=="0x008e" and (p.parent/"vendor").read_text().strip()=="0x1414"
+               for p in Path("/sys/bus/pci/devices").glob("*/device")):
+        problems.append("缺少 GPU-PV PCI 设备 1414:008e。请检查 GPU 分区和 pci_hyperv；Ubuntu 请安装匹配的 linux-modules-extra。")
+    for tool in tools:
+        if not shutil.which(tool):
+            problems.append(f"缺少 {tool}，请从本发行版官方介质补装。")
+    manifest = BUNDLE / "device.json"
+    if not manifest.is_file():
+        problems.append("缺少宿主设备清单，请用宿主 CLI 重新打包。")
+    else:
+        device = json.loads(manifest.read_text())
+        arch = platform.machine()
+        if device["arch"] != arch:
+            problems.append(f"宿主包架构 {device['arch']} 与来宾 {arch} 不一致。")
+        for name in REQUIRED:
+            p = BUNDLE / "lib" / name
+            head = b""
+            if p.is_file():
+                with p.open("rb") as f:
+                    head = f.read(64)
+            if (len(head) != 64 or head[:6] != b"\x7fELF\x02\x01" or
+                int.from_bytes(head[16:18], "little") != 3 or
+                int.from_bytes(head[18:20], "little") != {"x86_64":62,"aarch64":183}.get(arch)):
+                problems.append(f"{name} 缺失或架构错误。请检查宿主运行库目录或执行 fetch-wsl-libs 后重新打包。")
+        for card in adapters(device):
+            if not (BUNDLE/"drivers"/card["package"]).is_dir():
+                problems.append("驱动包目录缺失: "+card["package"])
+        if meta:
+            for name in REQUIRED:
+                if digest(BUNDLE/"lib"/name) != meta["libraries"][name]:
+                    fail("运行库摘要错误: "+name)
+            probe = BUNDLE/"guest/d3d12-compute"
+            elf(probe, arch, (2,3))
+            if digest(probe) != meta["probeSha256"]:
+                fail("Compute probe checksum mismatch")
+    if problems:
+        fail("\n".join(problems))
+    print(f"{libc}, {platform.machine()}, kernel {RELEASE}, preflight OK", flush=True)
+
+
+def preflight():
+    doctor()
+
+
+def links(release, dkms=False, nv_smi=False):
+    paths = {
+        Path("/usr/local/bin/gpupv-guest"): HOME / "guest/gpupv-guest",
+        WSL / "lib": HOME / "lib",
+        WSL / "drivers": HOME / "drivers",
+        Path("/etc/modules-load.d/gpupv.conf"): HOME / "modules.conf",
+        Path("/etc/modprobe.d/gpupv.conf"): HOME / "order.conf",
+        Path("/etc/udev/rules.d/70-gpupv.rules"): HOME / "device.rules",
+        Path("/etc/ld.so.conf.d/gpupv.conf"): HOME / "loader.conf",
+    }
+    if dkms:
+        paths[Path("/usr/src/gpupv-dxgkrnl-0.1")] = HOME / "kernel"
+    else:
+        paths[Path("/lib/modules") / release / "updates/gpupv/dxgkrnl.ko"] = HOME / "dxgkrnl.ko"
+    if nv_smi:
+        paths[Path("/usr/local/bin/nvidia-smi")] = HOME / "lib/nvidia-smi"
+    return paths
+
+
+def check_owner():
+    stamp = HOME / "install.json"
+    if HOME.is_symlink() or not stamp.is_file() or stamp.is_symlink():
+        fail(f"发现无法确认归属的 {HOME}，请检查目录。")
+    return json.loads(stamp.read_text())
+
+
+def owned_path(dest, src, info):
+    if dest.is_symlink():
+        return Path(os.readlink(dest)) == src
+    if src == HOME / "dxgkrnl.ko" and info.get("module_sha256") and dest.is_file():
+        return hashlib.sha256(dest.read_bytes()).hexdigest() == info["module_sha256"]
+    return False
+
+
+def record_install(info):
+    stage = HOME / ".install.new"
+    stage.write_text(json.dumps(info))
+    stage.replace(HOME / "install.json")
+
+
+def publish_module(src, dest, info):
+    # Keep the real inode under the distribution's module policy path.
+    info["module_sha256"] = hashlib.sha256(src.read_bytes()).hexdigest()
+    record_install(info)
+    with tempfile.NamedTemporaryFile(dir=dest.parent, delete=False) as out:
+        tmp = Path(out.name)
+    try:
+        shutil.copyfile(src, tmp)
+        tmp.chmod(0o644)
+        if dest.is_symlink() and Path(os.readlink(dest)) == src:
+            tmp.replace(dest)
+        else:
+            os.link(tmp, dest)
+        if Path("/sys/fs/selinux/enforce").is_file():
+            sp.run(["restorecon", "-F", str(dest.resolve())], check=True)
+    finally:
+        with contextlib.suppress(FileNotFoundError):
+            tmp.unlink()
+
+
+def unload():
+    if Path("/sys/module/dxgkrnl").exists():
+        sp.run(["modprobe", "-r", "dxgkrnl"], check=True)
+
+
+def signing_pair():
+    if not shutil.which("mokutil") or not shutil.which("openssl"):
+        fail("模块签名需要发行版的 mokutil 和 openssl。")
+    pairs = [(Path(k), Path(c)) for k, c in (
+        ("/var/lib/shim-signed/mok/MOK.priv", "/var/lib/shim-signed/mok/MOK.der"),
+        ("/var/lib/dkms/mok.key", "/var/lib/dkms/mok.pub"),
+        ("/var/lib/gpupv-signing/MOK.priv", "/var/lib/gpupv-signing/MOK.der"))]
+    available = [(k,c) for k,c in pairs if k.is_file() and c.is_file()]
+    if not available and shutil.which("dkms"):
+        sp.run(["dkms", "generate_mok"], stdout=sp.DEVNULL, stderr=sp.DEVNULL)
+        available = [(k,c) for k,c in pairs if k.is_file() and c.is_file()]
+    if not available:
+        key, cert = pairs[-1]
+        key.parent.mkdir(mode=0o700, exist_ok=True)
+        if key.parent.is_symlink() or key.parent.stat().st_uid != 0 or key.parent.stat().st_mode & 0o077:
+            fail(f"签名密钥目录 {key.parent} 必须归 root 所有且权限为 0700。")
+        if os.path.lexists(key) or os.path.lexists(cert):
+            fail(f"{key.parent} 中存在不完整的密钥对，请检查已有密钥。")
+        with tempfile.TemporaryDirectory(dir=str(key.parent)) as tmp:
+            private, public = Path(tmp)/key.name, Path(tmp)/cert.name
+            sp.run(["openssl","req","-new","-x509","-newkey","rsa:3072","-nodes",
+                    "-days","3650","-subj","/CN=GPU-PV module signing/",
+                    "-addext","extendedKeyUsage=codeSigning","-keyout",str(private),
+                    "-outform","DER","-out",str(public)], check=True)
+            private.chmod(0o600)
+            private.rename(key)
+            public.rename(cert)
+        available.append((key,cert))
+    # mokutil --test-key has returned nonzero even for an enrolled MOK on Debian.
+    # Compare the actual DER certificate exported from the firmware MOK list.
+    with tempfile.TemporaryDirectory() as exported:
+        sp.run(["mokutil","--export"], cwd=exported, check=True)
+        trusted = {p.read_bytes() for p in Path(exported).glob("*.der")}
+        for key, cert in available:
+            if cert.read_bytes() in trusted:
+                return key, cert
+    cert = available[0][1]
+    fail(f"签名公钥尚未受信任。运行 sudo mokutil --import {cert}，设置一次性密码，"
+         "重启并在 MOK Manager 中选择 Enroll MOK，确认后重新执行安装。")
+
+
+def load_trusted():
+    sp.run(["modprobe", "dxgkrnl"], check=True)
+    if secure_boot() and "E" in Path("/sys/module/dxgkrnl/taint").read_text():
+        fail("运行内核未信任模块签名。请使用 shim 引导，并检查 MOK 是否进入内核受信任密钥环。")
+
+
+def uninstall():
+    if not os.path.lexists(HOME):
+        return
+    info = check_owner()
+    dkms = info.get("dkms",False)
+    paths = links(info["release"],dkms,info.get("nv_smi",False))
+    for dest, src in paths.items():
+        if os.path.lexists(dest) and not owned_path(dest, src, info):
+            fail(f"已存在其他文件 {dest}，请先检查归属。")
+    if info["release"] == RELEASE or dkms:
+        unload()
+    if dkms:
+        source = Path("/var/lib/dkms/gpupv-dxgkrnl/0.1/source")
+        if os.path.lexists(source):
+            if source.resolve() != HOME / "kernel":
+                fail("DKMS 注册源已改变，请检查后卸载。")
+            sp.run(["dkms","remove","gpupv-dxgkrnl/0.1","--all"],check=True)
+    for dest, src in paths.items():
+        if owned_path(dest, src, info):
+            dest.unlink()
+    for d in info["created_dirs"]:
+        with contextlib.suppress(OSError):
+            Path(d).rmdir()
+    shutil.rmtree(HOME)
+    sp.run(["depmod", "-a", info["release"]], check=True)
+    sp.run(["ldconfig"], check=True)
+    sp.run(["udevadm", "control", "--reload"], check=True)
+
+
+def install(dkms=False, with_video=False):
+    meta = bundle_info()
+    module = prebuilt(meta)
+    dkms = dkms and module is None
+    pair = signing_pair() if secure_boot() else None
+    nv_smi = (BUNDLE / "lib/nvidia-smi").is_file()
+    paths = links(RELEASE,dkms,nv_smi)
+    device = json.loads((BUNDLE / "device.json").read_text())
+    if os.path.lexists(HOME):
+        info = check_owner()
+        if ((info["release"] == RELEASE or dkms) and info.get("dkms",False) == dkms
+            and info.get("bundle_version") == (meta and meta["version"]) and info.get("with_video",False)==with_video
+            and info["device"] == device and info.get("complete")
+            and all(owned_path(d, s, info) and s.exists() for d,s in paths.items())):
+            for dest, src in paths.items():
+                if src == HOME / "dxgkrnl.ko" and dest.is_symlink():
+                    publish_module(src, dest, info)
+            load_trusted()
+            if not Path("/dev/dxg").is_char_device():
+                fail("已安装但缺少 /dev/dxg，请检查 VM 的 GPU 分区。")
+            return
+        fail("检测到旧版本或未完成的安装，请先运行 uninstall。")
+    for d in paths:
+        if os.path.lexists(d):
+            fail(f"保留已有文件 {d}。请先处理已有安装。")
+    if dkms:
+        if not shutil.which("dkms"):
+            fail("已选择 DKMS 安装，请先从发行版官方介质安装 dkms。")
+        if Path("/var/lib/dkms/gpupv-dxgkrnl/0.1").exists():
+            fail("检测到已有的 gpupv-dxgkrnl/0.1 注册。请检查其来源。")
+    if Path("/sys/module/dxgkrnl").exists() or sp.run(["modinfo","dxgkrnl"],stdout=sp.DEVNULL,stderr=sp.DEVNULL).returncode == 0:
+        fail("已有 dxgkrnl 驱动，请确认其来源。")
+    with tempfile.TemporaryDirectory() as temp:
+        build = Path(temp) / "kernel"
+        if module is None:
+            shutil.copytree(BUNDLE / "kernel", build)
+            if not dkms:
+                sp.run(["sh", str(build / "build"), str(HEADERS)], check=True)
+                module = build/"drivers/hv/dxgkrnl/dxgkrnl.ko"
+        if not dkms and pair:
+            sign_target = Path(temp)/"signed.ko"
+            shutil.copyfile(module, sign_target)
+            sp.run([sys.executable,str(BUNDLE/"guest/sign-module.py"),*map(str,pair),str(sign_target)],check=True)
+            module = sign_target
+        HOME.parent.mkdir(exist_ok=True)
+        HOME.mkdir(mode=0o755)
+        info = dict(device=device, bundle_version=meta and meta["version"], with_video=with_video, release=RELEASE, dkms=dkms, nv_smi=nv_smi, created_dirs=[], complete=False)
+        record_install(info)
+        try:
+            for n in ("lib", "drivers"):
+                copy_install_tree(BUNDLE/n, HOME/n)
+            copy_install_tree(BUNDLE/"guest", HOME/"guest")
+            shutil.copyfile(BUNDLE/"device.json", HOME/"device.json")
+            if meta:
+                shutil.copyfile(BUNDLE/"manifest.json", HOME/"manifest.json")
+            (HOME/"guest/gpupv-guest").chmod(0o755)
+            if (HOME/"guest/d3d12-compute").exists():
+                (HOME/"guest/d3d12-compute").chmod(0o755)
+            elif shutil.which("g++"):
+                headers = HOME / "guest/directx-headers/include"
+                sp.run(["g++", "-O2", "-std=c++17", "-DINITGUID",
+                        "-I", str(headers), "-I", str(headers/"wsl/stubs"),
+                        str(HOME/"guest/d3d12-compute.cpp"), "-o", str(HOME/"guest/d3d12-compute"),
+                        "-ldl"], check=True)
+            smi = HOME/"lib/nvidia-smi"
+            if smi.exists():
+                smi.chmod(0o755)
+            if dkms:
+                copy_install_tree(build,HOME/"kernel")
+                if pair:
+                    (HOME/"signing-key-path").write_text(str(pair[0]))
+                    (HOME/"signing-cert-path").write_text(str(pair[1]))
+            else:
+                shutil.copyfile(module, HOME/"dxgkrnl.ko")
+                (HOME/"dxgkrnl.ko").chmod(0o644)
+            vgem = with_video and sp.run(["modinfo","vgem"],stdout=sp.DEVNULL,stderr=sp.DEVNULL).returncode == 0
+            (HOME/"modules.conf").write_text("dxgkrnl\n" + ("vgem\n" if vgem else ""))
+            (HOME/"order.conf").write_text("softdep vgem pre: dxgkrnl\n")
+            (HOME/"device.rules").write_text('KERNEL=="dxg", GROUP="video", MODE="0660", TAG+="uaccess"\n'
+                                             'ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x1414", ATTR{device}=="0x008e", RUN{builtin}+="kmod load dxgkrnl"\n')
+            (HOME/"loader.conf").write_text("/usr/lib/wsl/lib\n")
+            for dest, src in paths.items():
+                missing = []
+                d = dest.parent
+                while not d.exists():
+                    missing.append(d)
+                    d = d.parent
+                for d in reversed(missing):
+                    d.mkdir()
+                    info["created_dirs"].insert(0,str(d))
+                    record_install(info)
+                if src == HOME / "dxgkrnl.ko":
+                    publish_module(src, dest, info)
+                else:
+                    dest.symlink_to(src)
+            if dkms:
+                sp.run(["dkms","add","gpupv-dxgkrnl/0.1"],check=True)
+                sp.run(["dkms","install","gpupv-dxgkrnl/0.1","-k",RELEASE],check=True)
+            sp.run(["depmod","-a",RELEASE],check=True)
+            sp.run(["ldconfig"],check=True)
+            sp.run(["udevadm","control","--reload"],check=True)
+            load_trusted()
+            if vgem:
+                sp.run(["modprobe", "vgem"], check=True)
+            sp.run(["udevadm","settle","--timeout=10"],check=True)
+            if not Path("/dev/dxg").is_char_device():
+                fail("模块已加载，仍缺少 /dev/dxg。请检查绑定的 GPU 分区。")
+            info["complete"] = True
+            record_install(info)
+        except BaseException:
+            uninstall()
+            raise
+
+
+def check_device():
+    if os.getuid() == 0:
+        fail("请使用普通用户运行 verify。")
+    if not Path("/dev/dxg").is_char_device():
+        fail("没有 /dev/dxg 字符设备。")
+    with open("/dev/dxg","rb+",buffering=0):
+        pass
+    device = check_owner()["device"]
+    print("boot_id={} uid={} gpu={}".format(Path('/proc/sys/kernel/random/boot_id').read_text().strip(),
+          os.getuid(), ", ".join(card["name"] for card in adapters(device))),flush=True)
+    smi = HOME/"lib/nvidia-smi"
+    if smi.is_file():
+        sp.run([str(smi),"--query-gpu=name,driver_version,memory.total","--format=csv"],check=True)
+    return device
+
+
+def verify(with_video=False, va_runtime=None):
+    device = check_device()
+    guest = HOME/"guest"
+    result = sp.run([str(guest/"d3d12-compute")], stdout=sp.PIPE, universal_newlines=True)
+    print(result.stdout, end="", flush=True)
+    result.check_returncode()
+    cards = adapters(device)
+    expected = Counter()
+    for card in cards:
+        pci = re.search(r"VEN_([0-9A-F]{4})&DEV_([0-9A-F]{4})", card.get("device",""), re.I)
+        if pci:
+            expected[":".join(pci.groups()).lower()] += 1
+    observed = Counter(re.findall(r"^Adapter ([0-9a-f]+:[0-9a-f]+) hardware=1$", result.stdout, re.M))
+    if expected - observed or sum(observed.values()) < len(cards):
+        fail("DXCore hardware inventory differs from device.json: expected {}, observed {}".format(expected, observed))
+    if ctypes.util.find_library("cuda") or (HOME/"lib/libcuda.so.1").is_file():
+        sp.run([sys.executable,str(guest/"cuda-compute.py")],check=True)
+    if ctypes.util.find_library("OpenCL"):
+        rc = sp.run([sys.executable,str(guest/"intel-opencl.py")]).returncode
+        if rc not in (0,77):
+            fail("GPU OpenCL compute failed: "+str(rc))
+    if with_video:
+        env=os.environ.copy()
+        if va_runtime:
+            runtime=Path(va_runtime).resolve()
+            env["PATH"]=str(runtime)+":"+env["PATH"]
+            env["LIBVA_DRIVERS_PATH"]=str(runtime/"lib")
+        if (HOME/"lib/nvidia-smi").is_file():
+            sp.run(["sh",str(guest/"verify-codec")],env=env,check=True)
+        if list((HOME/"drivers").glob("*/libigd12dxva64.so")):
+            sp.run(["sh",str(guest/"verify-intel-codec")],env=env,check=True)
+
+
+def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument("action", choices=("doctor","install","check","verify","uninstall"))
+    parser.add_argument("--dkms",action="store_true",help="use DKMS for installation and future kernel builds")
+    parser.add_argument("--va-runtime", help="use an isolated Intel VA-API userspace directory for verify")
+    parser.add_argument("--with-video",action="store_true")
+    args=parser.parse_args()
+    action=args.action
+    if args.va_runtime and action != "verify":
+        parser.error("--va-runtime requires verify")
+    if action in ("doctor","install"):
+        preflight()
+    if action == "verify":
+        verify(args.with_video or bool(args.va_runtime),args.va_runtime)
+    if action == "check":
+        check_device()
+    if action in ("install","uninstall"):
+        if os.geteuid():
+            fail("安装和卸载需要 sudo。")
+        os.umask(0o022)
+        lock = os.open("/run",os.O_RDONLY | os.O_DIRECTORY)
+        try:
+            fcntl.flock(lock,fcntl.LOCK_EX)
+            if action=="install":
+                install(args.dkms,args.with_video)
+            else:
+                uninstall()
+        finally:
+            os.close(lock)
+
+
+if __name__=="__main__":
+    try:
+        main()
+    except (RuntimeError,OSError,ValueError,sp.CalledProcessError) as e:
+        sys.exit(str(e))
+

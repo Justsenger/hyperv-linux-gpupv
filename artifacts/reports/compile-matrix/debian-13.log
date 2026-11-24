@@ -1,0 +1,1101 @@
+image=debian:13 unix_time=1795422256
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.7
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+Get:1 https://deb.debian.org/debian trixie InRelease [140 kB]
+Get:2 https://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+Get:3 https://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+Get:4 https://deb.debian.org/debian trixie/main amd64 Packages [9679 kB]
+Get:5 https://deb.debian.org/debian trixie-updates/main amd64 Packages [1108 B]
+Get:6 https://deb.debian.org/debian-security trixie-security/main amd64 Packages [309 kB]
+Fetched 10.2 MB in 2s (5414 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu cpio cpp cpp-14
+  cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu dracut-install gcc-14
+  gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu initramfs-tools
+  initramfs-tools-bin initramfs-tools-core klibc-utils libapparmor1 libasan8
+  libatomic1 libbinutils libbpf1 libcc1-0 libctf-nobfd0 libctf0 libdw1t64
+  libelf1t64 libgcc-14-dev libgomp1 libgprofng0 libhwasan0 libisl23 libitm1
+  libjansson4 libklibc libkmod2 liblsan0 libmpc3 libmpfr6 libquadmath0
+  libsframe1 libsystemd-shared libtsan2 libubsan1 linux-base
+  linux-headers-6.12.118+deb13-amd64 linux-headers-6.12.118+deb13-common
+  linux-image-6.12.118+deb13-amd64 linux-kbuild-6.12.118+deb13 logsave pahole
+  systemd udev
+Suggested packages:
+  binutils-doc gprofng-gui binutils-gold libarchive-dev cpp-doc gcc-14-locales
+  cpp-14-doc gcc-multilib manpages-dev autoconf automake libtool flex bison
+  gdb gcc-doc gcc-14-multilib gcc-14-doc gdb-x86-64-linux-gnu bash-completion
+  libarchive13t64 libcryptsetup12 libfido2-1 libgcrypt20 libidn2-0 libip4tc2
+  libp11-kit0 libpwquality1 libqrencode4 libtss2-rc0t64 firmware-linux-free
+  linux-doc-6.12 debian-kernel-handbook grub-pc | grub-efi-amd64 | extlinux
+  make-doc systemd-container systemd-homed systemd-userdbd systemd-boot
+  systemd-resolved systemd-repart libtss2-tcti-device0 polkitd
+Recommended packages:
+  libc6-dev | libc-dev libc6-dev libc-dev zstd busybox | busybox-static
+  apparmor default-dbus-system-bus | dbus-system-bus linux-sysctl-defaults
+  systemd-timesyncd | time-daemon systemd-cryptsetup
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu cpio cpp cpp-14
+  cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu dracut-install gcc gcc-14
+  gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu initramfs-tools
+  initramfs-tools-bin initramfs-tools-core klibc-utils kmod libapparmor1
+  libasan8 libatomic1 libbinutils libbpf1 libcc1-0 libctf-nobfd0 libctf0
+  libdw1t64 libelf1t64 libgcc-14-dev libgomp1 libgprofng0 libhwasan0 libisl23
+  libitm1 libjansson4 libklibc libkmod2 liblsan0 libmpc3 libmpfr6 libquadmath0
+  libsframe1 libsystemd-shared libtsan2 libubsan1 linux-base
+  linux-headers-6.12.118+deb13-amd64 linux-headers-6.12.118+deb13-common
+  linux-headers-amd64 linux-image-6.12.118+deb13-amd64
+  linux-kbuild-6.12.118+deb13 logsave make pahole systemd udev
+0 upgraded, 56 newly installed, 0 to remove and 6 not upgraded.
+Need to get 186 MB of archives.
+After this operation, 417 MB of additional disk space will be used.
+Get:1 https://deb.debian.org/debian trixie/main amd64 libsystemd-shared amd64 257.13-1~deb13u1 [2155 kB]
+Get:2 https://deb.debian.org/debian trixie/main amd64 libapparmor1 amd64 4.1.0-1 [43.7 kB]
+Get:3 https://deb.debian.org/debian trixie/main amd64 systemd amd64 257.13-1~deb13u1 [3094 kB]
+Get:4 https://deb.debian.org/debian trixie/main amd64 linux-base all 4.12.1 [25.5 kB]
+Get:5 https://deb.debian.org/debian trixie/main amd64 libkmod2 amd64 34.2-2 [63.2 kB]
+Get:6 https://deb.debian.org/debian trixie/main amd64 kmod amd64 34.2-2 [95.7 kB]
+Get:7 https://deb.debian.org/debian trixie/main amd64 cpio amd64 2.15+dfsg-2 [252 kB]
+Get:8 https://deb.debian.org/debian trixie/main amd64 dracut-install amd64 106-6 [37.8 kB]
+Get:9 https://deb.debian.org/debian trixie/main amd64 initramfs-tools-bin amd64 0.148.4 [17.5 kB]
+Get:10 https://deb.debian.org/debian trixie/main amd64 libklibc amd64 2.0.14-1 [44.8 kB]
+Get:11 https://deb.debian.org/debian trixie/main amd64 klibc-utils amd64 2.0.14-1 [95.1 kB]
+Get:12 https://deb.debian.org/debian trixie/main amd64 logsave amd64 1.47.2-3+b12 [24.9 kB]
+Get:13 https://deb.debian.org/debian trixie/main amd64 udev amd64 257.13-1~deb13u1 [1419 kB]
+Get:14 https://deb.debian.org/debian trixie/main amd64 initramfs-tools-core all 0.148.4 [50.7 kB]
+Get:15 https://deb.debian.org/debian trixie/main amd64 initramfs-tools all 0.148.4 [17.4 kB]
+Get:16 https://deb.debian.org/debian-security trixie-security/main amd64 linux-image-6.12.118+deb13-amd64 amd64 6.12.118-1 [109 MB]
+Get:17 https://deb.debian.org/debian trixie/main amd64 libsframe1 amd64 2.44-3 [78.4 kB]
+Get:18 https://deb.debian.org/debian trixie/main amd64 binutils-common amd64 2.44-3 [2509 kB]
+Get:19 https://deb.debian.org/debian trixie/main amd64 libbinutils amd64 2.44-3 [534 kB]
+Get:20 https://deb.debian.org/debian trixie/main amd64 libgprofng0 amd64 2.44-3 [808 kB]
+Get:21 https://deb.debian.org/debian trixie/main amd64 libctf-nobfd0 amd64 2.44-3 [156 kB]
+Get:22 https://deb.debian.org/debian trixie/main amd64 libctf0 amd64 2.44-3 [88.6 kB]
+Get:23 https://deb.debian.org/debian trixie/main amd64 libjansson4 amd64 2.14-2+b3 [39.8 kB]
+Get:24 https://deb.debian.org/debian trixie/main amd64 binutils-x86-64-linux-gnu amd64 2.44-3 [1014 kB]
+Get:25 https://deb.debian.org/debian trixie/main amd64 binutils amd64 2.44-3 [265 kB]
+Get:26 https://deb.debian.org/debian trixie/main amd64 libisl23 amd64 0.27-1 [659 kB]
+Get:27 https://deb.debian.org/debian trixie/main amd64 libmpfr6 amd64 4.2.2-1 [729 kB]
+Get:28 https://deb.debian.org/debian trixie/main amd64 libmpc3 amd64 1.3.1-1+b3 [52.2 kB]
+Get:29 https://deb.debian.org/debian trixie/main amd64 cpp-14-x86-64-linux-gnu amd64 14.2.0-19 [11.0 MB]
+Get:30 https://deb.debian.org/debian trixie/main amd64 cpp-14 amd64 14.2.0-19 [1280 B]
+Get:31 https://deb.debian.org/debian trixie/main amd64 cpp-x86-64-linux-gnu amd64 4:14.2.0-1 [4840 B]
+Get:32 https://deb.debian.org/debian trixie/main amd64 cpp amd64 4:14.2.0-1 [1568 B]
+Get:33 https://deb.debian.org/debian trixie/main amd64 libcc1-0 amd64 14.2.0-19 [42.8 kB]
+Get:34 https://deb.debian.org/debian trixie/main amd64 libgomp1 amd64 14.2.0-19 [137 kB]
+Get:35 https://deb.debian.org/debian trixie/main amd64 libitm1 amd64 14.2.0-19 [26.0 kB]
+Get:36 https://deb.debian.org/debian trixie/main amd64 libatomic1 amd64 14.2.0-19 [9308 B]
+Get:37 https://deb.debian.org/debian trixie/main amd64 libasan8 amd64 14.2.0-19 [2725 kB]
+Get:38 https://deb.debian.org/debian trixie/main amd64 liblsan0 amd64 14.2.0-19 [1204 kB]
+Get:39 https://deb.debian.org/debian trixie/main amd64 libtsan2 amd64 14.2.0-19 [2460 kB]
+Get:40 https://deb.debian.org/debian trixie/main amd64 libubsan1 amd64 14.2.0-19 [1074 kB]
+Get:41 https://deb.debian.org/debian trixie/main amd64 libhwasan0 amd64 14.2.0-19 [1488 kB]
+Get:42 https://deb.debian.org/debian trixie/main amd64 libquadmath0 amd64 14.2.0-19 [145 kB]
+Get:43 https://deb.debian.org/debian trixie/main amd64 libgcc-14-dev amd64 14.2.0-19 [2672 kB]
+Get:44 https://deb.debian.org/debian trixie/main amd64 gcc-14-x86-64-linux-gnu amd64 14.2.0-19 [21.4 MB]
+Get:45 https://deb.debian.org/debian trixie/main amd64 gcc-14 amd64 14.2.0-19 [540 kB]
+Get:46 https://deb.debian.org/debian trixie/main amd64 gcc-x86-64-linux-gnu amd64 4:14.2.0-1 [1436 B]
+Get:47 https://deb.debian.org/debian trixie/main amd64 gcc amd64 4:14.2.0-1 [5136 B]
+Get:48 https://deb.debian.org/debian trixie/main amd64 libelf1t64 amd64 0.192-4 [189 kB]
+Get:49 https://deb.debian.org/debian trixie/main amd64 libbpf1 amd64 1:1.5.0-3 [169 kB]
+Get:50 https://deb.debian.org/debian trixie/main amd64 libdw1t64 amd64 0.192-4 [255 kB]
+Get:51 https://deb.debian.org/debian-security trixie-security/main amd64 linux-headers-6.12.118+deb13-common all 6.12.118-1 [11.4 MB]
+Get:52 https://deb.debian.org/debian trixie/main amd64 pahole amd64 1.30-1 [259 kB]
+Get:53 https://deb.debian.org/debian-security trixie-security/main amd64 linux-kbuild-6.12.118+deb13 amd64 6.12.118-1 [1981 kB]
+Get:54 https://deb.debian.org/debian-security trixie-security/main amd64 linux-headers-6.12.118+deb13-amd64 amd64 6.12.118-1 [3307 kB]
+Get:55 https://deb.debian.org/debian-security trixie-security/main amd64 linux-headers-amd64 amd64 6.12.118-1 [1412 B]
+Get:56 https://deb.debian.org/debian trixie/main amd64 make amd64 4.4.1-2 [463 kB]
+Preconfiguring packages ...
+Fetched 186 MB in 7s (26.3 MB/s)
+Selecting previously unselected package libsystemd-shared:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4951 files and directories currently installed.)
+Preparing to unpack .../libsystemd-shared_257.13-1~deb13u1_amd64.deb ...
+Unpacking libsystemd-shared:amd64 (257.13-1~deb13u1) ...
+Selecting previously unselected package libapparmor1:amd64.
+Preparing to unpack .../libapparmor1_4.1.0-1_amd64.deb ...
+Unpacking libapparmor1:amd64 (4.1.0-1) ...
+Setting up libsystemd-shared:amd64 (257.13-1~deb13u1) ...
+Selecting previously unselected package systemd.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4964 files and directories currently installed.)
+Preparing to unpack .../00-systemd_257.13-1~deb13u1_amd64.deb ...
+Unpacking systemd (257.13-1~deb13u1) ...
+Selecting previously unselected package linux-base.
+Preparing to unpack .../01-linux-base_4.12.1_all.deb ...
+Unpacking linux-base (4.12.1) ...
+Selecting previously unselected package libkmod2:amd64.
+Preparing to unpack .../02-libkmod2_34.2-2_amd64.deb ...
+Unpacking libkmod2:amd64 (34.2-2) ...
+Selecting previously unselected package kmod.
+Preparing to unpack .../03-kmod_34.2-2_amd64.deb ...
+Unpacking kmod (34.2-2) ...
+Selecting previously unselected package cpio.
+Preparing to unpack .../04-cpio_2.15+dfsg-2_amd64.deb ...
+Unpacking cpio (2.15+dfsg-2) ...
+Selecting previously unselected package dracut-install.
+Preparing to unpack .../05-dracut-install_106-6_amd64.deb ...
+Unpacking dracut-install (106-6) ...
+Selecting previously unselected package initramfs-tools-bin.
+Preparing to unpack .../06-initramfs-tools-bin_0.148.4_amd64.deb ...
+Unpacking initramfs-tools-bin (0.148.4) ...
+Selecting previously unselected package libklibc:amd64.
+Preparing to unpack .../07-libklibc_2.0.14-1_amd64.deb ...
+Unpacking libklibc:amd64 (2.0.14-1) ...
+Selecting previously unselected package klibc-utils.
+Preparing to unpack .../08-klibc-utils_2.0.14-1_amd64.deb ...
+Unpacking klibc-utils (2.0.14-1) ...
+Selecting previously unselected package logsave.
+Preparing to unpack .../09-logsave_1.47.2-3+b12_amd64.deb ...
+Unpacking logsave (1.47.2-3+b12) ...
+Selecting previously unselected package udev.
+Preparing to unpack .../10-udev_257.13-1~deb13u1_amd64.deb ...
+Unpacking udev (257.13-1~deb13u1) ...
+Selecting previously unselected package initramfs-tools-core.
+Preparing to unpack .../11-initramfs-tools-core_0.148.4_all.deb ...
+Unpacking initramfs-tools-core (0.148.4) ...
+Selecting previously unselected package initramfs-tools.
+Preparing to unpack .../12-initramfs-tools_0.148.4_all.deb ...
+Unpacking initramfs-tools (0.148.4) ...
+Setting up linux-base (4.12.1) ...
+Selecting previously unselected package linux-image-6.12.118+deb13-amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6269 files and directories currently installed.)
+Preparing to unpack .../00-linux-image-6.12.118+deb13-amd64_6.12.118-1_amd64.deb ...
+Unpacking linux-image-6.12.118+deb13-amd64 (6.12.118-1) ...
+Selecting previously unselected package libsframe1:amd64.
+Preparing to unpack .../01-libsframe1_2.44-3_amd64.deb ...
+Unpacking libsframe1:amd64 (2.44-3) ...
+Selecting previously unselected package binutils-common:amd64.
+Preparing to unpack .../02-binutils-common_2.44-3_amd64.deb ...
+Unpacking binutils-common:amd64 (2.44-3) ...
+Selecting previously unselected package libbinutils:amd64.
+Preparing to unpack .../03-libbinutils_2.44-3_amd64.deb ...
+Unpacking libbinutils:amd64 (2.44-3) ...
+Selecting previously unselected package libgprofng0:amd64.
+Preparing to unpack .../04-libgprofng0_2.44-3_amd64.deb ...
+Unpacking libgprofng0:amd64 (2.44-3) ...
+Selecting previously unselected package libctf-nobfd0:amd64.
+Preparing to unpack .../05-libctf-nobfd0_2.44-3_amd64.deb ...
+Unpacking libctf-nobfd0:amd64 (2.44-3) ...
+Selecting previously unselected package libctf0:amd64.
+Preparing to unpack .../06-libctf0_2.44-3_amd64.deb ...
+Unpacking libctf0:amd64 (2.44-3) ...
+Selecting previously unselected package libjansson4:amd64.
+Preparing to unpack .../07-libjansson4_2.14-2+b3_amd64.deb ...
+Unpacking libjansson4:amd64 (2.14-2+b3) ...
+Selecting previously unselected package binutils-x86-64-linux-gnu.
+Preparing to unpack .../08-binutils-x86-64-linux-gnu_2.44-3_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.44-3) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../09-binutils_2.44-3_amd64.deb ...
+Unpacking binutils (2.44-3) ...
+Selecting previously unselected package libisl23:amd64.
+Preparing to unpack .../10-libisl23_0.27-1_amd64.deb ...
+Unpacking libisl23:amd64 (0.27-1) ...
+Selecting previously unselected package libmpfr6:amd64.
+Preparing to unpack .../11-libmpfr6_4.2.2-1_amd64.deb ...
+Unpacking libmpfr6:amd64 (4.2.2-1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../12-libmpc3_1.3.1-1+b3_amd64.deb ...
+Unpacking libmpc3:amd64 (1.3.1-1+b3) ...
+Selecting previously unselected package cpp-14-x86-64-linux-gnu.
+Preparing to unpack .../13-cpp-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+Unpacking cpp-14-x86-64-linux-gnu (14.2.0-19) ...
+Selecting previously unselected package cpp-14.
+Preparing to unpack .../14-cpp-14_14.2.0-19_amd64.deb ...
+Unpacking cpp-14 (14.2.0-19) ...
+Selecting previously unselected package cpp-x86-64-linux-gnu.
+Preparing to unpack .../15-cpp-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+Unpacking cpp-x86-64-linux-gnu (4:14.2.0-1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../16-cpp_4%3a14.2.0-1_amd64.deb ...
+Unpacking cpp (4:14.2.0-1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../17-libcc1-0_14.2.0-19_amd64.deb ...
+Unpacking libcc1-0:amd64 (14.2.0-19) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../18-libgomp1_14.2.0-19_amd64.deb ...
+Unpacking libgomp1:amd64 (14.2.0-19) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../19-libitm1_14.2.0-19_amd64.deb ...
+Unpacking libitm1:amd64 (14.2.0-19) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../20-libatomic1_14.2.0-19_amd64.deb ...
+Unpacking libatomic1:amd64 (14.2.0-19) ...
+Selecting previously unselected package libasan8:amd64.
+Preparing to unpack .../21-libasan8_14.2.0-19_amd64.deb ...
+Unpacking libasan8:amd64 (14.2.0-19) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../22-liblsan0_14.2.0-19_amd64.deb ...
+Unpacking liblsan0:amd64 (14.2.0-19) ...
+Selecting previously unselected package libtsan2:amd64.
+Preparing to unpack .../23-libtsan2_14.2.0-19_amd64.deb ...
+Unpacking libtsan2:amd64 (14.2.0-19) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../24-libubsan1_14.2.0-19_amd64.deb ...
+Unpacking libubsan1:amd64 (14.2.0-19) ...
+Selecting previously unselected package libhwasan0:amd64.
+Preparing to unpack .../25-libhwasan0_14.2.0-19_amd64.deb ...
+Unpacking libhwasan0:amd64 (14.2.0-19) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../26-libquadmath0_14.2.0-19_amd64.deb ...
+Unpacking libquadmath0:amd64 (14.2.0-19) ...
+Selecting previously unselected package libgcc-14-dev:amd64.
+Preparing to unpack .../27-libgcc-14-dev_14.2.0-19_amd64.deb ...
+Unpacking libgcc-14-dev:amd64 (14.2.0-19) ...
+Selecting previously unselected package gcc-14-x86-64-linux-gnu.
+Preparing to unpack .../28-gcc-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+Unpacking gcc-14-x86-64-linux-gnu (14.2.0-19) ...
+Selecting previously unselected package gcc-14.
+Preparing to unpack .../29-gcc-14_14.2.0-19_amd64.deb ...
+Unpacking gcc-14 (14.2.0-19) ...
+Selecting previously unselected package gcc-x86-64-linux-gnu.
+Preparing to unpack .../30-gcc-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+Unpacking gcc-x86-64-linux-gnu (4:14.2.0-1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../31-gcc_4%3a14.2.0-1_amd64.deb ...
+Unpacking gcc (4:14.2.0-1) ...
+Selecting previously unselected package libelf1t64:amd64.
+Preparing to unpack .../32-libelf1t64_0.192-4_amd64.deb ...
+Unpacking libelf1t64:amd64 (0.192-4) ...
+Selecting previously unselected package libbpf1:amd64.
+Preparing to unpack .../33-libbpf1_1%3a1.5.0-3_amd64.deb ...
+Unpacking libbpf1:amd64 (1:1.5.0-3) ...
+Selecting previously unselected package libdw1t64:amd64.
+Preparing to unpack .../34-libdw1t64_0.192-4_amd64.deb ...
+Unpacking libdw1t64:amd64 (0.192-4) ...
+Selecting previously unselected package linux-headers-6.12.118+deb13-common.
+Preparing to unpack .../35-linux-headers-6.12.118+deb13-common_6.12.118-1_all.deb ...
+Unpacking linux-headers-6.12.118+deb13-common (6.12.118-1) ...
+Selecting previously unselected package pahole.
+Preparing to unpack .../36-pahole_1.30-1_amd64.deb ...
+Unpacking pahole (1.30-1) ...
+Selecting previously unselected package linux-kbuild-6.12.118+deb13.
+Preparing to unpack .../37-linux-kbuild-6.12.118+deb13_6.12.118-1_amd64.deb ...
+Unpacking linux-kbuild-6.12.118+deb13 (6.12.118-1) ...
+Selecting previously unselected package linux-headers-6.12.118+deb13-amd64.
+Preparing to unpack .../38-linux-headers-6.12.118+deb13-amd64_6.12.118-1_amd64.deb ...
+Unpacking linux-headers-6.12.118+deb13-amd64 (6.12.118-1) ...
+Selecting previously unselected package linux-headers-amd64.
+Preparing to unpack .../39-linux-headers-amd64_6.12.118-1_amd64.deb ...
+Unpacking linux-headers-amd64 (6.12.118-1) ...
+Selecting previously unselected package make.
+Preparing to unpack .../40-make_4.4.1-2_amd64.deb ...
+Unpacking make (4.4.1-2) ...
+Setting up cpio (2.15+dfsg-2) ...
+update-alternatives: using /usr/bin/mt-gnu to provide /usr/bin/mt (mt) in auto mode
+Setting up libapparmor1:amd64 (4.1.0-1) ...
+Setting up linux-headers-6.12.118+deb13-common (6.12.118-1) ...
+Setting up binutils-common:amd64 (2.44-3) ...
+Setting up libctf-nobfd0:amd64 (2.44-3) ...
+Setting up systemd (257.13-1~deb13u1) ...
+Created symlink '/etc/systemd/system/getty.target.wants/getty@tty1.service' → '/usr/lib/systemd/system/getty@.service'.
+Created symlink '/etc/systemd/system/multi-user.target.wants/remote-fs.target' → '/usr/lib/systemd/system/remote-fs.target'.
+Created symlink '/etc/systemd/system/sysinit.target.wants/systemd-pstore.service' → '/usr/lib/systemd/system/systemd-pstore.service'.
+Initializing machine ID from random generator.
+Creating group 'systemd-journal' with GID 999.
+Creating group 'systemd-network' with GID 998.
+Creating user 'systemd-network' (systemd Network Management) with UID 998 and GID 998.
+/usr/lib/tmpfiles.d/legacy.conf:14: Duplicate line for path "/run/lock", ignoring.
+Setting up libgomp1:amd64 (14.2.0-19) ...
+Setting up libsframe1:amd64 (2.44-3) ...
+Setting up libelf1t64:amd64 (0.192-4) ...
+Setting up libjansson4:amd64 (2.14-2+b3) ...
+Setting up libdw1t64:amd64 (0.192-4) ...
+Setting up libklibc:amd64 (2.0.14-1) ...
+Setting up make (4.4.1-2) ...
+Setting up libmpfr6:amd64 (4.2.2-1) ...
+Setting up libquadmath0:amd64 (14.2.0-19) ...
+Setting up libmpc3:amd64 (1.3.1-1+b3) ...
+Setting up libatomic1:amd64 (14.2.0-19) ...
+Setting up logsave (1.47.2-3+b12) ...
+Setting up libubsan1:amd64 (14.2.0-19) ...
+Setting up libhwasan0:amd64 (14.2.0-19) ...
+Setting up libasan8:amd64 (14.2.0-19) ...
+Setting up libtsan2:amd64 (14.2.0-19) ...
+Setting up libbinutils:amd64 (2.44-3) ...
+Setting up libisl23:amd64 (0.27-1) ...
+Setting up klibc-utils (2.0.14-1) ...
+No diversion 'diversion of /usr/share/initramfs-tools/hooks/klibc to /usr/share/initramfs-tools/hooks/klibc^i-t by klibc-utils', none removed.
+Setting up libcc1-0:amd64 (14.2.0-19) ...
+Setting up libbpf1:amd64 (1:1.5.0-3) ...
+Setting up liblsan0:amd64 (14.2.0-19) ...
+Setting up libitm1:amd64 (14.2.0-19) ...
+Setting up libkmod2:amd64 (34.2-2) ...
+Setting up initramfs-tools-bin (0.148.4) ...
+Setting up libctf0:amd64 (2.44-3) ...
+Setting up kmod (34.2-2) ...
+Setting up libgprofng0:amd64 (2.44-3) ...
+Setting up udev (257.13-1~deb13u1) ...
+Creating group 'input' with GID 997.
+Creating group 'sgx' with GID 996.
+Creating group 'clock' with GID 995.
+Creating group 'kvm' with GID 994.
+Creating group 'render' with GID 993.
+Setting up cpp-14-x86-64-linux-gnu (14.2.0-19) ...
+Setting up pahole (1.30-1) ...
+Setting up cpp-14 (14.2.0-19) ...
+Setting up dracut-install (106-6) ...
+Setting up linux-kbuild-6.12.118+deb13 (6.12.118-1) ...
+Setting up libgcc-14-dev:amd64 (14.2.0-19) ...
+Setting up initramfs-tools-core (0.148.4) ...
+Setting up binutils-x86-64-linux-gnu (2.44-3) ...
+Setting up cpp-x86-64-linux-gnu (4:14.2.0-1) ...
+Setting up initramfs-tools (0.148.4) ...
+update-initramfs: deferring update (trigger activated)
+Setting up binutils (2.44-3) ...
+Setting up linux-image-6.12.118+deb13-amd64 (6.12.118-1) ...
+I: /vmlinuz.old is now a symlink to boot/vmlinuz-6.12.118+deb13-amd64
+I: /initrd.img.old is now a symlink to boot/initrd.img-6.12.118+deb13-amd64
+I: /vmlinuz is now a symlink to boot/vmlinuz-6.12.118+deb13-amd64
+I: /initrd.img is now a symlink to boot/initrd.img-6.12.118+deb13-amd64
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-6.12.118+deb13-amd64
+W: No zstd in /usr/bin:/sbin:/bin, using gzip
+Setting up cpp (4:14.2.0-1) ...
+Setting up gcc-14-x86-64-linux-gnu (14.2.0-19) ...
+Setting up gcc-x86-64-linux-gnu (4:14.2.0-1) ...
+Setting up gcc-14 (14.2.0-19) ...
+Setting up linux-headers-6.12.118+deb13-amd64 (6.12.118-1) ...
+Setting up linux-headers-amd64 (6.12.118-1) ...
+Setting up gcc (4:14.2.0-1) ...
+Processing triggers for libc-bin (2.41-12+deb13u4) ...
+Processing triggers for initramfs-tools (0.148.4) ...
+update-initramfs: Generating /boot/initrd.img-6.12.118+deb13-amd64
+W: No zstd in /usr/bin:/sbin:/bin, using gzip
+HEADER_TREE=/usr/src/linux-headers-6.12.118+deb13-amd64
+/tmp/tmp.cyC8AkiOzB/probe.c: In function 'p':
+/tmp/tmp.cyC8AkiOzB/probe.c:2:86: error: passing argument 1 of '__dma_fence_is_later' makes integer from pointer without a cast [-Wint-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.cyC8AkiOzB/probe.c:1:
+/usr/src/linux-headers-6.12.118+deb13-common/include/linux/dma-fence.h:472:45: note: expected 'u64' {aka 'long long unsigned int'} but argument is of type 'struct dma_fence *'
+  472 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+make[2]: *** [/usr/src/linux-headers-6.12.118+deb13-common/scripts/Makefile.build:234: /tmp/tmp.cyC8AkiOzB/probe.o] Error 1
+make[1]: *** [/usr/src/linux-headers-6.12.118+deb13-common/Makefile:2008: /tmp/tmp.cyC8AkiOzB] Error 2
+make: *** [/usr/src/linux-headers-6.12.118+deb13-common/Makefile:236: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+make: Entering directory '/usr/src/linux-headers-6.12.118+deb13-amd64'
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+/tmp/kernel/drivers/hv/dxgkrnl/dxgmodule.c: In function 'dxg_pci_probe_device':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgmodule.c:608:43: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  608 |                 DXG_TRACE("err: %d",  ret);
+      |                                           ^
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/ioctl.o
+In file included from /tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:21:
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_open_adapter_from_luid':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:147:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  147 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_query_statistics':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:238:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  238 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkp_enum_adapters':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:360:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  360 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_enum_adapters':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:576:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  576 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_enum_adapters3':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:601:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  601 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_close_adapter':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:624:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  624 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_query_adapter_info':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:670:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  670 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_create_device':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:756:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  756 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_destroy_device':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:803:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  803 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_create_context_virtual':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:897:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  897 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_destroy_context':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:966:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  966 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_create_hwqueue':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:1048:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 1048 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_destroy_hwqueue':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:1116:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 1116 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_create_paging_queue':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:1215:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 1215 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_destroy_paging_queue':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:1293:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 1293 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'get_standard_alloc_priv_data':
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:1370:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1370 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_create_allocation':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:1781:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 1781 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_destroy_allocation':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2010:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2010 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_make_resident':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2089:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2089 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_evict':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2147:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2147 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_offer_allocations':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2201:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2201 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_reclaim_allocations':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2260:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2260 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_submit_command':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2328:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2328 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_submit_command_to_hwqueue':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2384:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2384 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_submit_signal_to_hwqueue':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2458:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2458 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_submit_wait_to_hwqueue':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2542:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2542 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_map_gpu_va':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2609:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2609 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_reserve_gpu_va':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2672:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2672 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_create_sync_object':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2890:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2890 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_destroy_sync_object':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:2933:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 2933 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_open_sync_object_nt':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3068:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3068 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_signal_sync_object':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3176:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3176 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_signal_sync_object_cpu':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3228:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3228 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_signal_sync_object_gpu':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3287:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3287 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_signal_sync_object_gpu2':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3411:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3411 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_wait_sync_object':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3464:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3464 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_wait_sync_object_cpu':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3585:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3585 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_wait_sync_object_gpu':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3718:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3718 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_lock2':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3794:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3794 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_unlock2':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3874:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3874 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_update_alloc_property':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3917:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3917 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_mark_device_as_error':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3953:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3953 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_query_alloc_residency':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:3994:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 3994 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_set_allocation_priority':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4029:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4029 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_get_allocation_priority':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4064:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4064 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_set_context_scheduling_priority':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4121:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4121 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_get_context_scheduling_priority':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4186:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4186 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_set_context_process_scheduling_priority':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4207:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4207 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_get_context_process_scheduling_priority':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4229:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4229 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_change_vidmem_reservation':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4275:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4275 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_query_clock_calibration':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4318:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4318 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_flush_heap_transitions':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4365:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4365 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_invalidate_cache':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4406:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4406 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_escape':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4576:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4576 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_share_objects':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:4939:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 4939 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_query_resource_info_nt':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:5020:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 5020 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_open_resource_nt':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:5330:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 5330 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_share_object_with_host':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:5361:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 5361 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_enum_processes':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:5447:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 5447 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c: In function 'dxgkio_is_feature_enabled':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/ioctl.c:5491:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+ 5491 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_sync_msg':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:496:44: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  496 |                 DXG_TRACE("Error: %x", ret);
+      |                                            ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_set_iospace_region':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:664:44: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  664 |                 DXG_TRACE("Error: %d", ret);
+      |                                            ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_create_process':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:717:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  717 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_destroy_process':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:745:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  745 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_open_sync_object_nt':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:808:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  808 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_open_sync_object':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:857:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  857 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_create_nt_shared_object':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:899:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  899 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_destroy_nt_shared_object':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:930:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  930 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_destroy_sync_object':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:963:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+  963 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_create_device':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1133:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1133 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_destroy_device':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1158:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1158 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_flush_device':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1185:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1185 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_create_context':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1257:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1257 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_destroy_context':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1283:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1283 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_create_paging_queue':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1330:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1330 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_destroy_paging_queue':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1357:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1357 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'copy_private_data':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1433:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1433 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'create_existing_sysmem':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1572:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1572 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'process_allocation_handles':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1654:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1654 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'create_local_allocations':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1805:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1805 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_create_allocation':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1931:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1931 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_destroy_allocation':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:1972:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 1972 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_query_clock_calibration':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2016:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2016 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_flush_heap_transitions':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2039:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2039 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_invalidate_cache':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2066:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2066 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_is_feature_enabled':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2115:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2115 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_query_alloc_residency':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2188:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2188 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_escape':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2264:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2264 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_query_vidmem_info':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2328:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2328 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_get_device_state':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2373:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2373 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_open_resource':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2426:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2426 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_get_stdalloc_data':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2511:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2511 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_make_resident':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2563:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2563 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_evict':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2609:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2609 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_submit_command':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2664:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2664 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_map_gpu_va':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2701:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2701 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_reserve_gpu_va':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2731:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2731 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_free_gpu_va':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2758:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2758 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_update_gpu_va':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2814:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2814 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_create_sync_object':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2900:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2900 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_signal_sync_object':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:2994:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 2994 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_wait_sync_object_cpu':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3054:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3054 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_wait_sync_object_gpu':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3107:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3107 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_lock2':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3187:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3187 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_unlock2':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3214:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3214 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_update_alloc_property':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3259:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3259 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_mark_device_as_error':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3284:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3284 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_set_allocation_priority':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3354:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3354 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_get_allocation_priority':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3436:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3436 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_set_context_sch_priority':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3465:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3465 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_get_context_sch_priority':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3499:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3499 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_offer_allocations':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3545:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3545 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_reclaim_allocations':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3621:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3621 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_change_vidmem_reservation':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3651:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3651 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_destroy_hwqueue':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3815:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3815 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_query_adapter_info':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3899:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3899 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_submit_command_hwqueue':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3957:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3957 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c: In function 'dxgvmb_send_query_statistics':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.c:3993:42: warning: suggest braces around empty body in an 'if' statement [-Wempty-body]
+ 3993 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+In file included from /tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.c:34:
+/tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.c: In function 'dxgkio_create_sync_file':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.c:189:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  189 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.c: In function 'dxgkio_open_syncobj_from_syncfile':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.c:313:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  313 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.c: In function 'dxgkio_wait_sync_file':
+/tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an 'else' statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.c:411:9: note: in expansion of macro 'DXG_TRACE_IOCTL_END'
+  411 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+  LD [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/.module-common.o
+  LD [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+make: Leaving directory '/usr/src/linux-headers-6.12.118+deb13-amd64'
+filename:       /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+version:        2.0.3
+description:    Microsoft Dxgkrnl virtual compute device Driver
+license:        GPL
+srcversion:     CF45C498F1D2DAB00C2E994
+alias:          vmbus:c0cbe9dd605036449448ea1254a5d177
+alias:          vmbus:182d386e36334b4facc42b7703d4df4a
+alias:          pci:v00001414d0000008Asv*sd*bc*sc*i*
+alias:          pci:v00001414d0000008Esv*sd*bc*sc*i*
+depends:        hv_vmbus
+name:           dxgkrnl
+retpoline:      Y
+vermagic:       6.12.118+deb13-amd64 SMP preempt mod_unload modversions 
+f640b9970d809da441931d8cd7944481c03a11aa147e987d39ddaef09306149a  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+exit=0

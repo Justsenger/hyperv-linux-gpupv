@@ -1,0 +1,2 @@
+Running timer as unit: run-p1284-i1285.timer
+Will run service as unit: run-p1284-i1285.service

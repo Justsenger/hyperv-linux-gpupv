@@ -1,0 +1,8 @@
+irisxe-x64.tar byte-identical guest/gpupv-guest
+irisxe-x64.tar byte-identical kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+irisxe-x64.tar byte-identical kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+rtx2060-x64.tar byte-identical guest/gpupv-guest
+rtx2060-x64.tar byte-identical kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+rtx2060-x64.tar byte-identical kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+irisxe-x64.iso UDF volume recognition sequence present
+rtx2060-x64.iso UDF volume recognition sequence present

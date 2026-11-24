@@ -1,0 +1,77 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+Linux gpupv-test-da7ac386ff754cebb650e8c89b25f387 6.19.10-300.fc44.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Mar 25 18:23:49 UTC 2026 x86_64 GNU/Linux
+crw-rw----. 1 root video 10, 262 Nov 24 03:21 /dev/dxg
+[    2.729318] hv_vmbus: Vmbus version:6.0
+[    2.731294] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    2.733571] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    2.772627] hv_vmbus: registering driver hid_hyperv
+[    2.776952] hv_vmbus: registering driver hyperv_keyboard
+[    2.793757] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input1
+[    2.796500] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    2.809637] hv_vmbus: registering driver hv_pci
+[    2.818875] hv_pci cc48c991-b923-4d74-8959-c9a225d518bb: PCI VMBus probing: Using version 0x10004
+[    2.830759] hv_pci cc48c991-b923-4d74-8959-c9a225d518bb: PCI host bridge to bus b923:00
+[    2.838272] hv_vmbus: registering driver hv_storvsc
+[    5.394323] hv_vmbus: registering driver hv_sock
+[   12.849503] dxgkrnl: loading out-of-tree module taints kernel.
+[   12.853676] hv_vmbus: registering driver dxgkrnl
+[   14.347272] hv_vmbus: registering driver hv_balloon
+[   14.371122] hv_vmbus: registering driver hyperv_drm
+[   14.394910] hv_vmbus: registering driver hv_utils
+[   14.428088] hv_vmbus: registering driver hv_netvsc
+[   53.256744] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   53.259334] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   53.260921] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   53.262481] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   53.264208] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   56.140768] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   56.143103] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   56.144598] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   56.145904] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   56.147836] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   56.310836] misc dxg: dxgk: dxgkio_reserve_gpu_va: Ioctl failed: -75
+[   56.312214] misc dxg: dxgk: dxgkio_reserve_gpu_va: Ioctl failed: -75
+[   60.545492] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   60.549324] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.550959] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.552648] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.554389] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   60.701407] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   60.703277] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.705782] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.707666] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.709520] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   60.798300] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   60.800763] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.802161] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.803689] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.805432] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   60.898658] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   60.901120] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.902901] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.904480] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   60.906096] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   62.255345] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   62.258096] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.259710] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.261203] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.262796] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   62.368863] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   62.370689] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.372186] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.374115] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.376214] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   62.446377] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   62.449340] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.450945] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.452387] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.454005] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   62.527431] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   62.530090] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.531545] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.532887] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   62.534391] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+lrwxrwxrwx. 1 root root 0 Nov 24 03:22 /sys/bus/pci/devices/b923:00:00.0/driver -> ../../../../../../../../bus/pci/drivers/dxgkrnl
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda3        32G  3.2G   29G  10% /
+lrwxrwxrwx. 1 root root 40 Mar 25  2026 /lib/modules/6.19.10-300.fc44.x86_64/build -> /usr/src/kernels/6.19.10-300.fc44.x86_64

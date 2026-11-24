@@ -1,0 +1,21 @@
+#!/bin/sh
+set -eu
+test "$(id -u)" != 0
+d="$HOME/compute-isolated"
+mkdir -p "$d"
+run() {
+    label=$1
+    shift
+    mark="gpupv-$label-$(cat /proc/sys/kernel/random/uuid)"
+    printf '<6>%s\n' "$mark" | sudo -n tee /dev/kmsg >/dev/null
+    status=0
+    "$@" >"$d/$label.stdout" 2>&1 || status=$?
+    sudo -n dmesg --color=never | sed -n "/$mark/,$ p" >"$d/$label.dmesg"
+    grep -Fq "$mark" "$d/$label.dmesg"
+    printf '%s\n' "$status" >"$d/$label.exit"
+    test "$status" = 0
+}
+run nvml nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv
+run d3d12 /opt/hyperv-linux-gpupv/guest/d3d12-compute
+run cuda python3 /opt/hyperv-linux-gpupv/guest/cuda-compute.py
+run opencl python3 /opt/hyperv-linux-gpupv/guest/intel-opencl.py

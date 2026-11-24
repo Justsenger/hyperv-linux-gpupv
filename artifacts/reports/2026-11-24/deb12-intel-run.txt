@@ -1,0 +1,193 @@
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+Linux gpupv-test-76d49092ccb44e96b8cb1019fadc0bad 6.1.0-56-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.192-2 (2026-11-16) x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+0x1414
+0x008e
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libclang-cpp14 libigc1 libigdfcl1 libigdgmm12 libllvm14 libllvmspirvlib14
+  libopencl-clang14
+The following NEW packages will be installed:
+  intel-opencl-icd libclang-cpp14 libigc1 libigdfcl1 libigdgmm12 libllvm14
+  libllvmspirvlib14 libopencl-clang14
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 46.9 MB of archives.
+After this operation, 242 MB of additional disk space will be used.
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:2 https://deb.debian.org/debian bookworm/main amd64 libigdgmm12 amd64 22.3.3+ds1-1 [139 kB]
+Get:3 https://deb.debian.org/debian bookworm/main amd64 libllvm14 amd64 1:14.0.6-12 [21.8 MB]
+Get:4 https://deb.debian.org/debian bookworm/main amd64 libllvmspirvlib14 amd64 14.0.0-5 [696 kB]
+Get:5 https://deb.debian.org/debian bookworm/main amd64 libigc1 amd64 1.0.12504.6-1+deb12u1 [9287 kB]
+Get:6 https://deb.debian.org/debian bookworm/main amd64 libclang-cpp14 amd64 1:14.0.6-12 [11.1 MB]
+Get:7 https://deb.debian.org/debian bookworm/main amd64 libopencl-clang14 amd64 14.0.0-4 [96.1 kB]
+Get:8 https://deb.debian.org/debian bookworm/main amd64 libigdfcl1 amd64 1.0.12504.6-1+deb12u1 [86.2 kB]
+Get:9 https://deb.debian.org/debian bookworm/main amd64 intel-opencl-icd amd64 22.43.24595.41-1 [3711 kB]
+Fetched 46.9 MB in 5s (9970 kB/s)
+Selecting previously unselected package libigdgmm12:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 49231 files and directories currently installed.)
+Preparing to unpack .../0-libigdgmm12_22.3.3+ds1-1_amd64.deb ...
+Unpacking libigdgmm12:amd64 (22.3.3+ds1-1) ...
+Selecting previously unselected package libllvm14:amd64.
+Preparing to unpack .../1-libllvm14_1%3a14.0.6-12_amd64.deb ...
+Unpacking libllvm14:amd64 (1:14.0.6-12) ...
+Selecting previously unselected package libllvmspirvlib14:amd64.
+Preparing to unpack .../2-libllvmspirvlib14_14.0.0-5_amd64.deb ...
+Unpacking libllvmspirvlib14:amd64 (14.0.0-5) ...
+Selecting previously unselected package libigc1:amd64.
+Preparing to unpack .../3-libigc1_1.0.12504.6-1+deb12u1_amd64.deb ...
+Unpacking libigc1:amd64 (1.0.12504.6-1+deb12u1) ...
+Selecting previously unselected package libclang-cpp14.
+Preparing to unpack .../4-libclang-cpp14_1%3a14.0.6-12_amd64.deb ...
+Unpacking libclang-cpp14 (1:14.0.6-12) ...
+Selecting previously unselected package libopencl-clang14:amd64.
+Preparing to unpack .../5-libopencl-clang14_14.0.0-4_amd64.deb ...
+Unpacking libopencl-clang14:amd64 (14.0.0-4) ...
+Selecting previously unselected package libigdfcl1:amd64.
+Preparing to unpack .../6-libigdfcl1_1.0.12504.6-1+deb12u1_amd64.deb ...
+Unpacking libigdfcl1:amd64 (1.0.12504.6-1+deb12u1) ...
+Selecting previously unselected package intel-opencl-icd.
+Preparing to unpack .../7-intel-opencl-icd_22.43.24595.41-1_amd64.deb ...
+Unpacking intel-opencl-icd (22.43.24595.41-1) ...
+Setting up libigdgmm12:amd64 (22.3.3+ds1-1) ...
+Setting up libllvm14:amd64 (1:14.0.6-12) ...
+Setting up libllvmspirvlib14:amd64 (14.0.0-5) ...
+Setting up libigc1:amd64 (1.0.12504.6-1+deb12u1) ...
+Setting up libclang-cpp14 (1:14.0.6-12) ...
+Setting up libopencl-clang14:amd64 (14.0.0-4) ...
+Setting up libigdfcl1:amd64 (1.0.12504.6-1+deb12u1) ...
+Setting up intel-opencl-icd (22.43.24595.41-1) ...
+Processing triggers for libc-bin (2.36-9+deb12u14) ...
+package exit=0
+total 4
+-rw-r--r-- 1 root root 52 Jan 10  2023 intel.icd
+f6c41b369a43b8bd5a1c36423ba0a3f18c14f7b327ec30d0cda9f696f8e69c07  /mnt/gpupv/guest/gpupv-guest
+4001f40d3fe9652feb87174e5653794e8754f07a2c10ca7446566a55ba029d43  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+/tmp/tmp.MjtiFj1Qew/probe.c: In function ‘p’:
+/tmp/tmp.MjtiFj1Qew/probe.c:2:62: error: too few arguments to function ‘eventfd_signal’
+    2 | void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+      |                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.MjtiFj1Qew/probe.c:1:
+/usr/src/linux-headers-6.1.0-56-common/include/linux/eventfd.h:42:7: note: declared here
+   42 | __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+      |       ^~~~~~~~~~~~~~
+make[1]: *** [/usr/src/linux-headers-6.1.0-56-common/scripts/Makefile.build:255: /tmp/tmp.MjtiFj1Qew/probe.o] Error 1
+make: *** [/usr/src/linux-headers-6.1.0-56-common/Makefile:2065: /tmp/tmp.MjtiFj1Qew] Error 2
+/tmp/tmp.MjtiFj1Qew/probe.c: In function ‘p’:
+/tmp/tmp.MjtiFj1Qew/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Werror=int-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.MjtiFj1Qew/probe.c:1:
+/usr/src/linux-headers-6.1.0-56-common/include/linux/dma-fence.h:451:45: note: expected ‘u64’ {aka ‘long long unsigned int’} but argument is of type ‘struct dma_fence *’
+  451 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[1]: *** [/usr/src/linux-headers-6.1.0-56-common/scripts/Makefile.build:255: /tmp/tmp.MjtiFj1Qew/probe.o] Error 1
+make: *** [/usr/src/linux-headers-6.1.0-56-common/Makefile:2065: /tmp/tmp.MjtiFj1Qew] Error 2
+/tmp/tmp.MjtiFj1Qew/probe.c:3:33: error: initialization of ‘int (*)(struct hv_device *)’ from incompatible pointer type ‘void (*)(struct hv_device *)’ [-Werror=incompatible-pointer-types]
+    3 | struct hv_driver p = {.remove = remove};
+      |                                 ^~~~~~
+/tmp/tmp.MjtiFj1Qew/probe.c:3:33: note: (near initialization for ‘p.remove’)
+cc1: all warnings being treated as errors
+make[1]: *** [/usr/src/linux-headers-6.1.0-56-common/scripts/Makefile.build:255: /tmp/tmp.MjtiFj1Qew/probe.o] Error 1
+make: *** [/usr/src/linux-headers-6.1.0-56-common/Makefile:2065: /tmp/tmp.MjtiFj1Qew] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 0
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-6.1.0-56-amd64'
+  CC [M]  /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmp7z8e9kwe/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-headers-6.1.0-56-amd64'
+glibc 2.36, x86_64, kernel 6.1.0-56-amd64, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so']
+OpenCL ICD: ['/etc/OpenCL/vendors/intel.icd']
+glibc 2.36, x86_64, kernel 6.1.0-56-amd64, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so']
+OpenCL ICD: ['/etc/OpenCL/vendors/intel.icd']
+/usr/lib/modules/6.1.0-56-amd64/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 3605835 Nov 24 01:55 /lib/modules/6.1.0-56-amd64/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 124 Nov 24 01:56 /dev/dxg
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 124 Nov 24 01:56 /dev/dxg
+
+/dev/dri:
+total 0
+drwxr-xr-x 2 root root         80 Nov 24 01:56 by-path
+crw-rw---- 1 root video  226,   0 Nov 24 01:56 card0
+crw-rw---- 1 root video  226,   1 Nov 24 01:56 card1
+crw-rw---- 1 root render 226, 128 Nov 24 01:56 renderD128
+	linux-vdso.so.1 (0x00007ffdbdbf3000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f62cda14000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f62cda0f000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f62cd92f000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f62cd92a000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f62cdcec000)
+	linux-vdso.so.1 (0x00007ffe0c7fb000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd04c611000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007fd04c60c000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fd04c52c000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007fd04c527000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fd04c8c7000)
+	linux-vdso.so.1 (0x00007ffee34d0000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f0647a9f000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f0647a9a000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f0647800000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f0647720000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f0647a7a000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f064753e000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f0647abc000)
+diagnostic_collection_finished
+managed_paths_clean
+managed_paths_clean

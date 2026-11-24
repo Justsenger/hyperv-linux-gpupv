@@ -1,0 +1,2 @@
+tumbleweed {'image': 'opensuse/tumbleweed:latest', 'passed': True, 'exit': 0}
+ubuntu-24.04 {'image': 'ubuntu:24.04', 'passed': True, 'exit': 0}

@@ -1,0 +1,5 @@
+56236f3a-3df0-4df5-ae92-fe8ae8fbda2e confirmed shim menu management
+56236f3a-3df0-4df5-ae92-fe8ae8fbda2e confirmed shim menu view
+56236f3a-3df0-4df5-ae92-fe8ae8fbda2e confirmed shim menu confirm
+56236f3a-3df0-4df5-ae92-fe8ae8fbda2e confirmed shim menu password
+56236f3a-3df0-4df5-ae92-fe8ae8fbda2e confirmed shim menu reboot

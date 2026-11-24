@@ -1,0 +1,53 @@
+{
+    "children": [
+        {
+            "name": "file",
+            "info": {
+                "children": [
+                ],
+                "virtual-size": 434831360,
+                "filename": ".tools/gpupv-test-debian.qcow2",
+                "format": "file",
+                "actual-size": 434831360
+            }
+        }
+    ],
+    "virtual-size": 3221225472,
+    "filename": ".tools/gpupv-test-debian.qcow2",
+    "cluster-size": 65536,
+    "format": "qcow2",
+    "actual-size": 434831360,
+    "format-specific": {
+        "type": "qcow2",
+        "data": {
+            "compat": "1.1",
+            "compression-type": "zlib",
+            "lazy-refcounts": false,
+            "refcount-bits": 16,
+            "corrupt": false,
+            "extended-l2": false
+        }
+    },
+    "dirty-flag": false
+}
+{
+    "children": [
+        {
+            "name": "file",
+            "info": {
+                "children": [
+                ],
+                "virtual-size": 1384120320,
+                "filename": ".test/gpupv-test-converter.vhdx",
+                "format": "file",
+                "actual-size": 1117847552
+            }
+        }
+    ],
+    "virtual-size": 3221225472,
+    "filename": ".test/gpupv-test-converter.vhdx",
+    "cluster-size": 16777216,
+    "format": "vhdx",
+    "actual-size": 1117847552,
+    "dirty-flag": false
+}

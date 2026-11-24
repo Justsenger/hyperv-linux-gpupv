@@ -1,0 +1,2 @@
+Running timer as unit: run-p4708-i5008.timer
+Will run service as unit: run-p4708-i5008.service

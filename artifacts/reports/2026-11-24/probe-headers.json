@@ -1,0 +1,22 @@
+{
+  "upstream": "48a762973271c5a75869946bf1fdbc489a628a5c",
+  "files": {
+    "LICENSE": "903df5512f7d02609fed0c780a9b704f5a3eeb6e4d84ebe42a29845c81899a3c",
+    "include/directx/d3d12.h": "aa55d4bdbefc1138e405c0b62a19420baf0ce4bad61a306e938dd91c1e8c932d",
+    "include/directx/d3d12sdklayers.h": "67dc835afaf97d8d773f289f41b660264db706776c4c1c1ee612070af17d60ca",
+    "include/directx/d3dcommon.h": "8c236985415516302faf0cb725fa78312cb1ac05ba866e29eeab23d695a0f5cb",
+    "include/directx/dxcore.h": "63810a79e8cf27becb12be85af84e9a09acef613b23bc866f63cc7c3f54e72dc",
+    "include/directx/dxcore_interface.h": "4d6cc2c2f1540df29c1dc73f2a9a09e7d7b7fe375a1a1ee804b1775bdb232352",
+    "include/directx/dxgicommon.h": "10b795959eef2771c5f4d20c49b20d56353cf9439e49667c391f32b9e74b09f6",
+    "include/directx/dxgiformat.h": "0ac14d7da595c528e0f14c64685d83596c392d36a0ab49ce2ecab05299e6c0d0",
+    "include/wsl/winadapter.h": "e3bd46c72525be2a8ac0084e3f3343e6bfcfb6039d3204488306dd7dde018464",
+    "include/wsl/stubs/basetsd.h": "a13f32227ff7371438e13381a3ac46cd748db5df5a40902cd5aae9d365816e6a",
+    "include/wsl/stubs/oaidl.h": "e462b0a8c28dbcc3099413da01e0cf738fbb96964ad2755429737997b45a2e81",
+    "include/wsl/stubs/ocidl.h": "e462b0a8c28dbcc3099413da01e0cf738fbb96964ad2755429737997b45a2e81",
+    "include/wsl/stubs/rpc.h": "e462b0a8c28dbcc3099413da01e0cf738fbb96964ad2755429737997b45a2e81",
+    "include/wsl/stubs/rpcndr.h": "43bf06fd1b5a0234139d9307b5d727c20ea84ec5ba08ba02310ec54f05d95ccd",
+    "include/wsl/stubs/unknwn.h": "f29eaad0480e4a7da9c64cc2caed0abcefc6b30c677f7a8309f5bb13030833e4",
+    "include/wsl/stubs/unknwnbase.h": "6f0cd0479cea416de9f960ffa81a9927302f4c7f7103614a131fc124401b1ab2",
+    "include/wsl/stubs/winapifamily.h": "4af3afab393304afe49795ea5945dda66d0a82de8df5e2047f8cc534d90305a3"
+  }
+}

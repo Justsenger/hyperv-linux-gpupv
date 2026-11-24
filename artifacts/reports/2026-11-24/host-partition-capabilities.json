@@ -1,0 +1,40 @@
+[
+  {
+    "Name": "\\\\?\\PCI#VEN_10DE&DEV_1F15&SUBSYS_20908086&REV_A1#4&2498e50c&0&0030#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+    "PartitionCount": 32,
+    "ValidPartitionCounts": [
+      32
+    ],
+    "TotalEncode": 18446744073709551615,
+    "AvailableEncode": 18446744073709551615,
+    "MinPartitionEncode": 0,
+    "MaxPartitionEncode": 18446744073709551615,
+    "OptimalPartitionEncode": 18446744073709551615,
+    "TotalDecode": 1000000000,
+    "AvailableDecode": 1000000000,
+    "MinPartitionDecode": 0,
+    "MaxPartitionDecode": 1000000000,
+    "OptimalPartitionDecode": 1000000000,
+    "TotalCompute": 1000000000,
+    "AvailableCompute": 1000000000
+  },
+  {
+    "Name": "\\\\?\\PCI#VEN_8086&DEV_9A49&SUBSYS_20908086&REV_01#3&11583659&0&10#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+    "PartitionCount": 32,
+    "ValidPartitionCounts": [
+      32
+    ],
+    "TotalEncode": 18446744073709551615,
+    "AvailableEncode": 18446744073709551615,
+    "MinPartitionEncode": 0,
+    "MaxPartitionEncode": 18446744073709551615,
+    "OptimalPartitionEncode": 18446744073709551615,
+    "TotalDecode": 1000000000,
+    "AvailableDecode": 1000000000,
+    "MinPartitionDecode": 0,
+    "MaxPartitionDecode": 1000000000,
+    "OptimalPartitionDecode": 1000000000,
+    "TotalCompute": 1000000000,
+    "AvailableCompute": 1000000000
+  }
+]

@@ -1,0 +1,24 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+Linux gpupv-test-698b67ab42c64b76aebff607b824b0d1 6.12.117+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.117-1 (2026-11-12) x86_64 GNU/Linux
+ls: cannot access '/dev/dxg': No such file or directory
+[    1.220421] hv_vmbus: hv_mmio=[mem 0xc0000000-0xfed3ffff],[mem 0xfe0000000-0x17dfffffff] fb=[mem 0xc0000000-0xc7ffffff]
+[    1.222550] hv_vmbus: Vmbus version:5.3
+[    1.223707] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    1.226168] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    1.250367] hv_vmbus: registering driver hyperv_keyboard
+[    1.277234] hv_vmbus: registering driver hv_pci
+[    1.288914] hv_vmbus: registering driver hv_netvsc
+[    1.307534] hv_vmbus: registering driver hid_hyperv
+[    1.310164] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input1
+[    1.311970] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    1.331476] hv_vmbus: registering driver hv_storvsc
+[    1.404713] hv_pci dba3df13-242b-47f0-ab2f-84e1d67ca593: PCI VMBus probing: Using version 0x10004
+[    1.505979] hv_pci dba3df13-242b-47f0-ab2f-84e1d67ca593: PCI host bridge to bus 242b:00
+[    4.330876] hv_vmbus: registering driver hv_sock
+[    8.285160] hv_vmbus: registering driver hv_utils
+[    8.299685] hv_vmbus: registering driver hv_balloon
+[    8.439491] hv_vmbus: registering driver hyperv_drm
+ls: cannot access '/sys/bus/pci/devices/*/driver': No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        32G  2.0G   29G   7% /
+lrwxrwxrwx 1 root root 47 Nov 12 09:30 /lib/modules/6.12.117+deb13-amd64/build -> ../../../src/linux-headers-6.12.117+deb13-amd64

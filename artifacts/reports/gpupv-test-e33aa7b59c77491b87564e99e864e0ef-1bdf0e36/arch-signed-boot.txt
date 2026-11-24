@@ -1,0 +1,4 @@
+gpupv-test-e33aa7b59c77491b87564e99e864e0ef
+7.3.4-arch1-2
+SecureBoot enabled
+root=UUID=a4fe6a47-a8cc-4beb-966a-7757429a6771 rw net.ifnames=0 rootflags=compress=zstd:1 console=tty0 console=ttyS0,115200

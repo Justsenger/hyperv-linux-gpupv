@@ -1,0 +1,5 @@
+82b217db-148a-4f2b-8542-0bfa941fd018 confirmed shim menu management
+82b217db-148a-4f2b-8542-0bfa941fd018 confirmed shim menu view
+82b217db-148a-4f2b-8542-0bfa941fd018 confirmed shim menu confirm
+82b217db-148a-4f2b-8542-0bfa941fd018 confirmed shim menu password
+82b217db-148a-4f2b-8542-0bfa941fd018 confirmed shim menu reboot

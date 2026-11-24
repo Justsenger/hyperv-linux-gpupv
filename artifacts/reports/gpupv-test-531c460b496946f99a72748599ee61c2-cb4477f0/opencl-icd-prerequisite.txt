@@ -1,0 +1,16 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libclang-cpp14 libigc1 libigdfcl1 libigdgmm12 libllvm14 libllvmspirvlib14
+  libopencl-clang14
+The following NEW packages will be installed:
+  intel-opencl-icd libclang-cpp14 libigc1 libigdfcl1 libigdgmm12 libllvm14
+  libllvmspirvlib14 libopencl-clang14
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 46.9 MB of archives.
+After this operation, 242 MB of additional disk space will be used.
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:2 https://deb.debian.org/debian bookworm/main amd64 libigdgmm12 amd64 22.3.3+ds1-1 [139 kB]
+Get:3 https://deb.debian.org/debian bookworm/main amd64 libllvm14 amd64 1:14.0.6-12 [21.8 MB]
+package exit=124

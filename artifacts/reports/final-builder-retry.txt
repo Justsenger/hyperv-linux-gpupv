@@ -1,0 +1,4 @@
+anolis-23 {'image': 'openanolis/anolisos:23', 'passed': False, 'exit': 125, 'sources_sha256': '47bdacc5597ebe41022076e2d6402a70397c2a36ee4ab2f2975ae2d514e79215'}
+debian-11-base {'image': 'debian:11', 'passed': True, 'exit': 0, 'sources_sha256': '47bdacc5597ebe41022076e2d6402a70397c2a36ee4ab2f2975ae2d514e79215'}
+openeuler {'image': 'openeuler/openeuler:24.03-lts', 'passed': False, 'exit': 125, 'sources_sha256': '47bdacc5597ebe41022076e2d6402a70397c2a36ee4ab2f2975ae2d514e79215'}
+ubuntu-20.04 {'image': 'ubuntu:20.04', 'passed': False, 'exit': 1, 'sources_sha256': '47bdacc5597ebe41022076e2d6402a70397c2a36ee4ab2f2975ae2d514e79215'}

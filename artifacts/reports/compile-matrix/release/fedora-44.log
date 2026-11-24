@@ -1,0 +1,374 @@
+image=quay.io/fedora/fedora:44 unix_time=1795432791 sources_sha256=47bdacc5597ebe41022076e2d6402a70397c2a36ee4ab2f2975ae2d514e79215
+Unable to find image 'quay.io/fedora/fedora:44' locally
+44: Pulling from fedora/fedora
+5dbb65422a95: Pulling fs layer
+5dbb65422a95: Verifying Checksum
+5dbb65422a95: Download complete
+5dbb65422a95: Pull complete
+Digest: sha256:0daf6a73fb6ad75dcd62d9a5270e58572f1aea95bb9331db7c2eedd6e47c9cb5
+Status: Downloaded newer image for quay.io/fedora/fedora:44
+NAME="Fedora Linux"
+VERSION="44 (Container Image)"
+RELEASE_TYPE=stable
+ID=fedora
+VERSION_ID=44
+VERSION_CODENAME=""
+PRETTY_NAME="Fedora Linux 44 (Container Image)"
+ANSI_COLOR="0;38;2;60;110;180"
+LOGO=fedora-logo-icon
+CPE_NAME="cpe:/o:fedoraproject:fedora:44"
+DEFAULT_HOSTNAME="fedora"
+HOME_URL="https://fedoraproject.org/"
+DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US/fedora/f44/"
+SUPPORT_URL="https://ask.fedoraproject.org/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+REDHAT_BUGZILLA_PRODUCT="Fedora"
+REDHAT_BUGZILLA_PRODUCT_VERSION=44
+REDHAT_SUPPORT_PRODUCT="Fedora"
+REDHAT_SUPPORT_PRODUCT_VERSION=44
+SUPPORT_END=2027-05-19
+VARIANT="Container Image"
+VARIANT_ID=container
+Updating and loading repositories:
+ Fedora 44 openh264 (From Cisco) - x86_ 100% |   2.5 KiB/s |   5.3 KiB |  00m02s
+ Fedora 44 - x86_64 - Updates           100% |   3.4 MiB/s |  12.9 MiB |  00m04s
+>>> Curl error (35): SSL connect error for https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/repodata/repomd.xml [TLS connect error: error:0A000126:SSL routines::unexpected eof while reading] - https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/repodata/repomd.xml
+>>> Curl error (35): SSL connect error for https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/repodata/75bdedaead158222df21932e1d437809e1844089a63b81d11cb1a153cd6cb7a2-updateinfo.xml.zck [TLS connect error: error:0A000126:SSL routines::unexpected eof while reading] - https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/repodata/75bdedaead158222df21932e1d437809e1844089a63b81d11cb1a153cd6cb7a2-updateinfo.xml.zck
+>>> Curl error (35): SSL connect error for https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/repodata/66a3cde73d34a8f94027217c637055ce1c6b4613df38809717d27a4793157a76-primary.xml.zck [TLS connect error: error:0A000126:SSL routines::unexpected eof while reading] - https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/repodata/66a3cde73d34a8f94027217c637055ce1c6b4613df38809717d27a4793157a76-primary.xml.zck
+>>> Curl error (35): SSL connect error for https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/repodata/495d950398786ab9f525ea1a098c27694672ab594da56e55ffa7f2fee4eaf87d-comps-Everything.x86_64.xml.zst [TLS connect error: error:0A000126:SSL routines::unexpected eof while reading] - https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/repodata/495d950398786ab9f525ea1a098c27694672ab594da56e55ffa7f2fee4eaf87d-comps-Everything.x86_64.xml.zst
+ Fedora 44 - x86_64                     100% |  16.9 MiB/s | 115.2 MiB |  00m07s
+>>> Status code: 503 for https://mirrors.qlu.edu.cn/fedora/releases/44/Everything/x86_64/os/repodata/6a37d36914955dc65cf6dc037c37dcf00c64ded464dc34164a674bf65fa16927-comps-Everything.x86_64.xml.zst (IP: 192.168.1.6) - https://mirrors.qlu.edu.cn/fedora/releases/44/Everything/x86_64/os/repodata/6a37d36914955dc65cf6dc037c37dcf00c64ded464dc34164a674bf65fa16927-comps-Everything.x86_64.xml.zst
+>>> Status code: 503 for http://mirrors.qlu.edu.cn/fedora/releases/44/Everything/x86_64/os/repodata/6a37d36914955dc65cf6dc037c37dcf00c64ded464dc34164a674bf65fa16927-comps-Everything.x86_64.xml.zst (IP: 192.168.1.6) - http://mirrors.qlu.edu.cn/fedora/releases/44/Everything/x86_64/os/repodata/6a37d36914955dc65cf6dc037c37dcf00c64ded464dc34164a674bf65fa16927-comps-Everything.x86_64.xml.zst
+Repositories loaded.
+Total size of inbound packages is 139 MiB. Need to download 139 MiB.
+After this operation, 492 MiB extra will be used (install 492 MiB, remove 0 B).
+Package                     Arch   Version             Repository      Size
+Installing:
+ elfutils-libelf-devel      x86_64 0:0.197-1.fc44      updates    104.3 KiB
+ gcc                        x86_64 0:16.2.1-3.fc44     updates    121.8 MiB
+ kernel-devel               x86_64 0:7.3.4-200.fc44    updates    249.3 MiB
+ kmod                       x86_64 0:34.2-4.fc44       fedora     251.0 KiB
+ make                       x86_64 1:4.4.1-12.fc44     fedora       1.8 MiB
+Installing dependencies:
+ binutils                   x86_64 0:2.46.1-1.fc44     updates     28.2 MiB
+ bison                      x86_64 0:3.8.2-15.fc44     fedora       3.5 MiB
+ cmake-filesystem           x86_64 0:4.3.0-1.fc44      fedora       0.0   B
+ cpp                        x86_64 0:16.2.1-3.fc44     updates     42.6 MiB
+ elfutils-debuginfod-client x86_64 0:0.197-1.fc44      updates     83.9 KiB
+ flex                       x86_64 0:2.6.4-24.fc44     fedora     805.1 KiB
+ glibc-devel                x86_64 0:2.43-9.fc44       updates      2.3 MiB
+ groff-base                 x86_64 0:1.23.0-12.fc44    fedora       3.9 MiB
+ jansson                    x86_64 0:2.14-4.fc44       fedora      88.9 KiB
+ kernel-headers             x86_64 0:7.3.3-200.fc44    updates      7.1 MiB
+ libatomic                  x86_64 0:16.2.1-3.fc44     updates     45.6 KiB
+ libmpc                     x86_64 0:1.4.1-1.fc44      updates    168.7 KiB
+ libpkgconf                 x86_64 0:2.5.1-1.fc44      fedora      90.1 KiB
+ libxcrypt-devel            x86_64 0:4.5.2-3.fc44      fedora      31.0 KiB
+ libzstd-devel              x86_64 0:1.5.7-5.fc44      fedora     217.6 KiB
+ m4                         x86_64 0:1.4.21-1.fc44     fedora     881.1 KiB
+ ncurses                    x86_64 0:6.6-1.fc44        fedora     611.4 KiB
+ openssl-devel              x86_64 1:3.5.9-1.fc44      updates      4.5 MiB
+ perl-AutoLoader            noarch 0:5.74-525.fc44     updates     20.6 KiB
+ perl-B                     x86_64 0:1.89-525.fc44     updates    501.2 KiB
+ perl-Carp                  noarch 0:1.54-521.fc44     fedora      46.6 KiB
+ perl-Class-Struct          noarch 0:0.68-525.fc44     updates     25.4 KiB
+ perl-Data-Dumper           x86_64 0:2.192-523.fc44    updates    115.5 KiB
+ perl-Digest                noarch 0:1.20-521.fc44     fedora      35.3 KiB
+ perl-Digest-MD5            x86_64 0:2.59-521.fc44     fedora      59.6 KiB
+ perl-DynaLoader            x86_64 0:1.57-525.fc44     updates     32.1 KiB
+ perl-Encode                x86_64 4:3.21-521.fc44     fedora       4.7 MiB
+ perl-Errno                 x86_64 0:1.38-525.fc44     updates      8.4 KiB
+ perl-Exporter              noarch 0:5.79-521.fc44     fedora      54.3 KiB
+ perl-Fcntl                 x86_64 0:1.20-525.fc44     updates     48.7 KiB
+ perl-File-Basename         noarch 0:2.86-525.fc44     updates     14.0 KiB
+ perl-File-Path             noarch 0:2.18-522.fc44     fedora      63.5 KiB
+ perl-File-Temp             noarch 1:0.231.200-2.fc44  fedora     163.7 KiB
+ perl-File-stat             noarch 0:1.14-525.fc44     updates     12.5 KiB
+ perl-FileHandle            noarch 0:2.05-525.fc44     updates      9.4 KiB
+ perl-Getopt-Long           noarch 1:2.58-521.fc44     fedora     144.5 KiB
+ perl-Getopt-Std            noarch 0:1.14-525.fc44     updates     11.2 KiB
+ perl-HTTP-Tiny             noarch 0:0.096-1.fc44      updates    162.4 KiB
+ perl-IO                    x86_64 0:1.55-525.fc44     updates    147.3 KiB
+ perl-IO-Socket-IP          noarch 0:0.43-522.fc44     fedora     100.3 KiB
+ perl-IO-Socket-SSL         noarch 0:2.098-2.fc44      fedora     723.5 KiB
+ perl-IPC-Open3             noarch 0:1.24-525.fc44     updates     27.7 KiB
+ perl-MIME-Base32           noarch 0:1.303-25.fc44     fedora      30.7 KiB
+ perl-MIME-Base64           x86_64 0:3.16-521.fc44     fedora      41.9 KiB
+ perl-Net-SSLeay            x86_64 0:1.94-12.fc44      fedora       1.3 MiB
+ perl-POSIX                 x86_64 0:2.23-525.fc44     updates    229.4 KiB
+ perl-PathTools             x86_64 0:3.94-521.fc44     fedora     179.9 KiB
+ perl-Pod-Escapes           noarch 1:1.07-521.fc44     fedora      24.9 KiB
+ perl-Pod-Perldoc           noarch 0:3.28.01-522.fc44  fedora     163.7 KiB
+ perl-Pod-Simple            noarch 1:3.47-4.fc44       fedora     565.3 KiB
+ perl-Pod-Usage             noarch 4:2.05-521.fc44     fedora      86.3 KiB
+ perl-Scalar-List-Utils     x86_64 5:1.70-2.fc44       fedora     144.8 KiB
+ perl-SelectSaver           noarch 0:1.02-525.fc44     updates      2.2 KiB
+ perl-Socket                x86_64 4:2.043-1.fc44      updates    121.8 KiB
+ perl-Storable              x86_64 1:3.37-522.fc44     fedora     235.1 KiB
+ perl-Symbol                noarch 0:1.09-525.fc44     updates      6.8 KiB
+ perl-Term-ANSIColor        noarch 0:5.01-522.fc44     fedora      97.5 KiB
+ perl-Term-Cap              noarch 0:1.18-521.fc44     fedora      29.3 KiB
+ perl-Text-ParseWords       noarch 0:3.31-521.fc44     fedora      13.6 KiB
+ perl-Text-Tabs+Wrap        noarch 0:2024.001-521.fc44 fedora      22.6 KiB
+ perl-Time-HiRes            x86_64 4:1.9778-521.fc44   fedora     115.6 KiB
+ perl-Time-Local            noarch 2:1.350-521.fc44    fedora      69.0 KiB
+ perl-URI                   noarch 0:5.36-1.fc44       updates    275.7 KiB
+ perl-Unicode-Normalize     x86_64 0:1.32-521.fc44     fedora     486.0 KiB
+ perl-base                  noarch 0:2.27-525.fc44     updates     12.6 KiB
+ perl-constant              noarch 0:1.33-522.fc44     fedora      26.2 KiB
+ perl-if                    noarch 0:0.61.000-525.fc44 updates      5.8 KiB
+ perl-interpreter           x86_64 4:5.42.3-525.fc44   updates    118.8 KiB
+ perl-libnet                noarch 0:3.16-1.fc44       updates    293.5 KiB
+ perl-libs                  x86_64 4:5.42.3-525.fc44   updates     11.6 MiB
+ perl-locale                noarch 0:1.13-525.fc44     updates      6.1 KiB
+ perl-mro                   x86_64 0:1.29-525.fc44     updates     41.4 KiB
+ perl-overload              noarch 0:1.40-525.fc44     updates     71.6 KiB
+ perl-overloading           noarch 0:0.02-525.fc44     updates      4.9 KiB
+ perl-parent                noarch 1:0.244-521.fc44    fedora      10.3 KiB
+ perl-podlators             noarch 1:6.0.2-522.fc44    updates    317.7 KiB
+ perl-vars                  noarch 0:1.05-525.fc44     updates      3.9 KiB
+ pkgconf                    x86_64 0:2.5.1-1.fc44      fedora      92.7 KiB
+ pkgconf-m4                 noarch 0:2.5.1-1.fc44      fedora      14.3 KiB
+ pkgconf-pkg-config         x86_64 0:2.5.1-1.fc44      fedora     989.0   B
+ zlib-ng-compat-devel       x86_64 0:2.3.3-3.fc44      fedora     107.0 KiB
+
+Transaction Summary:
+ Installing:        86 packages
+
+[ 1/86] kmod-0:34.2-4.fc44.x86_64       100% | 596.7 KiB/s | 136.1 KiB |  00m00s
+[ 2/86] make-1:4.4.1-12.fc44.x86_64     100% | 754.7 KiB/s | 588.7 KiB |  00m01s
+[ 3/86] elfutils-libelf-devel-0:0.197-1 100% | 204.0 KiB/s | 124.2 KiB |  00m01s
+>>> Curl error (35): SSL connect error for https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/Packages/e/elfutils-libelf-devel-0.197-1.fc44.x86_64.rpm [TLS connect error: error:0A000126:SSL routines::unexpected eof while reading] - https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/Packages/e/elfutils-libelf-devel-0.197-1.fc44.x86_64.rpm
+[ 4/86] cpp-0:16.2.1-3.fc44.x86_64      100% |   1.4 MiB/s |  14.6 MiB |  00m11s
+>>> Curl error (35): SSL connect error for https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/Packages/c/cpp-16.2.1-3.fc44.x86_64.rpm [TLS connect error: error:0A000126:SSL routines::unexpected eof while reading] - https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/Packages/c/cpp-16.2.1-3.fc44.x86_64.rpm
+[ 5/86] gcc-0:16.2.1-3.fc44.x86_64      100% |   3.8 MiB/s |  43.2 MiB |  00m11s
+>>> Curl error (35): SSL connect error for https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/Packages/g/gcc-16.2.1-3.fc44.x86_64.rpm [TLS connect error: error:0A000126:SSL routines::unexpected eof while reading] - https://ftp.yz.yamagata-u.ac.jp/pub/linux/fedora-projects/fedora/linux/updates/44/Everything/x86_64/Packages/g/gcc-16.2.1-3.fc44.x86_64.rpm
+[ 6/86] bison-0:3.8.2-15.fc44.x86_64    100% |   1.6 MiB/s | 998.2 KiB |  00m01s
+[ 7/86] flex-0:2.6.4-24.fc44.x86_64     100% |   3.3 MiB/s | 299.3 KiB |  00m00s
+[ 8/86] m4-0:1.4.21-1.fc44.x86_64       100% |   1.8 MiB/s | 347.3 KiB |  00m00s
+[ 9/86] pkgconf-pkg-config-0:2.5.1-1.fc 100% |  52.6 KiB/s |   9.5 KiB |  00m00s
+[10/86] pkgconf-m4-0:2.5.1-1.fc44.noarc 100% | 225.5 KiB/s |  13.8 KiB |  00m00s
+[11/86] pkgconf-0:2.5.1-1.fc44.x86_64   100% | 649.3 KiB/s |  48.7 KiB |  00m00s
+[12/86] libpkgconf-0:2.5.1-1.fc44.x86_6 100% |   1.0 MiB/s |  42.7 KiB |  00m00s
+[13/86] perl-interpreter-4:5.42.3-525.f 100% | 117.1 KiB/s |  71.7 KiB |  00m01s
+[14/86] openssl-devel-1:3.5.9-1.fc44.x8 100% |   1.7 MiB/s |   3.0 MiB |  00m02s
+[15/86] perl-Carp-0:1.54-521.fc44.noarc 100% | 290.7 KiB/s |  28.8 KiB |  00m00s
+[16/86] perl-libs-4:5.42.3-525.fc44.x86 100% |   1.6 MiB/s |   2.6 MiB |  00m02s
+[17/86] perl-Exporter-0:5.79-521.fc44.n 100% |  89.3 KiB/s |  30.8 KiB |  00m00s
+[18/86] perl-PathTools-0:3.94-521.fc44. 100% |   2.1 MiB/s |  87.3 KiB |  00m00s
+[19/86] perl-Scalar-List-Utils-5:1.70-2 100% |   1.7 MiB/s |  75.4 KiB |  00m00s
+[20/86] perl-constant-0:1.33-522.fc44.n 100% | 352.3 KiB/s |  22.9 KiB |  00m00s
+[21/86] perl-Errno-0:1.38-525.fc44.x86_ 100% |  82.9 KiB/s |  14.3 KiB |  00m00s
+[22/86] jansson-0:2.14-4.fc44.x86_64    100% |   1.4 MiB/s |  47.1 KiB |  00m00s
+[23/86] glibc-devel-0:2.43-9.fc44.x86_6 100% | 785.1 KiB/s | 619.5 KiB |  00m01s
+[24/86] libxcrypt-devel-0:4.5.2-3.fc44. 100% | 769.8 KiB/s |  30.0 KiB |  00m00s
+[25/86] libatomic-0:16.2.1-3.fc44.x86_6 100% | 540.3 KiB/s |  58.9 KiB |  00m00s
+[26/86] libmpc-0:1.4.1-1.fc44.x86_64    100% | 645.1 KiB/s |  75.5 KiB |  00m00s
+[27/86] libzstd-devel-0:1.5.7-5.fc44.x8 100% |   1.4 MiB/s |  56.3 KiB |  00m00s
+[28/86] cmake-filesystem-0:4.3.0-1.fc44 100% | 428.3 KiB/s |  15.0 KiB |  00m00s
+[29/86] zlib-ng-compat-devel-0:2.3.3-3. 100% | 978.1 KiB/s |  38.1 KiB |  00m00s
+[30/86] elfutils-debuginfod-client-0:0. 100% | 424.4 KiB/s |  46.7 KiB |  00m00s
+[31/86] perl-DynaLoader-0:1.57-525.fc44 100% | 234.3 KiB/s |  25.3 KiB |  00m00s
+[32/86] perl-Encode-4:3.21-521.fc44.x86 100% |   5.1 MiB/s |   1.1 MiB |  00m00s
+[33/86] perl-Getopt-Long-1:2.58-521.fc4 100% | 739.6 KiB/s |  63.6 KiB |  00m00s
+[34/86] perl-MIME-Base64-0:3.16-521.fc4 100% | 647.2 KiB/s |  29.8 KiB |  00m00s
+[35/86] perl-Storable-1:3.37-522.fc44.x 100% |   2.0 MiB/s | 100.9 KiB |  00m00s
+[36/86] perl-parent-1:0.244-521.fc44.no 100% | 465.0 KiB/s |  14.9 KiB |  00m00s
+[37/86] perl-Pod-Usage-4:2.05-521.fc44. 100% |   1.0 MiB/s |  40.7 KiB |  00m00s
+[38/86] perl-Text-ParseWords-0:3.31-521 100% | 433.5 KiB/s |  16.5 KiB |  00m00s
+[39/86] perl-Pod-Perldoc-0:3.28.01-522. 100% |   2.1 MiB/s |  86.1 KiB |  00m00s
+[40/86] groff-base-0:1.23.0-12.fc44.x86 100% | 994.2 KiB/s |   1.1 MiB |  00m01s
+[41/86] binutils-0:2.46.1-1.fc44.x86_64 100% |   1.8 MiB/s |   6.2 MiB |  00m03s
+[42/86] perl-File-Temp-1:0.231.200-2.fc 100% | 164.1 KiB/s |  59.6 KiB |  00m00s
+[43/86] perl-Pod-Simple-1:3.47-4.fc44.n 100% |   1.7 MiB/s | 220.0 KiB |  00m00s
+[44/86] perl-File-Path-0:2.18-522.fc44. 100% | 496.6 KiB/s |  35.3 KiB |  00m00s
+[45/86] perl-Pod-Escapes-1:1.07-521.fc4 100% | 430.2 KiB/s |  19.8 KiB |  00m00s
+[46/86] perl-Text-Tabs+Wrap-0:2024.001- 100% | 453.1 KiB/s |  21.8 KiB |  00m00s
+[47/86] perl-vars-0:1.05-525.fc44.noarc 100% | 114.9 KiB/s |  12.3 KiB |  00m00s
+[48/86] perl-Fcntl-0:1.20-525.fc44.x86_ 100% | 177.2 KiB/s |  29.1 KiB |  00m00s
+[49/86] perl-IO-0:1.55-525.fc44.x86_64  100% | 292.1 KiB/s |  81.5 KiB |  00m00s
+[50/86] perl-podlators-1:6.0.2-522.fc44 100% | 442.0 KiB/s | 128.2 KiB |  00m00s
+[51/86] perl-Term-ANSIColor-0:5.01-522. 100% |   1.1 MiB/s |  47.7 KiB |  00m00s
+[52/86] perl-Term-Cap-0:1.18-521.fc44.n 100% | 564.1 KiB/s |  22.0 KiB |  00m00s
+[53/86] ncurses-0:6.6-1.fc44.x86_64     100% |   5.2 MiB/s | 429.8 KiB |  00m00s
+[54/86] perl-File-Basename-0:2.86-525.f 100% |  99.9 KiB/s |  16.5 KiB |  00m00s
+[55/86] perl-Symbol-0:1.09-525.fc44.noa 100% | 122.8 KiB/s |  13.5 KiB |  00m00s
+[56/86] perl-if-0:0.61.000-525.fc44.noa 100% |  26.3 KiB/s |  13.3 KiB |  00m01s
+[57/86] kernel-headers-0:7.3.3-200.fc44 100% | 912.7 KiB/s |   1.8 MiB |  00m02s
+[58/86] perl-overload-0:1.40-525.fc44.n 100% | 206.8 KiB/s |  44.9 KiB |  00m00s
+[59/86] perl-IO-Socket-SSL-0:2.098-2.fc 100% |   4.1 MiB/s | 234.7 KiB |  00m00s
+[60/86] perl-Net-SSLeay-0:1.94-12.fc44. 100% |   5.1 MiB/s | 373.4 KiB |  00m00s
+[61/86] perl-Time-HiRes-4:1.9778-521.fc 100% |   1.4 MiB/s |  57.2 KiB |  00m00s
+[62/86] perl-Time-Local-2:1.350-521.fc4 100% | 884.8 KiB/s |  34.5 KiB |  00m00s
+[63/86] perl-HTTP-Tiny-0:0.096-1.fc44.n 100% | 208.6 KiB/s |  57.8 KiB |  00m00s
+[64/86] perl-IO-Socket-IP-0:0.43-522.fc 100% | 860.5 KiB/s |  42.2 KiB |  00m00s
+[65/86] perl-AutoLoader-0:5.74-525.fc44 100% | 199.5 KiB/s |  20.5 KiB |  00m00s
+[66/86] perl-IPC-Open3-0:1.24-525.fc44. 100% | 140.8 KiB/s |  23.2 KiB |  00m00s
+[67/86] perl-Socket-4:2.043-1.fc44.x86_ 100% | 263.9 KiB/s |  55.4 KiB |  00m00s
+[68/86] perl-MIME-Base32-0:1.303-25.fc4 100% | 500.5 KiB/s |  20.5 KiB |  00m00s
+[69/86] perl-Unicode-Normalize-0:1.32-5 100% |   1.8 MiB/s |  74.4 KiB |  00m00s
+[70/86] perl-URI-0:5.36-1.fc44.noarch   100% | 379.8 KiB/s | 149.3 KiB |  00m00s
+[71/86] perl-POSIX-0:2.23-525.fc44.x86_ 100% | 437.8 KiB/s |  96.3 KiB |  00m00s
+[72/86] perl-base-0:2.27-525.fc44.noarc 100% | 141.1 KiB/s |  15.5 KiB |  00m00s
+[73/86] perl-Getopt-Std-0:1.14-525.fc44 100% | 128.2 KiB/s |  15.0 KiB |  00m00s
+[74/86] perl-mro-0:1.29-525.fc44.x86_64 100% | 267.2 KiB/s |  29.1 KiB |  00m00s
+[75/86] perl-overloading-0:0.02-525.fc4 100% |  89.1 KiB/s |  12.2 KiB |  00m00s
+[76/86] perl-Data-Dumper-0:2.192-523.fc 100% | 334.9 KiB/s |  56.3 KiB |  00m00s
+[77/86] perl-Digest-MD5-0:2.59-521.fc44 100% | 857.5 KiB/s |  36.0 KiB |  00m00s
+[78/86] perl-Digest-0:1.20-521.fc44.noa 100% | 394.6 KiB/s |  24.9 KiB |  00m00s
+[79/86] perl-libnet-0:3.16-1.fc44.noarc 100% | 578.5 KiB/s | 129.0 KiB |  00m00s
+[80/86] perl-locale-0:1.13-525.fc44.noa 100% | 114.4 KiB/s |  12.8 KiB |  00m00s
+[81/86] perl-SelectSaver-0:1.02-525.fc4 100% |  23.0 KiB/s |  11.0 KiB |  00m00s
+[82/86] perl-File-stat-0:1.14-525.fc44. 100% |  29.6 KiB/s |  16.4 KiB |  00m01s
+[83/86] perl-Class-Struct-0:0.68-525.fc 100% | 128.9 KiB/s |  21.4 KiB |  00m00s
+[84/86] perl-FileHandle-0:2.05-525.fc44 100% | 139.7 KiB/s |  14.8 KiB |  00m00s
+[85/86] perl-B-0:1.89-525.fc44.x86_64   100% | 290.8 KiB/s | 177.1 KiB |  00m01s
+[86/86] kernel-devel-0:7.3.4-200.fc44.x 100% |   2.5 MiB/s |  58.2 MiB |  00m24s
+--------------------------------------------------------------------------------
+[86/86] Total                           100% |   5.2 MiB/s | 138.9 MiB |  00m26s
+Running transaction
+[ 1/88] Verify package files            100% | 144.0   B/s |  86.0   B |  00m01s
+[ 2/88] Prepare transaction             100% | 403.0   B/s |  86.0   B |  00m00s
+[ 3/88] Installing cmake-filesystem-0:4 100% | 283.9 KiB/s |   9.4 KiB |  00m00s
+[ 4/88] Installing libmpc-0:1.4.1-1.fc4 100% |   7.9 MiB/s | 170.4 KiB |  00m00s
+[ 5/88] Installing m4-0:1.4.21-1.fc44.x 100% |  20.2 MiB/s | 887.6 KiB |  00m00s
+[ 6/88] Installing make-1:4.4.1-12.fc44 100% |  39.1 MiB/s |   1.8 MiB |  00m00s
+[ 7/88] Installing bison-0:3.8.2-15.fc4 100% |  71.3 MiB/s |   3.5 MiB |  00m00s
+[ 8/88] Installing flex-0:2.6.4-24.fc44 100% |   5.8 MiB/s | 811.1 KiB |  00m00s
+[ 9/88] Installing cpp-0:16.2.1-3.fc44. 100% |  12.8 MiB/s |  42.6 MiB |  00m03s
+[10/88] Installing ncurses-0:6.6-1.fc44 100% |   3.0 MiB/s | 618.0 KiB |  00m00s
+[11/88] Installing kernel-headers-0:7.3 100% |   6.0 MiB/s |   7.2 MiB |  00m01s
+[12/88] Installing groff-base-0:1.23.0- 100% |  42.8 MiB/s |   3.9 MiB |  00m00s
+[13/88] Installing perl-Digest-0:1.20-5 100% |   1.7 MiB/s |  37.1 KiB |  00m00s
+[14/88] Installing perl-FileHandle-0:2. 100% |  85.2 KiB/s |   9.8 KiB |  00m00s
+[15/88] Installing perl-B-0:1.89-525.fc 100% |   2.5 MiB/s | 504.4 KiB |  00m00s
+[16/88] Installing perl-Digest-MD5-0:2. 100% |   3.2 MiB/s |  61.5 KiB |  00m00s
+[17/88] Installing perl-libnet-0:3.16-1 100% |  12.7 MiB/s | 298.8 KiB |  00m00s
+[18/88] Installing perl-Data-Dumper-0:2 100% |   5.2 MiB/s | 117.4 KiB |  00m00s
+[19/88] Installing perl-Unicode-Normali 100% |  22.7 MiB/s | 488.3 KiB |  00m00s
+[20/88] Installing perl-MIME-Base32-0:1 100% |   2.4 MiB/s |  32.2 KiB |  00m00s
+[21/88] Installing perl-URI-0:5.36-1.fc 100% |   1.8 MiB/s | 289.5 KiB |  00m00s
+[22/88] Installing perl-IO-Socket-IP-0: 100% |   5.3 MiB/s | 102.2 KiB |  00m00s
+[23/88] Installing perl-AutoLoader-0:5. 100% |   1.6 MiB/s |  21.0 KiB |  00m00s
+[24/88] Installing perl-IO-Socket-SSL-0 100% |   5.9 MiB/s | 727.6 KiB |  00m00s
+[25/88] Installing perl-locale-0:1.13-5 100% | 503.3 KiB/s |   6.5 KiB |  00m00s
+[26/88] Installing perl-Net-SSLeay-0:1. 100% |  35.4 MiB/s |   1.3 MiB |  00m00s
+[27/88] Installing perl-Time-Local-2:1. 100% |   4.3 MiB/s |  70.6 KiB |  00m00s
+[28/88] Installing perl-Time-HiRes-4:1. 100% |   5.5 MiB/s | 117.7 KiB |  00m00s
+[29/88] Installing perl-if-0:0.61.000-5 100% | 480.2 KiB/s |   6.2 KiB |  00m00s
+[30/88] Installing perl-File-Path-0:2.1 100% |   3.5 MiB/s |  64.5 KiB |  00m00s
+[31/88] Installing perl-Pod-Escapes-1:1 100% |   1.6 MiB/s |  25.9 KiB |  00m00s
+[32/88] Installing perl-Text-Tabs+Wrap- 100% |   1.9 MiB/s |  23.9 KiB |  00m00s
+[33/88] Installing perl-Pod-Simple-1:3. 100% |   3.7 MiB/s | 574.9 KiB |  00m00s
+[34/88] Installing perl-HTTP-Tiny-0:0.0 100% |   1.3 MiB/s | 164.5 KiB |  00m00s
+[35/88] Installing perl-Class-Struct-0: 100% |   2.3 MiB/s |  25.9 KiB |  00m00s
+[36/88] Installing perl-IPC-Open3-0:1.2 100% |   3.5 MiB/s |  28.5 KiB |  00m00s
+[37/88] Installing perl-File-Temp-1:0.2 100% |  12.4 MiB/s | 165.5 KiB |  00m00s
+[38/88] Installing perl-POSIX-0:2.23-52 100% |   7.3 MiB/s | 230.6 KiB |  00m00s
+[39/88] Installing perl-Term-Cap-0:1.18 100% |   2.7 MiB/s |  30.6 KiB |  00m00s
+[40/88] Installing perl-Term-ANSIColor- 100% |   9.7 MiB/s |  99.2 KiB |  00m00s
+[41/88] Installing perl-podlators-1:6.0 100% |   9.2 MiB/s | 321.7 KiB |  00m00s
+[42/88] Installing perl-Pod-Perldoc-0:3 100% | 285.9 KiB/s | 169.2 KiB |  00m01s
+[43/88] Installing perl-File-stat-0:1.1 100% | 770.0 KiB/s |  13.1 KiB |  00m00s
+[44/88] Installing perl-SelectSaver-0:1 100% | 237.6 KiB/s |   2.6 KiB |  00m00s
+[45/88] Installing perl-Socket-4:2.043- 100% |  10.1 MiB/s | 123.8 KiB |  00m00s
+[46/88] Installing perl-Symbol-0:1.09-5 100% |  58.0 KiB/s |   7.3 KiB |  00m00s
+[47/88] Installing perl-Pod-Usage-4:2.0 100% |   3.4 MiB/s |  87.9 KiB |  00m00s
+[48/88] Installing perl-IO-0:1.55-525.f 100% |   6.7 MiB/s | 151.5 KiB |  00m00s
+[49/88] Installing perl-overloading-0:0 100% | 464.2 KiB/s |   5.6 KiB |  00m00s
+[50/88] Installing perl-mro-0:1.29-525. 100% |   2.2 MiB/s |  42.5 KiB |  00m00s
+[51/88] Installing perl-base-0:2.27-525 100% |   4.2 MiB/s |  13.0 KiB |  00m00s
+[52/88] Installing perl-Fcntl-0:1.20-52 100% |   2.3 MiB/s |  49.8 KiB |  00m00s
+[53/88] Installing perl-Text-ParseWords 100% |   1.8 MiB/s |  14.6 KiB |  00m00s
+[54/88] Installing perl-Getopt-Long-1:2 100% |  13.1 MiB/s | 147.2 KiB |  00m00s
+[55/88] Installing perl-Storable-1:3.37 100% |   7.5 MiB/s | 236.7 KiB |  00m00s
+[56/88] Installing perl-overload-0:1.40 100% |   6.4 MiB/s |  72.0 KiB |  00m00s
+[57/88] Installing perl-Getopt-Std-0:1. 100% | 106.0 KiB/s |  11.8 KiB |  00m00s
+[58/88] Installing perl-File-Basename-0 100% |   1.6 MiB/s |  14.6 KiB |  00m00s
+[59/88] Installing perl-vars-0:1.05-525 100% | 226.4 KiB/s |   4.3 KiB |  00m00s
+[60/88] Installing perl-parent-1:0.244- 100% |   1.3 MiB/s |  11.0 KiB |  00m00s
+[61/88] Installing perl-MIME-Base64-0:3 100% |   2.1 MiB/s |  44.2 KiB |  00m00s
+[62/88] Installing perl-constant-0:1.33 100% |   3.3 MiB/s |  27.4 KiB |  00m00s
+[63/88] Installing perl-Scalar-List-Uti 100% |   6.6 MiB/s | 148.5 KiB |  00m00s
+[64/88] Installing perl-Errno-0:1.38-52 100% | 979.2 KiB/s |   8.8 KiB |  00m00s
+[65/88] Installing perl-Encode-4:3.21-5 100% |  13.9 MiB/s |   4.7 MiB |  00m00s
+[66/88] Installing perl-DynaLoader-0:1. 100% |   2.6 MiB/s |  32.5 KiB |  00m00s
+[67/88] Installing perl-PathTools-0:3.9 100% | 874.1 KiB/s | 184.4 KiB |  00m00s
+[68/88] Installing perl-Exporter-0:5.79 100% |   6.0 MiB/s |  55.6 KiB |  00m00s
+[69/88] Installing perl-Carp-0:1.54-521 100% |   1.9 MiB/s |  47.7 KiB |  00m00s
+[70/88] Installing perl-libs-4:5.42.3-5 100% |   8.6 MiB/s |  11.7 MiB |  00m01s
+[71/88] Installing perl-interpreter-4:5 100% |   3.6 MiB/s | 120.5 KiB |  00m00s
+[72/88] Installing elfutils-debuginfod- 100% |   2.3 MiB/s |  86.2 KiB |  00m00s
+[73/88] Installing libatomic-0:16.2.1-3 100% |   2.1 MiB/s |  46.7 KiB |  00m00s
+[74/88] Installing jansson-0:2.14-4.fc4 100% | 734.3 KiB/s |  90.3 KiB |  00m00s
+[75/88] Installing binutils-0:2.46.1-1. 100% |  10.5 MiB/s |  28.3 MiB |  00m03s
+[76/88] Installing libpkgconf-0:2.5.1-1 100% |   8.9 MiB/s |  91.3 KiB |  00m00s
+[77/88] Installing pkgconf-0:2.5.1-1.fc 100% |   2.5 MiB/s |  95.2 KiB |  00m00s
+[78/88] Installing pkgconf-m4-0:2.5.1-1 100% |   1.1 MiB/s |  14.7 KiB |  00m00s
+[79/88] Installing pkgconf-pkg-config-0 100% |  42.2 KiB/s |   1.8 KiB |  00m00s
+[80/88] Installing openssl-devel-1:3.5. 100% |  22.7 MiB/s |   5.5 MiB |  00m00s
+[81/88] Installing libxcrypt-devel-0:4. 100% |   1.5 MiB/s |  33.3 KiB |  00m00s
+[82/88] Installing glibc-devel-0:2.43-9 100% |   3.0 MiB/s |   2.4 MiB |  00m01s
+[83/88] Installing gcc-0:16.2.1-3.fc44. 100% |  11.3 MiB/s | 121.8 MiB |  00m11s
+[84/88] Installing libzstd-devel-0:1.5. 100% |  15.3 MiB/s | 219.1 KiB |  00m00s
+[85/88] Installing zlib-ng-compat-devel 100% |   5.3 MiB/s | 108.6 KiB |  00m00s
+[86/88] Installing elfutils-libelf-deve 100% | 106.3 KiB/s | 121.5 KiB |  00m01s
+[87/88] Installing kernel-devel-0:7.3.4 100% |   8.2 MiB/s | 253.7 MiB |  00m31s
+[88/88] Installing kmod-0:34.2-4.fc44.x 100% |   2.2 KiB/s | 256.9 KiB |  01m58s
+Complete!
+HEADER_TREE=/usr/src/kernels/7.3.4-200.fc44.x86_64
+warning: pahole version differs from the one used to build the kernel
+  The kernel was built with: 132
+  You are using:             0
+probe.c:2:28: error: 'struct dma_fence_ops' has no member named 'fence_value_str'
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[3]: *** [/usr/src/kernels/7.3.4-200.fc44.x86_64/scripts/Makefile.build:290: probe.o] Error 1
+make[2]: *** [/usr/src/kernels/7.3.4-200.fc44.x86_64/Makefile:2265: .] Error 2
+make[1]: *** [/usr/src/kernels/7.3.4-200.fc44.x86_64/Makefile:248: __sub-make] Error 2
+make: *** [Makefile:248: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/7.3.4-200.fc44.x86_64'
+make[1]: Entering directory '/tmp/kernel/drivers/hv/dxgkrnl'
+warning: pahole version differs from the one used to build the kernel
+  The kernel was built with: 132
+  You are using:             0
+  CC [M]  dxgmodule.o
+  CC [M]  hmgr.o
+  CC [M]  misc.o
+  CC [M]  dxgadapter.o
+  CC [M]  ioctl.o
+  CC [M]  dxgvmbus.o
+  CC [M]  dxgprocess.o
+  CC [M]  dxgsyncfile.o
+  LD [M]  dxgkrnl.o
+  MODPOST Module.symvers
+  CC [M]  dxgkrnl.mod.o
+  CC [M]  .module-common.o
+  LD [M]  dxgkrnl.ko
+  BTF [M] dxgkrnl.ko
+Skipping BTF generation for dxgkrnl.ko due to unavailability of vmlinux
+make[1]: Leaving directory '/tmp/kernel/drivers/hv/dxgkrnl'
+make: Leaving directory '/usr/src/kernels/7.3.4-200.fc44.x86_64'
+filename:       /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+version:        2.0.3
+description:    Microsoft Dxgkrnl virtual compute device Driver
+license:        GPL
+srcversion:     E9E13D15D2946434B466CE2
+alias:          pci:v00001414d0000008Asv*sd*bc*sc*i*
+alias:          pci:v00001414d0000008Esv*sd*bc*sc*i*
+alias:          vmbus:c0cbe9dd605036449448ea1254a5d177
+alias:          vmbus:182d386e36334b4facc42b7703d4df4a
+depends:        hv_vmbus
+name:           dxgkrnl
+retpoline:      Y
+vermagic:       7.3.4-200.fc44.x86_64 SMP preempt mod_unload 
+83e3b04e16f54a746b5707ca18c2faed834d7e739e070ffc1654243edac38fbb  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+exit=0

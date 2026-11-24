@@ -1,0 +1,4 @@
+Nov 23 11:55:46 localhost systemd-modules-load[223]: Inserted module 'fuse'
+Nov 23 11:55:46 localhost systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+Nov 23 11:55:49 localhost systemd[1]: systemd-modules-load.service: Deactivated successfully.
+Nov 23 11:55:49 localhost systemd[1]: Stopped systemd-modules-load.service - Load Kernel Modules.

@@ -1,0 +1,5 @@
+01926b73-6557-4e29-8d9d-95f6c5e5991d confirmed shim menu management
+01926b73-6557-4e29-8d9d-95f6c5e5991d confirmed shim menu view
+01926b73-6557-4e29-8d9d-95f6c5e5991d confirmed shim menu confirm
+01926b73-6557-4e29-8d9d-95f6c5e5991d confirmed shim menu password
+01926b73-6557-4e29-8d9d-95f6c5e5991d confirmed shim menu reboot

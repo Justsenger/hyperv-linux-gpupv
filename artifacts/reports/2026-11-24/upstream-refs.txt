@@ -1,0 +1,9 @@
+ref: refs/heads/linux-msft-wsl-6.18.y	HEAD
+4ee82e228f384c4335f6b2048af72d6956f74c21	HEAD
+ea3a15186dad9a3853c2379fd7f6abaef7cdce15	refs/heads/linux-msft-wsl-4.19.y
+d489414c23af0cf54edd196b5400bb831fc35b02	refs/heads/linux-msft-wsl-5.10.y
+6ac7abbd97a07d5b0bc4bbdb0f3b364f8eb2a22b	refs/heads/linux-msft-wsl-5.15.y
+eaa73a2d52ff620a8c71ba23d57a73a0e33eae03	refs/heads/linux-msft-wsl-5.4.y
+f53bd0a62a32304fb24820768bb80de25589e838	refs/heads/linux-msft-wsl-6.1.y
+4ee82e228f384c4335f6b2048af72d6956f74c21	refs/heads/linux-msft-wsl-6.18.y
+a07f9ea8a99139913acbcc1c160b132cb2a49c81	refs/heads/linux-msft-wsl-6.6.y

@@ -1,0 +1,2 @@
+Corrupt cache rejected: Runtime verification failed: D:\linux-pv\.test\gpupv-test-runtime-4e9372f2e7324a47bec2e606aeaa587c\.tools\wsl-runtime\a8ff069a0325c16d9ae7329382a929fbfc5fdfe9\x86_64\libdxcore.so
+Explicit local files precede fallback cache: libdxcore.so, libd3d12core.so, libd3d12.so

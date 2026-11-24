@@ -1,0 +1,390 @@
+image=opensuse/leap:15.6 unix_time=1795433506 sources_sha256=47bdacc5597ebe41022076e2d6402a70397c2a36ee4ab2f2975ae2d514e79215
+Unable to find image 'opensuse/leap:15.6' locally
+15.6: Pulling from opensuse/leap
+ef34389a9be2: Pulling fs layer
+ef34389a9be2: Verifying Checksum
+ef34389a9be2: Download complete
+ef34389a9be2: Pull complete
+Digest: sha256:79be7751205ea84559990fb76b1bec71e38d6fad41c70a4f6c921b803b58f421
+Status: Downloaded newer image for opensuse/leap:15.6
+NAME="openSUSE Leap"
+VERSION="15.6"
+ID="opensuse-leap"
+ID_LIKE="suse opensuse"
+VERSION_ID="15.6"
+PRETTY_NAME="openSUSE Leap 15.6"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:opensuse:leap:15.6"
+BUG_REPORT_URL="https://bugs.opensuse.org"
+HOME_URL="https://www.opensuse.org/"
+DOCUMENTATION_URL="https://en.opensuse.org/Portal:Leap"
+LOGO="distributor-logo-Leap"
+Retrieving repository 'Update repository of openSUSE Backports' metadata [....
+Looking for gpg keys in repository Update repository of openSUSE Backports.
+  gpgkey=http://download.opensuse.org/update/leap/15.6/backports/repodata/repomd.xml.key
+............................done]
+Building repository 'Update repository of openSUSE Backports' cache [....done]
+Retrieving repository 'Update repository with updates from SUSE Linux Enterprise 15' metadata [.....
+Looking for gpg keys in repository Update repository with updates from SUSE Linux Enterprise 15.
+  gpgkey=http://download.opensuse.org/update/leap/15.6/sle/repodata/repomd.xml.key
+.............................................................................................................................................................done]
+Building repository 'Update repository with updates from SUSE Linux Enterprise 15' cache [....done]
+Retrieving repository 'Main Update Repository' metadata [....
+Looking for gpg keys in repository Main Update Repository.
+  gpgkey=http://download.opensuse.org/update/leap/15.6/oss/repodata/repomd.xml.key
+........................done]
+Building repository 'Main Update Repository' cache [....done]
+Retrieving repository 'Update Repository (Non-Oss)' metadata [.....
+Looking for gpg keys in repository Update Repository (Non-Oss).
+  gpgkey=http://download.opensuse.org/update/leap/15.6/non-oss/repodata/repomd.xml.key
+......................done]
+Building repository 'Update Repository (Non-Oss)' cache [....done]
+Retrieving repository 'Non-OSS Repository' metadata [.....
+Looking for gpg keys in repository Non-OSS Repository.
+  gpgkey=http://download.opensuse.org/distribution/leap/15.6/repo/non-oss/repodata/repomd.xml.key
+...........done]
+Building repository 'Non-OSS Repository' cache [....done]
+Retrieving repository 'Open H.264 Codec (openSUSE Leap)' metadata [......done]
+Building repository 'Open H.264 Codec (openSUSE Leap)' cache [....done]
+Retrieving repository 'Main Repository' metadata [......
+Looking for gpg keys in repository Main Repository.
+  gpgkey=http://download.opensuse.org/distribution/leap/15.6/repo/oss/repodata/repomd.xml.key
+........................................done]
+Building repository 'Main Repository' cache [....done]
+All repositories have been refreshed.
+Loading repository data...
+Warning: Repository 'Update repository of openSUSE Backports' metadata expired since 2026-07-10 11:19:15 UTC.
+Warning: Repository 'Main Update Repository' metadata expired since 2026-10-13 22:33:04 UTC.
+
+    Warning: Repository metadata expired: Check if 'autorefresh' is turned on (zypper lr), otherwise
+    manually refresh the repository (zypper ref). If this does not solve the issue, it could be that
+    you are using a broken mirror or the server has actually discontinued to support the repository.
+
+Reading installed packages...
+'gawk' is already installed.
+No update candidate for 'gawk-4.2.1-150000.3.3.1.x86_64'. The highest available version is already installed.
+Resolving package dependencies...
+
+The following 55 NEW packages are going to be installed:
+  binutils busybox busybox-gzip cpp cpp7 dwarves fipscheck gcc gcc7 glibc-devel kernel-default-devel kernel-devel kernel-macros kmod libasan4 libatomic1 libbpf1 libcilkrts5 libctf-nobfd0 libctf0 libdwarves1 libefivar1 libelf-devel libexpat1 libfipscheck1 libfreebl3 libgomp1 libisl15 libitm1 liblsan0 libmpc3 libmpfr6 libmpx2 libmpxwrappers2 libopenssl1_1 libpython3_6m1_0 libsepol1 libsoftokn3 libtsan0 libubsan0 libxcrypt-devel linux-glibc-devel make mozilla-nspr mozilla-nss mozilla-nss-certs mozilla-nss-tools pesign pesign-obs-integration pkg-config python3-base suse-module-tools systemd-rpm-macros zlib-devel zstd
+
+55 new packages to install.
+
+Package download size:    86.8 MiB
+
+Package install size change:
+              |     292.1 MiB  required by packages that will be installed
+   292.1 MiB  |  -      0 B    released by packages that will be removed
+
+Backend:  classic_rpmtrans
+Continue? [y/n/v/...? shows all options] (y): y
+Retrieving: libefivar1-37-6.12.1.x86_64 (Main Repository) (1/55),  97.3 KiB    
+Retrieving: libefivar1-37-6.12.1.x86_64.rpm [..done]
+Retrieving: libisl15-0.18-1.443.x86_64 (Main Repository) (2/55), 550.6 KiB    
+Retrieving: libisl15-0.18-1.443.x86_64.rpm [..done (75.9 KiB/s)]
+Retrieving: libmpfr6-4.0.2-3.3.1.x86_64 (Main Repository) (3/55), 216.1 KiB    
+Retrieving: libmpfr6-4.0.2-3.3.1.x86_64.rpm [...done (198.8 KiB/s)]
+Retrieving: libmpx2-8.2.1+r264010-150000.1.6.4.x86_64 (Main Repository) (4/55),  19.4 KiB    
+Retrieving: libmpx2-8.2.1+r264010-150000.1.6.4.x86_64.rpm [..done]
+Retrieving: libmpxwrappers2-8.2.1+r264010-150000.1.6.4.x86_64 (Main Repository) (5/55),  18.1 KiB    
+Retrieving: libmpxwrappers2-8.2.1+r264010-150000.1.6.4.x86_64.rpm [..done]
+Retrieving: libsepol1-3.1-150400.1.70.x86_64 (Main Repository) (6/55), 257.4 KiB    
+Retrieving: libsepol1-3.1-150400.1.70.x86_64.rpm [...done (208.1 KiB/s)]
+Retrieving: libtsan0-11.3.0+git1637-150000.1.11.2.x86_64 (Main Repository) (7/55), 328.9 KiB    
+Retrieving: libtsan0-11.3.0+git1637-150000.1.11.2.x86_64.rpm [...done (224.2 KiB/s)]
+Retrieving: linux-glibc-devel-6.4-150600.2.17.x86_64 (Main Repository) (8/55),   1.2 MiB    
+Retrieving: linux-glibc-devel-6.4-150600.2.17.x86_64.rpm [...done (452.6 KiB/s)]
+Retrieving: make-4.2.1-7.3.2.x86_64 (Main Repository) (9/55), 281.7 KiB    
+Retrieving: make-4.2.1-7.3.2.x86_64.rpm [..done (25.1 KiB/s)]
+Retrieving: zstd-1.5.5-150600.1.3.x86_64 (Main Repository) (10/55), 433.8 KiB    
+Retrieving: zstd-1.5.5-150600.1.3.x86_64.rpm [...done (433.8 KiB/s)]
+Retrieving: libmpc3-1.1.0-1.47.x86_64 (Main Repository) (11/55),  49.6 KiB    
+Retrieving: libmpc3-1.1.0-1.47.x86_64.rpm [..done (13.1 KiB/s)]
+Retrieving: fipscheck-1.7.0-150600.3.3.2.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (12/55),  19.2 KiB    
+Retrieving: fipscheck-1.7.0-150600.3.3.2.x86_64.rpm [..not found]
+Retrieving: fipscheck-1.7.0-150600.3.3.2.x86_64.rpm [..not found]
+Retrieving: fipscheck-1.7.0-150600.3.3.2.x86_64.rpm [..done]
+Retrieving: libfipscheck1-1.7.0-150600.3.3.2.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (13/55),  15.8 KiB    
+Retrieving: libfipscheck1-1.7.0-150600.3.3.2.x86_64.rpm [.not found]
+Retrieving: libfipscheck1-1.7.0-150600.3.3.2.x86_64.rpm [.not found]
+Retrieving: libfipscheck1-1.7.0-150600.3.3.2.x86_64.rpm [..done]
+Retrieving: kernel-macros-6.4.0-150600.23.103.1.noarch (Update repository with updates from SUSE Linux Enterprise 15) (14/55),   4.6 MiB    
+Retrieving: kernel-macros-6.4.0-150600.23.103.1.noarch.rpm [..not found]
+Retrieving: kernel-macros-6.4.0-150600.23.103.1.noarch.rpm [..not found]
+Retrieving: kernel-macros-6.4.0-150600.23.103.1.noarch.rpm [......done (4.3 MiB/s)]
+Retrieving: libasan4-7.5.0+r278197-150000.4.44.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (15/55), 364.1 KiB    
+Retrieving: libasan4-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..not found]
+Retrieving: libasan4-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..not found]
+Retrieving: libasan4-7.5.0+r278197-150000.4.44.1.x86_64.rpm [...done (211.5 KiB/s)]
+Retrieving: libatomic1-15.2.0+git10201-150000.1.9.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (16/55),  21.6 KiB    
+Retrieving: libatomic1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [.not found]
+Retrieving: libatomic1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [..not found]
+Retrieving: libatomic1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [..done]
+Retrieving: libbpf1-1.2.2-150600.3.6.2.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (17/55), 162.0 KiB    
+Retrieving: libbpf1-1.2.2-150600.3.6.2.x86_64.rpm [..not found]
+Retrieving: libbpf1-1.2.2-150600.3.6.2.x86_64.rpm [..not found]
+Retrieving: libbpf1-1.2.2-150600.3.6.2.x86_64.rpm [..done]
+Retrieving: libcilkrts5-7.5.0+r278197-150000.4.44.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (18/55),  67.5 KiB    
+Retrieving: libcilkrts5-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..not found]
+Retrieving: libcilkrts5-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..not found]
+Retrieving: libcilkrts5-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..done]
+Retrieving: libctf-nobfd0-2.45-150100.7.57.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (19/55), 164.4 KiB    
+Retrieving: libctf-nobfd0-2.45-150100.7.57.1.x86_64.rpm [.not found]
+Retrieving: libctf-nobfd0-2.45-150100.7.57.1.x86_64.rpm [..not found]
+Retrieving: libctf-nobfd0-2.45-150100.7.57.1.x86_64.rpm [...done]
+Retrieving: libexpat1-2.7.1-150400.3.37.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (20/55), 102.9 KiB    
+Retrieving: libexpat1-2.7.1-150400.3.37.1.x86_64.rpm [..not found]
+Retrieving: libexpat1-2.7.1-150400.3.37.1.x86_64.rpm [..not found]
+Retrieving: libexpat1-2.7.1-150400.3.37.1.x86_64.rpm [..done (2.6 KiB/s)]
+Retrieving: libfreebl3-3.112.3-150400.3.63.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (21/55), 454.9 KiB    
+Retrieving: libfreebl3-3.112.3-150400.3.63.1.x86_64.rpm [..not found]
+Retrieving: libfreebl3-3.112.3-150400.3.63.1.x86_64.rpm [..not found]
+Retrieving: libfreebl3-3.112.3-150400.3.63.1.x86_64.rpm [...done (190.6 KiB/s)]
+Retrieving: libgomp1-15.2.0+git10201-150000.1.9.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (22/55), 165.3 KiB    
+Retrieving: libgomp1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [..not found]
+Retrieving: libgomp1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [..not found]
+Retrieving: libgomp1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [..done]
+Retrieving: libitm1-15.2.0+git10201-150000.1.9.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (23/55),  38.1 KiB    
+Retrieving: libitm1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [..not found]
+Retrieving: libitm1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [..not found]
+Retrieving: libitm1-15.2.0+git10201-150000.1.9.1.x86_64.rpm [..done (1.2 KiB/s)]
+Retrieving: liblsan0-15.2.0+git10201-150000.1.9.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (24/55), 204.0 KiB    
+Retrieving: liblsan0-15.2.0+git10201-150000.1.9.1.x86_64.rpm [.not found]
+Retrieving: liblsan0-15.2.0+git10201-150000.1.9.1.x86_64.rpm [..not found]
+Retrieving: liblsan0-15.2.0+git10201-150000.1.9.1.x86_64.rpm [...done (204.0 KiB/s)]
+Retrieving: libopenssl1_1-1.1.1w-150600.5.21.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (25/55),   1.4 MiB    
+Retrieving: libopenssl1_1-1.1.1w-150600.5.21.1.x86_64.rpm [..not found]
+Retrieving: libopenssl1_1-1.1.1w-150600.5.21.1.x86_64.rpm [..not found]
+Retrieving: libopenssl1_1-1.1.1w-150600.5.21.1.x86_64.rpm [.................done (693.5 KiB/s)]
+Retrieving: libubsan0-7.5.0+r278197-150000.4.44.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (26/55), 140.7 KiB    
+Retrieving: libubsan0-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..not found]
+Retrieving: libubsan0-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..not found]
+Retrieving: libubsan0-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..done]
+Retrieving: mozilla-nspr-4.36.2-150000.3.36.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (27/55), 117.6 KiB    
+Retrieving: mozilla-nspr-4.36.2-150000.3.36.1.x86_64.rpm [.not found]
+Retrieving: mozilla-nspr-4.36.2-150000.3.36.1.x86_64.rpm [.not found]
+Retrieving: mozilla-nspr-4.36.2-150000.3.36.1.x86_64.rpm [..done]
+Retrieving: pkg-config-0.29.2-150600.15.6.3.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (28/55),  73.3 KiB    
+Retrieving: pkg-config-0.29.2-150600.15.6.3.x86_64.rpm [..not found]
+Retrieving: pkg-config-0.29.2-150600.15.6.3.x86_64.rpm [..not found]
+Retrieving: pkg-config-0.29.2-150600.15.6.3.x86_64.rpm [..done (2.6 KiB/s)]
+Retrieving: systemd-rpm-macros-16-150000.7.42.1.noarch (Update repository with updates from SUSE Linux Enterprise 15) (29/55),  22.1 KiB    
+Retrieving: systemd-rpm-macros-16-150000.7.42.1.noarch.rpm [..not found]
+Retrieving: systemd-rpm-macros-16-150000.7.42.1.noarch.rpm [.not found]
+Retrieving: systemd-rpm-macros-16-150000.7.42.1.noarch.rpm [..done (3.7 KiB/s)]
+Retrieving: busybox-1.37.0-150500.10.17.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (30/55), 619.5 KiB    
+Retrieving: busybox-1.37.0-150500.10.17.1.x86_64.rpm [..not found]
+Retrieving: busybox-1.37.0-150500.10.17.1.x86_64.rpm [..not found]
+Retrieving: busybox-1.37.0-150500.10.17.1.x86_64.rpm [...done (207.6 KiB/s)]
+Retrieving: cpp7-7.5.0+r278197-150000.4.44.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (31/55),   7.9 MiB    
+Retrieving: cpp7-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..not found]
+Retrieving: cpp7-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..not found]
+Retrieving: cpp7-7.5.0+r278197-150000.4.44.1.x86_64.rpm [.......done (4.4 MiB/s)]
+Retrieving: kernel-devel-6.4.0-150600.23.103.1.noarch (Update repository with updates from SUSE Linux Enterprise 15) (32/55),  19.5 MiB    
+Retrieving: kernel-devel-6.4.0-150600.23.103.1.noarch.rpm [..not found]
+Retrieving: kernel-devel-6.4.0-150600.23.103.1.noarch.rpm [..not found]
+Retrieving: kernel-devel-6.4.0-150600.23.103.1.noarch.rpm [..........done (18.2 MiB/s)]
+Retrieving: libctf0-2.45-150100.7.57.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (33/55), 163.4 KiB    
+Retrieving: libctf0-2.45-150100.7.57.1.x86_64.rpm [..not found]
+Retrieving: libctf0-2.45-150100.7.57.1.x86_64.rpm [..not found]
+Retrieving: libctf0-2.45-150100.7.57.1.x86_64.rpm [..done (5.4 KiB/s)]
+Retrieving: binutils-2.45-150100.7.57.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (34/55),   6.4 MiB    
+Retrieving: binutils-2.45-150100.7.57.1.x86_64.rpm [..not found]
+Retrieving: binutils-2.45-150100.7.57.1.x86_64.rpm [..not found]
+Retrieving: binutils-2.45-150100.7.57.1.x86_64.rpm [......done (5.1 MiB/s)]
+Retrieving: python3-base-3.6.15-150300.10.118.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (35/55),   7.8 MiB    
+Retrieving: python3-base-3.6.15-150300.10.118.1.x86_64.rpm [..not found]
+Retrieving: python3-base-3.6.15-150300.10.118.1.x86_64.rpm [..not found]
+Retrieving: python3-base-3.6.15-150300.10.118.1.x86_64.rpm [.......done (7.3 MiB/s)]
+Retrieving: libpython3_6m1_0-3.6.15-150300.10.118.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (36/55),   1.2 MiB    
+Retrieving: libpython3_6m1_0-3.6.15-150300.10.118.1.x86_64.rpm [.not found]
+Retrieving: libpython3_6m1_0-3.6.15-150300.10.118.1.x86_64.rpm [..not found]
+Retrieving: libpython3_6m1_0-3.6.15-150300.10.118.1.x86_64.rpm [....done (959.7 KiB/s)]
+Retrieving: mozilla-nss-certs-3.112.3-150400.3.63.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (37/55), 339.2 KiB    
+Retrieving: mozilla-nss-certs-3.112.3-150400.3.63.1.x86_64.rpm [..not found]
+Retrieving: mozilla-nss-certs-3.112.3-150400.3.63.1.x86_64.rpm [..not found]
+Retrieving: mozilla-nss-certs-3.112.3-150400.3.63.1.x86_64.rpm [...done (226.0 KiB/s)]
+Retrieving: busybox-gzip-1.37.0-150500.7.11.1.noarch (Update repository with updates from SUSE Linux Enterprise 15) (38/55),  13.9 KiB    
+Retrieving: busybox-gzip-1.37.0-150500.7.11.1.noarch.rpm [..not found]
+Retrieving: busybox-gzip-1.37.0-150500.7.11.1.noarch.rpm [.not found]
+Retrieving: busybox-gzip-1.37.0-150500.7.11.1.noarch.rpm [..done]
+Retrieving: mozilla-nss-3.112.3-150400.3.63.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (39/55), 811.8 KiB    
+Retrieving: mozilla-nss-3.112.3-150400.3.63.1.x86_64.rpm [..not found]
+Retrieving: mozilla-nss-3.112.3-150400.3.63.1.x86_64.rpm [..not found]
+Retrieving: mozilla-nss-3.112.3-150400.3.63.1.x86_64.rpm [...done (214.7 KiB/s)]
+Retrieving: libsoftokn3-3.112.3-150400.3.63.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (40/55), 334.6 KiB    
+Retrieving: libsoftokn3-3.112.3-150400.3.63.1.x86_64.rpm [..not found]
+Retrieving: libsoftokn3-3.112.3-150400.3.63.1.x86_64.rpm [..not found]
+Retrieving: libsoftokn3-3.112.3-150400.3.63.1.x86_64.rpm [...done (213.3 KiB/s)]
+Retrieving: suse-module-tools-15.6.14-150600.3.17.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (41/55),  71.6 KiB    
+Retrieving: suse-module-tools-15.6.14-150600.3.17.1.x86_64.rpm [..not found]
+Retrieving: suse-module-tools-15.6.14-150600.3.17.1.x86_64.rpm [..not found]
+Retrieving: suse-module-tools-15.6.14-150600.3.17.1.x86_64.rpm [..done]
+Retrieving: kmod-29-150600.13.3.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (42/55), 102.1 KiB    
+Retrieving: kmod-29-150600.13.3.1.x86_64.rpm [..not found]
+Retrieving: kmod-29-150600.13.3.1.x86_64.rpm [.not found]
+Retrieving: kmod-29-150600.13.3.1.x86_64.rpm [..done (2.6 KiB/s)]
+Retrieving: pesign-0.112-150000.4.23.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (43/55), 105.9 KiB    
+Retrieving: pesign-0.112-150000.4.23.1.x86_64.rpm [..not found]
+Retrieving: pesign-0.112-150000.4.23.1.x86_64.rpm [..not found]
+Retrieving: pesign-0.112-150000.4.23.1.x86_64.rpm [..done]
+Retrieving: mozilla-nss-tools-3.112.3-150400.3.63.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (44/55), 591.1 KiB    
+Retrieving: mozilla-nss-tools-3.112.3-150400.3.63.1.x86_64.rpm [..not found]
+Retrieving: mozilla-nss-tools-3.112.3-150400.3.63.1.x86_64.rpm [..not found]
+Retrieving: mozilla-nss-tools-3.112.3-150400.3.63.1.x86_64.rpm [...done (199.1 KiB/s)]
+Retrieving: pesign-obs-integration-10.2+git20210804.ff18da1-150600.10.3.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (45/55),  39.0 KiB    
+Retrieving: pesign-obs-integration-10.2+git20210804.ff18da1-150600.10.3.1.x86_64.rpm [..not found]
+Retrieving: pesign-obs-integration-10.2+git20210804.ff18da1-150600.10.3.1.x86_64.rpm [.not found]
+Retrieving: pesign-obs-integration-10.2+git20210804.ff18da1-150600.10.3.1.x86_64.rpm [..done]
+Retrieving: libdwarves1-1.25-150600.1.4.x86_64 (Main Repository) (46/55),  89.5 KiB    
+Retrieving: libdwarves1-1.25-150600.1.4.x86_64.rpm [..done (14.4 KiB/s)]
+Retrieving: libxcrypt-devel-4.4.15-150300.4.7.1.x86_64 (Main Repository) (47/55),  32.6 KiB    
+Retrieving: libxcrypt-devel-4.4.15-150300.4.7.1.x86_64.rpm [..done]
+Retrieving: cpp-7-3.9.1.x86_64 (Main Repository) (48/55),   9.4 KiB    
+Retrieving: cpp-7-3.9.1.x86_64.rpm [..done]
+Retrieving: dwarves-1.25-150600.1.4.x86_64 (Main Repository) (49/55), 113.4 KiB    
+Retrieving: dwarves-1.25-150600.1.4.x86_64.rpm [..done]
+Retrieving: glibc-devel-2.38-150600.14.46.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (50/55), 651.4 KiB    
+Retrieving: glibc-devel-2.38-150600.14.46.1.x86_64.rpm [..not found]
+Retrieving: glibc-devel-2.38-150600.14.46.1.x86_64.rpm [..not found]
+Retrieving: glibc-devel-2.38-150600.14.46.1.x86_64.rpm [...done (207.6 KiB/s)]
+Retrieving: zlib-devel-1.2.13-150500.4.6.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (51/55), 121.0 KiB    
+Retrieving: zlib-devel-1.2.13-150500.4.6.1.x86_64.rpm [.not found]
+Retrieving: zlib-devel-1.2.13-150500.4.6.1.x86_64.rpm [..not found]
+Retrieving: zlib-devel-1.2.13-150500.4.6.1.x86_64.rpm [..done]
+Retrieving: gcc7-7.5.0+r278197-150000.4.44.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (52/55),  19.7 MiB    
+Retrieving: gcc7-7.5.0+r278197-150000.4.44.1.x86_64.rpm [..not found]
+Retrieving: gcc7-7.5.0+r278197-150000.4.44.1.x86_64.rpm [.not found]
+Retrieving: gcc7-7.5.0+r278197-150000.4.44.1.x86_64.rpm [............done (8.9 MiB/s)]
+Retrieving: libelf-devel-0.185-150400.5.8.3.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (53/55), 740.8 KiB    
+Retrieving: libelf-devel-0.185-150400.5.8.3.x86_64.rpm [..not found]
+Retrieving: libelf-devel-0.185-150400.5.8.3.x86_64.rpm [..not found]
+Retrieving: libelf-devel-0.185-150400.5.8.3.x86_64.rpm [...done (217.5 KiB/s)]
+Retrieving: gcc-7-3.9.1.x86_64 (Main Repository) (54/55),  10.4 KiB    
+Retrieving: gcc-7-3.9.1.x86_64.rpm [..done (5.1 KiB/s)]
+Retrieving: kernel-default-devel-6.4.0-150600.23.103.1.x86_64 (Update repository with updates from SUSE Linux Enterprise 15) (55/55),   8.0 MiB    
+Retrieving: kernel-default-devel-6.4.0-150600.23.103.1.x86_64.rpm [..not found]
+Retrieving: kernel-default-devel-6.4.0-150600.23.103.1.x86_64.rpm [..not found]
+Retrieving: kernel-default-devel-6.4.0-150600.23.103.1.x86_64.rpm [.......done (7.3 MiB/s)]
+
+Checking for file conflicts: [....done]
+( 1/55) Installing: libefivar1-37-6.12.1.x86_64 [..done]
+( 2/55) Installing: libisl15-0.18-1.443.x86_64 [..done]
+( 3/55) Installing: libmpfr6-4.0.2-3.3.1.x86_64 [..done]
+( 4/55) Installing: libmpx2-8.2.1+r264010-150000.1.6.4.x86_64 [..done]
+( 5/55) Installing: libmpxwrappers2-8.2.1+r264010-150000.1.6.4.x86_64 [..done]
+( 6/55) Installing: libsepol1-3.1-150400.1.70.x86_64 [..done]
+( 7/55) Installing: libtsan0-11.3.0+git1637-150000.1.11.2.x86_64 [..done]
+( 8/55) Installing: linux-glibc-devel-6.4-150600.2.17.x86_64 [...done]
+( 9/55) Installing: make-4.2.1-7.3.2.x86_64 [..done]
+(10/55) Installing: zstd-1.5.5-150600.1.3.x86_64 [..done]
+(11/55) Installing: libmpc3-1.1.0-1.47.x86_64 [..done]
+(12/55) Installing: fipscheck-1.7.0-150600.3.3.2.x86_64 [..done]
+(13/55) Installing: libfipscheck1-1.7.0-150600.3.3.2.x86_64 [..done]
+(14/55) Installing: kernel-macros-6.4.0-150600.23.103.1.noarch [..done]
+(15/55) Installing: libasan4-7.5.0+r278197-150000.4.44.1.x86_64 [..done]
+(16/55) Installing: libatomic1-15.2.0+git10201-150000.1.9.1.x86_64 [..done]
+(17/55) Installing: libbpf1-1.2.2-150600.3.6.2.x86_64 [..done]
+(18/55) Installing: libcilkrts5-7.5.0+r278197-150000.4.44.1.x86_64 [..done]
+(19/55) Installing: libctf-nobfd0-2.45-150100.7.57.1.x86_64 [..done]
+(20/55) Installing: libexpat1-2.7.1-150400.3.37.1.x86_64 [..done]
+(21/55) Installing: libfreebl3-3.112.3-150400.3.63.1.x86_64 [..done]
+(22/55) Installing: libgomp1-15.2.0+git10201-150000.1.9.1.x86_64 [..done]
+(23/55) Installing: libitm1-15.2.0+git10201-150000.1.9.1.x86_64 [..done]
+(24/55) Installing: liblsan0-15.2.0+git10201-150000.1.9.1.x86_64 [..done]
+(25/55) Installing: libopenssl1_1-1.1.1w-150600.5.21.1.x86_64 [..done]
+(26/55) Installing: libubsan0-7.5.0+r278197-150000.4.44.1.x86_64 [..done]
+(27/55) Installing: mozilla-nspr-4.36.2-150000.3.36.1.x86_64 [..done]
+(28/55) Installing: pkg-config-0.29.2-150600.15.6.3.x86_64 [..done]
+(29/55) Installing: systemd-rpm-macros-16-150000.7.42.1.noarch [..done]
+(30/55) Installing: busybox-1.37.0-150500.10.17.1.x86_64 [..done]
+(31/55) Installing: cpp7-7.5.0+r278197-150000.4.44.1.x86_64 [.......done]
+(32/55) Installing: kernel-devel-6.4.0-150600.23.103.1.noarch [..................................done]
+(33/55) Installing: libctf0-2.45-150100.7.57.1.x86_64 [..done]
+(34/55) Installing: binutils-2.45-150100.7.57.1.x86_64 [...............
+update-alternatives: using /usr/bin/ld.bfd to provide /usr/bin/ld (ld) in auto mode
+done]
+(35/55) Installing: python3-base-3.6.15-150300.10.118.1.x86_64 [.........done]
+(36/55) Installing: libpython3_6m1_0-3.6.15-150300.10.118.1.x86_64 [...done]
+(37/55) Installing: mozilla-nss-certs-3.112.3-150400.3.63.1.x86_64 [..done]
+(38/55) Installing: busybox-gzip-1.37.0-150500.7.11.1.noarch [..done]
+(39/55) Installing: mozilla-nss-3.112.3-150400.3.63.1.x86_64 [..done]
+(40/55) Installing: libsoftokn3-3.112.3-150400.3.63.1.x86_64 [..done]
+(41/55) Installing: suse-module-tools-15.6.14-150600.3.17.1.x86_64 [..done]
+(42/55) Installing: kmod-29-150600.13.3.1.x86_64 [..done]
+(43/55) Installing: pesign-0.112-150000.4.23.1.x86_64 [..done]
+(44/55) Installing: mozilla-nss-tools-3.112.3-150400.3.63.1.x86_64 [..done]
+(45/55) Installing: pesign-obs-integration-10.2+git20210804.ff18da1-150600.10.3.1.x86_64 [..done]
+(46/55) Installing: libdwarves1-1.25-150600.1.4.x86_64 [..done]
+(47/55) Installing: libxcrypt-devel-4.4.15-150300.4.7.1.x86_64 [..done]
+(48/55) Installing: cpp-7-3.9.1.x86_64 [..done]
+(49/55) Installing: dwarves-1.25-150600.1.4.x86_64 [..done]
+(50/55) Installing: glibc-devel-2.38-150600.14.46.1.x86_64 [..done]
+(51/55) Installing: zlib-devel-1.2.13-150500.4.6.1.x86_64 [..done]
+(52/55) Installing: gcc7-7.5.0+r278197-150000.4.44.1.x86_64 [..................done]
+(53/55) Installing: libelf-devel-0.185-150400.5.8.3.x86_64 [..done]
+(54/55) Installing: gcc-7-3.9.1.x86_64 [..done]
+(55/55) Installing: kernel-default-devel-6.4.0-150600.23.103.1.x86_64 [..........done]
+Running post-transaction scripts [...done]
+HEADER_TREE=/usr/src/linux-6.4.0-150600.23.103-obj/x86_64/default
+/tmp/tmp.TUgWmp83l7/probe.c: In function 'p':
+/tmp/tmp.TUgWmp83l7/probe.c:2:62: error: too few arguments to function 'eventfd_signal'
+ void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.TUgWmp83l7/probe.c:1:0:
+/usr/src/linux-6.4.0-150600.23.103/include/linux/eventfd.h:42:7: note: declared here
+ __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+       ^~~~~~~~~~~~~~
+make[1]: *** [/usr/src/linux-6.4.0-150600.23.103/scripts/Makefile.build:252: /tmp/tmp.TUgWmp83l7/probe.o] Error 1
+make: *** [../../../linux-6.4.0-150600.23.103/Makefile:2059: /tmp/tmp.TUgWmp83l7] Error 2
+/tmp/tmp.TUgWmp83l7/probe.c: In function 'p':
+/tmp/tmp.TUgWmp83l7/probe.c:2:86: error: passing argument 1 of '__dma_fence_is_later' makes integer from pointer without a cast [-Werror=int-conversion]
+ bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+                                                                                      ^
+In file included from /tmp/tmp.TUgWmp83l7/probe.c:1:0:
+/usr/src/linux-6.4.0-150600.23.103/include/linux/dma-fence.h:471:20: note: expected 'u64 {aka long long unsigned int}' but argument is of type 'struct dma_fence *'
+ static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+                    ^~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+make[1]: *** [/usr/src/linux-6.4.0-150600.23.103/scripts/Makefile.build:252: /tmp/tmp.TUgWmp83l7/probe.o] Error 1
+make: *** [../../../linux-6.4.0-150600.23.103/Makefile:2059: /tmp/tmp.TUgWmp83l7] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-6.4.0-150600.23.103-obj/x86_64/default'
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-6.4.0-150600.23.103-obj/x86_64/default'
+filename:       /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+version:        2.0.3
+description:    Microsoft Dxgkrnl virtual compute device Driver
+license:        GPL
+suserelease:    SLE15-SP6
+srcversion:     41B3AB8E7A22D9506E9F926
+alias:          pci:v00001414d0000008Asv*sd*bc*sc*i*
+alias:          pci:v00001414d0000008Esv*sd*bc*sc*i*
+alias:          vmbus:c0cbe9dd605036449448ea1254a5d177
+alias:          vmbus:182d386e36334b4facc42b7703d4df4a
+depends:        hv_vmbus
+retpoline:      Y
+name:           dxgkrnl
+vermagic:       6.4.0-150600.23.103-default SMP preempt mod_unload modversions 
+7030524ad4154cefc703bf78309cc259ec25cfab54bfa0edb2d4cf38db2c8d0c  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+exit=0

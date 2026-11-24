@@ -1,0 +1,2 @@
+Running timer as unit: run-p2441-i2441.timer
+Will run service as unit: run-p2441-i2441.service

@@ -1,0 +1,7 @@
+Exception: D:\linux-pv\host\gpupv-host.ps1:29
+Line |
+  29 |  … 64'}[$native] -ne $Arch){throw "宿主架构 $native 与目标 $Arch 不匹配，请选择相同架构。"}
+     |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | 宿主架构 X64 与目标 aarch64 不匹配，请选择相同架构。
+
+

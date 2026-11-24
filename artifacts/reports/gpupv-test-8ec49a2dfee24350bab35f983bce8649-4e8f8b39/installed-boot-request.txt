@@ -1,0 +1,2 @@
+Running timer as unit: run-p3200-i3500.timer
+Will run service as unit: run-p3200-i3500.service

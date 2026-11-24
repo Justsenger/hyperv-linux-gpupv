@@ -1,0 +1,2 @@
+[  408.455112] misc dxg: dxgk: dxgkio_reserve_gpu_va: Ioctl failed: -75
+[  408.456766] misc dxg: dxgk: dxgkio_reserve_gpu_va: Ioctl failed: -75

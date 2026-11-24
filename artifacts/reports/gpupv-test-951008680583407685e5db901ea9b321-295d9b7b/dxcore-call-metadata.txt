@@ -1,0 +1,6 @@
+dxcore ioctl observer bound in ordinary guest process
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB
+dxcore escape_failed adapter=0x40000080 device=0 type=0 flags=0 size=64
+dxcore escape_failed adapter=0x40000080 device=0 type=0 flags=0 size=64
+dxcore escape_failed adapter=0x40000080 device=0 type=0 flags=0 size=196

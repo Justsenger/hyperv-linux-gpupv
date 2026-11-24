@@ -1,0 +1,75 @@
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+pci id for fd 3: 1414:0006, driver (null)
+pci id for fd 4: 1414:0006, driver (null)
+pci id for fd 5: 1414:0006, driver (null)
+libva error: /usr/lib64/dri/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+Trying display: drm
+comparison_exit=77
+No accessible Intel D3D12 VA display exposing both H.264 encode and decode.

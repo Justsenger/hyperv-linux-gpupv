@@ -1,0 +1,2 @@
+Running timer as unit: run-p599-i599.timer
+Will run service as unit: run-p599-i599.service

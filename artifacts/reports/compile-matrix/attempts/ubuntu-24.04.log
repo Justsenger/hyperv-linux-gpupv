@@ -1,0 +1,35 @@
+image=ubuntu:24.04 unix_time=1795422032
+Unable to find image 'ubuntu:24.04' locally
+24.04: Pulling from library/ubuntu
+8e8df94085bf: Pulling fs layer
+8e8df94085bf: Verifying Checksum
+8e8df94085bf: Download complete
+8e8df94085bf: Pull complete
+Digest: sha256:9c7f200c07e3d4a03e7249d2c16bf66a51120fb876aa2242cf31451412543289
+Status: Downloaded newer image for ubuntu:24.04
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+Ign:1 https://security.ubuntu.com/ubuntu noble-security InRelease
+Ign:2 https://archive.ubuntu.com/ubuntu noble InRelease
+Ign:3 https://archive.ubuntu.com/ubuntu noble-updates InRelease
+Ign:1 https://security.ubuntu.com/ubuntu noble-security InRelease
+Ign:4 https://archive.ubuntu.com/ubuntu noble-backports InRelease
+Ign:1 https://security.ubuntu.com/ubuntu noble-security InRelease
+Ign:2 https://archive.ubuntu.com/ubuntu noble InRelease
+Ign:3 https://archive.ubuntu.com/ubuntu noble-updates InRelease
+Err:1 https://security.ubuntu.com/ubuntu noble-security InRelease
+  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+Ign:4 https://archive.ubuntu.com/ubuntu noble-backports InRelease
+Ign:2 https://archive.ubuntu.com/ubuntu noble InRelease
+Ign:3 https://archive.ubuntu.com/ubuntu noble-updates InRelease

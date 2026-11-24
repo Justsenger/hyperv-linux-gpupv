@@ -1,0 +1,48 @@
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 8086:9a49 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+compute_exit=0
+total 0
+drwxr-xr-x 2 root root         80 Nov 24 01:35 by-path
+crw-rw---- 1 root video  226,   0 Nov 24 01:24 card0
+crw-rw---- 1 root video  226,   1 Nov 24 01:35 card1
+crw-rw---- 1 root render 226, 128 Nov 24 01:35 renderD128
+libva info: VA-API version 1.22.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_22
+pci id for fd 3: 1414:0006, driver (null)
+pci id for fd 4: 1414:0006, driver (null)
+kmsro: driver missing
+libva error: /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+Trying display: drm
+libva info: VA-API version 1.22.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_22
+libva error: /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+Trying display: drm
+video_exit=77
+No accessible Intel D3D12 VA display exposing both H.264 encode and decode.

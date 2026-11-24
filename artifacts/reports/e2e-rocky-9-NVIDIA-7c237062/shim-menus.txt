@@ -1,0 +1,5 @@
+54b7e1cf-73a1-4da7-be48-6ebd13147293 confirmed shim menu management
+54b7e1cf-73a1-4da7-be48-6ebd13147293 confirmed shim menu view
+54b7e1cf-73a1-4da7-be48-6ebd13147293 confirmed shim menu confirm
+54b7e1cf-73a1-4da7-be48-6ebd13147293 confirmed shim menu password
+54b7e1cf-73a1-4da7-be48-6ebd13147293 confirmed shim menu reboot

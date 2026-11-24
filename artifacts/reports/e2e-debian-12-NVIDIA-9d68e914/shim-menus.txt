@@ -1,0 +1,5 @@
+e4375783-2a00-4d0b-bf72-3f56937eca0a confirmed shim menu management
+e4375783-2a00-4d0b-bf72-3f56937eca0a confirmed shim menu view
+e4375783-2a00-4d0b-bf72-3f56937eca0a confirmed shim menu confirm
+e4375783-2a00-4d0b-bf72-3f56937eca0a confirmed shim menu password
+e4375783-2a00-4d0b-bf72-3f56937eca0a confirmed shim menu reboot

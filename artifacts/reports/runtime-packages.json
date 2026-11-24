@@ -1,0 +1,22 @@
+[
+  {
+    "file": "irisxe-x64.iso",
+    "bytes": 1238499328,
+    "sha256": "6f5a47c0e1fc987fe1b3cc935c7f0403df3ec537af7820b4d0aa628be243c8cf"
+  },
+  {
+    "file": "irisxe-x64.tar",
+    "bytes": 1236942336,
+    "sha256": "3c51111a1d36cc7f8282a609a29201e7c1a3239dbcf6255ff94c2b8fb3ff559a"
+  },
+  {
+    "file": "rtx2060-x64.iso",
+    "bytes": 3261530112,
+    "sha256": "f6fe4ccb9c078977db29f964cb2fe4f42d81e4959e1855fe2918a6aa070143da"
+  },
+  {
+    "file": "rtx2060-x64.tar",
+    "bytes": 3259652608,
+    "sha256": "0f020e0d4ee4276e3d8f18a52fc9ad7c8189d866cc277012c8f8153915c61ef7"
+  }
+]

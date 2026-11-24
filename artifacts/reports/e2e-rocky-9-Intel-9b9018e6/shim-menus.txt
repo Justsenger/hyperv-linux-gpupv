@@ -1,0 +1,5 @@
+333f0715-65b3-4628-b2d4-e34bea8b282f confirmed shim menu management
+333f0715-65b3-4628-b2d4-e34bea8b282f confirmed shim menu view
+333f0715-65b3-4628-b2d4-e34bea8b282f confirmed shim menu confirm
+333f0715-65b3-4628-b2d4-e34bea8b282f confirmed shim menu password
+333f0715-65b3-4628-b2d4-e34bea8b282f confirmed shim menu reboot

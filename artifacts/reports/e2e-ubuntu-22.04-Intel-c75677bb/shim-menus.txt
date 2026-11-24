@@ -1,0 +1,5 @@
+f2d58b45-edef-4f9a-92fc-125165d615db confirmed shim menu management
+f2d58b45-edef-4f9a-92fc-125165d615db confirmed shim menu view
+f2d58b45-edef-4f9a-92fc-125165d615db confirmed shim menu confirm
+f2d58b45-edef-4f9a-92fc-125165d615db confirmed shim menu password
+f2d58b45-edef-4f9a-92fc-125165d615db confirmed shim menu reboot

@@ -1,0 +1,4 @@
+Inserted module 'fuse'
+Finished systemd-modules-load.service - Load Kernel Modules.
+systemd-modules-load.service: Deactivated successfully.
+Stopped systemd-modules-load.service - Load Kernel Modules.

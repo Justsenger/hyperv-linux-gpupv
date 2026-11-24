@@ -1,0 +1,6 @@
+{
+  "Image": "D:\\linux-pv\\.test\\images\\gpupv-test-ubuntu-22.04-77d19e53656f87c9.img",
+  "Sha256": "77D19E53656F87C95F1F6C6BE59C789083B3F77FA08F9D88011EE04085C61F87",
+  "Source": "https://cloud-images.ubuntu.com/releases/jammy/release/ubuntu-22.04-server-cloudimg-amd64.img",
+  "ChecksumSource": "https://cloud-images.ubuntu.com/releases/jammy/release/SHA256SUMS"
+}

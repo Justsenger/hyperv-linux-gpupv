@@ -1,0 +1,5 @@
+19862997-adda-45f2-9840-7348df86812e confirmed shim menu management
+19862997-adda-45f2-9840-7348df86812e confirmed shim menu view
+19862997-adda-45f2-9840-7348df86812e confirmed shim menu confirm
+19862997-adda-45f2-9840-7348df86812e confirmed shim menu password
+19862997-adda-45f2-9840-7348df86812e confirmed shim menu reboot

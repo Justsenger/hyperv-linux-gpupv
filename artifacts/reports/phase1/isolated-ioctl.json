@@ -1,0 +1,70 @@
+[
+  {
+    "workload": "cuda",
+    "exit": 0,
+    "errors": []
+  },
+  {
+    "workload": "d3d12",
+    "exit": 0,
+    "errors": [
+      {
+        "call": "dxgkio_is_feature_enabled",
+        "errno": -22,
+        "count": 1
+      },
+      {
+        "call": "dxgkio_query_adapter_info",
+        "errno": -2,
+        "count": 20
+      },
+      {
+        "call": "dxgkio_query_adapter_info",
+        "errno": -22,
+        "count": 6
+      }
+    ]
+  },
+  {
+    "workload": "nvml",
+    "exit": 0,
+    "errors": [
+      {
+        "call": "dxgkio_escape",
+        "errno": -22,
+        "count": 3
+      },
+      {
+        "call": "dxgkio_query_adapter_info",
+        "errno": -22,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "workload": "opencl",
+    "exit": 0,
+    "errors": [
+      {
+        "call": "dxgkio_is_feature_enabled",
+        "errno": -22,
+        "count": 1
+      },
+      {
+        "call": "dxgkio_query_adapter_info",
+        "errno": -2,
+        "count": 2
+      },
+      {
+        "call": "dxgkio_query_adapter_info",
+        "errno": -22,
+        "count": 6
+      },
+      {
+        "call": "dxgkio_reserve_gpu_va",
+        "errno": -75,
+        "count": 2
+      }
+    ]
+  }
+]

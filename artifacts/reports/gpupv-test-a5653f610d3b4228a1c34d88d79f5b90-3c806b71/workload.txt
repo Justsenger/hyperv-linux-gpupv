@@ -1,0 +1,6 @@
+boot_id=2839f310-f57b-466d-afba-5fd5173ec258 uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+clinfo 未安装。
+zeinfo 未安装。
+vainfo 未安装。
+vulkaninfo 未安装。
+当前无可用的 Intel OpenCL GPU 或 GLX 硬件渲染会话。

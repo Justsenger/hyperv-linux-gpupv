@@ -1,0 +1,65 @@
+boot_id=25eb6385-eb03-48a6-b7cd-eb8a62c646cf uid=1000 gpu=NVIDIA GeForce RTX 2060
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB
+NVIDIA GeForce RTX 2060: 7 * 5 + 3 = 38
+NVIDIA GeForce RTX 2060: 7 * 19 + 3 = 136
+NVIDIA GeForce RTX 2060: 7 * 127 + 3 = 892
+[Parsed_testsrc2_0 @ 0x560d64157b80] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 15 tbn
+[out#0/matroska @ 0x560d6417b380] No explicit maps, mapping streams automatically...
+[vost#0:0/h264_nvenc @ 0x560d6417b700] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (h264_nvenc))
+[vost#0:0/h264_nvenc @ 0x560d6417b700] Starting thread...
+[vf#0:0 @ 0x560d64197080] Starting thread...
+[vist#0:0/wrapped_avframe @ 0x560d6417b180] [dec:wrapped_avframe @ 0x560d64198540] Starting thread...
+[in#0/lavfi @ 0x560d64156fc0] Starting thread...
+Press [q] to stop, [?] for help
+[graph -1 input from stream 0:0 @ 0x7f07540016c0] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1 csp:unknown range:unknown alpha:unspecified
+[graph -1 input from stream 0:0 @ 0x7f07540016c0] video frame properties congruent with link at pts_time: 0
+[h264_nvenc @ 0x560d6417bcc0] Loaded Nvenc version 13.1
+[h264_nvenc @ 0x560d6417bcc0] Nvenc initialized successfully
+[h264_nvenc @ 0x560d6417bcc0] 1 CUDA capable devices found
+[h264_nvenc @ 0x560d6417bcc0] [ GPU #0 - < NVIDIA GeForce RTX 2060 > has Compute SM 7.5 ]
+[h264_nvenc @ 0x560d6417bcc0] supports NVENC
+Output #0, matroska, to '/tmp/tmp.Cw8Bm35SHB/test.mkv':
+  Metadata:
+    encoder         : Lavf62.12.103
+  Stream #0:0: Video: h264 (Main), 1 reference frame (H264 / 0x34363248), yuv420p(tv, progressive), 320x240 [SAR 1:1 DAR 4:3], q=2-31, 2000 kb/s, 15 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc62.28.103 h264_nvenc
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/2000000 buffer size: 4000000 vbv_delay: N/A
+[out#0/matroska @ 0x560d6417b380] Starting thread...
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50    
+[vf#0:0 @ 0x560d64197080] All consumers returned EOF
+[vf#0:0 @ 0x560d64197080] Terminating thread with return code 0 (success)
+[vist#0:0/wrapped_avframe @ 0x560d6417b180] [dec:wrapped_avframe @ 0x560d64198540] Decoder returned EOF, finishing
+[vist#0:0/wrapped_avframe @ 0x560d6417b180] [dec:wrapped_avframe @ 0x560d64198540] Terminating thread with return code 0 (success)
+[vist#0:0/wrapped_avframe @ 0x560d6417b180] All consumers of this stream are done
+[in#0/lavfi @ 0x560d64156fc0] All consumers are done
+[in#0/lavfi @ 0x560d64156fc0] Terminating thread with return code 0 (success)
+[vost#0:0/h264_nvenc @ 0x560d6417b700] [enc:h264_nvenc @ 0x560d6417bc40] Encoder thread received EOF
+[vost#0:0/h264_nvenc @ 0x560d6417b700] Terminating thread with return code 0 (success)
+[out#0/matroska @ 0x560d6417b380] All streams finished
+[out#0/matroska @ 0x560d6417b380] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x560d64199d80] Statistics: 68369 bytes written, 0 seeks, 1 writeouts
+[out#0/matroska @ 0x560d6417b380] Output file #0 (/tmp/tmp.Cw8Bm35SHB/test.mkv):
+[out#0/matroska @ 0x560d6417b380]   Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (67624 bytes); 
+[out#0/matroska @ 0x560d6417b380]   Total: 15 packets (67624 bytes) muxed
+[out#0/matroska @ 0x560d6417b380] video:66KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.101680%
+frame=   15 fps=0.0 q=13.0 Lsize=      67KiB time=00:00:00.80 bitrate= 683.7kbits/s speed=1.55x elapsed=0:00:00.51    
+[h264_nvenc @ 0x560d6417bcc0] Nvenc unloaded
+[in#0/lavfi @ 0x560d64156fc0] Input file #0 (testsrc2=size=320x240:rate=15):
+[in#0/lavfi @ 0x560d64156fc0]   Input stream #0:0 (video): 28 packets read (11872 bytes); 19 frames decoded; 0 decode errors; 
+[in#0/lavfi @ 0x560d64156fc0]   Total: 28 packets (11872 bytes) demuxed
+
+Exiting with exit code 0
+Unknown decoder 'h264_cuvid'
+Error opening input file /tmp/tmp.Cw8Bm35SHB/test.mkv.
+Error opening input files: Decoder not found
+
+Exiting with exit code -1128613112
+Command '['sh', '/opt/hyperv-linux-gpupv/guest/verify-codec']' returned non-zero exit status 8.

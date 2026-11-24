@@ -1,0 +1,32 @@
+boot_id=7ca852b4-c548-46f6-890b-323babfa1060 uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+SecureBoot enabled
+O
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 8086:9a49 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+[    2.298804] dxgkrnl: loading out-of-tree module taints kernel.
+[    2.324734] hv_vmbus: registering driver dxgkrnl
+[   18.259561] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   18.261678] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   18.263051] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   18.264052] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   18.265090] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2

@@ -1,0 +1,5 @@
+e6077592-fffb-4e6e-8744-5bcbbb87c169 confirmed shim menu management
+e6077592-fffb-4e6e-8744-5bcbbb87c169 confirmed shim menu view
+e6077592-fffb-4e6e-8744-5bcbbb87c169 confirmed shim menu confirm
+e6077592-fffb-4e6e-8744-5bcbbb87c169 confirmed shim menu password
+e6077592-fffb-4e6e-8744-5bcbbb87c169 confirmed shim menu reboot

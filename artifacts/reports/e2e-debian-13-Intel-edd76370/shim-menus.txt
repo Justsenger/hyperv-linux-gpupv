@@ -1,0 +1,5 @@
+11ec5592-4022-4474-860e-b7d43822a6ed confirmed shim menu management
+11ec5592-4022-4474-860e-b7d43822a6ed confirmed shim menu view
+11ec5592-4022-4474-860e-b7d43822a6ed confirmed shim menu confirm
+11ec5592-4022-4474-860e-b7d43822a6ed confirmed shim menu password
+11ec5592-4022-4474-860e-b7d43822a6ed confirmed shim menu reboot

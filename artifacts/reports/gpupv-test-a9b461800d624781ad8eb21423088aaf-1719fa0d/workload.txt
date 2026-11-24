@@ -1,0 +1,102 @@
+boot_id=a5094d5e-7e0b-46e8-930b-227d84d6cc51 uid=1000 gpu=NVIDIA GeForce RTX 2060
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB
+NVIDIA GeForce RTX 2060: 7 * 5 + 3 = 38
+NVIDIA GeForce RTX 2060: 7 * 19 + 3 = 136
+NVIDIA GeForce RTX 2060: 7 * 127 + 3 = 892
+[Parsed_testsrc2_0 @ 0x55c7a6200680] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: rawvideo, 1 reference frame (I420 / 0x30323449), yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 tbr, 15 tbn, 15 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (h264_nvenc))
+Press [q] to stop, [?] for help
+[graph 0 input from stream 0:0 @ 0x55c7a625f880] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1
+[h264_nvenc @ 0x55c7a6241b40] Loaded Nvenc version 13.1
+[h264_nvenc @ 0x55c7a6241b40] Nvenc initialized successfully
+[h264_nvenc @ 0x55c7a6241b40] 1 CUDA capable devices found
+[h264_nvenc @ 0x55c7a6241b40] [ GPU #0 - < NVIDIA GeForce RTX 2060 > has Compute SM 7.5 ]
+[h264_nvenc @ 0x55c7a6241b40] supports NVENC
+Output #0, matroska, to '/tmp/tmp.FgPacDZ9zn/test.mkv':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264 (Main), 1 reference frame (H264 / 0x34363248), yuv420p(progressive), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 2000 kb/s, 15 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc58.134.100 h264_nvenc
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/2000000 buffer size: 4000000 vbv_delay: N/A
+frame=    1 fps=0.0 q=0.0 size=       1kB time=00:00:00.00 bitrate=N/A speed=   0x    
+No more output streams to write to, finishing.
+frame=   15 fps=0.0 q=13.0 Lsize=      68kB time=00:00:00.73 bitrate= 757.6kbits/s speed=1.48x    
+video:67kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.096600%
+Input file #0 (testsrc2=size=320x240:rate=15):
+  Input stream #0:0 (video): 15 packets read (1728000 bytes); 15 frames decoded; 
+  Total: 15 packets (1728000 bytes) demuxed
+Output file #0 (/tmp/tmp.FgPacDZ9zn/test.mkv):
+  Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (68758 bytes); 
+  Total: 15 packets (68758 bytes) muxed
+[AVIOContext @ 0x55c7a625e440] Statistics: 0 seeks, 1 writeouts
+[h264_nvenc @ 0x55c7a6241b40] Nvenc unloaded
+[h264 @ 0x5605e0fba4c0] Reinit context to 320x240, pix_fmt: yuv420p
+[h264 @ 0x5605e0fba4c0] Increasing reorder buffer to 1
+Input #0, matroska,webm, from '/tmp/tmp.FgPacDZ9zn/test.mkv':
+  Metadata:
+    ENCODER         : Lavf58.76.100
+  Duration: 00:00:01.00, start: 0.000000, bitrate: 556 kb/s
+  Stream #0:0: Video: h264 (Main), 1 reference frame, yuv420p(progressive, left), 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 1k tbn, 30 tbc (default)
+    Metadata:
+      ENCODER         : Lavc58.134.100 h264_nvenc
+      DURATION        : 00:00:01.000000000
+[h264_cuvid @ 0x5605e0fe0e80] CUVID capabilities for h264_cuvid:
+[h264_cuvid @ 0x5605e0fe0e80] 8 bit: supported: 1, min_width: 48, max_width: 4096, min_height: 16, max_height: 4096
+[h264_cuvid @ 0x5605e0fe0e80] 10 bit: supported: 0, min_width: 0, max_width: 0, min_height: 0, max_height: 0
+[h264_cuvid @ 0x5605e0fe0e80] 12 bit: supported: 0, min_width: 0, max_width: 0, min_height: 0, max_height: 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (h264_cuvid) -> rawvideo (native))
+Press [q] to stop, [?] for help
+[h264_cuvid @ 0x5605e0fe0e80] Formats: Original: cuda | HW: cuda | SW: nv12
+[graph 0 input from stream 0:0 @ 0x5605e0fbb500] w:320 h:240 pixfmt:cuda tb:1/1000 fr:15/1 sar:1/1
+Output #0, framemd5, to '/tmp/tmp.FgPacDZ9zn/frames':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: rawvideo, 1 reference frame (NV12 / 0x3231564E), nv12(tv, progressive, left), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 13824 kb/s, 15 fps, 15 tbn (default)
+    Metadata:
+      DURATION        : 00:00:01.000000000
+      encoder         : Lavc58.134.100 rawvideo
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.06 bitrate=  35.4kbits/s speed=1.04x    
+No more output streams to write to, finishing.
+frame=   15 fps=0.0 q=-0.0 Lsize=       1kB time=00:00:01.00 bitrate=  11.3kbits/s speed=12.8x    
+video:1688kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (/tmp/tmp.FgPacDZ9zn/test.mkv):
+  Input stream #0:0 (video): 15 packets read (68758 bytes); 15 frames decoded; 
+  Total: 15 packets (68758 bytes) demuxed
+Output file #0 (/tmp/tmp.FgPacDZ9zn/frames):
+  Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (1728000 bytes); 
+  Total: 15 packets (1728000 bytes) muxed
+[AVIOContext @ 0x5605e0fdf740] Statistics: 0 seeks, 1 writeouts
+[AVIOContext @ 0x5605e0fc0280] Statistics: 69512 bytes read, 0 seeks
+#format: frame checksums
+#version: 2
+#hash: MD5
+#software: Lavf58.76.100
+#tb 0: 1/15
+#media_type 0: video
+#codec_id 0: rawvideo
+#dimensions 0: 320x240
+#sar 0: 1/1
+#stream#, dts,        pts, duration,     size, hash
+0,          0,          0,        1,   115200, 9f511cc6049129ef55f8e106714fd409
+0,          1,          1,        1,   115200, d21dfc19aabbb3f069aecaece2928a26
+0,          2,          2,        1,   115200, 33615141e09852426fa8331f501c8874
+0,          3,          3,        1,   115200, 276727be2aefbf4faaba32436555d97e
+0,          4,          4,        1,   115200, e50402415638dd537afd83037bf785cb
+0,          5,          5,        1,   115200, e1f11db18e409c4c563afbaf1986df0b
+0,          6,          6,        1,   115200, f2374e00703dad4ed5b1d40003ce34ee
+0,          7,          7,        1,   115200, 9d0c7253088d1142f3fda846dbd762d7
+0,          8,          8,        1,   115200, 4cd0fe7b39c6fc5306d0aacb232dd561
+0,          9,          9,        1,   115200, fb4986e58a5180ca650912cdfe192cf1
+0,         10,         10,        1,   115200, ec7aa79651d7e64932b916587fd743e2
+0,         11,         11,        1,   115200, c6a9ecdb7f319d5849c743f9ec8a9519
+0,         12,         12,        1,   115200, 4e1d3cf400ab67a1079f0d16a6ebc7d6
+0,         13,         13,        1,   115200, 56f71730658e9c816ca23598ac81a28e
+0,         14,         14,        1,   115200, 546385492b5d5e511bc416dd451729c3

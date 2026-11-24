@@ -1,0 +1,131 @@
+boot_id=4da67e82-2410-4e20-accc-af01649e2f05 uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 8086:9a49 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+OpenCL GPU: Intel(R) Graphics [0x9a49]
+Intel(R) Graphics [0x9a49]: verified 32 OpenCL results, last=220
+Intel OpenCL exit=0
+Trying display: drm
+vainfo: VA-API version: 1.24 (libva 2.24.0)
+vainfo: Driver version: Mesa Gallium driver 26.3.1-arch1.3 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileH264ConstrainedBaseline:	VAEntrypointVLD
+      VAProfileH264ConstrainedBaseline:	VAEntrypointEncSlice
+      VAProfileH264Main               :	VAEntrypointVLD
+      VAProfileH264Main               :	VAEntrypointEncSlice
+      VAProfileH264High               :	VAEntrypointVLD
+      VAProfileH264High               :	VAEntrypointEncSlice
+      VAProfileHEVCMain               :	VAEntrypointVLD
+      VAProfileHEVCMain               :	VAEntrypointEncSlice
+      VAProfileHEVCMain10             :	VAEntrypointVLD
+      VAProfileHEVCMain10             :	VAEntrypointEncSlice
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+Testing Intel D3D12 H.264 on /dev/dri/renderD128
+[VAAPI @ 0x56189d3fac80] libva: VA-API version 1.24.0
+[VAAPI @ 0x56189d3fac80] libva: User environment variable requested driver 'd3d12'
+[VAAPI @ 0x56189d3fac80] libva: Trying to open /usr/lib/dri/d3d12_drv_video.so
+[VAAPI @ 0x56189d3fac80] libva: Found init function __vaDriverInit_1_24
+[VAAPI @ 0x56189d3fac80] libva: va_openDriver() returns 0
+[VAAPI @ 0x56189d3fac80] Initialised VAAPI connection: version 1.24
+[VAAPI @ 0x56189d3fac80] VAAPI driver: Mesa Gallium driver 26.3.1-arch1.3 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[VAAPI @ 0x56189d3fac80] Driver not found in known nonstandard list, using standard behaviour.
+[Parsed_testsrc2_0 @ 0x56189d6dd9c0] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 15 tbn
+[out#0/h264 @ 0x56189d73b780] No explicit maps, mapping streams automatically...
+[vost#0:0/h264_vaapi @ 0x56189d73bf00] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (h264_vaapi))
+[vost#0:0/h264_vaapi @ 0x56189d73bf00] Starting thread...
+[vf#0:0 @ 0x56189d73e780] Starting thread...
+[vist#0:0/wrapped_avframe @ 0x56189d671b00] [dec:wrapped_avframe @ 0x56189d69f840] Starting thread...
+[in#0/lavfi @ 0x56189d67dd40] Starting thread...
+[graph -1 input from stream 0:0 @ 0x7fd480001d40] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1 csp:unknown range:unknown alpha:unspecified chroma_loc:unspecified
+[auto_scale_0 @ 0x7fd480003c00] w:iw h:ih flags:'' interl:0
+[Parsed_format_0 @ 0x7fd4800013c0] auto-inserting filter 'auto_scale_0' between the filter 'graph -1 input from stream 0:0' and the filter 'Parsed_format_0'
+[auto_scale_0 @ 0x7fd480003c00] w:320 h:240 fmt:yuv420p csp:unknown range:unknown sar:1/1 -> w:320 h:240 fmt:nv12 csp:unknown range:tv sar:1/1 flags:0x00000004
+[auto_scale_0 @ 0x7fd480003c00] [framesync @ 0x7fd480003d10] Selected 1/15 time base
+[auto_scale_0 @ 0x7fd480003c00] [framesync @ 0x7fd480003d10] Sync level 1
+[graph -1 input from stream 0:0 @ 0x7fd480001d40] video frame properties congruent with link at pts_time: 0
+[vost#0:0/h264_vaapi @ 0x56189d73bf00] [enc:h264_vaapi @ 0x56189d4eca80] Using input frames context (format vaapi) with h264_vaapi encoder.
+[h264_vaapi @ 0x56189d719a00] Input surface format is nv12.
+[h264_vaapi @ 0x56189d719a00] Using VAAPI profile VAProfileH264High (7).
+[h264_vaapi @ 0x56189d719a00] Using VAAPI entrypoint VAEntrypointEncSlice (6).
+[h264_vaapi @ 0x56189d719a00] Using VAAPI render target format YUV420 (0x1).
+[h264_vaapi @ 0x56189d719a00] No quality level set; using default (20).
+[h264_vaapi @ 0x56189d719a00] RC mode: CQP.
+[h264_vaapi @ 0x56189d719a00] Block Level bitrate control: OFF.
+[h264_vaapi @ 0x56189d719a00] RC quality: 20.
+[h264_vaapi @ 0x56189d719a00] RC framerate: 15/1 (15.00 fps).
+[h264_vaapi @ 0x56189d719a00] Driver does not report any additional prediction constraints.
+[h264_vaapi @ 0x56189d719a00] Using intra and P-frames (supported references: 2 / 0).
+[h264_vaapi @ 0x56189d719a00] All wanted packed headers available (wanted 0xd, found 0x1f).
+[h264_vaapi @ 0x56189d719a00] Using level 1.2.
+Output #0, h264, to '/tmp/tmp.Ru8WIPERwN/test.h264':
+  Metadata:
+    encoder         : Lavf63.16.100
+  Stream #0:0: Video: h264 (High), 1 reference frame, nv12(tv, progressive), 320x240 [SAR 1:1 DAR 4:3], q=2-31, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc63.24.100 h264_vaapi
+[out#0/h264 @ 0x56189d73b780] Starting thread...
+[vf#0:0 @ 0x56189d73e780] All consumers returned EOF
+[vost#0:0/h264_vaapi @ 0x56189d73bf00] [enc:h264_vaapi @ 0x56189d4eca80] Encoder thread received EOF
+[vist#0:0/wrapped_avframe @ 0x56189d671b00] [dec:wrapped_avframe @ 0x56189d69f840] Decoder returned EOF, finishing
+[vist#0:0/wrapped_avframe @ 0x56189d671b00] [dec:wrapped_avframe @ 0x56189d69f840] Terminating thread with success
+[vf#0:0 @ 0x56189d73e780] Terminating thread with success
+[vist#0:0/wrapped_avframe @ 0x56189d671b00] All consumers of this stream are done
+[out#0/h264 @ 0x56189d73b780] All streams finished
+[out#0/h264 @ 0x56189d73b780] Terminating thread with success
+[in#0/lavfi @ 0x56189d67dd40] All consumers are done
+[in#0/lavfi @ 0x56189d67dd40] Terminating thread with success
+[vost#0:0/h264_vaapi @ 0x56189d73bf00] Terminating thread with success
+[AVIOContext @ 0x56189d666ec0] Statistics: 0 bytes written, 0 seeks, 0 writeouts
+[out#0/h264 @ 0x56189d73b780] Output file #0 (/tmp/tmp.Ru8WIPERwN/test.h264):
+[out#0/h264 @ 0x56189d73b780]   Output stream #0:0 (video): 15 frames encoded; 14 packets muxed (0 bytes); 
+[out#0/h264 @ 0x56189d73b780]   Total: 14 packets (0 bytes) muxed
+[out#0/h264 @ 0x56189d73b780] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=   14 fps=0.0 q=-0.0 Lsize=       0KiB time=00:00:00.93 bitrate=   0.0kbits/s speed=3.04x elapsed=0:00:00.30    
+[in#0/lavfi @ 0x56189d67dd40] Input file #0 (testsrc2=size=320x240:rate=15):
+[in#0/lavfi @ 0x56189d67dd40]   Input stream #0:0 (video): 22 packets read (9328 bytes); 19 frames decoded; 0 decode errors; 
+[in#0/lavfi @ 0x56189d67dd40]   Total: 22 packets (9328 bytes) demuxed
+
+Exiting with exit code 0
+[in#0 @ 0x565116daafc0] Format h264 detected only with low score of 1, misdetection possible!
+[in#0/h264 @ 0x565116daafc0] Could not find codec parameters for stream 0 (Video: h264, 1 reference frame, none): unspecified size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+[vist#0:0/h264 @ 0x565116dad400] Selecting decoder 'h264' because of requested hwaccel method vaapi
+Input #0, h264, from '/tmp/tmp.Ru8WIPERwN/test.h264':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: h264, 1 reference frame, none, 25 fps, 1200k tbr, 1200k tbn
+[out#0/framemd5 @ 0x565116dad5c0] No explicit maps, mapping streams automatically...
+Output #0, framemd5, to '/tmp/tmp.Ru8WIPERwN/frames':
+[out#0/framemd5 @ 0x565116dad5c0] Output file does not contain any stream
+Error opening output file /tmp/tmp.Ru8WIPERwN/frames.
+Error opening output files: Invalid argument
+[AVIOContext @ 0x565116db3880] Statistics: 0 bytes read, 0 seeks
+
+Exiting with exit code -22
+Intel 工作负载结果：计算=True，视频退出码=234。

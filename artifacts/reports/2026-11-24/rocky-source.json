@@ -1,0 +1,7 @@
+{
+  "url": "https://dl.rockylinux.org/pub/rocky/9/BaseOS/source/tree/Packages/k/kernel-5.14.0-741.22.1.el9_9.src.rpm",
+  "file": "kernel-5.14.0-741.22.1.el9_9.src.rpm",
+  "sha256": "c83a41429f92eb9fe3f04eb50a31290350f96c999a8dd99b139217b4e1b49301",
+  "bytes": 153601990,
+  "verification": "The guest must verify the Rocky RPM signature before extracting."
+}

@@ -1,0 +1,2 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+902d9852-dd05-4892-b633-95cb4527c47d

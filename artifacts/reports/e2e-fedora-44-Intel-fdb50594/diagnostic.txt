@@ -1,0 +1,23 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+Linux gpupv-test-fdb50594c9474f6ba6c86931188a9ad9 6.19.10-300.fc44.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Mar 25 18:23:49 UTC 2026 x86_64 GNU/Linux
+ls: cannot access '/dev/dxg': No such file or directory
+[    2.544777] hv_vmbus: Vmbus version:6.0
+[    2.547895] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    2.553092] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    2.601414] hv_vmbus: registering driver hyperv_keyboard
+[    2.607093] hv_vmbus: registering driver hv_pci
+[    2.610575] hv_vmbus: registering driver hid_hyperv
+[    2.612855] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input0
+[    2.615716] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    2.641560] hv_pci 1b71b38f-1b66-4759-9862-1ed24d90145e: PCI VMBus probing: Using version 0x10004
+[    2.658275] hv_pci 1b71b38f-1b66-4759-9862-1ed24d90145e: PCI host bridge to bus 1b66:00
+[    2.665188] hv_vmbus: registering driver hv_storvsc
+[    4.038453] hv_vmbus: registering driver hv_sock
+[    5.950124] hv_vmbus: registering driver hv_balloon
+[    5.962042] hv_vmbus: registering driver hyperv_drm
+ls: cannot access '/sys/bus/pci/devices/*/driver': No such file or directory
+[    5.981373] hv_vmbus: registering driver hv_utils
+[    6.036808] hv_vmbus: registering driver hv_netvsc
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda3        32G  1.4G   31G   5% /
+lrwxrwxrwx. 1 root root 40 Mar 25  2026 /lib/modules/6.19.10-300.fc44.x86_64/build -> /usr/src/kernels/6.19.10-300.fc44.x86_64

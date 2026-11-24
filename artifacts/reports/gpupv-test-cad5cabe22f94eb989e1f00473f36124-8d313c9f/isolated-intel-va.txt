@@ -1,0 +1,62 @@
+gpupv-va-runtime.tgz: OK
+ffmpeg	7:6.1.1-3ubuntu5
+libc6:amd64	2.39-0ubuntu8.9
+libllvm20:amd64	1:20.1.2-0ubuntu1~24.04.3
+libva2:amd64	2.20.0-2ubuntu0.2
+mesa-libgallium:amd64	25.2.8-0ubuntu0.24.04.5
+mesa-va-drivers:amd64	25.2.8-0ubuntu0.24.04.5
+vainfo	2.12.0+ds1-1
+modprobe: FATAL: Module vgem not found in directory /lib/modules/5.14.0-741.22.1.el9_9.x86_64
+total 0
+crw-rw----. 1 root video 226, 0 Nov 24 06:01 card0
+crw-rw----. 1 root video 226, 1 Nov 24 06:01 card1
+boot_id=8e2ad9df-19cc-45e1-911d-ad2b9c4c7376 uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 8086:9a49 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+libva info: VA-API version 1.20.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /home/tester/gpupv-va.HILQy5ib/lib/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_20
+pci id for fd 3: 1414:0006, driver (null)
+pci id for fd 4: 1414:0006, driver (null)
+pci id for fd 5: 1414:0006, driver (null)
+libva error: /home/tester/gpupv-va.HILQy5ib/lib/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+libva info: VA-API version 1.20.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /home/tester/gpupv-va.HILQy5ib/lib/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_20
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+libva error: /home/tester/gpupv-va.HILQy5ib/lib/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+No accessible Intel D3D12 VA display exposing H.264 baseline encode and VP9 profile 0 decode.
+Intel 工作负载结果：计算=True，视频退出码=77。
+isolated_product_exit=1
+Verified Intel video directions: 0/0
+isolated_profiles_exit=77

@@ -1,0 +1,25 @@
+#!/bin/sh
+# Run only in the disposable Leap matrix VM when the image kernel has no headers.
+set -eu
+zypper --non-interactive install --no-recommends kernel-default-devel kernel-devel gcc gcc-c++ mokutil openssl make gawk kmod libelf-devel
+version=$(rpm -q --qf '%{VERSION}-%{RELEASE}\n' kernel-default-devel | sort -V | tail -1)
+zypper --non-interactive install --oldpackage --no-recommends "kernel-default=$version"
+image=$(rpm -ql "kernel-default-$version" | grep '^/boot/vmlinuz-.*-default$' | head -1)
+test -f "$image"
+release=${image#/boot/vmlinuz-}
+test -f "/lib/modules/$release/build/Makefile"
+test -f /boot/grub2/grub.cfg
+sed -i 's/^GRUB_DEFAULT=.*/GRUB_DEFAULT=saved/' /etc/default/grub
+grep -q '^GRUB_DEFAULT=saved$' /etc/default/grub || echo 'GRUB_DEFAULT=saved' >> /etc/default/grub
+grub2-mkconfig -o /boot/grub2/grub.cfg
+entry=$(awk -F"'" -v version="$release" '
+    /^[[:space:]]*submenu / {menu=$2}
+    /^[[:space:]]*menuentry / && index($2,version) && tolower($2) !~ /recovery|failsafe/ {
+        if ($0 ~ /^menuentry / || menu=="") print $2; else print menu ">" $2
+        exit
+    }
+' /boot/grub2/grub.cfg)
+test -n "$entry" || { grep -E "submenu |menuentry " /boot/grub2/grub.cfg; exit 1; }
+grub2-set-default "$entry"
+grub2-editenv list
+printf 'Selected matching distribution kernel %s\n' "$release"

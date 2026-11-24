@@ -1,0 +1,24 @@
+ubuntu-22.04 Exception: D:\linux-pv\tests\Test-CloudTransport.ps1:37
+Line |
+  37 |  … (!$connected){throw "Guest SSH identity unconfirmed for $($vm.Name)"}
+     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Guest SSH identity unconfirmed for gpupv-test-d92844b76b83475585d0be48a9136ed4
+
+
+fedora-44 Exception: D:\linux-pv\tests\Test-CloudTransport.ps1:37
+Line |
+  37 |  … (!$connected){throw "Guest SSH identity unconfirmed for $($vm.Name)"}
+     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Guest SSH identity unconfirmed for gpupv-test-b01dc3807f2e4aeab04f80e63c4067da
+
+
+rocky-9 transport completed
+arch Exception: D:\linux-pv\tests\Test-CloudTransport.ps1:37
+Line |
+  37 |  … (!$connected){throw "Guest SSH identity unconfirmed for $($vm.Name)"}
+     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Guest SSH identity unconfirmed for gpupv-test-b0aef8458404490581396bf44e2ba327
+
+
+leap-15.6 transport completed
+debian-12 transport completed

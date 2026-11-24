@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+# A CUDA hardware-frame output forces decoding to stay on the GPU.
+tmp=$(mktemp -d)
+trap 'rm -rf "$tmp"' EXIT
+ffmpeg -hide_banner -loglevel verbose -f lavfi -i 'testsrc2=size=320x240:rate=15' -frames:v 15 -c:v h264_nvenc "$tmp/test.mkv"
+ffmpeg -hide_banner -loglevel verbose -hwaccel cuda -hwaccel_output_format cuda -c:v h264_cuvid -i "$tmp/test.mkv" -vf hwdownload,format=nv12 -f framemd5 "$tmp/frames"
+count=$(grep -c '^0,' "$tmp/frames")
+test "$count" -eq 15
+cat "$tmp/frames"
+

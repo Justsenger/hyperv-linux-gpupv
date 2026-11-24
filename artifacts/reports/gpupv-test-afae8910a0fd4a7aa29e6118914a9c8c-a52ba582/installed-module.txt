@@ -1,0 +1,2 @@
+/lib/modules/6.4.0-150600.23.103-default/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4288824 Nov 23 13:19 /lib/modules/6.4.0-150600.23.103-default/updates/gpupv/dxgkrnl.ko

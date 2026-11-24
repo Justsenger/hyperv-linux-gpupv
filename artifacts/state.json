@@ -1,0 +1,467 @@
+{
+  "asOf": "2026-11-23T21:49:52.045367+08:00",
+  "status": "hardware_matrix_completed_with_failures",
+  "host": "Windows 11 Pro 10.0.26200 x64",
+  "missingHostLibraries": [],
+  "hardwareVerified": [],
+  "kernelSourcesSha256": "47bdacc5597ebe41022076e2d6402a70397c2a36ee4ab2f2975ae2d514e79215",
+  "containerCases": 22,
+  "containerPasses": 18,
+  "containerResults": [
+    {
+      "target": "alma-8",
+      "image": "almalinux:8",
+      "passed": true,
+      "kernel": "4.18.0-553.187.1.el8_10.x86_64",
+      "sha256": "5e22bc779f6b71728552ca0bed652825353f822e80657d756cae36c99c89f7f1",
+      "log": "artifacts/reports/compile-matrix/release/alma-8.log"
+    },
+    {
+      "target": "alma-9",
+      "image": "almalinux:9",
+      "passed": true,
+      "kernel": "5.14.0-741.24.1.el9_9.x86_64",
+      "sha256": "3b333e0b61402e404e14c2cbb4beb45aca4b4b5e987a63f08c1d5f9e7f5ce231",
+      "log": "artifacts/reports/compile-matrix/release/alma-9.log"
+    },
+    {
+      "target": "anolis-23",
+      "image": "openanolis/anolisos:23",
+      "passed": false,
+      "kernel": null,
+      "sha256": null,
+      "log": "artifacts/reports/compile-matrix/release/anolis-23.log"
+    },
+    {
+      "target": "arch-lts",
+      "image": "archlinux:latest",
+      "passed": true,
+      "kernel": "6.18.64-1-lts",
+      "sha256": "8e2d74518b0e54509cc8fd150e1b151644417e3bec88d36d040efb9679803731",
+      "log": "artifacts/reports/compile-matrix/release/arch-lts.log"
+    },
+    {
+      "target": "arch",
+      "image": "archlinux:latest",
+      "passed": true,
+      "kernel": "7.3.5-arch1-1",
+      "sha256": "9f254a54b141e5681b192227e396f8efc77fc0381e95bb8a841dc4c88f97df27",
+      "log": "artifacts/reports/compile-matrix/release/arch.log"
+    },
+    {
+      "target": "debian-11-archive",
+      "image": "debian:11",
+      "passed": true,
+      "kernel": "5.10.0-46-amd64",
+      "sha256": "b2b910b12927c9fc8421638897803adde8d1d1ac9cf74a770ea54cb1e632df2c",
+      "log": "artifacts/reports/compile-matrix/release/debian-11-archive.log"
+    },
+    {
+      "target": "debian-11-base",
+      "image": "debian:11",
+      "passed": true,
+      "kernel": "5.10.0-32-amd64",
+      "sha256": "3186901c30d60ff2b5d076f633f19cd5cf42b127b373c45adb09398477b9120c",
+      "log": "artifacts/reports/compile-matrix/release/debian-11-base.log"
+    },
+    {
+      "target": "debian-11",
+      "image": "debian:11",
+      "passed": false,
+      "kernel": null,
+      "sha256": null,
+      "log": "artifacts/reports/compile-matrix/release/debian-11.log"
+    },
+    {
+      "target": "debian-12",
+      "image": "debian:12",
+      "passed": true,
+      "kernel": "6.1.0-56-amd64",
+      "sha256": "726f973fa6339f6387f488366a5a79d8406249e2b00aecab1dfaf0ba3170f7aa",
+      "log": "artifacts/reports/compile-matrix/release/debian-12.log"
+    },
+    {
+      "target": "debian-13",
+      "image": "debian:13",
+      "passed": true,
+      "kernel": "6.12.118+deb13-amd64",
+      "sha256": "e1203c0ab5840f341b9991d74cff2e510834510034f2ba0f230abe50fb4e5399",
+      "log": "artifacts/reports/compile-matrix/release/debian-13.log"
+    },
+    {
+      "target": "fedora-43",
+      "image": "quay.io/fedora/fedora:43",
+      "passed": true,
+      "kernel": "7.3.4-100.fc43.x86_64",
+      "sha256": "f9ed11331e71e970c83e0280596f40f93d5a9932b9d842739f134ce2fa6ea2fb",
+      "log": "artifacts/reports/compile-matrix/release/fedora-43.log"
+    },
+    {
+      "target": "fedora-44",
+      "image": "quay.io/fedora/fedora:44",
+      "passed": true,
+      "kernel": "7.3.4-200.fc44.x86_64",
+      "sha256": "83e3b04e16f54a746b5707ca18c2faed834d7e739e070ffc1654243edac38fbb",
+      "log": "artifacts/reports/compile-matrix/release/fedora-44.log"
+    },
+    {
+      "target": "leap",
+      "image": "opensuse/leap:15.6",
+      "passed": true,
+      "kernel": "6.4.0-150600.23.103-default",
+      "sha256": "7030524ad4154cefc703bf78309cc259ec25cfab54bfa0edb2d4cf38db2c8d0c",
+      "log": "artifacts/reports/compile-matrix/release/leap.log"
+    },
+    {
+      "target": "openeuler",
+      "image": "openeuler/openeuler:24.03-lts",
+      "passed": false,
+      "kernel": null,
+      "sha256": null,
+      "log": "artifacts/reports/compile-matrix/release/openeuler.log"
+    },
+    {
+      "target": "rocky-8",
+      "image": "quay.io/rockylinux/rockylinux:8",
+      "passed": true,
+      "kernel": "4.18.0-553.187.1.el8_10.x86_64",
+      "sha256": "5e22bc779f6b71728552ca0bed652825353f822e80657d756cae36c99c89f7f1",
+      "log": "artifacts/reports/compile-matrix/release/rocky-8.log"
+    },
+    {
+      "target": "rocky-9",
+      "image": "quay.io/rockylinux/rockylinux:9",
+      "passed": true,
+      "kernel": "5.14.0-741.24.1.el9_9.x86_64",
+      "sha256": "3b333e0b61402e404e14c2cbb4beb45aca4b4b5e987a63f08c1d5f9e7f5ce231",
+      "log": "artifacts/reports/compile-matrix/release/rocky-9.log"
+    },
+    {
+      "target": "tumbleweed",
+      "image": "opensuse/tumbleweed:latest",
+      "passed": true,
+      "kernel": "7.3.5-1-default",
+      "sha256": "142b2f239211b846a8ab5f0e1ebe3051e77edac4b604499dd72f55b36fe0254c",
+      "log": "artifacts/reports/compile-matrix/release/tumbleweed.log"
+    },
+    {
+      "target": "ubuntu-20.04-hwe",
+      "image": "ubuntu:20.04",
+      "passed": true,
+      "kernel": "5.15.0-139-generic",
+      "sha256": "0e6cd051fe5818b17b1f8c6e12848eaff889a74c37ece64d61afa3893f2f284c",
+      "log": "artifacts/reports/compile-matrix/release/ubuntu-20.04-hwe.log"
+    },
+    {
+      "target": "ubuntu-20.04",
+      "image": "ubuntu:20.04",
+      "passed": false,
+      "kernel": null,
+      "sha256": null,
+      "log": "artifacts/reports/compile-matrix/release/ubuntu-20.04.log"
+    },
+    {
+      "target": "ubuntu-22.04",
+      "image": "ubuntu:22.04",
+      "passed": true,
+      "kernel": "5.15.0-204-generic",
+      "sha256": "afd8da924567bd2fc8d61bfa396fb4898ce1bdf1a3c68a66c0c8061585aa8303",
+      "log": "artifacts/reports/compile-matrix/release/ubuntu-22.04.log"
+    },
+    {
+      "target": "ubuntu-24.04",
+      "image": "ubuntu:24.04",
+      "passed": true,
+      "kernel": "6.8.0-151-generic",
+      "sha256": "07b61c3d53a2dceeb0135214d7d8419bfe0b5022e1fb880b1e5f9f9e9b7b8c98",
+      "log": "artifacts/reports/compile-matrix/release/ubuntu-24.04.log"
+    },
+    {
+      "target": "ubuntu-26.10",
+      "image": "ubuntu:26.10",
+      "passed": true,
+      "kernel": "7.3.0-11-generic",
+      "sha256": "c4be665b1c81a1802450a030efdc158bb6535e887798ef0d6ef14788202d65fc",
+      "log": "artifacts/reports/compile-matrix/release/ubuntu-26.10.log"
+    }
+  ],
+  "vmTransportBindings": 14,
+  "vmTransportBases": 7,
+  "guards": [
+    "宿主 WSL 库缺失，tar 与 ISO 导出均在生成文件前退出",
+    "x64 宿主收到 aarch64 目标参数后退出",
+    "Ubuntu 24.04 启用 Secure Boot，安装退出",
+    "Alpine 3.23.4 使用 musl，安装退出",
+    "Debian 13 移除精确版本 headers 后安装退出",
+    "Debian 13 私有挂载命名空间内将根重挂为只读，安装退出"
+  ],
+  "next": "参阅逐组合真机记录，定位剩余运行时失败项。",
+  "largeImageCachesRemoved": true,
+  "retainedDeveloperCache": "Full QEMU extraction remains in .tools; recursive deletion blocked by automatic execution review.",
+  "runtimeCommit": "a8ff069a0325c16d9ae7329382a929fbfc5fdfe9",
+  "localPayloads": [
+    {
+      "file": "irisxe-x64.iso",
+      "bytes": 1238499328,
+      "sha256": "6f5a47c0e1fc987fe1b3cc935c7f0403df3ec537af7820b4d0aa628be243c8cf"
+    },
+    {
+      "file": "irisxe-x64.tar",
+      "bytes": 1236942336,
+      "sha256": "3c51111a1d36cc7f8282a609a29201e7c1a3239dbcf6255ff94c2b8fb3ff559a"
+    },
+    {
+      "file": "rtx2060-x64.iso",
+      "bytes": 3261530112,
+      "sha256": "f6fe4ccb9c078977db29f964cb2fe4f42d81e4959e1855fe2918a6aa070143da"
+    },
+    {
+      "file": "rtx2060-x64.tar",
+      "bytes": 3259652608,
+      "sha256": "0f020e0d4ee4276e3d8f18a52fc9ad7c8189d866cc277012c8f8153915c61ef7"
+    }
+  ],
+  "observedWorkloads": [
+    {
+      "target": "arch / Intel",
+      "workload": "硬件工作负载未通过",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "arch / NVIDIA",
+      "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "debian-12 / Intel",
+      "workload": "仅见软件设备或硬件上下文失败",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "debian-12 / NVIDIA",
+      "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "debian-13 / Intel",
+      "workload": "仅见软件设备或硬件上下文失败",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未完成"
+    },
+    {
+      "target": "debian-13 / Intel",
+      "workload": "仅见软件设备或硬件上下文失败",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "debian-13 / NVIDIA",
+      "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未完成"
+    },
+    {
+      "target": "debian-13 / NVIDIA",
+      "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "debian-13 / NVIDIA",
+      "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "fedora-44 / Intel",
+      "workload": "仅见软件设备或硬件上下文失败",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "fedora-44 / NVIDIA",
+      "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "fedora-44 / NVIDIA",
+      "workload": "CUDA 数值通过，编解码未通过",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "fedora-44 / NVIDIA",
+      "workload": "CUDA 数值通过，编解码未通过",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "leap-15.6 / Intel",
+      "workload": "硬件工作负载未通过",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "leap-15.6 / NVIDIA",
+      "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "leap-15.6 / NVIDIA",
+      "workload": "CUDA 未证实，编解码未通过",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "rocky-9 / Intel",
+      "workload": "仅见软件设备或硬件上下文失败",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "rocky-9 / NVIDIA",
+      "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "ubuntu-22.04 / Intel",
+      "workload": "硬件工作负载未通过",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "ubuntu-22.04 / NVIDIA",
+      "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "ubuntu-24.04 / Intel",
+      "workload": "仅见软件设备或硬件上下文失败",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "ubuntu-24.04 / Intel",
+      "workload": "硬件工作负载未通过",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    },
+    {
+      "target": "ubuntu-24.04 / NVIDIA",
+      "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+      "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+      "strict": "未通过"
+    }
+  ],
+  "releaseKernelSourcesSha256": "47bdacc5597ebe41022076e2d6402a70397c2a36ee4ab2f2975ae2d514e79215",
+  "verifiedNvidiaWorkloadBases": [
+    "arch",
+    "debian-12",
+    "debian-13",
+    "fedora-44",
+    "leap-15.6",
+    "rocky-9",
+    "ubuntu-22.04",
+    "ubuntu-24.04"
+  ],
+  "evidenceIndex": "artifacts/reports/e2e-index.md",
+  "fedora44Intel": {
+    "kernel": "6.19.10-300.fc44.x86_64",
+    "installedModuleType": "modules_object_t",
+    "rebootAccess": true,
+    "repeatInstall": true,
+    "uninstallReboot": true,
+    "dozen": "ERROR_INITIALIZATION_FAILED",
+    "hardwareRenderer": false,
+    "report": "artifacts/reports/e2e-fedora-44-Intel-180f1f5e"
+  },
+  "phase2KernelSourcesSha256": "ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd",
+  "phase2UnregisteredTestVMs": 11,
+  "releaseLoggedVmRemovals": 31,
+  "releaseLoggedVmIds": [
+    "017089a2-772c-4d15-992b-9bc1e1924e83",
+    "09376e8f-c524-44cf-8b5b-7eaeaacdbfdc",
+    "14b4b6d3-7cca-4d2f-a6b9-663fbaa7b712",
+    "17a3cce6-bb4a-4914-a5d4-97c6a74b13b5",
+    "19f60461-087c-4db2-b34b-3ae28e549c91",
+    "1e22ad44-c609-416d-bbf5-023a1e02cea1",
+    "2147e0d1-2c99-41a8-bbcd-dfaf87bdecb2",
+    "2369cc2f-2da4-4bdc-a6c2-b71a1744c70c",
+    "2b3c1046-0c23-4918-bc04-436354843cb8",
+    "2f4123a1-ca2f-4430-a503-5aeff8ad9674",
+    "3dd0fc3f-73f4-4577-93a5-5e26d0936bf7",
+    "3f41c4be-20e2-4b48-a372-b4394c8810f6",
+    "40cc118e-b119-49fa-ac98-43b7d2fdde8c",
+    "4380875d-a287-490d-ab93-c9ae0706c8d2",
+    "4d6f8a1f-40a4-482c-86b2-b30ddddf123c",
+    "5110ea12-19f3-4b8c-abd1-50136dd35d7a",
+    "612f2b36-8c4b-4658-95d2-14fad79b5bb0",
+    "692c7871-2836-44f4-b693-d61507c7ba8f",
+    "6d3cbecd-31f8-447e-8c09-16dd68fc1575",
+    "6eea3323-5869-407f-aba0-ed515196cccf",
+    "6fb9e267-fc48-4f05-80d3-6939c3e88bed",
+    "78b22e87-442a-41d2-98c9-5d149bd34976",
+    "7aafeedd-e81d-470e-85c5-5dab1a615ae9",
+    "90b18fd6-413c-40c5-a7f4-a06f148164d8",
+    "adc9e1b0-3c99-486d-8c9e-18ae2ef3139b",
+    "c97b5858-1880-4fb6-b5d5-65344daf1f80",
+    "d0e1612c-589b-4ba6-a02a-14e2a95c36b7",
+    "dfc484f9-220d-4fa3-b1ac-024094eab30d",
+    "eeab943d-ea8f-4a3b-addf-a2ed2bc3de38",
+    "eeb83778-2991-4613-8c09-4b5e070ae15d",
+    "fcf3274c-f2e3-4edc-be29-af2391774130"
+  ],
+  "unremovedHostStagingDirectory": "Prior IMAPI staging directory gpupv-cbd1yfer.tid in the Windows user temp folder. Automatic execution review rejected deletion.",
+  "release20261124": {
+    "asOf": "2026-11-24T14:20:34.019831+08:00",
+    "combinations": 16,
+    "counts": {
+      "nvidiaSmi": 8,
+      "cuda": 8,
+      "nvencCuvid": 8,
+      "intelCompute": 8,
+      "intelH264EncodeVp9Decode": 8,
+      "intelVideoConfiguration": {
+        "arch": "隔离 H.264 编码与 VP9 解码",
+        "debian-12": "原生 H.264 编码与 VP9 解码",
+        "debian-13": "隔离 H.264 编码与 VP9 解码",
+        "fedora-44": "隔离 H.264 编码与 VP9 解码",
+        "leap-15.6": "隔离 H.264 编码与 VP9 解码",
+        "rocky-9": "另载同版签名 VGEM + 隔离 VA，H.264 编码与 VP9 解码",
+        "ubuntu-22.04": "原生 H.264 编码与 VP9 解码",
+        "ubuntu-24.04": "原生 H.264 编码与 VP9 解码"
+      },
+      "secureBootSigned": 16,
+      "moduleVerificationWarnings": 0,
+      "lifecycle": 16,
+      "strictPasses": 0,
+      "rowsWithKernelIoctlFailures": 16
+    },
+    "evidence": "artifacts/reports/2026-11-24/final-matrix.json",
+    "checksums": "dist/2026-11-24/SHA256SUMS"
+  },
+  "computeDelivery": {
+    "version": "phase1-local.2",
+    "report": "artifacts/reports/phase1/results.md",
+    "hardware": "Debian 12 x86_64 Hyper-V",
+    "verifiedGPU": [
+      "NVIDIA GeForce RTX 2060",
+      "Intel Iris Xe"
+    ],
+    "nativeArm64HyperV": false,
+    "remoteActionsRun": false,
+    "remainingIoctl": "Intel OpenCL dxgkio_reserve_gpu_va -75",
+    "sshVerified": true,
+    "secureBootVerified": true,
+    "uninstallRebootVerified": true,
+    "temporaryVMRemoved": true
+  }
+}

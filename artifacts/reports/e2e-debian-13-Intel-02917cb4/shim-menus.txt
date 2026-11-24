@@ -1,0 +1,5 @@
+d7702a20-08d5-4c0c-ad7c-e507edaae44f confirmed shim menu management
+d7702a20-08d5-4c0c-ad7c-e507edaae44f confirmed shim menu view
+d7702a20-08d5-4c0c-ad7c-e507edaae44f confirmed shim menu confirm
+d7702a20-08d5-4c0c-ad7c-e507edaae44f confirmed shim menu password
+d7702a20-08d5-4c0c-ad7c-e507edaae44f confirmed shim menu reboot

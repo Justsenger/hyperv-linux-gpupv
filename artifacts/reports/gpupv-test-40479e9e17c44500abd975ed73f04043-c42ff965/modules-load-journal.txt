@@ -1,0 +1,3 @@
+Nov 23 11:48:27 localhost systemd[1]: systemd-modules-load.service: Deactivated successfully.
+Nov 23 11:48:27 localhost systemd[1]: Stopped Load Kernel Modules.
+Nov 23 11:48:28 gpupv-test-40479e9e17c44500abd975ed73f04043 systemd[1]: Finished Load Kernel Modules.

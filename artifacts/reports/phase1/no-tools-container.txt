@@ -1,0 +1,16 @@
+Container 12.15, uname 6.1.0-56-amd64, GCC, make and kernel headers absent
+glibc 2.36, x86_64, kernel 6.1.0-56-amd64, preflight OK
+depmod: WARNING: could not open modules.order at /lib/modules/6.1.0-56-amd64: No such file or directory
+depmod: WARNING: could not open modules.builtin at /lib/modules/6.1.0-56-amd64: No such file or directory
+depmod: WARNING: could not open modules.builtin.modinfo at /lib/modules/6.1.0-56-amd64: No such file or directory
+ldconfig: /usr/lib/wsl/lib/libcuda.so.1 is not a symbolic link
+
+ldconfig: /usr/lib/wsl/lib/libnvidia-ml.so.1 is not a symbolic link
+
+6.1.0-56-amd64 SMP preempt mod_unload modversions 
+GPU-PV module signing
+glibc 2.36, x86_64, kernel 6.1.0-56-amd64, preflight OK
+depmod: WARNING: could not open modules.order at /lib/modules/6.1.0-56-amd64: No such file or directory
+depmod: WARNING: could not open modules.builtin at /lib/modules/6.1.0-56-amd64: No such file or directory
+depmod: WARNING: could not open modules.builtin.modinfo at /lib/modules/6.1.0-56-amd64: No such file or directory
+Prebuilt load, repeat install and uninstall passed

@@ -1,0 +1,80 @@
+image=debian:11 unix_time=1795422674
+PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+Get:1 https://deb.debian.org/debian bullseye InRelease [75.1 kB]
+Get:2 https://deb.debian.org/debian-security bullseye-security InRelease [27.1 kB]
+Get:3 https://deb.debian.org/debian bullseye-updates InRelease [44.0 kB]
+Get:4 https://deb.debian.org/debian bullseye/main amd64 Packages [8066 kB]
+Get:5 https://deb.debian.org/debian-security bullseye-security/main amd64 Packages [475 kB]
+Get:6 https://deb.debian.org/debian bullseye-updates/main amd64 Packages [18.8 kB]
+Fetched 8706 kB in 2s (5248 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-10 gcc-10
+  libasan6 libatomic1 libbinutils libcc1-0 libctf-nobfd0 libctf0 libelf1
+  libgcc-10-dev libgomp1 libisl23 libitm1 libkmod2 liblsan0 libmpc3 libmpfr6
+  libquadmath0 libtsan0 libubsan1 linux-compiler-gcc-10-x86
+  linux-headers-5.10.0-32-amd64 linux-headers-5.10.0-32-common
+  linux-kbuild-5.10
+Suggested packages:
+  binutils-doc cpp-doc gcc-10-locales gcc-multilib manpages-dev autoconf
+  automake libtool flex bison gdb gcc-doc gcc-10-multilib gcc-10-doc make-doc
+Recommended packages:
+  libc6-dev | libc-dev libc6-dev
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-10 gcc gcc-10
+  kmod libasan6 libatomic1 libbinutils libcc1-0 libctf-nobfd0 libctf0 libelf1
+  libgcc-10-dev libgomp1 libisl23 libitm1 libkmod2 liblsan0 libmpc3 libmpfr6
+  libquadmath0 libtsan0 libubsan1 linux-compiler-gcc-10-x86
+  linux-headers-5.10.0-32-amd64 linux-headers-5.10.0-32-common
+  linux-headers-amd64 linux-kbuild-5.10 make
+0 upgraded, 32 newly installed, 0 to remove and 0 not upgraded.
+Need to get 54.5 MB of archives.
+After this operation, 216 MB of additional disk space will be used.
+Get:1 https://deb.debian.org/debian bullseye/main amd64 libkmod2 amd64 28-1 [55.6 kB]
+Get:2 https://deb.debian.org/debian bullseye/main amd64 kmod amd64 28-1 [92.8 kB]
+Get:3 https://deb.debian.org/debian bullseye/main amd64 binutils-common amd64 2.35.2-2 [2220 kB]
+Get:4 https://deb.debian.org/debian bullseye/main amd64 libbinutils amd64 2.35.2-2 [570 kB]
+Get:5 https://deb.debian.org/debian bullseye/main amd64 libctf-nobfd0 amd64 2.35.2-2 [110 kB]
+Get:6 https://deb.debian.org/debian bullseye/main amd64 libctf0 amd64 2.35.2-2 [53.2 kB]
+Get:7 https://deb.debian.org/debian bullseye/main amd64 binutils-x86-64-linux-gnu amd64 2.35.2-2 [1809 kB]
+Get:8 https://deb.debian.org/debian bullseye/main amd64 binutils amd64 2.35.2-2 [61.2 kB]
+Get:9 https://deb.debian.org/debian bullseye/main amd64 libisl23 amd64 0.23-1 [676 kB]
+Get:10 https://deb.debian.org/debian bullseye/main amd64 libmpfr6 amd64 4.1.0-3 [2012 kB]
+Get:11 https://deb.debian.org/debian bullseye/main amd64 libmpc3 amd64 1.2.0-1 [45.0 kB]
+Get:12 https://deb.debian.org/debian bullseye/main amd64 cpp-10 amd64 10.2.1-6 [8528 kB]
+Get:13 https://deb.debian.org/debian bullseye/main amd64 cpp amd64 4:10.2.1-1 [19.7 kB]
+Get:14 https://deb.debian.org/debian bullseye/main amd64 libcc1-0 amd64 10.2.1-6 [47.0 kB]
+Get:15 https://deb.debian.org/debian bullseye/main amd64 libgomp1 amd64 10.2.1-6 [99.9 kB]
+Get:16 https://deb.debian.org/debian bullseye/main amd64 libitm1 amd64 10.2.1-6 [25.8 kB]
+Get:17 https://deb.debian.org/debian bullseye/main amd64 libatomic1 amd64 10.2.1-6 [9008 B]
+Get:18 https://deb.debian.org/debian bullseye/main amd64 libasan6 amd64 10.2.1-6 [2065 kB]
+Get:19 https://deb.debian.org/debian bullseye/main amd64 liblsan0 amd64 10.2.1-6 [828 kB]
+Get:20 https://deb.debian.org/debian bullseye/main amd64 libtsan0 amd64 10.2.1-6 [2000 kB]
+Get:21 https://deb.debian.org/debian bullseye/main amd64 libubsan1 amd64 10.2.1-6 [777 kB]
+Get:22 https://deb.debian.org/debian bullseye/main amd64 libquadmath0 amd64 10.2.1-6 [145 kB]
+Get:23 https://deb.debian.org/debian bullseye/main amd64 libgcc-10-dev amd64 10.2.1-6 [2328 kB]
+Get:24 https://deb.debian.org/debian bullseye/main amd64 gcc-10 amd64 10.2.1-6 [17.0 MB]
+Get:25 https://deb.debian.org/debian bullseye/main amd64 gcc amd64 4:10.2.1-1 [5192 B]
+Get:26 https://deb.debian.org/debian bullseye/main amd64 libelf1 amd64 0.183-1 [165 kB]
+Err:27 https://deb.debian.org/debian-security bullseye-security/main amd64 linux-compiler-gcc-10-x86 amd64 5.10.262-1
+  404  Not Found [IP: 192.168.1.6 9000]
+Get:28 https://deb.debian.org/debian bullseye/main amd64 linux-headers-5.10.0-32-common all 5.10.223-1 [9250 kB]
+Get:29 https://deb.debian.org/debian bullseye/main amd64 linux-kbuild-5.10 amd64 5.10.223-1 [971 kB]
+Get:30 https://deb.debian.org/debian bullseye/main amd64 linux-headers-5.10.0-32-amd64 amd64 5.10.223-1 [1248 kB]
+Get:31 https://deb.debian.org/debian bullseye/main amd64 linux-headers-amd64 amd64 5.10.223-1 [1180 B]
+Get:32 https://deb.debian.org/debian bullseye/main amd64 make amd64 4.3-4.1 [396 kB]
+Fetched 53.6 MB in 2s (31.0 MB/s)
+E: Failed to fetch https://deb.debian.org/debian-security/pool/updates/main/l/linux/linux-compiler-gcc-10-x86_5.10.262-1_amd64.deb  404  Not Found [IP: 192.168.1.6 9000]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+exit=100

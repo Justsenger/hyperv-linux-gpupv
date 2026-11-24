@@ -1,0 +1,392 @@
+[
+  {
+    "directory": "gpupv-test-02917cb4ac2540c8bc8cb53ce9c27819-0f14f5e9",
+    "distro": "Debian GNU/Linux 13 (trixie)",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 93,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-02917cb4ac2540c8bc8cb53ce9c27819-0f14f5e9/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-1c7f6a03a3d844fd874a1dbd11e20ec7-d0587375",
+    "distro": "Rocky Linux 9.9 (Blue Onyx)",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 26,
+    "escape_errors": 26,
+    "trace_file": "gpupv-test-1c7f6a03a3d844fd874a1dbd11e20ec7-d0587375/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-1ce51a8e569446cd989c198aa68322f7-4f07d11e",
+    "distro": "Arch Linux",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 31,
+    "escape_errors": 31,
+    "trace_file": "gpupv-test-1ce51a8e569446cd989c198aa68322f7-4f07d11e/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-2729c6f5348a4774a22d5de227279342-d8ac5364",
+    "distro": "Arch Linux",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 76,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-2729c6f5348a4774a22d5de227279342-d8ac5364/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-2814613e7f574db0b71296ea2233b002-b1de6823",
+    "distro": "Fedora Linux 44 (Cloud Edition)",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 26,
+    "escape_errors": 26,
+    "trace_file": "gpupv-test-2814613e7f574db0b71296ea2233b002-b1de6823/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-3e07478a6eec4522937eb67fdc207ee2-756107b8",
+    "distro": "Fedora Linux 44 (Cloud Edition)",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 93,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-3e07478a6eec4522937eb67fdc207ee2-756107b8/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-40e8c4b1785f4bb1b15867ca43d31683-16baa698",
+    "distro": "openSUSE Leap 15.6",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 52,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-40e8c4b1785f4bb1b15867ca43d31683-16baa698/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-44f810256ef04fedb922c4241aa17f34-5ee50f1d",
+    "distro": "Arch Linux",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 31,
+    "escape_errors": 31,
+    "trace_file": "gpupv-test-44f810256ef04fedb922c4241aa17f34-5ee50f1d/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-497b799c22614660aa9218dd8346ce52-aeb48afd",
+    "distro": "openSUSE Leap 15.6",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 34,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-497b799c22614660aa9218dd8346ce52-aeb48afd/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-4d57ed13abbc471c8f73195660127f74-f60278a3",
+    "distro": "Ubuntu 22.04.5 LTS",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": null,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 20,
+    "escape_errors": 20,
+    "trace_file": "gpupv-test-4d57ed13abbc471c8f73195660127f74-f60278a3/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-4e7f12f401eb40b7922c452353c5751c-d0e9b8f4",
+    "distro": "Arch Linux",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 100,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-4e7f12f401eb40b7922c452353c5751c-d0e9b8f4/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-5204546b409944c589f2a4dd24c5e971-c990e0ef",
+    "distro": "Ubuntu 22.04.5 LTS",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 23,
+    "escape_errors": 23,
+    "trace_file": "gpupv-test-5204546b409944c589f2a4dd24c5e971-c990e0ef/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-531c460b496946f99a72748599ee61c2-cb4477f0",
+    "distro": "Debian GNU/Linux 12 (bookworm)",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 20,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-531c460b496946f99a72748599ee61c2-cb4477f0/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-57e86bd1c1e644eaae2e043d344c86c3-f25961b0",
+    "distro": "Ubuntu 22.04.5 LTS",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 29,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-57e86bd1c1e644eaae2e043d344c86c3-f25961b0/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-76d49092ccb44e96b8cb1019fadc0bad-c61f41c1",
+    "distro": "Debian GNU/Linux 12 (bookworm)",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": null,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 22,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-76d49092ccb44e96b8cb1019fadc0bad-c61f41c1/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-76d49092ccb44e96b8cb1019fadc0bad-cedc9be5",
+    "distro": "Debian GNU/Linux 12 (bookworm)",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": null,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 23,
+    "escape_errors": 23,
+    "trace_file": "gpupv-test-76d49092ccb44e96b8cb1019fadc0bad-cedc9be5/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-7c237062707841739674ebfd0b3ae6a1-46d86e26",
+    "distro": "Rocky Linux 9.9 (Blue Onyx)",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 26,
+    "escape_errors": 26,
+    "trace_file": "gpupv-test-7c237062707841739674ebfd0b3ae6a1-46d86e26/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-84d8b6e3a2984f4eb043ae4799669fad-9cbc21e3",
+    "distro": "openSUSE Leap 15.6",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 26,
+    "escape_errors": 26,
+    "trace_file": "gpupv-test-84d8b6e3a2984f4eb043ae4799669fad-9cbc21e3/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-8ec49a2dfee24350bab35f983bce8649-4e8f8b39",
+    "distro": "Debian GNU/Linux 13 (trixie)",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 26,
+    "escape_errors": 26,
+    "trace_file": "gpupv-test-8ec49a2dfee24350bab35f983bce8649-4e8f8b39/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-91eb68325f1a4467ba98ec1a6543d604-58c89ab6",
+    "distro": "openSUSE Leap 15.6",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 17,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-91eb68325f1a4467ba98ec1a6543d604-58c89ab6/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-951008680583407685e5db901ea9b321-295d9b7b",
+    "distro": "Fedora Linux 44 (Cloud Edition)",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 26,
+    "escape_errors": 26,
+    "trace_file": "gpupv-test-951008680583407685e5db901ea9b321-295d9b7b/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-9ae34f959ecb47a89c9b683802b23ba7-c5eea9bb",
+    "distro": "Rocky Linux 9.9 (Blue Onyx)",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 5,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-9ae34f959ecb47a89c9b683802b23ba7-c5eea9bb/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-9b9018e6bd95473fb61730fa97895be2-4e27f751",
+    "distro": "Rocky Linux 9.9 (Blue Onyx)",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 5,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-9b9018e6bd95473fb61730fa97895be2-4e27f751/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-9d68e914919a486083d4a84a60f946b4-bdb4af52",
+    "distro": "Debian GNU/Linux 12 (bookworm)",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 26,
+    "escape_errors": 26,
+    "trace_file": "gpupv-test-9d68e914919a486083d4a84a60f946b4-bdb4af52/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-ad23c26f92fb457980e9ef68d093b133-0c2e1ba4",
+    "distro": "Fedora Linux 44 (Cloud Edition)",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 108,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-ad23c26f92fb457980e9ef68d093b133-0c2e1ba4/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-bcb6bf904aca47f8918d402c281fe1bd-ebfbc402",
+    "distro": "Fedora Linux 44 (Cloud Edition)",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 26,
+    "escape_errors": 26,
+    "trace_file": "gpupv-test-bcb6bf904aca47f8918d402c281fe1bd-ebfbc402/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-c75677bb0e924c6db5aa24dbb73d53ac-ffb6ebfd",
+    "distro": "Ubuntu 22.04.5 LTS",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 27,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-c75677bb0e924c6db5aa24dbb73d53ac-ffb6ebfd/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-c80c4bc3e0254bee9142b4ab583eb296-81644eb8",
+    "distro": "Ubuntu 22.04.5 LTS",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 27,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-c80c4bc3e0254bee9142b4ab583eb296-81644eb8/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-c9d0f3e8bb7142399dbbc3efb3e93b0f-0ff44f4e",
+    "distro": "Ubuntu 24.04.5 LTS",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 26,
+    "escape_errors": 26,
+    "trace_file": "gpupv-test-c9d0f3e8bb7142399dbbc3efb3e93b0f-0ff44f4e/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-cad5cabe22f94eb989e1f00473f36124-8d313c9f",
+    "distro": "Rocky Linux 9.9 (Blue Onyx)",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 57,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-cad5cabe22f94eb989e1f00473f36124-8d313c9f/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-cfcb1eb5148b47afb3d1b0cd24fb4603-4c121867",
+    "distro": "Arch Linux",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 90,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-cfcb1eb5148b47afb3d1b0cd24fb4603-4c121867/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-e33aa7b59c77491b87564e99e864e0ef-1bdf0e36",
+    "distro": "Arch Linux",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 31,
+    "escape_errors": 31,
+    "trace_file": "gpupv-test-e33aa7b59c77491b87564e99e864e0ef-1bdf0e36/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-eb87e66daecc42668e5f824a52af7fd8-b3def52c",
+    "distro": "openSUSE Leap 15.6",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 26,
+    "escape_errors": 26,
+    "trace_file": "gpupv-test-eb87e66daecc42668e5f824a52af7fd8-b3def52c/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-edd76370b8ce425ea2e349e00c0c789d-5b0366a9",
+    "distro": "Debian GNU/Linux 13 (trixie)",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 93,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-edd76370b8ce425ea2e349e00c0c789d-5b0366a9/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-fac26ffd6fb24031aa4bfbab5ba498ca-cd4b5ac8",
+    "distro": "Ubuntu 24.04.5 LTS",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 27,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-fac26ffd6fb24031aa4bfbab5ba498ca-cd4b5ac8/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-fba570cba76541f3a62d6d23a53cc7fa-09ff35c2",
+    "distro": "Ubuntu 24.04.5 LTS",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 24,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-fba570cba76541f3a62d6d23a53cc7fa-09ff35c2/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-fba570cba76541f3a62d6d23a53cc7fa-c0be7cc4",
+    "distro": "Ubuntu 24.04.5 LTS",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": null,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 23,
+    "escape_errors": 23,
+    "trace_file": "gpupv-test-fba570cba76541f3a62d6d23a53cc7fa-c0be7cc4/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-fdb50594c9474f6ba6c86931188a9ad9-2315046c",
+    "distro": "Fedora Linux 44 (Cloud Edition)",
+    "gpu": "Iris Xe",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 5,
+    "escape_errors": 0,
+    "trace_file": "gpupv-test-fdb50594c9474f6ba6c86931188a9ad9-2315046c/dmesg-after-workload.txt"
+  },
+  {
+    "directory": "gpupv-test-fe7f4d3d9bd346f48e16d6e530025fd2-92320428",
+    "distro": "openSUSE Leap 15.6",
+    "gpu": "RTX 2060",
+    "secure_boot_enabled": true,
+    "module_verification_warnings": 0,
+    "dxgkrnl_ioctl_failures": 26,
+    "escape_errors": 26,
+    "trace_file": "gpupv-test-fe7f4d3d9bd346f48e16d6e530025fd2-92320428/dmesg-after-workload.txt"
+  }
+]

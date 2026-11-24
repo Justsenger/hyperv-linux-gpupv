@@ -1,0 +1,41 @@
+{
+  "commit": "a8ff069a0325c16d9ae7329382a929fbfc5fdfe9",
+  "files": [
+    {
+      "name": "libdxcore.so",
+      "path": "Packaged/DXCore/10.0.26100.1-240331-1435.ge-release/arm64/libDXCore.so",
+      "sha256": "0556e5f36424e7167866608b98cf743df37f04a685fa52bd8f6f9ccf32ccd781",
+      "arch": "aarch64"
+    },
+    {
+      "name": "libd3d12.so",
+      "path": "Packaged/Direct3D12/1.611.1-81528511/x64/libd3d12.so",
+      "sha256": "b3d78d409a4dbbe8612551fc0c0d746d3e58d7997ee7eba78ce1064d77cfa8c3",
+      "arch": "x86_64"
+    },
+    {
+      "name": "libdxcore.so",
+      "path": "Packaged/DXCore/10.0.26100.1-240331-1435.ge-release/x64/libDXCore.so",
+      "sha256": "83d1671a839bcf71709349e77cd68341515df2e63080765618876996a0f4190c",
+      "arch": "x86_64"
+    },
+    {
+      "name": "libd3d12.so",
+      "path": "Packaged/Direct3D12/1.611.1-81528511/arm64/libd3d12.so",
+      "sha256": "b73c885617843c3dcd1382dcd7e371ffdba39fee5e33148d35725d50b5145a2f",
+      "arch": "aarch64"
+    },
+    {
+      "name": "libd3d12core.so",
+      "path": "Packaged/Direct3D12/1.611.1-81528511/arm64/libd3d12core.so",
+      "sha256": "e27eb88298e06d90cac68a7733e463de0fc00643501bf67f9fa58c8e4db5e75d",
+      "arch": "aarch64"
+    },
+    {
+      "name": "libd3d12core.so",
+      "path": "Packaged/Direct3D12/1.611.1-81528511/x64/libd3d12core.so",
+      "sha256": "a4104a2022932d8e6c714f103ebd89db1c5bdbf36fe92151c88d3d93d4e3894d",
+      "arch": "x86_64"
+    }
+  ]
+}

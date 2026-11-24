@@ -1,0 +1,48 @@
+#!/bin/sh
+# Verify independent headless encode and decode workloads on Intel D3D12.
+set -eu
+export LIBVA_DRIVER_NAME=d3d12
+export GALLIUM_DRIVER=d3d12
+export MESA_D3D12_DEFAULT_ADAPTER_NAME=Intel
+tmp=$(mktemp -d)
+trap 'rm -rf "$tmp"' EXIT
+# Prefer the virtual GEM device for Mesa's headless D3D12 backend. A Hyper-V
+# framebuffer can report VA profiles while rejecting KMS buffer allocation.
+set --
+for node in /dev/dri/renderD* /dev/dri/card*; do
+    test -c "$node" || continue
+    case "$(readlink -f "/sys/class/drm/${node##*/}")" in
+        */vgem/*|*/vgem.*/*) set -- "$@" "$node" ;;
+    esac
+done
+for node in "$@" /dev/dri/renderD* /dev/dri/card*; do
+    test -c "$node" && test -r "$node" && test -w "$node" || continue
+    if ! vainfo --display drm --device "$node" > "$tmp/vainfo" 2>&1; then cat "$tmp/vainfo"; continue; fi
+    cat "$tmp/vainfo"
+    grep -Ei 'Driver version:.*D3D12.*Intel' "$tmp/vainfo" >/dev/null || continue
+    grep -E 'VAProfileH264ConstrainedBaseline.*VAEntrypointEncSlice' "$tmp/vainfo" >/dev/null || continue
+    grep -E 'VAProfileVP9Profile0.*VAEntrypointVLD' "$tmp/vainfo" >/dev/null || continue
+    echo "Testing Intel D3D12 H.264 encode and VP9 decode on $node"
+    timeout -k 5 60 ffmpeg -nostdin -nostats -hide_banner -loglevel verbose -vaapi_device "$node" -f lavfi \
+        -i testsrc2=size=320x240:rate=15 -vf format=nv12,hwupload -frames:v 15 -c:v h264_vaapi \
+        -profile:v constrained_baseline -g 1 -bf 0 -async_depth 1 -rc_mode CBR \
+        -b:v 1M -maxrate 1M -bufsize 2M -f h264 "$tmp/test.h264"
+    test -s "$tmp/test.h264"
+    ffmpeg -nostdin -hide_banner -loglevel error -i "$tmp/test.h264" -f framemd5 "$tmp/encoded.frames"
+    test "$(grep -c '^0,' "$tmp/encoded.frames")" -eq 15
+    echo "Intel D3D12 H.264 intra hardware encode: 15 decodable frames ($(wc -c < "$tmp/test.h264") bytes)"
+    ffmpeg -nostdin -hide_banner -loglevel error -f lavfi -i testsrc2=size=320x240:rate=15 \
+        -frames:v 15 -c:v libvpx-vp9 -deadline realtime -cpu-used 8 "$tmp/input.ivf"
+    ffmpeg -nostdin -hide_banner -loglevel error -i "$tmp/input.ivf" -vf format=nv12 -f framemd5 "$tmp/ref"
+    timeout -k 5 60 ffmpeg -nostdin -nostats -hide_banner -loglevel verbose -hwaccel vaapi -hwaccel_device "$node" \
+        -hwaccel_output_format vaapi -i "$tmp/input.ivf" -vf hwdownload,format=nv12 -f framemd5 "$tmp/hw"
+    grep '^0,' "$tmp/ref" > "$tmp/ref.frames"
+    grep '^0,' "$tmp/hw" > "$tmp/hw.frames"
+    test "$(wc -l < "$tmp/hw.frames")" -eq 15
+    cmp "$tmp/ref.frames" "$tmp/hw.frames"
+    echo "Intel D3D12 VP9 hardware decode: 15/15 frames match software reference"
+    cat "$tmp/hw.frames"
+    exit 0
+done
+echo "No accessible Intel D3D12 VA display exposing H.264 baseline encode and VP9 profile 0 decode." >&2
+exit 77

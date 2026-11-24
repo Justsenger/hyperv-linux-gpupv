@@ -1,0 +1,2 @@
+Running timer as unit: run-p593-i593.timer
+Will run service as unit: run-p593-i593.service

@@ -1,0 +1,11 @@
+ubuntu-20.04 {'image': 'ubuntu:20.04', 'passed': False, 'exit': 1, 'sources_sha256': 'ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd'}
+ubuntu-20.04-hwe {'image': 'ubuntu:20.04', 'passed': True, 'exit': 0, 'sources_sha256': 'ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd'}
+ubuntu-22.04 {'image': 'ubuntu:22.04', 'passed': True, 'exit': 0, 'sources_sha256': 'ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd'}
+ubuntu-24.04 {'image': 'ubuntu:24.04', 'passed': True, 'exit': 0, 'sources_sha256': 'ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd'}
+ubuntu-26.10 {'image': 'ubuntu:26.10', 'passed': True, 'exit': 0, 'sources_sha256': 'ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd'}
+debian-11 {'image': 'debian:11', 'passed': False, 'exit': 100, 'sources_sha256': 'ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd'}
+debian-11-base {'image': 'debian:11', 'passed': False, 'exit': 100, 'sources_sha256': 'ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd'}
+debian-12 {'image': 'debian:12', 'passed': True, 'exit': 0, 'sources_sha256': 'ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd'}
+debian-13 {'image': 'debian:13', 'passed': True, 'exit': 0, 'sources_sha256': 'ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd'}
+arch {'image': 'archlinux:latest', 'passed': True, 'exit': 0, 'sources_sha256': 'ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd'}
+arch-lts {'image': 'archlinux:latest', 'passed': True, 'exit': 0, 'sources_sha256': 'ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd'}

@@ -1,0 +1,45 @@
+#!/bin/sh
+# Test the unchanged VGEM source from the running Rocky kernel's signed SRPM.
+# The module stays in this boot only. Do not install it into /lib/modules.
+set -eu
+test "$(id -u)" = 0
+case "$(cat /proc/sys/kernel/hostname)" in gpupv-test-*) ;; *) exit 1;; esac
+. /etc/os-release
+test "$ID" = rocky
+release=$(uname -r)
+tag=${release%.*}
+grep -Fx '# CONFIG_DRM_VGEM is not set' "/boot/config-$release"
+test ! -e /sys/module/vgem
+test -s "$1"
+rpmfile=$(readlink -f "$1")
+printf '%s  %s\n' c83a41429f92eb9fe3f04eb50a31290350f96c999a8dd99b139217b4e1b49301 "$rpmfile" | sha256sum -c -
+rpmkeys --checksig "$rpmfile"
+test "$(rpm -qp --qf '%{NAME} %{VERSION}-%{RELEASE}' "$rpmfile")" = "kernel $tag"
+tmp=$(mktemp -d /var/tmp/gpupv-vgem.XXXXXXXX)
+trap 'rm -rf "$tmp"' EXIT
+cd "$tmp"
+rpm2cpio "$rpmfile" | cpio -id --quiet "linux-$tag.tar.xz"
+src="linux-$tag/drivers/gpu/drm/vgem"
+tar -xJf "linux-$tag.tar.xz" "$src"
+headers="/lib/modules/$release/build"
+make -C "$headers" M="$tmp/$src" CONFIG_DRM_VGEM=m modules
+ko="$tmp/$src/vgem.ko"
+test "$(modinfo -F name "$ko")" = vgem
+test "$(modinfo -F vermagic "$ko" | cut -d' ' -f1)" = "$release"
+python3 - "$headers/scripts/sign-file" "$ko" <<'PY'
+import runpy
+import subprocess
+import sys
+key, cert = runpy.run_path("/opt/hyperv-linux-gpupv/guest/gpupv-guest")["signing_pair"]()
+subprocess.run([sys.argv[1], "sha256", str(key), str(cert), sys.argv[2]], check=True)
+PY
+modinfo -F signer "$ko"
+sha256sum "$ko"
+for dependency in $(modinfo -F depends "$ko" | tr ',' ' '); do
+    modprobe "$dependency"
+done
+insmod "$ko"
+udevadm settle
+test -d /sys/module/vgem
+case "$(cat /sys/module/vgem/taint)" in *E*) exit 1;; esac
+ls -l /sys/class/drm /dev/dri

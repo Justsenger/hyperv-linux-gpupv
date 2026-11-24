@@ -1,0 +1,6 @@
+SecureBoot enabled
+        Issuer: CN=GPU-PV module signing
+        Subject: CN=GPU-PV module signing
+2 keys in keyring:
+110698774: ---lswrv     0     0 asymmetric: Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1
+185054297: ---lswrv     0     0 asymmetric: GPU-PV module signing: 73215a079ef681dc3ab823ea16f8090079174f31

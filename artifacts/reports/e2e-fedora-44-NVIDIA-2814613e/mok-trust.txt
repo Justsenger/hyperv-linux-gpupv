@@ -1,0 +1,6 @@
+SecureBoot enabled
+2f8d7628-c53e-465a-93ff-4cb8355b7da1
+SHA1 Fingerprint: 2b:b0:10:e2:4d:94:c6:32:24:58:89:ba:aa:9e:d0:f3:d5:ef:1f:68
+        Issuer: C=US, ST=Massachusetts, L=Cambridge, O=Red Hat, Inc., OU=Fedora Secure Boot CA 20200709, CN=fedoraca
+SHA1 Fingerprint: 40:9c:03:73:90:2c:a2:21:b7:5d:9e:0a:49:04:2b:e9:5e:46:ff:f1
+        Issuer: CN=GPU-PV module signing

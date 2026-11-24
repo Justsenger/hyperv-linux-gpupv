@@ -1,0 +1,723 @@
+image=openeuler/openeuler:24.03-lts unix_time=1795423275
+Unable to find image 'openeuler/openeuler:24.03-lts' locally
+24.03-lts: Pulling from openeuler/openeuler
+2181afffbdb5: Pulling fs layer
+052e33072c3e: Pulling fs layer
+052e33072c3e: Verifying Checksum
+052e33072c3e: Download complete
+2181afffbdb5: Verifying Checksum
+2181afffbdb5: Download complete
+2181afffbdb5: Pull complete
+052e33072c3e: Pull complete
+Digest: sha256:ace677f48c79ae6bc17046cb8c2940b38f7050afc752c8463e1553b9e7b60974
+Status: Downloaded newer image for openeuler/openeuler:24.03-lts
+NAME="openEuler"
+VERSION="24.03 (LTS)"
+ID="openEuler"
+VERSION_ID="24.03"
+PRETTY_NAME="openEuler 24.03 (LTS)"
+ANSI_COLOR="0;31"
+
+OS                                              2.6 MB/s | 2.9 MB     00:01    
+everything                                      5.0 MB/s |  16 MB     00:03    
+EPOL                                            3.2 MB/s | 4.3 MB     00:01    
+debuginfo                                       955 kB/s | 4.4 MB     00:04    
+source                                          488 kB/s | 1.7 MB     00:03    
+update                                          2.9 MB/s |  91 MB     00:31    
+update-source                                   2.0 MB/s | 2.7 MB     00:01    
+EPOL-update                                     1.4 MB/s | 910 kB     00:00    
+Dependencies resolved.
+================================================================================
+ Package                       Arch    Version                    Repo     Size
+================================================================================
+Installing:
+ elfutils-libelf-devel         x86_64  0.190-8.oe2403             update   16 k
+ gcc                           x86_64  12.3.1-38.oe2403           update   34 M
+ kernel-devel                  x86_64  6.6.0-145.0.13.139.oe2403  update   17 M
+ kmod                          x86_64  30-4.oe2403                OS       86 k
+ make                          x86_64  1:4.4.1-2.oe2403           update  357 k
+Installing dependencies:
+ binutils                      x86_64  2.41-29.oe2403             update  5.7 M
+ cpp                           x86_64  12.3.1-38.oe2403           update   11 M
+ efi-srpm-macros               noarch  4-9.oe2403                 OS       20 k
+ file                          x86_64  5.45-1.oe2403              OS       35 k
+ findutils                     x86_64  2:4.9.0-1.oe2403           OS      326 k
+ gc                            x86_64  8.2.4-1.oe2403             OS      249 k
+ glibc-devel                   x86_64  2.38-105.oe2403            update  2.0 M
+ groff-base                    x86_64  1.23.0-2.oe2403            OS      955 k
+ guile                         x86_64  5:2.2.7-6.oe2403           update  6.3 M
+ kernel-headers                x86_64  6.6.0-145.0.13.139.oe2403  update  3.0 M
+ libmpc                        x86_64  1.3.1-1.oe2403             OS       64 k
+ libtool-ltdl                  x86_64  2.4.7-3.oe2403             OS       30 k
+ libxcrypt-devel               x86_64  4.4.36-2.oe2403            OS      105 k
+ openEuler-rpm-config          x86_64  30-57.oe2403               update   56 k
+ perl                          x86_64  4:5.38.0-10.oe2403         update  3.3 M
+ perl-Algorithm-Diff           noarch  1:1.201-2.oe2403           OS       23 k
+ perl-Archive-Tar              noarch  3.02-1.oe2403              OS       40 k
+ perl-B-Debug                  noarch  1.26-6.oe2403              OS       14 k
+ perl-CPAN-Meta                noarch  2.150010-420.oe2403        OS      107 k
+ perl-CPAN-Meta-Requirements   noarch  2.143-2.oe2403             OS       26 k
+ perl-CPAN-Meta-YAML           noarch  0.018-421.oe2403           OS       23 k
+ perl-Carp                     noarch  1.50-419.oe2403            OS       17 k
+ perl-Compress-Raw-Bzip2       x86_64  2.206-1.oe2403             OS       24 k
+ perl-Compress-Raw-Zlib        x86_64  1:2.206-1.oe2403           OS       41 k
+ perl-Config-Perl-V            noarch  0.36-1.oe2403              OS       16 k
+ perl-Data-Dumper              x86_64  2.183-2.oe2403             OS       43 k
+ perl-Devel-PPPort             x86_64  3.71-1.oe2403              OS      192 k
+ perl-Digest                   noarch  1.20-3.oe2403              OS       16 k
+ perl-Digest-MD5               x86_64  2.58-2.oe2403              OS       26 k
+ perl-Digest-SHA               x86_64  1:6.04-1.oe2403            OS       48 k
+ perl-Encode                   x86_64  4:3.21-1.oe2403            OS      1.4 M
+ perl-Encode-devel             x86_64  4:3.21-1.oe2403            OS       44 k
+ perl-Env                      noarch  1.04-398.oe2403            OS       16 k
+ perl-Exporter                 noarch  5.77-1.oe2403              OS       21 k
+ perl-ExtUtils-Command         noarch  1:7.70-2.oe2403            OS       10 k
+ perl-ExtUtils-Install         noarch  2.22-1.oe2403              OS       32 k
+ perl-ExtUtils-MakeMaker       noarch  1:7.70-2.oe2403            OS      170 k
+ perl-ExtUtils-Manifest        noarch  1:1.75-1.oe2403            OS       22 k
+ perl-ExtUtils-ParseXS         noarch  2:3.51-1.oe2403            OS       55 k
+ perl-File-Fetch               noarch  1.04-1.oe2403              OS       18 k
+ perl-File-Path                noarch  2.18-2.oe2403              OS       21 k
+ perl-File-Temp                noarch  1:0.2311-3.oe2403          OS       49 k
+ perl-Filter                   x86_64  2:1.64-1.oe2403            OS       47 k
+ perl-Filter-Simple            noarch  1:0.94-1.oe2403            OS       15 k
+ perl-Getopt-Long              noarch  1:2.57-1.oe2403            OS       47 k
+ perl-HTTP-Tiny                noarch  0.088-2.oe2403             update   31 k
+ perl-IO-Compress              noarch  2.206-1.oe2403             OS      115 k
+ perl-IO-Socket-IP             noarch  0.42-1.oe2403              OS       31 k
+ perl-IPC-Cmd                  noarch  2:1.04-4.oe2403            OS       32 k
+ perl-IPC-SysV                 x86_64  2.09-2.oe2403              OS       22 k
+ perl-IPC-System-Simple        noarch  1.30-3.oe2403              OS       30 k
+ perl-JSON-PP                  noarch  1:4.16-1.oe2403            OS       46 k
+ perl-Locale-Codes             noarch  3.77-1.oe2403              OS      267 k
+ perl-Locale-Maketext          noarch  1:1.33-1.oe2403            OS       53 k
+ perl-MIME-Base64              x86_64  3.16-2.oe2403              OS       17 k
+ perl-Math-BigInt              noarch  1:2.0030.02-1.oe2403       OS      140 k
+ perl-Math-BigInt-FastCalc     x86_64  0.5018-1.oe2403            OS       17 k
+ perl-Module-CoreList          noarch  1:5.20231230-1.oe2403      OS       94 k
+ perl-Module-Load              noarch  1:0.36-2.oe2403            OS       13 k
+ perl-Module-Load-Conditional  noarch  0.74-2.oe2403              OS       17 k
+ perl-Module-Metadata          noarch  1.000038-1.oe2403          OS       30 k
+ perl-Params-Check             noarch  1:0.38-420.oe2403          OS       14 k
+ perl-PathTools                x86_64  3.89-1.oe2403              OS       57 k
+ perl-Perl-OSType              noarch  1.010-422.oe2403           OS       15 k
+ perl-PerlIO-via-QuotedPrint   noarch  0.10-1.oe2403              OS      6.0 k
+ perl-Pod-Checker              noarch  4:1.75-1.oe2403            OS       21 k
+ perl-Pod-Escapes              noarch  1:1.07_01-1.oe2403         OS       13 k
+ perl-Pod-Parser               noarch  1.66-1.oe2403              OS       58 k
+ perl-Pod-Perldoc              noarch  1:3.28-5.oe2403            OS       44 k
+ perl-Pod-Simple               noarch  1:3.45-1.oe2403            OS      136 k
+ perl-Pod-Usage                noarch  4:2.03-2.oe2403            OS       26 k
+ perl-Scalar-List-Utils        x86_64  4:1.63-1.oe2403            OS       50 k
+ perl-Socket                   x86_64  4:2.037-1.oe2403           OS       42 k
+ perl-Storable                 x86_64  1:3.25-3.oe2403            OS       77 k
+ perl-Sys-Syslog               x86_64  0.36-2.oe2403              OS       34 k
+ perl-Term-ANSIColor           noarch  5.01-2.oe2403              OS       29 k
+ perl-Term-Cap                 noarch  1.18-1.oe2403              OS       17 k
+ perl-Test-Harness             noarch  2:3.48-1.oe2403            OS      133 k
+ perl-Test-Simple              noarch  2:1.302198-1.oe2403        OS      202 k
+ perl-Text-Balanced            noarch  2.06-1.oe2403              OS       29 k
+ perl-Text-Diff                noarch  1.45-8.oe2403              OS       26 k
+ perl-Text-ParseWords          noarch  3.30-420.oe2403            OS       11 k
+ perl-Text-Tabs+Wrap           noarch  2023.0511-1.oe2403         OS       13 k
+ perl-Thread-Queue             noarch  3.13-4.oe2403              OS       13 k
+ perl-Time-HiRes               x86_64  4:1.9775-1.oe2403          OS       45 k
+ perl-Time-Local               noarch  2:1.350-1.oe2403           OS       21 k
+ perl-Unicode-Collate          x86_64  1.31-2.oe2403              OS      685 k
+ perl-Unicode-Normalize        x86_64  1.32-1.oe2403              OS       74 k
+ perl-autodie                  noarch  2.36-1.oe2403              OS       51 k
+ perl-bignum                   noarch  0.66-3.oe2403              update   18 k
+ perl-constant                 noarch  1.33-422.oe2403            OS       16 k
+ perl-experimental             noarch  0.031-2.oe2403             OS       20 k
+ perl-libnet                   noarch  3.15-1.oe2403              OS       75 k
+ perl-libs                     x86_64  4:5.38.0-10.oe2403         update  1.9 M
+ perl-parent                   noarch  1:0.241-1.oe2403           OS      7.1 k
+ perl-perlfaq                  noarch  5.20230812-1.oe2403        OS      174 k
+ perl-podlators                noarch  1:5.01-2.oe2403            OS       66 k
+ perl-threads                  x86_64  2:2.36-2.oe2403            OS       35 k
+ perl-threads-shared           x86_64  1.62-2.oe2403              OS       30 k
+ perl-version                  x86_64  8:0.99.30-1.oe2403         OS       43 k
+ pkgconf                       x86_64  1.9.5-1.oe2403             OS       60 k
+ qt5-srpm-macros               noarch  5.15.10-4.oe2403           OS       10 k
+ zip                           x86_64  3.0-32.oe2403              OS      221 k
+ zlib-devel                    x86_64  1.2.13-5.oe2403            update   91 k
+ zstd-devel                    x86_64  1.5.5-1.oe2403             OS       54 k
+
+Transaction Summary
+================================================================================
+Install  110 Packages
+
+Total download size: 93 M
+Installed size: 342 M
+Downloading Packages:
+(1/110): efi-srpm-macros-4-9.oe2403.noarch.rpm  136 kB/s |  20 kB     00:00    
+(2/110): file-5.45-1.oe2403.x86_64.rpm          221 kB/s |  35 kB     00:00    
+(3/110): gc-8.2.4-1.oe2403.x86_64.rpm           1.7 MB/s | 249 kB     00:00    
+(4/110): findutils-4.9.0-1.oe2403.x86_64.rpm    1.1 MB/s | 326 kB     00:00    
+(5/110): groff-base-1.23.0-2.oe2403.x86_64.rpm  4.1 MB/s | 955 kB     00:00    
+(6/110): kmod-30-4.oe2403.x86_64.rpm            859 kB/s |  86 kB     00:00    
+(7/110): libmpc-1.3.1-1.oe2403.x86_64.rpm       691 kB/s |  64 kB     00:00    
+(8/110): libtool-ltdl-2.4.7-3.oe2403.x86_64.rpm 610 kB/s |  30 kB     00:00    
+(9/110): libxcrypt-devel-4.4.36-2.oe2403.x86_64 1.7 MB/s | 105 kB     00:00    
+(10/110): perl-Algorithm-Diff-1.201-2.oe2403.no 364 kB/s |  23 kB     00:00    
+(11/110): perl-Archive-Tar-3.02-1.oe2403.noarch 763 kB/s |  40 kB     00:00    
+(12/110): perl-B-Debug-1.26-6.oe2403.noarch.rpm 296 kB/s |  14 kB     00:00    
+(13/110): perl-CPAN-Meta-2.150010-420.oe2403.no 1.2 MB/s | 107 kB     00:00    
+(14/110): perl-CPAN-Meta-Requirements-2.143-2.o 422 kB/s |  26 kB     00:00    
+(15/110): perl-CPAN-Meta-YAML-0.018-421.oe2403. 413 kB/s |  23 kB     00:00    
+(16/110): perl-Carp-1.50-419.oe2403.noarch.rpm  352 kB/s |  17 kB     00:00    
+(17/110): perl-Compress-Raw-Bzip2-2.206-1.oe240 478 kB/s |  24 kB     00:00    
+(18/110): perl-Compress-Raw-Zlib-2.206-1.oe2403 829 kB/s |  41 kB     00:00    
+(19/110): perl-Config-Perl-V-0.36-1.oe2403.noar 232 kB/s |  16 kB     00:00    
+(20/110): perl-Data-Dumper-2.183-2.oe2403.x86_6 616 kB/s |  43 kB     00:00    
+(21/110): perl-Devel-PPPort-3.71-1.oe2403.x86_6 2.7 MB/s | 192 kB     00:00    
+(22/110): perl-Digest-1.20-3.oe2403.noarch.rpm  355 kB/s |  16 kB     00:00    
+(23/110): perl-Digest-MD5-2.58-2.oe2403.x86_64. 493 kB/s |  26 kB     00:00    
+(24/110): perl-Digest-SHA-6.04-1.oe2403.x86_64. 905 kB/s |  48 kB     00:00    
+(25/110): perl-Env-1.04-398.oe2403.noarch.rpm   197 kB/s |  16 kB     00:00    
+(26/110): perl-Encode-3.21-1.oe2403.x86_64.rpm  6.7 MB/s | 1.4 MB     00:00    
+(27/110): perl-Encode-devel-3.21-1.oe2403.x86_6 232 kB/s |  44 kB     00:00    
+(28/110): perl-Exporter-5.77-1.oe2403.noarch.rp 194 kB/s |  21 kB     00:00    
+(29/110): perl-ExtUtils-Command-7.70-2.oe2403.n 210 kB/s |  10 kB     00:00    
+(30/110): perl-ExtUtils-Install-2.22-1.oe2403.n 669 kB/s |  32 kB     00:00    
+(31/110): perl-ExtUtils-MakeMaker-7.70-2.oe2403 2.7 MB/s | 170 kB     00:00    
+(32/110): perl-ExtUtils-Manifest-1.75-1.oe2403. 484 kB/s |  22 kB     00:00    
+(33/110): perl-ExtUtils-ParseXS-3.51-1.oe2403.n 1.0 MB/s |  55 kB     00:00    
+(34/110): perl-File-Fetch-1.04-1.oe2403.noarch. 387 kB/s |  18 kB     00:00    
+(35/110): perl-File-Path-2.18-2.oe2403.noarch.r 451 kB/s |  21 kB     00:00    
+(36/110): perl-File-Temp-0.2311-3.oe2403.noarch 1.0 MB/s |  49 kB     00:00    
+(37/110): perl-Filter-1.64-1.oe2403.x86_64.rpm  975 kB/s |  47 kB     00:00    
+(38/110): perl-Filter-Simple-0.94-1.oe2403.noar 291 kB/s |  15 kB     00:00    
+(39/110): perl-Getopt-Long-2.57-1.oe2403.noarch 973 kB/s |  47 kB     00:00    
+(40/110): perl-IO-Compress-2.206-1.oe2403.noarc 2.2 MB/s | 115 kB     00:00    
+(41/110): perl-IO-Socket-IP-0.42-1.oe2403.noarc 641 kB/s |  31 kB     00:00    
+(42/110): perl-IPC-Cmd-1.04-4.oe2403.noarch.rpm 682 kB/s |  32 kB     00:00    
+(43/110): perl-IPC-SysV-2.09-2.oe2403.x86_64.rp 418 kB/s |  22 kB     00:00    
+(44/110): perl-IPC-System-Simple-1.30-3.oe2403. 665 kB/s |  30 kB     00:00    
+(45/110): perl-JSON-PP-4.16-1.oe2403.noarch.rpm 961 kB/s |  46 kB     00:00    
+(46/110): perl-Locale-Codes-3.77-1.oe2403.noarc 3.8 MB/s | 267 kB     00:00    
+(47/110): perl-Locale-Maketext-1.33-1.oe2403.no 1.1 MB/s |  53 kB     00:00    
+(48/110): perl-MIME-Base64-3.16-2.oe2403.x86_64 385 kB/s |  17 kB     00:00    
+(49/110): perl-Math-BigInt-2.0030.02-1.oe2403.n 2.5 MB/s | 140 kB     00:00    
+(50/110): perl-Math-BigInt-FastCalc-0.5018-1.oe 303 kB/s |  17 kB     00:00    
+(51/110): perl-Module-CoreList-5.20231230-1.oe2 1.7 MB/s |  94 kB     00:00    
+(52/110): perl-Module-Load-0.36-2.oe2403.noarch 247 kB/s |  13 kB     00:00    
+(53/110): perl-Module-Load-Conditional-0.74-2.o 349 kB/s |  17 kB     00:00    
+(54/110): perl-Module-Metadata-1.000038-1.oe240 596 kB/s |  30 kB     00:00    
+(55/110): perl-Params-Check-0.38-420.oe2403.noa 285 kB/s |  14 kB     00:00    
+(56/110): perl-PathTools-3.89-1.oe2403.x86_64.r 1.0 MB/s |  57 kB     00:00    
+(57/110): perl-Perl-OSType-1.010-422.oe2403.noa 265 kB/s |  15 kB     00:00    
+(58/110): perl-PerlIO-via-QuotedPrint-0.10-1.oe 129 kB/s | 6.0 kB     00:00    
+(59/110): perl-Pod-Checker-1.75-1.oe2403.noarch 435 kB/s |  21 kB     00:00    
+(60/110): perl-Pod-Escapes-1.07_01-1.oe2403.noa 225 kB/s |  13 kB     00:00    
+(61/110): perl-Pod-Parser-1.66-1.oe2403.noarch. 1.1 MB/s |  58 kB     00:00    
+(62/110): perl-Pod-Perldoc-3.28-5.oe2403.noarch 954 kB/s |  44 kB     00:00    
+(63/110): perl-Pod-Simple-3.45-1.oe2403.noarch. 2.5 MB/s | 136 kB     00:00    
+(64/110): perl-Pod-Usage-2.03-2.oe2403.noarch.r 600 kB/s |  26 kB     00:00    
+(65/110): perl-Scalar-List-Utils-1.63-1.oe2403. 1.1 MB/s |  50 kB     00:00    
+(66/110): perl-Socket-2.037-1.oe2403.x86_64.rpm 770 kB/s |  42 kB     00:00    
+(67/110): perl-Storable-3.25-3.oe2403.x86_64.rp 1.5 MB/s |  77 kB     00:00    
+(68/110): perl-Sys-Syslog-0.36-2.oe2403.x86_64. 720 kB/s |  34 kB     00:00    
+(69/110): perl-Term-ANSIColor-5.01-2.oe2403.noa 625 kB/s |  29 kB     00:00    
+(70/110): perl-Term-Cap-1.18-1.oe2403.noarch.rp 370 kB/s |  17 kB     00:00    
+(71/110): perl-Test-Harness-3.48-1.oe2403.noarc 1.9 MB/s | 133 kB     00:00    
+(72/110): perl-Test-Simple-1.302198-1.oe2403.no 2.1 MB/s | 202 kB     00:00    
+(73/110): perl-Text-Balanced-2.06-1.oe2403.noar 372 kB/s |  29 kB     00:00    
+(74/110): perl-Text-Diff-1.45-8.oe2403.noarch.r 428 kB/s |  26 kB     00:00    
+(75/110): perl-Text-ParseWords-3.30-420.oe2403. 232 kB/s |  11 kB     00:00    
+(76/110): perl-Text-Tabs+Wrap-2023.0511-1.oe240 255 kB/s |  13 kB     00:00    
+(77/110): perl-Thread-Queue-3.13-4.oe2403.noarc 223 kB/s |  13 kB     00:00    
+(78/110): perl-Time-HiRes-1.9775-1.oe2403.x86_6 829 kB/s |  45 kB     00:00    
+(79/110): perl-Time-Local-1.350-1.oe2403.noarch 354 kB/s |  21 kB     00:00    
+(80/110): perl-Unicode-Collate-1.31-2.oe2403.x8 4.1 MB/s | 685 kB     00:00    
+(81/110): perl-Unicode-Normalize-1.32-1.oe2403. 562 kB/s |  74 kB     00:00    
+(82/110): perl-autodie-2.36-1.oe2403.noarch.rpm 386 kB/s |  51 kB     00:00    
+(83/110): perl-constant-1.33-422.oe2403.noarch. 319 kB/s |  16 kB     00:00    
+(84/110): perl-experimental-0.031-2.oe2403.noar 399 kB/s |  20 kB     00:00    
+(85/110): perl-libnet-3.15-1.oe2403.noarch.rpm  1.2 MB/s |  75 kB     00:00    
+(86/110): perl-parent-0.241-1.oe2403.noarch.rpm 155 kB/s | 7.1 kB     00:00    
+(87/110): perl-perlfaq-5.20230812-1.oe2403.noar 2.9 MB/s | 174 kB     00:00    
+(88/110): perl-podlators-5.01-2.oe2403.noarch.r 1.2 MB/s |  66 kB     00:00    
+(89/110): perl-threads-2.36-2.oe2403.x86_64.rpm 645 kB/s |  35 kB     00:00    
+(90/110): perl-threads-shared-1.62-2.oe2403.x86 617 kB/s |  30 kB     00:00    
+(91/110): perl-version-0.99.30-1.oe2403.x86_64. 910 kB/s |  43 kB     00:00    
+(92/110): pkgconf-1.9.5-1.oe2403.x86_64.rpm     1.2 MB/s |  60 kB     00:00    
+(93/110): qt5-srpm-macros-5.15.10-4.oe2403.noar 233 kB/s |  10 kB     00:00    
+(94/110): zip-3.0-32.oe2403.x86_64.rpm          3.4 MB/s | 221 kB     00:00    
+(95/110): zstd-devel-1.5.5-1.oe2403.x86_64.rpm  1.1 MB/s |  54 kB     00:00    
+(96/110): elfutils-libelf-devel-0.190-8.oe2403.  58 kB/s |  16 kB     00:00    
+(97/110): binutils-2.41-29.oe2403.x86_64.rpm    4.1 MB/s | 5.7 MB     00:01    
+(98/110): gcc-12.3.1-38.oe2403.x86_64.rpm       5.0 MB/s |  34 MB     00:06    
+(99/110): glibc-devel-2.38-105.oe2403.x86_64.rp 352 kB/s | 2.0 MB     00:05    
+(100/110): cpp-12.3.1-38.oe2403.x86_64.rpm      1.2 MB/s |  11 MB     00:09    
+(101/110): kernel-headers-6.6.0-145.0.13.139.oe 2.6 MB/s | 3.0 MB     00:01    
+(102/110): make-4.4.1-2.oe2403.x86_64.rpm       2.0 MB/s | 357 kB     00:00    
+(103/110): openEuler-rpm-config-30-57.oe2403.x8 986 kB/s |  56 kB     00:00    
+(104/110): perl-5.38.0-10.oe2403.x86_64.rpm     2.7 MB/s | 3.3 MB     00:01    
+(105/110): kernel-devel-6.6.0-145.0.13.139.oe24 3.2 MB/s |  17 MB     00:05    
+(106/110): perl-HTTP-Tiny-0.088-2.oe2403.noarch  51 kB/s |  31 kB     00:00    
+(107/110): perl-bignum-0.66-3.oe2403.noarch.rpm 189 kB/s |  18 kB     00:00    
+(108/110): perl-libs-5.38.0-10.oe2403.x86_64.rp 2.4 MB/s | 1.9 MB     00:00    
+(109/110): zlib-devel-1.2.13-5.oe2403.x86_64.rp 118 kB/s |  91 kB     00:00    
+(110/110): guile-2.2.7-6.oe2403.x86_64.rpm      992 kB/s | 6.3 MB     00:06    
+--------------------------------------------------------------------------------
+Total                                           5.8 MB/s |  93 MB     00:16     
+retrieving repo key for OS unencrypted from http://repo.openeuler.org/openEuler-24.03-LTS/OS/x86_64/RPM-GPG-KEY-openEuler
+OS                                              2.7 kB/s | 3.0 kB     00:01    
+Importing GPG key 0xB675600B:
+ Userid     : "openeuler <openeuler@compass-ci.com>"
+ Fingerprint: 8AA1 6BF9 F2CA 5244 010D CA96 3B47 7C60 B675 600B
+ From       : http://repo.openeuler.org/openEuler-24.03-LTS/OS/x86_64/RPM-GPG-KEY-openEuler
+Key imported successfully
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : perl-Exporter-5.77-1.oe2403.noarch                   1/110 
+  Installing       : perl-libs-4:5.38.0-10.oe2403.x86_64                  2/110 
+  Installing       : perl-Carp-1.50-419.oe2403.noarch                     3/110 
+  Running scriptlet: perl-Scalar-List-Utils-4:1.63-1.oe2403.x86_64        4/110 
+  Installing       : perl-Scalar-List-Utils-4:1.63-1.oe2403.x86_64        4/110 
+  Running scriptlet: perl-Scalar-List-Utils-4:1.63-1.oe2403.x86_64        4/110 
+  Running scriptlet: perl-MIME-Base64-3.16-2.oe2403.x86_64                5/110 
+  Installing       : perl-MIME-Base64-3.16-2.oe2403.x86_64                5/110 
+  Running scriptlet: perl-MIME-Base64-3.16-2.oe2403.x86_64                5/110 
+  Installing       : perl-parent-1:0.241-1.oe2403.noarch                  6/110 
+  Installing       : perl-Text-ParseWords-3.30-420.oe2403.noarch          7/110 
+  Running scriptlet: perl-Time-HiRes-4:1.9775-1.oe2403.x86_64             8/110 
+  Installing       : perl-Time-HiRes-4:1.9775-1.oe2403.x86_64             8/110 
+  Running scriptlet: perl-Time-HiRes-4:1.9775-1.oe2403.x86_64             8/110 
+  Installing       : perl-Term-ANSIColor-5.01-2.oe2403.noarch             9/110 
+  Installing       : pkgconf-1.9.5-1.oe2403.x86_64                       10/110 
+  Installing       : perl-Digest-1.20-3.oe2403.noarch                    11/110 
+  Installing       : perl-Digest-MD5-2.58-2.oe2403.x86_64                12/110 
+  Installing       : perl-Pod-Escapes-1:1.07_01-1.oe2403.noarch          13/110 
+  Installing       : libmpc-1.3.1-1.oe2403.x86_64                        14/110 
+  Running scriptlet: findutils-2:4.9.0-1.oe2403.x86_64                   15/110 
+  Installing       : findutils-2:4.9.0-1.oe2403.x86_64                   15/110 
+  Installing       : cpp-12.3.1-38.oe2403.x86_64                         16/110 
+  Installing       : zstd-devel-1.5.5-1.oe2403.x86_64                    17/110 
+  Installing       : zlib-devel-1.2.13-5.oe2403.x86_64                   18/110 
+  Installing       : perl-PerlIO-via-QuotedPrint-0.10-1.oe2403.noarch    19/110 
+  Installing       : perl-Perl-OSType-1.010-422.oe2403.noarch            20/110 
+  Installing       : perl-perlfaq-5.20230812-1.oe2403.noarch             21/110 
+  Installing       : kernel-headers-6.6.0-145.0.13.139.oe2403.x86_64     22/110 
+  Running scriptlet: glibc-devel-2.38-105.oe2403.x86_64                  23/110 
+  Installing       : glibc-devel-2.38-105.oe2403.x86_64                  23/110 
+  Installing       : libxcrypt-devel-4.4.36-2.oe2403.x86_64              24/110 
+  Installing       : binutils-2.41-29.oe2403.x86_64                      25/110 
+  Running scriptlet: binutils-2.41-29.oe2403.x86_64                      25/110 
+  Installing       : zip-3.0-32.oe2403.x86_64                            26/110 
+  Installing       : qt5-srpm-macros-5.15.10-4.oe2403.noarch             27/110 
+  Installing       : libtool-ltdl-2.4.7-3.oe2403.x86_64                  28/110 
+  Installing       : groff-base-1.23.0-2.oe2403.x86_64                   29/110 
+  Installing       : gc-8.2.4-1.oe2403.x86_64                            30/110 
+  Installing       : guile-5:2.2.7-6.oe2403.x86_64                       31/110 
+  Installing       : make-1:4.4.1-2.oe2403.x86_64                        32/110 
+  Running scriptlet: make-1:4.4.1-2.oe2403.x86_64                        32/110 
+  Installing       : gcc-12.3.1-38.oe2403.x86_64                         33/110 
+  Installing       : file-5.45-1.oe2403.x86_64                           34/110 
+  Installing       : efi-srpm-macros-4-9.oe2403.noarch                   35/110 
+  Installing       : openEuler-rpm-config-30-57.oe2403.x86_64            36/110 
+  Installing       : perl-Algorithm-Diff-1:1.201-2.oe2403.noarch         37/110 
+  Installing       : perl-B-Debug-1.26-6.oe2403.noarch                   38/110 
+  Installing       : perl-CPAN-Meta-YAML-0.018-421.oe2403.noarch         39/110 
+  Running scriptlet: perl-Config-Perl-V-0.36-1.oe2403.noarch             40/110 
+  Installing       : perl-Config-Perl-V-0.36-1.oe2403.noarch             40/110 
+  Running scriptlet: perl-Config-Perl-V-0.36-1.oe2403.noarch             40/110 
+  Installing       : perl-Devel-PPPort-3.71-1.oe2403.x86_64              41/110 
+  Installing       : perl-Env-1.04-398.oe2403.noarch                     42/110 
+  Installing       : perl-Filter-2:1.64-1.oe2403.x86_64                  43/110 
+  Installing       : perl-IPC-SysV-2.09-2.oe2403.x86_64                  44/110 
+  Running scriptlet: perl-Locale-Maketext-1:1.33-1.oe2403.noarch         45/110 
+  Installing       : perl-Locale-Maketext-1:1.33-1.oe2403.noarch         45/110 
+  Running scriptlet: perl-Locale-Maketext-1:1.33-1.oe2403.noarch         45/110 
+  Installing       : perl-Params-Check-1:0.38-420.oe2403.noarch          46/110 
+  Running scriptlet: perl-Socket-4:2.037-1.oe2403.x86_64                 47/110 
+  Installing       : perl-Socket-4:2.037-1.oe2403.x86_64                 47/110 
+  Running scriptlet: perl-Socket-4:2.037-1.oe2403.x86_64                 47/110 
+  Running scriptlet: perl-Storable-1:3.25-3.oe2403.x86_64                48/110 
+  Installing       : perl-Storable-1:3.25-3.oe2403.x86_64                48/110 
+  Running scriptlet: perl-Storable-1:3.25-3.oe2403.x86_64                48/110 
+  Installing       : perl-Term-Cap-1.18-1.oe2403.noarch                  49/110 
+  Installing       : perl-Filter-Simple-1:0.94-1.oe2403.noarch           50/110 
+  Installing       : perl-Text-Balanced-2.06-1.oe2403.noarch             51/110 
+  Installing       : perl-Text-Tabs+Wrap-2023.0511-1.oe2403.noarch       52/110 
+  Running scriptlet: perl-Unicode-Normalize-1.32-1.oe2403.x86_64         53/110 
+  Installing       : perl-Unicode-Normalize-1.32-1.oe2403.x86_64         53/110 
+  Running scriptlet: perl-Unicode-Normalize-1.32-1.oe2403.x86_64         53/110 
+  Installing       : perl-Compress-Raw-Bzip2-2.206-1.oe2403.x86_64       54/110 
+  Installing       : perl-Compress-Raw-Zlib-1:2.206-1.oe2403.x86_64      55/110 
+  Running scriptlet: perl-Data-Dumper-2.183-2.oe2403.x86_64              56/110 
+  Installing       : perl-Data-Dumper-2.183-2.oe2403.x86_64              56/110 
+  Running scriptlet: perl-Data-Dumper-2.183-2.oe2403.x86_64              56/110 
+  Installing       : perl-IO-Socket-IP-0.42-1.oe2403.noarch              57/110 
+  Installing       : perl-IPC-System-Simple-1.30-3.oe2403.noarch         58/110 
+  Running scriptlet: perl-Locale-Codes-3.77-1.oe2403.noarch              59/110 
+  Installing       : perl-Locale-Codes-3.77-1.oe2403.noarch              59/110 
+  Running scriptlet: perl-Locale-Codes-3.77-1.oe2403.noarch              59/110 
+  Running scriptlet: perl-Math-BigInt-FastCalc-0.5018-1.oe2403.x86_64    60/110 
+  Installing       : perl-Math-BigInt-FastCalc-0.5018-1.oe2403.x86_64    60/110 
+  Running scriptlet: perl-Math-BigInt-FastCalc-0.5018-1.oe2403.x86_64    60/110 
+  Running scriptlet: perl-Math-BigInt-1:2.0030.02-1.oe2403.noarch        61/110 
+  Installing       : perl-Math-BigInt-1:2.0030.02-1.oe2403.noarch        61/110 
+  Running scriptlet: perl-Math-BigInt-1:2.0030.02-1.oe2403.noarch        61/110 
+  Installing       : perl-ExtUtils-Command-1:7.70-2.oe2403.noarch        62/110 
+  Installing       : perl-ExtUtils-Manifest-1:1.75-1.oe2403.noarch       63/110 
+  Installing       : perl-File-Path-2.18-2.oe2403.noarch                 64/110 
+  Installing       : perl-File-Temp-1:0.2311-3.oe2403.noarch             65/110 
+  Installing       : perl-Module-Load-1:0.36-2.oe2403.noarch             66/110 
+  Installing       : perl-PathTools-3.89-1.oe2403.x86_64                 67/110 
+  Installing       : perl-Sys-Syslog-0.36-2.oe2403.x86_64                68/110 
+  Installing       : perl-Text-Diff-1.45-8.oe2403.noarch                 69/110 
+  Installing       : perl-Time-Local-2:1.350-1.oe2403.noarch             70/110 
+  Installing       : perl-Unicode-Collate-1.31-2.oe2403.x86_64           71/110 
+  Installing       : perl-autodie-2.36-1.oe2403.noarch                   72/110 
+  Running scriptlet: perl-constant-1.33-422.oe2403.noarch                73/110 
+  Installing       : perl-constant-1.33-422.oe2403.noarch                73/110 
+  Running scriptlet: perl-constant-1.33-422.oe2403.noarch                73/110 
+  Installing       : perl-libnet-3.15-1.oe2403.noarch                    74/110 
+  Installing       : perl-threads-2:2.36-2.oe2403.x86_64                 75/110 
+  Installing       : perl-Test-Simple-2:1.302198-1.oe2403.noarch         76/110 
+  Installing       : perl-Thread-Queue-3.13-4.oe2403.noarch              77/110 
+  Installing       : perl-threads-shared-1.62-2.oe2403.x86_64            78/110 
+  Running scriptlet: perl-CPAN-Meta-Requirements-2.143-2.oe2403.noarc    79/110 
+  Installing       : perl-CPAN-Meta-Requirements-2.143-2.oe2403.noarc    79/110 
+  Running scriptlet: perl-CPAN-Meta-Requirements-2.143-2.oe2403.noarc    79/110 
+  Installing       : perl-Module-Metadata-1.000038-1.oe2403.noarch       80/110 
+  Installing       : perl-experimental-0.031-2.oe2403.noarch             81/110 
+  Installing       : perl-version-8:0.99.30-1.oe2403.x86_64              82/110 
+  Installing       : perl-Digest-SHA-1:6.04-1.oe2403.x86_64              83/110 
+  Installing       : perl-Encode-devel-4:3.21-1.oe2403.x86_64            84/110 
+  Installing       : perl-Encode-4:3.21-1.oe2403.x86_64                  85/110 
+  Installing       : perl-ExtUtils-ParseXS-2:3.51-1.oe2403.noarch        86/110 
+  Installing       : perl-Archive-Tar-3.02-1.oe2403.noarch               87/110 
+  Installing       : perl-IO-Compress-2.206-1.oe2403.noarch              88/110 
+  Running scriptlet: perl-CPAN-Meta-2.150010-420.oe2403.noarch           89/110 
+  Installing       : perl-CPAN-Meta-2.150010-420.oe2403.noarch           89/110 
+  Running scriptlet: perl-CPAN-Meta-2.150010-420.oe2403.noarch           89/110 
+  Running scriptlet: perl-JSON-PP-1:4.16-1.oe2403.noarch                 90/110 
+  Installing       : perl-JSON-PP-1:4.16-1.oe2403.noarch                 90/110 
+  Running scriptlet: perl-JSON-PP-1:4.16-1.oe2403.noarch                 90/110 
+  Installing       : perl-Pod-Simple-1:3.45-1.oe2403.noarch              91/110 
+  Installing       : perl-Test-Harness-2:3.48-1.oe2403.noarch            92/110 
+  Running scriptlet: perl-Getopt-Long-1:2.57-1.oe2403.noarch             93/110 
+  Installing       : perl-Getopt-Long-1:2.57-1.oe2403.noarch             93/110 
+  Running scriptlet: perl-Getopt-Long-1:2.57-1.oe2403.noarch             93/110 
+  Installing       : perl-Module-Load-Conditional-0.74-2.oe2403.noarc    94/110 
+  Installing       : perl-Module-CoreList-1:5.20231230-1.oe2403.noarc    95/110 
+  Installing       : perl-Pod-Checker-4:1.75-1.oe2403.noarch             96/110 
+  Installing       : perl-Pod-Parser-1.66-1.oe2403.noarch                97/110 
+  Installing       : perl-ExtUtils-Install-2.22-1.oe2403.noarch          98/110 
+  Installing       : perl-File-Fetch-1.04-1.oe2403.noarch                99/110 
+  Installing       : perl-IPC-Cmd-2:1.04-4.oe2403.noarch                100/110 
+  Installing       : perl-ExtUtils-MakeMaker-1:7.70-2.oe2403.noarch     101/110 
+  Installing       : perl-podlators-1:5.01-2.oe2403.noarch              102/110 
+  Installing       : perl-Pod-Usage-4:2.03-2.oe2403.noarch              103/110 
+  Installing       : perl-Pod-Perldoc-1:3.28-5.oe2403.noarch            104/110 
+  Installing       : perl-HTTP-Tiny-0.088-2.oe2403.noarch               105/110 
+  Installing       : perl-bignum-0.66-3.oe2403.noarch                   106/110 
+  Installing       : perl-4:5.38.0-10.oe2403.x86_64                     107/110 
+  Installing       : kernel-devel-6.6.0-145.0.13.139.oe2403.x86_64      108/110 
+  Running scriptlet: kernel-devel-6.6.0-145.0.13.139.oe2403.x86_64      108/110 
+  Installing       : elfutils-libelf-devel-0.190-8.oe2403.x86_64        109/110 
+  Installing       : kmod-30-4.oe2403.x86_64                            110/110 
+  Running scriptlet: kmod-30-4.oe2403.x86_64                            110/110 
+  Verifying        : efi-srpm-macros-4-9.oe2403.noarch                    1/110 
+  Verifying        : file-5.45-1.oe2403.x86_64                            2/110 
+  Verifying        : findutils-2:4.9.0-1.oe2403.x86_64                    3/110 
+  Verifying        : gc-8.2.4-1.oe2403.x86_64                             4/110 
+  Verifying        : groff-base-1.23.0-2.oe2403.x86_64                    5/110 
+  Verifying        : kmod-30-4.oe2403.x86_64                              6/110 
+  Verifying        : libmpc-1.3.1-1.oe2403.x86_64                         7/110 
+  Verifying        : libtool-ltdl-2.4.7-3.oe2403.x86_64                   8/110 
+  Verifying        : libxcrypt-devel-4.4.36-2.oe2403.x86_64               9/110 
+  Verifying        : perl-Algorithm-Diff-1:1.201-2.oe2403.noarch         10/110 
+  Verifying        : perl-Archive-Tar-3.02-1.oe2403.noarch               11/110 
+  Verifying        : perl-B-Debug-1.26-6.oe2403.noarch                   12/110 
+  Verifying        : perl-CPAN-Meta-2.150010-420.oe2403.noarch           13/110 
+  Verifying        : perl-CPAN-Meta-Requirements-2.143-2.oe2403.noarc    14/110 
+  Verifying        : perl-CPAN-Meta-YAML-0.018-421.oe2403.noarch         15/110 
+  Verifying        : perl-Carp-1.50-419.oe2403.noarch                    16/110 
+  Verifying        : perl-Compress-Raw-Bzip2-2.206-1.oe2403.x86_64       17/110 
+  Verifying        : perl-Compress-Raw-Zlib-1:2.206-1.oe2403.x86_64      18/110 
+  Verifying        : perl-Config-Perl-V-0.36-1.oe2403.noarch             19/110 
+  Verifying        : perl-Data-Dumper-2.183-2.oe2403.x86_64              20/110 
+  Verifying        : perl-Devel-PPPort-3.71-1.oe2403.x86_64              21/110 
+  Verifying        : perl-Digest-1.20-3.oe2403.noarch                    22/110 
+  Verifying        : perl-Digest-MD5-2.58-2.oe2403.x86_64                23/110 
+  Verifying        : perl-Digest-SHA-1:6.04-1.oe2403.x86_64              24/110 
+  Verifying        : perl-Encode-4:3.21-1.oe2403.x86_64                  25/110 
+  Verifying        : perl-Encode-devel-4:3.21-1.oe2403.x86_64            26/110 
+  Verifying        : perl-Env-1.04-398.oe2403.noarch                     27/110 
+  Verifying        : perl-Exporter-5.77-1.oe2403.noarch                  28/110 
+  Verifying        : perl-ExtUtils-Command-1:7.70-2.oe2403.noarch        29/110 
+  Verifying        : perl-ExtUtils-Install-2.22-1.oe2403.noarch          30/110 
+  Verifying        : perl-ExtUtils-MakeMaker-1:7.70-2.oe2403.noarch      31/110 
+  Verifying        : perl-ExtUtils-Manifest-1:1.75-1.oe2403.noarch       32/110 
+  Verifying        : perl-ExtUtils-ParseXS-2:3.51-1.oe2403.noarch        33/110 
+  Verifying        : perl-File-Fetch-1.04-1.oe2403.noarch                34/110 
+  Verifying        : perl-File-Path-2.18-2.oe2403.noarch                 35/110 
+  Verifying        : perl-File-Temp-1:0.2311-3.oe2403.noarch             36/110 
+  Verifying        : perl-Filter-2:1.64-1.oe2403.x86_64                  37/110 
+  Verifying        : perl-Filter-Simple-1:0.94-1.oe2403.noarch           38/110 
+  Verifying        : perl-Getopt-Long-1:2.57-1.oe2403.noarch             39/110 
+  Verifying        : perl-IO-Compress-2.206-1.oe2403.noarch              40/110 
+  Verifying        : perl-IO-Socket-IP-0.42-1.oe2403.noarch              41/110 
+  Verifying        : perl-IPC-Cmd-2:1.04-4.oe2403.noarch                 42/110 
+  Verifying        : perl-IPC-SysV-2.09-2.oe2403.x86_64                  43/110 
+  Verifying        : perl-IPC-System-Simple-1.30-3.oe2403.noarch         44/110 
+  Verifying        : perl-JSON-PP-1:4.16-1.oe2403.noarch                 45/110 
+  Verifying        : perl-Locale-Codes-3.77-1.oe2403.noarch              46/110 
+  Verifying        : perl-Locale-Maketext-1:1.33-1.oe2403.noarch         47/110 
+  Verifying        : perl-MIME-Base64-3.16-2.oe2403.x86_64               48/110 
+  Verifying        : perl-Math-BigInt-1:2.0030.02-1.oe2403.noarch        49/110 
+  Verifying        : perl-Math-BigInt-FastCalc-0.5018-1.oe2403.x86_64    50/110 
+  Verifying        : perl-Module-CoreList-1:5.20231230-1.oe2403.noarc    51/110 
+  Verifying        : perl-Module-Load-1:0.36-2.oe2403.noarch             52/110 
+  Verifying        : perl-Module-Load-Conditional-0.74-2.oe2403.noarc    53/110 
+  Verifying        : perl-Module-Metadata-1.000038-1.oe2403.noarch       54/110 
+  Verifying        : perl-Params-Check-1:0.38-420.oe2403.noarch          55/110 
+  Verifying        : perl-PathTools-3.89-1.oe2403.x86_64                 56/110 
+  Verifying        : perl-Perl-OSType-1.010-422.oe2403.noarch            57/110 
+  Verifying        : perl-PerlIO-via-QuotedPrint-0.10-1.oe2403.noarch    58/110 
+  Verifying        : perl-Pod-Checker-4:1.75-1.oe2403.noarch             59/110 
+  Verifying        : perl-Pod-Escapes-1:1.07_01-1.oe2403.noarch          60/110 
+  Verifying        : perl-Pod-Parser-1.66-1.oe2403.noarch                61/110 
+  Verifying        : perl-Pod-Perldoc-1:3.28-5.oe2403.noarch             62/110 
+  Verifying        : perl-Pod-Simple-1:3.45-1.oe2403.noarch              63/110 
+  Verifying        : perl-Pod-Usage-4:2.03-2.oe2403.noarch               64/110 
+  Verifying        : perl-Scalar-List-Utils-4:1.63-1.oe2403.x86_64       65/110 
+  Verifying        : perl-Socket-4:2.037-1.oe2403.x86_64                 66/110 
+  Verifying        : perl-Storable-1:3.25-3.oe2403.x86_64                67/110 
+  Verifying        : perl-Sys-Syslog-0.36-2.oe2403.x86_64                68/110 
+  Verifying        : perl-Term-ANSIColor-5.01-2.oe2403.noarch            69/110 
+  Verifying        : perl-Term-Cap-1.18-1.oe2403.noarch                  70/110 
+  Verifying        : perl-Test-Harness-2:3.48-1.oe2403.noarch            71/110 
+  Verifying        : perl-Test-Simple-2:1.302198-1.oe2403.noarch         72/110 
+  Verifying        : perl-Text-Balanced-2.06-1.oe2403.noarch             73/110 
+  Verifying        : perl-Text-Diff-1.45-8.oe2403.noarch                 74/110 
+  Verifying        : perl-Text-ParseWords-3.30-420.oe2403.noarch         75/110 
+  Verifying        : perl-Text-Tabs+Wrap-2023.0511-1.oe2403.noarch       76/110 
+  Verifying        : perl-Thread-Queue-3.13-4.oe2403.noarch              77/110 
+  Verifying        : perl-Time-HiRes-4:1.9775-1.oe2403.x86_64            78/110 
+  Verifying        : perl-Time-Local-2:1.350-1.oe2403.noarch             79/110 
+  Verifying        : perl-Unicode-Collate-1.31-2.oe2403.x86_64           80/110 
+  Verifying        : perl-Unicode-Normalize-1.32-1.oe2403.x86_64         81/110 
+  Verifying        : perl-autodie-2.36-1.oe2403.noarch                   82/110 
+  Verifying        : perl-constant-1.33-422.oe2403.noarch                83/110 
+  Verifying        : perl-experimental-0.031-2.oe2403.noarch             84/110 
+  Verifying        : perl-libnet-3.15-1.oe2403.noarch                    85/110 
+  Verifying        : perl-parent-1:0.241-1.oe2403.noarch                 86/110 
+  Verifying        : perl-perlfaq-5.20230812-1.oe2403.noarch             87/110 
+  Verifying        : perl-podlators-1:5.01-2.oe2403.noarch               88/110 
+  Verifying        : perl-threads-2:2.36-2.oe2403.x86_64                 89/110 
+  Verifying        : perl-threads-shared-1.62-2.oe2403.x86_64            90/110 
+  Verifying        : perl-version-8:0.99.30-1.oe2403.x86_64              91/110 
+  Verifying        : pkgconf-1.9.5-1.oe2403.x86_64                       92/110 
+  Verifying        : qt5-srpm-macros-5.15.10-4.oe2403.noarch             93/110 
+  Verifying        : zip-3.0-32.oe2403.x86_64                            94/110 
+  Verifying        : zstd-devel-1.5.5-1.oe2403.x86_64                    95/110 
+  Verifying        : binutils-2.41-29.oe2403.x86_64                      96/110 
+  Verifying        : cpp-12.3.1-38.oe2403.x86_64                         97/110 
+  Verifying        : elfutils-libelf-devel-0.190-8.oe2403.x86_64         98/110 
+  Verifying        : gcc-12.3.1-38.oe2403.x86_64                         99/110 
+  Verifying        : glibc-devel-2.38-105.oe2403.x86_64                 100/110 
+  Verifying        : guile-5:2.2.7-6.oe2403.x86_64                      101/110 
+  Verifying        : kernel-devel-6.6.0-145.0.13.139.oe2403.x86_64      102/110 
+  Verifying        : kernel-headers-6.6.0-145.0.13.139.oe2403.x86_64    103/110 
+  Verifying        : make-1:4.4.1-2.oe2403.x86_64                       104/110 
+  Verifying        : openEuler-rpm-config-30-57.oe2403.x86_64           105/110 
+  Verifying        : perl-4:5.38.0-10.oe2403.x86_64                     106/110 
+  Verifying        : perl-HTTP-Tiny-0.088-2.oe2403.noarch               107/110 
+  Verifying        : perl-bignum-0.66-3.oe2403.noarch                   108/110 
+  Verifying        : perl-libs-4:5.38.0-10.oe2403.x86_64                109/110 
+  Verifying        : zlib-devel-1.2.13-5.oe2403.x86_64                  110/110 
+
+Installed:
+  binutils-2.41-29.oe2403.x86_64                                                
+  cpp-12.3.1-38.oe2403.x86_64                                                   
+  efi-srpm-macros-4-9.oe2403.noarch                                             
+  elfutils-libelf-devel-0.190-8.oe2403.x86_64                                   
+  file-5.45-1.oe2403.x86_64                                                     
+  findutils-2:4.9.0-1.oe2403.x86_64                                             
+  gc-8.2.4-1.oe2403.x86_64                                                      
+  gcc-12.3.1-38.oe2403.x86_64                                                   
+  glibc-devel-2.38-105.oe2403.x86_64                                            
+  groff-base-1.23.0-2.oe2403.x86_64                                             
+  guile-5:2.2.7-6.oe2403.x86_64                                                 
+  kernel-devel-6.6.0-145.0.13.139.oe2403.x86_64                                 
+  kernel-headers-6.6.0-145.0.13.139.oe2403.x86_64                               
+  kmod-30-4.oe2403.x86_64                                                       
+  libmpc-1.3.1-1.oe2403.x86_64                                                  
+  libtool-ltdl-2.4.7-3.oe2403.x86_64                                            
+  libxcrypt-devel-4.4.36-2.oe2403.x86_64                                        
+  make-1:4.4.1-2.oe2403.x86_64                                                  
+  openEuler-rpm-config-30-57.oe2403.x86_64                                      
+  perl-4:5.38.0-10.oe2403.x86_64                                                
+  perl-Algorithm-Diff-1:1.201-2.oe2403.noarch                                   
+  perl-Archive-Tar-3.02-1.oe2403.noarch                                         
+  perl-B-Debug-1.26-6.oe2403.noarch                                             
+  perl-CPAN-Meta-2.150010-420.oe2403.noarch                                     
+  perl-CPAN-Meta-Requirements-2.143-2.oe2403.noarch                             
+  perl-CPAN-Meta-YAML-0.018-421.oe2403.noarch                                   
+  perl-Carp-1.50-419.oe2403.noarch                                              
+  perl-Compress-Raw-Bzip2-2.206-1.oe2403.x86_64                                 
+  perl-Compress-Raw-Zlib-1:2.206-1.oe2403.x86_64                                
+  perl-Config-Perl-V-0.36-1.oe2403.noarch                                       
+  perl-Data-Dumper-2.183-2.oe2403.x86_64                                        
+  perl-Devel-PPPort-3.71-1.oe2403.x86_64                                        
+  perl-Digest-1.20-3.oe2403.noarch                                              
+  perl-Digest-MD5-2.58-2.oe2403.x86_64                                          
+  perl-Digest-SHA-1:6.04-1.oe2403.x86_64                                        
+  perl-Encode-4:3.21-1.oe2403.x86_64                                            
+  perl-Encode-devel-4:3.21-1.oe2403.x86_64                                      
+  perl-Env-1.04-398.oe2403.noarch                                               
+  perl-Exporter-5.77-1.oe2403.noarch                                            
+  perl-ExtUtils-Command-1:7.70-2.oe2403.noarch                                  
+  perl-ExtUtils-Install-2.22-1.oe2403.noarch                                    
+  perl-ExtUtils-MakeMaker-1:7.70-2.oe2403.noarch                                
+  perl-ExtUtils-Manifest-1:1.75-1.oe2403.noarch                                 
+  perl-ExtUtils-ParseXS-2:3.51-1.oe2403.noarch                                  
+  perl-File-Fetch-1.04-1.oe2403.noarch                                          
+  perl-File-Path-2.18-2.oe2403.noarch                                           
+  perl-File-Temp-1:0.2311-3.oe2403.noarch                                       
+  perl-Filter-2:1.64-1.oe2403.x86_64                                            
+  perl-Filter-Simple-1:0.94-1.oe2403.noarch                                     
+  perl-Getopt-Long-1:2.57-1.oe2403.noarch                                       
+  perl-HTTP-Tiny-0.088-2.oe2403.noarch                                          
+  perl-IO-Compress-2.206-1.oe2403.noarch                                        
+  perl-IO-Socket-IP-0.42-1.oe2403.noarch                                        
+  perl-IPC-Cmd-2:1.04-4.oe2403.noarch                                           
+  perl-IPC-SysV-2.09-2.oe2403.x86_64                                            
+  perl-IPC-System-Simple-1.30-3.oe2403.noarch                                   
+  perl-JSON-PP-1:4.16-1.oe2403.noarch                                           
+  perl-Locale-Codes-3.77-1.oe2403.noarch                                        
+  perl-Locale-Maketext-1:1.33-1.oe2403.noarch                                   
+  perl-MIME-Base64-3.16-2.oe2403.x86_64                                         
+  perl-Math-BigInt-1:2.0030.02-1.oe2403.noarch                                  
+  perl-Math-BigInt-FastCalc-0.5018-1.oe2403.x86_64                              
+  perl-Module-CoreList-1:5.20231230-1.oe2403.noarch                             
+  perl-Module-Load-1:0.36-2.oe2403.noarch                                       
+  perl-Module-Load-Conditional-0.74-2.oe2403.noarch                             
+  perl-Module-Metadata-1.000038-1.oe2403.noarch                                 
+  perl-Params-Check-1:0.38-420.oe2403.noarch                                    
+  perl-PathTools-3.89-1.oe2403.x86_64                                           
+  perl-Perl-OSType-1.010-422.oe2403.noarch                                      
+  perl-PerlIO-via-QuotedPrint-0.10-1.oe2403.noarch                              
+  perl-Pod-Checker-4:1.75-1.oe2403.noarch                                       
+  perl-Pod-Escapes-1:1.07_01-1.oe2403.noarch                                    
+  perl-Pod-Parser-1.66-1.oe2403.noarch                                          
+  perl-Pod-Perldoc-1:3.28-5.oe2403.noarch                                       
+  perl-Pod-Simple-1:3.45-1.oe2403.noarch                                        
+  perl-Pod-Usage-4:2.03-2.oe2403.noarch                                         
+  perl-Scalar-List-Utils-4:1.63-1.oe2403.x86_64                                 
+  perl-Socket-4:2.037-1.oe2403.x86_64                                           
+  perl-Storable-1:3.25-3.oe2403.x86_64                                          
+  perl-Sys-Syslog-0.36-2.oe2403.x86_64                                          
+  perl-Term-ANSIColor-5.01-2.oe2403.noarch                                      
+  perl-Term-Cap-1.18-1.oe2403.noarch                                            
+  perl-Test-Harness-2:3.48-1.oe2403.noarch                                      
+  perl-Test-Simple-2:1.302198-1.oe2403.noarch                                   
+  perl-Text-Balanced-2.06-1.oe2403.noarch                                       
+  perl-Text-Diff-1.45-8.oe2403.noarch                                           
+  perl-Text-ParseWords-3.30-420.oe2403.noarch                                   
+  perl-Text-Tabs+Wrap-2023.0511-1.oe2403.noarch                                 
+  perl-Thread-Queue-3.13-4.oe2403.noarch                                        
+  perl-Time-HiRes-4:1.9775-1.oe2403.x86_64                                      
+  perl-Time-Local-2:1.350-1.oe2403.noarch                                       
+  perl-Unicode-Collate-1.31-2.oe2403.x86_64                                     
+  perl-Unicode-Normalize-1.32-1.oe2403.x86_64                                   
+  perl-autodie-2.36-1.oe2403.noarch                                             
+  perl-bignum-0.66-3.oe2403.noarch                                              
+  perl-constant-1.33-422.oe2403.noarch                                          
+  perl-experimental-0.031-2.oe2403.noarch                                       
+  perl-libnet-3.15-1.oe2403.noarch                                              
+  perl-libs-4:5.38.0-10.oe2403.x86_64                                           
+  perl-parent-1:0.241-1.oe2403.noarch                                           
+  perl-perlfaq-5.20230812-1.oe2403.noarch                                       
+  perl-podlators-1:5.01-2.oe2403.noarch                                         
+  perl-threads-2:2.36-2.oe2403.x86_64                                           
+  perl-threads-shared-1.62-2.oe2403.x86_64                                      
+  perl-version-8:0.99.30-1.oe2403.x86_64                                        
+  pkgconf-1.9.5-1.oe2403.x86_64                                                 
+  qt5-srpm-macros-5.15.10-4.oe2403.noarch                                       
+  zip-3.0-32.oe2403.x86_64                                                      
+  zlib-devel-1.2.13-5.oe2403.x86_64                                             
+  zstd-devel-1.5.5-1.oe2403.x86_64                                              
+
+Complete!
+HEADER_TREE=/usr/src/kernels/6.6.0-145.0.13.139.oe2403.x86_64
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc_old (GCC) 12.3.1 (openEuler 12.3.1-38.oe2403)
+  You are using:           gcc (GCC) 12.3.1 (openEuler 12.3.1-38.oe2403)
+/tmp/tmp.JNrLOkynED/probe.c: In function 'p':
+/tmp/tmp.JNrLOkynED/probe.c:2:62: error: too few arguments to function 'eventfd_signal'
+    2 | void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+      |                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.JNrLOkynED/probe.c:1:
+./include/linux/eventfd.h:38:7: note: declared here
+   38 | __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+      |       ^~~~~~~~~~~~~~
+make[2]: *** [scripts/Makefile.build:243: /tmp/tmp.JNrLOkynED/probe.o] Error 1
+make[1]: *** [/usr/src/kernels/6.6.0-145.0.13.139.oe2403.x86_64/Makefile:1927: /tmp/tmp.JNrLOkynED] Error 2
+make: *** [Makefile:234: __sub-make] Error 2
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc_old (GCC) 12.3.1 (openEuler 12.3.1-38.oe2403)
+  You are using:           gcc (GCC) 12.3.1 (openEuler 12.3.1-38.oe2403)
+/tmp/tmp.JNrLOkynED/probe.c: In function 'p':
+/tmp/tmp.JNrLOkynED/probe.c:2:86: error: passing argument 1 of '__dma_fence_is_later' makes integer from pointer without a cast [-Werror=int-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.JNrLOkynED/probe.c:1:
+./include/linux/dma-fence.h:471:45: note: expected 'u64' {aka 'long long unsigned int'} but argument is of type 'struct dma_fence *'
+  471 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:243: /tmp/tmp.JNrLOkynED/probe.o] Error 1
+make[1]: *** [/usr/src/kernels/6.6.0-145.0.13.139.oe2403.x86_64/Makefile:1927: /tmp/tmp.JNrLOkynED] Error 2
+make: *** [Makefile:234: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+make: Entering directory '/usr/src/kernels/6.6.0-145.0.13.139.oe2403.x86_64'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc_old (GCC) 12.3.1 (openEuler 12.3.1-38.oe2403)
+  You are using:           gcc (GCC) 12.3.1 (openEuler 12.3.1-38.oe2403)
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/kernels/6.6.0-145.0.13.139.oe2403.x86_64'
+filename:       /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+version:        2.0.3
+description:    Microsoft Dxgkrnl virtual compute device Driver
+license:        GPL
+srcversion:     E7BE0A0269B9D18BC7F509D
+alias:          pci:v00001414d0000008Asv*sd*bc*sc*i*
+alias:          pci:v00001414d0000008Esv*sd*bc*sc*i*
+alias:          vmbus:c0cbe9dd605036449448ea1254a5d177
+alias:          vmbus:182d386e36334b4facc42b7703d4df4a
+depends:        hv_vmbus
+retpoline:      Y
+name:           dxgkrnl
+vermagic:       6.6.0-145.0.13.139.oe2403.x86_64 SMP mod_unload modversions 
+ab1bdce95976404e0146b7a9575ce95d2feb8daa5802c1910cadea42f70f9a42  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+exit=0

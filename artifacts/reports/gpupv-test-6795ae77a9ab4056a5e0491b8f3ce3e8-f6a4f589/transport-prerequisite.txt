@@ -1,0 +1,90 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  wireless-regdb
+The following NEW packages will be installed:
+  linux-modules-extra-5.15.0-203-generic wireless-regdb
+0 upgraded, 2 newly installed, 0 to remove and 17 not upgraded.
+Need to get 64.1 MB of archives.
+After this operation, 353 MB of additional disk space will be used.
+Get:1 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 wireless-regdb all 2026.05.30-0ubuntu1~22.04.1 [10.2 kB]
+Get:2 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 linux-modules-extra-5.15.0-203-generic amd64 5.15.0-203.213 [64.0 MB]
+Fetched 64.1 MB in 4s (16.0 MB/s)
+Selecting previously unselected package wireless-regdb.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 68187 files and directories currently installed.)
+Preparing to unpack .../wireless-regdb_2026.05.30-0ubuntu1~22.04.1_all.deb ...
+Unpacking wireless-regdb (2026.05.30-0ubuntu1~22.04.1) ...
+Selecting previously unselected package linux-modules-extra-5.15.0-203-generic.
+Preparing to unpack .../linux-modules-extra-5.15.0-203-generic_5.15.0-203.213_amd64.deb ...
+Unpacking linux-modules-extra-5.15.0-203-generic (5.15.0-203.213) ...
+Setting up wireless-regdb (2026.05.30-0ubuntu1~22.04.1) ...
+Setting up linux-modules-extra-5.15.0-203-generic (5.15.0-203.213) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for linux-image-5.15.0-203-generic (5.15.0-203.213) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-5.15.0-203-generic
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.15.0-203-generic
+Found initrd image: /boot/initrd.img-5.15.0-203-generic
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Running kernel seems to be up-to-date.
+
+Services to be restarted:
+ systemctl restart cron.service
+ systemctl restart multipathd.service
+ systemctl restart packagekit.service
+ systemctl restart polkit.service
+ systemctl restart rsyslog.service
+ systemctl restart serial-getty@ttyS0.service
+ systemctl restart ssh.service
+ systemctl restart systemd-journald.service
+ systemctl restart systemd-networkd.service
+ systemctl restart systemd-resolved.service
+ systemctl restart systemd-timesyncd.service
+ systemctl restart systemd-udevd.service
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+ systemctl restart user@1000.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+0x1414
+0x008e

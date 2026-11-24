@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "NVIDIA GeForce RTX 2060",
+    "Instance": "\\\\?\\PCI#VEN_10DE&DEV_1F15&SUBSYS_20908086&REV_A1#4&2498e50c&0&0030#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+    "Inf": "oem39.inf",
+    "Driver": "32.0.16.1742",
+    "Pnp": "PCI\\VEN_10DE&DEV_1F15&SUBSYS_20908086&REV_A1\\4&2498E50C&0&0030"
+  },
+  {
+    "Name": "Intel(R) Iris(R) Xe Graphics",
+    "Instance": "\\\\?\\PCI#VEN_8086&DEV_9A49&SUBSYS_20908086&REV_01#3&11583659&0&10#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+    "Inf": "oem26.inf",
+    "Driver": "27.20.100.8935",
+    "Pnp": "PCI\\VEN_8086&DEV_9A49&SUBSYS_20908086&REV_01\\3&11583659&0&10"
+  }
+]

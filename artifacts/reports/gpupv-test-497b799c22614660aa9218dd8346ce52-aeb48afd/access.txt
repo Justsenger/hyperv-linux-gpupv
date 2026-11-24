@@ -1,0 +1,4 @@
+uid=1000(tester) gid=100(users) groups=100(users),486(video),1000(sudo),1001(wheel)
+crw-rw---- 1 root video 10, 260 Nov 24 03:55 /dev/dxg
+boot_id=e537a902-f024-4c56-814e-9c7e23449f2d uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']

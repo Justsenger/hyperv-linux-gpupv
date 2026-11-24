@@ -1,0 +1,5 @@
+69ac7e3f-0c61-46ee-bd22-d16d6935c914 confirmed shim menu management
+69ac7e3f-0c61-46ee-bd22-d16d6935c914 confirmed shim menu view
+69ac7e3f-0c61-46ee-bd22-d16d6935c914 confirmed shim menu confirm
+69ac7e3f-0c61-46ee-bd22-d16d6935c914 confirmed shim menu password
+69ac7e3f-0c61-46ee-bd22-d16d6935c914 confirmed shim menu reboot

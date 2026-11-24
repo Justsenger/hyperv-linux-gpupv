@@ -1,0 +1,61 @@
+Updating and loading repositories:
+Repositories loaded.
+Package "ffmpeg-free-8.1.3-3.fc44.x86_64" is already installed.
+Package "libva-utils-2.23.0-2.fc44.x86_64" is already installed.
+Package "mesa-dri-drivers-26.2.7-1.fc44.x86_64" is already installed.
+Package "clinfo-3.0.25.02.14-3.fc44.x86_64" is already installed.
+
+Package                    Arch   Version                 Repository      Size
+Installing:
+ intel-compute-runtime     x86_64 0:26.35.39758.21-2.fc44 updates      0.0   B
+Installing dependencies:
+ clang-libs                x86_64 0:22.1.8-4.fc44         updates    109.7 MiB
+ clang-resource-filesystem x86_64 0:22.1.8-4.fc44         updates     15.3 KiB
+ intel-gmmlib              x86_64 0:22.10.2-1.fc44        updates    896.9 KiB
+ intel-igc                 x86_64 0:2.41.16-2.fc44        updates      2.7 MiB
+ intel-igc-libs            x86_64 0:2.41.16-2.fc44        updates     56.6 MiB
+ intel-level-zero          x86_64 0:26.35.39758.21-2.fc44 updates     59.9 MiB
+ intel-ocloc               x86_64 0:26.35.39758.21-2.fc44 updates      1.6 MiB
+ intel-opencl              x86_64 0:26.35.39758.21-2.fc44 updates     56.2 MiB
+ intel-opencl-clang        x86_64 0:22.1.4-2.fc44         updates     37.8 MiB
+ lld-libs                  x86_64 0:22.1.8-4.fc44         updates      6.1 MiB
+ spirv-llvm-translator     x86_64 0:22.1.2-1.fc44         updates      3.7 MiB
+
+Transaction Summary:
+ Installing:        12 packages
+
+Total size of inbound packages is 66 MiB. Need to download 66 MiB.
+After this operation, 335 MiB extra will be used (install 335 MiB, remove 0 B).
+[ 1/12] intel-compute-runtime-0:26.35.3 100% |  58.8 KiB/s |   6.9 KiB |  00m00s
+[ 2/12] intel-ocloc-0:26.35.39758.21-2. 100% |   1.8 MiB/s | 549.5 KiB |  00m00s
+[ 3/12] intel-gmmlib-0:22.10.2-1.fc44.x 100% |   3.3 MiB/s | 203.0 KiB |  00m00s
+[ 4/12] intel-igc-libs-0:2.41.16-2.fc44 100% |  16.1 MiB/s |  13.1 MiB |  00m01s
+[ 5/12] intel-igc-0:2.41.16-2.fc44.x86_ 100% |   9.2 MiB/s | 507.7 KiB |  00m00s
+[ 6/12] intel-opencl-0:26.35.39758.21-2 100% |   2.4 MiB/s |   2.8 MiB |  00m01s
+[ 7/12] lld-libs-0:22.1.8-4.fc44.x86_64 100% |  13.9 MiB/s |   1.7 MiB |  00m00s
+[ 8/12] intel-level-zero-0:26.35.39758. 100% |   2.3 MiB/s |   4.0 MiB |  00m02s
+[ 9/12] spirv-llvm-translator-0:22.1.2- 100% |   3.0 MiB/s | 988.1 KiB |  00m00s
+[10/12] clang-resource-filesystem-0:22. 100% | 511.8 KiB/s |  15.9 KiB |  00m00s
+[11/12] intel-opencl-clang-0:22.1.4-2.f 100% |   5.5 MiB/s |  13.4 MiB |  00m02s
+[12/12] clang-libs-0:22.1.8-4.fc44.x86_ 100% |   5.4 MiB/s |  28.2 MiB |  00m05s
+--------------------------------------------------------------------------------
+[12/12] Total                           100% |   8.7 MiB/s |  65.6 MiB |  00m08s
+Running transaction
+[ 1/14] Verify package files            100% |  51.0   B/s |  12.0   B |  00m00s
+[ 2/14] Prepare transaction             100% | 151.0   B/s |  12.0   B |  00m00s
+[ 3/14] Installing spirv-llvm-translato 100% | 154.3 MiB/s |   3.7 MiB |  00m00s
+[ 4/14] Installing intel-gmmlib-0:22.10 100% |  58.5 MiB/s | 898.3 KiB |  00m00s
+[ 5/14] Installing clang-resource-files 100% |   1.6 MiB/s |  16.7 KiB |  00m00s
+[ 6/14] Installing clang-libs-0:22.1.8- 100% |  52.8 MiB/s | 109.8 MiB |  00m02s
+[ 7/14] Installing intel-opencl-clang-0 100% | 114.8 MiB/s |  37.8 MiB |  00m00s
+[ 8/14] Installing lld-libs-0:22.1.8-4. 100% |  77.2 MiB/s |   6.1 MiB |  00m00s
+[ 9/14] Installing intel-igc-libs-0:2.4 100% |  85.6 MiB/s |  56.6 MiB |  00m01s
+[10/14] Installing intel-igc-0:2.41.16- 100% |  15.5 MiB/s |   2.7 MiB |  00m00s
+[11/14] Installing intel-level-zero-0:2 100% |  20.2 MiB/s |  59.9 MiB |  00m03s
+[12/14] Installing intel-ocloc-0:26.35. 100% |   4.8 MiB/s |   1.6 MiB |  00m00s
+[13/14] Installing intel-opencl-0:26.35 100% |  51.5 MiB/s |  56.2 MiB |  00m01s
+[14/14] Installing intel-compute-runtim 100% |  30.0   B/s | 124.0   B |  00m04s
+Complete!
+package exit=0
+total 4
+-rw-r--r--. 1 root root 37 Nov  5 00:00 intel.icd

@@ -1,0 +1,1 @@
+anolis-23 {'image': 'openanolis/anolisos:23', 'passed': True, 'exit': 0}

@@ -1,0 +1,5 @@
+image=ubuntu:20.04 unix_time=1795431206 sources_sha256=47bdacc5597ebe41022076e2d6402a70397c2a36ee4ab2f2975ae2d514e79215
+Unable to find image 'ubuntu:20.04' locally
+docker: Error response from daemon: Get "https://registry-1.docker.io/v2/library/ubuntu/manifests/sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214": EOF.
+See 'docker run --help'.
+exit=125

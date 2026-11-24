@@ -1,0 +1,158 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+6.12.117+deb13-amd64
+crw-rw---- 1 root video 10, 262 Nov 23 09:57 /dev/dxg
+Mon Nov 23 09:58:12 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 615.78.05              KMD Version: 617.42        CUDA UMD Version: 13.4     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 2060        On  |   00000000:01:00.0 Off |                  N/A |
+| N/A   43C    P8              8W /  115W |    1409MiB /   6144MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+NVIDIA GeForce RTX 2060: 7 * 5 + 3 = 38
+NVIDIA GeForce RTX 2060: 7 * 19 + 3 = 136
+NVIDIA GeForce RTX 2060: 7 * 127 + 3 = 892
+[Parsed_testsrc2_0 @ 0x557d20e4cb00] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 15 tbn
+[out#0/matroska @ 0x557d20ec1fc0] No explicit maps, mapping streams automatically...
+[vost#0:0/h264_nvenc @ 0x557d20ec2900] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (h264_nvenc))
+[vost#0:0/h264_nvenc @ 0x557d20ec2900] Starting thread...
+[vf#0:0 @ 0x557d20edda00] Starting thread...
+[vist#0:0/wrapped_avframe @ 0x557d20ec1e40] [dec:wrapped_avframe @ 0x557d20edeb80] Starting thread...
+[in#0/lavfi @ 0x557d20e9ff80] Starting thread...
+Press [q] to stop, [?] for help
+[graph -1 input from stream 0:0 @ 0x7fe31c001680] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1 csp:unknown range:unknown
+[graph -1 input from stream 0:0 @ 0x7fe31c001680] video frame properties congruent with link at pts_time: 0
+[h264_nvenc @ 0x557d20ea1580] Loaded Nvenc version 13.1
+[h264_nvenc @ 0x557d20ea1580] Nvenc initialized successfully
+[h264_nvenc @ 0x557d20ea1580] 1 CUDA capable devices found
+[h264_nvenc @ 0x557d20ea1580] [ GPU #0 - < NVIDIA GeForce RTX 2060 > has Compute SM 7.5 ]
+[h264_nvenc @ 0x557d20ea1580] supports NVENC
+Output #0, matroska, to '/tmp/tmp.nNM56lVhQe/test.mkv':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: h264 (Main), 1 reference frame (H264 / 0x34363248), yuv420p(tv, progressive), 320x240 [SAR 1:1 DAR 4:3], q=2-31, 2000 kb/s, 15 fps, 1k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 h264_nvenc
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/2000000 buffer size: 4000000 vbv_delay: N/A
+[out#0/matroska @ 0x557d20ec1fc0] Starting thread...
+[vf#0:0 @ 0x557d20edda00] All consumers returned EOF
+[vist#0:0/wrapped_avframe @ 0x557d20ec1e40] [dec:wrapped_avframe @ 0x557d20edeb80] Decoder returned EOF, finishing
+[vist#0:0/wrapped_avframe @ 0x557d20ec1e40] [dec:wrapped_avframe @ 0x557d20edeb80] Terminating thread with return code 0 (success)
+[vist#0:0/wrapped_avframe @ 0x557d20ec1e40] All consumers of this stream are done
+[in#0/lavfi @ 0x557d20e9ff80] All consumers are done
+[in#0/lavfi @ 0x557d20e9ff80] Terminating thread with return code 0 (success)
+[vf#0:0 @ 0x557d20edda00] Terminating thread with return code 0 (success)
+[vost#0:0/h264_nvenc @ 0x557d20ec2900] Encoder thread received EOF
+[vost#0:0/h264_nvenc @ 0x557d20ec2900] Terminating thread with return code 0 (success)
+[out#0/matroska @ 0x557d20ec1fc0] All streams finished
+[out#0/matroska @ 0x557d20ec1fc0] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x557d20ee0240] Statistics: 68363 bytes written, 0 seeks, 1 writeouts
+[out#0/matroska @ 0x557d20ec1fc0] Output file #0 (/tmp/tmp.nNM56lVhQe/test.mkv):
+[out#0/matroska @ 0x557d20ec1fc0]   Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (67624 bytes); 
+[out#0/matroska @ 0x557d20ec1fc0]   Total: 15 packets (67624 bytes) muxed
+[out#0/matroska @ 0x557d20ec1fc0] video:66KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.092807%
+frame=   15 fps=0.0 q=13.0 Lsize=      67KiB time=00:00:00.80 bitrate= 683.6kbits/s speed=1.14x    
+[h264_nvenc @ 0x557d20ea1580] Nvenc unloaded
+[in#0/lavfi @ 0x557d20e9ff80] Input file #0 (testsrc2=size=320x240:rate=15):
+[in#0/lavfi @ 0x557d20e9ff80]   Input stream #0:0 (video): 33 packets read (14520 bytes); 24 frames decoded; 0 decode errors; 
+[in#0/lavfi @ 0x557d20e9ff80]   Total: 33 packets (14520 bytes) demuxed
+[h264 @ 0x55ea0a6e0440] Reinit context to 320x240, pix_fmt: yuv420p
+[h264 @ 0x55ea0a6e0440] Increasing reorder buffer to 1
+[h264 @ 0x55ea0a6e0440] Increasing reorder buffer to 2
+Input #0, matroska,webm, from '/tmp/tmp.nNM56lVhQe/test.mkv':
+  Metadata:
+    ENCODER         : Lavf61.7.103
+  Duration: 00:00:01.00, start: 0.000000, bitrate: 546 kb/s
+  Stream #0:0: Video: h264 (Main), 1 reference frame, yuv420p(tv, progressive, left), 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 1k tbn
+      Metadata:
+        ENCODER         : Lavc61.19.101 h264_nvenc
+        DURATION        : 00:00:01.000000000
+[out#0/framemd5 @ 0x55ea0a896a40] No explicit maps, mapping streams automatically...
+[vost#0:0/rawvideo @ 0x55ea0a75be40] Created video stream from input stream 0:0
+[h264_cuvid @ 0x55ea0a75c900] CUVID capabilities for h264_cuvid:
+[h264_cuvid @ 0x55ea0a75c900] 8 bit: supported: 1, min_width: 48, max_width: 4096, min_height: 16, max_height: 4096
+[h264_cuvid @ 0x55ea0a75c900] 10 bit: supported: 0, min_width: 0, max_width: 0, min_height: 0, max_height: 0
+[h264_cuvid @ 0x55ea0a75c900] 12 bit: supported: 0, min_width: 0, max_width: 0, min_height: 0, max_height: 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (h264_cuvid) -> rawvideo (native))
+[vost#0:0/rawvideo @ 0x55ea0a75be40] Starting thread...
+[vf#0:0 @ 0x55ea0a856740] Starting thread...
+[vist#0:0/h264 @ 0x55ea0a6e1a40] [dec:h264_cuvid @ 0x55ea0a75c3c0] Starting thread...
+[in#0/matroska,webm @ 0x55ea0a6de000] Starting thread...
+Press [q] to stop, [?] for help
+[h264_cuvid @ 0x55ea0a75c900] Formats: Original: cuda | HW: cuda | SW: nv12
+[in#0/matroska,webm @ 0x55ea0a6de000] EOF while reading input
+[in#0/matroska,webm @ 0x55ea0a6de000] Terminating thread with return code 0 (success)
+[vist#0:0/h264 @ 0x55ea0a6e1a40] [dec:h264_cuvid @ 0x55ea0a75c3c0] Decoder thread received EOF packet
+[graph -1 input from stream 0:0 @ 0x7fe234001d00] w:320 h:240 pixfmt:cuda tb:1/1000 fr:15/1 sar:1/1 csp:unknown range:tv
+[graph -1 input from stream 0:0 @ 0x7fe234001d00] video frame properties congruent with link at pts_time: 0
+Output #0, framemd5, to '/tmp/tmp.nNM56lVhQe/frames':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: rawvideo, 1 reference frame (NV12 / 0x3231564E), nv12(tv, progressive, left), 320x240 [SAR 1:1 DAR 4:3], q=2-31, 13824 kb/s, 15 fps, 15 tbn
+      Metadata:
+        DURATION        : 00:00:01.000000000
+        encoder         : Lavc61.19.101 rawvideo
+[out#0/framemd5 @ 0x55ea0a896a40] Starting thread...
+[vist#0:0/h264 @ 0x55ea0a6e1a40] [dec:h264_cuvid @ 0x55ea0a75c3c0] Decoder returned EOF, finishing
+[vist#0:0/h264 @ 0x55ea0a6e1a40] [dec:h264_cuvid @ 0x55ea0a75c3c0] Terminating thread with return code 0 (success)
+[vf#0:0 @ 0x55ea0a856740] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x55ea0a856740] All consumers returned EOF
+[vf#0:0 @ 0x55ea0a856740] Terminating thread with return code 0 (success)
+[vost#0:0/rawvideo @ 0x55ea0a75be40] Encoder thread received EOF
+[vost#0:0/rawvideo @ 0x55ea0a75be40] Terminating thread with return code 0 (success)
+[out#0/framemd5 @ 0x55ea0a896a40] All streams finished
+[out#0/framemd5 @ 0x55ea0a896a40] Terminating thread with return code 0 (success)
+[AVIOContext @ 0x55ea0b364e80] Statistics: 1414 bytes written, 0 seeks, 1 writeouts
+[out#0/framemd5 @ 0x55ea0a896a40] Output file #0 (/tmp/tmp.nNM56lVhQe/frames):
+#format: frame checksums
+[out#0/framemd5 @ 0x55ea0a896a40]   Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (1728000 bytes); 
+#version: 2
+[out#0/framemd5 @ 0x55ea0a896a40]   Total: 15 packets (1728000 bytes) muxed
+#hash: MD5
+[out#0/framemd5 @ 0x55ea0a896a40] video:1688KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+#software: Lavf61.7.103
+frame=   15 fps=0.0 q=-0.0 Lsize=       1KiB time=00:00:01.00 bitrate=  11.3kbits/s speed=15.3x    
+#tb 0: 1/15
+[in#0/matroska,webm @ 0x55ea0a6de000] Input file #0 (/tmp/tmp.nNM56lVhQe/test.mkv):
+[in#0/matroska,webm @ 0x55ea0a6de000]   Input stream #0:0 (video): 15 packets read (67624 bytes); 15 frames decoded; 0 decode errors; 
+[in#0/matroska,webm @ 0x55ea0a6de000]   Total: 15 packets (67624 bytes) demuxed
+#media_type 0: video
+#codec_id 0: rawvideo
+#dimensions 0: 320x240
+#sar 0: 1/1
+#stream#, dts,        pts, duration,     size, hash
+0,          0,          0,        1,   115200, 3c0039b1d57e8461f43e16e48743fad9
+0,          1,          1,        1,   115200, fb1637f5c6df7c0be5411a72b1e4a000
+0,          2,          2,        1,   115200, f253fe6d61157a377c2bfed8e90d7c58
+0,          3,          3,        1,   115200, 25e56658acc922d50405fa62ec92967c
+0,          4,          4,        1,   115200, 6022bb7f9d64ebf0fe46c2baa321fe95
+0,          5,          5,        1,   115200, a47880e720ec20d22a6a4561294ea719
+0,          6,          6,        1,   115200, 9c975bae581878d84ddc58db5f7dd633
+0,          7,          7,        1,   115200, 3b137898d920d12c39bb0b30aca4aedc
+0,          8,          8,        1,   115200, 1b5c426e558a0da92bf504db0ccbf1f6
+0,          9,          9,        1,   115200, 415241f985e6c37df565b2632372677e
+[AVIOContext @ 0x55ea0a6e6b80] Statistics: 68363 bytes read, 0 seeks
+0,         10,         10,        1,   115200, 3f6aa89e3398b2ab9b8b17e8a855e91f
+0,         11,         11,        1,   115200, 053baf0c1f36253c2aa74ecffcdae490
+0,         12,         12,        1,   115200, 621a8cae31484ce29b39072735dc039f
+0,         13,         13,        1,   115200, 4e4d29260fcad539177576c693dbe17c
+0,         14,         14,        1,   115200, 46b587d82936a7da08c1cb30b27602ec

@@ -1,0 +1,16 @@
+Linux gpupv-test-62fc1008bab040779cbdd3857cbca145 6.12.117+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.117-1 (2026-11-12) x86_64 GNU/Linux
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.7
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+缺少当前内核 6.12.117+deb13-amd64 的匹配头文件。请从官方源安装精确版本 linux-headers 或 kernel-devel。
+缺少 gcc，请从本发行版官方介质补装。
+缺少 make，请从本发行版官方介质补装。
+缺少宿主设备清单，请用宿主 CLI 重新打包。
+No install directory

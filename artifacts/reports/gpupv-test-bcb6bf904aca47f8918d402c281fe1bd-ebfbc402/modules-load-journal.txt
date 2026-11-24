@@ -1,0 +1,5 @@
+Nov 24 03:06:07 localhost systemd-modules-load[225]: Inserted module 'fuse'
+Nov 24 03:06:07 localhost systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+Nov 24 03:06:12 localhost systemd[1]: systemd-modules-load.service: Deactivated successfully.
+Nov 24 03:06:12 localhost systemd[1]: Stopped systemd-modules-load.service - Load Kernel Modules.
+Nov 24 03:06:19 gpupv-test-bcb6bf904aca47f8918d402c281fe1bd systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.

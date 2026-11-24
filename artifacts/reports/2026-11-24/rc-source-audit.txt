@@ -1,0 +1,1 @@
+source_members 1292 bad_crc=0 proprietary_directx_libraries=0 pe_or_elf_binaries=0 includes_required_wsl_stubs=yes

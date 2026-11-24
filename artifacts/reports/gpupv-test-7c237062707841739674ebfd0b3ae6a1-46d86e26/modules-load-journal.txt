@@ -1,0 +1,4 @@
+Nov 24 02:46:27 localhost systemd[1]: systemd-modules-load.service: Deactivated successfully.
+Nov 24 02:46:27 localhost systemd[1]: Stopped Load Kernel Modules.
+Nov 24 02:46:28 gpupv-test-7c237062707841739674ebfd0b3ae6a1 systemd-modules-load[601]: Module 'msr' is built in
+Nov 24 02:46:28 gpupv-test-7c237062707841739674ebfd0b3ae6a1 systemd[1]: Finished Load Kernel Modules.

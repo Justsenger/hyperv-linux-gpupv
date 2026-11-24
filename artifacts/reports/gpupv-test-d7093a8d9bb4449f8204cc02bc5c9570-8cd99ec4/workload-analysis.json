@@ -1,0 +1,12 @@
+{
+  "report": "gpupv-test-d7093a8d9bb4449f8204cc02bc5c9570-8cd99ec4",
+  "scores": [
+    "NVIDIA GeForce RTX 2060: 7 * 5 + 3 = 38",
+    "NVIDIA GeForce RTX 2060: 7 * 19 + 3 = 136",
+    "NVIDIA GeForce RTX 2060: 7 * 127 + 3 = 892"
+  ],
+  "frames": 15,
+  "fortify": 0,
+  "escapeInvalid": 3,
+  "escapeOverflow": 20
+}

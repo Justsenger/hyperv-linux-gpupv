@@ -1,0 +1,179 @@
+boot_id=63cd7505-0492-443c-bdfe-e475dea9da9b uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 8086:9a49 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+OpenCL GPU: Intel(R) Graphics [0x9a49]
+Intel(R) Graphics [0x9a49]: verified 32 OpenCL results, last=220
+Intel OpenCL exit=0
+libva info: VA-API version 1.14.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_14
+libva info: va_openDriver() returns 0
+vainfo: VA-API version: 1.14 (libva 2.12.0)
+vainfo: Driver version: Mesa Gallium driver 23.2.1-1ubuntu3.1~22.04.4 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileH264ConstrainedBaseline:	VAEntrypointVLD
+      VAProfileH264ConstrainedBaseline:	VAEntrypointEncSlice
+      VAProfileH264Main               :	VAEntrypointVLD
+      VAProfileH264Main               :	VAEntrypointEncSlice
+      VAProfileH264High               :	VAEntrypointVLD
+      VAProfileH264High               :	VAEntrypointEncSlice
+      VAProfileHEVCMain               :	VAEntrypointVLD
+      VAProfileHEVCMain               :	VAEntrypointEncSlice
+      VAProfileHEVCMain10             :	VAEntrypointVLD
+      VAProfileHEVCMain10             :	VAEntrypointEncSlice
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+Testing Intel D3D12 H.264 on /dev/dri/card1
+[AVHWDeviceContext @ 0x5583764353c0] libva: VA-API version 1.14.0
+[AVHWDeviceContext @ 0x5583764353c0] libva: User environment variable requested driver 'd3d12'
+[AVHWDeviceContext @ 0x5583764353c0] libva: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+[AVHWDeviceContext @ 0x5583764353c0] libva: Found init function __vaDriverInit_1_14
+[AVHWDeviceContext @ 0x5583764353c0] libva: va_openDriver() returns 0
+[AVHWDeviceContext @ 0x5583764353c0] Initialised VAAPI connection: version 1.14
+[AVHWDeviceContext @ 0x5583764353c0] VAAPI driver: Mesa Gallium driver 23.2.1-1ubuntu3.1~22.04.4 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[AVHWDeviceContext @ 0x5583764353c0] Driver not found in known nonstandard list, using standard behaviour.
+[Parsed_testsrc2_0 @ 0x558376cab0c0] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: rawvideo, 1 reference frame (I420 / 0x30323449), yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 tbr, 15 tbn, 15 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (h264_vaapi))
+[graph 0 input from stream 0:0 @ 0x558376ce1a00] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1
+[auto_scaler_0 @ 0x558376ce3200] w:iw h:ih flags:'bicubic' interl:0
+[Parsed_format_0 @ 0x558376ce08c0] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_format_0'
+[auto_scaler_0 @ 0x558376ce3200] w:320 h:240 fmt:yuv420p sar:1/1 -> w:320 h:240 fmt:nv12 sar:1/1 flags:0x4
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+[h264_vaapi @ 0x5583767832c0] Using input frames context (format vaapi_vld) with h264_vaapi encoder.
+[h264_vaapi @ 0x5583767832c0] Input surface format is nv12.
+[h264_vaapi @ 0x5583767832c0] Using VAAPI profile VAProfileH264High (7).
+[h264_vaapi @ 0x5583767832c0] Using VAAPI entrypoint VAEntrypointEncSlice (6).
+[h264_vaapi @ 0x5583767832c0] Using VAAPI render target format YUV420 (0x1).
+[h264_vaapi @ 0x5583767832c0] No quality level set; using default (20).
+[h264_vaapi @ 0x5583767832c0] RC mode: CQP.
+[h264_vaapi @ 0x5583767832c0] RC quality: 20.
+[h264_vaapi @ 0x5583767832c0] RC framerate: 15/1 (15.00 fps).
+[h264_vaapi @ 0x5583767832c0] Using intra and P-frames (supported references: 1 / 0).
+[h264_vaapi @ 0x5583767832c0] Driver does not support some wanted packed headers (wanted 0xd, found 0).
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+[h264_vaapi @ 0x5583767832c0] Using level 1.2.
+Output #0, h264, to '/tmp/tmp.E5vYa4zMhA/test.h264':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264 (High), 1 reference frame, vaapi_vld(tv, progressive), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 h264_vaapi
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+No more output streams to write to, finishing.
+frame=   15 fps=0.0 q=-0.0 Lsize=      51kB time=00:00:01.00 bitrate= 418.4kbits/s speed=2.43x    
+video:51kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000000%
+Input file #0 (testsrc2=size=320x240:rate=15):
+  Input stream #0:0 (video): 15 packets read (1728000 bytes); 15 frames decoded; 
+  Total: 15 packets (1728000 bytes) demuxed
+Output file #0 (/tmp/tmp.E5vYa4zMhA/test.h264):
+  Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (52304 bytes); 
+  Total: 15 packets (52304 bytes) muxed
+[AVIOContext @ 0x558376cdf900] Statistics: 0 seeks, 1 writeouts
+[h264 @ 0x557e53288000] Reinit context to 320x240, pix_fmt: yuv420p
+Input #0, h264, from '/tmp/tmp.E5vYa4zMhA/test.h264':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: h264 (High), 1 reference frame, yuv420p(progressive), 320x240, 25 fps, 25 tbr, 1200k tbn, 50 tbc
+[AVHWDeviceContext @ 0x557e5330b000] libva: VA-API version 1.14.0
+[AVHWDeviceContext @ 0x557e5330b000] libva: User environment variable requested driver 'd3d12'
+[AVHWDeviceContext @ 0x557e5330b000] libva: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+[AVHWDeviceContext @ 0x557e5330b000] libva: Found init function __vaDriverInit_1_14
+[AVHWDeviceContext @ 0x557e5330b000] libva: va_openDriver() returns 0
+[AVHWDeviceContext @ 0x557e5330b000] Initialised VAAPI connection: version 1.14
+[AVHWDeviceContext @ 0x557e5330b000] VAAPI driver: Mesa Gallium driver 23.2.1-1ubuntu3.1~22.04.4 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[AVHWDeviceContext @ 0x557e5330b000] Driver not found in known nonstandard list, using standard behaviour.
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+[h264 @ 0x557e532ad5c0] Reinit context to 320x240, pix_fmt: vaapi_vld
+[graph 0 input from stream 0:0 @ 0x557e53cf8dc0] w:320 h:240 pixfmt:vaapi_vld tb:1/1200000 fr:25/1 sar:0/1
+Output #0, framemd5, to '/tmp/tmp.E5vYa4zMhA/frames':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: rawvideo, 1 reference frame (NV12 / 0x3231564E), nv12(progressive), 320x240 (0x0), q=2-31, 23040 kb/s, 25 fps, 25 tbn
+    Metadata:
+      encoder         : Lavc58.134.100 rawvideo
+No more output streams to write to, finishing.
+frame=   15 fps=0.0 q=-0.0 Lsize=       1kB time=00:00:00.60 bitrate=  18.9kbits/s speed=2.41x    
+video:1688kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (/tmp/tmp.E5vYa4zMhA/test.h264):
+  Input stream #0:0 (video): 15 packets read (52304 bytes); 15 frames decoded; 
+  Total: 15 packets (52304 bytes) demuxed
+Output file #0 (/tmp/tmp.E5vYa4zMhA/frames):
+  Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (1728000 bytes); 
+  Total: 15 packets (1728000 bytes) muxed
+[AVIOContext @ 0x557e5333f040] Statistics: 0 seeks, 1 writeouts
+[AVIOContext @ 0x557e5328f2c0] Statistics: 52304 bytes read, 0 seeks
+#format: frame checksums
+#version: 2
+#hash: MD5
+#software: Lavf58.76.100
+#tb 0: 1/25
+#media_type 0: video
+#codec_id 0: rawvideo
+#dimensions 0: 320x240
+#sar 0: 0/1
+#stream#, dts,        pts, duration,     size, hash
+0,          0,          0,        1,   115200, a48fca248159788e3c19c4fd22c6713e
+0,          1,          1,        1,   115200, 80cf89968d89727526ee686a21e30aa1
+0,          2,          2,        1,   115200, 75794aeecd2ca294ee55f736879f4f80
+0,          3,          3,        1,   115200, 5e97e3e889bad3d806966aab1594cc54
+0,          4,          4,        1,   115200, 122c94eb941df04883233f925bf00d49
+0,          5,          5,        1,   115200, 15eb81f3c0501c55396e38c38fbc39ff
+0,          6,          6,        1,   115200, 5b0548e34afb577af7f23e0d6623d657
+0,          7,          7,        1,   115200, ee9d85c66f0ab800386f49c6031ab919
+0,          8,          8,        1,   115200, 23e73b8e00a55e1842b3782a259bb5bd
+0,          9,          9,        1,   115200, 9f7d4214c6475679425392fe6e95b21a
+0,         10,         10,        1,   115200, 49c1c97e4a87b0d434009180db4e604b
+0,         11,         11,        1,   115200, fa5cb60f80491f532385b187db16873f
+0,         12,         12,        1,   115200, 4db5260383073309e185821464327a92
+0,         13,         13,        1,   115200, 3bb8f01b45cf77f7e0c8c097d3eb91a7
+0,         14,         14,        1,   115200, 90b5435b70b2d1b1151275e853b05259

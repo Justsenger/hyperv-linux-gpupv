@@ -1,0 +1,5 @@
+aa54488d-c011-407f-8f58-b7337fe319e4 confirmed shim menu management
+aa54488d-c011-407f-8f58-b7337fe319e4 confirmed shim menu view
+aa54488d-c011-407f-8f58-b7337fe319e4 confirmed shim menu confirm
+aa54488d-c011-407f-8f58-b7337fe319e4 confirmed shim menu password
+aa54488d-c011-407f-8f58-b7337fe319e4 confirmed shim menu reboot

@@ -1,0 +1,5 @@
+c27078bb-5b35-46d5-b890-844fbcf3bded confirmed shim menu management
+c27078bb-5b35-46d5-b890-844fbcf3bded confirmed shim menu view
+c27078bb-5b35-46d5-b890-844fbcf3bded confirmed shim menu confirm
+c27078bb-5b35-46d5-b890-844fbcf3bded confirmed shim menu password
+c27078bb-5b35-46d5-b890-844fbcf3bded confirmed shim menu reboot

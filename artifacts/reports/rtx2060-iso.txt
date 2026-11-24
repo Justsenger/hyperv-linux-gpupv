@@ -1,0 +1,4 @@
+Final local artifact readback
+File rtx2060-x64.iso
+Bytes 3261530112
+SHA256 f6fe4ccb9c078977db29f964cb2fe4f42d81e4959e1855fe2918a6aa070143da

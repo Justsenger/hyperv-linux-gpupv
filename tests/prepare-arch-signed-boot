@@ -1,0 +1,39 @@
+#!/bin/sh
+# Assemble a signed UKI from the running distribution kernel before enabling
+# Secure Boot on this disposable test disk. The private key stays in the VM.
+set -eu
+case "$(cat /proc/sys/kernel/hostname)" in gpupv-test-*) ;; *) exit 1;; esac
+. /etc/os-release
+test "$ID" = arch
+pacman -S --needed --noconfirm systemd-ukify sbsigntools
+test -d /efi/EFI
+esp=$(findmnt -rn -t vfat -o TARGET --target /efi/EFI)
+entry="$esp/EFI/gpupv-test-shim"
+test -s "$entry/shimx64.efi"
+key=/var/lib/gpupv-signing/MOK.priv
+der=/var/lib/gpupv-signing/MOK.der
+test -s "$key" && test -s "$der"
+tmp=$(mktemp -d /var/tmp/gpupv-uki.XXXXXXXX)
+trap 'rm -rf "$tmp"' EXIT
+openssl x509 -inform DER -in "$der" -out "$tmp/mok.pem"
+kernel="/usr/lib/modules/$(uname -r)/vmlinuz"
+test -s "$kernel" || kernel=/boot/vmlinuz-linux
+initrd=/boot/initramfs-linux.img
+test -s "$initrd" || { ls -la /boot; exit 1; }
+sed 's/BOOT_IMAGE=[^ ]* *//;s/initrd=[^ ]* *//' /proc/cmdline >"$tmp/cmdline"
+grep -q 'root=' "$tmp/cmdline"
+sbsign --key "$key" --cert "$tmp/mok.pem" --output "$tmp/kernel.efi" "$kernel"
+ukify build --linux="$tmp/kernel.efi" --initrd="$initrd" --cmdline="@$tmp/cmdline" --os-release=@/etc/os-release --output="$tmp/unsigned.efi"
+sbsign --key "$key" --cert "$tmp/mok.pem" --output "$tmp/signed.efi" "$tmp/unsigned.efi"
+sbverify --cert "$tmp/mok.pem" "$tmp/signed.efi"
+cp "$tmp/signed.efi" "$entry/grubx64.efi.new"
+mv "$entry/grubx64.efi.new" "$entry/grubx64.efi"
+fallback="$esp/EFI/BOOT"
+test -f "$fallback/BOOTX64.EFI"
+test ! -e "$fallback/gpupv-original.efi"
+cp "$fallback/BOOTX64.EFI" "$fallback/gpupv-original.efi"
+cp "$entry/mmx64.efi" "$entry/grubx64.efi" "$fallback/"
+cp "$entry/shimx64.efi" "$fallback/BOOTX64.EFI.new"
+mv "$fallback/BOOTX64.EFI.new" "$fallback/BOOTX64.EFI"
+sync
+sha256sum "$entry/grubx64.efi" "$fallback/BOOTX64.EFI"

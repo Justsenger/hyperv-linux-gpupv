@@ -1,0 +1,896 @@
+{
+  "schemaVersion": 1,
+  "targets": [
+    {
+      "id": "ubuntu-20.04-hwe",
+      "image": "ubuntu:20.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic-hwe-20.04"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "archive": false
+    },
+    {
+      "id": "ubuntu-22.04-ga",
+      "image": "ubuntu:22.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "archive": false
+    },
+    {
+      "id": "ubuntu-22.04-hwe",
+      "image": "ubuntu:22.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic-hwe-22.04"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "archive": false
+    },
+    {
+      "id": "ubuntu-24.04-ga",
+      "image": "ubuntu:24.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "archive": false
+    },
+    {
+      "id": "ubuntu-24.04-hwe",
+      "image": "ubuntu:24.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic-hwe-24.04"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "archive": false
+    },
+    {
+      "id": "ubuntu-24.10-ga",
+      "image": "ubuntu:24.10",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "archive": true
+    },
+    {
+      "id": "ubuntu-25.04-ga",
+      "image": "ubuntu:25.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "archive": true
+    },
+    {
+      "id": "ubuntu-25.10-ga",
+      "image": "ubuntu:25.10",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "archive": true
+    },
+    {
+      "id": "ubuntu-26.04-ga",
+      "image": "ubuntu:26.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "archive": false
+    },
+    {
+      "id": "ubuntu-26.10-ga",
+      "image": "ubuntu:26.10",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "archive": false
+    },
+    {
+      "id": "ubuntu-22.04-6.5",
+      "image": "ubuntu:22.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-6.5.*-generic"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "repo": "deb [check-valid-until=no] https://snapshot.ubuntu.com/ubuntu/20240501T000000Z/ jammy-updates main"
+    },
+    {
+      "id": "debian-11",
+      "image": "debian:11",
+      "family": "deb",
+      "packages": [
+        "linux-headers-{debarch}"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "debian-12",
+      "image": "debian:12",
+      "family": "deb",
+      "packages": [
+        "linux-headers-{debarch}"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "debian-13",
+      "image": "debian:13",
+      "family": "deb",
+      "packages": [
+        "linux-headers-{debarch}"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "debian-sid",
+      "image": "debian:sid",
+      "family": "deb",
+      "packages": [
+        "linux-headers-{debarch}"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "debian-testing",
+      "image": "debian:testing",
+      "family": "deb",
+      "packages": [
+        "linux-headers-{debarch}"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "debian-11-security-archive",
+      "image": "debian:11",
+      "family": "deb",
+      "packages": [
+        "linux-headers-{debarch}"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "repo": "deb [check-valid-until=no] https://snapshot.debian.org/archive/debian-security/20260805T000000Z/ bullseye-security main"
+    },
+    {
+      "id": "debian-12-backports",
+      "image": "debian:12",
+      "family": "deb",
+      "packages": [
+        "linux-headers-{debarch}/bookworm-backports"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "repo": "deb https://deb.debian.org/debian bookworm-backports main"
+    },
+    {
+      "id": "rocky-8",
+      "image": "quay.io/rockylinux/rockylinux:8",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "rocky-9",
+      "image": "quay.io/rockylinux/rockylinux:9",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "rocky-10",
+      "image": "quay.io/rockylinux/rockylinux:10",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "alma-8",
+      "image": "almalinux:8",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "alma-9",
+      "image": "almalinux:9",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "alma-10",
+      "image": "almalinux:10",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "centos-stream-9",
+      "image": "quay.io/centos/centos:stream9",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "centos-stream-10",
+      "image": "quay.io/centos/centos:stream10",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "oracle-8",
+      "image": "oraclelinux:8",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "oracle-8-uek",
+      "image": "oraclelinux:8",
+      "family": "rpm",
+      "packages": [
+        "kernel-uek-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "oracle-9",
+      "image": "oraclelinux:9",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "oracle-9-uek",
+      "image": "oraclelinux:9",
+      "family": "rpm",
+      "packages": [
+        "kernel-uek-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "fedora-41",
+      "image": "quay.io/fedora/fedora:41",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "fedora-42",
+      "image": "quay.io/fedora/fedora:42",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "fedora-43",
+      "image": "quay.io/fedora/fedora:43",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "fedora-44",
+      "image": "quay.io/fedora/fedora:44",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "fedora-rawhide",
+      "image": "quay.io/fedora/fedora:rawhide",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "anolis-8",
+      "image": "openanolis/anolisos:8",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "anolis-23",
+      "image": "openanolis/anolisos:23",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "openeuler-22.03-lts",
+      "image": "openeuler/openeuler:22.03-lts",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "openeuler-24.03-lts",
+      "image": "openeuler/openeuler:24.03-lts",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "opencloudos-8",
+      "image": "opencloudos/opencloudos8-minimal:latest",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "opencloudos-9",
+      "image": "opencloudos/opencloudos9-minimal:latest",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "amazon-2023",
+      "image": "amazonlinux:2023",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "azure-3.0",
+      "image": "mcr.microsoft.com/azurelinux/base/core:3.0",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "mariner-2.0",
+      "image": "mcr.microsoft.com/cbl-mariner/base/core:2.0",
+      "family": "rpm",
+      "packages": [
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "suse-15.5",
+      "image": "opensuse/leap:15.5",
+      "family": "suse",
+      "packages": [
+        "kernel-default-devel",
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "suse-15.6",
+      "image": "opensuse/leap:15.6",
+      "family": "suse",
+      "packages": [
+        "kernel-default-devel",
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "suse-16.0",
+      "image": "opensuse/leap:16.0",
+      "family": "suse",
+      "packages": [
+        "kernel-default-devel",
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "suse-tumbleweed",
+      "image": "registry.opensuse.org/opensuse/tumbleweed:latest",
+      "family": "suse",
+      "packages": [
+        "kernel-default-devel",
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "suse-slowroll",
+      "image": "registry.opensuse.org/opensuse/tumbleweed:latest",
+      "family": "suse",
+      "packages": [
+        "kernel-default-devel",
+        "kernel-devel"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "repo": "slowroll"
+    },
+    {
+      "id": "arch-linux",
+      "image": "archlinux:latest",
+      "family": "arch",
+      "packages": [
+        "linux-headers"
+      ],
+      "arch": [
+        "x86_64"
+      ]
+    },
+    {
+      "id": "arch-linux-lts",
+      "image": "archlinux:latest",
+      "family": "arch",
+      "packages": [
+        "linux-lts-headers"
+      ],
+      "arch": [
+        "x86_64"
+      ]
+    },
+    {
+      "id": "arch-linux-zen",
+      "image": "archlinux:latest",
+      "family": "arch",
+      "packages": [
+        "linux-zen-headers"
+      ],
+      "arch": [
+        "x86_64"
+      ]
+    },
+    {
+      "id": "arch-linux-hardened",
+      "image": "archlinux:latest",
+      "family": "arch",
+      "packages": [
+        "linux-hardened-headers"
+      ],
+      "arch": [
+        "x86_64"
+      ]
+    },
+    {
+      "id": "manjaro",
+      "image": "manjarolinux/base",
+      "family": "arch",
+      "packages": [
+        "linux*-headers"
+      ],
+      "arch": [
+        "x86_64"
+      ],
+      "scope": "distribution"
+    },
+    {
+      "id": "endeavouros",
+      "image": "archlinux:latest",
+      "family": "arch",
+      "packages": [
+        "linux-headers"
+      ],
+      "arch": [
+        "x86_64"
+      ],
+      "scope": "upstream-base"
+    },
+    {
+      "id": "cachyos",
+      "image": "cachyos/cachyos",
+      "family": "arch",
+      "packages": [
+        "linux-cachyos-headers"
+      ],
+      "arch": [
+        "x86_64"
+      ],
+      "scope": "distribution"
+    },
+    {
+      "id": "archlinuxarm",
+      "image": "menci/archlinuxarm:latest",
+      "family": "arch",
+      "packages": [
+        "linux-aarch64-headers"
+      ],
+      "arch": [
+        "aarch64"
+      ]
+    },
+    {
+      "id": "kali",
+      "image": "kalilinux/kali-rolling",
+      "family": "deb",
+      "packages": [
+        "linux-headers-{debarch}"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    },
+    {
+      "id": "omv",
+      "image": "debian:12",
+      "family": "deb",
+      "packages": [
+        "linux-headers-{debarch}"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "scope": "upstream-base"
+    },
+    {
+      "id": "deepin-amd64",
+      "image": "linuxdeepin/deepin:crimson-amd64",
+      "family": "deb",
+      "packages": [
+        "linux-headers-deepin-{debarch}",
+        "linux-headers-deepin-hwe-{debarch}"
+      ],
+      "arch": [
+        "x86_64"
+      ],
+      "scope": "distribution"
+    },
+    {
+      "id": "deepin-arm64",
+      "image": "linuxdeepin/deepin:crimson-arm64",
+      "family": "deb",
+      "packages": [
+        "linux-headers-deepin-{debarch}",
+        "linux-headers-deepin-hwe-{debarch}"
+      ],
+      "arch": [
+        "aarch64"
+      ],
+      "scope": "distribution"
+    },
+    {
+      "id": "kylin",
+      "image": "ubuntu:24.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "scope": "upstream-base"
+    },
+    {
+      "id": "mint21",
+      "image": "ubuntu:22.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic-hwe-22.04"
+      ],
+      "arch": [
+        "x86_64"
+      ],
+      "scope": "upstream-base"
+    },
+    {
+      "id": "mint22",
+      "image": "ubuntu:24.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic"
+      ],
+      "arch": [
+        "x86_64"
+      ],
+      "scope": "upstream-base"
+    },
+    {
+      "id": "pop-os",
+      "image": "ubuntu:24.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic"
+      ],
+      "arch": [
+        "x86_64"
+      ],
+      "scope": "distribution",
+      "repo": "deb [arch=amd64 signed-by=/usr/share/keyrings/linuxpv-target.gpg] https://apt.pop-os.org/release noble main",
+      "keyFingerprint": "63C46DF0140D738961429F4E204DD8AEC33A7AFF"
+    },
+    {
+      "id": "truenas24",
+      "image": "debian:12",
+      "family": "deb",
+      "packages": [],
+      "arch": [
+        "x86_64"
+      ],
+      "scope": "distribution",
+      "headers": {
+        "format": "deb",
+        "url": "https://download.truenas.com/TrueNAS-SCALE-ElectricEel/24.10.2.4/packages/linux-headers-truenas-production-amd64_6.6.44-production+truenas-1_amd64.deb",
+        "sha256": "178440644a317952bb1920a391a7c2ee007e9d89e718e774129699cf46eb94de"
+      }
+    },
+    {
+      "id": "truenas25",
+      "image": "debian:12",
+      "family": "deb",
+      "packages": [],
+      "arch": [
+        "x86_64"
+      ],
+      "scope": "distribution",
+      "headers": {
+        "format": "deb",
+        "url": "https://download.truenas.com/TrueNAS-SCALE-Fangtooth/25.04.2.6/packages/linux-headers-truenas-production-amd64_6.12.15-production+truenas-1_amd64.deb",
+        "sha256": "2d497bb741d1d723233934b43109875c2d72a42879b5e3b7e1d15589cf20e146"
+      }
+    },
+    {
+      "id": "armbian",
+      "image": "debian:13",
+      "family": "deb",
+      "packages": [
+        "linux-headers-arm64"
+      ],
+      "arch": [
+        "aarch64"
+      ],
+      "scope": "upstream-base"
+    },
+    {
+      "id": "raspios64",
+      "image": "debian:12",
+      "family": "deb",
+      "packages": [
+        "linux-headers-arm64"
+      ],
+      "arch": [
+        "aarch64"
+      ],
+      "scope": "upstream-base"
+    },
+    {
+      "id": "arm-server",
+      "image": "ubuntu:24.04",
+      "family": "deb",
+      "packages": [
+        "linux-headers-generic"
+      ],
+      "arch": [
+        "aarch64"
+      ],
+      "scope": "upstream-base"
+    },
+    {
+      "id": "devuan",
+      "image": "debian:12",
+      "family": "deb",
+      "packages": [
+        "linux-headers-{debarch}"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ],
+      "scope": "upstream-base"
+    },
+    {
+      "id": "gentoo",
+      "image": "gentoo/stage3:latest",
+      "family": "gentoo",
+      "packages": [
+        "sys-kernel/gentoo-kernel-bin"
+      ],
+      "arch": [
+        "x86_64",
+        "aarch64"
+      ]
+    }
+  ]
+}

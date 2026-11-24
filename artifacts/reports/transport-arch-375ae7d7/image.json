@@ -1,0 +1,6 @@
+{
+  "Image": "D:\\linux-pv\\.test\\images\\gpupv-test-arch-dbd02830f6eb0fe0.img",
+  "Sha256": "DBD02830F6EB0FE07EF6E5EDADDBAE8B577CE4296D9E79118904704CCE0A1F60",
+  "Source": "https://geo.mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-cloudimg.qcow2",
+  "ChecksumSource": "https://geo.mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-cloudimg.qcow2.SHA256"
+}

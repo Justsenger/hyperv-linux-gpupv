@@ -1,0 +1,8 @@
+签名公钥尚未受信任。运行 sudo mokutil --import /var/lib/gpupv-signing/MOK.der，设置一次性密码，重启并在 MOK Manager 中选择 Enroll MOK，确认后重新执行安装。
+subject=CN = GPU-PV module signing
+sha256 Fingerprint=4E:FC:1B:68:B3:4A:8E:39:EE:69:41:15:04:FA:4A:67:F6:DE:02:16:AC:76:82:81:6B:A1:22:BA:4A:62:04:BF
+input password: 
+input password again: 
+Running timer as unit: run-rfe0cfdecdcc94af680b09fe9c597c2c5.timer
+Will run service as unit: run-rfe0cfdecdcc94af680b09fe9c597c2c5.service
+enrollment_requested

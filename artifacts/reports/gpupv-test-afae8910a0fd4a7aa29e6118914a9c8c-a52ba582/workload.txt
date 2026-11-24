@@ -1,0 +1,2 @@
+boot_id=b9f6ba72-b64e-4139-b4f8-6d854fcf2908 uid=1000 gpu=NVIDIA GeForce RTX 2060
+sh: line 7: nvidia-smi: command not found

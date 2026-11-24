@@ -1,0 +1,4 @@
+Final local artifact readback
+File irisxe-x64.tar
+Bytes 1236942336
+SHA256 3c51111a1d36cc7f8282a609a29201e7c1a3239dbcf6255ff94c2b8fb3ff559a

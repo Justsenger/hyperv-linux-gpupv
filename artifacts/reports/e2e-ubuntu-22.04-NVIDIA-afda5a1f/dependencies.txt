@@ -1,0 +1,8 @@
+Err:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+  502  Bad Gateway [IP: 192.168.1.6 9000]
+Ign:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Err:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+  502  Bad Gateway [IP: 192.168.1.6 9000]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Ign:5 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages
+Ign:2 http://security.ubuntu.com/ubuntu jammy-security InRelease

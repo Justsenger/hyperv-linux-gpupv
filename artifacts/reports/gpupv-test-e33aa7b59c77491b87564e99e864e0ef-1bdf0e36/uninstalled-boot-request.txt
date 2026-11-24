@@ -1,0 +1,2 @@
+Running timer as unit: run-p601-i601.timer
+Will run service as unit: run-p601-i601.service

@@ -1,0 +1,5 @@
+da5c1d44-0fec-4812-9e7a-d812c77ebb6c confirmed shim menu management
+da5c1d44-0fec-4812-9e7a-d812c77ebb6c confirmed shim menu view
+da5c1d44-0fec-4812-9e7a-d812c77ebb6c confirmed shim menu confirm
+da5c1d44-0fec-4812-9e7a-d812c77ebb6c confirmed shim menu password
+da5c1d44-0fec-4812-9e7a-d812c77ebb6c confirmed shim menu reboot

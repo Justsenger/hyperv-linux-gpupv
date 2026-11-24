@@ -1,0 +1,2 @@
+Running timer as unit: run-p572-i572.timer
+Will run service as unit: run-p572-i572.service

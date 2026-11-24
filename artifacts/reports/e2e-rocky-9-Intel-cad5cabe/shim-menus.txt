@@ -1,0 +1,5 @@
+52bd3f8e-ad97-476e-ba49-9c9501015720 confirmed shim menu management
+52bd3f8e-ad97-476e-ba49-9c9501015720 confirmed shim menu view
+52bd3f8e-ad97-476e-ba49-9c9501015720 confirmed shim menu confirm
+52bd3f8e-ad97-476e-ba49-9c9501015720 confirmed shim menu password
+52bd3f8e-ad97-476e-ba49-9c9501015720 confirmed shim menu reboot

@@ -1,0 +1,4 @@
+systemd-modules-load.service: Deactivated successfully.
+Stopped Load Kernel Modules.
+Module 'msr' is built in
+Finished Load Kernel Modules.

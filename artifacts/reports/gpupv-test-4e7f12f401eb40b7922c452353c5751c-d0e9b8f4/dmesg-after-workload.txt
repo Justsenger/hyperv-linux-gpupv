@@ -1,0 +1,864 @@
+[    0.000000] Linux version 7.3.4-arch1-2 (linux@archlinux) (gcc (GCC) 16.2.1 20260810, GNU ld (GNU Binutils) 2.47) #1 SMP PREEMPT_DYNAMIC Thu, 12 Nov 2026 20:11:37 +0000
+[    0.000000] Command line: root=UUID=a4fe6a47-a8cc-4beb-966a-7757429a6771 rw net.ifnames=0 rootflags=compress=zstd:1 console=tty0 console=ttyS0,115200
+[    0.000000] x86/CPU: Model not found in latest microcode list
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff]  System RAM
+[    0.000000] BIOS-e820: [gap 0x00000000000a0000-0x00000000000bffff]
+[    0.000000] BIOS-e820: [mem 0x00000000000c0000-0x00000000000fffff]  device reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000003ff40fff]  System RAM
+[    0.000000] BIOS-e820: [mem 0x000000003ff41000-0x000000003ffc4fff]  device reserved
+[    0.000000] BIOS-e820: [mem 0x000000003ffc5000-0x000000003ffd1fff]  System RAM
+[    0.000000] BIOS-e820: [mem 0x000000003ffd2000-0x000000003fffafff]  ACPI data
+[    0.000000] BIOS-e820: [mem 0x000000003fffb000-0x000000003fffefff]  ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000003ffff000-0x000000003fffffff]  System RAM
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] APIC: Static calls initialized
+[    0.000000] efi: EFI v2.7 by Microsoft
+[    0.000000] efi: ACPI=0x3fffa000 ACPI 2.0=0x3fffa014 SMBIOS=0x3ff85000 SMBIOS 3.0=0x3ff83000 MEMATTR=0x3f339a98 MOKvar=0x3ff81000 RNG=0x3ffd3f18 INITRD=0x3eb34f98 
+[    0.000000] random: crng init done
+[    0.000000] DMI: SMBIOS 3.1.0 present.
+[    0.000000] DMI: Microsoft Corporation Virtual Machine/Virtual Machine, BIOS Hyper-V UEFI Release v4.1 09/25/2025
+[    0.000000] DMI: Memory slots populated: 1/1
+[    0.000000] Hypervisor detected: Microsoft Hyper-V
+[    0.000000] Hyper-V: privilege flags low 0xae7f, high 0x3b8030, ext 0x62, hints 0x9a0e24, misc 0xe0bed7b2
+[    0.000000] Hyper-V: Nested features: 0x0
+[    0.000000] Hyper-V: LAPIC Timer Frequency: 0x30d40
+[    0.000000] Hyper-V: Using hypercall for remote TLB flush
+[    0.000000] clocksource: hyperv_clocksource_tsc_page: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000000] clocksource: hyperv_clocksource_msr: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000000] tsc: Detected 2803.198 MHz processor
+[    0.000007] e820: update [mem 0x00000000-0x00000fff] System RAM ==> device reserved
+[    0.000009] e820: remove [mem 0x000a0000-0x000fffff] System RAM
+[    0.000013] last_pfn = 0x40000 max_arch_pfn = 0x400000000
+[    0.000033] MTRR map: 3 entries (2 fixed + 1 variable; max 18), built from 8 variable MTRRs
+[    0.000035] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.012811] Using GB pages for direct mapping
+[    0.012936] Secure boot enabled
+[    0.012937] RAMDISK: [mem 0x2e4ce000-0x31955fff]
+[    0.013214] ACPI: Early table checksum verification disabled
+[    0.013217] ACPI: RSDP 0x000000003FFFA014 000024 (v02 VRTUAL)
+[    0.013222] ACPI: XSDT 0x000000003FFF90E8 000054 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.013227] ACPI: FACP 0x000000003FFF8000 000114 (v06 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.013232] ACPI: DSDT 0x000000003FFD7000 01E11C (v02 MSFTVM DSDT01   00000001 INTL 20230628)
+[    0.013235] ACPI: FACS 0x000000003FFFE000 000040
+[    0.013238] ACPI: OEM0 0x000000003FFF7000 000064 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.013240] ACPI: WAET 0x000000003FFF6000 000028 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.013243] ACPI: APIC 0x000000003FFD6000 000050 (v04 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.013246] ACPI: SRAT 0x000000003FFD5000 0002C0 (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.013248] ACPI: BGRT 0x000000003FFD4000 000038 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.013250] ACPI: Reserving FACP table memory at [mem 0x3fff8000-0x3fff8113]
+[    0.013251] ACPI: Reserving DSDT table memory at [mem 0x3ffd7000-0x3fff511b]
+[    0.013252] ACPI: Reserving FACS table memory at [mem 0x3fffe000-0x3fffe03f]
+[    0.013252] ACPI: Reserving OEM0 table memory at [mem 0x3fff7000-0x3fff7063]
+[    0.013253] ACPI: Reserving WAET table memory at [mem 0x3fff6000-0x3fff6027]
+[    0.013253] ACPI: Reserving APIC table memory at [mem 0x3ffd6000-0x3ffd604f]
+[    0.013254] ACPI: Reserving SRAT table memory at [mem 0x3ffd5000-0x3ffd52bf]
+[    0.013254] ACPI: Reserving BGRT table memory at [mem 0x3ffd4000-0x3ffd4037]
+[    0.013280] ACPI: SRAT: Node 0 PXM 0 [mem 0x00000000-0x3fffffff] hotplug
+[    0.013281] ACPI: SRAT: Node 0 PXM 0 [mem 0x40000000-0xbfffffff] hotplug
+[    0.013282] ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000-0xfdfffffff] hotplug
+[    0.013283] ACPI: SRAT: Node 0 PXM 0 [mem 0x17e0000000-0xffffffffff] hotplug
+[    0.013283] ACPI: SRAT: Node 0 PXM 0 [mem 0x10000000000-0x1ffffffffff] hotplug
+[    0.013284] ACPI: SRAT: Node 0 PXM 0 [mem 0x20000000000-0x3ffffffffff] hotplug
+[    0.013285] ACPI: SRAT: Node 0 PXM 0 [mem 0x40000000000-0x7ffffffffff] hotplug
+[    0.013285] ACPI: SRAT: Node 0 PXM 0 [mem 0x80000000000-0xfffffffffff] hotplug
+[    0.013286] ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000000-0x1fffffffffff] hotplug
+[    0.013286] ACPI: SRAT: Node 0 PXM 0 [mem 0x200000000000-0x3fffffffffff] hotplug
+[    0.013287] ACPI: SRAT: Node 0 PXM 0 [mem 0x400000000000-0x7fffffffffff] hotplug
+[    0.013288] ACPI: SRAT: Node 0 PXM 0 [mem 0x800000000000-0xffffffffffff] hotplug
+[    0.013288] ACPI: SRAT: Node 0 PXM 0 [mem 0x1000000000000-0x1ffffffffffff] hotplug
+[    0.013289] ACPI: SRAT: Node 0 PXM 0 [mem 0x2000000000000-0x3ffffffffffff] hotplug
+[    0.013289] ACPI: SRAT: Node 0 PXM 0 [mem 0x4000000000000-0x7ffffffffffff] hotplug
+[    0.013290] ACPI: SRAT: Node 0 PXM 0 [mem 0x8000000000000-0xfffffffffffff] hotplug
+[    0.013297] NODE_DATA(0) allocated [mem 0x3fa6cf80-0x3fa97fff]
+[    0.013428] ACPI: PM-Timer IO Port: 0x408
+[    0.013437] ACPI: LAPIC_NMI (acpi_id[0x01] dfl dfl lint[0x1])
+[    0.013617] IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-23
+[    0.013621] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.013626] ACPI: Using ACPI (MADT) for SMP configuration information
+[    0.013632] e820: update [mem 0x3ec17000-0x3ec1dfff] System RAM ==> device reserved
+[    0.013638] TSC deadline timer available
+[    0.013640] CPU topo: Max. logical packages:   1
+[    0.013640] CPU topo: Max. logical nodes:      1
+[    0.013641] CPU topo: Num. nodes per package:  1
+[    0.013642] CPU topo: Max. logical dies:       1
+[    0.013643] CPU topo: Max. dies per package:   1
+[    0.013646] CPU topo: Max. threads per core:   1
+[    0.013646] CPU topo: Num. cores per package:     1
+[    0.013646] CPU topo: Num. threads per package:   1
+[    0.013647] CPU topo: Allowing 1 present CPUs plus 0 hotplug CPUs
+[    0.013655] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.013657] PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+[    0.013657] PM: hibernation: Registered nosave memory: [mem 0x3ec17000-0x3ec1dfff]
+[    0.013658] PM: hibernation: Registered nosave memory: [mem 0x3ff41000-0x3ffc4fff]
+[    0.013659] PM: hibernation: Registered nosave memory: [mem 0x3ffd2000-0x3fffefff]
+[    0.013660] [gap 0x40000000-0xffffffff] available for PCI devices
+[    0.013661] Booting paravirtualized kernel on Hyper-V
+[    0.013663] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.019669] Zone ranges:
+[    0.019671]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.019673]   DMA32    [mem 0x0000000001000000-0x000000003fffffff]
+[    0.019674]   Normal   empty
+[    0.019674]   Device   empty
+[    0.019675] Movable zone start for each node
+[    0.019676] Early memory node ranges
+[    0.019677]   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+[    0.019677]   node   0: [mem 0x0000000000100000-0x000000003ff40fff]
+[    0.019678]   node   0: [mem 0x000000003ffc5000-0x000000003ffd1fff]
+[    0.019678]   node   0: [mem 0x000000003ffff000-0x000000003fffffff]
+[    0.019680] Initmem setup node 0 [mem 0x0000000000001000-0x000000003fffffff]
+[    0.019703] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.019736] On node 0, zone DMA: 96 pages in unavailable ranges
+[    0.021418] On node 0, zone DMA32: 132 pages in unavailable ranges
+[    0.021422] On node 0, zone DMA32: 45 pages in unavailable ranges
+[    0.021434] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:1 nr_cpu_ids:1 nr_node_ids:1
+[    0.021736] percpu: Embedded 64 pages/cpu s225280 r8192 d28672 u2097152
+[    0.021742] pcpu-alloc: s225280 r8192 d28672 u2097152 alloc=1*2097152
+[    0.021744] pcpu-alloc: [0] 0 
+[    0.021758] Hyper-V: PV spinlocks enabled
+[    0.021759] PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+[    0.021782] Kernel command line: root=UUID=a4fe6a47-a8cc-4beb-966a-7757429a6771 rw net.ifnames=0 rootflags=compress=zstd:1 console=tty0 console=ttyS0,115200
+[    0.021840] printk: log buffer data + meta data: 131072 + 557056 = 688128 bytes
+[    0.021974] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.022070] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.022112] software IO TLB: area num 1.
+[    0.039074] Fallback order for Node 0: 0 
+[    0.039080] Built 1 zonelists, mobility grouping on.  Total pages: 261870
+[    0.039082] Policy zone: DMA32
+[    0.039309] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.041454] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.049083] ftrace: allocating 59384 entries in 232 pages
+[    0.049087] ftrace: allocated 232 pages with 4 groups
+[    0.049159] Dynamic Preempt: full
+[    0.049180] rcu: Preemptible hierarchical RCU implementation.
+[    0.049181] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=1.
+[    0.049182] rcu: 	RCU priority boosting: priority 1 delay 500 ms.
+[    0.049182] 	Trampoline variant of Tasks RCU enabled.
+[    0.049183] 	Rude variant of Tasks RCU enabled.
+[    0.049183] 	Tracing variant of Tasks RCU enabled.
+[    0.049184] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.049184] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.049188] RCU Tasks: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=1.
+[    0.049189] RCU Tasks Rude: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=1.
+[    0.056262] Using NULL legacy PIC
+[    0.056263] NR_IRQS: 524544, nr_irqs: 256, preallocated irqs: 0
+[    0.056294] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.056571] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.056681] kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.056720] Console: colour dummy device 160x50
+[    0.056723] printk: legacy console [tty0] enabled
+[    0.056823] printk: console [ttyS0] enabled
+[    0.056855] ACPI: Core revision 20260408
+[    0.056934] Failed to register legacy timer interrupt
+[    0.056936] APIC: Switch to symmetric I/O mode setup
+[    0.058303] x2apic enabled
+[    0.059680] APIC: Switched APIC routing to: physical x2apic
+[    0.059685] Hyper-V: Hypervisor Build 10.0.26100.9974-9-0
+[    0.059687] Hyper-V: enabling crash_kexec_post_notifiers
+[    0.059722] Hyper-V: Using IPI hypercalls
+[    0.059725] APIC: send_IPI() replaced with hv_send_ipi()
+[    0.059730] APIC: send_IPI_mask() replaced with hv_send_ipi_mask()
+[    0.059732] APIC: send_IPI_mask_allbutself() replaced with hv_send_ipi_mask_allbutself()
+[    0.059735] APIC: send_IPI_allbutself() replaced with hv_send_ipi_allbutself()
+[    0.059737] APIC: send_IPI_all() replaced with hv_send_ipi_all()
+[    0.059739] APIC: send_IPI_self() replaced with hv_send_ipi_self()
+[    0.059805] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x28680e0a5c3, max_idle_ns: 440795346756 ns
+[    0.059810] Calibrating delay loop (skipped), value calculated using timer frequency.. 5606.39 BogoMIPS (lpj=2803198)
+[    0.059871] x86/cpu: User Mode Instruction Prevention (UMIP) activated
+[    0.059894] CET detected: Indirect Branch Tracking enabled
+[    0.059895] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.059896] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.059901] mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+[    0.059906] Speculative Store Bypass: Vulnerable
+[    0.059907] Spectre V2 : Mitigation: Retpolines
+[    0.059908] RETBleed: Vulnerable
+[    0.059908] ITS: Mitigation: Aligned branch/return thunks
+[    0.059909] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.059910] Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+[    0.059911] GDS: Unknown: Dependent on hypervisor status
+[    0.059912] active return thunk: its_return_thunk
+[    0.059929] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.059931] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.059931] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.059932] x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+[    0.059933] x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+[    0.059934] x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+[    0.059935] x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'
+[    0.059935] x86/fpu: Supporting XSAVE feature 0x1000: 'Control-flow Kernel registers (KVM only)'
+[    0.059937] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.059938] x86/fpu: xstate_offset[5]:  832, xstate_sizes[5]:   64
+[    0.059939] x86/fpu: xstate_offset[6]:  896, xstate_sizes[6]:  512
+[    0.059939] x86/fpu: xstate_offset[7]: 1408, xstate_sizes[7]: 1024
+[    0.059940] x86/fpu: xstate_offset[11]: 2432, xstate_sizes[11]:   16
+[    0.059941] x86/fpu: xstate_offset[12]: 2448, xstate_sizes[12]:   24
+[    0.059942] x86/fpu: Enabled xstate features 0x18e7, context size is 2472 bytes, using 'compacted' format.
+[    0.060809] pid_max: default: 32768 minimum: 301
+[    0.060809] landlock: Up and running.
+[    0.060809] Yama: becoming mindful.
+[    0.060809] LSM support for eBPF active
+[    0.060809] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.060809] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.060809] VFS: Finished mounting rootfs on nullfs
+[    0.060809] smpboot: CPU0: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz (family: 0x6, model: 0x8c, stepping: 0x1)
+[    0.060809] Performance Events: unsupported CPU family 6 model 140 no PMU driver, software events only.
+[    0.060809] signal: max sigframe size: 3632
+[    0.060809] rcu: Hierarchical SRCU implementation.
+[    0.060809] rcu: 	Max phase no-delay instances is 400.
+[    0.066084] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.066152] smp: Bringing up secondary CPUs ...
+[    0.066161] smp: Brought up 1 node, 1 CPU
+[    0.066163] smpboot: Total of 1 processors activated (5606.39 BogoMIPS)
+[    0.066244] Memory: 826712K/1047480K available (22490K kernel code, 3077K rwdata, 17920K rodata, 4988K init, 4956K bss, 214648K reserved, 0K cma-reserved)
+[    0.066411] devtmpfs: initialized
+[    0.066457] x86/mm: Memory block size: 128MB
+[    0.066760] ACPI: PM: Registering ACPI NVS region [mem 0x3fffb000-0x3fffefff] (16384 bytes)
+[    0.066828] posixtimers hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.066833] futex hash table entries: 256 (16384 bytes on 1 NUMA nodes, total 16 KiB, linear).
+[    0.066910] xor: automatically using best checksumming function   avx       
+[    0.067330] PM: RTC time: 04:14:54, date: 2026-11-24
+[    0.067613] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.067704] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.067730] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.067735] audit: initializing netlink subsys (disabled)
+[    0.067766] audit: type=2000 audit(1795493694.007:1): state=initialized audit_enabled=0 res=1
+[    0.079120] thermal_sys: Registered thermal governor 'fair_share'
+[    0.079125] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.079126] thermal_sys: Registered thermal governor 'step_wise'
+[    0.079127] thermal_sys: Registered thermal governor 'user_space'
+[    0.079127] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.079146] cpuidle: using governor ladder
+[    0.079149] cpuidle: using governor menu
+[    0.079600] efi: Freeing EFI boot services memory: 13680K
+[    0.079604] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.079668] e820: register RAM buffer resource [mem 0x3ec17000-0x3fffffff]
+[    0.079670] e820: register RAM buffer resource [mem 0x3ff41000-0x3fffffff]
+[    0.079671] e820: register RAM buffer resource [mem 0x3ffd2000-0x3fffffff]
+[    0.079723] virt/tdx: TDX not supported by the host platform
+[    0.080011] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.081825] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.081827] HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.081828] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.081828] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.083915] raid6: using avx512x2 recovery algorithm
+[    0.083988] fbcon: Taking over console
+[    0.084003] ACPI: Added _OSI(Module Device)
+[    0.084003] ACPI: Added _OSI(Processor Device)
+[    0.084004] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.101947] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.103101] ACPI: \_SB_: platform _OSC: OS support mask [006e7eff]
+[    0.103169] ACPI: Interpreter enabled
+[    0.103176] ACPI: PM: (supports S0 S5)
+[    0.103177] ACPI: Using IOAPIC for interrupt routing
+[    0.103205] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.103206] PCI: Ignoring E820 reservations for host bridge windows
+[    0.103259] ACPI: Enabled 1 GPEs in block 00 to 0F
+[    0.105860] iommu: Default domain type: Translated
+[    0.105862] iommu: DMA domain TLB invalidation policy: lazy mode
+[    0.105956] SCSI subsystem initialized
+[    0.106819] libata version 3.00 loaded.
+[    0.106824] ACPI: bus type USB registered
+[    0.106835] usbcore: registered new interface driver usbfs
+[    0.106839] usbcore: registered new interface driver hub
+[    0.106843] usbcore: registered new device driver usb
+[    0.106864] EDAC MC: Ver: 3.0.0
+[    0.107015] efivars: Registered efivars operations
+[    0.107946] NetLabel: Initializing
+[    0.107947] NetLabel:  domain hash size = 128
+[    0.107948] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.107957] NetLabel:  unlabeled traffic allowed by default
+[    0.107959] mctp: management component transport protocol core
+[    0.107960] NET: Registered PF_MCTP protocol family
+[    0.107967] PCI: Using ACPI for IRQ routing
+[    0.107968] PCI: System does not support PCI
+[    0.108004] vgaarb: loaded
+[    0.108088] clocksource: Switched to clocksource tsc-early
+[    0.108197] VFS: Disk quotas dquot_6.6.0
+[    0.108204] VFS: Dquot-cache hash table entries: 512 (4096 bytes)
+[    0.109324] pnp: PnP ACPI init
+[    0.109378] pnp: PnP ACPI: found 2 devices
+[    0.122948] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.122998] NET: Registered PF_INET protocol family
+[    0.123020] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.123397] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.123408] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.123416] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.123431] TCP bind hash table entries: 8192 (order: 6, 262144 bytes, linear)
+[    0.123448] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.123474] MPTCP token hash table entries: 1024 (order: 3, 24576 bytes, linear)
+[    0.123482] UDP hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.123504] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.123509] NET: Registered PF_XDP protocol family
+[    0.123512] PCI: CLS 0 bytes, default 64
+[    0.123517] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.123517] software IO TLB: mapped [mem 0x000000003a400000-0x000000003e400000] (64MB)
+[    0.123563] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x28680e0a5c3, max_idle_ns: 440795346756 ns
+[    0.123638] Trying to unpack rootfs image as initramfs...
+[    0.124277] clocksource: Switched to clocksource tsc
+[    0.126965] Initialise system trusted keyrings
+[    0.126984] Key type blacklist registered
+[    0.128454] workingset: timestamp_bits=36 (anon: 31) max_order=18 bucket_order=0 (anon: 0)
+[    0.128619] fuse: init (API version 7.46)
+[    0.128663] integrity: Platform Keyring initialized
+[    0.128667] integrity: Machine keyring initialized
+[    0.153819] Key type asymmetric registered
+[    0.153824] Asymmetric key parser 'x509' registered
+[    0.153850] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    0.154282] io scheduler mq-deadline registered
+[    0.154283] io scheduler kyber registered
+[    0.154299] io scheduler bfq registered
+[    0.154340] raid6: skipped pq benchmark and selected avx512x4
+[    0.154386] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.155027] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.156103] 00:00: ttyS0 I/O:0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.156519] 00:01: ttyS1 I/O:0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+[    0.159152] Non-volatile memory driver v1.3
+[    0.159175] ACPI: bus type drm_connector registered
+[    0.159416] usbcore: registered new interface driver usbserial_generic
+[    0.159419] usbserial: USB Serial support registered for generic
+[    0.159438] i8042: PNP: No PS/2 controller found.
+[    0.162430] rtc_cmos PNP0B00:00: registered as rtc0
+[    0.162678] rtc_cmos PNP0B00:00: setting system clock to 2026-11-24T04:14:54 UTC (1795493694)
+[    0.162787] rtc_cmos PNP0B00:00: alarms up to one month, 114 bytes nvram
+[    0.162824] intel_pstate: CPU model not supported
+[    0.163810] simple-framebuffer simple-framebuffer.0: [drm] Registered 1 planes with drm panic
+[    0.163819] [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0
+[    0.165976] Console: switching to colour frame buffer device 128x48
+[    0.167404] simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+[    0.167423] hid: raw HID events driver (C) Jiri Kosina
+[    0.167442] usbcore: registered new interface driver usbhid
+[    0.167443] usbhid: USB HID core driver
+[    0.167553] drop_monitor: Initializing network drop monitor service
+[    0.167637] NET: Registered PF_INET6 protocol family
+[    0.168384] Segment Routing with IPv6
+[    0.168386] RPL Segment Routing with IPv6
+[    0.168396] In-situ OAM (IOAM) with IPv6
+[    0.168409] NET: Registered PF_PACKET protocol family
+[    0.168512] IPI shorthand broadcast: enabled
+[    0.171658] sched_clock: Marking stable (168005184, 3238579)->(190377253, -19133490)
+[    0.172444] registered taskstats version 1
+[    0.173488] Loading compiled-in X.509 certificates
+[    0.234316] Freeing initrd memory: 53792K
+[    0.238759] Loaded X.509 cert 'Build time autogenerated kernel key: 731f660b0672ff7cd79c38a1bbd763f4ba03f460'
+[    0.240154] zswap: loaded using pool zstd
+[    0.240202] Demotion targets for Node 0: null
+[    0.240323] Key type .fscrypt registered
+[    0.240324] Key type fscrypt-provisioning registered
+[    0.240561] Btrfs loaded, zoned=yes, fsverity=yes
+[    0.240619] Key type big_key registered
+[    0.240990] integrity: Loading X.509 certificate: UEFI:db
+[    0.241010] integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+[    0.241011] integrity: Loading X.509 certificate: UEFI:db
+[    0.241018] integrity: Loaded X.509 cert 'Microsoft UEFI CA 2023: 81aa6b3244c935bce0d6628af39827421e32497d'
+[    0.241019] integrity: Loading X.509 certificate: UEFI:db
+[    0.241028] integrity: Loaded X.509 cert 'Microsoft Corporation: Azure Services Linux Kmod PCA: 697cc4f41a2209a7abd0604c1f196f4d8c5735d9'
+[    0.242168] integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+[    0.244379] integrity: Loaded X.509 cert 'Canonical Ltd. Master Certificate Authority: ad91990bc22ab1f517048c23b6655a268e345a63'
+[    0.244382] integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+[    0.244598] integrity: Loaded X.509 cert 'GPU-PV module signing: 81f9322139baf617aef9af103d12887fb4ced62d'
+[    0.244768] PM:   Magic number: 2:425:212
+[    0.244883] RAS: Correctable Errors collector initialized.
+[    0.245292] clk: Disabling unused clocks
+[    0.245294] PM: genpd: Disabling unused power domains
+[    0.251459] Freeing unused decrypted memory: 2028K
+[    0.252121] Freeing unused kernel image (initmem) memory: 4988K
+[    0.252145] Write protecting the kernel read-only data: 40960k
+[    0.252214] Freeing unused kernel image (text/rodata gap) memory: 36K
+[    0.252322] Freeing unused kernel image (rodata/data gap) memory: 512K
+[    0.301414] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    0.301422] rodata_test: all tests were successful
+[    0.301438] Run /init as init process
+[    0.301456]   with arguments:
+[    0.301457]     /init
+[    0.301458]   with environment:
+[    0.301458]     HOME=/
+[    0.301459]     TERM=linux
+[    0.648656] systemd[1]: Successfully made /usr/ read-only.
+[    1.317106] systemd[1]: systemd 262.2-1-arch running in system mode (+PAM +AUDIT -SELINUX +APPARMOR -IMA +IPE +SMACK +SECCOMP +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP +LIBARCHIVE)
+[    1.317114] systemd[1]: Detected virtualization microsoft.
+[    1.317122] systemd[1]: Detected architecture x86-64.
+[    1.317123] systemd[1]: Running in initrd.
+[    1.318579] systemd[1]: Initializing machine ID from random generator.
+[    1.336550] systemd[1]: Queued start job for default target Initrd Default Target.
+[    1.336967] systemd[1]: Expecting device /dev/disk/by-uuid/a4fe6a47-a8cc-4beb-966a-7757429a6771...
+[    1.338620] systemd[1]: Reached target Path Units.
+[    1.339608] systemd[1]: Reached target Slice Units.
+[    1.340577] systemd[1]: Reached target Swaps.
+[    1.341487] systemd[1]: Reached target Timer Units.
+[    1.342499] systemd[1]: Listening on Journal Socket (/dev/log).
+[    1.343687] systemd[1]: Listening on Journal Sockets.
+[    1.344948] systemd[1]: TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-os
+[    1.344984] systemd[1]: Listening on udev Kernel Socket.
+[    1.346098] systemd[1]: Listening on udev Varlink Socket.
+[    1.347171] systemd[1]: Reached target Socket Units.
+[    1.349113] systemd[1]: Starting Create List of Static Device Nodes...
+[    1.350252] systemd[1]: Early Battery Level Check skipped, unmet condition check ConditionDirectoryNotEmpty=/sys/class/power_supply
+[    1.350265] systemd[1]: Display Boot-Time Emergency Messages In Full Screen skipped, unmet condition check ConditionVirtualization=no
+[    1.352045] systemd[1]: Starting Journal Service...
+[    1.356273] systemd[1]: Starting Load Kernel Modules...
+[    1.357414] systemd[1]: TPM PCR OS Separator skipped, unmet condition check ConditionSecurity=measured-os
+[    1.357428] systemd[1]: TPM PCR Barrier (initrd) skipped, unmet condition check ConditionSecurity=measured-os
+[    1.361749] systemd[1]: Starting Create Static Device Nodes in /dev...
+[    1.362910] systemd[1]: Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-os
+[    1.362926] systemd[1]: TPM PCR NvPCR Initialization Separator skipped, unmet condition check ConditionSecurity=measured-os
+[    1.365151] systemd[1]: Starting Coldplug All udev Devices...
+[    1.366533] systemd[1]: Finished Create List of Static Device Nodes.
+[    1.376140] systemd[1]: Finished Load Kernel Modules.
+[    1.380195] systemd[1]: Finished Create Static Device Nodes in /dev.
+[    1.381638] systemd[1]: Reached target Preparation for Local File Systems.
+[    1.382957] systemd[1]: Reached target Local File Systems.
+[    1.389488] systemd[1]: Starting Rule-based Manager for Device Events and Files...
+[    1.401091] systemd-journald[75]: Collecting audit messages is disabled.
+[    1.410909] systemd[1]: Started Journal Service.
+[    1.552871] hv_vmbus: hv_mmio=[mem 0xc0000000-0xfed3ffff],[mem 0xfe0000000-0x17dfffffff] fb=[mem 0xc0000000-0xc7ffffff]
+[    1.554052] hv_vmbus: Vmbus version:6.0
+[    1.554475] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    1.554489] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    1.581348] hv_vmbus: registering driver hid_hyperv
+[    1.581922] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input0
+[    1.581952] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    1.582554] hv_vmbus: registering driver hyperv_drm
+[    1.583070] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] Synthvid Version major 3, minor 5
+[    1.583349] hv_vmbus: registering driver hyperv_keyboard
+[    1.583710] input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio0/input/input1
+[    1.586305] Console: switching to colour dummy device 160x50
+[    1.591121] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] Registered 1 planes with drm panic
+[    1.591130] [drm] Initialized hyperv_drm 1.0.0 for 5620e0c7-8062-4dce-aeb7-520c7ef76171 on minor 1
+[    1.610003] Console: switching to colour frame buffer device 128x48
+[    1.643789] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] fb0: hyperv_drmdrmfb frame buffer device
+[    1.667559] hv_vmbus: registering driver hv_pci
+[    1.668112] hv_pci 91b37c2e-8b4b-4031-82b9-32c653feda65: PCI VMBus probing: Using version 0x10004
+[    1.668495] hv_pci 91b37c2e-8b4b-4031-82b9-32c653feda65: PCI host bridge to bus 8b4b:00
+[    1.668498] pci_bus 8b4b:00: No busn resource found for root bus, will use [bus 00-ff]
+[    1.668702] pci 8b4b:00:00.0: [1414:008e] type 00 class 0x030200 conventional PCI endpoint
+[    1.670436] hv_vmbus: registering driver hv_storvsc
+[    1.671213] scsi host0: storvsc_host_t
+[    1.671555] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    1.673587] scsi 0:0:0:1: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 0
+[    1.673686] scsi 0:0:0:2: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 0
+[    1.675668] sd 0:0:0:0: [sda] 67108864 512-byte logical blocks: (34.4 GB/32.0 GiB)
+[    1.675685] sd 0:0:0:0: [sda] Write Protect is off
+[    1.675686] sd 0:0:0:0: [sda] Mode Sense: 0f 00 00 00
+[    1.675712] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.677929] pci_bus 8b4b:00: busn_res: [bus 00-ff] end is updated to 00
+[    1.762551]  sda: sda1 sda2 sda3
+[    1.762811] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.775997] sr 0:0:0:1: [sr0] scsi-1 drive
+[    1.776214] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    1.776971] sr 0:0:0:1: Attached scsi CD-ROM sr0
+[    1.777789] sr 0:0:0:2: [sr1] scsi-1 drive
+[    1.779414] sr 0:0:0:2: Attached scsi CD-ROM sr1
+[    2.374335] BTRFS: device fsid a4fe6a47-a8cc-4beb-966a-7757429a6771 devid 1 transid 156 /dev/sda3 (8:3) scanned by mount (127)
+[    2.375207] BTRFS info (device sda3): first mount of filesystem a4fe6a47-a8cc-4beb-966a-7757429a6771
+[    2.375213] BTRFS info (device sda3): using crc32c checksum algorithm
+[    2.380009] BTRFS info (device sda3): turning on async discard
+[    2.380016] BTRFS info (device sda3): enabling free space tree
+[    2.380017] BTRFS info (device sda3): use zstd compression, level 1
+[    2.630388] systemd-journald[75]: Received SIGTERM from PID 1 (systemd).
+[    3.157724] NET: Registered PF_VSOCK protocol family
+[    3.161872] hv_vmbus: registering driver hv_sock
+[    3.832816] systemd[1]: systemd 262.2-1-arch running in system mode (+PAM +AUDIT -SELINUX +APPARMOR -IMA +IPE +SMACK +SECCOMP +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP +LIBARCHIVE)
+[    3.832828] systemd[1]: Detected virtualization microsoft.
+[    3.832845] systemd[1]: Detected architecture x86-64.
+[    3.847636] systemd[1]: Hostname set to <gpupv-test-4e7f12f401eb40b7922c452353c5751c>.
+[    3.905528] systemd[1]: bpf-restrict-fs: LSM BPF program attached
+[    6.112346] systemd[1]: initrd-switch-root.service: Deactivated successfully.
+[    6.112458] systemd[1]: Stopped Switch Root.
+[    6.114556] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[    6.114926] systemd[1]: Created slice Slice /system/dirmngr.
+[    6.116795] systemd[1]: Created slice Slice /system/getty.
+[    6.118408] systemd[1]: Created slice Slice /system/gpg-agent.
+[    6.119974] systemd[1]: Created slice Slice /system/gpg-agent-browser.
+[    6.121644] systemd[1]: Created slice Slice /system/gpg-agent-extra.
+[    6.123271] systemd[1]: Created slice Slice /system/gpg-agent-ssh.
+[    6.124904] systemd[1]: Created slice Slice /system/keyboxd.
+[    6.126447] systemd[1]: Created slice Slice /system/modprobe.
+[    6.127964] systemd[1]: Created slice Slice /system/serial-getty.
+[    6.129476] systemd[1]: Created slice User and Session Slice.
+[    6.130793] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    6.132576] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    6.134274] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    6.136045] systemd[1]: Expecting device /dev/ttyS0...
+[    6.137069] systemd[1]: Reached target Local dm-clone Devices.
+[    6.138358] systemd[1]: Reached target Image Downloads.
+[    6.139567] systemd[1]: Stopped target Switch Root.
+[    6.140684] systemd[1]: Stopped target Initrd File Systems.
+[    6.141930] systemd[1]: Stopped target Initrd Root File System.
+[    6.143247] systemd[1]: Reached target Local Integrity Protected Volumes.
+[    6.144728] systemd[1]: Reached target Path Units.
+[    6.145821] systemd[1]: Reached target Remote Encrypted Volumes.
+[    6.147403] systemd[1]: Reached target Remote File Systems.
+[    6.148824] systemd[1]: Reached target Remote Integrity Protected Volumes.
+[    6.150415] systemd[1]: Reached target Remote Verity Protected Volumes.
+[    6.151862] systemd[1]: Reached target Slice Units.
+[    6.152993] systemd[1]: Reached target Local Verity Protected Volumes.
+[    6.154587] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    6.156527] systemd[1]: Listening on Query the User Interactively for a Password.
+[    6.158735] systemd[1]: Listening on Process Core Dump Socket.
+[    6.160376] systemd[1]: Listening on Credential Encryption/Decryption.
+[    6.162280] systemd[1]: Listening on Disk Encryption Enrollment Service Socket.
+[    6.164286] systemd[1]: Listening on Factory Reset Management.
+[    6.165624] systemd[1]: Listening on Hostname Service Socket.
+[    6.166962] systemd[1]: Listening on Journal Audit Socket.
+[    6.168135] systemd[1]: Listening on DDI File System Mounter Socket.
+[    6.169698] systemd[1]: Listening on Console Output Muting Service Socket.
+[    6.171110] systemd[1]: Listening on Network Management Metrics Varlink Socket.
+[    6.172567] systemd[1]: Listening on Network Management Varlink Socket.
+[    6.173880] systemd[1]: Listening on Network Management Netlink Socket.
+[    6.175264] systemd[1]: Listening on Namespace Resource Manager Socket.
+[    6.177143] systemd[1]: TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-os
+[    6.177165] systemd[1]: Make TPM PCR Policy skipped, unmet condition check ConditionSecurity=measured-uki
+[    6.177664] systemd[1]: Listening on Disk Repartitioning Service Socket.
+[    6.179878] systemd[1]: Listening on Report System Basic Metrics Socket.
+[    6.181969] systemd[1]: Listening on CGroup Report Varlink Socket.
+[    6.183676] systemd[1]: Listening on Report Files Metrics Socket.
+[    6.185782] systemd[1]: Listening on Report Signing Socket (Local Software Key).
+[    6.187361] systemd[1]: Report Signing Socket (TPM2) skipped, unmet condition check ConditionSecurity=measured-uki
+[    6.187375] systemd[1]: Report Signing Socket (configfs-tsm) skipped, unmet condition check ConditionSecurity=cvm
+[    6.187665] systemd[1]: Listening on System Report Socket.
+[    6.188976] systemd[1]: Listening on Resolve Monitor Varlink Socket.
+[    6.190204] systemd[1]: Listening on Resolve Service Varlink Socket.
+[    6.192003] systemd[1]: Listening on Simple Block Device Backed Storage Provider.
+[    6.193989] systemd[1]: Listening on Simple File System Backed Storage Provider.
+[    6.195847] systemd[1]: Listening on System Install Tool.
+[    6.197112] systemd[1]: Recompute TPM PCR Policy on Completed System Update skipped, unmet condition check ConditionSecurity=measured-uki
+[    6.197733] systemd[1]: Listening on System Updates.
+[    6.198937] systemd[1]: Listening on udev Varlink Socket.
+[    6.200207] systemd[1]: Listening on User Database Manager Socket.
+[    6.209778] systemd[1]: Mounting Huge Pages File System...
+[    6.211375] systemd[1]: Mounting POSIX Message Queue File System...
+[    6.213044] systemd[1]: Mounting Kernel Debug File System...
+[    6.214415] systemd[1]: Mounting Kernel Trace File System...
+[    6.215935] systemd[1]: Starting Create List of Static Device Nodes...
+[    6.217080] systemd[1]: Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+[    6.217441] systemd[1]: Mounting Kernel Configuration File System...
+[    6.218531] systemd[1]: Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+[    6.218550] systemd[1]: Load Kernel Module efi_pstore skipped, unmet condition check ConditionKernelModuleLoaded=!efi_pstore
+[    6.218566] systemd[1]: Load Kernel Module fuse skipped, unmet condition check ConditionKernelModuleLoaded=!fuse
+[    6.218896] systemd[1]: Mounting FUSE Control File System...
+[    6.219968] systemd[1]: Clear SysFail Entry If The Boot Is Successful skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/LoaderEntrySysFail-4a67b082-0a4c-41cf-b6c7-440b29bb8c4f
+[    6.220009] systemd[1]: systemd-fsck-root.service: Deactivated successfully.
+[    6.220032] systemd[1]: Stopped File System Check on Root Device.
+[    6.221234] systemd[1]: Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+[    6.222404] systemd[1]: Starting Journal Service...
+[    6.247581] systemd[1]: Starting Load Kernel Modules...
+[    6.256858] systemd[1]: Starting Generate Network Units from Kernel Command Line...
+[    6.258237] systemd[1]: TPM PCR Machine ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+[    6.258267] systemd[1]: TPM PCR OS Separator skipped, unmet condition check ConditionSecurity=measured-os
+[    6.266748] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    6.270168] systemd[1]: Starting Wait Until Kernel Time Synchronized...
+[    6.272391] systemd[1]: Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-os
+[    6.272411] systemd[1]: TPM PCR NvPCR Initialization Separator skipped, unmet condition check ConditionPathExists=/etc/initrd-release
+[    6.272423] systemd[1]: Reached target Local Encrypted Volumes.
+[    6.273601] systemd[1]: TPM NvPCR Product ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+[    6.275002] systemd[1]: Starting Load udev Rules from Credentials...
+[    6.279281] systemd[1]: Starting Coldplug All udev Devices...
+[    6.432669] systemd[1]: Finished Generate Network Units from Kernel Command Line.
+[    6.446572] systemd[1]: Finished Create List of Static Device Nodes.
+[    6.450403] systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+[    6.459323] systemd[1]: Mounted Kernel Configuration File System.
+[    6.462144] systemd[1]: Mounted Huge Pages File System.
+[    6.465190] systemd[1]: Mounted POSIX Message Queue File System.
+[    6.466653] systemd-journald[199]: Collecting audit messages is enabled.
+[    6.466848] systemd[1]: Mounted Kernel Debug File System.
+[    6.469338] systemd[1]: Mounted Kernel Trace File System.
+[    6.470669] systemd[1]: Mounted FUSE Control File System.
+[    6.481421] systemd[1]: Started Journal Service.
+[    6.483485] audit: type=1130 audit(1795493700.818:2): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.485305] audit: type=1130 audit(1795493700.821:3): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-remount-fs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.533085] audit: type=1130 audit(1795493700.867:4): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udev-load-credentials comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.545584] dxgkrnl: loading out-of-tree module taints kernel.
+[    6.558471] hv_vmbus: registering driver dxgkrnl
+[    6.567569] systemd-journald[199]: Received client request to flush runtime journal.
+[    6.609666] [drm] Initialized vgem 1.0.0 for vgem on minor 0
+[    6.612625] audit: type=1130 audit(1795493700.948:5): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-modules-load comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.619983] audit: type=1130 audit(1795493700.955:6): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.637742] BTRFS info (device sda3): swapfile activated on root 258 ino 257, pinned down 738197504 bytes from 4 block group(s)
+[    6.637748] BTRFS warning (device sda3): block groups with swapfile extents will not be scrubbed or balanced
+[    6.637758] Adding 524284k swap on /swap/swapfile.  Priority:-1 extents:4 across:1186524k 
+[    6.698071] audit: type=1130 audit(1795493701.034:7): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-sysctl comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.767371] audit: type=1334 audit(1795493701.103:8): prog-id=31 op=LOAD
+[    6.767442] audit: type=1334 audit(1795493701.103:9): prog-id=32 op=LOAD
+[    6.767479] audit: type=1334 audit(1795493701.103:10): prog-id=33 op=LOAD
+[    6.791176] audit: type=1130 audit(1795493701.127:11): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-userdbd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    6.852067] tun: Universal TUN/TAP device driver, 1.6
+[    9.354471] hv_vmbus: registering driver hv_balloon
+[    9.355577] hv_balloon: Using Dynamic Memory protocol version 2.0
+[    9.371936] pps_core: LinuxPPS API ver. 1 registered
+[    9.371939] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    9.374384] hv_vmbus: registering driver hv_netvsc
+[    9.414299] PTP clock support registered
+[    9.433258] mousedev: PS/2 mouse device common for all mice
+[    9.435414] input: PC Speaker as /devices/platform/pcspkr/input/input2
+[    9.458580] hv_utils: Registering HyperV Utility Driver
+[    9.458583] hv_vmbus: registering driver hv_utils
+[    9.459086] hv_utils: Shutdown IC version 3.2
+[    9.459107] hv_utils: TimeSync IC version 4.0
+[    9.459341] hv_utils: Heartbeat IC version 3.0
+[    9.530732] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+[   10.012496] intel_rapl_msr: PL4 support detected (updated).
+[   12.030152] kauditd_printk_skb: 117 callbacks suppressed
+[   12.030155] audit: type=1130 audit(1795493709.170:81): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=cloud-init-main comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   12.118073] ISO 9660 Extensions: Microsoft Joliet Level 3
+[   12.118214] ISOFS: changing to secondary root
+[   12.165806] audit: type=1130 audit(1795493709.305:82): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=cloud-init-local comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   12.172632] audit: type=1334 audit(1795493709.312:83): prog-id=67 op=LOAD
+[   12.367199] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   12.367547] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   12.367993] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[   12.368296] faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+[   12.368300] cfg80211: failed to load regulatory.db
+[   12.373080] audit: type=1334 audit(1795493709.512:84): prog-id=68 op=LOAD
+[   12.373260] audit: type=1300 audit(1795493709.512:84): arch=c000003e syscall=321 success=yes exit=26 a0=5 a1=7ffc0aa5f810 a2=94 a3=7f02527e169e items=0 ppid=1 pid=349 auid=4294967295 uid=977 gid=977 euid=977 suid=977 fsuid=977 egid=977 sgid=977 fsgid=977 tty=(none) ses=4294967295 comm="systemd-network" exe="/usr/lib/systemd/systemd-networkd" key=(null)
+[   12.373263] audit: type=1327 audit(1795493709.512:84): proctitle="/usr/lib/systemd/systemd-networkd"
+[   12.373265] audit: type=1334 audit(1795493709.512:85): prog-id=68 op=UNLOAD
+[   12.373266] audit: type=1300 audit(1795493709.512:85): arch=c000003e syscall=3 success=yes exit=0 a0=1a a1=0 a2=0 a3=0 items=0 ppid=1 pid=349 auid=4294967295 uid=977 gid=977 euid=977 suid=977 fsuid=977 egid=977 sgid=977 fsgid=977 tty=(none) ses=4294967295 comm="systemd-network" exe="/usr/lib/systemd/systemd-networkd" key=(null)
+[   12.373268] audit: type=1327 audit(1795493709.512:85): proctitle="/usr/lib/systemd/systemd-networkd"
+[   12.373270] audit: type=1334 audit(1795493709.512:86): prog-id=69 op=LOAD
+[   44.342921] systemd-journald[199]: Time jumped backwards, rotating.
+[   44.345866] kauditd_printk_skb: 40 callbacks suppressed
+[   44.345868] audit: type=1130 audit(1795493740.841:105): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-time-wait-sync comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   44.380713] audit: type=1130 audit(1795493740.876:106): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=sshd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   44.697700] audit: type=1130 audit(1795493741.193:107): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=cloud-final comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   44.742731] audit: type=1131 audit(1795493741.238:108): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=cloud-init-main comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   45.144358] audit: type=1101 audit(1795493741.640:109): pid=424 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   45.145808] audit: type=1103 audit(1795493741.641:110): pid=424 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   45.146062] audit: type=1006 audit(1795493741.641:111): pid=424 uid=0 old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=1 res=1
+[   45.146100] audit: type=1300 audit(1795493741.641:111): arch=c000003e syscall=1 success=yes exit=4 a0=6 a1=7ffe3a0f9330 a2=4 a3=0 items=0 ppid=418 pid=424 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sshd-session" exe="/usr/lib/ssh/sshd-session" key=(null)
+[   45.146231] audit: type=1327 audit(1795493741.641:111): proctitle=737368642D73657373696F6E3A20746573746572205B706F7374617574685D
+[   45.317115] audit: type=1130 audit(1795493741.812:112): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   48.098719] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   48.101536] gpupv query caller=intel-compute pid=495 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   48.101542] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   48.101619] gpupv query caller=intel-compute pid=495 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   48.101623] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   48.101684] gpupv query caller=intel-compute pid=495 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   48.101687] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   48.101852] gpupv query caller=intel-compute pid=495 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   48.101867] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   50.136698] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   50.140836] gpupv query caller=vainfo pid=507 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   50.140842] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   50.140927] gpupv query caller=vainfo pid=507 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   50.140930] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   50.140977] gpupv query caller=vainfo pid=507 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   50.140993] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   50.141089] gpupv query caller=vainfo pid=507 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   50.141091] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   53.110072] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   53.112041] gpupv query caller=ffmpeg pid=517 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   53.112047] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   53.112109] gpupv query caller=ffmpeg pid=517 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   53.112116] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   53.112198] gpupv query caller=ffmpeg pid=517 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   53.112203] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   53.115607] gpupv query caller=ffmpeg pid=517 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   53.115612] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   53.608093] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   53.610372] gpupv query caller=ffmpeg pid=529 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   53.610378] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   53.610487] gpupv query caller=ffmpeg pid=529 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   53.610490] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   53.610602] gpupv query caller=ffmpeg pid=529 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   53.610604] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   53.610867] gpupv query caller=ffmpeg pid=529 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   53.610870] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   53.704190] kauditd_printk_skb: 79 callbacks suppressed
+[   53.704193] audit: type=1106 audit(1795493750.199:180): pid=490 uid=0 auid=1000 ses=7 msg='op=PAM:session_close grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_lastlog2,pam_mail,pam_umask,pam_systemd,pam_env acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   53.704962] audit: type=1104 audit(1795493750.200:181): pid=490 uid=0 auid=1000 ses=7 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   53.890314] audit: type=1101 audit(1795493750.386:182): pid=540 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   53.891086] audit: type=1103 audit(1795493750.386:183): pid=540 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   53.891169] audit: type=1006 audit(1795493750.386:184): pid=540 uid=0 old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=8 res=1
+[   53.891184] audit: type=1300 audit(1795493750.386:184): arch=c000003e syscall=1 success=yes exit=4 a0=6 a1=7ffcbd8e5a70 a2=4 a3=0 items=0 ppid=418 pid=540 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=8 comm="sshd-session" exe="/usr/lib/ssh/sshd-session" key=(null)
+[   53.891232] audit: type=1327 audit(1795493750.386:184): proctitle=737368642D73657373696F6E3A20746573746572205B706F7374617574685D
+[   53.927228] audit: type=1105 audit(1795493750.422:185): pid=540 uid=0 auid=1000 ses=8 msg='op=PAM:session_open grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_lastlog2,pam_mail,pam_umask,pam_systemd,pam_env acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   53.928541] audit: type=1103 audit(1795493750.424:186): pid=543 uid=0 auid=1000 ses=8 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   53.940689] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.
+[   53.943708] audit: type=1106 audit(1795493750.439:187): pid=540 uid=0 auid=1000 ses=8 msg='op=PAM:session_close grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_lastlog2,pam_mail,pam_umask,pam_systemd,pam_env acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   54.133426] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   54.134218] gpupv query caller=vainfo pid=553 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   54.134225] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   54.136487] gpupv query caller=vainfo pid=553 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   54.136506] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   54.136585] gpupv query caller=vainfo pid=553 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   54.136592] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   54.136826] gpupv query caller=vainfo pid=553 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   54.136835] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   54.401830] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   54.404331] gpupv query caller=ffmpeg pid=575 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   54.404338] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   54.404405] gpupv query caller=ffmpeg pid=575 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   54.404409] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   54.404462] gpupv query caller=ffmpeg pid=575 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   54.404465] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   54.404635] gpupv query caller=ffmpeg pid=575 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   54.404640] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   54.826878] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   54.828565] gpupv query caller=ffmpeg pid=592 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   54.828569] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   54.828607] gpupv query caller=ffmpeg pid=592 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   54.828609] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   54.828701] gpupv query caller=ffmpeg pid=592 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   54.828704] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   54.828867] gpupv query caller=ffmpeg pid=592 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   54.828870] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   55.310903] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   55.313030] gpupv query caller=ffmpeg pid=604 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   55.313036] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   55.313073] gpupv query caller=ffmpeg pid=604 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   55.313077] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   55.313105] gpupv query caller=ffmpeg pid=604 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   55.313108] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   55.317317] gpupv query caller=ffmpeg pid=604 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   55.317328] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   57.489631] hv_balloon: Max. dynamic memory size: 1024 MB
+[   85.233041] misc dxg: dxgk: dxgkio_wait_sync_object_cpu: wait_completion_interruptible: -512
+[   85.233073] misc dxg: dxgk: dxgkio_wait_sync_object_cpu: Ioctl failed: -512
+[   85.233316] misc dxg: dxgk: dxgkio_wait_sync_object_cpu: wait_completion_interruptible: -512
+[   85.233547] misc dxg: dxgk: dxgkio_wait_sync_object_cpu: Ioctl failed: -512
+[   89.233343] misc dxg: dxgk: dxgkio_wait_sync_object_cpu: wait_completion_interruptible: -512
+[   89.233459] misc dxg: dxgk: dxgkio_wait_sync_object_cpu: Ioctl failed: -512
+[   89.361009] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   89.363348] gpupv query caller=ffmpeg pid=617 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   89.363356] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   89.363591] gpupv query caller=ffmpeg pid=617 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   89.363597] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   89.365647] gpupv query caller=ffmpeg pid=617 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   89.365651] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   89.366932] gpupv query caller=ffmpeg pid=617 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   89.366936] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   89.508376] kauditd_printk_skb: 8 callbacks suppressed
+[   89.508381] audit: type=1106 audit(1795493786.001:194): pid=546 uid=0 auid=1000 ses=9 msg='op=PAM:session_close grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_lastlog2,pam_mail,pam_umask,pam_systemd,pam_env acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   89.508386] audit: type=1104 audit(1795493786.002:195): pid=546 uid=0 auid=1000 ses=9 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   89.714058] audit: type=1101 audit(1795493786.208:196): pid=624 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   89.714724] audit: type=1103 audit(1795493786.208:197): pid=624 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   89.714966] audit: type=1006 audit(1795493786.209:198): pid=624 uid=0 old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=10 res=1
+[   89.714983] audit: type=1300 audit(1795493786.209:198): arch=c000003e syscall=1 success=yes exit=4 a0=6 a1=7ffe8153a360 a2=4 a3=0 items=0 ppid=418 pid=624 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=10 comm="sshd-session" exe="/usr/lib/ssh/sshd-session" key=(null)
+[   89.715037] audit: type=1327 audit(1795493786.209:198): proctitle=737368642D73657373696F6E3A20746573746572205B706F7374617574685D
+[   89.766679] audit: type=1105 audit(1795493786.260:199): pid=624 uid=0 auid=1000 ses=10 msg='op=PAM:session_open grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_lastlog2,pam_mail,pam_umask,pam_systemd,pam_env acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   89.768350] audit: type=1103 audit(1795493786.262:200): pid=627 uid=0 auid=1000 ses=10 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   89.779240] audit: type=1106 audit(1795493786.273:201): pid=624 uid=0 auid=1000 ses=10 msg='op=PAM:session_close grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_lastlog2,pam_mail,pam_umask,pam_systemd,pam_env acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[   89.999622] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   90.001814] gpupv query caller=vainfo pid=641 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   90.001820] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   90.001967] gpupv query caller=vainfo pid=641 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   90.001972] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   90.002102] gpupv query caller=vainfo pid=641 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   90.002105] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   90.002340] gpupv query caller=vainfo pid=641 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   90.002344] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   90.122660] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   90.124580] gpupv query caller=ffmpeg pid=651 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   90.124587] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   90.124718] gpupv query caller=ffmpeg pid=651 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   90.124725] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   90.127350] gpupv query caller=ffmpeg pid=651 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   90.127368] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   90.127625] gpupv query caller=ffmpeg pid=651 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   90.127632] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  128.321343] kauditd_printk_skb: 17 callbacks suppressed
+[  128.321346] audit: type=1106 audit(1795493824.816:215): pid=663 uid=0 auid=1000 ses=12 msg='op=PAM:session_close grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_lastlog2,pam_mail,pam_umask,pam_systemd,pam_env acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  128.321408] audit: type=1104 audit(1795493824.816:216): pid=663 uid=0 auid=1000 ses=12 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  132.204957] audit: type=1101 audit(1795493828.699:217): pid=672 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  132.205558] audit: type=1103 audit(1795493828.700:218): pid=672 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  132.205622] audit: type=1006 audit(1795493828.700:219): pid=672 uid=0 old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=13 res=1
+[  132.205674] audit: type=1300 audit(1795493828.700:219): arch=c000003e syscall=1 success=yes exit=4 a0=6 a1=7ffc1f450880 a2=4 a3=0 items=0 ppid=418 pid=672 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=13 comm="sshd-session" exe="/usr/lib/ssh/sshd-session" key=(null)
+[  132.206154] audit: type=1327 audit(1795493828.700:219): proctitle=737368642D73657373696F6E3A20746573746572205B706F7374617574685D
+[  132.263909] audit: type=1105 audit(1795493828.758:220): pid=672 uid=0 auid=1000 ses=13 msg='op=PAM:session_open grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_lastlog2,pam_mail,pam_umask,pam_systemd,pam_env acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  132.265294] audit: type=1103 audit(1795493828.760:221): pid=675 uid=0 auid=1000 ses=13 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  140.978508] audit: type=1101 audit(1795493837.473:222): pid=684 uid=1000 auid=1000 ses=13 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="tester" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+[  140.981012] audit: type=1110 audit(1795493837.475:223): pid=684 uid=1000 auid=1000 ses=13 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+[  140.981815] audit: type=1105 audit(1795493837.476:224): pid=684 uid=1000 auid=1000 ses=13 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_systemd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+[  141.054020] audit: type=1106 audit(1795493837.548:225): pid=684 uid=1000 auid=1000 ses=13 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_systemd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+[  141.054212] audit: type=1104 audit(1795493837.549:226): pid=684 uid=1000 auid=1000 ses=13 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+[  141.066983] audit: type=1101 audit(1795493837.561:227): pid=687 uid=1000 auid=1000 ses=13 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="tester" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+[  141.074326] audit: type=1110 audit(1795493837.568:228): pid=687 uid=1000 auid=1000 ses=13 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+[  141.075828] audit: type=1105 audit(1795493837.570:229): pid=687 uid=1000 auid=1000 ses=13 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_systemd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+[  141.118915] audit: type=1106 audit(1795493837.613:230): pid=687 uid=1000 auid=1000 ses=13 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_systemd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+[  141.118923] audit: type=1104 audit(1795493837.613:231): pid=687 uid=1000 auid=1000 ses=13 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'
+[  141.528109] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[  141.530585] gpupv query caller=ld-linux-x86-64 pid=696 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  141.530591] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  141.530778] gpupv query caller=ld-linux-x86-64 pid=696 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  141.530785] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  141.530902] gpupv query caller=ld-linux-x86-64 pid=696 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  141.530905] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  141.533970] gpupv query caller=ld-linux-x86-64 pid=696 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[  141.533975] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  144.859950] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[  144.862807] gpupv query caller=ld-linux-x86-64 pid=708 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  144.862826] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  144.864062] gpupv query caller=ld-linux-x86-64 pid=708 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  144.864072] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  144.866011] gpupv query caller=ld-linux-x86-64 pid=708 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  144.866020] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  144.866354] gpupv query caller=ld-linux-x86-64 pid=708 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[  144.866358] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  145.762173] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[  145.764327] gpupv query caller=ld-linux-x86-64 pid=740 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  145.764334] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  145.764516] gpupv query caller=ld-linux-x86-64 pid=740 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  145.764521] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  145.767155] gpupv query caller=ld-linux-x86-64 pid=740 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  145.767163] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  145.767606] gpupv query caller=ld-linux-x86-64 pid=740 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[  145.767612] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  146.226851] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[  146.229552] gpupv query caller=ld-linux-x86-64 pid=759 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  146.229564] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  146.232431] gpupv query caller=ld-linux-x86-64 pid=759 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  146.232461] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  146.235786] gpupv query caller=ld-linux-x86-64 pid=759 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  146.235810] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  146.236146] gpupv query caller=ld-linux-x86-64 pid=759 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[  146.236150] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  146.614141] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[  146.615997] gpupv query caller=ld-linux-x86-64 pid=783 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  146.616001] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  146.616384] gpupv query caller=ld-linux-x86-64 pid=783 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  146.616388] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  146.616535] gpupv query caller=ld-linux-x86-64 pid=783 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  146.616543] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  146.620582] gpupv query caller=ld-linux-x86-64 pid=783 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[  146.620589] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  147.121897] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[  147.124140] gpupv query caller=ld-linux-x86-64 pid=800 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  147.124145] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  147.124320] gpupv query caller=ld-linux-x86-64 pid=800 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  147.124323] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  147.124471] gpupv query caller=ld-linux-x86-64 pid=800 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  147.124475] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  147.128862] gpupv query caller=ld-linux-x86-64 pid=800 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[  147.128868] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  147.671364] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[  147.673952] gpupv query caller=ld-linux-x86-64 pid=819 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  147.673958] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  147.674086] gpupv query caller=ld-linux-x86-64 pid=819 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  147.674090] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  147.674181] gpupv query caller=ld-linux-x86-64 pid=819 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  147.674184] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  147.674356] gpupv query caller=ld-linux-x86-64 pid=819 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[  147.674364] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  174.811238] systemd-journald[199]: Under memory pressure, flushing caches.
+[  177.593457] misc dxg: dxgk: dxgkio_wait_sync_object_cpu: wait_completion_interruptible: -512
+[  177.593564] misc dxg: dxgk: dxgkio_wait_sync_object_cpu: Ioctl failed: -512
+[  181.593460] misc dxg: dxgk: dxgkio_wait_sync_object_cpu: wait_completion_interruptible: -512
+[  181.595591] misc dxg: dxgk: dxgkio_wait_sync_object_cpu: Ioctl failed: -512
+[  182.101704] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[  182.103685] gpupv query caller=ld-linux-x86-64 pid=837 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  182.103691] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  182.105445] gpupv query caller=ld-linux-x86-64 pid=837 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  182.105452] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  182.105595] gpupv query caller=ld-linux-x86-64 pid=837 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  182.105599] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  182.108037] gpupv query caller=ld-linux-x86-64 pid=837 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[  182.108041] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  182.300420] audit: type=1106 audit(1795493878.796:232): pid=672 uid=0 auid=1000 ses=13 msg='op=PAM:session_close grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_lastlog2,pam_mail,pam_umask,pam_systemd,pam_env acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  182.300492] audit: type=1104 audit(1795493878.796:233): pid=672 uid=0 auid=1000 ses=13 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  182.692313] audit: type=1101 audit(1795493879.188:234): pid=847 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  182.723482] audit: type=1103 audit(1795493879.220:235): pid=847 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  182.723738] audit: type=1006 audit(1795493879.220:236): pid=847 uid=0 old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=14 res=1
+[  182.723756] audit: type=1300 audit(1795493879.220:236): arch=c000003e syscall=1 success=yes exit=4 a0=6 a1=7fff58798050 a2=4 a3=0 items=0 ppid=418 pid=847 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=14 comm="sshd-session" exe="/usr/lib/ssh/sshd-session" key=(null)
+[  182.723892] audit: type=1327 audit(1795493879.220:236): proctitle=737368642D73657373696F6E3A20746573746572205B706F7374617574685D
+[  182.862646] audit: type=1105 audit(1795493879.358:237): pid=847 uid=0 auid=1000 ses=14 msg='op=PAM:session_open grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_lastlog2,pam_mail,pam_umask,pam_systemd,pam_env acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  182.864374] audit: type=1103 audit(1795493879.360:238): pid=851 uid=0 auid=1000 ses=14 msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_env,pam_faillock acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'
+[  183.043792] audit: type=1106 audit(1795493879.539:239): pid=847 uid=0 auid=1000 ses=14 msg='op=PAM:session_close grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_lastlog2,pam_mail,pam_umask,pam_systemd,pam_env acct="tester" exe="/usr/lib/ssh/sshd-session" hostname=172.23.0.1 addr=172.23.0.1 terminal=ssh res=success'

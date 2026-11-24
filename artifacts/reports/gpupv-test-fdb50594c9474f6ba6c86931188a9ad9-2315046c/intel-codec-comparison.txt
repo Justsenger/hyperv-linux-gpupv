@@ -1,0 +1,3 @@
+gpupv-codec-comparison: line 20: vainfo: command not found
+No accessible Intel D3D12 VA display exposing both H.264 encode and decode.
+comparison_exit=77

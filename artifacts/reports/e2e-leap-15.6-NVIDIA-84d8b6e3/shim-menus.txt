@@ -1,0 +1,5 @@
+94741cf8-8c26-4aef-ad1a-a3dae849a7fe confirmed shim menu management
+94741cf8-8c26-4aef-ad1a-a3dae849a7fe confirmed shim menu view
+94741cf8-8c26-4aef-ad1a-a3dae849a7fe confirmed shim menu confirm
+94741cf8-8c26-4aef-ad1a-a3dae849a7fe confirmed shim menu password
+94741cf8-8c26-4aef-ad1a-a3dae849a7fe confirmed shim menu reboot

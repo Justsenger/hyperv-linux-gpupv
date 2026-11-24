@@ -1,0 +1,13 @@
+
+Algorithm : SHA256
+Hash      : B73C885617843C3DCD1382DCD7E371FFDBA39FEE5E33148D35725D50B5145A2F
+Path      : D:\linux-pv\.tools\wsl-runtime\a8ff069a0325c16d9ae7329382a929fbfc5fdfe9\aarch64\libd3d12.so
+
+Algorithm : SHA256
+Hash      : E27EB88298E06D90CAC68A7733E463DE0FC00643501BF67F9FA58C8E4DB5E75D
+Path      : D:\linux-pv\.tools\wsl-runtime\a8ff069a0325c16d9ae7329382a929fbfc5fdfe9\aarch64\libd3d12core.so
+
+Algorithm : SHA256
+Hash      : 0556E5F36424E7167866608B98CF743DF37F04A685FA52BD8F6F9CCF32CCD781
+Path      : D:\linux-pv\.tools\wsl-runtime\a8ff069a0325c16d9ae7329382a929fbfc5fdfe9\aarch64\libdxcore.so
+

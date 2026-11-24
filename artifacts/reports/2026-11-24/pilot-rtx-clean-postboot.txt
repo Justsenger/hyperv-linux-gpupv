@@ -1,0 +1,4 @@
+c39275bf-9ad6-4528-8177-d2903cb2f8e0
+SecureBoot enabled
+managed_paths_clean
+modinfo: ERROR: Module dxgkrnl not found.

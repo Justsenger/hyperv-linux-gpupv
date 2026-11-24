@@ -1,0 +1,2 @@
+Running timer as unit: run-p7430-i7730.timer
+Will run service as unit: run-p7430-i7730.service

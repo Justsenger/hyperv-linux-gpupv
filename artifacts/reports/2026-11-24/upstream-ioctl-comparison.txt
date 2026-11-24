@@ -1,0 +1,81 @@
+ioctl.c dxgkio_escape identical=False
+--- upstream/ioctl.c
++++ workspace/ioctl.c
+@@ -1,5 +1,5 @@
+ dxgkio_escape(struct dxgprocess *process, void *__user inargs)
+ {
+-	struct d3dkmt_escape args;
++	struct d3dkmt_escape args = {};
+ 	int ret;
+ 	struct dxgadapter *adapter = NULL;
+@@ -32,5 +32,8 @@
+ 
+ cleanup:
+-
++	if (ret)
++		pr_debug("gpupv escape caller=%s pid=%d ioctl=%#lx type=%u flags=%#x bytes=%u adapter_locked=%d errno=%d\n",
++			 current->comm, current->pid, (unsigned long)LX_DXESCAPE,
++			 args.type, args.flags.value, args.priv_drv_data_size, adapter_locked, ret);
+ 	if (adapter_locked)
+ 		dxgadapter_release_lock_shared(adapter);
+
+ioctl.c dxgkio_is_feature_enabled identical=True
+
+ioctl.c dxgkio_query_adapter_info identical=True
+
+dxgvmbus.c dxgvmb_send_escape identical=True
+
+dxgvmbus.c dxgvmb_send_sync_msg identical=False
+--- upstream/dxgvmbus.c
++++ workspace/dxgvmbus.c
+@@ -77,4 +77,8 @@
+ 		packet->request_id, packet->status);
+ 	ret = packet->status;
++	if (ret)
++		pr_debug("gpupv completion caller=%s pid=%d id=%llu request=%u reply=%u errno=%d\n",
++			 current->comm, current->pid, packet->request_id, cmd_size,
++			 result_size, ret);
+ 
+ cleanup:
+
+dxgvmbus.c process_completion_packet identical=False
+--- upstream/dxgvmbus.c
++++ workspace/dxgvmbus.c
+@@ -21,4 +21,6 @@
+ 		if (packet->buffer_length) {
+ 			if (packet_length < packet->buffer_length) {
++				pr_debug("gpupv short completion id=%llu received=%u expected=%u\n",
++					 desc->trans_id, packet_length, packet->buffer_length);
+ 				DXG_TRACE("invalid size %d Expected:%d",
+ 					packet_length,
+
+dxgvmbus.c dxgvmb_send_is_feature_enabled identical=False
+--- upstream/dxgvmbus.c
++++ workspace/dxgvmbus.c
+@@ -38,4 +38,7 @@
+ 		if (ret == 0)
+ 			args->result = result->result;
++		else
++			pr_debug("gpupv feature caller=%s pid=%d feature=%u host_status=%#x errno=%d\n",
++				 current->comm, current->pid, args->feature_id, result->status.v, ret);
+ 		goto cleanup;
+ 	}
+
+dxgvmbus.c dxgvmb_send_query_adapter_info identical=False
+--- upstream/dxgvmbus.c
++++ workspace/dxgvmbus.c
+@@ -46,6 +46,10 @@
+ 	if (dxgglobal->vmbus_ver >= DXGK_VMBUS_INTERFACE_VERSION) {
+ 		ret = ntstatus2int(*(struct ntstatus *)private_data);
+-		if (ret < 0)
++		if (ret < 0) {
++			pr_debug("gpupv query caller=%s pid=%d type=%u bytes=%u host_status=%#x errno=%d\n",
++				 current->comm, current->pid, args->type, args->private_data_size,
++				 ((struct ntstatus *)private_data)->v, ret);
+ 			goto cleanup;
++		}
+ 		private_data = (char *)private_data + sizeof(struct ntstatus);
+ 	}
+
+dxgvmbus.h struct dxgkvmb_command_escape identical=True
+

@@ -1,0 +1,27 @@
+Microsoft (R) File Expansion Utility
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Adding D:\linux-pv\.test\release-1124\official-runtime\libd3d12.so to Extraction Queue
+
+Expanding Files ....
+Progress: 0 out of 1 files
+Expanding Files Complete ...
+Microsoft (R) File Expansion Utility
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Adding D:\linux-pv\.test\release-1124\official-runtime\libd3d12core.so to Extraction Queue
+
+Expanding Files ....
+Progress: 0 out of 1 files
+Expanding Files Complete ...
+Microsoft (R) File Expansion Utility
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Adding D:\linux-pv\.test\release-1124\official-runtime\libdxcore.so to Extraction Queue
+
+Expanding Files ....
+
+Expanding Files Complete ...
+libd3d12.so 801840 b3d78d409a4dbbe8612551fc0c0d746d3e58d7997ee7eba78ce1064d77cfa8c3
+libd3d12core.so 6880344 a4104a2022932d8e6c714f103ebd89db1c5bdbf36fe92151c88d3d93d4e3894d
+libdxcore.so 942048 83d1671a839bcf71709349e77cd68341515df2e63080765618876996a0f4190c

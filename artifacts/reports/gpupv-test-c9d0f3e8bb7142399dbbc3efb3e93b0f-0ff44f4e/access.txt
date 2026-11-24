@@ -1,0 +1,5 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 262 Nov 24 05:13 /dev/dxg
+boot_id=baeaecd6-a4de-4009-861b-7a4fc4bbc76e uid=1000 gpu=NVIDIA GeForce RTX 2060
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB

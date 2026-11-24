@@ -1,0 +1,111 @@
+SecureBoot enabled
+/var/lib/dkms/mok.pub is already enrolled
+af41687b-cac3-4897-b74b-2a7a4e0a8a75
+2 keys in keyring:
+768790275: ---lswrv     0     0 asymmetric: Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1
+311967124: ---lswrv     0     0 asymmetric: DKMS module signing key: 2b76cf21a6b2daed77d21fb65d4553796d0453fb
+2 keys in keyring:
+ 88556413: ---lswrv     0     0 keyring: .builtin_trusted_keys
+ 80541499: ---lswrv     0     0 keyring: .machine
+[    0.588068] integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+[    0.602999] integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+[    0.605397] integrity: Loaded X.509 cert 'DKMS module signing key: 2b76cf21a6b2daed77d21fb65d4553796d0453fb'
+
+    # If kernel-<kernelver> symlink points to this module, check for original_module and put it back
+    local was_active
+    local kernel_symlink
+    local real_dest_module_location
+    was_active=""
+    kernel_symlink=$(readlink -f "$dkms_tree/$module/kernel-$1-$2")
+    if [[ $kernel_symlink = $dkms_tree/$module/$module_version/$1/$2 ]]; then
+        was_active="true"
+        echo "Before uninstall, this module version was ACTIVE on this kernel."
+        # remove kabi-tracking if last instance removed
+        if [[ ! $NO_WEAK_MODULES ]]; then
+            if [[ ${weak_modules_remove} ]] && (module_status_built "$module" "$module_version" | grep -q "installed"); then
+                echo "Removing linked weak modules..."
+                list_each_installed_module "$module" "$1" "$2" | ${weak_modules_remove}
+            fi
+        fi
+
+        for ((count=0; count < num_modules; count++)); do
+            local m
+            m=${dest_module_name[$count]}
+
+            real_dest_module_location="$(find_actual_dest_module_location "$module" "$count" "$1" "$2")"
+
+            if [[ ${real_dest_module_location} ]]; then
+                echo "Deleting $install_tree/$1${real_dest_module_location}/$m$module_suffix"
+                rm -f "${install_tree:?}/$1${real_dest_module_location}/$m$module_uncompressed_suffix"*
+                dir_to_remove="${real_dest_module_location#/}"
+                while [[ ${dir_to_remove} != "${dir_to_remove#/}" ]]; do
+                    dir_to_remove="${dir_to_remove#/}"
+                done
+
+                case "$running_distribution" in
+                    debian* | ubuntu* | arch* | gentoo*)
+                        (if cd "$install_tree/$1"; then rmdir -p --ignore-fail-on-non-empty "${dir_to_remove}"; fi || true)
+                        ;;
+                    *)
+                        (if cd "$install_tree/$1"; then rpm -qf "${dir_to_remove}" >/dev/null 2>&1 || rmdir -p --ignore-fail-on-non-empty "${dir_to_remove}"; fi || true)
+                        ;;
+                esac
+            else
+                echo "Module $m$module_suffix was not found within $install_tree/$1/"
+            fi
+            if [[ -d $original_module_backup_dir ]]; then
+                local origin_file
+                while IFS= read -r origin_file
+                do
+                    [[ $origin_file ]] || continue
+                    local original_module
+                    original_module=${origin_file%.origin}
+                    [[ -f $original_module ]] || continue
+                    local original_location
+                    original_location=$(head -n 1 "$origin_file")
+                    case $original_location in
+                        "$install_tree/$1/"*)
+                            echo "Restoring archived original module $original_location"
+                            mkdir -p "${original_location%/*}"
+                            mv -f "$original_module" "$original_location"
+                            rm -f "$origin_file"
+                            ;;
+                        *)  warn "Bad original location '$original_location' in $origin_file"
+                            ;;
+                    esac
+                done <<< "$(find "$original_module_backup_dir" -type f -name "$m.*.origin")"
+                find "${original_module_backup_dir%/*}" -type d -empty -delete
+            fi
+            local origmod
+            origmod=$(compressed_or_uncompressed "$original_module_backup_dir" "$m")
+            if [[ $origmod ]]; then
+                # Module was archived by older dkms versions without creating .origin
+                echo "Restoring archived original module"
+                mkdir -p "$install_tree/$1${DEST_MODULE_LOCATION[$count]}/"
+                mv -f "$origmod" "$install_tree/$1${DEST_MODULE_LOCATION[$count]}/" 2>/dev/null
+            fi
+        done
+        rm -f "${dkms_tree:?}/$module/kernel-$1-$2"
+    else
+        echo "This module version was INACTIVE for this kernel."
+    fi
+
+    # Run the post_remove script
+    run_build_script post_remove "$post_remove"
+
+    # Run depmod because we changed $install_tree
+    if [[ ! $delayed_depmod ]]; then
+        invoke_command "do_depmod $1" "Running depmod" '' background
+    else
+        touch "$dkms_tree/depmod-pending-$1-$2"
+    fi
+
+    # Delete the original_module if nothing for this kernel is installed anymore
+    if [[ $was_active && -d $dkms_tree/$module/original_module/$1/$2 ]]; then
+        echo "Removing original module(s) from DKMS tree for kernel $1 ($2)"
+        rm -rf "${dkms_tree:?}/$module/original_module/$1/$2" 2>/dev/null
+        [[ $(find "$dkms_tree/$module/original_module/$1/"* -maxdepth 0 -type d 2>/dev/null) ]] || rm -rf "${dkms_tree:?}/$module/original_module/$1"
+    fi
+    [[ $(find "$dkms_tree/$module/original_module/"* -maxdepth 0 -type d 2>/dev/null) ]] || rm -rf "${dkms_tree:?}/$module/original_module"
+}
+

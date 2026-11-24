@@ -1,0 +1,32 @@
+DKMS module signing key
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:375 [dxgkrnl]process_completion_packet =_ "gpupv short completion id=%llu received=%u expected=%u\n"
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:494 [dxgkrnl]dxgvmb_send_sync_msg =_ "gpupv completion caller=%s pid=%d id=%llu request=%u reply=%u errno=%d\n"
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2116 [dxgkrnl]dxgvmb_send_is_feature_enabled =_ "gpupv feature caller=%s pid=%d feature=%u host_status=%#x errno=%d\n"
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3876 [dxgkrnl]dxgvmb_send_query_adapter_info =_ "gpupv query caller=%s pid=%d type=%u bytes=%u host_status=%#x errno=%d\n"
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4572 [dxgkrnl]dxgkio_escape =_ "gpupv escape caller=%s pid=%d ioctl=%#lx type=%u flags=%#x bytes=%u adapter_locked=%d errno=%d\n"
+module dxgkrnl format gpupv +p
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 8086:9a49 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+[  102.920018] gpupv query caller=intel-compute pid=3535 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  102.920994] gpupv query caller=intel-compute pid=3535 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  102.922108] gpupv query caller=intel-compute pid=3535 type=1 bytes=524 host_status=0xc000000d errno=-22
+[  102.924117] gpupv query caller=intel-compute pid=3535 type=48 bytes=552 host_status=0xc0000034 errno=-2

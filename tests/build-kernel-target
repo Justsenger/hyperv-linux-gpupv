@@ -1,0 +1,109 @@
+#!/bin/sh
+set -eu
+case "$(uname -m)" in "$TARGET_ARCH") ;; *) echo 'Native runner architecture mismatch' >&2; exit 1;; esac
+export DEBIAN_FRONTEND=noninteractive KBUILD_BUILD_USER=linuxpv KBUILD_BUILD_HOST=builder
+export KBUILD_BUILD_TIMESTAMP='1970-01-01 00:00:00 UTC'
+retry() {
+    for delay in 0 3 10 30; do sleep "$delay"; "$@" && return 0; done
+    return 1
+}
+case "$FAMILY" in
+deb)
+    if test -s /tmp/host-ca.pem; then echo 'Acquire::https::CaInfo "/tmp/host-ca.pem";' >/etc/apt/apt.conf.d/90linuxpv-ca; fi
+    for f in /etc/apt/sources.list /etc/apt/sources.list.d/*.sources; do
+        test -f "$f" || continue
+        sed -i 's,http://,https://,g' "$f"
+        if [ "$ARCHIVE" = yes ]; then
+            sed -Ei 's,(archive.ubuntu.com/ubuntu|security.ubuntu.com/ubuntu|ports.ubuntu.com/ubuntu-ports),old-releases.ubuntu.com/ubuntu,g' "$f"
+        fi
+    done
+    if [ -n "${REPO_KEY:-}" ]; then
+        retry apt-get update
+        retry apt-get install -y --no-install-recommends ca-certificates curl gnupg
+        retry curl -fsSL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x$REPO_KEY" -o /tmp/target-key.asc
+        test "$(gpg --show-keys --with-colons /tmp/target-key.asc | awk -F: '$1=="fpr"{print $10;exit}')" = "$REPO_KEY"
+        gpg --dearmor -o /usr/share/keyrings/linuxpv-target.gpg /tmp/target-key.asc
+    fi
+    if [ -n "$REPO_LINE" ]; then printf '%s\n' "$REPO_LINE" >/etc/apt/sources.list.d/linuxpv.list; fi
+    update_sources() {
+        apt-get -o Acquire::Retries=3 -o APT::Update::Error-Mode=any update
+    }
+    if ! retry update_sources; then
+        . /etc/os-release
+        test "${VERSION_CODENAME:-}" = bullseye || exit 1
+        # Signed snapshots of both archives, including the matching kbuild dependencies.
+        cat >/etc/apt/linuxpv-snapshot.list <<'SOURCES'
+deb [check-valid-until=no] https://snapshot.debian.org/archive/debian/20260805T000000Z/ bullseye main
+deb [check-valid-until=no] https://snapshot.debian.org/archive/debian-security/20260805T000000Z/ bullseye-security main
+SOURCES
+        printf '%s\n' 'Dir::Etc::sourcelist "linuxpv-snapshot.list";' 'Dir::Etc::sourceparts "-";' >/etc/apt/apt.conf.d/99linuxpv-snapshot
+        retry update_sources
+    fi
+    retry apt-get install -y --no-install-recommends gcc make kmod libelf-dev ca-certificates curl $PACKAGES
+    ;;
+rpm)
+    manager=$(command -v dnf || command -v tdnf || command -v yum)
+    retry "$manager" -y install gcc make kmod elfutils-libelf-devel ca-certificates curl $PACKAGES
+    ;;
+suse)
+    if [ "$REPO_LINE" = slowroll ]; then
+        retry zypper --non-interactive refresh
+        retry zypper --non-interactive install --force-resolution openSUSE-repos-Slowroll
+        zypper lr -u | grep -i slowroll
+    fi
+    retry zypper --non-interactive refresh
+    retry zypper --non-interactive install --no-recommends gcc make kmod gawk libelf-devel curl $PACKAGES
+    for pkg in kernel-default-devel kernel-devel; do
+        zypper -q search -s --match-exact "$pkg" | awk -F'|' -v p="$pkg" '$2 ~ p && $3 ~ /package/ {gsub(/ /,"",$4);print $4}' | sort -u >/tmp/versions
+        while read -r version; do retry zypper --non-interactive install --oldpackage "$pkg=$version"; done </tmp/versions
+    done
+    ;;
+arch)
+    retry pacman -Syu --noconfirm --needed gcc make kmod libelf curl
+    for pattern in $PACKAGES; do
+        case "$pattern" in *'*'*) pkg=$(pacman -Slq | grep -E '^linux[0-9]+-headers$' | sort -V | tail -1);; *) pkg=$pattern;; esac
+        test -n "$pkg"; retry pacman -S --noconfirm --needed "$pkg"
+    done
+    ;;
+gentoo) retry emerge --sync; emerge --getbinpkg sys-apps/kmod $PACKAGES ;;
+*) exit 2;;
+esac
+if [ -n "$HEADER_URL" ]; then
+    retry curl -fLsS "$HEADER_URL" -o "/tmp/headers.$HEADER_FORMAT"
+    echo "$HEADER_SHA  /tmp/headers.$HEADER_FORMAT" | sha256sum -c -
+    case "$HEADER_FORMAT" in
+        deb) retry apt-get install -y /tmp/headers.deb;;
+        rpm)
+            case "$FAMILY" in
+                rpm) retry "$manager" -y install /tmp/headers.rpm;;
+                suse) retry zypper --non-interactive install /tmp/headers.rpm;;
+                *) echo "RPM headers require an RPM distribution" >&2; exit 2;;
+            esac
+            ;;
+        tar) mkdir /tmp/custom; tar -xf /tmp/headers.tar -C /tmp/custom;;
+    esac
+fi
+found=0
+for kdir in /lib/modules/*/build /usr/src/kernels/* /usr/src/linux-headers-* /usr/src/linux-obj/*/* /tmp/custom /tmp/custom/*; do
+    test -f "$kdir/Makefile" || continue
+    test -s "$kdir/Module.symvers" || continue
+    release=$(sed -n 's/^#define UTS_RELEASE "\(.*\)"/\1/p' "$kdir/include/generated/utsrelease.h" 2>/dev/null || :)
+    test -n "$release" || release=$(cat "$kdir/include/config/kernel.release")
+    dest="/out/$release"
+    if [ -f "$dest/dxgkrnl.ko" ]; then continue; fi
+    if grep -qs '^CONFIG_CC_IS_CLANG=y' "$kdir/include/config/auto.conf"; then
+        case "$FAMILY" in arch) retry pacman -S --needed --noconfirm clang llvm lld;; deb) retry apt-get install -y clang llvm lld;; rpm) retry "$manager" -y install clang llvm lld;; suse) retry zypper --non-interactive install clang llvm lld;; esac
+    fi
+    tree="/tmp/linuxpv-kbuild/$release"
+    mkdir -p "$tree"
+    cp -R /source/kernel/. "$tree/"
+    sh "$tree/build" "$kdir"
+    ko="$tree/drivers/hv/dxgkrnl/dxgkrnl.ko"
+    test "$(modinfo -F name "$ko")" = dxgkrnl
+    set -- $(modinfo -F vermagic "$ko"); test "$1" = "$release"
+    mkdir -p "$dest"; cp "$ko" "$dest/dxgkrnl.ko"
+    modinfo -F vermagic "$ko" >"$dest/vermagic"
+    modinfo -F srcversion "$ko" >"$dest/srcversion"
+    found=1
+done
+test "$found" = 1

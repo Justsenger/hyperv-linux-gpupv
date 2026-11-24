@@ -1,0 +1,5 @@
+Architecture-decorated INF aliases: passed
+architecture mismatch, matching aliases, conflicting aliases: passed
+Single-name ambiguity, multiple matching PCI IDs, unknown and duplicate cards: passed
+aarch64 validated libraries=3 modules=1 release=6.1.0-56-arm64
+x86_64 validated libraries=3 modules=1 release=6.1.0-56-amd64

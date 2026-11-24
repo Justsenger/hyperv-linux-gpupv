@@ -1,0 +1,7 @@
+{
+  "host": "10.0.26200.0",
+  "query": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers",
+  "GpuVirtualizationFlags": null,
+  "GpuVirtualizationFlagsPresent": false,
+  "evidence": "Registry observation only. Secure Boot does not identify the GPU-PV SecureVirtualMachine flag."
+}

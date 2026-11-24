@@ -1,0 +1,301 @@
+image=openanolis/anolisos:23 unix_time=1795425179 sources_sha256=ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd
+NAME="Anolis OS"
+VERSION="23"
+ID="anolis"
+VERSION_ID="23"
+PLATFORM_ID="platform:an23"
+PRETTY_NAME="Anolis OS 23"
+ANSI_COLOR="0;31"
+HOME_URL="https://openanolis.cn/"
+BUG_REPORT_URL="https://bugzilla.openanolis.cn/"
+
+AnolisOS-23 - os                                 15 MB/s |  11 MB     00:00    
+AnolisOS-23 - updates                           6.5 MB/s |  11 MB     00:01    
+Last metadata expiration check: 0:00:02 ago on Mon Nov 23 09:13:04 2026.
+Dependencies resolved.
+================================================================================
+ Package                       Arch      Version               Repository  Size
+================================================================================
+Installing:
+ elfutils-libelf-devel         x86_64    0.190-3.an23          os          18 k
+ gcc                           x86_64    12.3.0-22.an23        updates     25 M
+ kernel-devel                  x86_64    6.6.102-8.0.2.an23    updates     17 M
+ kmod                          x86_64    30-5.an23             os         116 k
+ make                          x86_64    1:4.4.1-2.an23        os         524 k
+Upgrading:
+ elfutils-debuginfod-client    x86_64    0.190-3.an23          os          33 k
+ elfutils-libelf               x86_64    0.190-3.an23          os         189 k
+ elfutils-libs                 x86_64    0.190-3.an23          os         253 k
+ glibc                         x86_64    2.38-37.an23          updates    2.1 M
+ glibc-common                  x86_64    2.38-37.an23          updates    283 k
+ glibc-minimal-langpack        x86_64    2.38-37.an23          updates    9.6 k
+ libgcc                        x86_64    12.3.0-22.an23        updates     86 k
+ libgomp                       x86_64    12.3.0-22.an23        updates    184 k
+ libxcrypt                     x86_64    4.4.36-1.an23         os         102 k
+ libzstd                       x86_64    1.5.5-5.an23          os         314 k
+ zlib                          x86_64    1.2.13-7.an23         updates     67 k
+Installing dependencies:
+ cmake-filesystem              x86_64    3.30.5-3.an23         os          11 k
+ cpp                           x86_64    12.3.0-22.an23        updates     11 M
+ glibc-devel                   x86_64    2.38-37.an23          updates    446 k
+ kernel-headers                x86_64    6.6.102-8.0.2.an23    updates    2.9 M
+ libasan                       x86_64    12.3.0-22.an23        updates    416 k
+ libatomic                     x86_64    12.3.0-22.an23        updates     19 k
+ libmpc                        x86_64    1.3.1-2.an23          os          76 k
+ libpkgconf                    x86_64    1.9.5-1.an23          os          43 k
+ libubsan                      x86_64    12.3.0-22.an23        updates    174 k
+ libxcrypt-devel               x86_64    4.4.36-1.an23         os          26 k
+ libzstd-devel                 x86_64    1.5.5-5.an23          os          53 k
+ pkgconf                       x86_64    1.9.5-1.an23          os          31 k
+ pkgconf-m4                    noarch    1.9.5-1.an23          os          13 k
+ pkgconf-pkg-config            x86_64    1.9.5-1.an23          os          11 k
+ zlib-devel                    x86_64    1.2.13-7.an23         updates     43 k
+
+Transaction Summary
+================================================================================
+Install  20 Packages
+Upgrade  11 Packages
+
+Total download size: 61 M
+Downloading Packages:
+(1/31): cmake-filesystem-3.30.5-3.an23.x86_64.r 140 kB/s |  11 kB     00:00    
+(2/31): elfutils-libelf-devel-0.190-3.an23.x86_ 224 kB/s |  18 kB     00:00    
+(3/31): kmod-30-5.an23.x86_64.rpm               1.0 MB/s | 116 kB     00:00    
+(4/31): libpkgconf-1.9.5-1.an23.x86_64.rpm      575 kB/s |  43 kB     00:00    
+(5/31): libmpc-1.3.1-2.an23.x86_64.rpm          858 kB/s |  76 kB     00:00    
+(6/31): libxcrypt-devel-4.4.36-1.an23.x86_64.rp 464 kB/s |  26 kB     00:00    
+(7/31): libzstd-devel-1.5.5-5.an23.x86_64.rpm   1.4 MB/s |  53 kB     00:00    
+(8/31): pkgconf-1.9.5-1.an23.x86_64.rpm         570 kB/s |  31 kB     00:00    
+(9/31): pkgconf-m4-1.9.5-1.an23.noarch.rpm      325 kB/s |  13 kB     00:00    
+(10/31): pkgconf-pkg-config-1.9.5-1.an23.x86_64 353 kB/s |  11 kB     00:00    
+(11/31): make-4.4.1-2.an23.x86_64.rpm           3.2 MB/s | 524 kB     00:00    
+(12/31): glibc-devel-2.38-37.an23.x86_64.rpm    6.7 MB/s | 446 kB     00:00    
+(13/31): cpp-12.3.0-22.an23.x86_64.rpm           10 MB/s |  11 MB     00:01    
+(14/31): kernel-devel-6.6.102-8.0.2.an23.x86_64  17 MB/s |  17 MB     00:00    
+(15/31): kernel-headers-6.6.102-8.0.2.an23.x86_  17 MB/s | 2.9 MB     00:00    
+(16/31): libasan-12.3.0-22.an23.x86_64.rpm      4.8 MB/s | 416 kB     00:00    
+(17/31): libatomic-12.3.0-22.an23.x86_64.rpm    290 kB/s |  19 kB     00:00    
+(18/31): libubsan-12.3.0-22.an23.x86_64.rpm     4.2 MB/s | 174 kB     00:00    
+(19/31): zlib-devel-1.2.13-7.an23.x86_64.rpm    1.2 MB/s |  43 kB     00:00    
+(20/31): gcc-12.3.0-22.an23.x86_64.rpm           16 MB/s |  25 MB     00:01    
+(21/31): elfutils-debuginfod-client-0.190-3.an2  99 kB/s |  33 kB     00:00    
+(22/31): elfutils-libelf-0.190-3.an23.x86_64.rp 619 kB/s | 189 kB     00:00    
+(23/31): libzstd-1.5.5-5.an23.x86_64.rpm        6.1 MB/s | 314 kB     00:00    
+(24/31): elfutils-libs-0.190-3.an23.x86_64.rpm  4.3 MB/s | 253 kB     00:00    
+(25/31): libxcrypt-4.4.36-1.an23.x86_64.rpm     1.8 MB/s | 102 kB     00:00    
+(26/31): glibc-minimal-langpack-2.38-37.an23.x8 330 kB/s | 9.6 kB     00:00    
+(27/31): glibc-common-2.38-37.an23.x86_64.rpm   3.9 MB/s | 283 kB     00:00    
+(28/31): glibc-2.38-37.an23.x86_64.rpm           18 MB/s | 2.1 MB     00:00    
+(29/31): libgcc-12.3.0-22.an23.x86_64.rpm       1.0 MB/s |  86 kB     00:00    
+(30/31): libgomp-12.3.0-22.an23.x86_64.rpm      3.9 MB/s | 184 kB     00:00    
+(31/31): zlib-1.2.13-7.an23.x86_64.rpm          1.0 MB/s |  67 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                            29 MB/s |  61 MB     00:02     
+AnolisOS-23 - os                                3.0 MB/s | 3.0 kB     00:00    
+Importing GPG key 0x4873F7C5:
+ Userid     : "Anolis OS <os@openanolis.org>"
+ Fingerprint: F87D B652 2967 855E 986F 840C 6191 4008 4873 F7C5
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-ANOLIS
+Key imported successfully
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : libgcc-12.3.0-22.an23.x86_64                          1/42 
+  Running scriptlet: libgcc-12.3.0-22.an23.x86_64                          1/42 
+  Upgrading        : glibc-common-2.38-37.an23.x86_64                      2/42 
+  Upgrading        : glibc-minimal-langpack-2.38-37.an23.x86_64            3/42 
+  Running scriptlet: glibc-2.38-37.an23.x86_64                             4/42 
+  Upgrading        : glibc-2.38-37.an23.x86_64                             4/42 
+  Running scriptlet: glibc-2.38-37.an23.x86_64                             4/42 
+  Upgrading        : libzstd-1.5.5-5.an23.x86_64                           5/42 
+  Upgrading        : zlib-1.2.13-7.an23.x86_64                             6/42 
+  Upgrading        : elfutils-libelf-0.190-3.an23.x86_64                   7/42 
+  Installing       : libmpc-1.3.1-2.an23.x86_64                            8/42 
+  Installing       : cpp-12.3.0-22.an23.x86_64                             9/42 
+  Upgrading        : elfutils-libs-0.190-3.an23.x86_64                    10/42 
+  Upgrading        : elfutils-debuginfod-client-0.190-3.an23.x86_64       11/42 
+  Installing       : libpkgconf-1.9.5-1.an23.x86_64                       12/42 
+  Installing       : pkgconf-1.9.5-1.an23.x86_64                          13/42 
+  Installing       : make-1:4.4.1-2.an23.x86_64                           14/42 
+  Installing       : libasan-12.3.0-22.an23.x86_64                        15/42 
+  Installing       : libatomic-12.3.0-22.an23.x86_64                      16/42 
+  Installing       : libubsan-12.3.0-22.an23.x86_64                       17/42 
+  Upgrading        : libxcrypt-4.4.36-1.an23.x86_64                       18/42 
+  Upgrading        : libgomp-12.3.0-22.an23.x86_64                        19/42 
+  Installing       : kernel-headers-6.6.102-8.0.2.an23.x86_64             20/42 
+  Installing       : pkgconf-m4-1.9.5-1.an23.noarch                       21/42 
+  Installing       : pkgconf-pkg-config-1.9.5-1.an23.x86_64               22/42 
+  Installing       : glibc-devel-2.38-37.an23.x86_64                      23/42 
+  Installing       : libxcrypt-devel-4.4.36-1.an23.x86_64                 24/42 
+  Installing       : zlib-devel-1.2.13-7.an23.x86_64                      25/42 
+  Installing       : cmake-filesystem-3.30.5-3.an23.x86_64                26/42 
+  Installing       : libzstd-devel-1.5.5-5.an23.x86_64                    27/42 
+  Installing       : elfutils-libelf-devel-0.190-3.an23.x86_64            28/42 
+  Installing       : gcc-12.3.0-22.an23.x86_64                            29/42 
+  Installing       : kmod-30-5.an23.x86_64                                30/42 
+  Installing       : kernel-devel-6.6.102-8.0.2.an23.x86_64               31/42 
+  Running scriptlet: kernel-devel-6.6.102-8.0.2.an23.x86_64               31/42 
+  Cleanup          : elfutils-debuginfod-client-0.189-2.an23.x86_64       32/42 
+  Cleanup          : elfutils-libs-0.189-2.an23.x86_64                    33/42 
+  Cleanup          : elfutils-libelf-0.189-2.an23.x86_64                  34/42 
+  Cleanup          : libgomp-12.2.1-2.an23.x86_64                         35/42 
+  Cleanup          : libxcrypt-4.4.33-1.an23.x86_64                       36/42 
+  Cleanup          : libzstd-1.5.5-1.an23.x86_64                          37/42 
+  Cleanup          : zlib-1.2.13-1.an23.x86_64                            38/42 
+  Cleanup          : glibc-2.36-7.an23.x86_64                             39/42 
+  Cleanup          : glibc-minimal-langpack-2.36-7.an23.x86_64            40/42 
+  Cleanup          : glibc-common-2.36-7.an23.x86_64                      41/42 
+  Cleanup          : libgcc-12.2.1-2.an23.x86_64                          42/42 
+  Running scriptlet: libgcc-12.2.1-2.an23.x86_64                          42/42 
+  Verifying        : cmake-filesystem-3.30.5-3.an23.x86_64                 1/42 
+  Verifying        : elfutils-libelf-devel-0.190-3.an23.x86_64             2/42 
+  Verifying        : kmod-30-5.an23.x86_64                                 3/42 
+  Verifying        : libmpc-1.3.1-2.an23.x86_64                            4/42 
+  Verifying        : libpkgconf-1.9.5-1.an23.x86_64                        5/42 
+  Verifying        : libxcrypt-devel-4.4.36-1.an23.x86_64                  6/42 
+  Verifying        : libzstd-devel-1.5.5-5.an23.x86_64                     7/42 
+  Verifying        : make-1:4.4.1-2.an23.x86_64                            8/42 
+  Verifying        : pkgconf-1.9.5-1.an23.x86_64                           9/42 
+  Verifying        : pkgconf-m4-1.9.5-1.an23.noarch                       10/42 
+  Verifying        : pkgconf-pkg-config-1.9.5-1.an23.x86_64               11/42 
+  Verifying        : cpp-12.3.0-22.an23.x86_64                            12/42 
+  Verifying        : gcc-12.3.0-22.an23.x86_64                            13/42 
+  Verifying        : glibc-devel-2.38-37.an23.x86_64                      14/42 
+  Verifying        : kernel-devel-6.6.102-8.0.2.an23.x86_64               15/42 
+  Verifying        : kernel-headers-6.6.102-8.0.2.an23.x86_64             16/42 
+  Verifying        : libasan-12.3.0-22.an23.x86_64                        17/42 
+  Verifying        : libatomic-12.3.0-22.an23.x86_64                      18/42 
+  Verifying        : libubsan-12.3.0-22.an23.x86_64                       19/42 
+  Verifying        : zlib-devel-1.2.13-7.an23.x86_64                      20/42 
+  Verifying        : elfutils-debuginfod-client-0.190-3.an23.x86_64       21/42 
+  Verifying        : elfutils-debuginfod-client-0.189-2.an23.x86_64       22/42 
+  Verifying        : elfutils-libelf-0.190-3.an23.x86_64                  23/42 
+  Verifying        : elfutils-libelf-0.189-2.an23.x86_64                  24/42 
+  Verifying        : elfutils-libs-0.190-3.an23.x86_64                    25/42 
+  Verifying        : elfutils-libs-0.189-2.an23.x86_64                    26/42 
+  Verifying        : libxcrypt-4.4.36-1.an23.x86_64                       27/42 
+  Verifying        : libxcrypt-4.4.33-1.an23.x86_64                       28/42 
+  Verifying        : libzstd-1.5.5-5.an23.x86_64                          29/42 
+  Verifying        : libzstd-1.5.5-1.an23.x86_64                          30/42 
+  Verifying        : glibc-2.38-37.an23.x86_64                            31/42 
+  Verifying        : glibc-2.36-7.an23.x86_64                             32/42 
+  Verifying        : glibc-common-2.38-37.an23.x86_64                     33/42 
+  Verifying        : glibc-common-2.36-7.an23.x86_64                      34/42 
+  Verifying        : glibc-minimal-langpack-2.38-37.an23.x86_64           35/42 
+  Verifying        : glibc-minimal-langpack-2.36-7.an23.x86_64            36/42 
+  Verifying        : libgcc-12.3.0-22.an23.x86_64                         37/42 
+  Verifying        : libgcc-12.2.1-2.an23.x86_64                          38/42 
+  Verifying        : libgomp-12.3.0-22.an23.x86_64                        39/42 
+  Verifying        : libgomp-12.2.1-2.an23.x86_64                         40/42 
+  Verifying        : zlib-1.2.13-7.an23.x86_64                            41/42 
+  Verifying        : zlib-1.2.13-1.an23.x86_64                            42/42 
+
+Upgraded:
+  elfutils-debuginfod-client-0.190-3.an23.x86_64                                
+  elfutils-libelf-0.190-3.an23.x86_64                                           
+  elfutils-libs-0.190-3.an23.x86_64                                             
+  glibc-2.38-37.an23.x86_64                                                     
+  glibc-common-2.38-37.an23.x86_64                                              
+  glibc-minimal-langpack-2.38-37.an23.x86_64                                    
+  libgcc-12.3.0-22.an23.x86_64                                                  
+  libgomp-12.3.0-22.an23.x86_64                                                 
+  libxcrypt-4.4.36-1.an23.x86_64                                                
+  libzstd-1.5.5-5.an23.x86_64                                                   
+  zlib-1.2.13-7.an23.x86_64                                                     
+Installed:
+  cmake-filesystem-3.30.5-3.an23.x86_64                                         
+  cpp-12.3.0-22.an23.x86_64                                                     
+  elfutils-libelf-devel-0.190-3.an23.x86_64                                     
+  gcc-12.3.0-22.an23.x86_64                                                     
+  glibc-devel-2.38-37.an23.x86_64                                               
+  kernel-devel-6.6.102-8.0.2.an23.x86_64                                        
+  kernel-headers-6.6.102-8.0.2.an23.x86_64                                      
+  kmod-30-5.an23.x86_64                                                         
+  libasan-12.3.0-22.an23.x86_64                                                 
+  libatomic-12.3.0-22.an23.x86_64                                               
+  libmpc-1.3.1-2.an23.x86_64                                                    
+  libpkgconf-1.9.5-1.an23.x86_64                                                
+  libubsan-12.3.0-22.an23.x86_64                                                
+  libxcrypt-devel-4.4.36-1.an23.x86_64                                          
+  libzstd-devel-1.5.5-5.an23.x86_64                                             
+  make-1:4.4.1-2.an23.x86_64                                                    
+  pkgconf-1.9.5-1.an23.x86_64                                                   
+  pkgconf-m4-1.9.5-1.an23.noarch                                                
+  pkgconf-pkg-config-1.9.5-1.an23.x86_64                                        
+  zlib-devel-1.2.13-7.an23.x86_64                                               
+
+Complete!
+HEADER_TREE=/usr/src/kernels/6.6.102-8.0.2.an23.x86_64
+/tmp/tmp.uhsoRVuWNN/probe.c: In function 'p':
+/tmp/tmp.uhsoRVuWNN/probe.c:2:62: error: too few arguments to function 'eventfd_signal'
+    2 | void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+      |                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.uhsoRVuWNN/probe.c:1:
+./include/linux/eventfd.h:38:7: note: declared here
+   38 | __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+      |       ^~~~~~~~~~~~~~
+make[2]: *** [scripts/Makefile.build:243: /tmp/tmp.uhsoRVuWNN/probe.o] Error 1
+make[1]: *** [/usr/src/kernels/6.6.102-8.0.2.an23.x86_64/Makefile:1968: /tmp/tmp.uhsoRVuWNN] Error 2
+make: *** [Makefile:234: __sub-make] Error 2
+/tmp/tmp.uhsoRVuWNN/probe.c:2:28: error: 'struct dma_fence_ops' has no member named 'fence_value_str'
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[2]: *** [scripts/Makefile.build:243: /tmp/tmp.uhsoRVuWNN/probe.o] Error 1
+make[1]: *** [/usr/src/kernels/6.6.102-8.0.2.an23.x86_64/Makefile:1968: /tmp/tmp.uhsoRVuWNN] Error 2
+make: *** [Makefile:234: __sub-make] Error 2
+/tmp/tmp.uhsoRVuWNN/probe.c: In function 'p':
+/tmp/tmp.uhsoRVuWNN/probe.c:2:86: error: passing argument 1 of '__dma_fence_is_later' makes integer from pointer without a cast [-Werror=int-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.uhsoRVuWNN/probe.c:1:
+./include/linux/dma-fence.h:452:45: note: expected 'u64' {aka 'long long unsigned int'} but argument is of type 'struct dma_fence *'
+  452 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:243: /tmp/tmp.uhsoRVuWNN/probe.o] Error 1
+make[1]: *** [/usr/src/kernels/6.6.102-8.0.2.an23.x86_64/Makefile:1968: /tmp/tmp.uhsoRVuWNN] Error 2
+make: *** [Makefile:234: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/6.6.102-8.0.2.an23.x86_64'
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/kernels/6.6.102-8.0.2.an23.x86_64'
+filename:       /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+version:        2.0.3
+description:    Microsoft Dxgkrnl virtual compute device Driver
+license:        GPL
+srcversion:     DE25E8C60B72F28F00288DE
+alias:          pci:v00001414d0000008Asv*sd*bc*sc*i*
+alias:          pci:v00001414d0000008Esv*sd*bc*sc*i*
+alias:          vmbus:c0cbe9dd605036449448ea1254a5d177
+alias:          vmbus:182d386e36334b4facc42b7703d4df4a
+depends:        hv_vmbus
+retpoline:      Y
+name:           dxgkrnl
+vermagic:       6.6.102-8.0.2.an23.x86_64 SMP preempt mod_unload modversions 
+0da84a3bcdd8d70f8ce55538d050dc3ef2ccff3d386bf5cf5839b80ee16e29fd  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+exit=0

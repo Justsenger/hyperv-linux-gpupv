@@ -1,0 +1,16 @@
+.tools/
+.test/
+__pycache__/
+*.pyc
+dist/**/*.tar
+dist/**/*.iso
+dist/**/*.tgz
+dist/**/*.part
+libd3d12.so
+libd3d12core.so
+libdxcore.so
+libd3d12.so.*
+libd3d12core.so.*
+libdxcore.so.*
+
+dist/**/*.zip

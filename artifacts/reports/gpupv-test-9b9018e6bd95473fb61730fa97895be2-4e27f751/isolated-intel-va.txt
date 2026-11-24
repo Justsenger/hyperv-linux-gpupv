@@ -1,0 +1,25 @@
+gpupv-va-runtime.tgz: OK
+ffmpeg	7:6.1.1-3ubuntu5
+libc6:amd64	2.39-0ubuntu8.9
+libllvm20:amd64	1:20.1.2-0ubuntu1~24.04.3
+libva2:amd64	2.20.0-2ubuntu0.2
+mesa-libgallium:amd64	25.2.8-0ubuntu0.24.04.5
+mesa-va-drivers:amd64	25.2.8-0ubuntu0.24.04.5
+vainfo	2.12.0+ds1-1
+modprobe: FATAL: Module vgem not found in directory /lib/modules/5.14.0-741.22.1.el9_9.x86_64
+total 0
+crw-rw----. 1 root video 226, 0 Nov 24 04:35 card0
+libva info: VA-API version 1.20.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /home/tester/gpupv-va.abatsKLN/lib/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_20
+pci id for fd 3: 1414:0006, driver (null)
+pci id for fd 4: 1414:0006, driver (null)
+pci id for fd 5: 1414:0006, driver (null)
+libva error: /home/tester/gpupv-va.abatsKLN/lib/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+No accessible Intel D3D12 VA display exposing H.264 baseline encode and VP9 profile 0 decode.
+isolated_va_exit=77
+Verified Intel video directions: 0/0
+isolated_profiles_exit=77

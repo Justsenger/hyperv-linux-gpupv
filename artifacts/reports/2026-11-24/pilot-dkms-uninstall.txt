@@ -1,0 +1,12 @@
+glibc 2.41, x86_64, kernel 6.12.118+deb13-amd64, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so']
+OpenCL ICD: []
+Module gpupv-dxgkrnl/0.1 for kernel 6.12.118+deb13-amd64 (x86_64):
+Before uninstall, this module version was ACTIVE on this kernel.
+Deleting /lib/modules/6.12.118+deb13-amd64/updates/dkms/dxgkrnl.ko.xz
+Running depmod.... done.
+
+Deleting module gpupv-dxgkrnl/0.1 completely from the DKMS tree.
+clean_before_reboot
+Running timer as unit: run-p3763-i4063.timer
+Will run service as unit: run-p3763-i4063.service

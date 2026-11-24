@@ -1,0 +1,38 @@
+
+InstancePath                                                                                                     Instanc
+                                                                                                                 eId
+------------                                                                                                     -------
+\\?\PCI#VEN_8086&DEV_9A49&SUBSYS_20908086&REV_01#3&11583659&0&10#{064092b3-625e-43bf-9eb5-dc845897dd59}\GPUPARAV 
+
+uid=1000(tester) gid=100(users) groups=100(users),486(video),1000(sudo),1001(wheel)
+Linux gpupv-test-3052d25266164c46a749bd82b1aa3a85 6.4.0-150600.23.146-default #1 SMP PREEMPT_DYNAMIC Fri Nov 13 00:30:38 UTC 2026 (a8ecf01) x86_64 x86_64 x86_64 GNU/Linux
+NAME="openSUSE Leap"
+VERSION="15.6"
+ID="opensuse-leap"
+ID_LIKE="suse opensuse"
+VERSION_ID="15.6"
+PRETTY_NAME="openSUSE Leap 15.6"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:opensuse:leap:15.6"
+BUG_REPORT_URL="https://bugs.opensuse.org"
+HOME_URL="https://www.opensuse.org/"
+DOCUMENTATION_URL="https://en.opensuse.org/Portal:Leap"
+LOGO="distributor-logo-Leap"
+06842dfc-5703-42af-a925-de9a515c5e0f
+{525074dc-8985-46e2-8057-a307dc18a502}
+{a9a0f4e7-5a45-4d96-b827-8a841e8c03e6}
+{35fa2e29-ea23-4236-96ae-3a6ebacba440}
+{44c4f61d-4444-4400-9d52-802e27ede19f}
+{9527e630-d0ae-497b-adce-e80ab0175caf}
+{3375baf4-9e15-4b30-b765-67acb10d607b}
+{da0a7802-e377-4aac-8e77-0558eb1073f8}
+{cfa8b69e-5b4a-4cc0-b98b-8ba1a1f3f95a}
+{dde9cbc0-5060-4436-9448-ea1254a5d177}
+{6e382d18-3336-4f4b-acc4-2b7703d4df4a}
+{f8e65716-3cb3-4a06-9a60-1889c5cccab5}
+{0e0b6031-5213-4934-818b-38d90ced39db}
+{f912ad6d-2b17-48ea-bd65-f927a61c7684}
+{f8615163-df3e-46c5-913f-f2d2f965ed0e}
+{ba6163d9-04a1-4d29-b605-72e2ffb1dc7f}
+{276aacf4-ac15-426c-98dd-7521ad3f01fe}
+{57164f39-9115-4e78-ab55-382f3bd5422d}

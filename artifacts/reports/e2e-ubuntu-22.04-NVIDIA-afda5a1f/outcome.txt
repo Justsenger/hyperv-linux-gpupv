@@ -1,0 +1,1 @@
+Provisioning stopped after repeated HTTP 502 from the image mirror. Retried with signed HTTPS mirror.

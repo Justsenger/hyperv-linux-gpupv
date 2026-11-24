@@ -1,0 +1,4 @@
+Final local artifact readback
+File rtx2060-x64.tar
+Bytes 3259652608
+SHA256 0f020e0d4ee4276e3d8f18a52fc9ad7c8189d866cc277012c8f8153915c61ef7

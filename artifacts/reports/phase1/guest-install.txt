@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "arch": "x86_64",
+  "adapters": [
+    {
+      "name": "NVIDIA GeForce RTX 2060",
+      "package": "nvinsi.inf_amd64_bdbfdf54ab096b2b",
+      "device": "PCI\\VEN_10DE&DEV_1F15&SUBSYS_20908086&REV_A1\\4&2498E50C&0&0030",
+      "version": "32.0.16.1742"
+    },
+    {
+      "name": "Intel(R) Iris(R) Xe Graphics",
+      "package": "iigd_dch.inf_amd64_5c4e38fb27d0b8b3",
+      "device": "PCI\\VEN_8086&DEV_9A49&SUBSYS_20908086&REV_01\\3&11583659&0&10",
+      "version": "32.0.101.6876"
+    }
+  ]
+}
+glibc 2.36, x86_64, kernel 6.1.0-56-amd64, preflight OK
+ldconfig: /usr/lib/wsl/lib/libcuda.so.1 is not a symbolic link
+
+ldconfig: /usr/lib/wsl/lib/libnvidia-ml.so.1 is not a symbolic link
+
+glibc 2.36, x86_64, kernel 6.1.0-56-amd64, preflight OK
+boot_id=59ddc8a7-bc50-4bd1-91b5-2c79ffe34702 uid=1000 gpu=NVIDIA GeForce RTX 2060, Intel(R) Iris(R) Xe Graphics
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB

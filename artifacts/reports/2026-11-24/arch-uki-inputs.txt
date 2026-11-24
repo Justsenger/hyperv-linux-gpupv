@@ -1,0 +1,9 @@
+-rw------- 1 root root  53M Nov 15 12:05 /boot/initramfs-linux.img
+-rw-r--r-- 1 root root  17M Nov 15 12:04 /boot/vmlinuz-linux
+-rw-r--r-- 1 root root  17M Nov 12 20:11 /usr/lib/modules/7.3.4-arch1-2/vmlinuz
+-rw-r--r-- 1 root root 131K Nov  5 13:36 /usr/lib/systemd/boot/efi/linuxx64.efi.stub
+total 12
+drwx------ 3 root root 4096 Nov 15 12:04 .
+drwx------ 3 root root 4096 Jan  1  1970 ..
+drwx------ 2 root root 4096 Nov 15 12:04 BOOT
+BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=a4fe6a47-a8cc-4beb-966a-7757429a6771 rw net.ifnames=0 rootflags=compress=zstd:1 console=tty0 console=ttyS0,115200

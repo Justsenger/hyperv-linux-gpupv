@@ -1,0 +1,9 @@
+{
+  "startUtc": "2026-11-24T02:56:36.7868172Z",
+  "vm": "gpupv-test-eb87e66daecc42668e5f824a52af7fd8",
+  "vmId": "01926b73-6557-4e29-8d9d-95f6c5e5991d",
+  "gpu": "\\\\?\\PCI#VEN_10DE&DEV_1F15&SUBSYS_20908086&REV_A1#4&2498e50c&0&0030#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+  "hostBuild": "10.0.26200.0",
+  "delivery": "iso",
+  "dkms": false
+}

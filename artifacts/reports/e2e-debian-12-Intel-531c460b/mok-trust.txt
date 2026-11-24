@@ -1,0 +1,6 @@
+SecureBoot enabled
+88ab08f2-a537-45d2-850a-c0f02d040efa
+SHA1 Fingerprint: 53:61:0c:f8:1f:bd:7e:0c:eb:67:91:3c:9e:f3:e7:94:a9:63:3e:cb
+        Issuer: CN=Debian Secure Boot CA
+SHA1 Fingerprint: d3:71:d2:0d:a8:c6:1f:5a:78:54:a9:e6:a5:e3:d2:68:4d:84:72:52
+        Issuer: CN=GPU-PV module signing

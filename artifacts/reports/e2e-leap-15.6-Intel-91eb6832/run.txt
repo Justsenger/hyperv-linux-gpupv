@@ -1,0 +1,236 @@
+NAME="openSUSE Leap"
+VERSION="15.6"
+ID="opensuse-leap"
+ID_LIKE="suse opensuse"
+VERSION_ID="15.6"
+PRETTY_NAME="openSUSE Leap 15.6"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:opensuse:leap:15.6"
+BUG_REPORT_URL="https://bugs.opensuse.org"
+HOME_URL="https://www.opensuse.org/"
+DOCUMENTATION_URL="https://en.opensuse.org/Portal:Leap"
+LOGO="distributor-logo-Leap"
+Linux gpupv-test-91eb68325f1a4467ba98ec1a6543d604 6.4.0-150600.23.103-default #1 SMP PREEMPT_DYNAMIC Fri May  8 13:08:22 UTC 2026 (52e00eb) x86_64 x86_64 x86_64 GNU/Linux
+uid=1000(tester) gid=100(users) groups=100(users),486(video),1000(sudo),1001(wheel)
+allow_unsupported_modules 1
+0x1414
+0x008e
+Loading repository data...
+Warning: Repository 'Update repository of openSUSE Backports' metadata expired since 2026-07-10 11:19:15 UTC.
+Warning: Repository 'Update Repository (Debug)' metadata expired since 2026-10-13 22:33:14 UTC.
+Warning: Repository 'Main Update Repository' metadata expired since 2026-10-13 22:33:04 UTC.
+
+    Warning: Repository metadata expired: Check if 'autorefresh' is turned on (zypper lr), otherwise
+    manually refresh the repository (zypper ref). If this does not solve the issue, it could be that
+    you are using a broken mirror or the server has actually discontinued to support the repository.
+
+Reading installed packages...
+Resolving package dependencies...
+
+The following 5 NEW packages are going to be installed:
+  intel-opencl libigc1 libigdfcl1 libigdgmm12 libopencl-clang11
+
+5 new packages to install.
+
+Package download size:    34.4 MiB
+
+Package install size change:
+              |     134.9 MiB  required by packages that will be installed
+   134.9 MiB  |  -      0 B    released by packages that will be removed
+
+Backend:  classic_rpmtrans
+Continue? [y/n/v/...? shows all options] (y): y
+Retrieving: libigc1-1.0.8744-150400.3.3.1.x86_64 (Main Repository) (1/5),  16.2 MiB    
+Retrieving: libigc1-1.0.8744-150400.3.3.1.x86_64.rpm [..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................done (272.1 KiB/s)]
+Retrieving: libigdgmm12-22.3.17-150600.1.2.x86_64 (Main Repository) (2/5), 142.3 KiB    
+Retrieving: libigdgmm12-22.3.17-150600.1.2.x86_64.rpm [......done (141.3 KiB/s)]
+Retrieving: libopencl-clang11-1.0.8744-150400.3.3.1.x86_64 (Main Repository) (3/5),  16.3 MiB    
+
+Trying to exit gracefully...
+Retrieving: libopencl-clang11-1.0.8744-150400.3.3.1.x86_64.rpm [....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Retrieving: libigdfcl1-1.0.8744-150400.3.3.1.x86_64 (Main Repository) (4/5), 429.3 KiB    
+Retrieving: libigdfcl1-1.0.8744-150400.3.3.1.x86_64.rpm [
+Retrieving: intel-opencl-21.39.21127-150500.7.5.1.x86_64 (Main Repository) (5/5),   1.3 MiB    
+Retrieving: intel-opencl-21.39.21127-150500.7.5.1.x86_64.rpm [package exit=124
+a327c651ea989fdec88eb6aec3cc3e8e2919625b39616c98522f0ef89cefd7a0  /mnt/gpupv/guest/gpupv-guest
+4001f40d3fe9652feb87174e5653794e8754f07a2c10ca7446566a55ba029d43  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+/tmp/tmp.uCVGvBL5ef/probe.c: In function ‘p’:
+/tmp/tmp.uCVGvBL5ef/probe.c:2:62: error: too few arguments to function ‘eventfd_signal’
+ void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.uCVGvBL5ef/probe.c:1:0:
+/usr/src/linux-6.4.0-150600.23.103/include/linux/eventfd.h:42:7: note: declared here
+ __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+       ^~~~~~~~~~~~~~
+make[1]: *** [/usr/src/linux-6.4.0-150600.23.103/scripts/Makefile.build:252: /tmp/tmp.uCVGvBL5ef/probe.o] Error 1
+make: *** [../../../linux-6.4.0-150600.23.103/Makefile:2059: /tmp/tmp.uCVGvBL5ef] Error 2
+/tmp/tmp.uCVGvBL5ef/probe.c: In function ‘p’:
+/tmp/tmp.uCVGvBL5ef/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Werror=int-conversion]
+ bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+                                                                                      ^
+In file included from /tmp/tmp.uCVGvBL5ef/probe.c:1:0:
+/usr/src/linux-6.4.0-150600.23.103/include/linux/dma-fence.h:471:20: note: expected ‘u64 {aka long long unsigned int}’ but argument is of type ‘struct dma_fence *’
+ static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+                    ^~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+make[1]: *** [/usr/src/linux-6.4.0-150600.23.103/scripts/Makefile.build:252: /tmp/tmp.uCVGvBL5ef/probe.o] Error 1
+make: *** [../../../linux-6.4.0-150600.23.103/Makefile:2059: /tmp/tmp.uCVGvBL5ef] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-6.4.0-150600.23.103-obj/x86_64/default'
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-6.4.0-150600.23.103-obj/x86_64/default'
+glibc 2.38, x86_64, kernel 6.4.0-150600.23.103-default, preflight OK
+Mesa D3D12 VA-API: []
+OpenCL ICD: []
+glibc 2.38, x86_64, kernel 6.4.0-150600.23.103-default, preflight OK
+Mesa D3D12 VA-API: []
+OpenCL ICD: []
+/lib/modules/6.4.0-150600.23.103-default/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4299403 Nov 24 03:20 /lib/modules/6.4.0-150600.23.103-default/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=100(users) groups=100(users),486(video),1000(sudo),1001(wheel)
+crw-rw---- 1 root video 10, 260 Nov 24 03:20 /dev/dxg
+boot_id=e9ebb4d8-28db-4c94-a933-c1194af0c185 uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+SecureBoot enabled
+GPU-PV module signing
+59:70:E5:AA:9C:68:3C:66:17:EA:7D:94:F9:09:E5:52:AD:92:77:9E
+On
+module dxgkrnl format gpupv +p
+gpupv-codec-comparison: line 20: vainfo: command not found
+No accessible Intel D3D12 VA display exposing both H.264 encode and decode.
+comparison_exit=77
+gpupv-va-runtime.tgz: OK
+ffmpeg	7:6.1.1-3ubuntu5
+libc6:amd64	2.39-0ubuntu8.9
+libllvm20:amd64	1:20.1.2-0ubuntu1~24.04.3
+libva2:amd64	2.20.0-2ubuntu0.2
+mesa-libgallium:amd64	25.2.8-0ubuntu0.24.04.5
+mesa-va-drivers:amd64	25.2.8-0ubuntu0.24.04.5
+vainfo	2.12.0+ds1-1
+total 0
+drwxr-xr-x 2 root root         80 Nov 24 03:22 by-path
+crw-rw---- 1 root video  226,   0 Nov 24 03:21 card0
+crw-rw---- 1 root video  226,   1 Nov 24 03:22 card1
+crw-rw-rw- 1 root render 226, 128 Nov 24 03:22 renderD128
+libva info: VA-API version 1.20.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /tmp/tmp.szfOsvKdB6/lib/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_20
+libva info: va_openDriver() returns 0
+vainfo.bin: VA-API version: 1.20 (libva 2.12.0)
+vainfo.bin: Driver version: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.5 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo.bin: Supported profile and entrypoints
+      VAProfileH264ConstrainedBaseline:	VAEntrypointVLD
+      VAProfileH264ConstrainedBaseline:	VAEntrypointEncSlice
+      VAProfileH264Main               :	VAEntrypointVLD
+      VAProfileH264Main               :	VAEntrypointEncSlice
+      VAProfileH264High               :	VAEntrypointVLD
+      VAProfileH264High               :	VAEntrypointEncSlice
+      VAProfileHEVCMain               :	VAEntrypointVLD
+      VAProfileHEVCMain               :	VAEntrypointEncSlice
+      VAProfileHEVCMain10             :	VAEntrypointVLD
+      VAProfileHEVCMain10             :	VAEntrypointEncSlice
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+Testing Intel D3D12 H.264 on /dev/dri/renderD128
+[AVHWDeviceContext @ 0x555556b15f00] libva: VA-API version 1.20.0
+[AVHWDeviceContext @ 0x555556b15f00] libva: User environment variable requested driver 'd3d12'
+[AVHWDeviceContext @ 0x555556b15f00] libva: Trying to open /tmp/tmp.szfOsvKdB6/lib/d3d12_drv_video.so
+[AVHWDeviceContext @ 0x555556b15f00] libva: Found init function __vaDriverInit_1_20
+[AVHWDeviceContext @ 0x555556b15f00] libva: va_openDriver() returns 0
+[AVHWDeviceContext @ 0x555556b15f00] Initialised VAAPI connection: version 1.20
+[AVHWDeviceContext @ 0x555556b15f00] VAAPI driver: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.5 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[AVHWDeviceContext @ 0x555556b15f00] Driver not found in known nonstandard list, using standard behaviour.
+[Parsed_testsrc2_0 @ 0x555556d9ffc0] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 15 tbn
+[out#0/h264 @ 0x555556de91c0] No explicit maps, mapping streams automatically...
+[vost#0:0/h264_vaapi @ 0x555556dea180] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (h264_vaapi))
+[graph 0 input from stream 0:0 @ 0x555556e6f8c0] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1
+[auto_scale_0 @ 0x555556e70a80] w:iw h:ih flags:'' interl:0
+[Parsed_format_0 @ 0x555556e6cb00] auto-inserting filter 'auto_scale_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_format_0'
+[auto_scale_0 @ 0x555556e70a80] w:320 h:240 fmt:yuv420p sar:1/1 -> w:320 h:240 fmt:nv12 sar:1/1 flags:0x00000004
+[h264_vaapi @ 0x555556dea540] Using input frames context (format vaapi) with h264_vaapi encoder.
+[h264_vaapi @ 0x555556dea540] Input surface format is nv12.
+[h264_vaapi @ 0x555556dea540] Using VAAPI profile VAProfileH264High (7).
+[h264_vaapi @ 0x555556dea540] Using VAAPI entrypoint VAEntrypointEncSlice (6).
+[h264_vaapi @ 0x555556dea540] Using VAAPI render target format YUV420 (0x1).
+[h264_vaapi @ 0x555556dea540] No quality level set; using default (20).
+[h264_vaapi @ 0x555556dea540] RC mode: CQP.
+[h264_vaapi @ 0x555556dea540] RC quality: 20.
+[h264_vaapi @ 0x555556dea540] RC framerate: 15/1 (15.00 fps).
+[h264_vaapi @ 0x555556dea540] Driver does not report any additional prediction constraints.
+[h264_vaapi @ 0x555556dea540] Using intra and P-frames (supported references: 2 / 0).
+[h264_vaapi @ 0x555556dea540] All wanted packed headers available (wanted 0xd, found 0x1f).
+[h264_vaapi @ 0x555556dea540] Using level 1.2.
+Output #0, h264, to '/tmp/tmp.HKs99L2lNT/test.h264':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: h264 (High), 1 reference frame, vaapi(tv, progressive), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 h264_vaapi
+gpupv-codec-comparison: line 18:  1368 Killed                  timeout -k 5 60 ffmpeg -nostdin -nostats -hide_banner -loglevel verbose -vaapi_device "$node" -f lavfi -i testsrc2=size=320x240:rate=15 -vf format=nv12,hwupload -frames:v 15 -c:v h264_vaapi -f h264 "$tmp/test.h264"
+isolated_va_exit=137
+uid=1000(tester) gid=100(users) groups=100(users),486(video),1000(sudo),1001(wheel)
+crw-rw---- 1 root video 10, 260 Nov 24 03:20 /dev/dxg
+
+/dev/dri:
+total 0
+drwxr-xr-x 2 root root         80 Nov 24 03:22 by-path
+crw-rw---- 1 root video  226,   0 Nov 24 03:21 card0
+crw-rw---- 1 root video  226,   1 Nov 24 03:22 card1
+crw-rw-rw- 1 root render 226, 128 Nov 24 03:22 renderD128
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/lib/libdxcore.so'
+	linux-vdso.so.1 (0x00007fff4fd6f000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007ff06da00000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007ff06dd45000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007ff06dc5b000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007ff06dc56000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007ff06de3c000)
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/lib/libd3d12.so'
+	linux-vdso.so.1 (0x00007ffded679000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f47ad000000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f47ad2c6000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f47acf16000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f47ad2c1000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f47ad39b000)
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so'
+	linux-vdso.so.1 (0x00007fff313e5000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f5deb89a000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f5deb897000)
+	libstdc++.so.6 => /usr/lib64/libstdc++.so.6 (0x00007f5deb400000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f5deb7ab000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f5deb77d000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f5deb000000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f5deb8b3000)
+diagnostic_collection_finished
+restored_original_module_policy
+managed_paths_clean
+managed_paths_clean

@@ -1,0 +1,37 @@
+#!/bin/sh
+# Run as the ordinary GPU user on a disposable guest with passwordless sudo.
+set -eu
+test "$(id -u)" != 0
+d="$1"
+mkdir -p "$d"
+id >"$d/access.txt"
+test -c /dev/dxg && test -r /dev/dxg && test -w /dev/dxg
+cat /proc/sys/kernel/random/boot_id >>"$d/access.txt"
+mark="linuxpv-compute-$(cat /proc/sys/kernel/random/uuid)"
+printf '<6>%s\n' "$mark" | sudo -n tee /dev/kmsg >/dev/null
+status=0
+gpupv-guest verify >"$d/compute.txt" 2>&1 || status=$?
+sudo -n dmesg --color=never | sed -n "/$mark/,$ p" >"$d/compute-dmesg.txt"
+grep -Fq "$mark" "$d/compute-dmesg.txt"
+if [ "$status" = 0 ]; then
+    python3 - "$d/compute.txt" <<'PYTHON' || status=1
+from collections import Counter
+import json, re, sys
+from pathlib import Path
+device = json.loads(Path("/opt/hyperv-linux-gpupv/device.json").read_text())
+expected = Counter()
+for card in device.get("adapters", [device]):
+    pci = re.search(r"VEN_([0-9A-F]{4})&DEV_([0-9A-F]{4})", card["device"], re.I)
+    if not pci:
+        sys.exit("Unable to verify PCI identity: " + card["device"])
+    expected[":".join(pci.groups()).lower()] += 1
+observed = Counter(re.findall(r"^Adapter ([0-9a-f]+:[0-9a-f]+) hardware=1$", Path(sys.argv[1]).read_text(), re.M))
+if observed != expected:
+    sys.exit("DXCore adapter mismatch: expected %s, observed %s" % (expected, observed))
+print("Hardware adapter identities verified:", sorted(observed.elements()))
+PYTHON
+fi
+printf '%s\n' "$status" >"$d/compute.exit"
+grep -E 'dxgkio_.*Ioctl failed: -75' "$d/compute-dmesg.txt" >"$d/overflow.txt" || :
+cat "$d/compute.txt"
+exit "$status"

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "arch": "x86_64",
+  "version": "phase1-local.2",
+  "libraries": {
+    "libd3d12.so": "b3d78d409a4dbbe8612551fc0c0d746d3e58d7997ee7eba78ce1064d77cfa8c3",
+    "libdxcore.so": "83d1671a839bcf71709349e77cd68341515df2e63080765618876996a0f4190c",
+    "libd3d12core.so": "a4104a2022932d8e6c714f103ebd89db1c5bdbf36fe92151c88d3d93d4e3894d"
+  },
+  "kernels": [
+    {
+      "arch": "x86_64",
+      "release": "6.1.0-56-amd64",
+      "name": "dxgkrnl",
+      "vermagic": "6.1.0-56-amd64 SMP preempt mod_unload modversions",
+      "srcversion": "8FBA9DAE913927733D3E675",
+      "sha256": "7808f3585457da136bbc3794fea8baa85e6006ad564c477e31e8f06884a18856",
+      "targets": [
+        "debian-12"
+      ]
+    }
+  ],
+  "probeSha256": "ded7642c06a0062e78b80a775d66682c6b0c90642adf536b98c557c87a92e8ee"
+}

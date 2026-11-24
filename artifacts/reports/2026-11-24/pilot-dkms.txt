@@ -1,0 +1,16 @@
+Creating symlink /var/lib/dkms/gpupv-dxgkrnl/0.1/source -> /usr/src/gpupv-dxgkrnl-0.1
+Sign command: /lib/modules/6.12.118+deb13-amd64/build/scripts/sign-file
+Signing key: /var/lib/dkms/mok.key
+Public certificate (MOK): /var/lib/dkms/mok.pub
+
+Building module(s)...... done.
+Signing module /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.ko
+Installing /lib/modules/6.12.118+deb13-amd64/updates/dkms/dxgkrnl.ko.xz
+Running depmod.... done.
+glibc 2.41, x86_64, kernel 6.12.118+deb13-amd64, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so']
+OpenCL ICD: []
+boot_id=7ca852b4-c548-46f6-890b-323babfa1060 uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+DKMS module signing key
+O

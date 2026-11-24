@@ -1,0 +1,2 @@
+Removed 391f89e6-7a50-4e45-bc10-dc07fe8bfa81 D:\linux-pv\.test\gpupv-test-f68e8fa2dee540998e12aa447be4f1f3
+Inspected test inventory removed, including guest SSH identity and test image.

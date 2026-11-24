@@ -1,0 +1,213 @@
+NAME="Fedora Linux"
+VERSION="44 (Cloud Edition)"
+RELEASE_TYPE=stable
+ID=fedora
+VERSION_ID=44
+VERSION_CODENAME=""
+PRETTY_NAME="Fedora Linux 44 (Cloud Edition)"
+ANSI_COLOR="0;38;2;60;110;180"
+LOGO=fedora-logo-icon
+CPE_NAME="cpe:/o:fedoraproject:fedora:44"
+HOME_URL="https://fedoraproject.org/"
+DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US/fedora/f44/"
+SUPPORT_URL="https://ask.fedoraproject.org/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+REDHAT_BUGZILLA_PRODUCT="Fedora"
+REDHAT_BUGZILLA_PRODUCT_VERSION=44
+REDHAT_SUPPORT_PRODUCT="Fedora"
+REDHAT_SUPPORT_PRODUCT_VERSION=44
+SUPPORT_END=2027-05-19
+VARIANT="Cloud Edition"
+VARIANT_ID=cloud
+Linux gpupv-test-2814613e7f574db0b71296ea2233b002 6.19.10-300.fc44.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Mar 25 18:23:49 UTC 2026 x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+0x1414
+0x008e
+a327c651ea989fdec88eb6aec3cc3e8e2919625b39616c98522f0ef89cefd7a0  /mnt/gpupv/guest/gpupv-guest
+4001f40d3fe9652feb87174e5653794e8754f07a2c10ca7446566a55ba029d43  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (GCC) 16.0.1 20260321 (Red Hat 16.0.1-0)
+  You are using:           gcc (GCC) 16.2.1 20261029 (Red Hat 16.2.1-3)
+probe.c:2:28: error: ‘struct dma_fence_ops’ has no member named ‘fence_value_str’
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[3]: *** [/usr/src/kernels/6.19.10-300.fc44.x86_64/scripts/Makefile.build:289: probe.o] Error 1
+make[2]: *** [/usr/src/kernels/6.19.10-300.fc44.x86_64/Makefile:2095: .] Error 2
+make[1]: *** [/usr/src/kernels/6.19.10-300.fc44.x86_64/Makefile:248: __sub-make] Error 2
+make: *** [Makefile:248: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/6.19.10-300.fc44.x86_64'
+make[1]: Entering directory '/tmp/tmptbim0die/kernel/drivers/hv/dxgkrnl'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (GCC) 16.0.1 20260321 (Red Hat 16.0.1-0)
+  You are using:           gcc (GCC) 16.2.1 20261029 (Red Hat 16.2.1-3)
+  CC [M]  dxgmodule.o
+  CC [M]  hmgr.o
+  CC [M]  misc.o
+  CC [M]  dxgadapter.o
+  CC [M]  ioctl.o
+  CC [M]  dxgvmbus.o
+  CC [M]  dxgprocess.o
+  CC [M]  dxgsyncfile.o
+  LD [M]  dxgkrnl.o
+  MODPOST Module.symvers
+  CC [M]  dxgkrnl.mod.o
+  CC [M]  .module-common.o
+  LD [M]  dxgkrnl.ko
+  BTF [M] dxgkrnl.ko
+Skipping BTF generation for dxgkrnl.ko due to unavailability of vmlinux
+make[1]: Leaving directory '/tmp/tmptbim0die/kernel/drivers/hv/dxgkrnl'
+make: Leaving directory '/usr/src/kernels/6.19.10-300.fc44.x86_64'
+ldconfig: /usr/lib/wsl/lib/libcuda.so.1 is not a symbolic link
+
+glibc 2.43, x86_64, kernel 6.19.10-300.fc44.x86_64, preflight OK
+glibc 2.43, x86_64, kernel 6.19.10-300.fc44.x86_64, preflight OK
+/usr/lib/modules/6.19.10-300.fc44.x86_64/updates/gpupv/dxgkrnl.ko
+-rw-r--r--. 1 root root system_u:object_r:modules_object_t:s0 4416627 Nov 24 02:35 /lib/modules/6.19.10-300.fc44.x86_64/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+crw-rw----. 1 root video 10, 262 Nov 24 02:36 /dev/dxg
+boot_id=65237e2b-f5a3-43cb-89d9-6097fda00a1b uid=1000 gpu=NVIDIA GeForce RTX 2060
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB
+SecureBoot enabled
+GPU-PV module signing
+48:BF:7A:44:09:4D:3E:63:20:CB:EB:54:AB:43:D3:B7:42:00:77:E9
+O
+module dxgkrnl format gpupv +p
+gpupv-codec.tgz: OK
+ffmpeg	7:6.1.1-3ubuntu5
+libc6:amd64	2.39-0ubuntu8.12
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+boot_id=65237e2b-f5a3-43cb-89d9-6097fda00a1b uid=1000 gpu=NVIDIA GeForce RTX 2060
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB
+NVIDIA GeForce RTX 2060: 7 * 5 + 3 = 38
+NVIDIA GeForce RTX 2060: 7 * 19 + 3 = 136
+NVIDIA GeForce RTX 2060: 7 * 127 + 3 = 892
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+[Parsed_testsrc2_0 @ 0x55556ad84900] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 15 tbn
+[out#0/matroska @ 0x55556ada5780] No explicit maps, mapping streams automatically...
+[vost#0:0/h264_nvenc @ 0x55556ada6c80] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (h264_nvenc))
+Press [q] to stop, [?] for help
+[graph 0 input from stream 0:0 @ 0x55556adc4880] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1
+[h264_nvenc @ 0x55556ada7040] Loaded Nvenc version 13.1
+[h264_nvenc @ 0x55556ada7040] Nvenc initialized successfully
+[h264_nvenc @ 0x55556ada7040] 1 CUDA capable devices found
+[h264_nvenc @ 0x55556ada7040] [ GPU #0 - < NVIDIA GeForce RTX 2060 > has Compute SM 7.5 ]
+[h264_nvenc @ 0x55556ada7040] supports NVENC
+Output #0, matroska, to '/tmp/tmp.woQQyL7KfT/test.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: h264 (Main), 1 reference frame (H264 / 0x34363248), yuv420p(progressive), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 2000 kb/s, 15 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 h264_nvenc
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/2000000 buffer size: 4000000 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    
+frame=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    
+[out#0/matroska @ 0x55556ada5780] All streams finished
+[out#0/matroska @ 0x55556ada5780] Terminating muxer thread
+No more output streams to write to, finishing.
+[vist#0:0/wrapped_avframe @ 0x55556ada5a40] Decoder thread received EOF packet
+[vist#0:0/wrapped_avframe @ 0x55556ada5a40] Decoder returned EOF, finishing
+[vist#0:0/wrapped_avframe @ 0x55556ada5a40] Terminating decoder thread
+[AVIOContext @ 0x55556adc3dc0] Statistics: 68359 bytes written, 0 seeks, 1 writeouts
+[out#0/matroska @ 0x55556ada5780] Output file #0 (/tmp/tmp.woQQyL7KfT/test.mkv):
+[out#0/matroska @ 0x55556ada5780]   Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (67624 bytes); 
+[out#0/matroska @ 0x55556ada5780]   Total: 15 packets (67624 bytes) muxed
+[out#0/matroska @ 0x55556ada5780] video:66kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.086892%
+frame=   15 fps=0.0 q=13.0 Lsize=      67kB time=00:00:00.73 bitrate= 745.7kbits/s speed=1.03x    
+[h264_nvenc @ 0x55556ada7040] Nvenc unloaded
+[in#0/lavfi @ 0x55556ad83e00] Terminating demuxer thread
+[in#0/lavfi @ 0x55556ad83e00] Input file #0 (testsrc2=size=320x240:rate=15):
+[in#0/lavfi @ 0x55556ad83e00]   Input stream #0:0 (video): 17 packets read (8160 bytes); 15 frames decoded; 0 decode errors; 
+[in#0/lavfi @ 0x55556ad83e00]   Total: 17 packets (8160 bytes) demuxed
+[h264 @ 0x555571a74e80] Reinit context to 320x240, pix_fmt: yuv420p
+[h264 @ 0x555571a74e80] Increasing reorder buffer to 1
+[h264 @ 0x555571a74e80] Increasing reorder buffer to 2
+Input #0, matroska,webm, from '/tmp/tmp.woQQyL7KfT/test.mkv':
+  Metadata:
+    ENCODER         : Lavf60.16.100
+  Duration: 00:00:01.00, start: 0.000000, bitrate: 546 kb/s
+  Stream #0:0: Video: h264 (Main), 1 reference frame, yuv420p(progressive, left), 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 1k tbn
+    Metadata:
+      ENCODER         : Lavc60.31.102 h264_nvenc
+      DURATION        : 00:00:01.000000000
+[out#0/framemd5 @ 0x555571a79400] No explicit maps, mapping streams automatically...
+[vost#0:0/rawvideo @ 0x555571b28c00] Created video stream from input stream 0:0
+[h264_cuvid @ 0x555571af54c0] CUVID capabilities for h264_cuvid:
+[h264_cuvid @ 0x555571af54c0] 8 bit: supported: 1, min_width: 48, max_width: 4096, min_height: 16, max_height: 4096
+[h264_cuvid @ 0x555571af54c0] 10 bit: supported: 0, min_width: 0, max_width: 0, min_height: 0, max_height: 0
+[h264_cuvid @ 0x555571af54c0] 12 bit: supported: 0, min_width: 0, max_width: 0, min_height: 0, max_height: 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (h264_cuvid) -> rawvideo (native))
+Press [q] to stop, [?] for help
+[h264_cuvid @ 0x555571af54c0] Formats: Original: cuda | HW: cuda | SW: nv12
+[in#0/matroska,webm @ 0x555571a72e80] EOF while reading input
+[in#0/matroska,webm @ 0x555571a72e80] Terminating demuxer thread
+[vist#0:0/h264 @ 0x555571af6b80] Decoder thread received EOF packet
+[graph 0 input from stream 0:0 @ 0x555571c010c0] w:320 h:240 pixfmt:cuda tb:1/1000 fr:15/1 sar:1/1
+[vist#0:0/h264 @ 0x555571af6b80] Decoder returned EOF, finishing
+[vist#0:0/h264 @ 0x555571af6b80] Terminating decoder thread
+Output #0, framemd5, to '/tmp/tmp.woQQyL7KfT/frames':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: rawvideo, 1 reference frame (NV12 / 0x3231564E), nv12(tv, progressive, left), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 13824 kb/s, 15 fps, 15 tbn
+    Metadata:
+      DURATION        : 00:00:01.000000000
+      encoder         : Lavc60.31.102 rawvideo
+frame=    6 fps=0.0 q=-0.0 size=       1kB time=00:00:00.93 bitrate=   5.3kbits/s speed=11.2x    
+No more output streams to write to, finishing.
+[out#0/framemd5 @ 0x555571a79400] All streams finished
+[out#0/framemd5 @ 0x555571a79400] Terminating muxer thread
+[AVIOContext @ 0x5555726fd940] Statistics: 1415 bytes written, 0 seeks, 1 writeouts
+[out#0/framemd5 @ 0x555571a79400] Output file #0 (/tmp/tmp.woQQyL7KfT/frames):
+[out#0/framemd5 @ 0x555571a79400]   Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (1728000 bytes); 
+[out#0/framemd5 @ 0x555571a79400]   Total: 15 packets (1728000 bytes) muxed
+[out#0/framemd5 @ 0x555571a79400] video:1688kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+frame=   15 fps=0.0 q=-0.0 Lsize=       1kB time=00:00:00.93 bitrate=  12.1kbits/s speed=10.8x    
+[in#0/matroska,webm @ 0x555571a72e80] Input file #0 (/tmp/tmp.woQQyL7KfT/test.mkv):
+[in#0/matroska,webm @ 0x555571a72e80]   Input stream #0:0 (video): 15 packets read (67624 bytes); 15 frames decoded; 0 decode errors; 
+[in#0/matroska,webm @ 0x555571a72e80]   Total: 15 packets (67624 bytes) demuxed
+[AVIOContext @ 0x555571a7b7c0] Statistics: 68359 bytes read, 0 seeks
+#format: frame checksums
+#version: 2
+#hash: MD5
+#software: Lavf60.16.100
+#tb 0: 1/15
+#media_type 0: video
+#codec_id 0: rawvideo
+#dimensions 0: 320x240
+#sar 0: 1/1
+#stream#, dts,        pts, duration,     size, hash
+0,          0,          0,        1,   115200, 3c0039b1d57e8461f43e16e48743fad9
+0,          1,          1,        1,   115200, fb1637f5c6df7c0be5411a72b1e4a000
+0,          2,          2,        1,   115200, f253fe6d61157a377c2bfed8e90d7c58
+0,          3,          3,        1,   115200, 25e56658acc922d50405fa62ec92967c
+0,          4,          4,        1,   115200, 6022bb7f9d64ebf0fe46c2baa321fe95
+0,          5,          5,        1,   115200, a47880e720ec20d22a6a4561294ea719
+0,          6,          6,        1,   115200, 9c975bae581878d84ddc58db5f7dd633
+0,          7,          7,        1,   115200, 3b137898d920d12c39bb0b30aca4aedc
+0,          8,          8,        1,   115200, 1b5c426e558a0da92bf504db0ccbf1f6
+0,          9,          9,        1,   115200, 415241f985e6c37df565b2632372677e
+0,         10,         10,        1,   115200, 3f6aa89e3398b2ab9b8b17e8a855e91f
+0,         11,         11,        1,   115200, 053baf0c1f36253c2aa74ecffcdae490
+0,         12,         12,        1,   115200, 621a8cae31484ce29b39072735dc039f
+0,         13,         13,        1,   115200, 4e4d29260fcad539177576c693dbe17c
+0,         14,         14,        1,   115200, 46b587d82936a7da08c1cb30b27602ec
+managed_paths_clean
+managed_paths_clean

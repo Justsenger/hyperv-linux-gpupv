@@ -1,0 +1,259 @@
+NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+Linux gpupv-test-e33aa7b59c77491b87564e99e864e0ef 7.3.4-arch1-2 #1 SMP PREEMPT_DYNAMIC Thu, 12 Nov 2026 20:11:37 +0000 x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),983(video),998(wheel),1000(sudo)
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (6) python-cffi-2.1.1-1  python-cryptography-50.0.2-2  python-pefile-2024.8.26-2  python-pycparser-3.12-1  sbsigntools-0.9.5-5  systemd-ukify-262.2-1
+
+Total Download Size:   2.14 MiB
+Total Installed Size:  9.93 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ python-cryptography-50.0.2-2-x86_64 downloading...
+ python-cffi-2.1.1-1-x86_64 downloading...
+ python-pefile-2024.8.26-2-any downloading...
+ python-pycparser-3.12-1-any downloading...
+ sbsigntools-0.9.5-5-x86_64 downloading...
+ systemd-ukify-262.2-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing python-pycparser...
+installing python-cffi...
+Optional dependencies for python-cffi
+    python-setuptools: "limited api" version checking in cffi.setuptools_ext
+installing python-cryptography...
+installing python-pefile...
+installing systemd-ukify...
+Optional dependencies for systemd-ukify
+    python-pillow: Show the size of splash image
+    sbsigntools: Sign the embedded kernel [pending]
+installing sbsigntools...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+Signing Unsigned original image
+Kernel version not specified, starting autodetection 😖.
+Found uname version: 7.3.4-arch1-2
+Wrote unsigned /var/tmp/gpupv-uki.V9VYc0BN/unsigned.efi
+Signing Unsigned original image
+Signature verification OK
+a84ca7537650d9e53349d773323a72495d36fc6dda727eee4fce3c7f8168a9a3  /efi/EFI/gpupv-test-shim/grubx64.efi
+6fe6e1bcbe6cf6baec8e056d40361ca1aa715cc04ddcc2855351de060b84350b  /efi/EFI/BOOT/BOOTX64.EFI
+Running timer as unit: run-p581-i581.timer
+Will run service as unit: run-p581-i581.service
+gpupv-test-e33aa7b59c77491b87564e99e864e0ef
+7.3.4-arch1-2
+SecureBoot enabled
+root=UUID=a4fe6a47-a8cc-4beb-966a-7757429a6771 rw net.ifnames=0 rootflags=compress=zstd:1 console=tty0 console=ttyS0,115200
+0x1414
+0x008e
+a327c651ea989fdec88eb6aec3cc3e8e2919625b39616c98522f0ef89cefd7a0  /mnt/gpupv/guest/gpupv-guest
+4001f40d3fe9652feb87174e5653794e8754f07a2c10ca7446566a55ba029d43  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+probe.c:2:28: error: ‘struct dma_fence_ops’ has no member named ‘fence_value_str’
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[3]: *** [/usr/lib/modules/7.3.4-arch1-2/build/scripts/Makefile.build:290: probe.o] Error 1
+make[2]: *** [/usr/lib/modules/7.3.4-arch1-2/build/Makefile:2229: .] Error 2
+make[1]: *** [/usr/lib/modules/7.3.4-arch1-2/build/Makefile:248: __sub-make] Error 2
+make: *** [Makefile:248: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/lib/modules/7.3.4-arch1-2/build'
+make[1]: Entering directory '/tmp/tmpt4nejdhx/kernel/drivers/hv/dxgkrnl'
+  CC [M]  dxgmodule.o
+  CC [M]  hmgr.o
+  CC [M]  misc.o
+  CC [M]  dxgadapter.o
+  CC [M]  ioctl.o
+  CC [M]  dxgvmbus.o
+  CC [M]  dxgprocess.o
+  CC [M]  dxgsyncfile.o
+  LD [M]  dxgkrnl.o
+  MODPOST Module.symvers
+  CC [M]  dxgkrnl.mod.o
+  CC [M]  .module-common.o
+  LD [M]  dxgkrnl.ko
+  BTF [M] dxgkrnl.ko
+make[1]: Leaving directory '/tmp/tmpt4nejdhx/kernel/drivers/hv/dxgkrnl'
+make: Leaving directory '/usr/lib/modules/7.3.4-arch1-2/build'
+ldconfig: /usr/lib/wsl/lib/libcuda.so.1 is not a symbolic link
+
+glibc 2.44, x86_64, kernel 7.3.4-arch1-2, preflight OK
+glibc 2.44, x86_64, kernel 7.3.4-arch1-2, preflight OK
+/usr/lib/modules/7.3.4-arch1-2/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4651203 Nov 24 04:03 /lib/modules/7.3.4-arch1-2/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),983(video),998(wheel),1000(sudo)
+crw-rw---- 1 root video 10, 262 Nov 24 04:03 /dev/dxg
+boot_id=03813864-56d5-40c7-a783-a2b09315ff21 uid=1000 gpu=NVIDIA GeForce RTX 2060
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB
+SecureBoot enabled
+GPU-PV module signing
+2D:AD:92:0B:2D:D8:4C:52:D9:88:54:CE:4C:40:46:72:E2:74:89:69
+O
+module dxgkrnl format gpupv +p
+boot_id=03813864-56d5-40c7-a783-a2b09315ff21 uid=1000 gpu=NVIDIA GeForce RTX 2060
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB
+NVIDIA GeForce RTX 2060: 7 * 5 + 3 = 38
+NVIDIA GeForce RTX 2060: 7 * 19 + 3 = 136
+NVIDIA GeForce RTX 2060: 7 * 127 + 3 = 892
+[Parsed_testsrc2_0 @ 0x56001da5d840] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 15 tbn
+[out#0/matroska @ 0x56001da80e00] No explicit maps, mapping streams automatically...
+[vost#0:0/h264_nvenc @ 0x56001da81580] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (h264_nvenc))
+[vost#0:0/h264_nvenc @ 0x56001da81580] Starting thread...
+[vf#0:0 @ 0x56001da9ca80] Starting thread...
+[vist#0:0/wrapped_avframe @ 0x56001da7ffc0] [dec:wrapped_avframe @ 0x56001da9e340] Starting thread...
+[in#0/lavfi @ 0x56001da5cb80] Starting thread...
+Press [q] to stop, [?] for help
+[graph -1 input from stream 0:0 @ 0x7fa170001640] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1 csp:unknown range:unknown alpha:unspecified chroma_loc:unspecified
+[graph -1 input from stream 0:0 @ 0x7fa170001640] video frame properties congruent with link at pts_time: 0
+[h264_nvenc @ 0x56001da5e400] Loaded Nvenc version 13.1
+[h264_nvenc @ 0x56001da5e400] Nvenc initialized successfully
+[h264_nvenc @ 0x56001da5e400] 1 CUDA capable devices found
+[h264_nvenc @ 0x56001da5e400] [ GPU #0 - < NVIDIA GeForce RTX 2060 > has Compute SM 7.5 ]
+[h264_nvenc @ 0x56001da5e400] supports NVENC
+Output #0, matroska, to '/tmp/tmp.4fiCLR1iRN/test.mkv':
+  Metadata:
+    encoder         : Lavf63.16.100
+  Stream #0:0: Video: h264 (High), 1 reference frame (H264 / 0x34363248), yuv420p(tv, progressive), 320x240 [SAR 1:1 DAR 4:3], q=2-31, 2000 kb/s, 15 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc63.24.100 h264_nvenc
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/2000000 buffer size: 4000000 vbv_delay: N/A
+[out#0/matroska @ 0x56001da80e00] Starting thread...
+[vf#0:0 @ 0x56001da9ca80] All consumers returned EOF
+[vist#0:0/wrapped_avframe @ 0x56001da7ffc0] [dec:wrapped_avframe @ 0x56001da9e340] Decoder returned EOF, finishing
+[vist#0:0/wrapped_avframe @ 0x56001da7ffc0] [dec:wrapped_avframe @ 0x56001da9e340] Terminating thread with success
+[vf#0:0 @ 0x56001da9ca80] Terminating thread with success
+[vist#0:0/wrapped_avframe @ 0x56001da7ffc0] All consumers of this stream are done
+[in#0/lavfi @ 0x56001da5cb80] All consumers are done
+[in#0/lavfi @ 0x56001da5cb80] Terminating thread with success
+[vost#0:0/h264_nvenc @ 0x56001da81580] [enc:h264_nvenc @ 0x56001da81c00] Encoder thread received EOF
+[vost#0:0/h264_nvenc @ 0x56001da81580] Terminating thread with success
+[out#0/matroska @ 0x56001da80e00] All streams finished
+[out#0/matroska @ 0x56001da80e00] Terminating thread with success
+[AVIOContext @ 0x56001dadfbc0] Statistics: 67239 bytes written, 0 seeks, 1 writeouts
+[out#0/matroska @ 0x56001da80e00] Output file #0 (/tmp/tmp.4fiCLR1iRN/test.mkv):
+[out#0/matroska @ 0x56001da80e00]   Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (66489 bytes); 
+[out#0/matroska @ 0x56001da80e00]   Total: 15 packets (66489 bytes) muxed
+[out#0/matroska @ 0x56001da80e00] video:65KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.128006%
+frame=   15 fps=0.0 q=13.0 Lsize=      66KiB time=00:00:00.80 bitrate= 672.4kbits/s speed=0.875x elapsed=0:00:00.91    
+[h264_nvenc @ 0x56001da5e400] Nvenc unloaded
+[in#0/lavfi @ 0x56001da5cb80] Input file #0 (testsrc2=size=320x240:rate=15):
+[in#0/lavfi @ 0x56001da5cb80]   Input stream #0:0 (video): 21 packets read (8904 bytes); 19 frames decoded; 0 decode errors; 
+[in#0/lavfi @ 0x56001da5cb80]   Total: 21 packets (8904 bytes) demuxed
+
+Exiting with exit code 0
+[h264 @ 0x561787e89300] Reinit context to 320x240, pix_fmt: yuv420p
+Input #0, matroska,webm, from '/tmp/tmp.4fiCLR1iRN/test.mkv':
+  Metadata:
+    ENCODER         : Lavf63.16.100
+  Duration: 00:00:01.00, start: 0.000000, bitrate: 537 kb/s
+  Stream #0:0: Video: h264 (High), 1 reference frame, yuv420p(tv, progressive, left), 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 1k tbn
+    Metadata:
+      ENCODER         : Lavc63.24.100 h264_nvenc
+      DURATION        : 00:00:01.000000000
+[out#0/framemd5 @ 0x561787e8aa00] No explicit maps, mapping streams automatically...
+[vost#0:0/rawvideo @ 0x561787f59440] Created video stream from input stream 0:0
+[h264_cuvid @ 0x561787eb3700] CUVID capabilities for h264_cuvid:
+[h264_cuvid @ 0x561787eb3700] 8 bit: supported: 1, min_width: 48, max_width: 4096, min_height: 16, max_height: 4096
+[h264_cuvid @ 0x561787eb3700] 10 bit: supported: 0, min_width: 0, max_width: 0, min_height: 0, max_height: 0
+[h264_cuvid @ 0x561787eb3700] 12 bit: supported: 0, min_width: 0, max_width: 0, min_height: 0, max_height: 0
+[vost#0:0/rawvideo @ 0x561787f59440] Discarding stream metadata 'DURATION' because the stream is being re-encoded. Use '-keep_metadata DURATION' to keep it.
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (h264_cuvid) -> rawvideo (native))
+[vost#0:0/rawvideo @ 0x561787f59440] Starting thread...
+[vf#0:0 @ 0x561787f53900] Starting thread...
+[vist#0:0/h264 @ 0x561787e8a7c0] [dec:h264_cuvid @ 0x561787eb34c0] Starting thread...
+[in#0/matroska,webm @ 0x561787e86cc0] Starting thread...
+Press [q] to stop, [?] for help
+[h264_cuvid @ 0x561787eb3700] Formats: Original: cuda | HW: cuda | SW: nv12
+[graph -1 input from stream 0:0 @ 0x7f2344001cc0] w:320 h:240 pixfmt:cuda tb:1/1000 fr:15/1 sar:1/1 csp:unknown range:tv alpha:unspecified chroma_loc:left
+[graph -1 input from stream 0:0 @ 0x7f2344001cc0] video frame properties congruent with link at pts_time: 0
+Output #0, framemd5, to '/tmp/tmp.4fiCLR1iRN/frames':
+  Metadata:
+    encoder         : Lavf63.16.100
+  Stream #0:0: Video: rawvideo, 1 reference frame (NV12 / 0x3231564E), nv12(tv, progressive, left), 320x240 [SAR 1:1 DAR 4:3], q=2-31, 13824 kb/s, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc63.24.100 rawvideo
+[out#0/framemd5 @ 0x561787e8aa00] Starting thread...
+[in#0/matroska,webm @ 0x561787e86cc0] EOF while reading input
+[in#0/matroska,webm @ 0x561787e86cc0] Terminating thread with success
+[vist#0:0/h264 @ 0x561787e8a7c0] [dec:h264_cuvid @ 0x561787eb34c0] Decoder thread received EOF packet
+[vist#0:0/h264 @ 0x561787e8a7c0] [dec:h264_cuvid @ 0x561787eb34c0] Decoder returned EOF, finishing
+[vost#0:0/rawvideo @ 0x561787f59440] [enc:rawvideo @ 0x561787f537c0] Encoder thread received EOF
+[vost#0:0/rawvideo @ 0x561787f59440] Terminating thread with success
+[out#0/framemd5 @ 0x561787e8aa00] All streams finished
+[out#0/framemd5 @ 0x561787e8aa00] Terminating thread with success
+[vf#0:0 @ 0x561787f53900] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x561787f53900] All consumers returned EOF
+[vf#0:0 @ 0x561787f53900] Terminating thread with success
+[vist#0:0/h264 @ 0x561787e8a7c0] [dec:h264_cuvid @ 0x561787eb34c0] Terminating thread with success
+[AVIOContext @ 0x5617889938c0] Statistics: 1415 bytes written, 0 seeks, 1 writeouts
+[out#0/framemd5 @ 0x561787e8aa00] Output file #0 (/tmp/tmp.4fiCLR1iRN/frames):
+[out#0/framemd5 @ 0x561787e8aa00]   Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (1728000 bytes); 
+[out#0/framemd5 @ 0x561787e8aa00]   Total: 15 packets (1728000 bytes) muxed
+[out#0/framemd5 @ 0x561787e8aa00] video:1688KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=   15 fps=0.0 q=-0.0 Lsize=       1KiB time=00:00:01.00 bitrate=  11.3kbits/s speed=9.99x elapsed=0:00:00.10    
+[in#0/matroska,webm @ 0x561787e86cc0] Input file #0 (/tmp/tmp.4fiCLR1iRN/test.mkv):
+[in#0/matroska,webm @ 0x561787e86cc0]   Input stream #0:0 (video): 15 packets read (66489 bytes); 15 frames decoded; 0 decode errors; 
+[in#0/matroska,webm @ 0x561787e86cc0]   Total: 15 packets (66489 bytes) demuxed
+[AVIOContext @ 0x561787e8f880] Statistics: 67239 bytes read, 0 seeks
+
+Exiting with exit code 0
+#format: frame checksums
+#version: 2
+#hash: MD5
+#software: Lavf63.16.100
+#tb 0: 1/15
+#media_type 0: video
+#codec_id 0: rawvideo
+#dimensions 0: 320x240
+#sar 0: 1/1
+#stream#, dts,        pts, duration,     size, hash
+0,          0,          0,        1,   115200, ea523c24cde90df7a5f0722176f5a5f8
+0,          1,          1,        1,   115200, 18d2a88764bb467f56245d5611672e0d
+0,          2,          2,        1,   115200, f78449b724e147b54eb88aeb90785f2e
+0,          3,          3,        1,   115200, 179bb3e49a59c87e67ca0ff58c8d1376
+0,          4,          4,        1,   115200, 66a8de0a6ea5f0fa87ed80b605eae3a9
+0,          5,          5,        1,   115200, 3abe194b6a3946e6933983d89f65f08e
+0,          6,          6,        1,   115200, c13b259208ca04da4da14033cb0475b6
+0,          7,          7,        1,   115200, 311d057b2b2b70713bc71babd6eb1437
+0,          8,          8,        1,   115200, 607a7ecdb8663f982c0addd2e3b157ce
+0,          9,          9,        1,   115200, 31fec0a548ae35b9e8e98c4c3dfea027
+0,         10,         10,        1,   115200, 769ff2bd2daa4bd9f973d541e8ccfc61
+0,         11,         11,        1,   115200, 6ccc65a453b32ef63b78948620df3d89
+0,         12,         12,        1,   115200, 288b9cfbf811573d7d5f98a5ba8d1f57
+0,         13,         13,        1,   115200, d53c476605eb5fe52dff5727f103a6f0
+0,         14,         14,        1,   115200, 76f7f5f3ab8fe27682c43c00ec582d22
+managed_paths_clean
+managed_paths_clean

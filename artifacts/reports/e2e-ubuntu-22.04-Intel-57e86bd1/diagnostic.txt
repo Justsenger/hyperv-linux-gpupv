@@ -1,0 +1,24 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+Linux gpupv-test-57e86bd1c1e644eaae2e043d344c86c3 5.15.0-203-generic #213-Ubuntu SMP Fri Oct 23 13:21:06 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+ls: cannot access '/dev/dxg': No such file or directory
+ls: cannot access '/sys/bus/pci/devices/*/driver': No such file or directory
+[    1.259289] hv_vmbus: hv_mmio=[mem 0xc0000000-0xfed3ffff],[mem 0xfe0000000-0x17dfffffff] fb=[mem 0xc0000000-0xc7ffffff]
+[    1.264127] hv_vmbus: Vmbus version:5.3
+[    1.277584] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    1.282046] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    1.313761] hv_vmbus: registering driver hyperv_keyboard
+[    1.329118] hv_vmbus: registering driver hv_utils
+[    1.333577] hv_vmbus: registering driver hv_netvsc
+[    1.341558] hv_vmbus: registering driver hv_pci
+[    1.344505] hv_vmbus: registering driver hv_storvsc
+[    1.349641] hv_vmbus: registering driver hid_hyperv
+[    1.352779] hv_pci 451a9ded-735f-418b-a043-76ade7a71851: PCI VMBus probing: Using version 0x10004
+[    1.377790] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input1
+[    1.393578] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    1.419215] hv_pci 451a9ded-735f-418b-a043-76ade7a71851: PCI host bridge to bus 735f:00
+[    1.510191] hv_vmbus: registering driver hyperv_drm
+[    4.125965] hv_vmbus: registering driver hyperv_fb
+[    4.129417] hv_vmbus: registering driver hv_balloon
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        31G  3.2G   28G  11% /
+lrwxrwxrwx 1 root root 41 Oct 23 12:46 /lib/modules/5.15.0-203-generic/build -> /usr/src/linux-headers-5.15.0-203-generic

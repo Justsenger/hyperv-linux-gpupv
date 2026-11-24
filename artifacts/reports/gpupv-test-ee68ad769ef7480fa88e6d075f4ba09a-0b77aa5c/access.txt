@@ -1,0 +1,2 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+crw-rw----. 1 root video 10, 262 Nov 23 12:09 /dev/dxg

@@ -1,0 +1,6 @@
+SecureBoot enabled
+5d52ba71-aa28-48f0-ba44-2ec12de91bb5
+SHA1 Fingerprint: 53:61:0c:f8:1f:bd:7e:0c:eb:67:91:3c:9e:f3:e7:94:a9:63:3e:cb
+        Issuer: CN=Debian Secure Boot CA
+SHA1 Fingerprint: 66:9d:51:b0:26:77:21:79:f6:a6:5a:e3:ca:55:f2:cc:61:87:43:49
+        Issuer: CN=DKMS module signing key

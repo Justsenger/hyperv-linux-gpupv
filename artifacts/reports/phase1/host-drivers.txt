@@ -1,0 +1,8 @@
+
+DeviceName                       DriverVersion   InfName
+----------                       -------------   -------
+Microsoft Remote Display Adapter 10.0.26100.9818 rdpidd.inf
+NVIDIA GeForce RTX 2060          32.0.16.1742    oem39.inf
+Intel(R) Iris(R) Xe Graphics     32.0.101.6876   oem15.inf
+OrayIddDriver Device             16.54.44.444    oem44.inf
+

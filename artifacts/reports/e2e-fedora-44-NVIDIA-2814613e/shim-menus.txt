@@ -1,0 +1,5 @@
+29ee1ce7-5320-4c6f-932b-62f7b4ecefc2 confirmed shim menu management
+29ee1ce7-5320-4c6f-932b-62f7b4ecefc2 confirmed shim menu view
+29ee1ce7-5320-4c6f-932b-62f7b4ecefc2 confirmed shim menu confirm
+29ee1ce7-5320-4c6f-932b-62f7b4ecefc2 confirmed shim menu password
+29ee1ce7-5320-4c6f-932b-62f7b4ecefc2 confirmed shim menu reboot

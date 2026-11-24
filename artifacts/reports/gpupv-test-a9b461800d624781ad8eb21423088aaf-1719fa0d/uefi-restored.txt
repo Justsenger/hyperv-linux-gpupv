@@ -1,0 +1,29 @@
+
+BootType         : Drive
+Description      : EFI SCSI Device
+FirmwarePath     : AcpiEx(VMBus,0,0)/VenHw(9B17E5A2-0891-42DD-B653-80B5C22809BA,D96361BAA104294DB60572E2FFB1DC7FC80BF73654139A4ABECFE3701C2889DE)/Scsi(0,0)
+Device           : HardDiskDrive (Name = '硬盘驱动器 on SCSI controller number 0 at location 0', VMName = 'gpupv-test-a9b461800d624781ad8eb21423088aaf') [Id = 'Microsoft:17A3CCE6-BB4A-4914-A5D4-97C6A74B13B5\D40BC942-3FB3-4D48-BB6A-5786284CD349\0\0\D', VMId = '17a3cce6-bb4a-4914-a5d4-97c6a74b13b5']
+VMId             : 17a3cce6-bb4a-4914-a5d4-97c6a74b13b5
+VMName           : gpupv-test-a9b461800d624781ad8eb21423088aaf
+VMSnapshotId     : 00000000-0000-0000-0000-000000000000
+VMSnapshotName   : 
+CimSession       : CimSession: .
+ComputerName     : WIN-3VQ1ADVJQE6
+IsDeleted        : False
+VMCheckpointId   : 00000000-0000-0000-0000-000000000000
+VMCheckpointName : 
+
+BootType         : Drive
+Description      : EFI SCSI Device
+FirmwarePath     : AcpiEx(VMBus,0,0)/VenHw(9B17E5A2-0891-42DD-B653-80B5C22809BA,D96361BAA104294DB60572E2FFB1DC7FC80BF73654139A4ABECFE3701C2889DE)/Scsi(0,2)
+Device           : DvdDrive (Name = 'DVD 驱动器 on SCSI controller number 0 at location 2', VMName = 'gpupv-test-a9b461800d624781ad8eb21423088aaf') [Id = 'Microsoft:17A3CCE6-BB4A-4914-A5D4-97C6A74B13B5\D40BC942-3FB3-4D48-BB6A-5786284CD349\0\2\D', VMId = '17a3cce6-bb4a-4914-a5d4-97c6a74b13b5']
+VMId             : 17a3cce6-bb4a-4914-a5d4-97c6a74b13b5
+VMName           : gpupv-test-a9b461800d624781ad8eb21423088aaf
+VMSnapshotId     : 00000000-0000-0000-0000-000000000000
+VMSnapshotName   : 
+CimSession       : CimSession: .
+ComputerName     : WIN-3VQ1ADVJQE6
+IsDeleted        : False
+VMCheckpointId   : 00000000-0000-0000-0000-000000000000
+VMCheckpointName : 
+

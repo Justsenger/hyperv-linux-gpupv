@@ -1,0 +1,266 @@
+[
+  {
+    "target": "arch / Intel",
+    "kernel": "7.3.5-arch1-1",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "硬件工作负载未通过",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-arch-Intel-4d7eb899/outcome.txt) · [依赖](e2e-arch-Intel-4d7eb899/dependencies.txt) · [工作负载](gpupv-test-4d7eb8992c33495883eb3e5c518dc251-1e7d13bd/workload.txt) · [内核日志](gpupv-test-4d7eb8992c33495883eb3e5c518dc251-1e7d13bd/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "arch / NVIDIA",
+    "kernel": "7.3.4-arch1-2",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-arch-NVIDIA-5b5f955d/outcome.txt) · [依赖](e2e-arch-NVIDIA-5b5f955d/dependencies.txt) · [工作负载](gpupv-test-5b5f955db26b4f228f105d94fa4d2cee-ddaca6fd/workload.txt) · [内核日志](gpupv-test-5b5f955db26b4f228f105d94fa4d2cee-ddaca6fd/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "debian-12 / Intel",
+    "kernel": "6.1.0-56-amd64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "仅见软件设备或硬件上下文失败",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-debian-12-Intel-d7cebe6f/outcome.txt) · [依赖](e2e-debian-12-Intel-d7cebe6f/dependencies.txt) · [工作负载](gpupv-test-d7cebe6fa48f4a478af2d79cfe5f2bf1-612bc1f0/workload.txt) · [内核日志](gpupv-test-d7cebe6fa48f4a478af2d79cfe5f2bf1-612bc1f0/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "debian-12 / NVIDIA",
+    "kernel": "6.1.0-56-amd64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-debian-12-NVIDIA-e4401915/outcome.txt) · [依赖](e2e-debian-12-NVIDIA-e4401915/dependencies.txt) · [工作负载](gpupv-test-e440191500b74ccc81973d9815a95668-1e3d80ad/workload.txt) · [内核日志](gpupv-test-e440191500b74ccc81973d9815a95668-1e3d80ad/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "debian-13 / Intel",
+    "kernel": "6.12.117+deb13-amd64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "仅见软件设备或硬件上下文失败",
+    "strict": "未完成",
+    "evidence": "[试验记录](gpupv-test-586ad69530d74ef195559270615d3f6c-cc6435f9/)"
+  },
+  {
+    "target": "debian-13 / Intel",
+    "kernel": "6.12.117+deb13-amd64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "仅见软件设备或硬件上下文失败",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-debian-13-Intel-6f6054ef/outcome.txt) · [依赖](e2e-debian-13-Intel-6f6054ef/dependencies.txt) · [工作负载](gpupv-test-6f6054effccc4b36aedb516cb5cfd2c3-5583a470/workload.txt) · [内核日志](gpupv-test-6f6054effccc4b36aedb516cb5cfd2c3-5583a470/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "debian-13 / NVIDIA",
+    "kernel": "6.12.117+deb13-amd64",
+    "lifecycle": "重启权限未证实 / 重复安装未证实 / 卸载未证实",
+    "workload": "—",
+    "strict": "未完成",
+    "evidence": "[结果](e2e-debian-13-NVIDIA-698b67ab/outcome.txt) · [依赖](e2e-debian-13-NVIDIA-698b67ab/dependencies.txt) · — · —"
+  },
+  {
+    "target": "debian-13 / NVIDIA",
+    "kernel": "6.12.117+deb13-amd64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+    "strict": "未完成",
+    "evidence": "[试验记录](gpupv-test-586ad69530d74ef195559270615d3f6c-a54d020f/)"
+  },
+  {
+    "target": "debian-13 / NVIDIA",
+    "kernel": "6.12.117+deb13-amd64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-debian-13-NVIDIA-e5cbe35e/outcome.txt) · [依赖](e2e-debian-13-NVIDIA-e5cbe35e/dependencies.txt) · [工作负载](gpupv-test-e5cbe35e06414e2b83d7dafcb6e4b362-29caf90a/workload.txt) · [内核日志](gpupv-test-e5cbe35e06414e2b83d7dafcb6e4b362-29caf90a/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "debian-13 / NVIDIA",
+    "kernel": "6.12.117+deb13-amd64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+    "strict": "未通过",
+    "evidence": "[试验记录](gpupv-test-d7093a8d9bb4449f8204cc02bc5c9570-8cd99ec4/)"
+  },
+  {
+    "target": "fedora-44 / Intel",
+    "kernel": "6.19.10-300.fc44.x86_64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "仅见软件设备或硬件上下文失败",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-fedora-44-Intel-180f1f5e/outcome.txt) · [依赖](e2e-fedora-44-Intel-180f1f5e/dependencies.txt) · [工作负载](gpupv-test-180f1f5e1d7846988fce9978d395ca4a-17b599e8/workload.txt) · [内核日志](gpupv-test-180f1f5e1d7846988fce9978d395ca4a-17b599e8/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "fedora-44 / NVIDIA",
+    "kernel": "6.19.10-300.fc44.x86_64",
+    "lifecycle": "重启权限未证实 / 重复安装通过 / 卸载未证实",
+    "workload": "—",
+    "strict": "未完成",
+    "evidence": "[结果](e2e-fedora-44-NVIDIA-a4aad40a/outcome.txt) · [依赖](e2e-fedora-44-NVIDIA-a4aad40a/dependencies.txt) · — · —"
+  },
+  {
+    "target": "fedora-44 / NVIDIA",
+    "kernel": "6.19.10-300.fc44.x86_64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-fedora-44-NVIDIA-7908e2a3/outcome.txt) · [依赖](e2e-fedora-44-NVIDIA-7908e2a3/dependencies.txt) · [工作负载](gpupv-test-7908e2a3c226410693a62d32bb16d328-d2c92034/workload.txt) · [内核日志](gpupv-test-7908e2a3c226410693a62d32bb16d328-d2c92034/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "fedora-44 / NVIDIA",
+    "kernel": "6.19.10-300.fc44.x86_64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，编解码未通过",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-fedora-44-NVIDIA-53c5e8d8/outcome.txt) · [依赖](e2e-fedora-44-NVIDIA-53c5e8d8/dependencies.txt) · [工作负载](gpupv-test-53c5e8d8960a4fbcae69625c99dd68ee-3f584506/workload.txt) · [内核日志](gpupv-test-53c5e8d8960a4fbcae69625c99dd68ee-3f584506/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "fedora-44 / NVIDIA",
+    "kernel": "6.19.10-300.fc44.x86_64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，编解码未通过",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-fedora-44-NVIDIA-ee68ad76/outcome.txt) · [依赖](e2e-fedora-44-NVIDIA-ee68ad76/dependencies.txt) · [工作负载](gpupv-test-ee68ad769ef7480fa88e6d075f4ba09a-0b77aa5c/workload.txt) · [内核日志](gpupv-test-ee68ad769ef7480fa88e6d075f4ba09a-0b77aa5c/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "leap-15.6 / Intel",
+    "kernel": "6.4.0-150600.23.103-default",
+    "lifecycle": "重启权限未证实 / 重复安装未证实 / 卸载未证实",
+    "workload": "—",
+    "strict": "未完成",
+    "evidence": "[结果](e2e-leap-15.6-Intel-156584b6/outcome.txt) · [依赖](e2e-leap-15.6-Intel-156584b6/dependencies.txt) · — · —"
+  },
+  {
+    "target": "leap-15.6 / Intel",
+    "kernel": "6.4.0-150600.23.103-default",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "硬件工作负载未通过",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-leap-15.6-Intel-a5653f61/outcome.txt) · [依赖](e2e-leap-15.6-Intel-a5653f61/dependencies.txt) · [工作负载](gpupv-test-a5653f610d3b4228a1c34d88d79f5b90-3c806b71/workload.txt) · [内核日志](gpupv-test-a5653f610d3b4228a1c34d88d79f5b90-3c806b71/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "leap-15.6 / Intel",
+    "kernel": "—",
+    "lifecycle": "未取得",
+    "workload": "未取得",
+    "strict": "未通过或未完成",
+    "evidence": "[结果](e2e-leap-15.6-Intel-3711750e/outcome.txt) · [依赖](e2e-leap-15.6-Intel-3711750e/dependencies.txt)"
+  },
+  {
+    "target": "leap-15.6 / NVIDIA",
+    "kernel": "6.4.0-150600.23.103-default",
+    "lifecycle": "重启权限未证实 / 重复安装未证实 / 卸载未证实",
+    "workload": "—",
+    "strict": "未完成",
+    "evidence": "[结果](e2e-leap-15.6-NVIDIA-c5897e08/outcome.txt) · [依赖](e2e-leap-15.6-NVIDIA-c5897e08/dependencies.txt) · — · —"
+  },
+  {
+    "target": "leap-15.6 / NVIDIA",
+    "kernel": "6.4.0-150600.23.103-default",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-leap-15.6-NVIDIA-ab2a5046/outcome.txt) · [依赖](e2e-leap-15.6-NVIDIA-ab2a5046/dependencies.txt) · [工作负载](gpupv-test-ab2a5046ab99489b876a1ad2d0539fea-d90daa25/workload.txt) · [内核日志](gpupv-test-ab2a5046ab99489b876a1ad2d0539fea-d90daa25/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "leap-15.6 / NVIDIA",
+    "kernel": "6.4.0-150600.23.103-default",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 未证实，编解码未通过",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-leap-15.6-NVIDIA-afae8910/outcome.txt) · [依赖](e2e-leap-15.6-NVIDIA-afae8910/dependencies.txt) · [工作负载](gpupv-test-afae8910a0fd4a7aa29e6118914a9c8c-a52ba582/workload.txt) · [内核日志](gpupv-test-afae8910a0fd4a7aa29e6118914a9c8c-a52ba582/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "leap-15.6 / NVIDIA",
+    "kernel": "—",
+    "lifecycle": "未取得",
+    "workload": "未取得",
+    "strict": "未通过或未完成",
+    "evidence": "[结果](e2e-leap-15.6-NVIDIA-94dfe468/outcome.txt) · [依赖](e2e-leap-15.6-NVIDIA-94dfe468/dependencies.txt)"
+  },
+  {
+    "target": "rocky-9 / Intel",
+    "kernel": "5.14.0-741.22.1.el9_9.x86_64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "仅见软件设备或硬件上下文失败",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-rocky-9-Intel-40479e9e/outcome.txt) · [依赖](e2e-rocky-9-Intel-40479e9e/dependencies.txt) · [工作负载](gpupv-test-40479e9e17c44500abd975ed73f04043-c42ff965/workload.txt) · [内核日志](gpupv-test-40479e9e17c44500abd975ed73f04043-c42ff965/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "rocky-9 / Intel",
+    "kernel": "—",
+    "lifecycle": "未取得",
+    "workload": "未取得",
+    "strict": "未通过或未完成",
+    "evidence": "[结果](e2e-rocky-9-Intel-e76b9381/outcome.txt) · —"
+  },
+  {
+    "target": "rocky-9 / NVIDIA",
+    "kernel": "5.14.0-741.22.1.el9_9.x86_64",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-rocky-9-NVIDIA-8910c6a3/outcome.txt) · [依赖](e2e-rocky-9-NVIDIA-8910c6a3/dependencies.txt) · [工作负载](gpupv-test-8910c6a39aad4dabb591ed0db409de9b-3ed662c3/workload.txt) · [内核日志](gpupv-test-8910c6a39aad4dabb591ed0db409de9b-3ed662c3/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "ubuntu-22.04 / Intel",
+    "kernel": "5.15.0-203-generic",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "硬件工作负载未通过",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-ubuntu-22.04-Intel-6795ae77/outcome.txt) · [依赖](e2e-ubuntu-22.04-Intel-6795ae77/dependencies.txt) · [工作负载](gpupv-test-6795ae77a9ab4056a5e0491b8f3ce3e8-f6a4f589/workload.txt) · [内核日志](gpupv-test-6795ae77a9ab4056a5e0491b8f3ce3e8-f6a4f589/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "ubuntu-22.04 / NVIDIA",
+    "kernel": "5.15.0-203-generic",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-ubuntu-22.04-NVIDIA-a9b46180/outcome.txt) · [依赖](e2e-ubuntu-22.04-NVIDIA-a9b46180/dependencies.txt) · [工作负载](gpupv-test-a9b461800d624781ad8eb21423088aaf-1719fa0d/workload.txt) · [内核日志](gpupv-test-a9b461800d624781ad8eb21423088aaf-1719fa0d/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "ubuntu-22.04 / NVIDIA",
+    "kernel": "—",
+    "lifecycle": "未取得",
+    "workload": "未取得",
+    "strict": "未通过或未完成",
+    "evidence": "[结果](e2e-ubuntu-22.04-NVIDIA-afda5a1f/outcome.txt) · [依赖](e2e-ubuntu-22.04-NVIDIA-afda5a1f/dependencies.txt)"
+  },
+  {
+    "target": "ubuntu-24.04 / Intel",
+    "kernel": "6.8.0-147-generic",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "仅见软件设备或硬件上下文失败",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-ubuntu-24.04-Intel-613eb8f8/outcome.txt) · [依赖](e2e-ubuntu-24.04-Intel-613eb8f8/dependencies.txt) · [工作负载](gpupv-test-613eb8f8bd8e40f1b376b622d80524d2-0727c598/workload.txt) · [内核日志](gpupv-test-613eb8f8bd8e40f1b376b622d80524d2-0727c598/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "ubuntu-24.04 / Intel",
+    "kernel": "6.8.0-147-generic",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "硬件工作负载未通过",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-ubuntu-24.04-Intel-74d5fe45/outcome.txt) · [依赖](e2e-ubuntu-24.04-Intel-74d5fe45/dependencies.txt) · [工作负载](gpupv-test-74d5fe456d7645f1bcb7dd1d2314519c-2455d502/workload.txt) · —"
+  },
+  {
+    "target": "ubuntu-24.04 / NVIDIA",
+    "kernel": "6.8.0-147-generic",
+    "lifecycle": "重启权限未证实 / 重复安装未证实 / 卸载未证实",
+    "workload": "—",
+    "strict": "未完成",
+    "evidence": "[结果](e2e-ubuntu-24.04-NVIDIA-f684035f/outcome.txt) · [依赖](e2e-ubuntu-24.04-NVIDIA-f684035f/dependencies.txt) · — · —"
+  },
+  {
+    "target": "ubuntu-24.04 / NVIDIA",
+    "kernel": "6.8.0-147-generic",
+    "lifecycle": "重启权限通过 / 重复安装通过 / 卸载重启通过",
+    "workload": "CUDA 数值通过，NVENC/CUVID 15 帧",
+    "strict": "未通过",
+    "evidence": "[结果](e2e-ubuntu-24.04-NVIDIA-ce1d869f/outcome.txt) · [依赖](e2e-ubuntu-24.04-NVIDIA-ce1d869f/dependencies.txt) · [工作负载](gpupv-test-ce1d869f77f54c4990c231ab7ad69acd-095af9ed/workload.txt) · [内核日志](gpupv-test-ce1d869f77f54c4990c231ab7ad69acd-095af9ed/dmesg-after-workload.txt)"
+  },
+  {
+    "target": "ubuntu-24.04 / NVIDIA",
+    "kernel": "—",
+    "lifecycle": "未取得",
+    "workload": "未取得",
+    "strict": "未通过或未完成",
+    "evidence": "[结果](e2e-ubuntu-24.04-NVIDIA-26e70b1f/outcome.txt) · [依赖](e2e-ubuntu-24.04-NVIDIA-26e70b1f/dependencies.txt)"
+  }
+]

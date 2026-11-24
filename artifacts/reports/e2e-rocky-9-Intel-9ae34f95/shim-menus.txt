@@ -1,0 +1,5 @@
+ed944084-bfb1-4cbd-b757-3b2e44e87191 confirmed shim menu management
+ed944084-bfb1-4cbd-b757-3b2e44e87191 confirmed shim menu view
+ed944084-bfb1-4cbd-b757-3b2e44e87191 confirmed shim menu confirm
+ed944084-bfb1-4cbd-b757-3b2e44e87191 confirmed shim menu password
+ed944084-bfb1-4cbd-b757-3b2e44e87191 confirmed shim menu reboot

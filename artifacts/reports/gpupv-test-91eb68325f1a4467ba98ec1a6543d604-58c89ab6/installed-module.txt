@@ -1,0 +1,3 @@
+/lib/modules/6.4.0-150600.23.103-default/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4299403 Nov 24 03:20 /lib/modules/6.4.0-150600.23.103-default/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing

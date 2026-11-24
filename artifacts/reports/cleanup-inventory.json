@@ -1,0 +1,103 @@
+[
+  {
+    "Id": "8549eee5-c324-4850-9922-f3471bc6cbfa",
+    "Name": "gpupv-test-2ccc84613cfd43ecbfa5ce081e807df6",
+    "State": "Off",
+    "Configuration": "D:\\linux-pv\\.test\\gpupv-test-2ccc84613cfd43ecbfa5ce081e807df6\\gpupv-test-2ccc84613cfd43ecbfa5ce081e807df6",
+    "Snapshots": "D:\\linux-pv\\.test\\gpupv-test-2ccc84613cfd43ecbfa5ce081e807df6\\gpupv-test-2ccc84613cfd43ecbfa5ce081e807df6",
+    "Disks": [
+      "D:\\linux-pv\\.test\\gpupv-test-2ccc84613cfd43ecbfa5ce081e807df6\\gpupv-test-root_D9BE9B96-BD5D-465B-B8DC-0EAD6F4904B8.avhdx"
+    ]
+  },
+  {
+    "Id": "bf220427-c9d7-4f6a-8c00-9ef8c5a3d6c8",
+    "Name": "gpupv-test-3052d25266164c46a749bd82b1aa3a85",
+    "State": "Off",
+    "Configuration": "D:\\linux-pv\\.test\\gpupv-test-3052d25266164c46a749bd82b1aa3a85\\gpupv-test-3052d25266164c46a749bd82b1aa3a85",
+    "Snapshots": "D:\\linux-pv\\.test\\gpupv-test-3052d25266164c46a749bd82b1aa3a85\\gpupv-test-3052d25266164c46a749bd82b1aa3a85",
+    "Disks": [
+      "D:\\linux-pv\\.test\\gpupv-test-3052d25266164c46a749bd82b1aa3a85\\gpupv-test-root_74EB9A14-2EA9-4CEF-A15F-9AF61CF1630C.avhdx"
+    ]
+  },
+  {
+    "Id": "c3eb860a-5bf4-4da1-8fcc-94bc45079df6",
+    "Name": "gpupv-test-4d218a7612d245e2933753746a92fa5b",
+    "State": "Off",
+    "Configuration": "D:\\linux-pv\\.test\\gpupv-test-4d218a7612d245e2933753746a92fa5b\\gpupv-test-4d218a7612d245e2933753746a92fa5b",
+    "Snapshots": "D:\\linux-pv\\.test\\gpupv-test-4d218a7612d245e2933753746a92fa5b\\gpupv-test-4d218a7612d245e2933753746a92fa5b",
+    "Disks": [
+      "D:\\linux-pv\\.test\\gpupv-test-4d218a7612d245e2933753746a92fa5b\\gpupv-test-root_47320986-2A69-4A8D-AF73-79D225D59B5C.avhdx"
+    ]
+  },
+  {
+    "Id": "0eac1a15-baa2-4109-906a-59c0cfda1c32",
+    "Name": "gpupv-test-628d78458a5b4083a01a4aca25b15bec",
+    "State": "Off",
+    "Configuration": "D:\\linux-pv\\.test\\gpupv-test-628d78458a5b4083a01a4aca25b15bec\\gpupv-test-628d78458a5b4083a01a4aca25b15bec",
+    "Snapshots": "D:\\linux-pv\\.test\\gpupv-test-628d78458a5b4083a01a4aca25b15bec\\gpupv-test-628d78458a5b4083a01a4aca25b15bec",
+    "Disks": [
+      "D:\\linux-pv\\.test\\gpupv-test-628d78458a5b4083a01a4aca25b15bec\\gpupv-test-root_5B1736AD-DF35-4C52-8C0B-95D19A213837.avhdx"
+    ]
+  },
+  {
+    "Id": "894a1472-cb9b-41ad-a71d-a77562ecdc00",
+    "Name": "gpupv-test-62fc1008bab040779cbdd3857cbca145",
+    "State": "Off",
+    "Configuration": "D:\\linux-pv\\.test\\gpupv-test-62fc1008bab040779cbdd3857cbca145\\gpupv-test-62fc1008bab040779cbdd3857cbca145",
+    "Snapshots": "D:\\linux-pv\\.test\\gpupv-test-62fc1008bab040779cbdd3857cbca145\\gpupv-test-62fc1008bab040779cbdd3857cbca145",
+    "Disks": [
+      "D:\\linux-pv\\.test\\gpupv-test-62fc1008bab040779cbdd3857cbca145\\gpupv-test-root_346485E7-0D0A-4DD3-AABB-7C95715E9E07.avhdx",
+      "D:\\linux-pv\\.test\\gpupv-test-62fc1008bab040779cbdd3857cbca145\\gpupv-test-build.vhdx"
+    ]
+  },
+  {
+    "Id": "bbd10d8a-99ca-4819-ad3f-768f7109a32a",
+    "Name": "gpupv-test-91fb7834a63e47f0b3793cde099c5be7",
+    "State": "Off",
+    "Configuration": "D:\\linux-pv\\.test\\gpupv-test-91fb7834a63e47f0b3793cde099c5be7\\gpupv-test-91fb7834a63e47f0b3793cde099c5be7",
+    "Snapshots": "D:\\linux-pv\\.test\\gpupv-test-91fb7834a63e47f0b3793cde099c5be7\\gpupv-test-91fb7834a63e47f0b3793cde099c5be7",
+    "Disks": [
+      "D:\\linux-pv\\.test\\gpupv-test-91fb7834a63e47f0b3793cde099c5be7\\gpupv-test-root_CBD4678A-5F5A-4FE8-8B77-3F2AE4096CFE.avhdx"
+    ]
+  },
+  {
+    "Id": "85224c1c-e0fc-45be-ba0b-0e496c59a702",
+    "Name": "gpupv-test-b01dc3807f2e4aeab04f80e63c4067da",
+    "State": "Off",
+    "Configuration": "D:\\linux-pv\\.test\\gpupv-test-b01dc3807f2e4aeab04f80e63c4067da\\gpupv-test-b01dc3807f2e4aeab04f80e63c4067da",
+    "Snapshots": "D:\\linux-pv\\.test\\gpupv-test-b01dc3807f2e4aeab04f80e63c4067da\\gpupv-test-b01dc3807f2e4aeab04f80e63c4067da",
+    "Disks": [
+      "D:\\linux-pv\\.test\\gpupv-test-b01dc3807f2e4aeab04f80e63c4067da\\gpupv-test-root_C180D6D2-485B-4A6C-AFDA-44E801EBE3A4.avhdx"
+    ]
+  },
+  {
+    "Id": "c88b6984-22b9-4c9c-83f8-58951600dd7d",
+    "Name": "gpupv-test-b0aef8458404490581396bf44e2ba327",
+    "State": "Off",
+    "Configuration": "D:\\linux-pv\\.test\\gpupv-test-b0aef8458404490581396bf44e2ba327\\gpupv-test-b0aef8458404490581396bf44e2ba327",
+    "Snapshots": "D:\\linux-pv\\.test\\gpupv-test-b0aef8458404490581396bf44e2ba327\\gpupv-test-b0aef8458404490581396bf44e2ba327",
+    "Disks": [
+      "D:\\linux-pv\\.test\\gpupv-test-b0aef8458404490581396bf44e2ba327\\gpupv-test-root_031FD5DB-D186-4125-A1E2-6CE26FC15B88.avhdx"
+    ]
+  },
+  {
+    "Id": "5d5fa8cd-4414-4e84-9e86-dbf25178a1de",
+    "Name": "gpupv-test-c8b75bda4e0c4e7d8611a23cd485e8eb",
+    "State": "Off",
+    "Configuration": "D:\\linux-pv\\.test\\gpupv-test-c8b75bda4e0c4e7d8611a23cd485e8eb\\gpupv-test-c8b75bda4e0c4e7d8611a23cd485e8eb",
+    "Snapshots": "D:\\linux-pv\\.test\\gpupv-test-c8b75bda4e0c4e7d8611a23cd485e8eb\\gpupv-test-c8b75bda4e0c4e7d8611a23cd485e8eb",
+    "Disks": [
+      "D:\\linux-pv\\.test\\gpupv-test-c8b75bda4e0c4e7d8611a23cd485e8eb\\gpupv-test-root_5552BED5-A1A2-4DB8-B1A8-2104ACD0AD35.avhdx"
+    ]
+  },
+  {
+    "Id": "d531d0f7-77fd-4132-9569-8a3aaa87abef",
+    "Name": "gpupv-test-d92844b76b83475585d0be48a9136ed4",
+    "State": "Off",
+    "Configuration": "D:\\linux-pv\\.test\\gpupv-test-d92844b76b83475585d0be48a9136ed4\\gpupv-test-d92844b76b83475585d0be48a9136ed4",
+    "Snapshots": "D:\\linux-pv\\.test\\gpupv-test-d92844b76b83475585d0be48a9136ed4\\gpupv-test-d92844b76b83475585d0be48a9136ed4",
+    "Disks": [
+      "D:\\linux-pv\\.test\\gpupv-test-d92844b76b83475585d0be48a9136ed4\\gpupv-test-root_53DF1116-72D2-49C4-B4E8-7B88D66E9CA8.avhdx"
+    ]
+  }
+]

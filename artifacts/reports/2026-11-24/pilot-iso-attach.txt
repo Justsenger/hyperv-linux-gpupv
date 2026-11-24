@@ -1,0 +1,5 @@
+
+VMName                                      ControllerType ControllerNumber ControllerLocation DvdMediaType Path
+------                                      -------------- ---------------- ------------------ ------------ ----
+gpupv-test-b0dcdee464384fb0bd6b9c7ca619df3d SCSI           0                2                  ISO          D:\linux-pv…
+

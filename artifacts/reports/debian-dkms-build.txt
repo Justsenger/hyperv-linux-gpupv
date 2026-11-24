@@ -1,0 +1,9 @@
+Sign command: /lib/modules/6.12.117+deb13-amd64/build/scripts/sign-file
+Signing key: /var/lib/dkms/mok.key
+Public certificate (MOK): /var/lib/dkms/mok.pub
+Certificate or key are missing, generating self signed certificate for MOK...
+
+Building module(s).......... done.
+Signing module /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.ko
+cat: /var/lib/dkms/gpupv-dxgkrnl/0.1/build/make.log: No such file or directory
+gpupv-dxgkrnl/0.1, 6.12.117+deb13-amd64, x86_64: built

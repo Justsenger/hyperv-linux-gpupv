@@ -1,0 +1,5 @@
+55e89122-81b6-4356-9985-608499d68baf confirmed shim menu management
+55e89122-81b6-4356-9985-608499d68baf confirmed shim menu view
+55e89122-81b6-4356-9985-608499d68baf confirmed shim menu confirm
+55e89122-81b6-4356-9985-608499d68baf confirmed shim menu password
+55e89122-81b6-4356-9985-608499d68baf confirmed shim menu reboot

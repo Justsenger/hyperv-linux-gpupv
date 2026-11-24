@@ -1,0 +1,5 @@
+ubuntu-20.04 {'image': 'ubuntu:20.04', 'passed': False, 'exit': 2}
+ubuntu-20.04-hwe {'image': 'ubuntu:20.04', 'passed': True, 'exit': 0}
+debian-11-base {'image': 'debian:11', 'passed': False, 'exit': 100}
+rocky-8 {'image': 'quay.io/rockylinux/rockylinux:8', 'passed': True, 'exit': 0}
+arch-lts {'image': 'archlinux:latest', 'passed': True, 'exit': 0}

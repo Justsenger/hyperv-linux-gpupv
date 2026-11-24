@@ -1,0 +1,5 @@
+64eac1ad-b6e3-4eb8-abd9-e1f40a9dd663 confirmed shim menu management
+64eac1ad-b6e3-4eb8-abd9-e1f40a9dd663 confirmed shim menu view
+64eac1ad-b6e3-4eb8-abd9-e1f40a9dd663 confirmed shim menu confirm
+64eac1ad-b6e3-4eb8-abd9-e1f40a9dd663 confirmed shim menu password
+64eac1ad-b6e3-4eb8-abd9-e1f40a9dd663 confirmed shim menu reboot

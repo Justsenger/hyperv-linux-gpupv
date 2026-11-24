@@ -1,0 +1,1 @@
+prepare-arch-shim: line 4: hostname: command not found

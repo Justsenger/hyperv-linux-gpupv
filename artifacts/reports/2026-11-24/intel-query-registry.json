@@ -1,0 +1,10 @@
+{
+  "gpu": "Intel(R) Iris(R) Xe Graphics",
+  "classKey": "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\0000",
+  "DXCoreWSLAttributesPresent": false,
+  "UserModeDriverNameWsl": [
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigd12umd64.so"
+  ],
+  "examinedInfFiles": 1,
+  "DXCoreWSLAttributesInfMatches": []
+}

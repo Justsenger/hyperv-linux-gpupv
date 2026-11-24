@@ -1,0 +1,840 @@
+{
+  "start": "2026-11-24T08:55:00.0000000",
+  "through": "2026-11-24T13:01:36.8643169+08:00",
+  "events": [
+    {
+      "record": 1225,
+      "time": "2026-11-24T12:58:30.9879355+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1224,
+      "time": "2026-11-24T12:58:30.9879140+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1219,
+      "time": "2026-11-24T12:50:58.9912094+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1218,
+      "time": "2026-11-24T12:50:58.9911861+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1213,
+      "time": "2026-11-24T12:47:46.8755708+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1212,
+      "time": "2026-11-24T12:47:46.8755424+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1207,
+      "time": "2026-11-24T12:40:14.2814564+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1206,
+      "time": "2026-11-24T12:40:14.2814333+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1205,
+      "time": "2026-11-24T12:36:13.3326770+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1204,
+      "time": "2026-11-24T12:36:13.3326568+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1203,
+      "time": "2026-11-24T12:35:41.5478484+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1202,
+      "time": "2026-11-24T12:35:41.5478330+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1197,
+      "time": "2026-11-24T12:35:10.7942801+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1196,
+      "time": "2026-11-24T12:35:10.7942508+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1193,
+      "time": "2026-11-24T12:34:39.6193624+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1192,
+      "time": "2026-11-24T12:34:39.6193449+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1191,
+      "time": "2026-11-24T12:34:07.7792547+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1190,
+      "time": "2026-11-24T12:34:07.7792299+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1187,
+      "time": "2026-11-24T12:28:57.5910464+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1186,
+      "time": "2026-11-24T12:28:57.5909981+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1185,
+      "time": "2026-11-24T12:25:16.4953762+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1184,
+      "time": "2026-11-24T12:25:16.4953269+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1175,
+      "time": "2026-11-24T12:11:10.3730126+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1174,
+      "time": "2026-11-24T12:11:10.3729907+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1173,
+      "time": "2026-11-24T12:09:43.8113777+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1172,
+      "time": "2026-11-24T12:09:43.8113605+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1167,
+      "time": "2026-11-24T12:05:50.4969369+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1166,
+      "time": "2026-11-24T12:05:50.4969110+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1161,
+      "time": "2026-11-24T12:01:25.2031965+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1160,
+      "time": "2026-11-24T12:01:25.2031774+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1159,
+      "time": "2026-11-24T12:00:59.7213842+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1158,
+      "time": "2026-11-24T12:00:59.7213671+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1157,
+      "time": "2026-11-24T11:58:21.0184523+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1156,
+      "time": "2026-11-24T11:58:21.0184357+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1147,
+      "time": "2026-11-24T11:53:46.9795531+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1146,
+      "time": "2026-11-24T11:53:46.9795323+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1145,
+      "time": "2026-11-24T11:50:10.8702804+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1144,
+      "time": "2026-11-24T11:50:10.8702550+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1139,
+      "time": "2026-11-24T11:46:15.7706744+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1138,
+      "time": "2026-11-24T11:46:15.7706457+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1137,
+      "time": "2026-11-24T11:42:59.6523135+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1136,
+      "time": "2026-11-24T11:42:59.6522971+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1135,
+      "time": "2026-11-24T11:41:18.2942208+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1134,
+      "time": "2026-11-24T11:41:18.2942002+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1133,
+      "time": "2026-11-24T11:38:16.4033732+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1132,
+      "time": "2026-11-24T11:38:16.4033203+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1127,
+      "time": "2026-11-24T11:34:43.2530770+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1126,
+      "time": "2026-11-24T11:34:43.2530552+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1125,
+      "time": "2026-11-24T11:30:03.9219202+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1124,
+      "time": "2026-11-24T11:30:03.9218951+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1123,
+      "time": "2026-11-24T11:27:12.1790917+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1122,
+      "time": "2026-11-24T11:27:12.1790755+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1121,
+      "time": "2026-11-24T11:26:51.5792760+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1120,
+      "time": "2026-11-24T11:26:51.5792461+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1111,
+      "time": "2026-11-24T11:08:58.8418877+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1110,
+      "time": "2026-11-24T11:08:58.8418538+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1109,
+      "time": "2026-11-24T11:05:28.9814599+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1108,
+      "time": "2026-11-24T11:05:28.9814227+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1099,
+      "time": "2026-11-24T10:54:23.8440642+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1098,
+      "time": "2026-11-24T10:54:23.8440479+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1093,
+      "time": "2026-11-24T10:51:13.2206981+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1092,
+      "time": "2026-11-24T10:51:13.2206695+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1091,
+      "time": "2026-11-24T10:48:57.0546711+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1090,
+      "time": "2026-11-24T10:48:57.0546356+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1081,
+      "time": "2026-11-24T10:40:47.4679411+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1080,
+      "time": "2026-11-24T10:40:47.4679222+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1079,
+      "time": "2026-11-24T10:39:30.6096896+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1078,
+      "time": "2026-11-24T10:39:30.6096732+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1069,
+      "time": "2026-11-24T10:30:03.5503635+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1068,
+      "time": "2026-11-24T10:30:03.5503451+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1067,
+      "time": "2026-11-24T10:25:46.6537331+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1066,
+      "time": "2026-11-24T10:25:46.6536956+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1057,
+      "time": "2026-11-24T10:07:50.0115926+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1056,
+      "time": "2026-11-24T10:07:50.0115699+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1055,
+      "time": "2026-11-24T10:00:41.4171596+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1054,
+      "time": "2026-11-24T10:00:41.4171198+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1053,
+      "time": "2026-11-24T09:59:48.2905795+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1052,
+      "time": "2026-11-24T09:59:48.2905424+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1043,
+      "time": "2026-11-24T09:52:14.6024764+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1042,
+      "time": "2026-11-24T09:52:14.6024401+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1037,
+      "time": "2026-11-24T09:46:21.7202858+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1036,
+      "time": "2026-11-24T09:46:21.7202670+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1035,
+      "time": "2026-11-24T09:43:21.5527442+08:00",
+      "id": 447,
+      "index": "1",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1034,
+      "time": "2026-11-24T09:43:21.5527268+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1029,
+      "time": "2026-11-24T09:40:27.2727930+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1028,
+      "time": "2026-11-24T09:40:27.2727776+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1021,
+      "time": "2026-11-24T09:21:41.1050665+08:00",
+      "id": 447,
+      "index": "0",
+      "bSecure": "false",
+      "NTStatus": "0"
+    },
+    {
+      "record": 1020,
+      "time": "2026-11-24T09:21:41.1050413+08:00",
+      "id": 446,
+      "index": "65535",
+      "bSecure": "false",
+      "NTStatus": "0"
+    }
+  ],
+  "liveTests": [
+    {
+      "name": "gpupv-test-c9d0f3e8bb7142399dbbc3efb3e93b0f",
+      "id": "aa54488d-c011-407f-8f58-b7337fe319e4",
+      "partition": 0,
+      "secureBoot": "On",
+      "pairedByTimeAndPartition": [
+        {
+          "dxgRecord": 1225,
+          "vmRecord": 9686,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 18601,
+          "deltaSeconds": 1.68
+        },
+        {
+          "dxgRecord": 1225,
+          "vmRecord": 9683,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 18500,
+          "deltaSeconds": 0.304
+        },
+        {
+          "dxgRecord": 1225,
+          "vmRecord": 9682,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 33103,
+          "deltaSeconds": 0.296
+        },
+        {
+          "dxgRecord": 1225,
+          "vmRecord": 9681,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 12582,
+          "deltaSeconds": 0.294
+        },
+        {
+          "dxgRecord": 1225,
+          "vmRecord": 9680,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 12597,
+          "deltaSeconds": 0.291
+        },
+        {
+          "dxgRecord": 1225,
+          "vmRecord": 9679,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 12148,
+          "deltaSeconds": 0.286
+        },
+        {
+          "dxgRecord": 1225,
+          "vmRecord": 9676,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 18609,
+          "deltaSeconds": 0.069
+        }
+      ]
+    },
+    {
+      "name": "gpupv-test-531c460b496946f99a72748599ee61c2",
+      "id": "d17a55a6-be34-4af4-a857-4a86d250e419",
+      "partition": 1,
+      "secureBoot": "On",
+      "pairedByTimeAndPartition": [
+        {
+          "dxgRecord": 1219,
+          "vmRecord": 9620,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 33107,
+          "deltaSeconds": 3.879
+        },
+        {
+          "dxgRecord": 1219,
+          "vmRecord": 9619,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 33100,
+          "deltaSeconds": 3.856
+        },
+        {
+          "dxgRecord": 1219,
+          "vmRecord": 9618,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 18601,
+          "deltaSeconds": 2.782
+        },
+        {
+          "dxgRecord": 1219,
+          "vmRecord": 9615,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 18500,
+          "deltaSeconds": 0.313
+        },
+        {
+          "dxgRecord": 1219,
+          "vmRecord": 9614,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 33103,
+          "deltaSeconds": 0.303
+        },
+        {
+          "dxgRecord": 1219,
+          "vmRecord": 9613,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 12582,
+          "deltaSeconds": 0.301
+        },
+        {
+          "dxgRecord": 1219,
+          "vmRecord": 9612,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 12597,
+          "deltaSeconds": 0.298
+        },
+        {
+          "dxgRecord": 1219,
+          "vmRecord": 9611,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 12148,
+          "deltaSeconds": 0.293
+        },
+        {
+          "dxgRecord": 1219,
+          "vmRecord": 9608,
+          "vmLog": "Microsoft-Windows-Hyper-V-Worker-Admin",
+          "vmEvent": 18609,
+          "deltaSeconds": 0.066
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+/tmp/tmp.SbktaAOD3R/probe.c: In function ‘p’:
+/tmp/tmp.SbktaAOD3R/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Wint-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.SbktaAOD3R/probe.c:1:
+/usr/src/linux-headers-6.12.117+deb13-common/include/linux/dma-fence.h:472:45: note: expected ‘u64’ {aka ‘long long unsigned int’} but argument is of type ‘struct dma_fence *’
+  472 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+make[2]: *** [/usr/src/linux-headers-6.12.117+deb13-common/scripts/Makefile.build:234: /tmp/tmp.SbktaAOD3R/probe.o] Error 1
+make[1]: *** [/usr/src/linux-headers-6.12.117+deb13-common/Makefile:2008: /tmp/tmp.SbktaAOD3R] Error 2
+make: *** [/usr/src/linux-headers-6.12.117+deb13-common/Makefile:236: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-6.12.117+deb13-amd64'
+  CC [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  CC [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/.module-common.o
+  LD [M]  /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmprg6leibg/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+make: Leaving directory '/usr/src/linux-headers-6.12.117+deb13-amd64'
+glibc 2.41, x86_64, kernel 6.12.117+deb13-amd64, preflight OK
+Mesa D3D12: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  g++-14 g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu libstdc++-14-dev
+Suggested packages:
+  g++-multilib g++-14-multilib gcc-14-doc libstdc++-14-doc
+The following NEW packages will be installed:
+  directx-headers-dev g++ g++-14 g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu
+  libstdc++-14-dev
+0 upgraded, 6 newly installed, 0 to remove and 21 not upgraded.
+Need to get 14.8 MB of archives.
+After this operation, 64.1 MB of additional disk space will be used.
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:2 https://deb.debian.org/debian trixie/main amd64 directx-headers-dev amd64 1.614.1-1 [244 kB]
+Get:3 https://deb.debian.org/debian trixie/main amd64 libstdc++-14-dev amd64 14.2.0-19 [2376 kB]
+Get:4 https://deb.debian.org/debian trixie/main amd64 g++-14-x86-64-linux-gnu amd64 14.2.0-19 [12.1 MB]
+Get:5 https://deb.debian.org/debian trixie/main amd64 g++-14 amd64 14.2.0-19 [22.5 kB]
+Get:6 https://deb.debian.org/debian trixie/main amd64 g++-x86-64-linux-gnu amd64 4:14.2.0-1 [1200 B]
+Get:7 https://deb.debian.org/debian trixie/main amd64 g++ amd64 4:14.2.0-1 [1344 B]
+Fetched 14.8 MB in 1s (13.7 MB/s)
+Selecting previously unselected package directx-headers-dev.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 48678 files and directories currently installed.)
+Preparing to unpack .../0-directx-headers-dev_1.614.1-1_amd64.deb ...
+Unpacking directx-headers-dev (1.614.1-1) ...
+Selecting previously unselected package libstdc++-14-dev:amd64.
+Preparing to unpack .../1-libstdc++-14-dev_14.2.0-19_amd64.deb ...
+Unpacking libstdc++-14-dev:amd64 (14.2.0-19) ...
+Selecting previously unselected package g++-14-x86-64-linux-gnu.
+Preparing to unpack .../2-g++-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+Unpacking g++-14-x86-64-linux-gnu (14.2.0-19) ...
+Selecting previously unselected package g++-14.
+Preparing to unpack .../3-g++-14_14.2.0-19_amd64.deb ...
+Unpacking g++-14 (14.2.0-19) ...
+Selecting previously unselected package g++-x86-64-linux-gnu.
+Preparing to unpack .../4-g++-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+Unpacking g++-x86-64-linux-gnu (4:14.2.0-1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../5-g++_4%3a14.2.0-1_amd64.deb ...
+Unpacking g++ (4:14.2.0-1) ...
+Setting up directx-headers-dev (1.614.1-1) ...
+Setting up libstdc++-14-dev:amd64 (14.2.0-19) ...
+Setting up g++-14-x86-64-linux-gnu (14.2.0-19) ...
+Setting up g++-x86-64-linux-gnu (4:14.2.0-1) ...
+Setting up g++-14 (14.2.0-19) ...
+Setting up g++ (4:14.2.0-1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+/.
+/usr
+/usr/include
+/usr/include/directx
+/usr/include/directx/D3D12TokenizedProgramFormat.hpp
+/usr/include/directx/DirectML.h
+/usr/include/directx/d3d12.h
+/usr/include/directx/d3d12.idl
+/usr/include/directx/d3d12compatibility.h
+/usr/include/directx/d3d12compatibility.idl
+/usr/include/directx/d3d12sdklayers.h
+/usr/include/directx/d3d12sdklayers.idl
+/usr/include/directx/d3d12shader.h
+/usr/include/directx/d3d12video.h
+/usr/include/directx/d3d12video.idl
+/usr/include/directx/d3dcommon.h
+/usr/include/directx/d3dcommon.idl
+/usr/include/directx/d3dx12.h
+/usr/include/directx/d3dx12_barriers.h
+/usr/include/directx/d3dx12_check_feature_support.h
+/usr/include/directx/d3dx12_core.h
+/usr/include/directx/d3dx12_default.h
+/usr/include/directx/d3dx12_pipeline_state_stream.h
+/usr/include/directx/d3dx12_property_format_table.h
+/usr/include/directx/d3dx12_render_pass.h
+/usr/include/directx/d3dx12_resource_helpers.h
+/usr/include/directx/d3dx12_root_signature.h
+/usr/include/directx/d3dx12_state_object.h
+/usr/include/directx/dxcore.h
+/usr/include/directx/dxcore_interface.h
+/usr/include/directx/dxgicommon.h
+/usr/include/directx/dxgicommon.idl
+/usr/include/directx/dxgiformat.h
+/usr/include/directx/dxgiformat.idl
+/usr/include/dxguids
+/usr/include/dxguids/dxguids.h
+/usr/include/wsl
+/usr/include/wsl/stubs
+/usr/include/wsl/stubs/basetsd.h
+/usr/include/wsl/stubs/oaidl.h
+/usr/include/wsl/stubs/ocidl.h
+/usr/include/wsl/stubs/rpc.h
+/usr/include/wsl/stubs/rpcndr.h
+/usr/include/wsl/stubs/unknwn.h
+/usr/include/wsl/stubs/unknwnbase.h
+/usr/include/wsl/stubs/winapifamily.h
+/usr/include/wsl/stubs/wrl
+/usr/include/wsl/stubs/wrl/client.h
+/usr/include/wsl/stubs/wrl/implements.h
+/usr/include/wsl/winadapter.h

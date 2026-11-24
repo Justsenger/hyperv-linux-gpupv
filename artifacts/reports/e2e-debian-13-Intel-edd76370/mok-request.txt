@@ -1,0 +1,8 @@
+签名公钥尚未受信任。运行 sudo mokutil --import /var/lib/dkms/mok.pub，设置一次性密码，重启并在 MOK Manager 中选择 Enroll MOK，确认后重新执行安装。
+subject=CN=DKMS module signing key
+sha256 Fingerprint=10:73:82:57:8A:A9:EF:D5:BE:C0:1B:72:DB:7B:60:F0:5E:A2:93:F3:F5:39:C7:61:94:28:5B:5C:A8:9B:47:19
+input password: 
+input password again: 
+Running timer as unit: run-p4097-i4397.timer
+Will run service as unit: run-p4097-i4397.service
+enrollment_requested

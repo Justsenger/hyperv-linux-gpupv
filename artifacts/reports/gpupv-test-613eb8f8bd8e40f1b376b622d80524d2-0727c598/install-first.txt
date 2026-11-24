@@ -1,0 +1,49 @@
+40575dd6ffda79d452eff72677d97f890287a0bd58a639b013031332cb03d6f9  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+  You are using:           gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+/tmp/tmp.ZpEXL1U3x6/probe.c: In function ‘p’:
+/tmp/tmp.ZpEXL1U3x6/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Werror=int-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.ZpEXL1U3x6/probe.c:1:
+./include/linux/dma-fence.h:472:45: note: expected ‘u64’ {aka ‘long long unsigned int’} but argument is of type ‘struct dma_fence *’
+  472 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:243: /tmp/tmp.ZpEXL1U3x6/probe.o] Error 1
+make[1]: *** [/usr/src/linux-headers-6.8.0-147-generic/Makefile:1946: /tmp/tmp.ZpEXL1U3x6] Error 2
+make: *** [Makefile:240: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-6.8.0-147-generic'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+  You are using:           gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+  CC [M]  /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+  BTF [M] /tmp/tmpdiun4b6a/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+make: Leaving directory '/usr/src/linux-headers-6.8.0-147-generic'
+glibc 2.39, x86_64, kernel 6.8.0-147-generic, preflight OK
+Mesa D3D12: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []

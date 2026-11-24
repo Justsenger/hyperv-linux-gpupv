@@ -1,0 +1,9 @@
+input password: 
+input password again: 
+SHA1 Fingerprint: 8f:98:f6:5d:85:2f:8e:dd:e0:76:e6:4a:de:08:30:b3:a3:91:ea:ca
+        Issuer: CN=GPU-PV module signing
+        Subject: CN=GPU-PV module signing
+        Subject Public Key Info:
+            X509v3 Subject Key Identifier: 
+Running timer as unit: run-r53a42a4f3f024c89aabab8d4759c3ff1.timer
+Will run service as unit: run-r53a42a4f3f024c89aabab8d4759c3ff1.service

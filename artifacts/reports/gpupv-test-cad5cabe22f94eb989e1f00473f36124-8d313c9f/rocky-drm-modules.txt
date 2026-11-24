@@ -1,0 +1,5 @@
+CONFIG_DRM_HYPERV=m
+# CONFIG_DRM_VGEM is not set
+CONFIG_DRM_VKMS=m
+CONFIG_DRM_VKMS_KUNIT_TEST=m
+/lib/modules/5.14.0-741.22.1.el9_9.x86_64/kernel/drivers/gpu/drm/vkms/vkms.ko.xz

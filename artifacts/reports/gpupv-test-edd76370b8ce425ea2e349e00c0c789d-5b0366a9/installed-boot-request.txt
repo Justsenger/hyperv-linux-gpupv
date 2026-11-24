@@ -1,0 +1,2 @@
+Running timer as unit: run-p3587-i3887.timer
+Will run service as unit: run-p3587-i3887.service

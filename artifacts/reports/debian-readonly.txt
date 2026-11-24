@@ -1,0 +1,6 @@
+/ ro,relatime,discard,errors=remount-ro
+/ rw,relatime,discard,errors=remount-ro
+当前系统使用只读或不可变根目录。请使用可写的普通虚拟机镜像。
+缺少宿主设备清单，请用宿主 CLI 重新打包。
+install_exit=1
+no_install_directory

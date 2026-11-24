@@ -1,0 +1,275 @@
+libdxcore.so
+  Machine:                           Advanced Micro Devices X86-64
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+
+No version information found in this file.
+libd3d12.so
+  Machine:                           Advanced Micro Devices X86-64
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+
+Version symbols section '.gnu.version' contains 151 entries:
+ Addr: 0x0000000000001098  Offset: 0x00001098  Link: 1 (.dynsym)
+  000:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  004:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  008:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  00c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  010:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  014:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  018:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  01c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  020:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  024:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  028:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  02c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  030:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  034:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  038:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  03c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  040:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  044:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  048:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  04c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  050:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  054:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  058:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  05c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  060:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  064:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  068:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  06c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  070:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  074:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  078:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  07c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  080:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  084:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  088:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  08c:   2 (VER_1)         2 (VER_1)         2 (VER_1)         2 (VER_1)      
+  090:   2 (VER_1)         2 (VER_1)         2 (VER_1)         2 (VER_1)      
+  094:   2 (VER_1)         2 (VER_1)         2 (VER_1)      
+
+Version definition section '.gnu.version_d' contains 2 entries:
+ Addr: 0x00000000000011c8  Offset: 0x000011c8  Link: 6 (.dynstr)
+  000000: Rev: 1  Flags: BASE  Index: 1  Cnt: 1  Name: libd3d12.so
+  0x001c: Rev: 1  Flags: none  Index: 2  Cnt: 1  Name: VER_1
+libd3d12core.so
+  Machine:                           Advanced Micro Devices X86-64
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdxcore.so]
+
+Version symbols section '.gnu.version' contains 250 entries:
+ Addr: 0x00000000000019e0  Offset: 0x000019e0  Link: 1 (.dynsym)
+  000:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  004:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  008:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  00c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  010:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  014:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  018:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  01c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  020:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  024:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  028:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  02c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  030:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  034:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  038:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  03c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  040:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  044:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  048:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  04c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  050:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  054:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  058:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  05c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  060:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  064:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  068:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  06c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  070:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  074:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  078:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  07c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  080:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  084:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  088:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  08c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  090:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  094:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  098:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  09c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0a0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0a4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0a8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0ac:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0bc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0c0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0c4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0c8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0cc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0d0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0d4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0d8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0dc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0e0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0e4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0e8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0ec:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0f0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0f4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0f8:   2 (VER_1)         2 (VER_1)      
+
+Version definition section '.gnu.version_d' contains 2 entries:
+ Addr: 0x0000000000001bd4  Offset: 0x00001bd4  Link: 6 (.dynstr)
+  000000: Rev: 1  Flags: BASE  Index: 1  Cnt: 1  Name: libd3d12core.so
+  0x001c: Rev: 1  Flags: none  Index: 2  Cnt: 1  Name: VER_1
+libd3d12.so
+  Machine:                           AArch64
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+
+Version symbols section '.gnu.version' contains 150 entries:
+ Addr: 0x0000000000001080  Offset: 0x00001080  Link: 1 (.dynsym)
+  000:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  004:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  008:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  00c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  010:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  014:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  018:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  01c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  020:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  024:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  028:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  02c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  030:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  034:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  038:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  03c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  040:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  044:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  048:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  04c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  050:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  054:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  058:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  05c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  060:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  064:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  068:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  06c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  070:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  074:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  078:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  07c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  080:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  084:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  088:   1 (*global*)      1 (*global*)      1 (*global*)      2 (VER_1)      
+  08c:   2 (VER_1)         2 (VER_1)         2 (VER_1)         2 (VER_1)      
+  090:   2 (VER_1)         2 (VER_1)         2 (VER_1)         2 (VER_1)      
+  094:   2 (VER_1)         2 (VER_1)      
+
+Version definition section '.gnu.version_d' contains 2 entries:
+ Addr: 0x00000000000011ac  Offset: 0x000011ac  Link: 6 (.dynstr)
+  000000: Rev: 1  Flags: BASE  Index: 1  Cnt: 1  Name: libd3d12.so
+  0x001c: Rev: 1  Flags: none  Index: 2  Cnt: 1  Name: VER_1
+libd3d12core.so
+  Machine:                           AArch64
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdxcore.so]
+
+Version symbols section '.gnu.version' contains 247 entries:
+ Addr: 0x0000000000001998  Offset: 0x00001998  Link: 1 (.dynsym)
+  000:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  004:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  008:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  00c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  010:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  014:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  018:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  01c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  020:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  024:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  028:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  02c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  030:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  034:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  038:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  03c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  040:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  044:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  048:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  04c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  050:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  054:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  058:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  05c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  060:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  064:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  068:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  06c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  070:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  074:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  078:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  07c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  080:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  084:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  088:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  08c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  090:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  094:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  098:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  09c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0a0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0a4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0a8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0ac:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0b8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0bc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0c0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0c4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0c8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0cc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0d0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0d4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0d8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0dc:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0e0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0e4:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0e8:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0ec:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0f0:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  0f4:   1 (*global*)      2 (VER_1)         2 (VER_1)      
+
+Version definition section '.gnu.version_d' contains 2 entries:
+ Addr: 0x0000000000001b88  Offset: 0x00001b88  Link: 6 (.dynstr)
+  000000: Rev: 1  Flags: BASE  Index: 1  Cnt: 1  Name: libd3d12core.so
+  0x001c: Rev: 1  Flags: none  Index: 2  Cnt: 1  Name: VER_1
+libdxcore.so
+  Machine:                           AArch64
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+
+No version information found in this file.

@@ -1,0 +1,30 @@
+image=quay.io/rockylinux/rockylinux:8 unix_time=1795422210
+Unable to find image 'quay.io/rockylinux/rockylinux:8' locally
+8: Pulling from rockylinux/rockylinux
+940c44c16cdf: Pulling fs layer
+940c44c16cdf: Verifying Checksum
+940c44c16cdf: Download complete
+940c44c16cdf: Pull complete
+Digest: sha256:e8a49c5403b687db05d4d67333fa45808fbe74f36e683cec7abb1f7d0f2338c6
+Status: Downloaded newer image for quay.io/rockylinux/rockylinux:8
+NAME="Rocky Linux"
+VERSION="8.10 (Green Obsidian)"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="8.10"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Rocky Linux 8.10 (Green Obsidian)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:8:GA"
+HOME_URL="https://rockylinux.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2029-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-8"
+ROCKY_SUPPORT_PRODUCT_VERSION="8.10"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.10"
+Rocky Linux 8 - AppStream                       4.1 MB/s |  37 MB     00:08    
+Rocky Linux 8 - BaseOS                          8.1 MB/s | 101 MB     00:12    
+sh: line 1:     8 Killed                  dnf -y --setopt=install_weak_deps=False install make gcc kmod elfutils-libelf-devel kernel-devel
+exit=137

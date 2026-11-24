@@ -1,0 +1,2 @@
+/usr/lib/modules/6.12.117+deb13-amd64/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4021816 Nov 23 13:29 /lib/modules/6.12.117+deb13-amd64/updates/gpupv/dxgkrnl.ko

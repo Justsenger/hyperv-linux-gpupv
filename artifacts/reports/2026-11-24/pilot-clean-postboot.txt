@@ -1,0 +1,4 @@
+2887c4f6-5e5b-46c3-b606-d38fe7d7254e
+SecureBoot enabled
+clean_after_reboot
+sh: 1: modinfo: not found

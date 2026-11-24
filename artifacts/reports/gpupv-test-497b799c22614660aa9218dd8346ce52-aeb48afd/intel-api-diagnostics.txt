@@ -1,0 +1,33 @@
+uid=1000(tester) gid=100(users) groups=100(users),486(video),1000(sudo),1001(wheel)
+crw-rw---- 1 root video 10, 260 Nov 24 03:55 /dev/dxg
+
+/dev/dri:
+total 0
+drwxr-xr-x 2 root root         80 Nov 24 03:56 by-path
+crw-rw---- 1 root video  226,   0 Nov 24 03:55 card0
+crw-rw---- 1 root video  226,   1 Nov 24 03:56 card1
+crw-rw-rw- 1 root render 226, 128 Nov 24 03:56 renderD128
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/lib/libdxcore.so'
+	linux-vdso.so.1 (0x00007ffe9174d000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fb06a000000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fb06a2af000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fb069f16000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fb06a2aa000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fb06a3a6000)
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/lib/libd3d12.so'
+	linux-vdso.so.1 (0x00007ffeda7b2000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f8eeac00000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f8eeafa4000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f8eeaeba000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f8eeaeb5000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f8eeb079000)
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so'
+	linux-vdso.so.1 (0x00007ffcadb32000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f8e78e3e000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f8e78e3b000)
+	libstdc++.so.6 => /usr/lib64/libstdc++.so.6 (0x00007f8e78a00000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f8e78d4f000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f8e78d21000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f8e78600000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f8e78e57000)
+diagnostic_collection_finished

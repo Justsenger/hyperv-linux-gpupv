@@ -1,0 +1,33 @@
+#!/bin/sh
+# Prepare a dedicated shim boot entry for the stock Arch test disk.
+set -eu
+case "$(cat /proc/sys/kernel/hostname)" in gpupv-test-*) ;; *) exit 1;; esac
+findmnt -n -t efivarfs >/dev/null
+# The official image automounts the ESP on first access.
+test -d /efi/EFI
+findmnt -t efivarfs,vfat
+zgrep -E 'CONFIG_(SECONDARY_TRUSTED_KEYRING|INTEGRITY_(MACHINE|PLATFORM)_KEYRING|LOAD_UEFI_KEYS|MODULE_SIG)=' /proc/config.gz || true
+esp=$(findmnt -rn -t vfat -o TARGET --target /efi/EFI)
+test -n "$esp"
+entry="$esp/EFI/gpupv-test-shim"
+test ! -e "$entry"
+find "$esp/EFI" -iname '*.efi' -type f
+original=$(find "$esp/EFI" -iname bootx64.efi -type f | head -1)
+if test -z "$original"; then
+    original=$(find "$esp/EFI" -iname systemd-bootx64.efi -type f | head -1)
+fi
+test -s "$original"
+mkdir -m 700 "$entry"
+tar -xf "$1" -C "$entry" shimx64.efi mmx64.efi
+(cd "$entry" && printf '%s\n' '6fe6e1bcbe6cf6baec8e056d40361ca1aa715cc04ddcc2855351de060b84350b  shimx64.efi' 'd2fa8e52fddc99dad94a0009fee23cb2478c28373b777d50b2f784eb4e96f88e  mmx64.efi' | sha256sum -c -)
+# The Arch cloud image GRUB contains the prefix for its configuration on
+# the root partition. Preserve that loader byte for byte as shim's next stage.
+set -x
+cp "$original" "$entry/grubx64.efi"
+cmp "$original" "$entry/grubx64.efi"
+part=$(findmnt -rn -t vfat -o SOURCE --target "$esp")
+part=$(readlink -f "$part")
+disk=$(lsblk -no PKNAME "$part")
+num=$(cat "/sys/class/block/${part##*/}/partition")
+efibootmgr --create --disk "/dev/$disk" --part "$num" --label gpupv-test-shim --loader '\EFI\gpupv-test-shim\shimx64.efi'
+efibootmgr -v

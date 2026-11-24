@@ -1,0 +1,4 @@
+SecureBoot enabled
+DKMS module signing key
+5E:11:DA:0A:7E:91:1E:80:10:8C:50:8C:3B:5A:C1:9E:7F:15:2B:3B
+O

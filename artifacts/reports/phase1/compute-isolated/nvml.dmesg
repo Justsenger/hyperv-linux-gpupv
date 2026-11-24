@@ -1,0 +1,5 @@
+[  706.059101] gpupv-nvml-8678b6a0-5e9e-4e47-9a31-6af7fcf6ccc6
+[  706.068238] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  706.080574] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -22
+[  706.082148] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -22
+[  706.083600] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -22

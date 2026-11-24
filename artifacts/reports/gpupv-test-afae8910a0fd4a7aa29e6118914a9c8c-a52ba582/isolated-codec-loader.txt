@@ -1,0 +1,47 @@
+      1302:	find library=libcuda.so.1 [0]; searching
+      1302:	  trying file=/home/tester/gpupv-codec/lib/libcuda.so.1
+      1302:	  trying file=/usr/lib/wsl/lib/glibc-hwcaps/x86-64-v4/libcuda.so.1
+      1302:	  trying file=/usr/lib/wsl/lib/glibc-hwcaps/x86-64-v3/libcuda.so.1
+      1302:	  trying file=/usr/lib/wsl/lib/glibc-hwcaps/x86-64-v2/libcuda.so.1
+      1302:	  trying file=/usr/lib/wsl/lib/libcuda.so.1
+      1302:	checking for version `GLIBC_2.2.5' in file /home/tester/gpupv-codec/lib/libdl.so.2 [0] required by file /usr/lib/wsl/lib/libcuda.so.1 [0]
+      1302:	checking for version `GLIBC_2.2.5' in file /home/tester/gpupv-codec/lib/libpthread.so.0 [0] required by file /usr/lib/wsl/lib/libcuda.so.1 [0]
+      1302:	checking for version `GLIBC_2.2.5' in file /home/tester/gpupv-codec/lib/libc.so.6 [0] required by file /usr/lib/wsl/lib/libcuda.so.1 [0]
+      1302:	calling init: /usr/lib/wsl/lib/libcuda.so.1
+      1302:	/usr/lib/wsl/lib/libcuda.so.1: error: symbol lookup error: undefined symbol: cuEGLStreamProducerConnect (fatal)
+      1302:	/usr/lib/wsl/lib/libcuda.so.1: error: symbol lookup error: undefined symbol: cuEGLStreamProducerDisconnect (fatal)
+      1302:	/usr/lib/wsl/lib/libcuda.so.1: error: symbol lookup error: undefined symbol: cuEGLStreamConsumerDisconnect (fatal)
+      1302:	/usr/lib/wsl/lib/libcuda.so.1: error: symbol lookup error: undefined symbol: cuEGLStreamProducerPresentFrame (fatal)
+      1302:	/usr/lib/wsl/lib/libcuda.so.1: error: symbol lookup error: undefined symbol: cuEGLStreamProducerReturnFrame (fatal)
+      1302:	find library=libnvidia-encode.so.1 [0]; searching
+      1302:	  trying file=/home/tester/gpupv-codec/lib/libnvidia-encode.so.1
+      1302:	  trying file=/usr/lib/wsl/lib/libnvidia-encode.so.1
+      1302:	checking for version `GLIBC_2.2.5' in file /home/tester/gpupv-codec/lib/libdl.so.2 [0] required by file /usr/lib/wsl/lib/libnvidia-encode.so.1 [0]
+      1302:	checking for version `GLIBC_2.2.5' in file /home/tester/gpupv-codec/lib/libc.so.6 [0] required by file /usr/lib/wsl/lib/libnvidia-encode.so.1 [0]
+      1302:	calling init: /usr/lib/wsl/lib/libnvidia-encode.so.1
+      1302:	checking for version `GLIBC_2.2.5' in file /home/tester/gpupv-codec/lib/librt.so.1 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.2.5' in file /home/tester/gpupv-codec/lib/libm.so.6 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.8' in file /home/tester/gpupv-codec/lib/libc.so.6 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.3.2' in file /home/tester/gpupv-codec/lib/libc.so.6 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.3' in file /home/tester/gpupv-codec/lib/libc.so.6 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.4' in file /home/tester/gpupv-codec/lib/libc.so.6 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.7' in file /home/tester/gpupv-codec/lib/libc.so.6 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.3.3' in file /home/tester/gpupv-codec/lib/libc.so.6 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.2.5' in file /home/tester/gpupv-codec/lib/libc.so.6 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.3.4' in file /home/tester/gpupv-codec/lib/libdl.so.2 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.2.5' in file /home/tester/gpupv-codec/lib/libdl.so.2 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.3.2' in file /home/tester/gpupv-codec/lib/libpthread.so.0 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.4' in file /home/tester/gpupv-codec/lib/libpthread.so.0 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	checking for version `GLIBC_2.2.5' in file /home/tester/gpupv-codec/lib/libpthread.so.0 [0] required by file /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]
+      1302:	calling init: /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1
+      1302:	/usr/lib/wsl/lib/libdxcore.so: error: symbol lookup error: undefined symbol: D3DKMTOpenSyncObjectFromNtHandle (fatal)
+      1302:	/usr/lib/wsl/lib/libdxcore.so: error: symbol lookup error: undefined symbol: D3DKMTAcquireKeyedMutex (fatal)
+      1302:	/usr/lib/wsl/lib/libdxcore.so: error: symbol lookup error: undefined symbol: D3DKMTReleaseKeyedMutex (fatal)
+      1302:	/usr/lib/wsl/lib/libdxcore.so: error: symbol lookup error: undefined symbol: D3DKMTOpenKeyedMutex (fatal)
+      1302:	/usr/lib/wsl/lib/libdxcore.so: error: symbol lookup error: undefined symbol: D3DKMTRegisterTrimNotification (fatal)
+      1302:	/usr/lib/wsl/lib/libdxcore.so: error: symbol lookup error: undefined symbol: D3DKMTUnregisterTrimNotification (fatal)
+      1302:	/usr/lib/wsl/lib/libdxcore.so: error: symbol lookup error: undefined symbol: D3DKMTCreateNativeFence (fatal)
+      1302:	/usr/lib/wsl/lib/libdxcore.so: error: symbol lookup error: undefined symbol: D3DKMTOpenNativeFenceFromNtHandle (fatal)
+      1302:	calling fini: /usr/lib/wsl/lib/libnvidia-encode.so.1 [0]
+      1302:	calling fini: /usr/lib/wsl/lib/libcuda.so.1 [0]
+      1302:	calling fini: /usr/lib/wsl/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libcuda.so.1.1 [0]

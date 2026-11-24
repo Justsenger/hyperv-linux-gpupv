@@ -1,0 +1,10 @@
+{
+  "vm": "gpupv-test-8910c6a39aad4dabb591ed0db409de9b",
+  "hostBuild": "10.0.26200.0",
+  "failures": [
+    "Kernel diagnostic requires review",
+    "Kernel diagnostic after workload requires review"
+  ],
+  "gpu": "\\\\?\\PCI#VEN_10DE&DEV_1F15&SUBSYS_20908086&REV_A1#4&2498e50c&0&0030#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+  "passed": false
+}

@@ -1,0 +1,97 @@
+name: Compute bundles
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Local artifact version
+        required: true
+        default: snapshot
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.jobs.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: jobs
+        run: echo "matrix=$(python3 tests/container-matrix.py --plan)" >> "$GITHUB_OUTPUT"
+      - run: python3 tests/test-compute.py
+      - shell: pwsh
+        run: ./tests/Test-BundleTools.ps1
+  module:
+    needs: plan
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tests/container-matrix.py --arch "${{ matrix.arch }}" --target "${{ matrix.target }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: modules-${{ matrix.arch }}-${{ matrix.target }}
+          path: out
+          if-no-files-found: error
+  bundle:
+    needs: module
+    strategy:
+      matrix:
+        include:
+          - {arch: x86_64, runner: ubuntu-24.04}
+          - {arch: aarch64, runner: ubuntu-24.04-arm}
+    runs-on: ${{ matrix.runner }}
+    env:
+      ARCH: ${{ matrix.arch }}
+      VERSION: ${{ inputs.version || github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: modules-${{ matrix.arch }}-*
+          path: pool
+      - name: Build compute probe on glibc 2.28
+        run: |
+          docker run --rm -v "$PWD:/src" -w /src almalinux:8 sh -ec 'dnf -y --enablerepo=powertools install gcc-c++ libstdc++-static && sh guest/build-probe /src/probe'
+          file probe
+      - run: python3 build.py bundle --arch "$ARCH" --version "$VERSION" --pool pool --probe probe --output-dir output
+      - name: Check packaged binaries and reject the other architecture
+        run: |
+          zip="output/linuxpv-bundle-$ARCH-$VERSION.zip"
+          python3 tests/check-bundle.py "$zip" "$ARCH"
+          other=x86_64
+          if [ "$ARCH" = x86_64 ]; then other=aarch64; fi
+          if python3 tests/check-bundle.py "$zip" "$other"; then exit 1; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bundle-${{ matrix.arch }}
+          path: output/*.zip
+  release:
+    needs: bundle
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: bundle-*
+          path: output
+          merge-multiple: true
+      - run: |
+          python3 build.py --output-dir output
+          cd output
+          sha256sum *.zip > SHA256SUMS
+          sha256sum -c SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linuxpv-release
+          path: output
+      - if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: gh release create "$TAG" --verify-tag --generate-notes output/*

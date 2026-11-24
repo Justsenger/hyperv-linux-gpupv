@@ -1,0 +1,101 @@
+boot_id=e96d80f6-09c4-4d34-89d9-3261aef361c8 uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 8086:9a49 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+OpenCL GPU: Intel(R) Graphics [0x9a49]
+Intel(R) Graphics [0x9a49]: verified 32 OpenCL results, last=220
+Intel OpenCL exit=0
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+pci id for fd 3: 1414:0006, driver (null)
+pci id for fd 4: 1414:0006, driver (null)
+pci id for fd 5: 1414:0006, driver (null)
+libva error: /usr/lib64/dri/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+Trying display: drm
+No accessible Intel D3D12 VA display exposing H.264 baseline encode and VP9 profile 0 decode.
+Intel 工作负载结果：计算=True，视频退出码=77。

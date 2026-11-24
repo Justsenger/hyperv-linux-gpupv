@@ -1,0 +1,2 @@
+Running timer as unit: run-p7473-i7773.timer
+Will run service as unit: run-p7473-i7773.service

@@ -1,0 +1,71 @@
+image=ubuntu:22.04 unix_time=1795421964
+Unable to find image 'ubuntu:22.04' locally
+22.04: Pulling from library/ubuntu
+ba082564e660: Pulling fs layer
+ba082564e660: Verifying Checksum
+ba082564e660: Download complete
+ba082564e660: Pull complete
+Digest: sha256:f64b2ffc2f10ab8f8505aa56b2664bd846cbb9df87c7e2532e30f7667021c0e6
+Status: Downloaded newer image for ubuntu:22.04
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+Ign:1 https://archive.ubuntu.com/ubuntu jammy InRelease
+Ign:2 https://security.ubuntu.com/ubuntu jammy-security InRelease
+Ign:3 https://archive.ubuntu.com/ubuntu jammy-updates InRelease
+Ign:2 https://security.ubuntu.com/ubuntu jammy-security InRelease
+Ign:4 https://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Ign:2 https://security.ubuntu.com/ubuntu jammy-security InRelease
+Ign:1 https://archive.ubuntu.com/ubuntu jammy InRelease
+Ign:3 https://archive.ubuntu.com/ubuntu jammy-updates InRelease
+Err:2 https://security.ubuntu.com/ubuntu jammy-security InRelease
+  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+Ign:4 https://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Ign:1 https://archive.ubuntu.com/ubuntu jammy InRelease
+Ign:3 https://archive.ubuntu.com/ubuntu jammy-updates InRelease
+Ign:4 https://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Err:1 https://archive.ubuntu.com/ubuntu jammy InRelease
+  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+Err:3 https://archive.ubuntu.com/ubuntu jammy-updates InRelease
+  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+Err:4 https://archive.ubuntu.com/ubuntu jammy-backports InRelease
+  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+Reading package lists...
+W: https://security.ubuntu.com/ubuntu/dists/jammy-security/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy-updates/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://security.ubuntu.com/ubuntu/dists/jammy-security/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy-backports/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://security.ubuntu.com/ubuntu/dists/jammy-security/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy-updates/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://security.ubuntu.com/ubuntu/dists/jammy-security/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy-backports/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy-updates/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy-backports/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy-updates/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/jammy-backports/InRelease: No system certificates available. Try installing ca-certificates.
+W: Failed to fetch https://archive.ubuntu.com/ubuntu/dists/jammy/InRelease  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+W: Failed to fetch https://archive.ubuntu.com/ubuntu/dists/jammy-updates/InRelease  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+W: Failed to fetch https://archive.ubuntu.com/ubuntu/dists/jammy-backports/InRelease  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+W: Failed to fetch https://security.ubuntu.com/ubuntu/dists/jammy-security/InRelease  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package make
+E: Unable to locate package gcc
+E: Unable to locate package kmod
+E: Unable to locate package linux-headers-generic
+exit=100

@@ -1,0 +1,23 @@
+oem26.inf C:\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_37ad1017c2106c27
+oem39.inf C:\Windows\System32\DriverStore\FileRepository\nvinsi.inf_amd64_bdbfdf54ab096b2b
+libcuda_loader.so
+libcuda.so.1.1
+libcudadebugger.so.1
+libnvcuvid.so.1
+libnvdiagclt.so.1
+libnvdxdlkernels.so
+libnvdxgdmal.so.1
+libnvidia-encode.so.1
+libnvidia-gpucomp.so
+libnvidia-ml_loader.so
+libnvidia-ml.so.1
+libnvidia-ngx.so.1
+libnvidia-nvvm.so.4
+libnvidia-nvvm70.so.4
+libnvidia-opticalflow.so.1
+libnvidia-ptxjitcompiler.so.1
+libnvidia-tileiras.so
+libnvoptix_loader.so.1
+libnvvamanager.so.1
+libnvwgf2umx.so
+nvidia-smi

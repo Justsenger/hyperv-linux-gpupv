@@ -1,0 +1,7 @@
+total 0
+lrwxrwxrwx. 1 root root    0 Nov 24 06:01 card0 -> ../../devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171/drm/card0
+lrwxrwxrwx. 1 root root    0 Nov 24 06:01 card0-Virtual-1 -> ../../devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171/drm/card0/card0-Virtual-1
+lrwxrwxrwx. 1 root root    0 Nov 24 06:01 card1 -> ../../devices/faux/vkms/drm/card1
+lrwxrwxrwx. 1 root root    0 Nov 24 06:01 card1-Virtual-2 -> ../../devices/faux/vkms/drm/card1/card1-Virtual-2
+lrwxrwxrwx. 1 root root    0 Nov 24 06:01 card1-Writeback-1 -> ../../devices/faux/vkms/drm/card1/card1-Writeback-1
+-r--r--r--. 1 root root 4096 Nov 24 06:01 version

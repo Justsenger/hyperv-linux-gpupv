@@ -1,0 +1,281 @@
+NAME="Rocky Linux"
+VERSION="9.9 (Blue Onyx)"
+RELEASE_TYPE="stable"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="9.9"
+PLATFORM_ID="platform:el9"
+PRETTY_NAME="Rocky Linux 9.9 (Blue Onyx)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:9::baseos"
+HOME_URL="https://rockylinux.org/"
+VENDOR_NAME="RESF"
+VENDOR_URL="https://resf.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2032-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-9"
+ROCKY_SUPPORT_PRODUCT_VERSION="9.9"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="9.9"
+Linux gpupv-test-40479e9e17c44500abd975ed73f04043 5.14.0-741.22.1.el9_9.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Nov 12 15:18:14 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+0x1414
+0x008e
+Last metadata expiration check: 0:01:18 ago on Mon Nov 23 11:45:24 2026.
+No match for argument: intel-compute-runtime
+Error: Unable to find a match: intel-compute-runtime
+OpenCL package exit=1
+Last metadata expiration check: 0:01:19 ago on Mon Nov 23 11:45:24 2026.
+Package glx-utils-8.4.0-12.20210504git0f9e7d9.el9.0.1.x86_64 is already installed.
+Package vulkan-tools-1.4.341.0-1.el9.x86_64 is already installed.
+No match for argument: clinfo
+No match for argument: libva-utils
+Dependencies resolved.
+================================================================================
+ Package                   Arch      Version                 Repository    Size
+================================================================================
+Installing:
+ mesa-vulkan-drivers       x86_64    26.1.1-1.el9            appstream     15 M
+ xorg-x11-server-Xvfb      x86_64    1.20.11-39.el9_9.1      appstream    897 k
+ xorg-x11-xauth            x86_64    1:1.1-10.el9            appstream     36 k
+Installing dependencies:
+ freetype                  x86_64    2.10.4-10.el9_5         baseos       386 k
+ graphite2                 x86_64    1.3.14-9.el9            baseos        94 k
+ harfbuzz                  x86_64    2.7.4-10.el9            baseos       623 k
+ libICE                    x86_64    1.0.10-8.el9            appstream     70 k
+ libSM                     x86_64    1.2.3-10.el9            appstream     41 k
+ libXdmcp                  x86_64    1.1.3-8.el9             appstream     35 k
+ libXfont2                 x86_64    2.0.3-15.el9            appstream    143 k
+ libXmu                    x86_64    1.1.3-8.el9             appstream     74 k
+ libXt                     x86_64    1.2.0-6.el9             appstream    180 k
+ libfontenc                x86_64    1.1.3-17.el9            appstream     30 k
+ libpng                    x86_64    2:1.6.37-17.el9         baseos       116 k
+ libxkbfile                x86_64    1.1.0-8.el9             appstream     88 k
+ pixman                    x86_64    0.40.0-6.el9_3          appstream    269 k
+ vulkan-loader             x86_64    1.4.341.0-1.el9         appstream    160 k
+ xkbcomp                   x86_64    1.4.4-4.el9             appstream     99 k
+ xkeyboard-config          noarch    2.33-2.el9.0.1          appstream    854 k
+ xorg-x11-server-common    x86_64    1.20.11-39.el9_9.1      appstream     35 k
+
+Transaction Summary
+================================================================================
+Install  20 Packages
+
+Total download size: 19 M
+Installed size: 101 M
+Downloading Packages:
+(1/20): graphite2-1.3.14-9.el9.x86_64.rpm       509 kB/s |  94 kB     00:00    
+(2/20): freetype-2.10.4-10.el9_5.x86_64.rpm     1.3 MB/s | 386 kB     00:00    
+(3/20): libpng-1.6.37-17.el9.x86_64.rpm         1.1 MB/s | 116 kB     00:00    
+(4/20): harfbuzz-2.7.4-10.el9.x86_64.rpm        1.9 MB/s | 623 kB     00:00    
+(5/20): libICE-1.0.10-8.el9.x86_64.rpm          1.4 MB/s |  70 kB     00:00    
+(6/20): libSM-1.2.3-10.el9.x86_64.rpm           794 kB/s |  41 kB     00:00    
+(7/20): libXdmcp-1.1.3-8.el9.x86_64.rpm         698 kB/s |  35 kB     00:00    
+(8/20): libXfont2-2.0.3-15.el9.x86_64.rpm       3.5 MB/s | 143 kB     00:00    
+(9/20): libXmu-1.1.3-8.el9.x86_64.rpm           1.9 MB/s |  74 kB     00:00    
+(10/20): libXt-1.2.0-6.el9.x86_64.rpm           2.9 MB/s | 180 kB     00:00    
+(11/20): libfontenc-1.1.3-17.el9.x86_64.rpm     510 kB/s |  30 kB     00:00    
+(12/20): libxkbfile-1.1.0-8.el9.x86_64.rpm      1.4 MB/s |  88 kB     00:00    
+(13/20): pixman-0.40.0-6.el9_3.x86_64.rpm       5.1 MB/s | 269 kB     00:00    
+(14/20): vulkan-loader-1.4.341.0-1.el9.x86_64.r 3.0 MB/s | 160 kB     00:00    
+(15/20): xkbcomp-1.4.4-4.el9.x86_64.rpm         2.0 MB/s |  99 kB     00:00    
+(16/20): xkeyboard-config-2.33-2.el9.0.1.noarch 5.0 MB/s | 854 kB     00:00    
+(17/20): xorg-x11-server-Xvfb-1.20.11-39.el9_9. 5.6 MB/s | 897 kB     00:00    
+(18/20): xorg-x11-server-common-1.20.11-39.el9_ 900 kB/s |  35 kB     00:00    
+(19/20): xorg-x11-xauth-1.1-10.el9.x86_64.rpm   879 kB/s |  36 kB     00:00    
+(20/20): mesa-vulkan-drivers-26.1.1-1.el9.x86_6  12 MB/s |  15 MB     00:01    
+--------------------------------------------------------------------------------
+Total                                           6.9 MB/s |  19 MB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : pixman-0.40.0-6.el9_3.x86_64                          1/20 
+  Installing       : libICE-1.0.10-8.el9.x86_64                            2/20 
+  Installing       : libSM-1.2.3-10.el9.x86_64                             3/20 
+  Installing       : libXt-1.2.0-6.el9.x86_64                              4/20 
+  Installing       : libXmu-1.1.3-8.el9.x86_64                             5/20 
+  Installing       : xorg-x11-xauth-1:1.1-10.el9.x86_64                    6/20 
+  Installing       : vulkan-loader-1.4.341.0-1.el9.x86_64                  7/20 
+  Installing       : mesa-vulkan-drivers-26.1.1-1.el9.x86_64               8/20 
+  Installing       : xkeyboard-config-2.33-2.el9.0.1.noarch                9/20 
+  Installing       : libxkbfile-1.1.0-8.el9.x86_64                        10/20 
+  Installing       : xkbcomp-1.4.4-4.el9.x86_64                           11/20 
+  Installing       : xorg-x11-server-common-1.20.11-39.el9_9.1.x86_64     12/20 
+  Installing       : libfontenc-1.1.3-17.el9.x86_64                       13/20 
+  Installing       : libXdmcp-1.1.3-8.el9.x86_64                          14/20 
+  Installing       : libpng-2:1.6.37-17.el9.x86_64                        15/20 
+  Installing       : graphite2-1.3.14-9.el9.x86_64                        16/20 
+  Installing       : harfbuzz-2.7.4-10.el9.x86_64                         17/20 
+  Installing       : freetype-2.10.4-10.el9_5.x86_64                      18/20 
+  Installing       : libXfont2-2.0.3-15.el9.x86_64                        19/20 
+  Installing       : xorg-x11-server-Xvfb-1.20.11-39.el9_9.1.x86_64       20/20 
+  Running scriptlet: xorg-x11-server-Xvfb-1.20.11-39.el9_9.1.x86_64       20/20 
+  Verifying        : freetype-2.10.4-10.el9_5.x86_64                       1/20 
+  Verifying        : graphite2-1.3.14-9.el9.x86_64                         2/20 
+  Verifying        : harfbuzz-2.7.4-10.el9.x86_64                          3/20 
+  Verifying        : libpng-2:1.6.37-17.el9.x86_64                         4/20 
+  Verifying        : libICE-1.0.10-8.el9.x86_64                            5/20 
+  Verifying        : libSM-1.2.3-10.el9.x86_64                             6/20 
+  Verifying        : libXdmcp-1.1.3-8.el9.x86_64                           7/20 
+  Verifying        : libXfont2-2.0.3-15.el9.x86_64                         8/20 
+  Verifying        : libXmu-1.1.3-8.el9.x86_64                             9/20 
+  Verifying        : libXt-1.2.0-6.el9.x86_64                             10/20 
+  Verifying        : libfontenc-1.1.3-17.el9.x86_64                       11/20 
+  Verifying        : libxkbfile-1.1.0-8.el9.x86_64                        12/20 
+  Verifying        : mesa-vulkan-drivers-26.1.1-1.el9.x86_64              13/20 
+  Verifying        : pixman-0.40.0-6.el9_3.x86_64                         14/20 
+  Verifying        : vulkan-loader-1.4.341.0-1.el9.x86_64                 15/20 
+  Verifying        : xkbcomp-1.4.4-4.el9.x86_64                           16/20 
+  Verifying        : xkeyboard-config-2.33-2.el9.0.1.noarch               17/20 
+  Verifying        : xorg-x11-server-Xvfb-1.20.11-39.el9_9.1.x86_64       18/20 
+  Verifying        : xorg-x11-server-common-1.20.11-39.el9_9.1.x86_64     19/20 
+  Verifying        : xorg-x11-xauth-1:1.1-10.el9.x86_64                   20/20 
+
+Installed:
+  freetype-2.10.4-10.el9_5.x86_64                                               
+  graphite2-1.3.14-9.el9.x86_64                                                 
+  harfbuzz-2.7.4-10.el9.x86_64                                                  
+  libICE-1.0.10-8.el9.x86_64                                                    
+  libSM-1.2.3-10.el9.x86_64                                                     
+  libXdmcp-1.1.3-8.el9.x86_64                                                   
+  libXfont2-2.0.3-15.el9.x86_64                                                 
+  libXmu-1.1.3-8.el9.x86_64                                                     
+  libXt-1.2.0-6.el9.x86_64                                                      
+  libfontenc-1.1.3-17.el9.x86_64                                                
+  libpng-2:1.6.37-17.el9.x86_64                                                 
+  libxkbfile-1.1.0-8.el9.x86_64                                                 
+  mesa-vulkan-drivers-26.1.1-1.el9.x86_64                                       
+  pixman-0.40.0-6.el9_3.x86_64                                                  
+  vulkan-loader-1.4.341.0-1.el9.x86_64                                          
+  xkbcomp-1.4.4-4.el9.x86_64                                                    
+  xkeyboard-config-2.33-2.el9.0.1.noarch                                        
+  xorg-x11-server-Xvfb-1.20.11-39.el9_9.1.x86_64                                
+  xorg-x11-server-common-1.20.11-39.el9_9.1.x86_64                              
+  xorg-x11-xauth-1:1.1-10.el9.x86_64                                            
+
+Complete!
+graphics tools exit=0
+52eb3d30159e155d3bc9581bb5631aca76fbb6bd7ef72a091c7580f52e86ee54  /mnt/gpupv/guest/gpupv-guest
+40575dd6ffda79d452eff72677d97f890287a0bd58a639b013031332cb03d6f9  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+/tmp/tmp.QDO7UKR1LK/probe.c:2:28: error: ‘struct dma_fence_ops’ has no member named ‘fence_value_str’
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[1]: *** [scripts/Makefile.build:250: /tmp/tmp.QDO7UKR1LK/probe.o] Error 1
+make: *** [Makefile:1977: /tmp/tmp.QDO7UKR1LK] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/5.14.0-741.22.1.el9_9.x86_64'
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+  BTF [M] /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+make: Leaving directory '/usr/src/kernels/5.14.0-741.22.1.el9_9.x86_64'
+glibc 2.34, x86_64, kernel 5.14.0-741.22.1.el9_9.x86_64, preflight OK
+Mesa D3D12: []
+Vulkan Dozen manifests: []
+glibc 2.34, x86_64, kernel 5.14.0-741.22.1.el9_9.x86_64, preflight OK
+Mesa D3D12: []
+Vulkan Dozen manifests: []
+/usr/lib/modules/5.14.0-741.22.1.el9_9.x86_64/updates/gpupv/dxgkrnl.ko
+-rw-r--r--. 1 root root system_u:object_r:modules_object_t:s0 3815336 Nov 23 11:47 /lib/modules/5.14.0-741.22.1.el9_9.x86_64/updates/gpupv/dxgkrnl.ko
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+crw-rw----. 1 root video 10, 122 Nov 23 11:47 /dev/dxg
+Dozen manifests found=0
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+crw-rw----. 1 root video 10, 122 Nov 23 11:47 /dev/dxg
+intel_hasvk_icd.x86_64.json
+intel_icd.x86_64.json
+lvp_icd.x86_64.json
+nouveau_icd.x86_64.json
+radeon_icd.x86_64.json
+'DISPLAY' environment variable not set... skipping surface info
+==========
+VULKANINFO
+==========
+
+Vulkan Instance Version: 1.4.341
+
+
+Instance Extensions: count = 26
+-------------------------------
+VK_EXT_acquire_drm_display             : extension revision 1
+VK_EXT_acquire_xlib_display            : extension revision 1
+VK_EXT_debug_report                    : extension revision 10
+VK_EXT_debug_utils                     : extension revision 2
+VK_EXT_direct_mode_display             : extension revision 1
+VK_EXT_display_surface_counter         : extension revision 1
+VK_EXT_headless_surface                : extension revision 1
+VK_EXT_layer_settings                  : extension revision 2
+VK_EXT_surface_maintenance1            : extension revision 1
+VK_EXT_swapchain_colorspace            : extension revision 5
+VK_KHR_device_group_creation           : extension revision 1
+VK_KHR_display                         : extension revision 23
+VK_KHR_external_fence_capabilities     : extension revision 1
+VK_KHR_external_memory_capabilities    : extension revision 1
+VK_KHR_external_semaphore_capabilities : extension revision 1
+VK_KHR_get_display_properties2         : extension revision 1
+VK_KHR_get_physical_device_properties2 : extension revision 2
+VK_KHR_get_surface_capabilities2       : extension revision 1
+VK_KHR_portability_enumeration         : extension revision 1
+VK_KHR_surface                         : extension revision 25
+VK_KHR_surface_maintenance1            : extension revision 1
+VK_KHR_surface_protected_capabilities  : extension revision 1
+VK_KHR_wayland_surface                 : extension revision 6
+VK_KHR_xcb_surface                     : extension revision 6
+VK_KHR_xlib_surface                    : extension revision 6
+VK_LUNARG_direct_driver_loading        : extension revision 1
+
+Instance Layers: count = 1
+--------------------------
+VK_LAYER_MESA_device_select Linux device selection layer 1.4.303  version 1
+
+Devices:
+========
+GPU0:
+	apiVersion         = 1.4.348
+	driverVersion      = 26.1.1
+	vendorID           = 0x10005
+	deviceID           = 0x0000
+	deviceType         = PHYSICAL_DEVICE_TYPE_CPU
+	deviceName         = llvmpipe (LLVM 22.1.8, 256 bits)
+	driverID           = DRIVER_ID_MESA_LLVMPIPE
+	driverName         = llvmpipe
+	driverInfo         = Mesa 26.1.1 (LLVM 22.1.8)
+	conformanceVersion = 1.3.1.1
+	deviceUUID         = 6d657361-3236-2e31-2e31-000000000000
+	driverUUID         = 6c6c766d-7069-7065-5555-494400000000
+WARNING: [Loader Message] Code 0 : ICD for selected physical device does not export vkGetPhysicalDeviceDisplayPlanePropertiesKHR!
+WARNING: [Loader Message] Code 0 : ICD for selected physical device does not export vkGetPhysicalDeviceDisplayPropertiesKHR!
+glx: failed to create drisw screen
+X Error of failed request:  BadValue (integer parameter out of range for operation)
+  Major opcode of failed request:  150 (GLX)
+  Minor opcode of failed request:  24 (X_GLXCreateNewContext)
+  Value in failed request:  0x0
+  Serial number of failed request:  30
+  Current serial number in output stream:  31
+name of display: :99
+env: 'vainfo': No such file or directory
+diagnostic_collection_finished
+managed_paths_clean
+managed_paths_clean

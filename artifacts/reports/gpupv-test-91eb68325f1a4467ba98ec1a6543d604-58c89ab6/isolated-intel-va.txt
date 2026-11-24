@@ -1,0 +1,77 @@
+gpupv-va-runtime.tgz: OK
+ffmpeg	7:6.1.1-3ubuntu5
+libc6:amd64	2.39-0ubuntu8.9
+libllvm20:amd64	1:20.1.2-0ubuntu1~24.04.3
+libva2:amd64	2.20.0-2ubuntu0.2
+mesa-libgallium:amd64	25.2.8-0ubuntu0.24.04.5
+mesa-va-drivers:amd64	25.2.8-0ubuntu0.24.04.5
+vainfo	2.12.0+ds1-1
+total 0
+drwxr-xr-x 2 root root         80 Nov 24 03:22 by-path
+crw-rw---- 1 root video  226,   0 Nov 24 03:21 card0
+crw-rw---- 1 root video  226,   1 Nov 24 03:22 card1
+crw-rw-rw- 1 root render 226, 128 Nov 24 03:22 renderD128
+libva info: VA-API version 1.20.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /tmp/tmp.szfOsvKdB6/lib/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_20
+libva info: va_openDriver() returns 0
+vainfo.bin: VA-API version: 1.20 (libva 2.12.0)
+vainfo.bin: Driver version: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.5 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo.bin: Supported profile and entrypoints
+      VAProfileH264ConstrainedBaseline:	VAEntrypointVLD
+      VAProfileH264ConstrainedBaseline:	VAEntrypointEncSlice
+      VAProfileH264Main               :	VAEntrypointVLD
+      VAProfileH264Main               :	VAEntrypointEncSlice
+      VAProfileH264High               :	VAEntrypointVLD
+      VAProfileH264High               :	VAEntrypointEncSlice
+      VAProfileHEVCMain               :	VAEntrypointVLD
+      VAProfileHEVCMain               :	VAEntrypointEncSlice
+      VAProfileHEVCMain10             :	VAEntrypointVLD
+      VAProfileHEVCMain10             :	VAEntrypointEncSlice
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+Testing Intel D3D12 H.264 on /dev/dri/renderD128
+[AVHWDeviceContext @ 0x555556b15f00] libva: VA-API version 1.20.0
+[AVHWDeviceContext @ 0x555556b15f00] libva: User environment variable requested driver 'd3d12'
+[AVHWDeviceContext @ 0x555556b15f00] libva: Trying to open /tmp/tmp.szfOsvKdB6/lib/d3d12_drv_video.so
+[AVHWDeviceContext @ 0x555556b15f00] libva: Found init function __vaDriverInit_1_20
+[AVHWDeviceContext @ 0x555556b15f00] libva: va_openDriver() returns 0
+[AVHWDeviceContext @ 0x555556b15f00] Initialised VAAPI connection: version 1.20
+[AVHWDeviceContext @ 0x555556b15f00] VAAPI driver: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.5 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[AVHWDeviceContext @ 0x555556b15f00] Driver not found in known nonstandard list, using standard behaviour.
+[Parsed_testsrc2_0 @ 0x555556d9ffc0] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 15 tbn
+[out#0/h264 @ 0x555556de91c0] No explicit maps, mapping streams automatically...
+[vost#0:0/h264_vaapi @ 0x555556dea180] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (h264_vaapi))
+[graph 0 input from stream 0:0 @ 0x555556e6f8c0] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1
+[auto_scale_0 @ 0x555556e70a80] w:iw h:ih flags:'' interl:0
+[Parsed_format_0 @ 0x555556e6cb00] auto-inserting filter 'auto_scale_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_format_0'
+[auto_scale_0 @ 0x555556e70a80] w:320 h:240 fmt:yuv420p sar:1/1 -> w:320 h:240 fmt:nv12 sar:1/1 flags:0x00000004
+[h264_vaapi @ 0x555556dea540] Using input frames context (format vaapi) with h264_vaapi encoder.
+[h264_vaapi @ 0x555556dea540] Input surface format is nv12.
+[h264_vaapi @ 0x555556dea540] Using VAAPI profile VAProfileH264High (7).
+[h264_vaapi @ 0x555556dea540] Using VAAPI entrypoint VAEntrypointEncSlice (6).
+[h264_vaapi @ 0x555556dea540] Using VAAPI render target format YUV420 (0x1).
+[h264_vaapi @ 0x555556dea540] No quality level set; using default (20).
+[h264_vaapi @ 0x555556dea540] RC mode: CQP.
+[h264_vaapi @ 0x555556dea540] RC quality: 20.
+[h264_vaapi @ 0x555556dea540] RC framerate: 15/1 (15.00 fps).
+[h264_vaapi @ 0x555556dea540] Driver does not report any additional prediction constraints.
+[h264_vaapi @ 0x555556dea540] Using intra and P-frames (supported references: 2 / 0).
+[h264_vaapi @ 0x555556dea540] All wanted packed headers available (wanted 0xd, found 0x1f).
+[h264_vaapi @ 0x555556dea540] Using level 1.2.
+Output #0, h264, to '/tmp/tmp.HKs99L2lNT/test.h264':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: h264 (High), 1 reference frame, vaapi(tv, progressive), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 h264_vaapi
+gpupv-codec-comparison: line 18:  1368 Killed                  timeout -k 5 60 ffmpeg -nostdin -nostats -hide_banner -loglevel verbose -vaapi_device "$node" -f lavfi -i testsrc2=size=320x240:rate=15 -vf format=nv12,hwupload -frames:v 15 -c:v h264_vaapi -f h264 "$tmp/test.h264"
+isolated_va_exit=137

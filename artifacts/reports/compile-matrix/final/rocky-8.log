@@ -1,0 +1,473 @@
+image=quay.io/rockylinux/rockylinux:8 unix_time=1795423698 sources_sha256=ee5029e8bf062c88ad3f6c89c0ef803e0bda02f3e0e58449d4d592f40df03acd
+NAME="Rocky Linux"
+VERSION="8.10 (Green Obsidian)"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="8.10"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Rocky Linux 8.10 (Green Obsidian)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:8:GA"
+HOME_URL="https://rockylinux.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2029-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-8"
+ROCKY_SUPPORT_PRODUCT_VERSION="8.10"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.10"
+Rocky Linux 8 - AppStream                        11 MB/s |  37 MB     00:03    
+Rocky Linux 8 - BaseOS                          9.7 MB/s | 101 MB     00:10    
+Rocky Linux 8 - Extras                          4.5 kB/s |  15 kB     00:03    
+Dependencies resolved.
+==========================================================================================
+ Package                  Arch    Version                                 Repo        Size
+==========================================================================================
+Installing:
+ elfutils-libelf-devel    x86_64  0.190-2.el8                             baseos      61 k
+ gcc                      x86_64  8.5.0-31.el8_10                         appstream   23 M
+ kernel-devel             x86_64  4.18.0-553.187.1.el8_10                 baseos      24 M
+ kmod                     x86_64  25-20.el8                               baseos     125 k
+ make                     x86_64  1:4.2.1-11.el8                          baseos     497 k
+Upgrading:
+ libgcc                   x86_64  8.5.0-31.el8_10                         baseos      82 k
+Installing dependencies:
+ cpp                      x86_64  8.5.0-31.el8_10                         appstream   10 M
+ findutils                x86_64  1:4.6.0-24.el8_10                       baseos     526 k
+ glibc-devel              x86_64  2.28-251.el8_10.2                       baseos      86 k
+ glibc-headers            x86_64  2.28-251.el8_10.2                       baseos     491 k
+ groff-base               x86_64  1.22.3-18.el8                           baseos     1.0 M
+ isl                      x86_64  0.16.1-6.el8                            appstream  834 k
+ kernel-headers           x86_64  4.18.0-553.187.1.el8_10                 baseos      12 M
+ libgomp                  x86_64  8.5.0-31.el8_10                         baseos     208 k
+ libmpc                   x86_64  1.1.0-9.1.el8                           appstream   60 k
+ libpkgconf               x86_64  1.4.2-1.el8                             baseos      34 k
+ libxcrypt-devel          x86_64  4.1.1-6.el8                             baseos      24 k
+ libzstd-devel            x86_64  1.4.4-1.el8                             baseos      43 k
+ ncurses                  x86_64  6.1-10.20180224.el8                     baseos     386 k
+ openssl                  x86_64  1:1.1.1k-12.el8_9                       baseos     710 k
+ perl-Carp                noarch  1.42-396.el8                            baseos      29 k
+ perl-Data-Dumper         x86_64  2.167-399.el8                           baseos      57 k
+ perl-Digest              noarch  1.17-395.el8                            appstream   26 k
+ perl-Digest-MD5          x86_64  2.55-396.el8                            appstream   36 k
+ perl-Encode              x86_64  4:2.97-3.el8                            baseos     1.5 M
+ perl-Errno               x86_64  1.28-423.el8_10.1                       baseos      76 k
+ perl-Exporter            noarch  5.72-396.el8                            baseos      33 k
+ perl-File-Path           noarch  2.15-2.el8                              baseos      37 k
+ perl-File-Temp           noarch  0.230.600-1.el8                         baseos      62 k
+ perl-Getopt-Long         noarch  1:2.50-4.el8                            baseos      62 k
+ perl-HTTP-Tiny           noarch  0.074-3.el8                             baseos      58 k
+ perl-IO                  x86_64  1.38-423.el8_10.1                       baseos     141 k
+ perl-IO-Socket-IP        noarch  0.39-5.el8                              appstream   46 k
+ perl-IO-Socket-SSL       noarch  2.066-4.module+el8.9.0+1517+e71a7a62    appstream  297 k
+ perl-MIME-Base64         x86_64  3.15-396.el8                            baseos      30 k
+ perl-Mozilla-CA          noarch  20160104-7.module+el8.9.0+1521+0101edce appstream   14 k
+ perl-Net-SSLeay          x86_64  1.88-2.module+el8.9.0+1517+e71a7a62     appstream  378 k
+ perl-PathTools           x86_64  3.74-1.el8                              baseos      89 k
+ perl-Pod-Escapes         noarch  1:1.07-395.el8                          baseos      19 k
+ perl-Pod-Perldoc         noarch  3.28-396.el8                            baseos      85 k
+ perl-Pod-Simple          noarch  1:3.35-395.el8                          baseos     212 k
+ perl-Pod-Usage           noarch  4:1.69-395.el8                          baseos      33 k
+ perl-Scalar-List-Utils   x86_64  3:1.49-2.el8                            baseos      67 k
+ perl-Socket              x86_64  4:2.027-3.el8                           baseos      58 k
+ perl-Storable            x86_64  1:3.11-3.el8                            baseos      97 k
+ perl-Term-ANSIColor      noarch  4.06-396.el8                            baseos      45 k
+ perl-Term-Cap            noarch  1.17-395.el8                            baseos      22 k
+ perl-Text-ParseWords     noarch  3.30-395.el8                            baseos      17 k
+ perl-Text-Tabs+Wrap      noarch  2013.0523-395.el8                       baseos      23 k
+ perl-Time-Local          noarch  1:1.280-1.el8                           baseos      32 k
+ perl-URI                 noarch  1.73-4.el8_10                           baseos     116 k
+ perl-Unicode-Normalize   x86_64  1.25-396.el8                            baseos      81 k
+ perl-constant            noarch  1.33-396.el8                            baseos      24 k
+ perl-interpreter         x86_64  4:5.26.3-423.el8_10.1                   baseos     6.3 M
+ perl-libnet              noarch  3.11-3.el8                              appstream  120 k
+ perl-libs                x86_64  4:5.26.3-423.el8_10.1                   baseos     1.6 M
+ perl-macros              x86_64  4:5.26.3-423.el8_10.1                   baseos      72 k
+ perl-parent              noarch  1:0.237-1.el8                           baseos      19 k
+ perl-podlators           noarch  4.11-1.el8                              baseos     117 k
+ perl-threads             x86_64  1:2.21-2.el8                            baseos      60 k
+ perl-threads-shared      x86_64  1.58-2.el8                              baseos      47 k
+ pkgconf                  x86_64  1.4.2-1.el8                             baseos      37 k
+ pkgconf-m4               noarch  1.4.2-1.el8                             baseos      16 k
+ pkgconf-pkg-config       x86_64  1.4.2-1.el8                             baseos      14 k
+ zlib-devel               x86_64  1.2.11-26.el8                           baseos      58 k
+Enabling module streams:
+ perl                             5.26                                                    
+ perl-IO-Socket-SSL               2.066                                                   
+ perl-libwww-perl                 6.34                                                    
+
+Transaction Summary
+==========================================================================================
+Install  64 Packages
+Upgrade   1 Package
+
+Total download size: 87 M
+Downloading Packages:
+[MIRROR] cpp-8.5.0-31.el8_10.x86_64.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/AppStream/x86_64/os/Packages/c/cpp-8.5.0-31.el8_10.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud:443 ]
+[MIRROR] gcc-8.5.0-31.el8_10.x86_64.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/AppStream/x86_64/os/Packages/g/gcc-8.5.0-31.el8_10.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud:443 ]
+[MIRROR] isl-0.16.1-6.el8.x86_64.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/AppStream/x86_64/os/Packages/i/isl-0.16.1-6.el8.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud:443 ]
+[MIRROR] cpp-8.5.0-31.el8_10.x86_64.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-northeast3.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/AppStream/x86_64/os/Packages/c/cpp-8.5.0-31.el8_10.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-northeast3.production.gcp.mirrors.ctrliq.cloud:443 ]
+[MIRROR] gcc-8.5.0-31.el8_10.x86_64.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-northeast3.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/AppStream/x86_64/os/Packages/g/gcc-8.5.0-31.el8_10.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-northeast3.production.gcp.mirrors.ctrliq.cloud:443 ]
+[MIRROR] isl-0.16.1-6.el8.x86_64.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-northeast3.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/AppStream/x86_64/os/Packages/i/isl-0.16.1-6.el8.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-northeast3.production.gcp.mirrors.ctrliq.cloud:443 ]
+[MIRROR] cpp-8.5.0-31.el8_10.x86_64.rpm: Curl error (35): SSL connect error for https://ftp.iij.ad.jp/pub/linux/rocky/8.10/AppStream/x86_64/os/Packages/c/cpp-8.5.0-31.el8_10.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to ftp.iij.ad.jp:443 ]
+[MIRROR] gcc-8.5.0-31.el8_10.x86_64.rpm: Curl error (35): SSL connect error for https://ftp.iij.ad.jp/pub/linux/rocky/8.10/AppStream/x86_64/os/Packages/g/gcc-8.5.0-31.el8_10.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to ftp.iij.ad.jp:443 ]
+[MIRROR] isl-0.16.1-6.el8.x86_64.rpm: Curl error (35): SSL connect error for https://ftp.iij.ad.jp/pub/linux/rocky/8.10/AppStream/x86_64/os/Packages/i/isl-0.16.1-6.el8.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to ftp.iij.ad.jp:443 ]
+(1/65): cpp-8.5.0-31.el8_10.x86_64.rpm          6.8 MB/s |  10 MB     00:01    
+(2/65): isl-0.16.1-6.el8.x86_64.rpm             553 kB/s | 834 kB     00:01    
+[MIRROR] libmpc-1.1.0-9.1.el8.x86_64.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-northeast3.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/AppStream/x86_64/os/Packages/l/libmpc-1.1.0-9.1.el8.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-northeast3.production.gcp.mirrors.ctrliq.cloud:443 ]
+[MIRROR] perl-Digest-1.17-395.el8.noarch.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-northeast3.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/AppStream/x86_64/os/Packages/p/perl-Digest-1.17-395.el8.noarch.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-northeast3.production.gcp.mirrors.ctrliq.cloud:443 ]
+[MIRROR] libmpc-1.1.0-9.1.el8.x86_64.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/AppStream/x86_64/os/Packages/l/libmpc-1.1.0-9.1.el8.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud:443 ]
+[MIRROR] perl-Digest-1.17-395.el8.noarch.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/AppStream/x86_64/os/Packages/p/perl-Digest-1.17-395.el8.noarch.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud:443 ]
+(3/65): libmpc-1.1.0-9.1.el8.x86_64.rpm         233 kB/s |  60 kB     00:00    
+(4/65): perl-Digest-1.17-395.el8.noarch.rpm      90 kB/s |  26 kB     00:00    
+(5/65): perl-Digest-MD5-2.55-396.el8.x86_64.rpm 457 kB/s |  36 kB     00:00    
+(6/65): perl-IO-Socket-IP-0.39-5.el8.noarch.rpm 547 kB/s |  46 kB     00:00    
+(7/65): perl-IO-Socket-SSL-2.066-4.module+el8.9 2.7 MB/s | 297 kB     00:00    
+(8/65): perl-Mozilla-CA-20160104-7.module+el8.9 198 kB/s |  14 kB     00:00    
+(9/65): perl-Net-SSLeay-1.88-2.module+el8.9.0+1 1.8 MB/s | 378 kB     00:00    
+(10/65): perl-libnet-3.11-3.el8.noarch.rpm      395 kB/s | 120 kB     00:00    
+(11/65): gcc-8.5.0-31.el8_10.x86_64.rpm         9.1 MB/s |  23 MB     00:02    
+[MIRROR] elfutils-libelf-devel-0.190-2.el8.x86_64.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/BaseOS/x86_64/os/Packages/e/elfutils-libelf-devel-0.190-2.el8.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud:443 ]
+[MIRROR] findutils-4.6.0-24.el8_10.x86_64.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/BaseOS/x86_64/os/Packages/f/findutils-4.6.0-24.el8_10.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud:443 ]
+[MIRROR] glibc-devel-2.28-251.el8_10.2.x86_64.rpm: Curl error (35): SSL connect error for https://rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud/pub/rocky//8.10/BaseOS/x86_64/os/Packages/g/glibc-devel-2.28-251.el8_10.2.x86_64.rpm [OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to rocky-linux-asia-east2.production.gcp.mirrors.ctrliq.cloud:443 ]
+(12/65): elfutils-libelf-devel-0.190-2.el8.x86_  22 kB/s |  61 kB     00:02    
+(13/65): glibc-devel-2.28-251.el8_10.2.x86_64.r  34 kB/s |  86 kB     00:02    
+(14/65): findutils-4.6.0-24.el8_10.x86_64.rpm   146 kB/s | 526 kB     00:03    
+(15/65): glibc-headers-2.28-251.el8_10.2.x86_64 476 kB/s | 491 kB     00:01    
+(16/65): groff-base-1.22.3-18.el8.x86_64.rpm    568 kB/s | 1.0 MB     00:01    
+(17/65): kmod-25-20.el8.x86_64.rpm              323 kB/s | 125 kB     00:00    
+(18/65): libgomp-8.5.0-31.el8_10.x86_64.rpm     441 kB/s | 208 kB     00:00    
+(19/65): libpkgconf-1.4.2-1.el8.x86_64.rpm       87 kB/s |  34 kB     00:00    
+(20/65): libxcrypt-devel-4.1.1-6.el8.x86_64.rpm  66 kB/s |  24 kB     00:00    
+(21/65): libzstd-devel-1.4.4-1.el8.x86_64.rpm   118 kB/s |  43 kB     00:00    
+(22/65): make-4.2.1-11.el8.x86_64.rpm           1.1 MB/s | 497 kB     00:00    
+(23/65): ncurses-6.1-10.20180224.el8.x86_64.rpm 182 kB/s | 386 kB     00:02    
+(24/65): kernel-headers-4.18.0-553.187.1.el8_10 2.1 MB/s |  12 MB     00:05    
+(25/65): perl-Carp-1.42-396.el8.noarch.rpm       53 kB/s |  29 kB     00:00    
+(26/65): openssl-1.1.1k-12.el8_9.x86_64.rpm     769 kB/s | 710 kB     00:00    
+(27/65): perl-Data-Dumper-2.167-399.el8.x86_64. 111 kB/s |  57 kB     00:00    
+(28/65): perl-Errno-1.28-423.el8_10.1.x86_64.rp 205 kB/s |  76 kB     00:00    
+(29/65): perl-Exporter-5.72-396.el8.noarch.rpm   60 kB/s |  33 kB     00:00    
+(30/65): perl-Encode-2.97-3.el8.x86_64.rpm      1.0 MB/s | 1.5 MB     00:01    
+(31/65): perl-File-Path-2.15-2.el8.noarch.rpm   114 kB/s |  37 kB     00:00    
+(32/65): perl-File-Temp-0.230.600-1.el8.noarch. 190 kB/s |  62 kB     00:00    
+(33/65): perl-Getopt-Long-2.50-4.el8.noarch.rpm 183 kB/s |  62 kB     00:00    
+(34/65): perl-HTTP-Tiny-0.074-3.el8.noarch.rpm   94 kB/s |  58 kB     00:00    
+(35/65): perl-IO-1.38-423.el8_10.1.x86_64.rpm   209 kB/s | 141 kB     00:00    
+(36/65): perl-MIME-Base64-3.15-396.el8.x86_64.r  83 kB/s |  30 kB     00:00    
+(37/65): perl-PathTools-3.74-1.el8.x86_64.rpm   123 kB/s |  89 kB     00:00    
+(38/65): perl-Pod-Escapes-1.07-395.el8.noarch.r  33 kB/s |  19 kB     00:00    
+(39/65): perl-Pod-Perldoc-3.28-396.el8.noarch.r  94 kB/s |  85 kB     00:00    
+(40/65): perl-Pod-Simple-3.35-395.el8.noarch.rp 227 kB/s | 212 kB     00:00    
+(41/65): perl-Scalar-List-Utils-1.49-2.el8.x86_ 123 kB/s |  67 kB     00:00    
+(42/65): perl-Pod-Usage-1.69-395.el8.noarch.rpm  57 kB/s |  33 kB     00:00    
+(43/65): perl-Socket-2.027-3.el8.x86_64.rpm      51 kB/s |  58 kB     00:01    
+(44/65): perl-Storable-3.11-3.el8.x86_64.rpm     87 kB/s |  97 kB     00:01    
+(45/65): perl-Term-Cap-1.17-395.el8.noarch.rpm   24 kB/s |  22 kB     00:00    
+(46/65): perl-Term-ANSIColor-4.06-396.el8.noarc  40 kB/s |  45 kB     00:01    
+(47/65): kernel-devel-4.18.0-553.187.1.el8_10.x 1.8 MB/s |  24 MB     00:13    
+(48/65): perl-Text-ParseWords-3.30-395.el8.noar  42 kB/s |  17 kB     00:00    
+(49/65): perl-Time-Local-1.280-1.el8.noarch.rpm  50 kB/s |  32 kB     00:00    
+(50/65): perl-Text-Tabs+Wrap-2013.0523-395.el8.  29 kB/s |  23 kB     00:00    
+(51/65): perl-URI-1.73-4.el8_10.noarch.rpm      113 kB/s | 116 kB     00:01    
+(52/65): perl-constant-1.33-396.el8.noarch.rpm   36 kB/s |  24 kB     00:00    
+(53/65): perl-Unicode-Normalize-1.25-396.el8.x8  64 kB/s |  81 kB     00:01    
+(54/65): perl-macros-5.26.3-423.el8_10.1.x86_64 108 kB/s |  72 kB     00:00    
+(55/65): perl-parent-0.237-1.el8.noarch.rpm      30 kB/s |  19 kB     00:00    
+(56/65): perl-podlators-4.11-1.el8.noarch.rpm   109 kB/s | 117 kB     00:01    
+(57/65): perl-libs-5.26.3-423.el8_10.1.x86_64.r 476 kB/s | 1.6 MB     00:03    
+(58/65): perl-threads-2.21-2.el8.x86_64.rpm     145 kB/s |  60 kB     00:00    
+(59/65): pkgconf-1.4.2-1.el8.x86_64.rpm          87 kB/s |  37 kB     00:00    
+(60/65): perl-threads-shared-1.58-2.el8.x86_64. 107 kB/s |  47 kB     00:00    
+(61/65): pkgconf-pkg-config-1.4.2-1.el8.x86_64.  33 kB/s |  14 kB     00:00    
+(62/65): pkgconf-m4-1.4.2-1.el8.noarch.rpm       23 kB/s |  16 kB     00:00    
+(63/65): perl-interpreter-5.26.3-423.el8_10.1.x 1.2 MB/s | 6.3 MB     00:05    
+(64/65): zlib-devel-1.2.11-26.el8.x86_64.rpm     84 kB/s |  58 kB     00:00    
+(65/65): libgcc-8.5.0-31.el8_10.x86_64.rpm      108 kB/s |  82 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           3.2 MB/s |  87 MB     00:27     
+Rocky Linux 8 - AppStream                       1.6 MB/s | 1.6 kB     00:00    
+Importing GPG key 0x6D745A60:
+ Userid     : "Release Engineering <infrastructure@rockylinux.org>"
+ Fingerprint: 7051 C470 A929 F454 CEBE 37B7 15AF 5DAC 6D74 5A60
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-rockyofficial
+Key imported successfully
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : libgcc-8.5.0-31.el8_10.x86_64                         1/66 
+  Running scriptlet: libgcc-8.5.0-31.el8_10.x86_64                         1/66 
+  Installing       : libmpc-1.1.0-9.1.el8.x86_64                           2/66 
+  Installing       : cpp-8.5.0-31.el8_10.x86_64                            3/66 
+  Running scriptlet: cpp-8.5.0-31.el8_10.x86_64                            3/66 
+  Installing       : groff-base-1.22.3-18.el8.x86_64                       4/66 
+  Installing       : pkgconf-m4-1.4.2-1.el8.noarch                         5/66 
+  Installing       : openssl-1:1.1.1k-12.el8_9.x86_64                      6/66 
+  Installing       : ncurses-6.1-10.20180224.el8.x86_64                    7/66 
+  Installing       : perl-Digest-1.17-395.el8.noarch                       8/66 
+  Installing       : perl-Digest-MD5-2.55-396.el8.x86_64                   9/66 
+  Installing       : perl-Data-Dumper-2.167-399.el8.x86_64                10/66 
+  Installing       : perl-libnet-3.11-3.el8.noarch                        11/66 
+  Installing       : perl-URI-1.73-4.el8_10.noarch                        12/66 
+  Installing       : perl-Pod-Escapes-1:1.07-395.el8.noarch               13/66 
+  Installing       : perl-Net-SSLeay-1.88-2.module+el8.9.0+1517+e71a7a6   14/66 
+  Installing       : perl-Mozilla-CA-20160104-7.module+el8.9.0+1521+010   15/66 
+  Installing       : perl-IO-Socket-IP-0.39-5.el8.noarch                  16/66 
+  Installing       : perl-Time-Local-1:1.280-1.el8.noarch                 17/66 
+  Installing       : perl-IO-Socket-SSL-2.066-4.module+el8.9.0+1517+e71   18/66 
+  Installing       : perl-Term-ANSIColor-4.06-396.el8.noarch              19/66 
+  Installing       : perl-Term-Cap-1.17-395.el8.noarch                    20/66 
+  Installing       : perl-File-Temp-0.230.600-1.el8.noarch                21/66 
+  Installing       : perl-Pod-Simple-1:3.35-395.el8.noarch                22/66 
+  Installing       : perl-HTTP-Tiny-0.074-3.el8.noarch                    23/66 
+  Installing       : perl-podlators-4.11-1.el8.noarch                     24/66 
+  Installing       : perl-Pod-Perldoc-3.28-396.el8.noarch                 25/66 
+  Installing       : perl-Text-ParseWords-3.30-395.el8.noarch             26/66 
+  Installing       : perl-Pod-Usage-4:1.69-395.el8.noarch                 27/66 
+  Installing       : perl-MIME-Base64-3.15-396.el8.x86_64                 28/66 
+  Installing       : perl-Storable-1:3.11-3.el8.x86_64                    29/66 
+  Installing       : perl-Getopt-Long-1:2.50-4.el8.noarch                 30/66 
+  Installing       : perl-Errno-1.28-423.el8_10.1.x86_64                  31/66 
+  Installing       : perl-Socket-4:2.027-3.el8.x86_64                     32/66 
+  Installing       : perl-Encode-4:2.97-3.el8.x86_64                      33/66 
+  Installing       : perl-Carp-1.42-396.el8.noarch                        34/66 
+  Installing       : perl-Exporter-5.72-396.el8.noarch                    35/66 
+  Installing       : perl-libs-4:5.26.3-423.el8_10.1.x86_64               36/66 
+  Installing       : perl-Scalar-List-Utils-3:1.49-2.el8.x86_64           37/66 
+  Installing       : perl-parent-1:0.237-1.el8.noarch                     38/66 
+  Installing       : perl-macros-4:5.26.3-423.el8_10.1.x86_64             39/66 
+  Installing       : perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch         40/66 
+  Installing       : perl-Unicode-Normalize-1.25-396.el8.x86_64           41/66 
+  Installing       : perl-File-Path-2.15-2.el8.noarch                     42/66 
+  Installing       : perl-IO-1.38-423.el8_10.1.x86_64                     43/66 
+  Installing       : perl-PathTools-3.74-1.el8.x86_64                     44/66 
+  Installing       : perl-constant-1.33-396.el8.noarch                    45/66 
+  Installing       : perl-threads-1:2.21-2.el8.x86_64                     46/66 
+  Installing       : perl-threads-shared-1.58-2.el8.x86_64                47/66 
+  Installing       : perl-interpreter-4:5.26.3-423.el8_10.1.x86_64        48/66 
+  Installing       : make-1:4.2.1-11.el8.x86_64                           49/66 
+  Running scriptlet: make-1:4.2.1-11.el8.x86_64                           49/66 
+  Installing       : libpkgconf-1.4.2-1.el8.x86_64                        50/66 
+  Installing       : pkgconf-1.4.2-1.el8.x86_64                           51/66 
+  Installing       : pkgconf-pkg-config-1.4.2-1.el8.x86_64                52/66 
+  Installing       : libzstd-devel-1.4.4-1.el8.x86_64                     53/66 
+  Installing       : zlib-devel-1.2.11-26.el8.x86_64                      54/66 
+  Installing       : elfutils-libelf-devel-0.190-2.el8.x86_64             55/66 
+  Installing       : libgomp-8.5.0-31.el8_10.x86_64                       56/66 
+  Running scriptlet: libgomp-8.5.0-31.el8_10.x86_64                       56/66 
+  Installing       : kernel-headers-4.18.0-553.187.1.el8_10.x86_64        57/66 
+  Running scriptlet: glibc-headers-2.28-251.el8_10.2.x86_64               58/66 
+  Installing       : glibc-headers-2.28-251.el8_10.2.x86_64               58/66 
+  Installing       : libxcrypt-devel-4.1.1-6.el8.x86_64                   59/66 
+  Installing       : glibc-devel-2.28-251.el8_10.2.x86_64                 60/66 
+  Running scriptlet: glibc-devel-2.28-251.el8_10.2.x86_64                 60/66 
+  Installing       : findutils-1:4.6.0-24.el8_10.x86_64                   61/66 
+  Running scriptlet: findutils-1:4.6.0-24.el8_10.x86_64                   61/66 
+  Installing       : isl-0.16.1-6.el8.x86_64                              62/66 
+  Running scriptlet: isl-0.16.1-6.el8.x86_64                              62/66 
+  Installing       : gcc-8.5.0-31.el8_10.x86_64                           63/66 
+  Running scriptlet: gcc-8.5.0-31.el8_10.x86_64                           63/66 
+  Installing       : kernel-devel-4.18.0-553.187.1.el8_10.x86_64          64/66 
+  Running scriptlet: kernel-devel-4.18.0-553.187.1.el8_10.x86_64          64/66 
+  Installing       : kmod-25-20.el8.x86_64                                65/66 
+  Cleanup          : libgcc-8.5.0-22.el8_10.x86_64                        66/66 
+  Running scriptlet: libgcc-8.5.0-22.el8_10.x86_64                        66/66 
+  Verifying        : cpp-8.5.0-31.el8_10.x86_64                            1/66 
+  Verifying        : gcc-8.5.0-31.el8_10.x86_64                            2/66 
+  Verifying        : isl-0.16.1-6.el8.x86_64                               3/66 
+  Verifying        : libmpc-1.1.0-9.1.el8.x86_64                           4/66 
+  Verifying        : perl-Digest-1.17-395.el8.noarch                       5/66 
+  Verifying        : perl-Digest-MD5-2.55-396.el8.x86_64                   6/66 
+  Verifying        : perl-IO-Socket-IP-0.39-5.el8.noarch                   7/66 
+  Verifying        : perl-IO-Socket-SSL-2.066-4.module+el8.9.0+1517+e71    8/66 
+  Verifying        : perl-Mozilla-CA-20160104-7.module+el8.9.0+1521+010    9/66 
+  Verifying        : perl-Net-SSLeay-1.88-2.module+el8.9.0+1517+e71a7a6   10/66 
+  Verifying        : perl-libnet-3.11-3.el8.noarch                        11/66 
+  Verifying        : elfutils-libelf-devel-0.190-2.el8.x86_64             12/66 
+  Verifying        : findutils-1:4.6.0-24.el8_10.x86_64                   13/66 
+  Verifying        : glibc-devel-2.28-251.el8_10.2.x86_64                 14/66 
+  Verifying        : glibc-headers-2.28-251.el8_10.2.x86_64               15/66 
+  Verifying        : groff-base-1.22.3-18.el8.x86_64                      16/66 
+  Verifying        : kernel-devel-4.18.0-553.187.1.el8_10.x86_64          17/66 
+  Verifying        : kernel-headers-4.18.0-553.187.1.el8_10.x86_64        18/66 
+  Verifying        : kmod-25-20.el8.x86_64                                19/66 
+  Verifying        : libgomp-8.5.0-31.el8_10.x86_64                       20/66 
+  Verifying        : libpkgconf-1.4.2-1.el8.x86_64                        21/66 
+  Verifying        : libxcrypt-devel-4.1.1-6.el8.x86_64                   22/66 
+  Verifying        : libzstd-devel-1.4.4-1.el8.x86_64                     23/66 
+  Verifying        : make-1:4.2.1-11.el8.x86_64                           24/66 
+  Verifying        : ncurses-6.1-10.20180224.el8.x86_64                   25/66 
+  Verifying        : openssl-1:1.1.1k-12.el8_9.x86_64                     26/66 
+  Verifying        : perl-Carp-1.42-396.el8.noarch                        27/66 
+  Verifying        : perl-Data-Dumper-2.167-399.el8.x86_64                28/66 
+  Verifying        : perl-Encode-4:2.97-3.el8.x86_64                      29/66 
+  Verifying        : perl-Errno-1.28-423.el8_10.1.x86_64                  30/66 
+  Verifying        : perl-Exporter-5.72-396.el8.noarch                    31/66 
+  Verifying        : perl-File-Path-2.15-2.el8.noarch                     32/66 
+  Verifying        : perl-File-Temp-0.230.600-1.el8.noarch                33/66 
+  Verifying        : perl-Getopt-Long-1:2.50-4.el8.noarch                 34/66 
+  Verifying        : perl-HTTP-Tiny-0.074-3.el8.noarch                    35/66 
+  Verifying        : perl-IO-1.38-423.el8_10.1.x86_64                     36/66 
+  Verifying        : perl-MIME-Base64-3.15-396.el8.x86_64                 37/66 
+  Verifying        : perl-PathTools-3.74-1.el8.x86_64                     38/66 
+  Verifying        : perl-Pod-Escapes-1:1.07-395.el8.noarch               39/66 
+  Verifying        : perl-Pod-Perldoc-3.28-396.el8.noarch                 40/66 
+  Verifying        : perl-Pod-Simple-1:3.35-395.el8.noarch                41/66 
+  Verifying        : perl-Pod-Usage-4:1.69-395.el8.noarch                 42/66 
+  Verifying        : perl-Scalar-List-Utils-3:1.49-2.el8.x86_64           43/66 
+  Verifying        : perl-Socket-4:2.027-3.el8.x86_64                     44/66 
+  Verifying        : perl-Storable-1:3.11-3.el8.x86_64                    45/66 
+  Verifying        : perl-Term-ANSIColor-4.06-396.el8.noarch              46/66 
+  Verifying        : perl-Term-Cap-1.17-395.el8.noarch                    47/66 
+  Verifying        : perl-Text-ParseWords-3.30-395.el8.noarch             48/66 
+  Verifying        : perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch         49/66 
+  Verifying        : perl-Time-Local-1:1.280-1.el8.noarch                 50/66 
+  Verifying        : perl-URI-1.73-4.el8_10.noarch                        51/66 
+  Verifying        : perl-Unicode-Normalize-1.25-396.el8.x86_64           52/66 
+  Verifying        : perl-constant-1.33-396.el8.noarch                    53/66 
+  Verifying        : perl-interpreter-4:5.26.3-423.el8_10.1.x86_64        54/66 
+  Verifying        : perl-libs-4:5.26.3-423.el8_10.1.x86_64               55/66 
+  Verifying        : perl-macros-4:5.26.3-423.el8_10.1.x86_64             56/66 
+  Verifying        : perl-parent-1:0.237-1.el8.noarch                     57/66 
+  Verifying        : perl-podlators-4.11-1.el8.noarch                     58/66 
+  Verifying        : perl-threads-1:2.21-2.el8.x86_64                     59/66 
+  Verifying        : perl-threads-shared-1.58-2.el8.x86_64                60/66 
+  Verifying        : pkgconf-1.4.2-1.el8.x86_64                           61/66 
+  Verifying        : pkgconf-m4-1.4.2-1.el8.noarch                        62/66 
+  Verifying        : pkgconf-pkg-config-1.4.2-1.el8.x86_64                63/66 
+  Verifying        : zlib-devel-1.2.11-26.el8.x86_64                      64/66 
+  Verifying        : libgcc-8.5.0-31.el8_10.x86_64                        65/66 
+  Verifying        : libgcc-8.5.0-22.el8_10.x86_64                        66/66 
+
+Upgraded:
+  libgcc-8.5.0-31.el8_10.x86_64                                                 
+Installed:
+  cpp-8.5.0-31.el8_10.x86_64                                                    
+  elfutils-libelf-devel-0.190-2.el8.x86_64                                      
+  findutils-1:4.6.0-24.el8_10.x86_64                                            
+  gcc-8.5.0-31.el8_10.x86_64                                                    
+  glibc-devel-2.28-251.el8_10.2.x86_64                                          
+  glibc-headers-2.28-251.el8_10.2.x86_64                                        
+  groff-base-1.22.3-18.el8.x86_64                                               
+  isl-0.16.1-6.el8.x86_64                                                       
+  kernel-devel-4.18.0-553.187.1.el8_10.x86_64                                   
+  kernel-headers-4.18.0-553.187.1.el8_10.x86_64                                 
+  kmod-25-20.el8.x86_64                                                         
+  libgomp-8.5.0-31.el8_10.x86_64                                                
+  libmpc-1.1.0-9.1.el8.x86_64                                                   
+  libpkgconf-1.4.2-1.el8.x86_64                                                 
+  libxcrypt-devel-4.1.1-6.el8.x86_64                                            
+  libzstd-devel-1.4.4-1.el8.x86_64                                              
+  make-1:4.2.1-11.el8.x86_64                                                    
+  ncurses-6.1-10.20180224.el8.x86_64                                            
+  openssl-1:1.1.1k-12.el8_9.x86_64                                              
+  perl-Carp-1.42-396.el8.noarch                                                 
+  perl-Data-Dumper-2.167-399.el8.x86_64                                         
+  perl-Digest-1.17-395.el8.noarch                                               
+  perl-Digest-MD5-2.55-396.el8.x86_64                                           
+  perl-Encode-4:2.97-3.el8.x86_64                                               
+  perl-Errno-1.28-423.el8_10.1.x86_64                                           
+  perl-Exporter-5.72-396.el8.noarch                                             
+  perl-File-Path-2.15-2.el8.noarch                                              
+  perl-File-Temp-0.230.600-1.el8.noarch                                         
+  perl-Getopt-Long-1:2.50-4.el8.noarch                                          
+  perl-HTTP-Tiny-0.074-3.el8.noarch                                             
+  perl-IO-1.38-423.el8_10.1.x86_64                                              
+  perl-IO-Socket-IP-0.39-5.el8.noarch                                           
+  perl-IO-Socket-SSL-2.066-4.module+el8.9.0+1517+e71a7a62.noarch                
+  perl-MIME-Base64-3.15-396.el8.x86_64                                          
+  perl-Mozilla-CA-20160104-7.module+el8.9.0+1521+0101edce.noarch                
+  perl-Net-SSLeay-1.88-2.module+el8.9.0+1517+e71a7a62.x86_64                    
+  perl-PathTools-3.74-1.el8.x86_64                                              
+  perl-Pod-Escapes-1:1.07-395.el8.noarch                                        
+  perl-Pod-Perldoc-3.28-396.el8.noarch                                          
+  perl-Pod-Simple-1:3.35-395.el8.noarch                                         
+  perl-Pod-Usage-4:1.69-395.el8.noarch                                          
+  perl-Scalar-List-Utils-3:1.49-2.el8.x86_64                                    
+  perl-Socket-4:2.027-3.el8.x86_64                                              
+  perl-Storable-1:3.11-3.el8.x86_64                                             
+  perl-Term-ANSIColor-4.06-396.el8.noarch                                       
+  perl-Term-Cap-1.17-395.el8.noarch                                             
+  perl-Text-ParseWords-3.30-395.el8.noarch                                      
+  perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch                                  
+  perl-Time-Local-1:1.280-1.el8.noarch                                          
+  perl-URI-1.73-4.el8_10.noarch                                                 
+  perl-Unicode-Normalize-1.25-396.el8.x86_64                                    
+  perl-constant-1.33-396.el8.noarch                                             
+  perl-interpreter-4:5.26.3-423.el8_10.1.x86_64                                 
+  perl-libnet-3.11-3.el8.noarch                                                 
+  perl-libs-4:5.26.3-423.el8_10.1.x86_64                                        
+  perl-macros-4:5.26.3-423.el8_10.1.x86_64                                      
+  perl-parent-1:0.237-1.el8.noarch                                              
+  perl-podlators-4.11-1.el8.noarch                                              
+  perl-threads-1:2.21-2.el8.x86_64                                              
+  perl-threads-shared-1.58-2.el8.x86_64                                         
+  pkgconf-1.4.2-1.el8.x86_64                                                    
+  pkgconf-m4-1.4.2-1.el8.noarch                                                 
+  pkgconf-pkg-config-1.4.2-1.el8.x86_64                                         
+  zlib-devel-1.2.11-26.el8.x86_64                                               
+
+Complete!
+HEADER_TREE=/usr/src/kernels/4.18.0-553.187.1.el8_10.x86_64
+/tmp/tmp.1ULZyuLGVT/probe.c: In function 'p':
+/tmp/tmp.1ULZyuLGVT/probe.c:2:62: error: too few arguments to function 'eventfd_signal'
+ void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.1ULZyuLGVT/probe.c:1:
+./include/linux/eventfd.h:41:7: note: declared here
+ __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+       ^~~~~~~~~~~~~~
+make[1]: *** [scripts/Makefile.build:324: /tmp/tmp.1ULZyuLGVT/probe.o] Error 1
+make: *** [Makefile:1808: probe.o] Error 2
+/tmp/tmp.1ULZyuLGVT/probe.c: In function 'p':
+/tmp/tmp.1ULZyuLGVT/probe.c:2:86: error: passing argument 1 of '__dma_fence_is_later' makes integer from pointer without a cast [-Werror=int-conversion]
+ bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+                                                                                      ^
+In file included from /tmp/tmp.1ULZyuLGVT/probe.c:1:
+./include/linux/dma-fence.h:451:45: note: expected 'u64' {aka 'long long unsigned int'} but argument is of type 'struct dma_fence *'
+ static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[1]: *** [scripts/Makefile.build:324: /tmp/tmp.1ULZyuLGVT/probe.o] Error 1
+make: *** [Makefile:1808: probe.o] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/4.18.0-553.187.1.el8_10.x86_64'
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+make: Leaving directory '/usr/src/kernels/4.18.0-553.187.1.el8_10.x86_64'
+filename:       /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+version:        2.0.3
+description:    Microsoft Dxgkrnl virtual compute device Driver
+license:        GPL
+rhelversion:    8.10
+srcversion:     05643FC408A5D3D39F7718C
+alias:          pci:v00001414d0000008Asv*sd*bc*sc*i*
+alias:          pci:v00001414d0000008Esv*sd*bc*sc*i*
+alias:          vmbus:c0cbe9dd605036449448ea1254a5d177
+alias:          vmbus:182d386e36334b4facc42b7703d4df4a
+depends:        hv_vmbus
+name:           dxgkrnl
+vermagic:       4.18.0-553.187.1.el8_10.x86_64 SMP mod_unload modversions 
+6bd298daa447c5d5dcb6ad5174d460f7b732af2d240334036c6a78d450c83cf8  /tmp/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+exit=0

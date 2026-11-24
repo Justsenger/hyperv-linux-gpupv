@@ -1,0 +1,16 @@
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (3) intel-gmmlib-22.10.2-1  intel-graphics-compiler-1:2.42.6-1  intel-compute-runtime-26.40.40196.8-1
+
+Total Download Size:    82.78 MiB
+Total Installed Size:  394.81 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+OpenCL package exit=124
+error: failed to init transaction (unable to lock database)
+error: could not lock database: File exists
+  if you're sure a package manager is not already
+  running, you can remove /var/lib/pacman/db.lck
+GLX tools exit=1

@@ -1,0 +1,2 @@
+Nov 24 03:59:41 archlinux systemd[1]: systemd-modules-load.service: Deactivated successfully.
+Nov 24 03:59:41 archlinux systemd[1]: Stopped Load Kernel Modules.

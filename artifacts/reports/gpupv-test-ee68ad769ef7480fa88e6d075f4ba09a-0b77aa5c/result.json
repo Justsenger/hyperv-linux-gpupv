@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "hostBuild": "10.0.26200.0",
+  "failures": [
+    "Kernel diagnostic requires review",
+    "workload failed with exit 255",
+    "Kernel diagnostic after workload requires review"
+  ],
+  "vm": "gpupv-test-ee68ad769ef7480fa88e6d075f4ba09a",
+  "gpu": "\\\\?\\PCI#VEN_10DE&DEV_1F15&SUBSYS_20908086&REV_A1#4&2498e50c&0&0030#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV"
+}

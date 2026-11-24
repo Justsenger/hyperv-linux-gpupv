@@ -1,0 +1,26 @@
+Linux gpupv-test-b0dcdee464384fb0bd6b9c7ca619df3d 6.12.118+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.118-1 (2026-11-20) x86_64 GNU/Linux
+status: done
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:2 file:/etc/apt/mirrors/debian-security.list Mirrorlist [39 B]
+Get:3 https://deb.debian.org/debian trixie InRelease [140 kB]
+Get:4 https://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+Get:5 https://deb.debian.org/debian trixie-backports InRelease [54.0 kB]
+Get:6 https://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+Get:7 https://deb.debian.org/debian trixie/main Sources [10.5 MB]
+Get:8 https://deb.debian.org/debian trixie/main amd64 Packages [9679 kB]
+Get:9 https://deb.debian.org/debian trixie/main Translation-en [6486 kB]
+Get:10 https://deb.debian.org/debian trixie-updates/main Sources [1400 B]
+Get:11 https://deb.debian.org/debian trixie-updates/main amd64 Packages [1108 B]
+Get:12 https://deb.debian.org/debian trixie-updates/main Translation-en [1032 B]
+Get:13 https://deb.debian.org/debian trixie-backports/main Sources [354 kB]
+Get:14 https://deb.debian.org/debian trixie-backports/main amd64 Packages [312 kB]
+Get:15 https://deb.debian.org/debian trixie-backports/main Translation-en [242 kB]
+Get:16 https://deb.debian.org/debian-security trixie-security/main Sources [272 kB]
+Get:17 https://deb.debian.org/debian-security trixie-security/main amd64 Packages [309 kB]
+Get:18 https://deb.debian.org/debian-security trixie-security/main Translation-en [187 kB]
+Fetched 28.7 MB in 2s (12.4 MB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package intel-opencl-icd

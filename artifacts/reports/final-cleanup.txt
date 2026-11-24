@@ -1,0 +1,5 @@
+Test VM registrations: 0
+Remaining project VHDX/AVHDX: 0
+Remaining cloud images: 0
+Test SSH key removed: True
+Prior IMAPI staging directory still present: True

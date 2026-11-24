@@ -1,0 +1,30 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+crw-rw----. 1 root video 10, 122 Nov 24 04:35 /dev/dxg
+
+/dev/dri:
+total 0
+crw-rw----. 1 root video 226, 0 Nov 24 04:35 card0
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/lib/libdxcore.so'
+	linux-vdso.so.1 (0x00007fff89721000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fbe5e400000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fbe5e6a1000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fbe5e323000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fbe5e69c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fbe5e799000)
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/lib/libd3d12.so'
+	linux-vdso.so.1 (0x00007ffe385a6000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f6872a00000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f6872cb4000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f6872923000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f6872caf000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f6872d8a000)
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so'
+	linux-vdso.so.1 (0x00007ffd3ddca000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f2a6904d000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f2a69048000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007f2a68e00000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f2a68d23000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f2a69029000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f2a68a00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f2a69067000)
+diagnostic_collection_finished

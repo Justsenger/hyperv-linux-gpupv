@@ -1,0 +1,88 @@
+[    4.790153] dxgkrnl: loading out-of-tree module taints kernel.
+[    4.798904] hv_vmbus: registering driver dxgkrnl
+[   25.743507] gpupv escape caller=nvidia-smi pid=735 ioctl=0xc020470d type=0 flags=0x0 bytes=64 adapter_locked=0 errno=-22
+[   25.743514] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -22
+[   25.744394] gpupv escape caller=nvidia-smi pid=735 ioctl=0xc020470d type=0 flags=0x0 bytes=64 adapter_locked=0 errno=-22
+[   25.744397] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -22
+[   25.745188] gpupv escape caller=nvidia-smi pid=735 ioctl=0xc020470d type=0 flags=0x0 bytes=196 adapter_locked=0 errno=-22
+[   25.745190] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -22
+[   26.680088] gpupv short completion id=515 received=0 expected=80
+[   26.680112] gpupv completion caller=vf#0:0 pid=748 id=515 request=151 reply=80 errno=-75
+[   26.680114] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.680118] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.681301] gpupv short completion id=516 received=0 expected=80
+[   26.681320] gpupv completion caller=vf#0:0 pid=748 id=516 request=151 reply=80 errno=-75
+[   26.681324] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.681327] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.682853] gpupv short completion id=517 received=0 expected=80
+[   26.682867] gpupv completion caller=vf#0:0 pid=748 id=517 request=151 reply=80 errno=-75
+[   26.682876] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.682884] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.683997] gpupv short completion id=518 received=0 expected=80
+[   26.684002] gpupv completion caller=vf#0:0 pid=748 id=518 request=151 reply=80 errno=-75
+[   26.684004] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.684006] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.684946] gpupv short completion id=519 received=0 expected=80
+[   26.684950] gpupv completion caller=vf#0:0 pid=748 id=519 request=151 reply=80 errno=-75
+[   26.684952] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.684956] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.686303] gpupv short completion id=520 received=0 expected=80
+[   26.686307] gpupv completion caller=vf#0:0 pid=748 id=520 request=151 reply=80 errno=-75
+[   26.686310] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.686312] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.687259] gpupv short completion id=521 received=0 expected=80
+[   26.687263] gpupv completion caller=vf#0:0 pid=748 id=521 request=151 reply=80 errno=-75
+[   26.687265] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.687266] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.688197] gpupv short completion id=522 received=0 expected=80
+[   26.688201] gpupv completion caller=vf#0:0 pid=748 id=522 request=151 reply=80 errno=-75
+[   26.688203] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.688204] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.689137] gpupv short completion id=523 received=0 expected=80
+[   26.689140] gpupv completion caller=vf#0:0 pid=748 id=523 request=151 reply=80 errno=-75
+[   26.689142] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.689144] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.690536] gpupv short completion id=524 received=0 expected=80
+[   26.690540] gpupv completion caller=vf#0:0 pid=748 id=524 request=151 reply=80 errno=-75
+[   26.690543] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.690544] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.691489] gpupv short completion id=525 received=0 expected=80
+[   26.691493] gpupv completion caller=vf#0:0 pid=748 id=525 request=151 reply=80 errno=-75
+[   26.691495] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.691496] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.692424] gpupv short completion id=526 received=0 expected=80
+[   26.692428] gpupv completion caller=vf#0:0 pid=748 id=526 request=151 reply=80 errno=-75
+[   26.692430] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.692431] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.693697] gpupv short completion id=527 received=0 expected=80
+[   26.693701] gpupv completion caller=vf#0:0 pid=748 id=527 request=151 reply=80 errno=-75
+[   26.693703] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.693705] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.694646] gpupv short completion id=528 received=0 expected=80
+[   26.694651] gpupv completion caller=vf#0:0 pid=748 id=528 request=151 reply=80 errno=-75
+[   26.694653] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.694654] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.695588] gpupv short completion id=529 received=0 expected=80
+[   26.695592] gpupv completion caller=vf#0:0 pid=748 id=529 request=151 reply=80 errno=-75
+[   26.695594] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.695595] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.696756] gpupv short completion id=530 received=0 expected=80
+[   26.696775] gpupv completion caller=vf#0:0 pid=748 id=530 request=151 reply=80 errno=-75
+[   26.696780] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.696782] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.698214] gpupv short completion id=531 received=0 expected=80
+[   26.698219] gpupv completion caller=vf#0:0 pid=748 id=531 request=151 reply=80 errno=-75
+[   26.698222] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.698224] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.752485] gpupv short completion id=643 received=0 expected=68
+[   26.752495] gpupv completion caller=vf#0:0 pid=748 id=643 request=139 reply=68 errno=-75
+[   26.752499] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=68 adapter_locked=1 errno=-75
+[   26.752502] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.926799] gpupv short completion id=1679 received=0 expected=68
+[   26.926807] gpupv completion caller=ffmpeg pid=746 id=1679 request=139 reply=68 errno=-75
+[   26.926810] gpupv escape caller=ffmpeg pid=746 ioctl=0xc020470d type=0 flags=0x0 bytes=68 adapter_locked=1 errno=-75
+[   26.926813] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75
+[   26.933264] gpupv short completion id=1724 received=0 expected=68
+[   26.933308] gpupv completion caller=ffmpeg pid=746 id=1724 request=139 reply=68 errno=-75
+[   26.933312] gpupv escape caller=ffmpeg pid=746 ioctl=0xc020470d type=0 flags=0x0 bytes=68 adapter_locked=1 errno=-75
+[   26.933315] misc dxg: dxgk: dxgkio_escape: Ioctl failed: -75

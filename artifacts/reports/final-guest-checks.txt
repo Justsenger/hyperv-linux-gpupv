@@ -1,0 +1,13 @@
+0o644 gpupv-guest
+0o644 verify-codec
+0o644 setup
+0o644 intel-opencl.py
+0o644 cuda-compute.py
+没有 /dev/dxg 字符设备。
+ordinary_verify_exit=1
+请使用普通用户运行 verify。
+root_verify_exit=1
+缺少当前内核 6.12.117+deb13-amd64 的匹配头文件。请从官方源安装精确版本 linux-headers 或 kernel-devel。
+缺少宿主设备清单，请用宿主 CLI 重新打包。
+install_exit=1
+clean

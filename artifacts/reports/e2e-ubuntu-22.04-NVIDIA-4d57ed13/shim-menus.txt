@@ -1,0 +1,5 @@
+18fab786-2e9c-45c0-be36-8c70bdd2af70 confirmed shim menu management
+18fab786-2e9c-45c0-be36-8c70bdd2af70 confirmed shim menu view
+18fab786-2e9c-45c0-be36-8c70bdd2af70 confirmed shim menu confirm
+18fab786-2e9c-45c0-be36-8c70bdd2af70 confirmed shim menu password
+18fab786-2e9c-45c0-be36-8c70bdd2af70 confirmed shim menu reboot

@@ -1,0 +1,5 @@
+05672d02-c059-44af-9fe8-4eac6616f448 confirmed shim menu management
+05672d02-c059-44af-9fe8-4eac6616f448 confirmed shim menu view
+05672d02-c059-44af-9fe8-4eac6616f448 confirmed shim menu confirm
+05672d02-c059-44af-9fe8-4eac6616f448 confirmed shim menu password
+05672d02-c059-44af-9fe8-4eac6616f448 confirmed shim menu reboot

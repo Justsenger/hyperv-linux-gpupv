@@ -1,0 +1,49 @@
+[h264 @ 0x55e5ef0cb300] Reinit context to 320x240, pix_fmt: yuv420p
+Selecting decoder 'h264' because of requested hwaccel method vaapi
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/gpupv-decode-input.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:00:01.00, start: 0.000000, bitrate: 232 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High), 1 reference frame (avc1 / 0x31637661), yuv420p(progressive, left), 320x240 [SAR 1:1 DAR 4:3], 223 kb/s, 15 fps, 15 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+[out#0/framemd5 @ 0x55e5ef147ac0] No explicit maps, mapping streams automatically...
+[vost#0:0/rawvideo @ 0x55e5ef0d2680] Created video stream from input stream 0:0
+[AVHWDeviceContext @ 0x55e5ef141a80] libva: VA-API version 1.22.0
+[AVHWDeviceContext @ 0x55e5ef141a80] libva: vaGetDriverNames() failed with operation failed
+[AVHWDeviceContext @ 0x55e5ef141a80] libva: User environment variable requested driver 'd3d12'
+[AVHWDeviceContext @ 0x55e5ef141a80] libva: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+[AVHWDeviceContext @ 0x55e5ef141a80] libva: Found init function __vaDriverInit_1_22
+[AVHWDeviceContext @ 0x55e5ef141a80] libva: va_openDriver() returns 0
+[AVHWDeviceContext @ 0x55e5ef141a80] Initialised VAAPI connection: version 1.22
+[AVHWDeviceContext @ 0x55e5ef141a80] VAAPI driver: Mesa Gallium driver 25.0.7-2+deb13u1 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[AVHWDeviceContext @ 0x55e5ef141a80] Driver not found in known nonstandard list, using standard behaviour.
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> rawvideo (native))
+[vost#0:0/rawvideo @ 0x55e5ef0d2680] Starting thread...
+[vf#0:0 @ 0x55e5ef141540] Starting thread...
+[vist#0:0/h264 @ 0x55e5ef0d0e00] [dec:h264 @ 0x55e5ef0cc480] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55e5ef0ca040] Starting thread...
+[h264 @ 0x55e5ef0cc940] Reinit context to 320x240, pix_fmt: vaapi
+[graph -1 input from stream 0:0 @ 0x7f637c001d00] w:320 h:240 pixfmt:vaapi tb:1/15360 fr:15/1 sar:1/1 csp:unknown range:unknown
+[graph -1 input from stream 0:0 @ 0x7f637c001d00] video frame properties congruent with link at pts_time: 0
+Output #0, framemd5, to '/tmp/gpupv-decoded':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Stream #0:0(und): Video: rawvideo, 1 reference frame (NV12 / 0x3231564E), nv12(progressive, left), 320x240 [SAR 1:1 DAR 4:3], q=2-31, 13824 kb/s, 15 fps, 15 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 rawvideo
+[out#0/framemd5 @ 0x55e5ef147ac0] Starting thread...
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55e5ef0ca040] EOF while reading input
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x55e5ef0ca040] Terminating thread with return code 0 (success)
+Segmentation fault

@@ -1,0 +1,149 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  cpp cpp-12 libasan8 libatomic1 libc-dev-bin libc6-dev libcrypt-dev
+  libgcc-12-dev libgomp1 libitm1 liblsan0 libnsl-dev libquadmath0
+  libstdc++-12-dev libtirpc-dev libtsan2 libubsan1
+  linux-headers-6.1.0-56-common linux-kbuild-6.1 linux-libc-dev rpcsvc-proto
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libclang-cpp14 libigc1 libigdfcl1 libigdgmm12 libllvm14 libllvmspirvlib14
+  libopencl-clang14 libz3-4
+The following NEW packages will be installed:
+  intel-opencl-icd libclang-cpp14 libigc1 libigdfcl1 libigdgmm12 libllvm14
+  libllvmspirvlib14 libopencl-clang14 libz3-4 ocl-icd-libopencl1
+0 upgraded, 10 newly installed, 0 to remove and 0 not upgraded.
+Need to get 54.2 MB of archives.
+After this operation, 266 MB of additional disk space will be used.
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:2 https://deb.debian.org/debian bookworm/main amd64 libigdgmm12 amd64 22.3.3+ds1-1 [139 kB]
+Get:3 https://deb.debian.org/debian bookworm/main amd64 libz3-4 amd64 4.8.12-3.1 [7216 kB]
+Get:4 https://deb.debian.org/debian bookworm/main amd64 libllvm14 amd64 1:14.0.6-12 [21.8 MB]
+Get:5 https://deb.debian.org/debian bookworm/main amd64 libllvmspirvlib14 amd64 14.0.0-5 [696 kB]
+Get:6 https://deb.debian.org/debian bookworm/main amd64 libigc1 amd64 1.0.12504.6-1+deb12u1 [9287 kB]
+Get:7 https://deb.debian.org/debian bookworm/main amd64 libclang-cpp14 amd64 1:14.0.6-12 [11.1 MB]
+Get:8 https://deb.debian.org/debian bookworm/main amd64 libopencl-clang14 amd64 14.0.0-4 [96.1 kB]
+Get:9 https://deb.debian.org/debian bookworm/main amd64 libigdfcl1 amd64 1.0.12504.6-1+deb12u1 [86.2 kB]
+Get:10 https://deb.debian.org/debian bookworm/main amd64 ocl-icd-libopencl1 amd64 2.3.1-1 [43.0 kB]
+Get:11 https://deb.debian.org/debian bookworm/main amd64 intel-opencl-icd amd64 22.43.24595.41-1 [3711 kB]
+Fetched 54.2 MB in 2s (31.2 MB/s)
+Selecting previously unselected package libigdgmm12:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 40783 files and directories currently installed.)
+Preparing to unpack .../0-libigdgmm12_22.3.3+ds1-1_amd64.deb ...
+Unpacking libigdgmm12:amd64 (22.3.3+ds1-1) ...
+Selecting previously unselected package libz3-4:amd64.
+Preparing to unpack .../1-libz3-4_4.8.12-3.1_amd64.deb ...
+Unpacking libz3-4:amd64 (4.8.12-3.1) ...
+Selecting previously unselected package libllvm14:amd64.
+Preparing to unpack .../2-libllvm14_1%3a14.0.6-12_amd64.deb ...
+Unpacking libllvm14:amd64 (1:14.0.6-12) ...
+Selecting previously unselected package libllvmspirvlib14:amd64.
+Preparing to unpack .../3-libllvmspirvlib14_14.0.0-5_amd64.deb ...
+Unpacking libllvmspirvlib14:amd64 (14.0.0-5) ...
+Selecting previously unselected package libigc1:amd64.
+Preparing to unpack .../4-libigc1_1.0.12504.6-1+deb12u1_amd64.deb ...
+Unpacking libigc1:amd64 (1.0.12504.6-1+deb12u1) ...
+Selecting previously unselected package libclang-cpp14.
+Preparing to unpack .../5-libclang-cpp14_1%3a14.0.6-12_amd64.deb ...
+Unpacking libclang-cpp14 (1:14.0.6-12) ...
+Selecting previously unselected package libopencl-clang14:amd64.
+Preparing to unpack .../6-libopencl-clang14_14.0.0-4_amd64.deb ...
+Unpacking libopencl-clang14:amd64 (14.0.0-4) ...
+Selecting previously unselected package libigdfcl1:amd64.
+Preparing to unpack .../7-libigdfcl1_1.0.12504.6-1+deb12u1_amd64.deb ...
+Unpacking libigdfcl1:amd64 (1.0.12504.6-1+deb12u1) ...
+Selecting previously unselected package ocl-icd-libopencl1:amd64.
+Preparing to unpack .../8-ocl-icd-libopencl1_2.3.1-1_amd64.deb ...
+Unpacking ocl-icd-libopencl1:amd64 (2.3.1-1) ...
+Selecting previously unselected package intel-opencl-icd.
+Preparing to unpack .../9-intel-opencl-icd_22.43.24595.41-1_amd64.deb ...
+Unpacking intel-opencl-icd (22.43.24595.41-1) ...
+Setting up libigdgmm12:amd64 (22.3.3+ds1-1) ...
+Setting up libz3-4:amd64 (4.8.12-3.1) ...
+Setting up libllvm14:amd64 (1:14.0.6-12) ...
+Setting up ocl-icd-libopencl1:amd64 (2.3.1-1) ...
+Setting up libllvmspirvlib14:amd64 (14.0.0-5) ...
+Setting up libigc1:amd64 (1.0.12504.6-1+deb12u1) ...
+Setting up libclang-cpp14 (1:14.0.6-12) ...
+Setting up libopencl-clang14:amd64 (14.0.0-4) ...
+Setting up libigdfcl1:amd64 (1.0.12504.6-1+deb12u1) ...
+Setting up intel-opencl-icd (22.43.24595.41-1) ...
+Processing triggers for libc-bin (2.36-9+deb12u14) ...
+ldconfig: /usr/lib/wsl/lib/libcuda.so.1 is not a symbolic link
+
+ldconfig: /usr/lib/wsl/lib/libnvidia-ml.so.1 is not a symbolic link
+
+Processing triggers for man-db (2.11.2-2) ...
+total 4
+-rw-r--r-- 1 root root 52 Jan 10  2023 intel.icd
+Hardware adapter identities verified: ['10de:1f15', '8086:9a49']
+boot_id=81b333bd-701f-4c7b-b126-505bff453da2 uid=1000 gpu=NVIDIA GeForce RTX 2060, Intel(R) Iris(R) Xe Graphics
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=2
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 8086:9a49 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 10de:1f15 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=2
+NVIDIA GeForce RTX 2060: 7 * 5 + 3 = 38
+NVIDIA GeForce RTX 2060: 7 * 19 + 3 = 136
+NVIDIA GeForce RTX 2060: 7 * 127 + 3 = 892
+OpenCL GPU: Intel(R) Graphics [0x9a49]
+Intel(R) Graphics [0x9a49]: verified 32 OpenCL results, last=220

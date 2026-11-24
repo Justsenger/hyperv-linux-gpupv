@@ -1,0 +1,2 @@
+/usr/lib/modules/5.14.0-741.22.1.el9_9.x86_64/updates/gpupv/dxgkrnl.ko
+-rw-r--r--. 1 root root system_u:object_r:modules_object_t:s0 3815336 Nov 23 11:33 /lib/modules/5.14.0-741.22.1.el9_9.x86_64/updates/gpupv/dxgkrnl.ko

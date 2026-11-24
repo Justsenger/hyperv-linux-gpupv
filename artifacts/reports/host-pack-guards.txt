@@ -1,0 +1,4 @@
+pack 缺少匹配 x86_64 的 WSL 运行库：libd3d12.so, libd3d12core.so, libdxcore.so。请安装或更新 WSL 后重新运行 doctor。已检查 C:\Program Files\WSL\lib 和 C:\Windows\System32\lxss\lib。
+pack output_absent=True
+iso 缺少匹配 x86_64 的 WSL 运行库：libd3d12.so, libd3d12core.so, libdxcore.so。请安装或更新 WSL 后重新运行 doctor。已检查 C:\Program Files\WSL\lib 和 C:\Windows\System32\lxss\lib。
+iso output_absent=True

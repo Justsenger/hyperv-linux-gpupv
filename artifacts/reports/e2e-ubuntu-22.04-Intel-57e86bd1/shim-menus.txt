@@ -1,0 +1,5 @@
+3c40b260-dff5-4e66-8808-454573dffd37 confirmed shim menu management
+3c40b260-dff5-4e66-8808-454573dffd37 confirmed shim menu view
+3c40b260-dff5-4e66-8808-454573dffd37 confirmed shim menu confirm
+3c40b260-dff5-4e66-8808-454573dffd37 confirmed shim menu password
+3c40b260-dff5-4e66-8808-454573dffd37 confirmed shim menu reboot

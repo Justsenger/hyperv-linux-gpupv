@@ -1,0 +1,6 @@
+glibc 2.41, x86_64, kernel 6.12.118+deb13-amd64, preflight OK
+Mesa D3D12: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+
+签名公钥尚未受信任。运行 sudo mokutil --import /var/lib/dkms/mok.pub，设置一次性密码，重启并在 MOK Manager 中选择 Enroll MOK，确认后重新执行安装。
+

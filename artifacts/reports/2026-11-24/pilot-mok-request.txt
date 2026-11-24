@@ -1,0 +1,13 @@
+Signing key: /var/lib/dkms/mok.key
+Public certificate (MOK): /var/lib/dkms/mok.pub
+Certificate or key are missing, generating self signed certificate for MOK...
+subject=CN=DKMS module signing key
+sha256 Fingerprint=41:7E:EB:D7:D9:22:37:B0:B4:1D:44:FD:36:46:C6:2B:0D:C4:BA:50:FA:A0:79:B3:C5:3C:A4:04:8D:6A:B9:E2
+/var/lib/dkms/mok.pub is not enrolled
+input password: 
+input password again: 
+SHA1 Fingerprint: a7:31:c7:a5:48:d8:29:a0:7d:de:56:5f:5a:58:f7:3e:37:28:ec:79
+        Subject: CN=DKMS module signing key
+9625c125-72c8-4d55-af7f-4bd1a70a6be4
+Running timer as unit: run-p4234-i4534.timer
+Will run service as unit: run-p4234-i4534.service

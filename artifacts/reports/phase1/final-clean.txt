@@ -1,0 +1,15 @@
+fdd9f42d-b5c7-4acf-93b1-11460f8a167d
+SecureBoot disabled
+absent /dev/dxg
+absent /sys/module/dxgkrnl
+absent /usr/local/bin/gpupv-guest
+absent /usr/local/bin/nvidia-smi
+absent /opt/hyperv-linux-gpupv
+absent /etc/ld.so.conf.d/gpupv.conf
+absent /etc/udev/rules.d/70-gpupv.rules
+absent /etc/modprobe.d/gpupv.conf
+absent /etc/modules-load.d/gpupv.conf
+absent /usr/lib/wsl/lib
+absent /usr/lib/wsl/drivers
+absent /lib/modules/6.1.0-56-amd64/updates/gpupv/dxgkrnl.ko
+clean

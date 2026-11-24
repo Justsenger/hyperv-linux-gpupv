@@ -1,0 +1,46 @@
+banner exchange: Connection to UNKNOWN port -1: Connection refused
+banner exchange: Connection to UNKNOWN port -1: Connection refused
+banner exchange: Connection to UNKNOWN port -1: Connection refused
+banner exchange: Connection to UNKNOWN port -1: Connection refused
+banner exchange: Connection to UNKNOWN port -1: Connection refused
+banner exchange: Connection to UNKNOWN port -1: Connection refused
+banner exchange: Connection to UNKNOWN port -1: Connection refused
+Warning: Permanently added '172.23.7.111' (ED25519) to the list of known hosts.
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found
+sh: line 1: hostname: command not found

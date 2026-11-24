@@ -1,0 +1,4 @@
+Removed two verified media assembly trees from .test/release-1124: repack-irisxe and repack-rtx2060.
+Removed previously emptied private media staging directories .tools/final-media, .tools/validated-media, .tools/selinux-media.
+Removed final NVIDIA assembly tree and original verified Intel scratch tree after both UDF/tar audits.
+Removed the two superseded private candidate folders after archiving their manifests and verifying the final media.

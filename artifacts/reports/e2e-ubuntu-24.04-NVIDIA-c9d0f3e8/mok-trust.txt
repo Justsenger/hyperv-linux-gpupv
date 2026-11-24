@@ -1,0 +1,6 @@
+SecureBoot enabled
+fd72d74e-9df9-4e1e-96e2-ae78739644e4
+SHA1 Fingerprint: 76:a0:92:06:58:00:bf:37:69:01:c3:72:cd:55:a9:0e:1f:de:d2:e0
+        Issuer: C=GB, ST=Isle of Man, L=Douglas, O=Canonical Ltd., CN=Canonical Ltd. Master Certificate Authority
+SHA1 Fingerprint: 9e:9a:91:92:9d:8e:ac:bd:cf:9f:82:e0:88:51:b2:fb:a0:76:45:19
+        Issuer: CN=GPU-PV module signing

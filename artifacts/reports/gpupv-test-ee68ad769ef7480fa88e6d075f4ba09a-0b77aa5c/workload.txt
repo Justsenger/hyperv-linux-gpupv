@@ -1,0 +1,32 @@
+boot_id=a50bda16-7392-49bd-83b7-64095a13a2e1 uid=1000 gpu=NVIDIA GeForce RTX 2060
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB
+NVIDIA GeForce RTX 2060: 7 * 5 + 3 = 38
+NVIDIA GeForce RTX 2060: 7 * 19 + 3 = 136
+NVIDIA GeForce RTX 2060: 7 * 127 + 3 = 892
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+[Parsed_testsrc2_0 @ 0x55555748e900] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 15 tbn
+[out#0/matroska @ 0x5555574af780] No explicit maps, mapping streams automatically...
+[vost#0:0/h264_nvenc @ 0x5555574b0c80] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (h264_nvenc))
+Press [q] to stop, [?] for help
+[graph 0 input from stream 0:0 @ 0x5555574ce880] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1
+[h264_nvenc @ 0x5555574b1040] Cannot load libcuda.so.1
+[h264_nvenc @ 0x5555574b1040] Nvenc unloaded
+[vost#0:0/h264_nvenc @ 0x5555574b0c80] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.
+Error while filtering: Operation not permitted
+[vist#0:0/wrapped_avframe @ 0x5555574afa40] Decoder thread received EOF packet
+[vist#0:0/wrapped_avframe @ 0x5555574afa40] Decoder returned EOF, finishing
+[vist#0:0/wrapped_avframe @ 0x5555574afa40] Terminating decoder thread
+[out#0/matroska @ 0x5555574af780] Nothing was written into output file, because at least one of its streams received no packets.
+frame=    0 fps=0.0 q=0.0 Lsize=       0kB time=N/A bitrate=N/A speed=N/A    
+[AVIOContext @ 0x5555574cddc0] Statistics: 0 bytes written, 0 seeks, 0 writeouts
+[in#0/lavfi @ 0x55555748de00] Terminating demuxer thread
+[in#0/lavfi @ 0x55555748de00] Input file #0 (testsrc2=size=320x240:rate=15):
+[in#0/lavfi @ 0x55555748de00]   Input stream #0:0 (video): 3 packets read (1440 bytes); 1 frames decoded; 0 decode errors; 
+[in#0/lavfi @ 0x55555748de00]   Total: 3 packets (1440 bytes) demuxed
+Conversion failed!

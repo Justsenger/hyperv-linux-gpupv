@@ -1,0 +1,1 @@
+{"arch": "x86_64", "target": "debian-12", "release": "6.1.0-56-amd64", "name": "dxgkrnl", "vermagic": "6.1.0-56-amd64 SMP preempt mod_unload modversions", "srcversion": "8FBA9DAE913927733D3E675", "sha256": "7808f3585457da136bbc3794fea8baa85e6006ad564c477e31e8f06884a18856"}

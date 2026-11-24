@@ -1,0 +1,147 @@
+NAME="Rocky Linux"
+VERSION="9.9 (Blue Onyx)"
+RELEASE_TYPE="stable"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="9.9"
+PLATFORM_ID="platform:el9"
+PRETTY_NAME="Rocky Linux 9.9 (Blue Onyx)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:9::baseos"
+HOME_URL="https://rockylinux.org/"
+VENDOR_NAME="RESF"
+VENDOR_URL="https://resf.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2032-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-9"
+ROCKY_SUPPORT_PRODUCT_VERSION="9.9"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="9.9"
+Linux gpupv-test-9b9018e6bd95473fb61730fa97895be2 5.14.0-741.22.1.el9_9.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Nov 12 15:18:14 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+0x1414
+0x008e
+Last metadata expiration check: 0:02:53 ago on Tue Nov 24 04:29:48 2026.
+No match for argument: intel-compute-runtime
+Error: Unable to find a match: intel-compute-runtime
+OpenCL package exit=1
+Last metadata expiration check: 0:02:53 ago on Tue Nov 24 04:29:48 2026.
+No match for argument: libva-utils
+No match for argument: mesa-va-drivers
+Dependencies resolved.
+Nothing to do.
+Complete!
+VA package exit=0
+a327c651ea989fdec88eb6aec3cc3e8e2919625b39616c98522f0ef89cefd7a0  /mnt/gpupv/guest/gpupv-guest
+4001f40d3fe9652feb87174e5653794e8754f07a2c10ca7446566a55ba029d43  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+/tmp/tmp.RRkFjTwF9a/probe.c:2:28: error: ‘struct dma_fence_ops’ has no member named ‘fence_value_str’
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[1]: *** [scripts/Makefile.build:250: /tmp/tmp.RRkFjTwF9a/probe.o] Error 1
+make: *** [Makefile:1977: /tmp/tmp.RRkFjTwF9a] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/5.14.0-741.22.1.el9_9.x86_64'
+  CC [M]  /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmpezy9_68o/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/kernels/5.14.0-741.22.1.el9_9.x86_64'
+glibc 2.34, x86_64, kernel 5.14.0-741.22.1.el9_9.x86_64, preflight OK
+Mesa D3D12 VA-API: []
+OpenCL ICD: []
+glibc 2.34, x86_64, kernel 5.14.0-741.22.1.el9_9.x86_64, preflight OK
+Mesa D3D12 VA-API: []
+OpenCL ICD: []
+/usr/lib/modules/5.14.0-741.22.1.el9_9.x86_64/updates/gpupv/dxgkrnl.ko
+-rw-r--r--. 1 root root system_u:object_r:modules_object_t:s0 3827899 Nov 24 04:35 /lib/modules/5.14.0-741.22.1.el9_9.x86_64/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+crw-rw----. 1 root video 10, 122 Nov 24 04:35 /dev/dxg
+boot_id=1af950bb-a262-4aa4-9623-ad7663c3fc6b uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+SecureBoot enabled
+GPU-PV module signing
+48:04:FD:A2:52:AF:06:AC:0C:DC:83:11:8A:60:E7:3D:C3:BF:98:79
+O
+module dxgkrnl format gpupv +p
+Verified Intel video directions: 0/0
+profiles_exit=77
+gpupv-codec-comparison: line 20: vainfo: command not found
+No accessible Intel D3D12 VA display exposing H.264 baseline encode and VP9 profile 0 decode.
+comparison_exit=77
+gpupv-va-runtime.tgz: OK
+ffmpeg	7:6.1.1-3ubuntu5
+libc6:amd64	2.39-0ubuntu8.9
+libllvm20:amd64	1:20.1.2-0ubuntu1~24.04.3
+libva2:amd64	2.20.0-2ubuntu0.2
+mesa-libgallium:amd64	25.2.8-0ubuntu0.24.04.5
+mesa-va-drivers:amd64	25.2.8-0ubuntu0.24.04.5
+vainfo	2.12.0+ds1-1
+modprobe: FATAL: Module vgem not found in directory /lib/modules/5.14.0-741.22.1.el9_9.x86_64
+total 0
+crw-rw----. 1 root video 226, 0 Nov 24 04:35 card0
+libva info: VA-API version 1.20.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /home/tester/gpupv-va.abatsKLN/lib/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_20
+pci id for fd 3: 1414:0006, driver (null)
+pci id for fd 4: 1414:0006, driver (null)
+pci id for fd 5: 1414:0006, driver (null)
+libva error: /home/tester/gpupv-va.abatsKLN/lib/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+No accessible Intel D3D12 VA display exposing H.264 baseline encode and VP9 profile 0 decode.
+isolated_va_exit=77
+Verified Intel video directions: 0/0
+isolated_profiles_exit=77
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+crw-rw----. 1 root video 10, 122 Nov 24 04:35 /dev/dxg
+
+/dev/dri:
+total 0
+crw-rw----. 1 root video 226, 0 Nov 24 04:35 card0
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/lib/libdxcore.so'
+	linux-vdso.so.1 (0x00007fff89721000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fbe5e400000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fbe5e6a1000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fbe5e323000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fbe5e69c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fbe5e799000)
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/lib/libd3d12.so'
+	linux-vdso.so.1 (0x00007ffe385a6000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f6872a00000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f6872cb4000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f6872923000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f6872caf000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f6872d8a000)
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so'
+	linux-vdso.so.1 (0x00007ffd3ddca000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f2a6904d000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f2a69048000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007f2a68e00000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f2a68d23000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f2a69029000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f2a68a00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f2a69067000)
+diagnostic_collection_finished
+managed_paths_clean
+managed_paths_clean

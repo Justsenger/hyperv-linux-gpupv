@@ -1,0 +1,22 @@
+#!/bin/sh
+# Run inside a disposable privileged container on the owned GPU test guest.
+set -eu
+test "$(id -u)" = 0
+test ! -e /sys/module/dxgkrnl
+test ! -e "/lib/modules/$(uname -r)/build"
+for tool in gcc g++ make; do
+    if command -v "$tool"; then exit 1; fi
+done
+echo "Container $(cat /etc/debian_version), uname $(uname -r), GCC, make and kernel headers absent"
+sh /media/gpupv/guest/setup
+trap 'gpupv-guest uninstall' EXIT
+modinfo -F vermagic dxgkrnl
+modinfo -F signer dxgkrnl
+test -c /dev/dxg
+sh /media/gpupv/guest/setup
+gpupv-guest uninstall
+trap - EXIT
+test ! -e /sys/module/dxgkrnl
+test ! -e /dev/dxg
+test ! -e /opt/hyperv-linux-gpupv
+echo "Prebuilt load, repeat install and uninstall passed"

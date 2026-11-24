@@ -1,0 +1,6 @@
+{
+  "Image": "D:\\linux-pv\\.test\\images\\gpupv-test-leap-15.6-3b343d1d2e0fd4f0.img",
+  "Sha256": "3B343D1D2E0FD4F06946BBB28DA2E231E12467499443AA6D5E0837A28268C260",
+  "Source": "https://download.opensuse.org/repositories/Cloud:/Images:/Leap_15.6/images/openSUSE-Leap-15.6.x86_64-NoCloud.qcow2",
+  "ChecksumSource": "https://download.opensuse.org/repositories/Cloud:/Images:/Leap_15.6/images/openSUSE-Leap-15.6.x86_64-NoCloud.qcow2.sha256"
+}

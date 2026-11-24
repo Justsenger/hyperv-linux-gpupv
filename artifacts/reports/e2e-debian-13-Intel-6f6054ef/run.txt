@@ -1,0 +1,149 @@
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.7
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+Linux gpupv-test-6f6054effccc4b36aedb516cb5cfd2c3 6.12.117+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.117-1 (2026-11-12) x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+0x1414
+0x008e
+b1a8383c2d3c4f22f0958ed3c65f39566ca73eff8ed9837c8bd7b3cbab24bf6b  /mnt/gpupv/guest/gpupv-guest
+40575dd6ffda79d452eff72677d97f890287a0bd58a639b013031332cb03d6f9  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+/tmp/tmp.5Q68lRbgcd/probe.c: In function ‘p’:
+/tmp/tmp.5Q68lRbgcd/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Wint-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.5Q68lRbgcd/probe.c:1:
+/usr/src/linux-headers-6.12.117+deb13-common/include/linux/dma-fence.h:472:45: note: expected ‘u64’ {aka ‘long long unsigned int’} but argument is of type ‘struct dma_fence *’
+  472 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+make[2]: *** [/usr/src/linux-headers-6.12.117+deb13-common/scripts/Makefile.build:234: /tmp/tmp.5Q68lRbgcd/probe.o] Error 1
+make[1]: *** [/usr/src/linux-headers-6.12.117+deb13-common/Makefile:2008: /tmp/tmp.5Q68lRbgcd] Error 2
+make: *** [/usr/src/linux-headers-6.12.117+deb13-common/Makefile:236: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-6.12.117+deb13-amd64'
+  CC [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  CC [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/.module-common.o
+  LD [M]  /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmpch_psyeg/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+make: Leaving directory '/usr/src/linux-headers-6.12.117+deb13-amd64'
+glibc 2.41, x86_64, kernel 6.12.117+deb13-amd64, preflight OK
+Mesa D3D12: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+glibc 2.41, x86_64, kernel 6.12.117+deb13-amd64, preflight OK
+Mesa D3D12: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+/usr/lib/modules/6.12.117+deb13-amd64/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4021816 Nov 23 13:06 /lib/modules/6.12.117+deb13-amd64/updates/gpupv/dxgkrnl.ko
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 262 Nov 23 13:07 /dev/dxg
+Dozen manifests found=0
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 262 Nov 23 13:07 /dev/dxg
+gfxstream_vk_icd.json
+intel_hasvk_icd.json
+intel_icd.json
+lvp_icd.json
+nouveau_icd.json
+radeon_icd.json
+virtio_icd.json
+'DISPLAY' environment variable not set... skipping surface info
+==========
+VULKANINFO
+==========
+
+Vulkan Instance Version: 1.4.309
+
+
+Instance Extensions: count = 24
+-------------------------------
+VK_EXT_acquire_drm_display             : extension revision 1
+VK_EXT_acquire_xlib_display            : extension revision 1
+VK_EXT_debug_report                    : extension revision 10
+VK_EXT_debug_utils                     : extension revision 2
+VK_EXT_direct_mode_display             : extension revision 1
+VK_EXT_display_surface_counter         : extension revision 1
+VK_EXT_headless_surface                : extension revision 1
+VK_EXT_surface_maintenance1            : extension revision 1
+VK_EXT_swapchain_colorspace            : extension revision 5
+VK_KHR_device_group_creation           : extension revision 1
+VK_KHR_display                         : extension revision 23
+VK_KHR_external_fence_capabilities     : extension revision 1
+VK_KHR_external_memory_capabilities    : extension revision 1
+VK_KHR_external_semaphore_capabilities : extension revision 1
+VK_KHR_get_display_properties2         : extension revision 1
+VK_KHR_get_physical_device_properties2 : extension revision 2
+VK_KHR_get_surface_capabilities2       : extension revision 1
+VK_KHR_portability_enumeration         : extension revision 1
+VK_KHR_surface                         : extension revision 25
+VK_KHR_surface_protected_capabilities  : extension revision 1
+VK_KHR_wayland_surface                 : extension revision 6
+VK_KHR_xcb_surface                     : extension revision 6
+VK_KHR_xlib_surface                    : extension revision 6
+VK_LUNARG_direct_driver_loading        : extension revision 1
+
+Instance Layers: count = 3
+--------------------------
+VK_LAYER_INTEL_nullhw       INTEL NULL HW                1.1.73   version 1
+VK_LAYER_MESA_device_select Linux device selection layer 1.4.303  version 1
+VK_LAYER_MESA_overlay       Mesa Overlay layer           1.4.303  version 1
+
+Devices:
+========
+GPU0:
+	apiVersion         = 1.4.305
+	driverVersion      = 0.0.1
+	vendorID           = 0x10005
+	deviceID           = 0x0000
+	deviceType         = PHYSICAL_DEVICE_TYPE_CPU
+	deviceName         = llvmpipe (LLVM 19.1.7, 256 bits)
+	driverID           = DRIVER_ID_MESA_LLVMPIPE
+	driverName         = llvmpipe
+	driverInfo         = Mesa 25.0.7-2+deb13u1 (LLVM 19.1.7)
+	conformanceVersion = 1.3.1.1
+	deviceUUID         = 6d657361-3235-2e30-2e37-2d322b646500
+	driverUUID         = 6c6c766d-7069-7065-5555-494400000000
+glx: failed to create drisw screen
+X Error of failed request:  BadValue (integer parameter out of range for operation)
+  Major opcode of failed request:  150 (GLX)
+  Minor opcode of failed request:  24 (X_GLXCreateNewContext)
+  Value in failed request:  0x0
+  Serial number of failed request:  30
+  Current serial number in output stream:  31
+name of display: :99
+libva info: VA-API version 1.22.0
+libva error: vaGetDriverNames() failed with unknown libva error
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+libva info: va_openDriver() returns -1
+vaInitialize failed with error code -1 (unknown libva error),exit
+Trying display: wayland
+Trying display: x11
+diagnostic_collection_finished
+managed_paths_clean
+managed_paths_clean

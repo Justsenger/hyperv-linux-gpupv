@@ -1,0 +1,9 @@
+TARGET              SOURCE   FSTYPE OPTIONS
+/tmp/tmp.182UdsUcoa /dev/sr1 udf    ro,nosuid,nodev,relatime,iocharset=utf8
+3b95d662a435e39cfa9d4ae32202d06ebc48e6be2567f818030c8a7e4338bda4  guest/setup
+124e2c19552735c4469dfceadfca024a3fab10d184db522e2f574ef0a9f6ce6d  guest/gpupv-guest
+2b39743c3a00f2afba8ffce2f36e4ecc64ca3e3bfeaf484920b0f58c7743463c  kernel/build
+缺少当前内核 6.12.117+deb13-amd64 的匹配头文件。请从官方源安装精确版本 linux-headers 或 kernel-devel。
+缺少宿主设备清单，请用宿主 CLI 重新打包。
+install_exit=1
+no_install_directory

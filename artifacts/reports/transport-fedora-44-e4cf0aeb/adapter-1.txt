@@ -1,0 +1,6 @@
+
+InstancePath                                                                                                     Instanc
+                                                                                                                 eId
+------------                                                                                                     -------
+\\?\PCI#VEN_8086&DEV_9A49&SUBSYS_20908086&REV_01#3&11583659&0&10#{064092b3-625e-43bf-9eb5-dc845897dd59}\GPUPARAV 
+

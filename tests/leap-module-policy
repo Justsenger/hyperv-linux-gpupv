@@ -1,0 +1,24 @@
+#!/bin/sh
+# Save and restore SUSE's documented third-party module setting in a disposable guest.
+set -eu
+. /etc/os-release
+test "$ID" = opensuse-leap
+saved=/var/tmp/gpupv-matrix-module-policy
+config=/etc/modprobe.d/10-unsupported-modules.conf
+case "$1" in
+enable)
+    mkdir -m 700 "$saved"
+    if test -e "$config" || test -L "$config"; then mv -T "$config" "$saved/original"; fi
+    echo 'allow_unsupported_modules 1' > "$config"
+    modprobe -c | grep allow_unsupported_modules || cat "$config"
+    ;;
+restore)
+    test -d "$saved"
+    test "$(cat "$config")" = 'allow_unsupported_modules 1'
+    rm -- "$config"
+    if test -e "$saved/original" || test -L "$saved/original"; then mv -T "$saved/original" "$config"; fi
+    rmdir "$saved"
+    echo restored_original_module_policy
+    ;;
+*) exit 2 ;;
+esac

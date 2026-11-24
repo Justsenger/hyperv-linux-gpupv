@@ -1,0 +1,11 @@
+TARGET                    SOURCE    FSTYPE   OPTIONS
+/efi                      /dev/sda2 vfat     rw,nosuid,nodev,noexec,relatime,nosymfollow,fmask=0177,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro
+/sys/firmware/efi/efivars efivarfs  efivarfs rw,nosuid,nodev,noexec,relatime
+CONFIG_MODULE_SIG=y
+CONFIG_INTEGRITY_PLATFORM_KEYRING=y
+CONFIG_INTEGRITY_MACHINE_KEYRING=y
+CONFIG_LOAD_UEFI_KEYS=y
+CONFIG_SECONDARY_TRUSTED_KEYRING=y
+/efi/EFI/BOOT/BOOTX64.EFI
+shimx64.efi: OK
+mmx64.efi: OK

@@ -1,0 +1,2 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 262 Nov 23 09:57 /dev/dxg

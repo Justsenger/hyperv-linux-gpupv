@@ -1,0 +1,6 @@
+{
+  "Image": "D:\\linux-pv\\.test\\images\\gpupv-test-rocky-9-4f88f4209de50813.img",
+  "Sha256": "4F88F4209DE50813D8054AB97309E7169A580206A0C4EA04F375D36C4846D50E",
+  "Source": "https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-Base.latest.x86_64.qcow2",
+  "ChecksumSource": "https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-Base.latest.x86_64.qcow2.CHECKSUM"
+}

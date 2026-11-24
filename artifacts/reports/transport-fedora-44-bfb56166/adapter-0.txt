@@ -1,0 +1,47 @@
+
+InstancePath                                                                                                     Instanc
+                                                                                                                 eId
+------------                                                                                                     -------
+\\?\PCI#VEN_8086&DEV_9A49&SUBSYS_20908086&REV_01#3&11583659&0&10#{064092b3-625e-43bf-9eb5-dc845897dd59}\GPUPARAV 
+
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+Linux gpupv-test-b01dc3807f2e4aeab04f80e63c4067da 6.19.10-300.fc44.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Mar 25 18:23:49 UTC 2026 x86_64 GNU/Linux
+NAME="Fedora Linux"
+VERSION="44 (Cloud Edition)"
+RELEASE_TYPE=stable
+ID=fedora
+VERSION_ID=44
+VERSION_CODENAME=""
+PRETTY_NAME="Fedora Linux 44 (Cloud Edition)"
+ANSI_COLOR="0;38;2;60;110;180"
+LOGO=fedora-logo-icon
+CPE_NAME="cpe:/o:fedoraproject:fedora:44"
+HOME_URL="https://fedoraproject.org/"
+DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US/fedora/f44/"
+SUPPORT_URL="https://ask.fedoraproject.org/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+REDHAT_BUGZILLA_PRODUCT="Fedora"
+REDHAT_BUGZILLA_PRODUCT_VERSION=44
+REDHAT_SUPPORT_PRODUCT="Fedora"
+REDHAT_SUPPORT_PRODUCT_VERSION=44
+SUPPORT_END=2027-05-19
+VARIANT="Cloud Edition"
+VARIANT_ID=cloud
+fcbc11d3-670a-40be-be3b-25d9d7e8d274
+{525074dc-8985-46e2-8057-a307dc18a502}
+{a9a0f4e7-5a45-4d96-b827-8a841e8c03e6}
+{35fa2e29-ea23-4236-96ae-3a6ebacba440}
+{9527e630-d0ae-497b-adce-e80ab0175caf}
+{3375baf4-9e15-4b30-b765-67acb10d607b}
+{da0a7802-e377-4aac-8e77-0558eb1073f8}
+{cfa8b69e-5b4a-4cc0-b98b-8ba1a1f3f95a}
+{dde9cbc0-5060-4436-9448-ea1254a5d177}
+{6e382d18-3336-4f4b-acc4-2b7703d4df4a}
+{f8e65716-3cb3-4a06-9a60-1889c5cccab5}
+{0e0b6031-5213-4934-818b-38d90ced39db}
+{f8615163-df3e-46c5-913f-f2d2f965ed0e}
+{f912ad6d-2b17-48ea-bd65-f927a61c7684}
+{44c4f61d-4444-4400-9d52-802e27ede19f}
+{ba6163d9-04a1-4d29-b605-72e2ffb1dc7f}
+{276aacf4-ac15-426c-98dd-7521ad3f01fe}
+{57164f39-9115-4e78-ab55-382f3bd5422d}

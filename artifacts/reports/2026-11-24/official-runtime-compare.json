@@ -1,0 +1,20 @@
+[
+  {
+    "name": "libd3d12.so",
+    "officialMsiSha256": "b3d78d409a4dbbe8612551fc0c0d746d3e58d7997ee7eba78ce1064d77cfa8c3",
+    "communityPinnedSha256": "b3d78d409a4dbbe8612551fc0c0d746d3e58d7997ee7eba78ce1064d77cfa8c3",
+    "identical": true
+  },
+  {
+    "name": "libdxcore.so",
+    "officialMsiSha256": "83d1671a839bcf71709349e77cd68341515df2e63080765618876996a0f4190c",
+    "communityPinnedSha256": "83d1671a839bcf71709349e77cd68341515df2e63080765618876996a0f4190c",
+    "identical": true
+  },
+  {
+    "name": "libd3d12core.so",
+    "officialMsiSha256": "a4104a2022932d8e6c714f103ebd89db1c5bdbf36fe92151c88d3d93d4e3894d",
+    "communityPinnedSha256": "a4104a2022932d8e6c714f103ebd89db1c5bdbf36fe92151c88d3d93d4e3894d",
+    "identical": true
+  }
+]

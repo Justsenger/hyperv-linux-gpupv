@@ -1,2 +1,14 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+kernel/** text eol=lf
+guest/** text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+tests/compile-matrix text eol=lf
+*.png binary
+*.zip binary
+
+
+tests/build-kernel-target text eol=lf
+tests/compute-acceptance text eol=lf
+tests/prebuilt-container text eol=lf
+tests/isolate-dual-compute text eol=lf

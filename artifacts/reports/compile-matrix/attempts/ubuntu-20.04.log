@@ -1,0 +1,47 @@
+image=ubuntu:20.04 unix_time=1795421926
+Unable to find image 'ubuntu:20.04' locally
+20.04: Pulling from library/ubuntu
+13b7e930469f: Pulling fs layer
+13b7e930469f: Verifying Checksum
+13b7e930469f: Download complete
+13b7e930469f: Pull complete
+Digest: sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214
+Status: Downloaded newer image for ubuntu:20.04
+NAME="Ubuntu"
+VERSION="20.04.6 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.6 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+Ign:1 https://archive.ubuntu.com/ubuntu focal InRelease
+Ign:2 https://security.ubuntu.com/ubuntu focal-security InRelease
+Ign:3 https://archive.ubuntu.com/ubuntu focal-updates InRelease
+Err:4 https://security.ubuntu.com/ubuntu focal-security Release
+  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+Ign:5 https://archive.ubuntu.com/ubuntu focal-backports InRelease
+Err:6 https://archive.ubuntu.com/ubuntu focal Release
+  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+Err:7 https://archive.ubuntu.com/ubuntu focal-updates Release
+  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+Err:8 https://archive.ubuntu.com/ubuntu focal-backports Release
+  Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 192.168.1.6 9000]
+Reading package lists...
+W: https://security.ubuntu.com/ubuntu/dists/focal-security/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/focal/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/focal-updates/InRelease: No system certificates available. Try installing ca-certificates.
+W: https://security.ubuntu.com/ubuntu/dists/focal-security/Release: No system certificates available. Try installing ca-certificates.
+W: https://archive.ubuntu.com/ubuntu/dists/focal-backports/InRelease: No system certificates available. Try installing ca-certificates.
+E: The repository 'https://security.ubuntu.com/ubuntu focal-security Release' does not have a Release file.
+W: https://archive.ubuntu.com/ubuntu/dists/focal/Release: No system certificates available. Try installing ca-certificates.
+E: The repository 'https://archive.ubuntu.com/ubuntu focal Release' does not have a Release file.
+W: https://archive.ubuntu.com/ubuntu/dists/focal-updates/Release: No system certificates available. Try installing ca-certificates.
+E: The repository 'https://archive.ubuntu.com/ubuntu focal-updates Release' does not have a Release file.
+W: https://archive.ubuntu.com/ubuntu/dists/focal-backports/Release: No system certificates available. Try installing ca-certificates.
+E: The repository 'https://archive.ubuntu.com/ubuntu focal-backports Release' does not have a Release file.
+exit=100

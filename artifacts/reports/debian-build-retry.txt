@@ -1,0 +1,19 @@
+apt-get -y --no-install-recommends install gcc make linux-headers-6.12.117+deb13-amd64
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-14
+  cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu gcc-14 gcc-14-x86-64-linux-gnu
+  gcc-x86-64-linux-gnu libasan8 libbinutils libcc1-0 libctf-nobfd0 libctf0
+  libdw1t64 libgcc-14-dev libgomp1 libgprofng0 libhwasan0 libisl23 libitm1
+  libjansson4 liblsan0 libmpc3 libmpfr6 libquadmath0 libsframe1 libtsan2
+  libubsan1 linux-headers-6.12.117+deb13-common linux-kbuild-6.12.117+deb13
+  pahole
+Suggested packages:
+  binutils-doc gprofng-gui binutils-gold cpp-doc gcc-14-locales cpp-14-doc
+  gcc-multilib manpages-dev autoconf automake libtool flex bison gdb gcc-doc
+  gcc-14-multilib gcc-14-doc gdb-x86-64-linux-gnu make-doc
+Recommended packages:
+  libc6-dev | libc-dev libc6-dev libc-dev
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?

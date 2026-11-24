@@ -1,0 +1,78 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+libva info: VA-API version 1.22.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_22
+kmsro: driver missing
+libva error: /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+Trying display: drm
+libva info: VA-API version 1.22.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_22
+kmsro: driver missing
+libva error: /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+Trying display: drm
+No accessible Intel D3D12 VA display exposing both H.264 encode and decode.
+video_exit=77
+libva info: VA-API version 1.22.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_22
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.22 (libva 2.22.0)
+vainfo: Driver version: Mesa Gallium driver 25.0.7-2+deb13u1 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileH264ConstrainedBaseline:	VAEntrypointVLD
+      VAProfileH264ConstrainedBaseline:	VAEntrypointEncSlice
+      VAProfileH264Main               :	VAEntrypointVLD
+      VAProfileH264Main               :	VAEntrypointEncSlice
+      VAProfileH264High               :	VAEntrypointVLD
+      VAProfileH264High               :	VAEntrypointEncSlice
+      VAProfileHEVCMain               :	VAEntrypointVLD
+      VAProfileHEVCMain               :	VAEntrypointEncSlice
+      VAProfileHEVCMain10             :	VAEntrypointVLD
+      VAProfileHEVCMain10             :	VAEntrypointEncSlice
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+3948  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so", O_RDONLY|O_CLOEXEC) = 4
+3948  openat(AT_FDCWD, "/usr/lib/wsl/lib/libd3d12.so", O_RDONLY|O_CLOEXEC) = 4
+3948  openat(AT_FDCWD, "/dev/dxg", O_RDONLY|O_CLOEXEC) = 4
+3948  openat(AT_FDCWD, "$$$/usr/lib/wsl/lib/glibc-hwcaps/x86-64-v4/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "$$$/usr/lib/wsl/lib/glibc-hwcaps/x86-64-v3/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "$$$/usr/lib/wsl/lib/glibc-hwcaps/x86-64-v2/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "$$$/usr/lib/wsl/lib/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/wsl/lib/libd3d12core.so", O_RDONLY|O_CLOEXEC) = 5
+3948  openat(AT_FDCWD, "/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so", O_RDONLY|O_CLOEXEC) = 5
+3948  openat(AT_FDCWD, "/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/glibc-hwcaps/x86-64-v4/libigd12um64xel.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/glibc-hwcaps/x86-64-v3/libigd12um64xel.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/glibc-hwcaps/x86-64-v2/libigd12um64xel.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12um64xel.so", O_RDONLY|O_CLOEXEC) = 5
+3948  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v4/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v3/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v2/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/lib/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v4/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v3/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v2/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12dxva64.so", O_RDONLY|O_CLOEXEC) = 5
+3948  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/lib/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3948  openat(AT_FDCWD, "/usr/lib/dxgi.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)

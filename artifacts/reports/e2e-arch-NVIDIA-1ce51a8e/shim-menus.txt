@@ -1,0 +1,5 @@
+275d19da-80db-4b8e-befa-93ffa9bfad57 confirmed shim menu management
+275d19da-80db-4b8e-befa-93ffa9bfad57 confirmed shim menu view
+275d19da-80db-4b8e-befa-93ffa9bfad57 confirmed shim menu confirm
+275d19da-80db-4b8e-befa-93ffa9bfad57 confirmed shim menu password
+275d19da-80db-4b8e-befa-93ffa9bfad57 confirmed shim menu reboot

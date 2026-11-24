@@ -1,0 +1,26 @@
+{
+  "irisxe": [
+    {
+      "path": "guest/verify-intel-codec",
+      "rc1": "aee32adb6d24d19a0cc728c89f11cee73197d1ce7ac7eafcc465ff92ad5a736f",
+      "rc2": "2b1f6b39a2e43376da5a3d0c31d7bbbccfe30df4a0c477a9b2cfb4b09c444d2d"
+    }
+  ],
+  "rtx2060": [
+    {
+      "path": "guest/verify-intel-codec",
+      "rc1": "aee32adb6d24d19a0cc728c89f11cee73197d1ce7ac7eafcc465ff92ad5a736f",
+      "rc2": "2b1f6b39a2e43376da5a3d0c31d7bbbccfe30df4a0c477a9b2cfb4b09c444d2d"
+    },
+    {
+      "path": "guest/directx-headers/include/wsl/stubs/oaidl.h",
+      "rc1": null,
+      "rc2": "e462b0a8c28dbcc3099413da01e0cf738fbb96964ad2755429737997b45a2e81"
+    },
+    {
+      "path": "guest/directx-headers/include/wsl/stubs/ocidl.h",
+      "rc1": null,
+      "rc2": "e462b0a8c28dbcc3099413da01e0cf738fbb96964ad2755429737997b45a2e81"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+c161dc02-1cf4-4203-973b-35b54ad5b410 confirmed shim menu management
+c161dc02-1cf4-4203-973b-35b54ad5b410 confirmed shim menu view
+c161dc02-1cf4-4203-973b-35b54ad5b410 confirmed shim menu confirm
+c161dc02-1cf4-4203-973b-35b54ad5b410 confirmed shim menu password
+c161dc02-1cf4-4203-973b-35b54ad5b410 confirmed shim menu reboot

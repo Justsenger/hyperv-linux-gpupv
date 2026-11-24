@@ -1,0 +1,80 @@
+Retrieving repository 'Update repository of openSUSE Backports' metadata [....
+Looking for gpg keys in repository Update repository of openSUSE Backports.
+  gpgkey=http://download.opensuse.org/update/leap/15.6/backports/repodata/repomd.xml.key
+........................done]
+Building repository 'Update repository of openSUSE Backports' cache [....done]
+Retrieving repository 'Debug Repository' metadata [.....
+Looking for gpg keys in repository Debug Repository.
+  gpgkey=http://download.opensuse.org/debug/distribution/leap/15.6/repo/oss/repodata/repomd.xml.key
+...
+Warning: The gpg key signing file 'repomd.xml' has expired.
+  Repository:       Debug Repository
+  Key Fingerprint:  AD48 5664 E901 B867 051A B15F 35A2 F86E 29B7 00A4
+  Key Name:         openSUSE Project Signing Key <opensuse@opensuse.org>
+  Key Algorithm:    RSA 4096
+  Key Created:      Mon Jun 20 14:03:14 2022
+  Key Expires:      Fri Jun 19 14:03:14 2026 (EXPIRED)
+  Rpm Name:         gpg-pubkey-29b700a4-62b07e22
+..............................................done]
+Building repository 'Debug Repository' cache [....done]
+Retrieving repository 'Update Repository (Debug)' metadata [....
+Looking for gpg keys in repository Update Repository (Debug).
+  gpgkey=http://download.opensuse.org/debug/update/leap/15.6/oss/repodata/repomd.xml.key
+.........done]
+Building repository 'Update Repository (Debug)' cache [....done]
+Retrieving repository 'Non-OSS Repository' metadata [..error]
+Repository 'Non-OSS Repository' is invalid.
+[repo-non-oss|http://download.opensuse.org/distribution/leap/15.6/repo/non-oss/] Failed to retrieve new repository metadata.
+History:
+ - [|] Error trying to read from 'http://download.opensuse.org/distribution/leap/15.6/repo/non-oss/'
+Warning: Skipping repository 'Non-OSS Repository' because of the above error.
+ - Location 'http://download.opensuse.org/distribution/leap/15.6/repo/non-oss/repodata/repomd.xml' is temporarily unaccessible.
+Please check if the URIs defined for this repository are pointing to a valid repository.
+Retrieving repository 'Main Repository' metadata [.....
+Looking for gpg keys in repository Main Repository.
+  gpgkey=http://download.opensuse.org/distribution/leap/15.6/repo/oss/repodata/repomd.xml.key
+........................................done]
+Building repository 'Main Repository' cache [....done]
+Retrieving repository 'Update repository with updates from SUSE Linux Enterprise 15' metadata [....
+Looking for gpg keys in repository Update repository with updates from SUSE Linux Enterprise 15.
+  gpgkey=http://download.opensuse.org/update/leap/15.6/sle/repodata/repomd.xml.key
+....................................................................................................................................................................................................................................................................................................................................................done]
+Building repository 'Update repository with updates from SUSE Linux Enterprise 15' cache [....done]
+Retrieving repository 'Source Repository' metadata [.....
+Looking for gpg keys in repository Source Repository.
+  gpgkey=http://download.opensuse.org/source/distribution/leap/15.6/repo/oss/repodata/repomd.xml.key
+...................done]
+Building repository 'Source Repository' cache [....done]
+Retrieving repository 'Main Update Repository' metadata [....
+Looking for gpg keys in repository Main Update Repository.
+  gpgkey=http://download.opensuse.org/update/leap/15.6/oss/repodata/repomd.xml.key
+.............done]
+Building repository 'Main Update Repository' cache [....done]
+Retrieving repository 'Update Repository (Non-Oss)' metadata [....
+Looking for gpg keys in repository Update Repository (Non-Oss).
+  gpgkey=http://download.opensuse.org/update/leap/15.6/non-oss/repodata/repomd.xml.key
+..........done]
+Building repository 'Update Repository (Non-Oss)' cache [....done]
+Loading repository data...
+Some of the repositories have not been refreshed because of an error.
+Warning: Repository 'Update repository of openSUSE Backports' metadata expired since 2026-07-10 11:19:15 UTC.
+Warning: Repository 'Update Repository (Debug)' metadata expired since 2026-10-13 22:33:14 UTC.
+Warning: Repository 'Main Update Repository' metadata expired since 2026-10-13 22:33:04 UTC.
+
+    Warning: Repository metadata expired: Check if 'autorefresh' is turned on (zypper lr), otherwise
+    manually refresh the repository (zypper ref). If this does not solve the issue, it could be that
+    you are using a broken mirror or the server has actually discontinued to support the repository.
+
+Reading installed packages...
+'kernel-default-devel=6.4.0-150600.23.146.1' not found in package names. Trying capabilities.
+No provider of 'kernel-default-devel=6.4.0-150600.23.146.1' found.
+No provider of 'kernel-devel=6.4.0-150600.23.146.1' found.
+'kernel-devel=6.4.0-150600.23.146.1' not found in package names. Trying capabilities.
+'openssl' is already installed.
+No update candidate for 'openssl-3.1.4-150600.2.1.noarch'. The highest available version is already installed.
+'gawk' is already installed.
+No update candidate for 'gawk-4.2.1-150000.3.6.1.x86_64'. The highest available version is already installed.
+'kmod' is already installed.
+No update candidate for 'kmod-29-150600.13.6.1.x86_64'. The highest available version is already installed.
+'mokutil' is already installed.
+No update candidate for 'mokutil-0.5.0-150600.8.3.x86_64'. The highest available version is already installed.

@@ -1,0 +1,5 @@
+e1105ce6-af66-4674-bca7-c0b1204a6723 confirmed shim menu management
+e1105ce6-af66-4674-bca7-c0b1204a6723 confirmed shim menu view
+e1105ce6-af66-4674-bca7-c0b1204a6723 confirmed shim menu confirm
+e1105ce6-af66-4674-bca7-c0b1204a6723 confirmed shim menu password
+e1105ce6-af66-4674-bca7-c0b1204a6723 confirmed shim menu reboot

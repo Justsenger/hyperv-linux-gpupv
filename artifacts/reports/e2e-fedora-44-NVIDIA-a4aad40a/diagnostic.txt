@@ -1,0 +1,25 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+Linux gpupv-test-a4aad40a81004d4c98b4c920b21f6bf9 6.19.10-300.fc44.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Mar 25 18:23:49 UTC 2026 x86_64 GNU/Linux
+ls: cannot access '/dev/dxg': No such file or directory
+[    2.572617] hv_vmbus: Vmbus version:6.0
+[    2.576082] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    2.582461] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    2.623859] hv_vmbus: registering driver hyperv_keyboard
+[    2.632388] hv_vmbus: registering driver hid_hyperv
+[    2.648093] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input1
+[    2.650242] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    2.654769] hv_vmbus: registering driver hv_pci
+[    2.668068] hv_pci ef720104-5e71-42af-a11f-0b58527a2a85: PCI VMBus probing: Using version 0x10004
+[    2.673355] hv_pci ef720104-5e71-42af-a11f-0b58527a2a85: PCI host bridge to bus 5e71:00
+[    2.676755] hv_vmbus: registering driver hv_storvsc
+[    4.225554] hv_vmbus: registering driver hv_sock
+[    5.449243] audit: type=1400 audit(1795432079.230:4): avc:  denied  { module_load } for  pid=722 comm="systemd-modules" path="/opt/hyperv-linux-gpupv/dxgkrnl.ko" dev="sda3" ino=72980 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=unconfined_u:object_r:usr_t:s0 tclass=system permissive=0
+[    5.474668] audit: type=1400 audit(1795432079.230:5): avc:  denied  { module_load } for  pid=722 comm="systemd-modules" path="/opt/hyperv-linux-gpupv/dxgkrnl.ko" dev="sda3" ino=72980 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=unconfined_u:object_r:usr_t:s0 tclass=system permissive=0
+[    6.304808] hv_vmbus: registering driver hv_balloon
+[    6.317219] hv_vmbus: registering driver hv_utils
+[    6.321963] hv_vmbus: registering driver hyperv_drm
+[    6.372504] hv_vmbus: registering driver hv_netvsc
+ls: cannot access '/sys/bus/pci/devices/*/driver': No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda3        32G  3.5G   29G  11% /
+lrwxrwxrwx. 1 root root 40 Mar 25  2026 /lib/modules/6.19.10-300.fc44.x86_64/build -> /usr/src/kernels/6.19.10-300.fc44.x86_64

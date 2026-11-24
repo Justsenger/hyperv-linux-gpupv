@@ -1,0 +1,20 @@
+{
+  "InstancePath": "\\\\?\\PCI#VEN_8086&DEV_9A49&SUBSYS_20908086&REV_01#3&11583659&0&10#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+  "CurrentPartitionEncode": 1000000000,
+  "MinPartitionEncode": null,
+  "MaxPartitionEncode": null,
+  "OptimalPartitionEncode": null,
+  "CurrentPartitionDecode": 1000000000,
+  "MinPartitionDecode": null,
+  "MaxPartitionDecode": null,
+  "OptimalPartitionDecode": null,
+  "CurrentPartitionCompute": 0,
+  "MinPartitionCompute": null,
+  "MaxPartitionCompute": null,
+  "OptimalPartitionCompute": null,
+  "ComputerName": "WIN-3VQ1ADVJQE6",
+  "CurrentPartitionVRAM": 1000000000,
+  "MinPartitionVRAM": null,
+  "MaxPartitionVRAM": null,
+  "OptimalPartitionVRAM": null
+}

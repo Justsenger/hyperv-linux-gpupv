@@ -1,0 +1,10 @@
+test_architectures (__main__.Contract.test_architectures) ... ok
+test_native_matrix (__main__.Contract.test_native_matrix) ... ok
+test_signed_module (__main__.Contract.test_signed_module) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.429s
+
+OK
+{'vermagic': '6.1.0-56-amd64 SMP preempt mod_unload modversions', 'srcversion': '8FBA9DAE913927733D3E675', 'name': 'dxgkrnl', 'arch': 'x86_64', 'release': '6.1.0-56-amd64', 'target': 'debian-12', 'sha256': '5a27d82902796cfbd69d36d406889be3e19d17c41e7b9988562d578b9907755d'}
+{'vermagic': '6.1.0-56-arm64 SMP mod_unload modversions aarch64', 'srcversion': '8FBA9DAE913927733D3E675', 'name': 'dxgkrnl', 'arch': 'aarch64', 'release': '6.1.0-56-arm64', 'target': 'debian-12', 'sha256': 'e06fe97d1ed3e488c4bf8d3077e01ec5ee2e89c1d20c093af29dd0de5aec1e16'}

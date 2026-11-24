@@ -1,0 +1,9 @@
+{
+  "vermagic": "6.1.0-56-arm64 SMP mod_unload modversions aarch64",
+  "srcversion": "8FBA9DAE913927733D3E675",
+  "name": "dxgkrnl",
+  "arch": "aarch64",
+  "release": "6.1.0-56-arm64",
+  "target": "debian-12",
+  "sha256": "e06fe97d1ed3e488c4bf8d3077e01ec5ee2e89c1d20c093af29dd0de5aec1e16"
+}

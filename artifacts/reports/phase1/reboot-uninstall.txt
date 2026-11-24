@@ -1,0 +1,3 @@
+SecureBoot enabled
+meta-data
+user-data

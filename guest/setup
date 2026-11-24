@@ -1,0 +1,15 @@
+#!/bin/sh
+# SPDX-License-Identifier: MIT
+set -eu
+if ! command -v python3 >/dev/null 2>&1; then
+    for loader in /lib/ld-musl-*.so.1; do
+        if test -f "$loader"; then
+            echo '当前来宾使用 musl。请改用 glibc 虚拟机镜像。' >&2
+            exit 1
+        fi
+    done
+    echo '缺少 Python 3。请从发行版官方离线介质安装 Python 3 及其标准库。' >&2
+    exit 1
+fi
+exec python3 -B "$(dirname "$0")/gpupv-guest" install "$@"
+

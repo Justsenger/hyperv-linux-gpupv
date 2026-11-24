@@ -1,0 +1,3 @@
+glibc 2.44, x86_64, kernel 7.3.4-arch1-2, preflight OK
+Mesa D3D12: ['/usr/lib64/dri/d3d12_dri.so', '/usr/lib/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []

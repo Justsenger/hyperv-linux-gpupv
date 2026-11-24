@@ -1,0 +1,11 @@
+glibc 2.41, x86_64, kernel 6.12.117+deb13-amd64, preflight OK
+Mesa D3D12: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+glibc 2.41, x86_64, kernel 6.12.117+deb13-amd64, preflight OK
+Mesa D3D12: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+managed_paths_clean
+a23d6df5-b806-4983-9d7d-5acd634e8a0c
+Running timer as unit: run-p870-i1170.timer
+Will run service as unit: run-p870-i1170.service

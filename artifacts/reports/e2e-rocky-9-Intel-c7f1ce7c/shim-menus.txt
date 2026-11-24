@@ -1,0 +1,5 @@
+11e4cdba-e290-4721-a85d-47c4f34d3ccd confirmed shim menu management
+11e4cdba-e290-4721-a85d-47c4f34d3ccd confirmed shim menu view
+11e4cdba-e290-4721-a85d-47c4f34d3ccd confirmed shim menu confirm
+11e4cdba-e290-4721-a85d-47c4f34d3ccd confirmed shim menu password
+11e4cdba-e290-4721-a85d-47c4f34d3ccd confirmed shim menu reboot

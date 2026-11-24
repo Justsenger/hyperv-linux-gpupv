@@ -1,0 +1,5 @@
+3d647bab-ea95-43f1-9167-7652a0d4ac70 confirmed shim menu management
+3d647bab-ea95-43f1-9167-7652a0d4ac70 confirmed shim menu view
+3d647bab-ea95-43f1-9167-7652a0d4ac70 confirmed shim menu confirm
+3d647bab-ea95-43f1-9167-7652a0d4ac70 confirmed shim menu password
+3d647bab-ea95-43f1-9167-7652a0d4ac70 confirmed shim menu reboot

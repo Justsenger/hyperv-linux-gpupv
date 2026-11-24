@@ -1,0 +1,62 @@
+#!/bin/sh
+# Probe independent codec directions when the H.264 round trip is unavailable.
+set -eu
+export GALLIUM_DRIVER=d3d12 LIBVA_DRIVER_NAME=d3d12 MESA_D3D12_DEFAULT_ADAPTER_NAME=Intel
+work=$(mktemp -d)
+trap 'rm -rf "$work"' EXIT
+attempted=0
+passed=0
+for dev in /dev/dri/renderD* /dev/dri/card*; do
+    test -c "$dev" && test -r "$dev" && test -w "$dev" || continue
+    vainfo --display drm --device "$dev" >"$work/caps" 2>&1 || continue
+    grep -Ei 'Driver version:.*D3D12.*Intel' "$work/caps" || continue
+    echo "device=$dev drm=$(readlink -f "/sys/class/drm/${dev##*/}")"
+    if grep -q 'VAProfileVP9Profile0.*VAEntrypointVLD' "$work/caps"; then
+        attempted=$((attempted+1))
+        # Use software only to generate a known input stream and reference hash.
+        if timeout -k 3 20 ffmpeg -y -nostdin -loglevel error -f lavfi -i testsrc2=size=320x240:rate=15 -frames:v 15 -c:v libvpx-vp9 -deadline realtime -cpu-used 8 "$work/input.ivf" &&
+           ffmpeg -y -nostdin -loglevel error -i "$work/input.ivf" -vf format=nv12 -f framemd5 "$work/ref" &&
+           timeout -k 4 30 ffmpeg -y -nostdin -loglevel verbose -hwaccel vaapi -hwaccel_device "$dev" -hwaccel_output_format vaapi -i "$work/input.ivf" -vf hwdownload,format=nv12 -f framemd5 "$work/decoded"; then
+            grep '^0,' "$work/ref" >"$work/ref.frames"
+            grep '^0,' "$work/decoded" >"$work/hw.frames"
+            if test "$(wc -l <"$work/hw.frames")" -eq 15 && cmp "$work/ref.frames" "$work/hw.frames"; then
+                echo 'Intel D3D12 VP9 hardware decode: 15/15 frames match software reference'
+                passed=$((passed+1))
+            fi
+        fi
+    fi
+    if grep -q 'VAProfileH264ConstrainedBaseline.*VAEntrypointEncSlice' "$work/caps"; then
+        attempted=$((attempted+1))
+        # Check an independent encode with no inter-frame dependencies and
+        # validate its output with a decoder independent of the VA backend.
+        if timeout -k 4 30 ffmpeg -y -nostdin -loglevel verbose -vaapi_device "$dev" -f lavfi -i testsrc2=size=320x240:rate=15 -vf format=nv12,hwupload -frames:v 15 -c:v h264_vaapi -profile:v constrained_baseline -g 1 -bf 0 -async_depth 1 -rc_mode CBR -b:v 1M -maxrate 1M -bufsize 2M -f h264 "$work/intra.h264" &&
+           test -s "$work/intra.h264" &&
+           ffmpeg -y -nostdin -loglevel error -i "$work/intra.h264" -f framemd5 "$work/intra.frames" &&
+           test "$(grep -c '^0,' "$work/intra.frames")" -eq 15; then
+            echo 'Intel D3D12 H.264 intra hardware encode: 15 decodable frames'
+            passed=$((passed+1))
+        fi
+    fi
+    if grep -q 'VAProfileHEVCMain .*VAEntrypointEncSlice' "$work/caps"; then
+        attempted=$((attempted+1))
+        if timeout -k 4 30 ffmpeg -y -nostdin -loglevel verbose -vaapi_device "$dev" -f lavfi -i testsrc2=size=320x240:rate=15 -vf format=nv12,hwupload -frames:v 15 -c:v hevc_vaapi -f hevc "$work/encoded.hevc" &&
+           ffmpeg -y -nostdin -loglevel error -i "$work/encoded.hevc" -f framemd5 "$work/encoded.frames" &&
+           test "$(grep -c '^0,' "$work/encoded.frames")" -eq 15; then
+            echo 'Intel D3D12 HEVC hardware encode: 15 decodable frames'
+            passed=$((passed+1))
+        fi
+    fi
+    if ffmpeg -hide_banner -encoders 2>/dev/null | grep -wq h264_qsv; then
+        attempted=$((attempted+1))
+        if timeout -k 4 30 ffmpeg -y -nostdin -loglevel verbose -init_hw_device "vaapi=va:$dev" -init_hw_device qsv=qs@va -filter_hw_device qs -f lavfi -i testsrc2=size=320x240:rate=15 -vf format=nv12,hwupload=extra_hw_frames=16 -frames:v 15 -c:v h264_qsv -f h264 "$work/qsv.h264" &&
+           ffmpeg -y -nostdin -loglevel error -i "$work/qsv.h264" -f framemd5 "$work/qsv.frames" &&
+           test "$(grep -c '^0,' "$work/qsv.frames")" -eq 15; then
+            echo 'Intel QSV H.264 hardware encode: 15 decodable frames'
+            passed=$((passed+1))
+        fi
+    fi
+    break
+done
+echo "Verified Intel video directions: $passed/$attempted"
+test "$attempted" -gt 0 || exit 77
+test "$passed" -eq "$attempted"

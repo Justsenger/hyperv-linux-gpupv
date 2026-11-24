@@ -1,0 +1,330 @@
+[
+  {
+    "base": "arch",
+    "vendor": "Intel",
+    "compute": true,
+    "video": "隔离 H.264 编码与 VP9 解码",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": null,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 90,
+    "escape_errors": 0,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-arch-Intel-cfcb1eb5",
+    "evidence": "[负载](../gpupv-test-cfcb1eb5148b47afb3d1b0cd24fb4603-4c121867/workload.txt) · [隔离负载](../gpupv-test-cfcb1eb5148b47afb3d1b0cd24fb4603-4c121867/isolated-intel-va.txt) · [签名](../gpupv-test-cfcb1eb5148b47afb3d1b0cd24fb4603-4c121867/module-trust-after-boot.txt) · [dmesg](../gpupv-test-cfcb1eb5148b47afb3d1b0cd24fb4603-4c121867/dmesg-after-workload.txt) · [结果](../gpupv-test-cfcb1eb5148b47afb3d1b0cd24fb4603-4c121867/result.json) · [回收](../e2e-arch-Intel-cfcb1eb5/cleanup.txt)"
+  },
+  {
+    "base": "arch",
+    "vendor": "NVIDIA",
+    "compute": true,
+    "video": "NVENC/CUVID 15 帧",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": true,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 31,
+    "escape_errors": 31,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic requires review",
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-arch-NVIDIA-44f81025",
+    "evidence": "[负载](../gpupv-test-44f810256ef04fedb922c4241aa17f34-5ee50f1d/workload.txt) · [签名](../gpupv-test-44f810256ef04fedb922c4241aa17f34-5ee50f1d/module-trust-after-boot.txt) · [dmesg](../gpupv-test-44f810256ef04fedb922c4241aa17f34-5ee50f1d/dmesg-after-workload.txt) · [结果](../gpupv-test-44f810256ef04fedb922c4241aa17f34-5ee50f1d/result.json) · [回收](../e2e-arch-NVIDIA-44f81025/cleanup.txt)"
+  },
+  {
+    "base": "debian-12",
+    "vendor": "Intel",
+    "compute": true,
+    "video": "原生 H.264 编码与 VP9 解码",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": null,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 20,
+    "escape_errors": 0,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-debian-12-Intel-531c460b",
+    "evidence": "[负载](../gpupv-test-531c460b496946f99a72748599ee61c2-cb4477f0/workload.txt) · [签名](../gpupv-test-531c460b496946f99a72748599ee61c2-cb4477f0/module-trust-after-boot.txt) · [dmesg](../gpupv-test-531c460b496946f99a72748599ee61c2-cb4477f0/dmesg-after-workload.txt) · [结果](../gpupv-test-531c460b496946f99a72748599ee61c2-cb4477f0/result.json) · [回收](../e2e-debian-12-Intel-531c460b/cleanup.txt)"
+  },
+  {
+    "base": "debian-12",
+    "vendor": "NVIDIA",
+    "compute": true,
+    "video": "NVENC/CUVID 15 帧",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": true,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 26,
+    "escape_errors": 26,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic requires review",
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-debian-12-NVIDIA-9d68e914",
+    "evidence": "[负载](../gpupv-test-9d68e914919a486083d4a84a60f946b4-bdb4af52/workload.txt) · [签名](../gpupv-test-9d68e914919a486083d4a84a60f946b4-bdb4af52/module-trust-after-boot.txt) · [dmesg](../gpupv-test-9d68e914919a486083d4a84a60f946b4-bdb4af52/dmesg-after-workload.txt) · [结果](../gpupv-test-9d68e914919a486083d4a84a60f946b4-bdb4af52/result.json) · [回收](../e2e-debian-12-NVIDIA-9d68e914/cleanup.txt)"
+  },
+  {
+    "base": "debian-13",
+    "vendor": "Intel",
+    "compute": true,
+    "video": "隔离 H.264 编码与 VP9 解码",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": null,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 93,
+    "escape_errors": 0,
+    "delivery": "iso",
+    "dkms": true,
+    "failures": [
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-debian-13-Intel-02917cb4",
+    "evidence": "[负载](../gpupv-test-02917cb4ac2540c8bc8cb53ce9c27819-0f14f5e9/workload.txt) · [隔离负载](../gpupv-test-02917cb4ac2540c8bc8cb53ce9c27819-0f14f5e9/isolated-intel-va.txt) · [签名](../gpupv-test-02917cb4ac2540c8bc8cb53ce9c27819-0f14f5e9/module-trust-after-boot.txt) · [dmesg](../gpupv-test-02917cb4ac2540c8bc8cb53ce9c27819-0f14f5e9/dmesg-after-workload.txt) · [结果](../gpupv-test-02917cb4ac2540c8bc8cb53ce9c27819-0f14f5e9/result.json) · [回收](../e2e-debian-13-Intel-02917cb4/cleanup.txt)"
+  },
+  {
+    "base": "debian-13",
+    "vendor": "NVIDIA",
+    "compute": true,
+    "video": "NVENC/CUVID 15 帧",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": true,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 26,
+    "escape_errors": 26,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic requires review",
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-debian-13-NVIDIA-8ec49a2d",
+    "evidence": "[负载](../gpupv-test-8ec49a2dfee24350bab35f983bce8649-4e8f8b39/workload.txt) · [签名](../gpupv-test-8ec49a2dfee24350bab35f983bce8649-4e8f8b39/module-trust-after-boot.txt) · [dmesg](../gpupv-test-8ec49a2dfee24350bab35f983bce8649-4e8f8b39/dmesg-after-workload.txt) · [结果](../gpupv-test-8ec49a2dfee24350bab35f983bce8649-4e8f8b39/result.json) · [回收](../e2e-debian-13-NVIDIA-8ec49a2d/cleanup.txt)"
+  },
+  {
+    "base": "fedora-44",
+    "vendor": "Intel",
+    "compute": true,
+    "video": "隔离 H.264 编码与 VP9 解码",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": null,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 108,
+    "escape_errors": 0,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-fedora-44-Intel-ad23c26f",
+    "evidence": "[负载](../gpupv-test-ad23c26f92fb457980e9ef68d093b133-0c2e1ba4/workload.txt) · [隔离负载](../gpupv-test-ad23c26f92fb457980e9ef68d093b133-0c2e1ba4/isolated-intel-va.txt) · [签名](../gpupv-test-ad23c26f92fb457980e9ef68d093b133-0c2e1ba4/module-trust-after-boot.txt) · [dmesg](../gpupv-test-ad23c26f92fb457980e9ef68d093b133-0c2e1ba4/dmesg-after-workload.txt) · [结果](../gpupv-test-ad23c26f92fb457980e9ef68d093b133-0c2e1ba4/result.json) · [回收](../e2e-fedora-44-Intel-ad23c26f/cleanup.txt)"
+  },
+  {
+    "base": "fedora-44",
+    "vendor": "NVIDIA",
+    "compute": true,
+    "video": "NVENC/CUVID 15 帧",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": true,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 26,
+    "escape_errors": 26,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic requires review",
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-fedora-44-NVIDIA-95100868",
+    "evidence": "[负载](../gpupv-test-951008680583407685e5db901ea9b321-295d9b7b/workload.txt) · [签名](../gpupv-test-951008680583407685e5db901ea9b321-295d9b7b/module-trust-after-boot.txt) · [dmesg](../gpupv-test-951008680583407685e5db901ea9b321-295d9b7b/dmesg-after-workload.txt) · [结果](../gpupv-test-951008680583407685e5db901ea9b321-295d9b7b/result.json) · [回收](../e2e-fedora-44-NVIDIA-95100868/cleanup.txt)"
+  },
+  {
+    "base": "leap-15.6",
+    "vendor": "Intel",
+    "compute": true,
+    "video": "隔离 H.264 编码与 VP9 解码",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": null,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 52,
+    "escape_errors": 0,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-leap-15.6-Intel-40e8c4b1",
+    "evidence": "[负载](../gpupv-test-40e8c4b1785f4bb1b15867ca43d31683-16baa698/workload.txt) · [隔离负载](../gpupv-test-40e8c4b1785f4bb1b15867ca43d31683-16baa698/isolated-intel-va.txt) · [签名](../gpupv-test-40e8c4b1785f4bb1b15867ca43d31683-16baa698/module-trust-after-boot.txt) · [dmesg](../gpupv-test-40e8c4b1785f4bb1b15867ca43d31683-16baa698/dmesg-after-workload.txt) · [结果](../gpupv-test-40e8c4b1785f4bb1b15867ca43d31683-16baa698/result.json) · [回收](../e2e-leap-15.6-Intel-40e8c4b1/cleanup.txt)"
+  },
+  {
+    "base": "leap-15.6",
+    "vendor": "NVIDIA",
+    "compute": true,
+    "video": "NVENC/CUVID 15 帧",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": true,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 26,
+    "escape_errors": 26,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic requires review",
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-leap-15.6-NVIDIA-fe7f4d3d",
+    "evidence": "[负载](../gpupv-test-fe7f4d3d9bd346f48e16d6e530025fd2-92320428/workload.txt) · [签名](../gpupv-test-fe7f4d3d9bd346f48e16d6e530025fd2-92320428/module-trust-after-boot.txt) · [dmesg](../gpupv-test-fe7f4d3d9bd346f48e16d6e530025fd2-92320428/dmesg-after-workload.txt) · [结果](../gpupv-test-fe7f4d3d9bd346f48e16d6e530025fd2-92320428/result.json) · [回收](../e2e-leap-15.6-NVIDIA-fe7f4d3d/cleanup.txt)"
+  },
+  {
+    "base": "rocky-9",
+    "vendor": "Intel",
+    "compute": true,
+    "video": "另载同版签名 VGEM + 隔离 VA，H.264 编码与 VP9 解码",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": null,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 57,
+    "escape_errors": 0,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-rocky-9-Intel-cad5cabe",
+    "evidence": "[负载](../gpupv-test-cad5cabe22f94eb989e1f00473f36124-8d313c9f/workload.txt) · [隔离负载](../gpupv-test-cad5cabe22f94eb989e1f00473f36124-8d313c9f/isolated-intel-va.txt) · [VGEM 对照](../gpupv-test-cad5cabe22f94eb989e1f00473f36124-8d313c9f/isolated-intel-vgem.txt) · [签名](../gpupv-test-cad5cabe22f94eb989e1f00473f36124-8d313c9f/module-trust-after-boot.txt) · [dmesg](../gpupv-test-cad5cabe22f94eb989e1f00473f36124-8d313c9f/dmesg-after-workload.txt) · [结果](../gpupv-test-cad5cabe22f94eb989e1f00473f36124-8d313c9f/result.json) · [回收](../e2e-rocky-9-Intel-cad5cabe/cleanup.txt)"
+  },
+  {
+    "base": "rocky-9",
+    "vendor": "NVIDIA",
+    "compute": true,
+    "video": "NVENC/CUVID 15 帧",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": true,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 26,
+    "escape_errors": 26,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic requires review",
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-rocky-9-NVIDIA-1c7f6a03",
+    "evidence": "[负载](../gpupv-test-1c7f6a03a3d844fd874a1dbd11e20ec7-d0587375/workload.txt) · [签名](../gpupv-test-1c7f6a03a3d844fd874a1dbd11e20ec7-d0587375/module-trust-after-boot.txt) · [dmesg](../gpupv-test-1c7f6a03a3d844fd874a1dbd11e20ec7-d0587375/dmesg-after-workload.txt) · [结果](../gpupv-test-1c7f6a03a3d844fd874a1dbd11e20ec7-d0587375/result.json) · [回收](../e2e-rocky-9-NVIDIA-1c7f6a03/cleanup.txt)"
+  },
+  {
+    "base": "ubuntu-22.04",
+    "vendor": "Intel",
+    "compute": true,
+    "video": "原生 H.264 编码与 VP9 解码",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": null,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 27,
+    "escape_errors": 0,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-ubuntu-22.04-Intel-c80c4bc3",
+    "evidence": "[负载](../gpupv-test-c80c4bc3e0254bee9142b4ab583eb296-81644eb8/workload.txt) · [签名](../gpupv-test-c80c4bc3e0254bee9142b4ab583eb296-81644eb8/module-trust-after-boot.txt) · [dmesg](../gpupv-test-c80c4bc3e0254bee9142b4ab583eb296-81644eb8/dmesg-after-workload.txt) · [结果](../gpupv-test-c80c4bc3e0254bee9142b4ab583eb296-81644eb8/result.json) · [回收](../e2e-ubuntu-22.04-Intel-c80c4bc3/cleanup.txt)"
+  },
+  {
+    "base": "ubuntu-22.04",
+    "vendor": "NVIDIA",
+    "compute": true,
+    "video": "NVENC/CUVID 15 帧",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": true,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 23,
+    "escape_errors": 23,
+    "delivery": "iso",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic requires review",
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-ubuntu-22.04-NVIDIA-5204546b",
+    "evidence": "[负载](../gpupv-test-5204546b409944c589f2a4dd24c5e971-c990e0ef/workload.txt) · [签名](../gpupv-test-5204546b409944c589f2a4dd24c5e971-c990e0ef/module-trust-after-boot.txt) · [dmesg](../gpupv-test-5204546b409944c589f2a4dd24c5e971-c990e0ef/dmesg-after-workload.txt) · [结果](../gpupv-test-5204546b409944c589f2a4dd24c5e971-c990e0ef/result.json) · [回收](../e2e-ubuntu-22.04-NVIDIA-5204546b/cleanup.txt)"
+  },
+  {
+    "base": "ubuntu-24.04",
+    "vendor": "Intel",
+    "compute": true,
+    "video": "原生 H.264 编码与 VP9 解码",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": null,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 27,
+    "escape_errors": 0,
+    "delivery": "ssh",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-ubuntu-24.04-Intel-fac26ffd",
+    "evidence": "[负载](../gpupv-test-fac26ffd6fb24031aa4bfbab5ba498ca-cd4b5ac8/workload.txt) · [签名](../gpupv-test-fac26ffd6fb24031aa4bfbab5ba498ca-cd4b5ac8/module-trust-after-boot.txt) · [dmesg](../gpupv-test-fac26ffd6fb24031aa4bfbab5ba498ca-cd4b5ac8/dmesg-after-workload.txt) · [结果](../gpupv-test-fac26ffd6fb24031aa4bfbab5ba498ca-cd4b5ac8/result.json) · [回收](../e2e-ubuntu-24.04-Intel-fac26ffd/cleanup.txt)"
+  },
+  {
+    "base": "ubuntu-24.04",
+    "vendor": "NVIDIA",
+    "compute": true,
+    "video": "NVENC/CUVID 15 帧",
+    "lifecycle": true,
+    "secure": true,
+    "nvidia_smi": true,
+    "signature_warnings": 0,
+    "strict": false,
+    "dxg_ioctl_errors": 26,
+    "escape_errors": 26,
+    "delivery": "ssh",
+    "dkms": false,
+    "failures": [
+      "Kernel diagnostic requires review",
+      "Kernel diagnostic after workload requires review"
+    ],
+    "wrapper": "e2e-ubuntu-24.04-NVIDIA-c9d0f3e8",
+    "evidence": "[负载](../gpupv-test-c9d0f3e8bb7142399dbbc3efb3e93b0f-0ff44f4e/workload.txt) · [签名](../gpupv-test-c9d0f3e8bb7142399dbbc3efb3e93b0f-0ff44f4e/module-trust-after-boot.txt) · [dmesg](../gpupv-test-c9d0f3e8bb7142399dbbc3efb3e93b0f-0ff44f4e/dmesg-after-workload.txt) · [结果](../gpupv-test-c9d0f3e8bb7142399dbbc3efb3e93b0f-0ff44f4e/result.json) · [回收](../e2e-ubuntu-24.04-NVIDIA-c9d0f3e8/cleanup.txt)"
+  }
+]

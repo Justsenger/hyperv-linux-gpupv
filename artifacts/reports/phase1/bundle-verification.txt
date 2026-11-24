@@ -1,0 +1,4 @@
+x86_64 ['6.1.0-56-amd64']
+Rejected aarch64 for D:\linux-pv\dist\phase1\linuxpv-bundle-x86_64-phase1-local.2.zip
+aarch64 ['6.1.0-56-arm64']
+Rejected x86_64 for D:\linux-pv\dist\phase1\linuxpv-bundle-aarch64-phase1-local.2.zip

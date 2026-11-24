@@ -1,0 +1,178 @@
+[
+  {
+    "target": "alma-8",
+    "image": "almalinux:8",
+    "passed": true,
+    "kernel": "4.18.0-553.187.1.el8_10.x86_64",
+    "sha256": "6bd298daa447c5d5dcb6ad5174d460f7b732af2d240334036c6a78d450c83cf8",
+    "log": "artifacts/reports/compile-matrix/final/alma-8.log"
+  },
+  {
+    "target": "alma-9",
+    "image": "almalinux:9",
+    "passed": true,
+    "kernel": "5.14.0-741.24.1.el9_9.x86_64",
+    "sha256": "0acb9395e97c0c078561803ceb9afeeafee4ea30905dd0e086c519f6444ea167",
+    "log": "artifacts/reports/compile-matrix/final/alma-9.log"
+  },
+  {
+    "target": "anolis-23",
+    "image": "openanolis/anolisos:23",
+    "passed": true,
+    "kernel": "6.6.102-8.0.2.an23.x86_64",
+    "sha256": "0da84a3bcdd8d70f8ce55538d050dc3ef2ccff3d386bf5cf5839b80ee16e29fd",
+    "log": "artifacts/reports/compile-matrix/final/anolis-23.log"
+  },
+  {
+    "target": "arch-lts",
+    "image": "archlinux:latest",
+    "passed": true,
+    "kernel": "6.18.64-1-lts",
+    "sha256": "f79facdd7435f80e74f8e882d04d18ffeb9b0b00fc36a82f75e0da7e5cdebd41",
+    "log": "artifacts/reports/compile-matrix/final/arch-lts.log"
+  },
+  {
+    "target": "arch",
+    "image": "archlinux:latest",
+    "passed": true,
+    "kernel": "7.3.5-arch1-1",
+    "sha256": "00a4331df7643879c5e25f0231fc050bf4f41d5210494c5eeec5f52b32cb69e3",
+    "log": "artifacts/reports/compile-matrix/final/arch.log"
+  },
+  {
+    "target": "debian-11-archive",
+    "image": "debian:11",
+    "passed": true,
+    "kernel": "5.10.0-46-amd64",
+    "sha256": "d07448f0f0405e4f01a8be877815a98ec1102397d014dfc73ae0ce08d96b60fe",
+    "log": "artifacts/reports/compile-matrix/final/debian-11-archive.log"
+  },
+  {
+    "target": "debian-11-base",
+    "image": "debian:11",
+    "passed": true,
+    "kernel": "5.10.0-32-amd64",
+    "sha256": "8288baaa89b31d5eaf472388f9e8ae4ea58bf0d7a0cab2274361a375153309e3",
+    "log": "artifacts/reports/compile-matrix/final/debian-11-base.log"
+  },
+  {
+    "target": "debian-11",
+    "image": "debian:11",
+    "passed": false,
+    "kernel": null,
+    "sha256": null,
+    "log": "artifacts/reports/compile-matrix/final/debian-11.log"
+  },
+  {
+    "target": "debian-12",
+    "image": "debian:12",
+    "passed": true,
+    "kernel": "6.1.0-56-amd64",
+    "sha256": "d15ca008c9db0e7e09e269c659686be42ee887c521c9c1acbb54e40d9bf78354",
+    "log": "artifacts/reports/compile-matrix/final/debian-12.log"
+  },
+  {
+    "target": "debian-13",
+    "image": "debian:13",
+    "passed": true,
+    "kernel": "6.12.118+deb13-amd64",
+    "sha256": "2c2d1d6c3d8b84d14724e20ef9b32146a54784c41299af94b99cfb150aa441c4",
+    "log": "artifacts/reports/compile-matrix/final/debian-13.log"
+  },
+  {
+    "target": "fedora-43",
+    "image": "quay.io/fedora/fedora:43",
+    "passed": true,
+    "kernel": "7.3.4-100.fc43.x86_64",
+    "sha256": "54e4f08d8d275b3a2655a36f7ff987cac3abdb9a3d5b0b223b499fdc47230ea2",
+    "log": "artifacts/reports/compile-matrix/final/fedora-43.log"
+  },
+  {
+    "target": "fedora-44",
+    "image": "quay.io/fedora/fedora:44",
+    "passed": true,
+    "kernel": "7.3.4-200.fc44.x86_64",
+    "sha256": "a3597bc4a9eb6872d6989be7b7e62a3beb60516f7b23d38d2a7a609e05a5cb79",
+    "log": "artifacts/reports/compile-matrix/final/fedora-44.log"
+  },
+  {
+    "target": "leap",
+    "image": "opensuse/leap:15.6",
+    "passed": true,
+    "kernel": "6.4.0-150600.23.103-default",
+    "sha256": "46f98fa65a1ab87666e271250c20318c5130ab400b7d69e8af582cb4df097e15",
+    "log": "artifacts/reports/compile-matrix/final/leap.log"
+  },
+  {
+    "target": "openeuler",
+    "image": "openeuler/openeuler:24.03-lts",
+    "passed": true,
+    "kernel": "6.6.0-145.0.13.139.oe2403.x86_64",
+    "sha256": "9286bc427188f6d7bd3aa4130a2ef036bb0da1988a98335f2aed3ba91316ad59",
+    "log": "artifacts/reports/compile-matrix/final/openeuler.log"
+  },
+  {
+    "target": "rocky-8",
+    "image": "quay.io/rockylinux/rockylinux:8",
+    "passed": true,
+    "kernel": "4.18.0-553.187.1.el8_10.x86_64",
+    "sha256": "6bd298daa447c5d5dcb6ad5174d460f7b732af2d240334036c6a78d450c83cf8",
+    "log": "artifacts/reports/compile-matrix/final/rocky-8.log"
+  },
+  {
+    "target": "rocky-9",
+    "image": "quay.io/rockylinux/rockylinux:9",
+    "passed": true,
+    "kernel": "5.14.0-741.24.1.el9_9.x86_64",
+    "sha256": "0acb9395e97c0c078561803ceb9afeeafee4ea30905dd0e086c519f6444ea167",
+    "log": "artifacts/reports/compile-matrix/final/rocky-9.log"
+  },
+  {
+    "target": "tumbleweed",
+    "image": "opensuse/tumbleweed:latest",
+    "passed": true,
+    "kernel": "7.3.5-1-default",
+    "sha256": "76a1930586930b92fe2208baeaf356a424978742dc3f54a1eece43d0065149bd",
+    "log": "artifacts/reports/compile-matrix/final/tumbleweed.log"
+  },
+  {
+    "target": "ubuntu-20.04-hwe",
+    "image": "ubuntu:20.04",
+    "passed": true,
+    "kernel": "5.15.0-139-generic",
+    "sha256": "62612d1b26514a2ffef9fb49b35b348a71ad4a5d4324c9233e07b1f3858bd258",
+    "log": "artifacts/reports/compile-matrix/final/ubuntu-20.04-hwe.log"
+  },
+  {
+    "target": "ubuntu-20.04",
+    "image": "ubuntu:20.04",
+    "passed": false,
+    "kernel": null,
+    "sha256": null,
+    "log": "artifacts/reports/compile-matrix/final/ubuntu-20.04.log"
+  },
+  {
+    "target": "ubuntu-22.04",
+    "image": "ubuntu:22.04",
+    "passed": true,
+    "kernel": "5.15.0-204-generic",
+    "sha256": "3389a80b697c67e24dadd949a3d6802477d8a65b966d38ea89d1acf24f1baa3c",
+    "log": "artifacts/reports/compile-matrix/final/ubuntu-22.04.log"
+  },
+  {
+    "target": "ubuntu-24.04",
+    "image": "ubuntu:24.04",
+    "passed": true,
+    "kernel": "6.8.0-151-generic",
+    "sha256": "d57b9d4098f4b7aee9335f9062079033a26702a5c88ef7ee9b765be62cdf7755",
+    "log": "artifacts/reports/compile-matrix/final/ubuntu-24.04.log"
+  },
+  {
+    "target": "ubuntu-26.10",
+    "image": "ubuntu:26.10",
+    "passed": true,
+    "kernel": "7.3.0-11-generic",
+    "sha256": "986e2f98a8b20230c47ca65488752e4576496335026ca4c55e733b53acfc6b72",
+    "log": "artifacts/reports/compile-matrix/final/ubuntu-26.10.log"
+  }
+]

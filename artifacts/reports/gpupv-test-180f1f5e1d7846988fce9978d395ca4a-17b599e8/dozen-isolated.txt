@@ -1,0 +1,6 @@
+/usr/share/vulkan/icd.d/dzn_icd.x86_64.json
+'DISPLAY' environment variable not set... skipping surface info
+ERROR: [Loader Message] Code 0 : setup_loader_term_phys_devs:  Failed to detect any valid GPUs in the current config
+ERROR at /builddir/build/BUILD/vulkan-tools-1.4.341.0-build/Vulkan-Tools-vulkan-sdk-1.4.341.0/vulkaninfo/./vulkaninfo.h:249:vkEnumeratePhysicalDevices failed with ERROR_INITIALIZATION_FAILED
+vulkaninfo exit=1
+Dozen manifests found=1

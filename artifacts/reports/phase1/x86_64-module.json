@@ -1,0 +1,9 @@
+{
+  "vermagic": "6.1.0-56-amd64 SMP preempt mod_unload modversions",
+  "srcversion": "8FBA9DAE913927733D3E675",
+  "name": "dxgkrnl",
+  "arch": "x86_64",
+  "release": "6.1.0-56-amd64",
+  "target": "debian-12",
+  "sha256": "5a27d82902796cfbd69d36d406889be3e19d17c41e7b9988562d578b9907755d"
+}

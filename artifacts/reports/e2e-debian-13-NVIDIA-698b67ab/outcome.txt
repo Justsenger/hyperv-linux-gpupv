@@ -1,0 +1,1 @@
+Attach the selected deployment ISO to the owned VM first

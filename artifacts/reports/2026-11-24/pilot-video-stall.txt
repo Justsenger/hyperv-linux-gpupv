@@ -1,0 +1,3 @@
+    PID     ELAPSED COMMAND
+   3992       01:17 ffmpeg -nostdin -hide_banner -loglevel verbose -vaapi_device /dev/dri/card1 -f lavfi -i testsrc2=size=320x240:rate=15 -vf format=nv12,hwupload -frames:v 15 -c:v h264_vaapi /tmp/tmp.m3y1fzLq5G/test.mkv
+futex_wait_queuefutex_wait_queuefutex_wait_queuefutex_wait_queuefutex_wait_queuedxgkio_wait_sync_object_cpufutex_wait_queuefutex_wait_queuefutex_wait_queuefutex_wait_queue[  716.365660] dec0:0:h264[4067]: segfault at 0 ip 00007f638e9ba35c sp 00007f638b3eb390 error 6 in libigd12dxva64.so[1ba35c,7f638e960000+6b4000] likely on CPU 0 (core 0, socket 0)

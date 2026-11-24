@@ -1,0 +1,82 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libc6-arm64-cross is already the newest version (2.36-8cross1).
+libc6-arm64-cross set to manually installed.
+The following packages were automatically installed and are no longer required:
+  cpp cpp-12 libasan8 libatomic1 libc-dev-bin libc6-dev libcrypt-dev
+  libgcc-12-dev libgomp1 libitm1 liblsan0 libnsl-dev libquadmath0
+  libstdc++-12-dev libtirpc-dev libtsan2 libubsan1
+  linux-headers-6.1.0-56-common linux-kbuild-6.1 linux-libc-dev rpcsvc-proto
+Use 'sudo apt autoremove' to remove them.
+Recommended packages:
+  qemu-user-binfmt
+The following NEW packages will be installed:
+  libcapstone4 qemu-user
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 12.8 MB of archives.
+After this operation, 108 MB of additional disk space will be used.
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:2 https://deb.debian.org/debian bookworm/main amd64 libcapstone4 amd64 4.0.2-5 [569 kB]
+Get:3 https://deb.debian.org/debian bookworm/main amd64 qemu-user amd64 1:7.2+dfsg-7+deb12u18+b3 [12.3 MB]
+Fetched 12.8 MB in 3s (4523 kB/s)
+Selecting previously unselected package libcapstone4:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 40856 files and directories currently installed.)
+Preparing to unpack .../libcapstone4_4.0.2-5_amd64.deb ...
+Unpacking libcapstone4:amd64 (4.0.2-5) ...
+Selecting previously unselected package qemu-user.
+Preparing to unpack .../qemu-user_1%3a7.2+dfsg-7+deb12u18+b3_amd64.deb ...
+Unpacking qemu-user (1:7.2+dfsg-7+deb12u18+b3) ...
+Setting up libcapstone4:amd64 (4.0.2-5) ...
+Setting up qemu-user (1:7.2+dfsg-7+deb12u18+b3) ...
+Processing triggers for man-db (2.11.2-2) ...
+Processing triggers for libc-bin (2.36-9+deb12u14) ...
+arm-check/guest/d3d12-compute
+	 (0x0000000001000000)
+	libpthread.so.0 => /usr/aarch64-linux-gnu/lib/libpthread.so.0 (0x0000005502850000)
+	libc.so.6 => /usr/aarch64-linux-gnu/lib/libc.so.6 (0x0000005502880000)
+	libdl.so.2 => /usr/aarch64-linux-gnu/lib/libdl.so.2 (0x0000005502a40000)
+	/lib/ld-linux-aarch64.so.1 => /usr/aarch64-linux-gnu/lib/ld-linux-aarch64.so.1 (0x0000005500000000)
+arm-check/lib/libd3d12.so
+	 (0x0000005502850000)
+	libc.so.6 => /usr/aarch64-linux-gnu/lib/libc.so.6 (0x0000005502940000)
+	libpthread.so.0 => /usr/aarch64-linux-gnu/lib/libpthread.so.0 (0x0000005502b00000)
+	libm.so.6 => /usr/aarch64-linux-gnu/lib/libm.so.6 (0x0000005502b30000)
+	libdl.so.2 => /usr/aarch64-linux-gnu/lib/libdl.so.2 (0x0000005502bd0000)
+	/usr/aarch64-linux-gnu/lib/ld-linux-aarch64.so.1 (0x0000005500000000)
+arm-check/lib/libd3d12core.so
+	 (0x0000005502850000)
+	libc.so.6 => /usr/aarch64-linux-gnu/lib/libc.so.6 (0x0000005502e60000)
+	libpthread.so.0 => /usr/aarch64-linux-gnu/lib/libpthread.so.0 (0x0000005503020000)
+	libm.so.6 => /usr/aarch64-linux-gnu/lib/libm.so.6 (0x0000005503050000)
+	libdl.so.2 => /usr/aarch64-linux-gnu/lib/libdl.so.2 (0x00000055030f0000)
+	libdxcore.so => arm-check/lib/libdxcore.so (0x0000005503120000)
+	/usr/aarch64-linux-gnu/lib/ld-linux-aarch64.so.1 (0x0000005500000000)
+arm-check/lib/libdxcore.so
+	 (0x0000005502850000)
+	libc.so.6 => /usr/aarch64-linux-gnu/lib/libc.so.6 (0x0000005502970000)
+	libpthread.so.0 => /usr/aarch64-linux-gnu/lib/libpthread.so.0 (0x0000005502b30000)
+	libm.so.6 => /usr/aarch64-linux-gnu/lib/libm.so.6 (0x0000005502b60000)
+	libdl.so.2 => /usr/aarch64-linux-gnu/lib/libdl.so.2 (0x0000005502c00000)
+	/usr/aarch64-linux-gnu/lib/ld-linux-aarch64.so.1 (0x0000005500000000)

@@ -1,0 +1,2 @@
+/usr/lib/modules/7.3.5-arch1-1/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4637840 Nov 23 12:14 /lib/modules/7.3.5-arch1-1/updates/gpupv/dxgkrnl.ko

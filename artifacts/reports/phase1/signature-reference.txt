@@ -1,0 +1,9 @@
+/usr/lib/linux-kbuild-6.1/scripts/sign-file
+test_architectures (__main__.Contract.test_architectures) ... ok
+test_native_matrix (__main__.Contract.test_native_matrix) ... ok
+test_signed_module (__main__.Contract.test_signed_module) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.906s
+
+OK

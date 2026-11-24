@@ -1,0 +1,5 @@
+d17a55a6-be34-4af4-a857-4a86d250e419 confirmed shim menu management
+d17a55a6-be34-4af4-a857-4a86d250e419 confirmed shim menu view
+d17a55a6-be34-4af4-a857-4a86d250e419 confirmed shim menu confirm
+d17a55a6-be34-4af4-a857-4a86d250e419 confirmed shim menu password
+d17a55a6-be34-4af4-a857-4a86d250e419 confirmed shim menu reboot

@@ -1,0 +1,30 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 262 Nov 24 04:55 /dev/dxg
+
+/dev/dri:
+total 0
+drwxr-xr-x 2 root root         80 Nov 24 04:55 by-path
+crw-rw---- 1 root video  226,   0 Nov 24 04:55 card0
+crw-rw---- 1 root video  226,   1 Nov 24 04:55 card1
+crw-rw---- 1 root render 226, 128 Nov 24 04:55 renderD128
+	linux-vdso.so.1 (0x00007fd9282c1000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd927fd3000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007fd927fce000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fd927ede000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007fd927ed9000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fd9282c3000)
+	linux-vdso.so.1 (0x00007fb4d6deb000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fb4d6b1f000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007fb4d6b1a000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fb4d6a2a000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007fb4d6a25000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fb4d6ded000)
+	linux-vdso.so.1 (0x00007ff8e790e000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007ff8e78ed000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007ff8e78e8000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007ff8e7600000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ff8e7510000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007ff8e78b9000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ff8e731c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007ff8e7910000)
+diagnostic_collection_finished

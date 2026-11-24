@@ -1,0 +1,6 @@
+{
+  "Image": "D:\\linux-pv\\.test\\images\\gpupv-test-fedora-44-28680fe5b371a5a8.img",
+  "Sha256": "28680FE5B371A5A82EBF43A31926E086A168E59949D03969C5093E7071F90B7F",
+  "Source": "https://dl.fedoraproject.org/pub/fedora/linux/releases/44/Cloud/x86_64/images/Fedora-Cloud-Base-Generic-44-1.7.x86_64.qcow2",
+  "ChecksumSource": "https://dl.fedoraproject.org/pub/fedora/linux/releases/44/Cloud/x86_64/images/Fedora-Cloud-44-1.7-x86_64-CHECKSUM"
+}

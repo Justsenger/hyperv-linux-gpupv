@@ -1,0 +1,6 @@
+.gitignore:6:dist/**/*.iso	dist/irisxe-x64.iso
+.gitignore:5:dist/**/*.tar	dist/2026-11-24/irisxe-x64.tar
+.gitignore:6:dist/**/*.iso	dist/2026-11-24/irisxe-x64.iso
+.gitignore:7:dist/**/*.tgz	dist/2026-11-24/ffmpeg-va-ubuntu24-x64.tgz
+.gitignore:9:libd3d12.so	guest/libd3d12.so
+.gitignore:14:libdxcore.so.*	guest/libdxcore.so.1

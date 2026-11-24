@@ -1,0 +1,35 @@
+52eb3d30159e155d3bc9581bb5631aca76fbb6bd7ef72a091c7580f52e86ee54  /mnt/gpupv/guest/gpupv-guest
+40575dd6ffda79d452eff72677d97f890287a0bd58a639b013031332cb03d6f9  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+/tmp/tmp.QDO7UKR1LK/probe.c:2:28: error: ‘struct dma_fence_ops’ has no member named ‘fence_value_str’
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[1]: *** [scripts/Makefile.build:250: /tmp/tmp.QDO7UKR1LK/probe.o] Error 1
+make: *** [Makefile:1977: /tmp/tmp.QDO7UKR1LK] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/5.14.0-741.22.1.el9_9.x86_64'
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+  BTF [M] /tmp/tmp2a3z_pv1/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+make: Leaving directory '/usr/src/kernels/5.14.0-741.22.1.el9_9.x86_64'
+glibc 2.34, x86_64, kernel 5.14.0-741.22.1.el9_9.x86_64, preflight OK
+Mesa D3D12: []
+Vulkan Dozen manifests: []

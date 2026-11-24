@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+src=$(cd "$(dirname "$0")" && pwd)
+inc="$src/directx-headers/include"
+exec "${CXX:-g++}" -O2 -std=c++17 -DINITGUID -I"$inc" -I"$inc/wsl/stubs" \
+    "$src/d3d12-compute.cpp" -static-libstdc++ -static-libgcc -ldl -pthread -o "$1"

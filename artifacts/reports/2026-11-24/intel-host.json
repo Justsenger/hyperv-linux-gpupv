@@ -1,0 +1,110 @@
+{
+  "name": "Intel(R) Iris(R) Xe Graphics",
+  "version": "32.0.101.6876",
+  "inf": "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\iigd_dch.inf",
+  "primary": "iigd_dch.inf_amd64_5c4e38fb27d0b8b3",
+  "packages": [
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3"
+  ],
+  "registry": {
+    "DriverStorePathForComputeRuntime": [
+      "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3"
+    ],
+    "OpenCLDriverName": [
+      "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\igdrcl64.dll"
+    ],
+    "OpenCLDriverNameWow": [
+      "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\igdrcl32.dll"
+    ],
+    "LevelZeroDriverPath": [
+      "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\ze_intel_gpu64.dll"
+    ],
+    "UserModeDriverNameWsl": [
+      "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigd12umd64.so"
+    ]
+  },
+  "companions": [
+    {
+      "child": "SWD\\DRIVERENUM\\CUI&4&f69839c&0",
+      "ref": "oem49.inf",
+      "package": "cui_dch.inf_amd64_4c917b3b9a49742c",
+      "linuxFiles": []
+    },
+    {
+      "ref": "cui_dch.inf",
+      "package": "cui_dch.inf_amd64_4c917b3b9a49742c",
+      "linuxFiles": []
+    },
+    {
+      "ref": "cui_dch.inf",
+      "package": "cui_dch.inf_amd64_efb119a73d6b56f6",
+      "linuxFiles": []
+    },
+    {
+      "ref": "DisplayAudio\\11.2\\IntcDAud.inf",
+      "package": "intcdaud.inf_amd64_1036173dcec6146d",
+      "linuxFiles": []
+    },
+    {
+      "ref": "DisplayAudio\\11.2\\IntcDAud.inf",
+      "package": "intcdaud.inf_amd64_1b570d7b9a790b1a",
+      "linuxFiles": []
+    },
+    {
+      "ref": "DisplayAudio\\11.2\\IntcDAud.inf",
+      "package": "intcdaud.inf_amd64_7383627629a7d914",
+      "linuxFiles": []
+    },
+    {
+      "ref": "DisplayAudio\\11.2\\IntcDAud.inf",
+      "package": "intcdaud.inf_amd64_874a553c257a86b6",
+      "linuxFiles": []
+    },
+    {
+      "ref": "DisplayAudio\\11.2\\IntcDAud.inf",
+      "package": "intcdaud.inf_amd64_903eba7571a52ae1",
+      "linuxFiles": []
+    },
+    {
+      "ref": "HdBusExt.inf",
+      "package": "hdbusext.inf_amd64_497c499bbdc56618",
+      "linuxFiles": []
+    },
+    {
+      "ref": "HdBusExt.inf",
+      "package": "hdbusext.inf_amd64_7735b5fb78119742",
+      "linuxFiles": []
+    },
+    {
+      "ref": "MSHdaDac.inf",
+      "package": "mshdadac.inf_amd64_10c783fd2f49d3b1",
+      "linuxFiles": []
+    },
+    {
+      "ref": "MSHdaDac.inf",
+      "package": "mshdadac.inf_amd64_a901c013bbf37c06",
+      "linuxFiles": []
+    }
+  ],
+  "linuxFiles": [
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigc.so",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigd12dxva64.so",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigd12um64xe2.so",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigd12um64xeh.so",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigd12um64xel.so",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigd12umd64.so",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigdfcl.so",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigdgmm_w.so.12",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigdgmm2_w.so.2",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libigdgmmstaging_w.so.0",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libLLVM-14.so",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libopencl-clang2.so.14",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libUniversalAdapter64.so",
+    "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_5c4e38fb27d0b8b3\\libwsl_compute_helper.so"
+  ],
+  "wslUmdPresent": true,
+  "notes": [
+    "来宾使用 gpupv-guest verify 分别验证硬件计算与视频。Windows 的 OpenCL / Level Zero DLL 注册项不能验证 Linux ICD。",
+    "Debian 13 实测：DXIL cs_6_0 计算通过；Mesa 25.0.7 可查询 H.264 入口，编码等待，独立解码在 libigd12dxva64.so 内崩溃。"
+  ]
+}

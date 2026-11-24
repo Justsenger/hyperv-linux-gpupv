@@ -1,0 +1,84 @@
+NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+Linux gpupv-test-4d7eb8992c33495883eb3e5c518dc251 7.3.5-arch1-1 #1 SMP PREEMPT_DYNAMIC Tue, 17 Nov 2026 22:28:33 +0000 x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),983(video),998(wheel),1000(sudo)
+0x1414
+0x008e
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (3) intel-gmmlib-22.10.2-1  intel-graphics-compiler-1:2.42.6-1  intel-compute-runtime-26.40.40196.8-1
+
+Total Download Size:    82.78 MiB
+Total Installed Size:  394.81 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+OpenCL package exit=124
+error: failed to init transaction (unable to lock database)
+error: could not lock database: File exists
+  if you're sure a package manager is not already
+  running, you can remove /var/lib/pacman/db.lck
+GLX tools exit=1
+52eb3d30159e155d3bc9581bb5631aca76fbb6bd7ef72a091c7580f52e86ee54  /mnt/gpupv/guest/gpupv-guest
+40575dd6ffda79d452eff72677d97f890287a0bd58a639b013031332cb03d6f9  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+probe.c:2:28: error: ‘struct dma_fence_ops’ has no member named ‘fence_value_str’
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[3]: *** [/usr/lib/modules/7.3.5-arch1-1/build/scripts/Makefile.build:290: probe.o] Error 1
+make[2]: *** [/usr/lib/modules/7.3.5-arch1-1/build/Makefile:2229: .] Error 2
+make[1]: *** [/usr/lib/modules/7.3.5-arch1-1/build/Makefile:248: __sub-make] Error 2
+make: *** [Makefile:248: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/lib/modules/7.3.5-arch1-1/build'
+make[1]: Entering directory '/tmp/tmpdhw41fqx/kernel/drivers/hv/dxgkrnl'
+  CC [M]  dxgmodule.o
+  CC [M]  hmgr.o
+  CC [M]  misc.o
+  CC [M]  dxgadapter.o
+  CC [M]  ioctl.o
+  CC [M]  dxgvmbus.o
+  CC [M]  dxgprocess.o
+  CC [M]  dxgsyncfile.o
+  LD [M]  dxgkrnl.o
+  MODPOST Module.symvers
+  CC [M]  dxgkrnl.mod.o
+  CC [M]  .module-common.o
+  LD [M]  dxgkrnl.ko
+  BTF [M] dxgkrnl.ko
+make[1]: Leaving directory '/tmp/tmpdhw41fqx/kernel/drivers/hv/dxgkrnl'
+make: Leaving directory '/usr/lib/modules/7.3.5-arch1-1/build'
+glibc 2.44, x86_64, kernel 7.3.5-arch1-1, preflight OK
+Mesa D3D12: ['/usr/lib64/dri/d3d12_dri.so', '/usr/lib/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+glibc 2.44, x86_64, kernel 7.3.5-arch1-1, preflight OK
+Mesa D3D12: ['/usr/lib64/dri/d3d12_dri.so', '/usr/lib/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+/usr/lib/modules/7.3.5-arch1-1/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4637840 Nov 23 12:14 /lib/modules/7.3.5-arch1-1/updates/gpupv/dxgkrnl.ko
+uid=1000(tester) gid=1001(tester) groups=1001(tester),983(video),998(wheel),1000(sudo)
+crw-rw---- 1 root video 10, 262 Nov 23 12:14 /dev/dxg
+Dozen manifests found=0
+uid=1000(tester) gid=1001(tester) groups=1001(tester),983(video),998(wheel),1000(sudo)
+crw-rw---- 1 root video 10, 262 Nov 23 12:14 /dev/dxg
+ls: cannot access '/usr/share/vulkan/icd.d/': No such file or directory
+diagnostic_collection_finished
+managed_paths_clean
+managed_paths_clean

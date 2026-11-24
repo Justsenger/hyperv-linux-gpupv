@@ -1,0 +1,12 @@
+[  706.588793] gpupv-opencl-4c35cec5-95e7-498b-b563-5b451b64c792
+[  706.603346] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[  706.605862] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  706.607839] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  706.610255] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  706.612416] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  706.616670] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  706.618565] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  706.620976] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  706.622938] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  706.626112] misc dxg: dxgk: dxgkio_reserve_gpu_va: Ioctl failed: -75
+[  706.627872] misc dxg: dxgk: dxgkio_reserve_gpu_va: Ioctl failed: -75

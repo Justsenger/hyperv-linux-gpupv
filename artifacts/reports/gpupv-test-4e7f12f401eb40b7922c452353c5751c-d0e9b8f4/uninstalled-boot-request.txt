@@ -1,0 +1,2 @@
+Running timer as unit: run-p918-i918.timer
+Will run service as unit: run-p918-i918.service

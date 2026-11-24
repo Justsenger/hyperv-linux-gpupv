@@ -1,0 +1,8 @@
+Exception: D:\linux-pv\host\gpupv-host.ps1:39
+Line |
+  39 |  … f($missing){throw "缺少匹配 $Arch 的 WSL 运行库：$($missing -join ', ')。请安装或更新 …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | 缺少匹配 x86_64 的 WSL 运行库：libd3d12.so, libd3d12core.so, libdxcore.so。请安装或更新 WSL 后重新运行 doctor。已检查 C:\Program
+     | Files\WSL\lib 和 C:\Windows\System32\lxss\lib。
+
+

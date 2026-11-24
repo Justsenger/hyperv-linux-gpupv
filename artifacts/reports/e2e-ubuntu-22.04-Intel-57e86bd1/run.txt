@@ -1,0 +1,286 @@
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+Linux gpupv-test-57e86bd1c1e644eaae2e043d344c86c3 5.15.0-203-generic #213-Ubuntu SMP Fri Oct 23 13:21:06 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  wireless-regdb
+The following NEW packages will be installed:
+  linux-modules-extra-5.15.0-203-generic wireless-regdb
+0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+Need to get 64.1 MB of archives.
+After this operation, 353 MB of additional disk space will be used.
+Get:1 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 wireless-regdb all 2026.05.30-0ubuntu1~22.04.1 [10.2 kB]
+Get:2 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 linux-modules-extra-5.15.0-203-generic amd64 5.15.0-203.213 [64.0 MB]
+Fetched 64.1 MB in 8s (8102 kB/s)
+Selecting previously unselected package wireless-regdb.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 68913 files and directories currently installed.)
+Preparing to unpack .../wireless-regdb_2026.05.30-0ubuntu1~22.04.1_all.deb ...
+Unpacking wireless-regdb (2026.05.30-0ubuntu1~22.04.1) ...
+Selecting previously unselected package linux-modules-extra-5.15.0-203-generic.
+Preparing to unpack .../linux-modules-extra-5.15.0-203-generic_5.15.0-203.213_amd64.deb ...
+Unpacking linux-modules-extra-5.15.0-203-generic (5.15.0-203.213) ...
+Setting up wireless-regdb (2026.05.30-0ubuntu1~22.04.1) ...
+Setting up linux-modules-extra-5.15.0-203-generic (5.15.0-203.213) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for linux-image-5.15.0-203-generic (5.15.0-203.213) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-5.15.0-203-generic
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.15.0-203-generic
+Found initrd image: /boot/initrd.img-5.15.0-203-generic
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+0x1414
+0x008e
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libclang-cpp12 libigc1 libigdfcl1 libigdgmm12 libllvm12 libllvmspirvlib12
+  libopencl-clang12
+The following NEW packages will be installed:
+  intel-opencl-icd libclang-cpp12 libigc1 libigdfcl1 libigdgmm12 libllvm12
+  libllvmspirvlib12 libopencl-clang12
+0 upgraded, 8 newly installed, 0 to remove and 20 not upgraded.
+Need to get 44.7 MB of archives.
+After this operation, 201 MB of additional disk space will be used.
+Get:1 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 libigdgmm12 amd64 22.1.2+ds1-1 [139 kB]
+Get:2 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 libllvm12 amd64 1:12.0.1-19ubuntu3 [21.3 MB]
+Get:3 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 libllvmspirvlib12 amd64 12.0.0-3 [668 kB]
+Get:4 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 libigc1 amd64 1.0.10840-1 [9573 kB]
+Get:5 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 libclang-cpp12 amd64 1:12.0.1-19ubuntu3 [10.9 MB]
+Get:6 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 libopencl-clang12 amd64 12.0.0-3 [96.0 kB]
+Get:7 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 libigdfcl1 amd64 1.0.10840-1 [82.0 kB]
+Get:8 https://mirrors.ustc.edu.cn/ubuntu jammy/universe amd64 intel-opencl-icd amd64 22.14.22890-1 [1937 kB]
+Fetched 44.7 MB in 8s (5847 kB/s)
+Selecting previously unselected package libigdgmm12:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 74820 files and directories currently installed.)
+Preparing to unpack .../0-libigdgmm12_22.1.2+ds1-1_amd64.deb ...
+Unpacking libigdgmm12:amd64 (22.1.2+ds1-1) ...
+Selecting previously unselected package libllvm12:amd64.
+Preparing to unpack .../1-libllvm12_1%3a12.0.1-19ubuntu3_amd64.deb ...
+Unpacking libllvm12:amd64 (1:12.0.1-19ubuntu3) ...
+Selecting previously unselected package libllvmspirvlib12:amd64.
+Preparing to unpack .../2-libllvmspirvlib12_12.0.0-3_amd64.deb ...
+Unpacking libllvmspirvlib12:amd64 (12.0.0-3) ...
+Selecting previously unselected package libigc1:amd64.
+Preparing to unpack .../3-libigc1_1.0.10840-1_amd64.deb ...
+Unpacking libigc1:amd64 (1.0.10840-1) ...
+Selecting previously unselected package libclang-cpp12.
+Preparing to unpack .../4-libclang-cpp12_1%3a12.0.1-19ubuntu3_amd64.deb ...
+Unpacking libclang-cpp12 (1:12.0.1-19ubuntu3) ...
+Selecting previously unselected package libopencl-clang12:amd64.
+Preparing to unpack .../5-libopencl-clang12_12.0.0-3_amd64.deb ...
+Unpacking libopencl-clang12:amd64 (12.0.0-3) ...
+Selecting previously unselected package libigdfcl1:amd64.
+Preparing to unpack .../6-libigdfcl1_1.0.10840-1_amd64.deb ...
+Unpacking libigdfcl1:amd64 (1.0.10840-1) ...
+Selecting previously unselected package intel-opencl-icd.
+Preparing to unpack .../7-intel-opencl-icd_22.14.22890-1_amd64.deb ...
+Unpacking intel-opencl-icd (22.14.22890-1) ...
+Setting up libigdgmm12:amd64 (22.1.2+ds1-1) ...
+Setting up libllvm12:amd64 (1:12.0.1-19ubuntu3) ...
+Setting up libllvmspirvlib12:amd64 (12.0.0-3) ...
+Setting up libclang-cpp12 (1:12.0.1-19ubuntu3) ...
+Setting up libopencl-clang12:amd64 (12.0.0-3) ...
+Setting up libigc1:amd64 (1.0.10840-1) ...
+Setting up libigdfcl1:amd64 (1.0.10840-1) ...
+Setting up intel-opencl-icd (22.14.22890-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+package exit=0
+total 4
+-rw-r--r-- 1 root root 52 Apr 10  2022 intel.icd
+a327c651ea989fdec88eb6aec3cc3e8e2919625b39616c98522f0ef89cefd7a0  /mnt/gpupv/guest/gpupv-guest
+4001f40d3fe9652feb87174e5653794e8754f07a2c10ca7446566a55ba029d43  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+/tmp/tmp.D7cqKv6bdi/probe.c: In function ‘p’:
+/tmp/tmp.D7cqKv6bdi/probe.c:2:62: error: too few arguments to function ‘eventfd_signal’
+    2 | void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+      |                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.D7cqKv6bdi/probe.c:1:
+./include/linux/eventfd.h:42:7: note: declared here
+   42 | __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+      |       ^~~~~~~~~~~~~~
+make[1]: *** [scripts/Makefile.build:297: /tmp/tmp.D7cqKv6bdi/probe.o] Error 1
+make: *** [Makefile:1928: /tmp/tmp.D7cqKv6bdi] Error 2
+/tmp/tmp.D7cqKv6bdi/probe.c: In function ‘p’:
+/tmp/tmp.D7cqKv6bdi/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Werror=int-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.D7cqKv6bdi/probe.c:1:
+./include/linux/dma-fence.h:454:45: note: expected ‘u64’ {aka ‘long long unsigned int’} but argument is of type ‘struct dma_fence *’
+  454 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[1]: *** [scripts/Makefile.build:297: /tmp/tmp.D7cqKv6bdi/probe.o] Error 1
+make: *** [Makefile:1928: /tmp/tmp.D7cqKv6bdi] Error 2
+/tmp/tmp.D7cqKv6bdi/probe.c:2:20: error: storage size of ‘p’ isn’t known
+    2 | struct vmbus_gpadl p;
+      |                    ^
+make[1]: *** [scripts/Makefile.build:297: /tmp/tmp.D7cqKv6bdi/probe.o] Error 1
+make: *** [Makefile:1928: /tmp/tmp.D7cqKv6bdi] Error 2
+/tmp/tmp.D7cqKv6bdi/probe.c:3:33: error: initialization of ‘int (*)(struct hv_device *)’ from incompatible pointer type ‘void (*)(struct hv_device *)’ [-Werror=incompatible-pointer-types]
+    3 | struct hv_driver p = {.remove = remove};
+      |                                 ^~~~~~
+/tmp/tmp.D7cqKv6bdi/probe.c:3:33: note: (near initialization for ‘p.remove’)
+cc1: all warnings being treated as errors
+make[1]: *** [scripts/Makefile.build:297: /tmp/tmp.D7cqKv6bdi/probe.o] Error 1
+make: *** [Makefile:1928: /tmp/tmp.D7cqKv6bdi] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 0
+#define GPUPV_REMOVE_VOID 0
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-5.15.0-203-generic'
+  CC [M]  /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmpz3wox95m/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-headers-5.15.0-203-generic'
+glibc 2.35, x86_64, kernel 5.15.0-203-generic, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so']
+OpenCL ICD: ['/etc/OpenCL/vendors/intel.icd']
+glibc 2.35, x86_64, kernel 5.15.0-203-generic, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so']
+OpenCL ICD: ['/etc/OpenCL/vendors/intel.icd']
+/usr/lib/modules/5.15.0-203-generic/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 3449419 Nov 24 02:35 /lib/modules/5.15.0-203-generic/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 122 Nov 24 02:36 /dev/dxg
+boot_id=6437ed72-a2f0-443a-a633-07b8a515a4f4 uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+SecureBoot enabled
+GPU-PV module signing
+48:29:56:9F:40:80:D4:F3:D4:0D:4E:5D:72:A6:9A:EE:27:C9:A4:76
+O
+module dxgkrnl format gpupv +p
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 122 Nov 24 02:36 /dev/dxg
+
+/dev/dri:
+total 0
+drwxr-xr-x 2 root root         80 Nov 24 02:36 by-path
+crw-rw---- 1 root video  226,   0 Nov 24 02:36 card0
+crw-rw---- 1 root video  226,   1 Nov 24 02:36 card1
+crw-rw---- 1 root render 226, 128 Nov 24 02:36 renderD128
+	linux-vdso.so.1 (0x00007ffde0986000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f6d1f880000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f6d1f87b000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f6d1f794000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f6d1f78f000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f6d1fba0000)
+	linux-vdso.so.1 (0x00007ffd5d1ac000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fce629d5000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007fce629d0000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fce628e9000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007fce628e4000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fce62cd3000)
+	linux-vdso.so.1 (0x00007ffde8c46000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f4a87a71000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f4a87a6c000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f4a87840000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f4a87759000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f4a87739000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f4a8750e000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f4a87a8f000)
+Platform #0: Intel(R) OpenCL HD Graphics
+ `-- Device #0: Intel(R) Graphics [0x9a49]
+diagnostic_collection_finished
+managed_paths_clean
+managed_paths_clean

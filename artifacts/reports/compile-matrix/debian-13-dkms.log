@@ -1,0 +1,720 @@
+DKMS (dkms-3.2.2) make.log for gpupv-dxgkrnl/0.1 for kernel 6.12.117+deb13-amd64 (x86_64)
+Mon Nov 23 08:36:34 UTC 2026
+
+Building module(s)
+# command: sh build /lib/modules/6.12.117+deb13-amd64/build
+/tmp/tmp.uKwPmWZtLH/probe.c: In function ‘p’:
+/tmp/tmp.uKwPmWZtLH/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Wint-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.uKwPmWZtLH/probe.c:1:
+/usr/src/linux-headers-6.12.117+deb13-common/include/linux/dma-fence.h:472:45: note: expected ‘u64’ {aka ‘long long unsigned int’} but argument is of type ‘struct dma_fence *’
+  472 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+make[2]: *** [/usr/src/linux-headers-6.12.117+deb13-common/scripts/Makefile.build:234: /tmp/tmp.uKwPmWZtLH/probe.o] Error 1
+make[1]: *** [/usr/src/linux-headers-6.12.117+deb13-common/Makefile:2008: /tmp/tmp.uKwPmWZtLH] Error 2
+make: *** [/usr/src/linux-headers-6.12.117+deb13-common/Makefile:236: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+make: Entering directory '/usr/src/linux-headers-6.12.117+deb13-amd64'
+  CC [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgmodule.o
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgmodule.c: In function ‘dxg_pci_probe_device’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgmodule.c:608:43: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  608 |                 DXG_TRACE("err: %d",  ret);
+      |                                           ^
+  CC [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.o
+In file included from /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:21:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_open_adapter_from_luid’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:147:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  147 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_query_statistics’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:238:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  238 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkp_enum_adapters’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:360:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  360 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_enum_adapters’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:576:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  576 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_enum_adapters3’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:601:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  601 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_close_adapter’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:624:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  624 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_query_adapter_info’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:670:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  670 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_create_device’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:756:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  756 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_destroy_device’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:803:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  803 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_create_context_virtual’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:897:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  897 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_destroy_context’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:966:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  966 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_create_hwqueue’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:1048:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 1048 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_destroy_hwqueue’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:1116:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 1116 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_create_paging_queue’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:1215:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 1215 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_destroy_paging_queue’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:1293:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 1293 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘get_standard_alloc_priv_data’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:1370:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1370 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_create_allocation’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:1781:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 1781 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_destroy_allocation’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2010:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2010 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_make_resident’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2089:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2089 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_evict’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2147:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2147 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_offer_allocations’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2201:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2201 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_reclaim_allocations’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2260:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2260 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_submit_command’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2328:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2328 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_submit_command_to_hwqueue’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2384:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2384 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_submit_signal_to_hwqueue’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2458:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2458 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_submit_wait_to_hwqueue’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2542:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2542 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_map_gpu_va’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2609:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2609 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_reserve_gpu_va’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2672:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2672 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_create_sync_object’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2890:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2890 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_destroy_sync_object’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:2933:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 2933 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_open_sync_object_nt’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3068:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3068 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_signal_sync_object’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3176:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3176 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_signal_sync_object_cpu’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3228:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3228 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_signal_sync_object_gpu’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3287:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3287 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_signal_sync_object_gpu2’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3411:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3411 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_wait_sync_object’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3464:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3464 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_wait_sync_object_cpu’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3585:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3585 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_wait_sync_object_gpu’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3718:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3718 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_lock2’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3794:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3794 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_unlock2’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3874:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3874 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_update_alloc_property’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3917:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3917 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_mark_device_as_error’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3953:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3953 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_query_alloc_residency’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:3994:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 3994 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_set_allocation_priority’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4029:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4029 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_get_allocation_priority’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4064:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4064 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_set_context_scheduling_priority’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4121:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4121 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_get_context_scheduling_priority’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4186:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4186 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_set_context_process_scheduling_priority’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4207:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4207 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_get_context_process_scheduling_priority’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4229:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4229 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_change_vidmem_reservation’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4275:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4275 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_query_clock_calibration’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4318:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4318 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_flush_heap_transitions’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4365:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4365 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_invalidate_cache’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4406:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4406 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_escape’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4576:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4576 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_share_objects’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:4939:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 4939 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_query_resource_info_nt’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:5020:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 5020 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_open_resource_nt’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:5330:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 5330 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_share_object_with_host’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:5361:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 5361 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_enum_processes’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:5447:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 5447 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c: In function ‘dxgkio_is_feature_enabled’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.c:5491:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+ 5491 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+  CC [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.o
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_sync_msg’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:496:44: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  496 |                 DXG_TRACE("Error: %x", ret);
+      |                                            ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_set_iospace_region’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:664:44: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  664 |                 DXG_TRACE("Error: %d", ret);
+      |                                            ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_create_process’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:717:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  717 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_destroy_process’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:745:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  745 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_open_sync_object_nt’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:808:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  808 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_open_sync_object’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:857:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  857 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_create_nt_shared_object’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:899:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  899 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_destroy_nt_shared_object’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:930:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  930 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_destroy_sync_object’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:963:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+  963 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_create_device’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1133:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1133 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_destroy_device’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1158:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1158 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_flush_device’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1185:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1185 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_create_context’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1257:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1257 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_destroy_context’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1283:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1283 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_create_paging_queue’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1330:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1330 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_destroy_paging_queue’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1357:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1357 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘copy_private_data’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1433:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1433 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘create_existing_sysmem’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1572:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1572 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘process_allocation_handles’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1654:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1654 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘create_local_allocations’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1805:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1805 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_create_allocation’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1931:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1931 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_destroy_allocation’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:1972:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 1972 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_query_clock_calibration’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2016:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2016 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_flush_heap_transitions’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2039:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2039 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_invalidate_cache’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2066:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2066 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_is_feature_enabled’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2115:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2115 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_query_alloc_residency’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2188:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2188 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_escape’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2264:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2264 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_query_vidmem_info’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2328:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2328 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_get_device_state’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2373:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2373 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_open_resource’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2426:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2426 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_get_stdalloc_data’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2511:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2511 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_make_resident’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2563:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2563 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_evict’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2609:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2609 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_submit_command’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2664:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2664 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_map_gpu_va’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2701:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2701 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_reserve_gpu_va’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2731:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2731 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_free_gpu_va’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2758:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2758 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_update_gpu_va’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2814:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2814 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_create_sync_object’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2900:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2900 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_signal_sync_object’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:2994:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 2994 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_wait_sync_object_cpu’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3054:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3054 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_wait_sync_object_gpu’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3107:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3107 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_lock2’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3187:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3187 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_unlock2’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3214:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3214 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_update_alloc_property’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3259:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3259 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_mark_device_as_error’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3284:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3284 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_set_allocation_priority’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3354:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3354 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_get_allocation_priority’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3436:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3436 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_set_context_sch_priority’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3465:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3465 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_get_context_sch_priority’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3499:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3499 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_offer_allocations’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3545:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3545 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_reclaim_allocations’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3621:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3621 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_change_vidmem_reservation’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3651:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3651 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_destroy_hwqueue’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3815:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3815 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_query_adapter_info’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3899:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3899 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_submit_command_hwqueue’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3957:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3957 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c: In function ‘dxgvmb_send_query_statistics’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.c:3993:42: warning: suggest braces around empty body in an ‘if’ statement [-Wempty-body]
+ 3993 |                 DXG_TRACE("err: %d", ret);
+      |                                          ^
+  CC [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgsyncfile.o
+In file included from /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgsyncfile.c:34:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgsyncfile.c: In function ‘dxgkio_create_sync_file’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgsyncfile.c:189:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  189 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgsyncfile.c: In function ‘dxgkio_open_syncobj_from_syncfile’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgsyncfile.c:313:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  313 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgsyncfile.c: In function ‘dxgkio_wait_sync_file’:
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.h:1050:53: warning: suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+ 1050 |                 DXG_TRACE("Ioctl returned: %d", ret);   \
+      |                                                     ^
+/var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgsyncfile.c:411:9: note: in expansion of macro ‘DXG_TRACE_IOCTL_END’
+  411 |         DXG_TRACE_IOCTL_END(ret);
+      |         ^~~~~~~~~~~~~~~~~~~
+  LD [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  CC [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/.module-common.o
+  LD [M]  /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.ko
+make: Leaving directory '/usr/src/linux-headers-6.12.117+deb13-amd64'
+
+# exit code: 0
+# elapsed time: 00:00:23
+----------------------------------------------------------------

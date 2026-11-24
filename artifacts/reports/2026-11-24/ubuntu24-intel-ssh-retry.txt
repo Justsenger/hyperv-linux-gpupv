@@ -1,0 +1,33 @@
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+Linux gpupv-test-fba570cba76541f3a62d6d23a53cc7fa 6.8.0-147-generic #147-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep 24 11:33:16 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+0x1414
+0x008e
+Reading package lists...
+Building dependency tree...
+Reading state information...
+intel-opencl-icd is already the newest version (23.43.27642.40-1ubuntu3).
+0 upgraded, 0 newly installed, 0 to remove and 64 not upgraded.
+package exit=0
+total 4
+-rw-r--r-- 1 root root 52 Apr 17  2024 intel.icd
+glibc 2.39, x86_64, kernel 6.8.0-147-generic, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so']
+OpenCL ICD: ['/etc/OpenCL/vendors/intel.icd']
+/usr/lib/modules/6.8.0-147-generic/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 3662867 Nov 24 02:21 /lib/modules/6.8.0-147-generic/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 262 Nov 24 02:22 /dev/dxg

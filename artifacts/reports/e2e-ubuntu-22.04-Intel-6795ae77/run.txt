@@ -1,0 +1,250 @@
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+Linux gpupv-test-6795ae77a9ab4056a5e0491b8f3ce3e8 5.15.0-203-generic #213-Ubuntu SMP Fri Oct 23 13:21:06 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  wireless-regdb
+The following NEW packages will be installed:
+  linux-modules-extra-5.15.0-203-generic wireless-regdb
+0 upgraded, 2 newly installed, 0 to remove and 17 not upgraded.
+Need to get 64.1 MB of archives.
+After this operation, 353 MB of additional disk space will be used.
+Get:1 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 wireless-regdb all 2026.05.30-0ubuntu1~22.04.1 [10.2 kB]
+Get:2 https://mirrors.ustc.edu.cn/ubuntu jammy-updates/main amd64 linux-modules-extra-5.15.0-203-generic amd64 5.15.0-203.213 [64.0 MB]
+Fetched 64.1 MB in 4s (16.0 MB/s)
+Selecting previously unselected package wireless-regdb.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 68187 files and directories currently installed.)
+Preparing to unpack .../wireless-regdb_2026.05.30-0ubuntu1~22.04.1_all.deb ...
+Unpacking wireless-regdb (2026.05.30-0ubuntu1~22.04.1) ...
+Selecting previously unselected package linux-modules-extra-5.15.0-203-generic.
+Preparing to unpack .../linux-modules-extra-5.15.0-203-generic_5.15.0-203.213_amd64.deb ...
+Unpacking linux-modules-extra-5.15.0-203-generic (5.15.0-203.213) ...
+Setting up wireless-regdb (2026.05.30-0ubuntu1~22.04.1) ...
+Setting up linux-modules-extra-5.15.0-203-generic (5.15.0-203.213) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for linux-image-5.15.0-203-generic (5.15.0-203.213) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-5.15.0-203-generic
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.15.0-203-generic
+Found initrd image: /boot/initrd.img-5.15.0-203-generic
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Running kernel seems to be up-to-date.
+
+Services to be restarted:
+ systemctl restart cron.service
+ systemctl restart multipathd.service
+ systemctl restart packagekit.service
+ systemctl restart polkit.service
+ systemctl restart rsyslog.service
+ systemctl restart serial-getty@ttyS0.service
+ systemctl restart ssh.service
+ systemctl restart systemd-journald.service
+ systemctl restart systemd-networkd.service
+ systemctl restart systemd-resolved.service
+ systemctl restart systemd-timesyncd.service
+ systemctl restart systemd-udevd.service
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+ systemctl restart user@1000.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+0x1414
+0x008e
+40575dd6ffda79d452eff72677d97f890287a0bd58a639b013031332cb03d6f9  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+/tmp/tmp.7S444EC8We/probe.c: In function ‘p’:
+/tmp/tmp.7S444EC8We/probe.c:2:62: error: too few arguments to function ‘eventfd_signal’
+    2 | void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+      |                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.7S444EC8We/probe.c:1:
+./include/linux/eventfd.h:42:7: note: declared here
+   42 | __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+      |       ^~~~~~~~~~~~~~
+make[1]: *** [scripts/Makefile.build:297: /tmp/tmp.7S444EC8We/probe.o] Error 1
+make: *** [Makefile:1928: /tmp/tmp.7S444EC8We] Error 2
+/tmp/tmp.7S444EC8We/probe.c: In function ‘p’:
+/tmp/tmp.7S444EC8We/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Werror=int-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.7S444EC8We/probe.c:1:
+./include/linux/dma-fence.h:454:45: note: expected ‘u64’ {aka ‘long long unsigned int’} but argument is of type ‘struct dma_fence *’
+  454 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[1]: *** [scripts/Makefile.build:297: /tmp/tmp.7S444EC8We/probe.o] Error 1
+make: *** [Makefile:1928: /tmp/tmp.7S444EC8We] Error 2
+/tmp/tmp.7S444EC8We/probe.c:2:20: error: storage size of ‘p’ isn’t known
+    2 | struct vmbus_gpadl p;
+      |                    ^
+make[1]: *** [scripts/Makefile.build:297: /tmp/tmp.7S444EC8We/probe.o] Error 1
+make: *** [Makefile:1928: /tmp/tmp.7S444EC8We] Error 2
+/tmp/tmp.7S444EC8We/probe.c:3:33: error: initialization of ‘int (*)(struct hv_device *)’ from incompatible pointer type ‘void (*)(struct hv_device *)’ [-Werror=incompatible-pointer-types]
+    3 | struct hv_driver p = {.remove = remove};
+      |                                 ^~~~~~
+/tmp/tmp.7S444EC8We/probe.c:3:33: note: (near initialization for ‘p.remove’)
+cc1: all warnings being treated as errors
+make[1]: *** [scripts/Makefile.build:297: /tmp/tmp.7S444EC8We/probe.o] Error 1
+make: *** [Makefile:1928: /tmp/tmp.7S444EC8We] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 0
+#define GPUPV_REMOVE_VOID 0
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-5.15.0-203-generic'
+  CC [M]  /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmptm5tfa6q/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-headers-5.15.0-203-generic'
+glibc 2.35, x86_64, kernel 5.15.0-203-generic, preflight OK
+Mesa D3D12: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+glibc 2.35, x86_64, kernel 5.15.0-203-generic, preflight OK
+Mesa D3D12: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 121 Nov 23 10:41 /dev/dxg
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 121 Nov 23 10:41 /dev/dxg
+intel_hasvk_icd.x86_64.json
+intel_icd.x86_64.json
+lvp_icd.x86_64.json
+radeon_icd.x86_64.json
+virtio_icd.x86_64.json
+WARNING: [Loader Message] Code 0 : terminator_CreateInstance: Failed to CreateInstance in ICD 4.  Skipping ICD.
+'DISPLAY' environment variable not set... skipping surface info
+==========
+VULKANINFO
+==========
+
+Vulkan Instance Version: 1.3.204
+
+
+Instance Extensions: count = 20
+-------------------------------
+VK_EXT_acquire_drm_display             : extension revision 1
+VK_EXT_acquire_xlib_display            : extension revision 1
+VK_EXT_debug_report                    : extension revision 10
+VK_EXT_debug_utils                     : extension revision 2
+VK_EXT_direct_mode_display             : extension revision 1
+VK_EXT_display_surface_counter         : extension revision 1
+VK_EXT_swapchain_colorspace            : extension revision 4
+VK_KHR_device_group_creation           : extension revision 1
+VK_KHR_display                         : extension revision 23
+VK_KHR_external_fence_capabilities     : extension revision 1
+VK_KHR_external_memory_capabilities    : extension revision 1
+VK_KHR_external_semaphore_capabilities : extension revision 1
+VK_KHR_get_display_properties2         : extension revision 1
+VK_KHR_get_physical_device_properties2 : extension revision 2
+VK_KHR_get_surface_capabilities2       : extension revision 1
+VK_KHR_surface                         : extension revision 25
+VK_KHR_surface_protected_capabilities  : extension revision 1
+VK_KHR_wayland_surface                 : extension revision 6
+VK_KHR_xcb_surface                     : extension revision 6
+VK_KHR_xlib_surface                    : extension revision 6
+
+Instance Layers: count = 3
+--------------------------
+VK_LAYER_INTEL_nullhw       INTEL NULL HW                1.1.73   version 1
+VK_LAYER_MESA_device_select Linux device selection layer 1.3.211  version 1
+VK_LAYER_MESA_overlay       Mesa Overlay layer           1.3.211  version 1
+
+Devices:
+========
+GPU0:
+	apiVersion         = 4206847 (1.3.255)
+	driverVersion      = 1 (0x0001)
+	vendorID           = 0x10005
+	deviceID           = 0x0000
+	deviceType         = PHYSICAL_DEVICE_TYPE_CPU
+	deviceName         = llvmpipe (LLVM 15.0.7, 256 bits)
+	driverID           = DRIVER_ID_MESA_LLVMPIPE
+	driverName         = llvmpipe
+	driverInfo         = Mesa 23.2.1-1ubuntu3.1~22.04.4 (LLVM 15.0.7)
+	conformanceVersion = 1.3.1.1
+	deviceUUID         = 6d657361-3233-2e32-2e31-2d3175627500
+	driverUUID         = 6c6c766d-7069-7065-5555-494400000000
+libGL error: glx: failed to create drisw screen
+libGL error: failed to load driver: swrast
+X Error of failed request:  BadValue (integer parameter out of range for operation)
+  Major opcode of failed request:  150 (GLX)
+  Minor opcode of failed request:  24 (X_GLXCreateNewContext)
+  Value in failed request:  0x0
+  Serial number of failed request:  38
+  Current serial number in output stream:  39
+name of display: :99
+libva info: VA-API version 1.14.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+libva info: va_openDriver() returns -1
+vaInitialize failed with error code -1 (unknown libva error),exit
+diagnostic_collection_finished
+managed_paths_clean
+managed_paths_clean

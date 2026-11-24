@@ -1,0 +1,6 @@
+{
+  "Image": "D:\\linux-pv\\.test\\images\\gpupv-test-debian-12-d597a8b422a0fa7f.img",
+  "Sha256": "335105AFF6E335A561940CE25227449FCE5A80C2B0C52004F617CE2F68DB19DC",
+  "Source": "https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2",
+  "ChecksumSource": "https://cloud.debian.org/images/cloud/bookworm/latest/SHA512SUMS"
+}

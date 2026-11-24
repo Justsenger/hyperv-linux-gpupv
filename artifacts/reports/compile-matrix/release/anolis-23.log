@@ -1,0 +1,5 @@
+image=openanolis/anolisos:23 unix_time=1795434044 sources_sha256=47bdacc5597ebe41022076e2d6402a70397c2a36ee4ab2f2975ae2d514e79215
+Unable to find image 'openanolis/anolisos:23' locally
+docker: Error response from daemon: Get "https://registry-1.docker.io/v2/": EOF.
+See 'docker run --help'.
+exit=125

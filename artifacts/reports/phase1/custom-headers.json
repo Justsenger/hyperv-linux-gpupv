@@ -1,0 +1,14 @@
+[
+  {
+    "target": "truenas24",
+    "url": "https://download.truenas.com/TrueNAS-SCALE-ElectricEel/24.10.2.4/packages/linux-headers-truenas-production-amd64_6.6.44-production+truenas-1_amd64.deb",
+    "sha256": "178440644a317952bb1920a391a7c2ee007e9d89e718e774129699cf46eb94de",
+    "bytes": 9246616
+  },
+  {
+    "target": "truenas25",
+    "url": "https://download.truenas.com/TrueNAS-SCALE-Fangtooth/25.04.2.6/packages/linux-headers-truenas-production-amd64_6.12.15-production+truenas-1_amd64.deb",
+    "sha256": "2d497bb741d1d723233934b43109875c2d72a42879b5e3b7e1d15589cf20e146",
+    "bytes": 9117268
+  }
+]

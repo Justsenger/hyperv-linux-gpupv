@@ -1,0 +1,6 @@
+Module gpupv-dxgkrnl/0.1 for kernel 6.12.117+deb13-amd64 (x86_64):
+Before uninstall, this module version was ACTIVE on this kernel.
+Deleting /lib/modules/6.12.117+deb13-amd64/updates/dkms/dxgkrnl.ko.xz
+Running depmod.... done.
+
+Deleting module gpupv-dxgkrnl/0.1 completely from the DKMS tree.

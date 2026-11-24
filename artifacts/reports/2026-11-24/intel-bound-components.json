@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Intel(R) Graphics Control Panel",
+    "id": "SWD\\DRIVERENUM\\CUI&4&F69839C&0",
+    "parent": "PCI\\VEN_8086&DEV_9A49&SUBSYS_20908086&REV_01\\3&11583659&0&10",
+    "inf": "oem49.inf"
+  }
+]

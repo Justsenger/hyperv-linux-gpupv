@@ -1,0 +1,9 @@
+Linux gpupv-test-f68e8fa2dee540998e12aa447be4f1f3 6.1.0-56-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.192-2 (2026-11-16) x86_64 GNU/Linux
+SecureBoot disabled
+gcc absent
+g++ absent
+make absent
+headers_absent
+0x008e
+0x008e
+ls: cannot access '/dev/dxg': No such file or directory

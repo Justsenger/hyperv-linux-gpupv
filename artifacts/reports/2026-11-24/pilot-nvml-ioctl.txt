@@ -1,0 +1,76 @@
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB
+840   ioctl(3</dev/dxg<char 10:262>>, _IOC(_IOC_READ|_IOC_WRITE, 0x47, 0xd, 0x20), 0x236d150) = -1 EINVAL (Invalid argument)
+ > /usr/lib/x86_64-linux-gnu/libc.so.6(ioctl+0x3b) [0x10c81b]
+ > /opt/hyperv-linux-gpupv/lib/libdxcore.so(D3DKMTEscape+0x1b) [0xdbe94]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1(nvmlThunkEscape+0x5c) [0x14d0fc]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1(nvmlEscapeRmFree+0xfc) [0x14d62c]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0xa5234]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0xa6446]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0x14c68f]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0x23b5c]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0x23f2f]
+ > /opt/hyperv-linux-gpupv/lib/nvidia-smi() [0x28c93]
+ > /opt/hyperv-linux-gpupv/lib/nvidia-smi() [0x2ccfa]
+--
+840   ioctl(3</dev/dxg<char 10:262>>, _IOC(_IOC_READ|_IOC_WRITE, 0x47, 0xd, 0x20), 0x236d150) = -1 EINVAL (Invalid argument)
+ > /usr/lib/x86_64-linux-gnu/libc.so.6(ioctl+0x3b) [0x10c81b]
+ > /opt/hyperv-linux-gpupv/lib/libdxcore.so(D3DKMTEscape+0x1b) [0xdbe94]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1(nvmlThunkEscape+0x5c) [0x14d0fc]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1(nvmlEscapeRmFree+0xfc) [0x14d62c]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0xa51b2]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0xa6446]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0x14c68f]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0x23b5c]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0x23f2f]
+ > /opt/hyperv-linux-gpupv/lib/nvidia-smi() [0x28c93]
+ > /opt/hyperv-linux-gpupv/lib/nvidia-smi() [0x2ccfa]
+--
+840   ioctl(3</dev/dxg<char 10:262>>, _IOC(_IOC_READ|_IOC_WRITE, 0x47, 0xd, 0x20), 0x236d150) = -1 EINVAL (Invalid argument)
+ > /usr/lib/x86_64-linux-gnu/libc.so.6(ioctl+0x3b) [0x10c81b]
+ > /opt/hyperv-linux-gpupv/lib/libdxcore.so(D3DKMTEscape+0x1b) [0xdbe94]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1(nvmlThunkEscape+0x5c) [0x14d0fc]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1(nvmlEscapeRmControl+0x18d) [0x14db2d]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0xa2a7d]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0xa64c8]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0x14c68f]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0x23b5c]
+ > /opt/hyperv-linux-gpupv/drivers/nvinsi.inf_amd64_bdbfdf54ab096b2b/libnvidia-ml.so.1() [0x23f2f]
+ > /opt/hyperv-linux-gpupv/lib/nvidia-smi() [0x28c93]
+ > /opt/hyperv-linux-gpupv/lib/nvidia-smi() [0x2ccfa]
+[   26.690536] gpupv short completion id=524 received=0 expected=80
+[   26.690540] gpupv completion caller=vf#0:0 pid=748 id=524 request=151 reply=80 errno=-75
+[   26.690543] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.691489] gpupv short completion id=525 received=0 expected=80
+[   26.691493] gpupv completion caller=vf#0:0 pid=748 id=525 request=151 reply=80 errno=-75
+[   26.691495] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.692424] gpupv short completion id=526 received=0 expected=80
+[   26.692428] gpupv completion caller=vf#0:0 pid=748 id=526 request=151 reply=80 errno=-75
+[   26.692430] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.693697] gpupv short completion id=527 received=0 expected=80
+[   26.693701] gpupv completion caller=vf#0:0 pid=748 id=527 request=151 reply=80 errno=-75
+[   26.693703] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.694646] gpupv short completion id=528 received=0 expected=80
+[   26.694651] gpupv completion caller=vf#0:0 pid=748 id=528 request=151 reply=80 errno=-75
+[   26.694653] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.695588] gpupv short completion id=529 received=0 expected=80
+[   26.695592] gpupv completion caller=vf#0:0 pid=748 id=529 request=151 reply=80 errno=-75
+[   26.695594] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.696756] gpupv short completion id=530 received=0 expected=80
+[   26.696775] gpupv completion caller=vf#0:0 pid=748 id=530 request=151 reply=80 errno=-75
+[   26.696780] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.698214] gpupv short completion id=531 received=0 expected=80
+[   26.698219] gpupv completion caller=vf#0:0 pid=748 id=531 request=151 reply=80 errno=-75
+[   26.698222] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=80 adapter_locked=1 errno=-75
+[   26.752485] gpupv short completion id=643 received=0 expected=68
+[   26.752495] gpupv completion caller=vf#0:0 pid=748 id=643 request=139 reply=68 errno=-75
+[   26.752499] gpupv escape caller=vf#0:0 pid=748 ioctl=0xc020470d type=0 flags=0x0 bytes=68 adapter_locked=1 errno=-75
+[   26.926799] gpupv short completion id=1679 received=0 expected=68
+[   26.926807] gpupv completion caller=ffmpeg pid=746 id=1679 request=139 reply=68 errno=-75
+[   26.926810] gpupv escape caller=ffmpeg pid=746 ioctl=0xc020470d type=0 flags=0x0 bytes=68 adapter_locked=1 errno=-75
+[   26.933264] gpupv short completion id=1724 received=0 expected=68
+[   26.933308] gpupv completion caller=ffmpeg pid=746 id=1724 request=139 reply=68 errno=-75
+[   26.933312] gpupv escape caller=ffmpeg pid=746 ioctl=0xc020470d type=0 flags=0x0 bytes=68 adapter_locked=1 errno=-75
+[   60.920044] gpupv escape caller=nvidia-smi pid=840 ioctl=0xc020470d type=0 flags=0x0 bytes=64 adapter_locked=0 errno=-22
+[   60.922232] gpupv escape caller=nvidia-smi pid=840 ioctl=0xc020470d type=0 flags=0x0 bytes=64 adapter_locked=0 errno=-22
+[   60.923865] gpupv escape caller=nvidia-smi pid=840 ioctl=0xc020470d type=0 flags=0x0 bytes=196 adapter_locked=0 errno=-22

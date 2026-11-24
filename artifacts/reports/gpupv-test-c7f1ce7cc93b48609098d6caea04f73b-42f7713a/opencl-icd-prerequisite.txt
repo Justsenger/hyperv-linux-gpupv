@@ -1,0 +1,4 @@
+Last metadata expiration check: 0:01:17 ago on Tue Nov 24 02:00:24 2026.
+No match for argument: intel-compute-runtime
+Error: Unable to find a match: intel-compute-runtime
+package exit=1

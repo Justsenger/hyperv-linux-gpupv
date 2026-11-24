@@ -1,0 +1,222 @@
+NAME="Fedora Linux"
+VERSION="44 (Cloud Edition)"
+RELEASE_TYPE=stable
+ID=fedora
+VERSION_ID=44
+VERSION_CODENAME=""
+PRETTY_NAME="Fedora Linux 44 (Cloud Edition)"
+ANSI_COLOR="0;38;2;60;110;180"
+LOGO=fedora-logo-icon
+CPE_NAME="cpe:/o:fedoraproject:fedora:44"
+HOME_URL="https://fedoraproject.org/"
+DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US/fedora/f44/"
+SUPPORT_URL="https://ask.fedoraproject.org/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+REDHAT_BUGZILLA_PRODUCT="Fedora"
+REDHAT_BUGZILLA_PRODUCT_VERSION=44
+REDHAT_SUPPORT_PRODUCT="Fedora"
+REDHAT_SUPPORT_PRODUCT_VERSION=44
+SUPPORT_END=2027-05-19
+VARIANT="Cloud Edition"
+VARIANT_ID=cloud
+Linux gpupv-test-da7ac386ff754cebb650e8c89b25f387 6.19.10-300.fc44.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Mar 25 18:23:49 UTC 2026 x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+0x1414
+0x008e
+Updating and loading repositories:
+Repositories loaded.
+Package "ffmpeg-free-8.1.3-3.fc44.x86_64" is already installed.
+Package "libva-utils-2.23.0-2.fc44.x86_64" is already installed.
+Package "mesa-dri-drivers-26.2.7-1.fc44.x86_64" is already installed.
+Package "clinfo-3.0.25.02.14-3.fc44.x86_64" is already installed.
+
+Package                    Arch   Version                 Repository      Size
+Installing:
+ intel-compute-runtime     x86_64 0:26.35.39758.21-2.fc44 updates      0.0   B
+Installing dependencies:
+ clang-libs                x86_64 0:22.1.8-4.fc44         updates    109.7 MiB
+ clang-resource-filesystem x86_64 0:22.1.8-4.fc44         updates     15.3 KiB
+ intel-gmmlib              x86_64 0:22.10.2-1.fc44        updates    896.9 KiB
+ intel-igc                 x86_64 0:2.41.16-2.fc44        updates      2.7 MiB
+ intel-igc-libs            x86_64 0:2.41.16-2.fc44        updates     56.6 MiB
+ intel-level-zero          x86_64 0:26.35.39758.21-2.fc44 updates     59.9 MiB
+ intel-ocloc               x86_64 0:26.35.39758.21-2.fc44 updates      1.6 MiB
+ intel-opencl              x86_64 0:26.35.39758.21-2.fc44 updates     56.2 MiB
+ intel-opencl-clang        x86_64 0:22.1.4-2.fc44         updates     37.8 MiB
+ lld-libs                  x86_64 0:22.1.8-4.fc44         updates      6.1 MiB
+ spirv-llvm-translator     x86_64 0:22.1.2-1.fc44         updates      3.7 MiB
+
+Transaction Summary:
+ Installing:        12 packages
+
+Total size of inbound packages is 66 MiB. Need to download 66 MiB.
+After this operation, 335 MiB extra will be used (install 335 MiB, remove 0 B).
+[ 1/12] intel-compute-runtime-0:26.35.3 100% |   8.2 KiB/s |   6.9 KiB |  00m01s
+[ 2/12] intel-level-zero-0:26.35.39758. 100% |   2.4 MiB/s |   4.0 MiB |  00m02s
+[ 3/12] intel-ocloc-0:26.35.39758.21-2. 100% | 288.0 KiB/s | 549.5 KiB |  00m02s
+[ 4/12] intel-gmmlib-0:22.10.2-1.fc44.x 100% | 208.0 KiB/s | 203.0 KiB |  00m01s
+[ 5/12] intel-opencl-0:26.35.39758.21-2 100% |   1.4 MiB/s |   2.8 MiB |  00m02s
+[ 6/12] intel-igc-0:2.41.16-2.fc44.x86_ 100% | 674.2 KiB/s | 507.7 KiB |  00m01s
+[ 7/12] lld-libs-0:22.1.8-4.fc44.x86_64 100% |   3.8 MiB/s |   1.7 MiB |  00m00s
+[ 8/12] spirv-llvm-translator-0:22.1.2- 100% |   1.5 MiB/s | 988.1 KiB |  00m01s
+[ 9/12] intel-igc-libs-0:2.41.16-2.fc44 100% |   4.0 MiB/s |  13.1 MiB |  00m03s
+[10/12] intel-opencl-clang-0:22.1.4-2.f 100% |   4.5 MiB/s |  13.4 MiB |  00m03s
+[11/12] clang-resource-filesystem-0:22. 100% |  21.2 KiB/s |  15.9 KiB |  00m01s
+[12/12] clang-libs-0:22.1.8-4.fc44.x86_ 100% |   5.9 MiB/s |  28.2 MiB |  00m05s
+--------------------------------------------------------------------------------
+[12/12] Total                           100% |   6.8 MiB/s |  65.6 MiB |  00m10s
+Running transaction
+[ 1/14] Verify package files            100% |  56.0   B/s |  12.0   B |  00m00s
+[ 2/14] Prepare transaction             100% | 148.0   B/s |  12.0   B |  00m00s
+[ 3/14] Installing spirv-llvm-translato 100% |  53.7 MiB/s |   3.7 MiB |  00m00s
+[ 4/14] Installing intel-gmmlib-0:22.10 100% |  23.1 MiB/s | 898.3 KiB |  00m00s
+[ 5/14] Installing clang-resource-files 100% | 406.7 KiB/s |  16.7 KiB |  00m00s
+[ 6/14] Installing clang-libs-0:22.1.8- 100% | 176.0 MiB/s | 109.8 MiB |  00m01s
+[ 7/14] Installing intel-opencl-clang-0 100% |  96.6 MiB/s |  37.8 MiB |  00m00s
+[ 8/14] Installing lld-libs-0:22.1.8-4. 100% |  29.2 MiB/s |   6.1 MiB |  00m00s
+[ 9/14] Installing intel-igc-libs-0:2.4 100% |  66.1 MiB/s |  56.6 MiB |  00m01s
+[10/14] Installing intel-igc-0:2.41.16- 100% |  18.4 MiB/s |   2.7 MiB |  00m00s
+[11/14] Installing intel-level-zero-0:2 100% |  10.3 MiB/s |  59.9 MiB |  00m06s
+[12/14] Installing intel-ocloc-0:26.35. 100% |   9.2 MiB/s |   1.6 MiB |  00m00s
+[13/14] Installing intel-opencl-0:26.35 100% |  20.8 MiB/s |  56.2 MiB |  00m03s
+[14/14] Installing intel-compute-runtim 100% |  33.0   B/s | 124.0   B |  00m04s
+Complete!
+package exit=0
+total 4
+-rw-r--r--. 1 root root 37 Nov  5 00:00 intel.icd
+a327c651ea989fdec88eb6aec3cc3e8e2919625b39616c98522f0ef89cefd7a0  /mnt/gpupv/guest/gpupv-guest
+4001f40d3fe9652feb87174e5653794e8754f07a2c10ca7446566a55ba029d43  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (GCC) 16.0.1 20260321 (Red Hat 16.0.1-0)
+  You are using:           gcc (GCC) 16.2.1 20261029 (Red Hat 16.2.1-3)
+probe.c:2:28: error: ‘struct dma_fence_ops’ has no member named ‘fence_value_str’
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[3]: *** [/usr/src/kernels/6.19.10-300.fc44.x86_64/scripts/Makefile.build:289: probe.o] Error 1
+make[2]: *** [/usr/src/kernels/6.19.10-300.fc44.x86_64/Makefile:2095: .] Error 2
+make[1]: *** [/usr/src/kernels/6.19.10-300.fc44.x86_64/Makefile:248: __sub-make] Error 2
+make: *** [Makefile:248: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/6.19.10-300.fc44.x86_64'
+make[1]: Entering directory '/tmp/tmpnmdj2vq5/kernel/drivers/hv/dxgkrnl'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (GCC) 16.0.1 20260321 (Red Hat 16.0.1-0)
+  You are using:           gcc (GCC) 16.2.1 20261029 (Red Hat 16.2.1-3)
+  CC [M]  dxgmodule.o
+  CC [M]  hmgr.o
+  CC [M]  misc.o
+  CC [M]  dxgadapter.o
+  CC [M]  ioctl.o
+  CC [M]  dxgvmbus.o
+  CC [M]  dxgprocess.o
+  CC [M]  dxgsyncfile.o
+  LD [M]  dxgkrnl.o
+  MODPOST Module.symvers
+  CC [M]  dxgkrnl.mod.o
+  CC [M]  .module-common.o
+  LD [M]  dxgkrnl.ko
+Skipping BTF generation for dxgkrnl.ko due to unavailability of vmlinux
+  BTF [M] dxgkrnl.ko
+make[1]: Leaving directory '/tmp/tmpnmdj2vq5/kernel/drivers/hv/dxgkrnl'
+make: Leaving directory '/usr/src/kernels/6.19.10-300.fc44.x86_64'
+glibc 2.43, x86_64, kernel 6.19.10-300.fc44.x86_64, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib64/dri/d3d12_drv_video.so']
+OpenCL ICD: ['/etc/OpenCL/vendors/intel.icd']
+glibc 2.43, x86_64, kernel 6.19.10-300.fc44.x86_64, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib64/dri/d3d12_drv_video.so']
+OpenCL ICD: ['/etc/OpenCL/vendors/intel.icd']
+/usr/lib/modules/6.19.10-300.fc44.x86_64/updates/gpupv/dxgkrnl.ko
+-rw-r--r--. 1 root root system_u:object_r:modules_object_t:s0 4416627 Nov 24 03:20 /lib/modules/6.19.10-300.fc44.x86_64/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+crw-rw----. 1 root video 10, 262 Nov 24 03:21 /dev/dxg
+boot_id=60b81f33-9c8e-4f2b-a8c3-770d6f87800f uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+SecureBoot enabled
+GPU-PV module signing
+25:93:E3:5E:51:3F:AB:46:8A:FB:1B:94:8C:52:43:4D:D3:56:84:D6
+O
+module dxgkrnl format gpupv +p
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+libva info: va_openDriver() returns 0
+Trying display: drm
+vainfo: VA-API version: 1.23 (libva 2.23.0)
+vainfo: Driver version: Mesa Gallium driver 26.2.7 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+libva info: VA-API version 1.23.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib64/dri-nonfree/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri-freeworld/d3d12_drv_video.so
+libva info: Trying to open /usr/lib64/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_23
+pci id for fd 3: 1414:0006, driver (null)
+pci id for fd 4: 1414:0006, driver (null)
+pci id for fd 5: 1414:0006, driver (null)
+libva error: /usr/lib64/dri/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+Trying display: drm
+comparison_exit=77
+No accessible Intel D3D12 VA display exposing both H.264 encode and decode.

@@ -1,0 +1,518 @@
+NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+Linux gpupv-test-2729c6f5348a4774a22d5de227279342 7.3.4-arch1-2 #1 SMP PREEMPT_DYNAMIC Thu, 12 Nov 2026 20:11:37 +0000 x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),983(video),998(wheel),1000(sudo)
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (6) python-cffi-2.1.1-1  python-cryptography-50.0.2-2  python-pefile-2024.8.26-2  python-pycparser-3.12-1  sbsigntools-0.9.5-5  systemd-ukify-262.2-1
+
+Total Download Size:   2.14 MiB
+Total Installed Size:  9.93 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ python-cryptography-50.0.2-2-x86_64 downloading...
+ python-cffi-2.1.1-1-x86_64 downloading...
+ python-pefile-2024.8.26-2-any downloading...
+ python-pycparser-3.12-1-any downloading...
+ sbsigntools-0.9.5-5-x86_64 downloading...
+ systemd-ukify-262.2-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing python-pycparser...
+installing python-cffi...
+Optional dependencies for python-cffi
+    python-setuptools: "limited api" version checking in cffi.setuptools_ext
+installing python-cryptography...
+installing python-pefile...
+installing systemd-ukify...
+Optional dependencies for systemd-ukify
+    python-pillow: Show the size of splash image
+    sbsigntools: Sign the embedded kernel [pending]
+installing sbsigntools...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+Signing Unsigned original image
+Kernel version not specified, starting autodetection 😖.
+Found uname version: 7.3.4-arch1-2
+Wrote unsigned /var/tmp/gpupv-uki.IxOUsCq9/unsigned.efi
+Signing Unsigned original image
+Signature verification OK
+0457b2bea26f1af814fb6639fbdbf25d3d33dd7528d1899ba5c2145a7eef0814  /efi/EFI/gpupv-test-shim/grubx64.efi
+6fe6e1bcbe6cf6baec8e056d40361ca1aa715cc04ddcc2855351de060b84350b  /efi/EFI/BOOT/BOOTX64.EFI
+Running timer as unit: run-p572-i572.timer
+Will run service as unit: run-p572-i572.service
+gpupv-test-2729c6f5348a4774a22d5de227279342
+7.3.4-arch1-2
+SecureBoot enabled
+root=UUID=a4fe6a47-a8cc-4beb-966a-7757429a6771 rw net.ifnames=0 rootflags=compress=zstd:1 console=tty0 console=ttyS0,115200
+0x1414
+0x008e
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (3) intel-gmmlib-22.10.2-1  intel-graphics-compiler-1:2.42.6-1  intel-compute-runtime-26.40.40196.8-1
+
+Total Download Size:    82.78 MiB
+Total Installed Size:  394.81 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ intel-graphics-compiler-1:2.42.6-1-x86_64 downloading...
+ intel-compute-runtime-26.40.40196.8-1-x86_64 downloading...
+ intel-gmmlib-22.10.2-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing intel-gmmlib...
+installing intel-graphics-compiler...
+installing intel-compute-runtime...
+Optional dependencies for intel-compute-runtime
+    igsc<2.0.0: for discrete GPU firmware enumeration through Level Zero
+    libdrm: for cl_intel_va_api_media_sharing OpenCL extension [installed]
+    libnl>=3.0.0: for using Fabric related APIs in Level Zero [installed]
+    libnl<4.0.0: for using Fabric related APIs in Level Zero [installed]
+    libva: for cl_intel_va_api_media_sharing OpenCL extension [installed]
+    systemd-libs: for using Sysman events API in Level Zero [installed]
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+package exit=0
+total 4
+-rw-r--r-- 1 root root 35 Nov  7 13:25 intel.icd
+a327c651ea989fdec88eb6aec3cc3e8e2919625b39616c98522f0ef89cefd7a0  /mnt/gpupv/guest/gpupv-guest
+4001f40d3fe9652feb87174e5653794e8754f07a2c10ca7446566a55ba029d43  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+probe.c:2:28: error: ‘struct dma_fence_ops’ has no member named ‘fence_value_str’
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[3]: *** [/usr/lib/modules/7.3.4-arch1-2/build/scripts/Makefile.build:290: probe.o] Error 1
+make[2]: *** [/usr/lib/modules/7.3.4-arch1-2/build/Makefile:2229: .] Error 2
+make[1]: *** [/usr/lib/modules/7.3.4-arch1-2/build/Makefile:248: __sub-make] Error 2
+make: *** [Makefile:248: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/lib/modules/7.3.4-arch1-2/build'
+make[1]: Entering directory '/tmp/tmp_rt25qek/kernel/drivers/hv/dxgkrnl'
+  CC [M]  dxgmodule.o
+  CC [M]  hmgr.o
+  CC [M]  misc.o
+  CC [M]  dxgadapter.o
+  CC [M]  ioctl.o
+  CC [M]  dxgvmbus.o
+  CC [M]  dxgprocess.o
+  CC [M]  dxgsyncfile.o
+  LD [M]  dxgkrnl.o
+  MODPOST Module.symvers
+  CC [M]  dxgkrnl.mod.o
+  CC [M]  .module-common.o
+  LD [M]  dxgkrnl.ko
+  BTF [M] dxgkrnl.ko
+make[1]: Leaving directory '/tmp/tmp_rt25qek/kernel/drivers/hv/dxgkrnl'
+make: Leaving directory '/usr/lib/modules/7.3.4-arch1-2/build'
+glibc 2.44, x86_64, kernel 7.3.4-arch1-2, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib64/dri/d3d12_drv_video.so', '/usr/lib/dri/d3d12_drv_video.so']
+OpenCL ICD: ['/etc/OpenCL/vendors/intel.icd']
+glibc 2.44, x86_64, kernel 7.3.4-arch1-2, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib64/dri/d3d12_drv_video.so', '/usr/lib/dri/d3d12_drv_video.so']
+OpenCL ICD: ['/etc/OpenCL/vendors/intel.icd']
+/usr/lib/modules/7.3.4-arch1-2/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4651203 Nov 24 03:55 /lib/modules/7.3.4-arch1-2/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),983(video),998(wheel),1000(sudo)
+crw-rw---- 1 root video 10, 262 Nov 24 03:56 /dev/dxg
+boot_id=4da67e82-2410-4e20-accc-af01649e2f05 uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+SecureBoot enabled
+GPU-PV module signing
+47:9A:80:16:D6:59:EB:3C:A2:A1:3E:C2:93:D0:2D:DB:43:F3:32:52
+O
+module dxgkrnl format gpupv +p
+vainfo: Driver version: Mesa Gallium driver 26.3.1-arch1.3 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+device=/dev/dri/renderD128 drm=/sys/devices/faux/vgem/drm/renderD128
+ffmpeg version n9.1 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16 (GCC)
+  configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-amf --enable-avisynth --enable-cuda-llvm --enable-lto --enable-fontconfig --enable-frei0r --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-lcms2 --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libdav1d --enable-libdrm --enable-libdvdnav --enable-libdvdread --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libharfbuzz --enable-libiec61883 --enable-libjack --enable-libjxl --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libplacebo --enable-libpulse --enable-librav1e --enable-librsvg --enable-librubberband --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpl --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-nvdec --enable-nvenc --enable-opencl --enable-shared --enable-vapoursynth --enable-version3 --enable-vulkan --disable-decoder=magicyuv
+  libavutil      61. 19.100 / 61. 19.100
+  libavcodec     63. 24.100 / 63. 24.100
+  libavformat    63. 16.100 / 63. 16.100
+  libavdevice    63.  5.100 / 63.  5.100
+  libavfilter    12.  8.100 / 12.  8.100
+  libswscale     10.  5.100 / 10.  5.100
+  libswresample   7.  6.100 /  7.  6.100
+[vist#0:0/vp9 @ 0x560220c77340] Selecting decoder 'vp9' because of requested hwaccel method vaapi
+Input #0, ivf, from '/tmp/tmp.TDwBDfGax8/input.ivf':
+  Duration: 00:00:01.00, start: 0.000000, bitrate: 321 kb/s
+  Stream #0:0: Video: vp9 (Profile 0), 1 reference frame (VP90 / 0x30395056), yuv420p(tv), 320x240, 15 tbr, 15 tbn
+[out#0/framemd5 @ 0x560220c7d1c0] No explicit maps, mapping streams automatically...
+[vost#0:0/rawvideo @ 0x560220c7d9c0] Created video stream from input stream 0:0
+[VAAPI @ 0x560220cc61c0] libva: VA-API version 1.24.0
+[VAAPI @ 0x560220cc61c0] libva: User environment variable requested driver 'd3d12'
+[VAAPI @ 0x560220cc61c0] libva: Trying to open /usr/lib/dri/d3d12_drv_video.so
+[VAAPI @ 0x560220cc61c0] libva: Found init function __vaDriverInit_1_24
+[VAAPI @ 0x560220cc61c0] libva: va_openDriver() returns 0
+[VAAPI @ 0x560220cc61c0] Initialised VAAPI connection: version 1.24
+[VAAPI @ 0x560220cc61c0] VAAPI driver: Mesa Gallium driver 26.3.1-arch1.3 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[VAAPI @ 0x560220cc61c0] Driver not found in known nonstandard list, using standard behaviour.
+Stream mapping:
+  Stream #0:0 -> #0:0 (vp9 (native) -> rawvideo (native))
+[vost#0:0/rawvideo @ 0x560220c7d9c0] Starting thread...
+[vf#0:0 @ 0x560220cc4000] Starting thread...
+[vist#0:0/vp9 @ 0x560220c77340] [dec:vp9 @ 0x560220c7cb40] Starting thread...
+[in#0/ivf @ 0x560220c75c80] Starting thread...
+[graph -1 input from stream 0:0 @ 0x7f8e9c001cc0] w:320 h:240 pixfmt:vaapi tb:1/15 fr:15/1 sar:0/1 csp:unknown range:tv alpha:unspecified chroma_loc:unspecified
+[graph -1 input from stream 0:0 @ 0x7f8e9c001cc0] video frame properties congruent with link at pts_time: 0
+Output #0, framemd5, to '/tmp/tmp.TDwBDfGax8/decoded':
+  Metadata:
+    encoder         : Lavf63.16.100
+  Stream #0:0: Video: rawvideo, 1 reference frame (NV12 / 0x3231564E), nv12(tv, progressive), 320x240, q=2-31, 13824 kb/s, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc63.24.100 rawvideo
+[out#0/framemd5 @ 0x560220c7d1c0] Starting thread...
+[in#0/ivf @ 0x560220c75c80] EOF while reading input
+[in#0/ivf @ 0x560220c75c80] Terminating thread with success
+[vist#0:0/vp9 @ 0x560220c77340] [dec:vp9 @ 0x560220c7cb40] Decoder thread received EOF packet
+[vist#0:0/vp9 @ 0x560220c77340] [dec:vp9 @ 0x560220c7cb40] Decoder returned EOF, finishing
+[vist#0:0/vp9 @ 0x560220c77340] [dec:vp9 @ 0x560220c7cb40] Terminating thread with success
+[vf#0:0 @ 0x560220cc4000] Filtergraph returned EOF, finishing
+[vf#0:0 @ 0x560220cc4000] All consumers returned EOF
+[vf#0:0 @ 0x560220cc4000] Terminating thread with success
+[vost#0:0/rawvideo @ 0x560220c7d9c0] [enc:rawvideo @ 0x560220c7dd80] Encoder thread received EOF
+[vost#0:0/rawvideo @ 0x560220c7d9c0] Terminating thread with success
+[out#0/framemd5 @ 0x560220c7d1c0] All streams finished
+[out#0/framemd5 @ 0x560220c7d1c0] Terminating thread with success
+[AVIOContext @ 0x560220f72480] Statistics: 1415 bytes written, 0 seeks, 1 writeouts
+[out#0/framemd5 @ 0x560220c7d1c0] Output file #0 (/tmp/tmp.TDwBDfGax8/decoded):
+[out#0/framemd5 @ 0x560220c7d1c0]   Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (1728000 bytes); 
+[out#0/framemd5 @ 0x560220c7d1c0]   Total: 15 packets (1728000 bytes) muxed
+[out#0/framemd5 @ 0x560220c7d1c0] video:1688KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=   15 fps=0.0 q=-0.0 Lsize=       1KiB time=00:00:01.00 bitrate=  11.3kbits/s speed=4.56x elapsed=0:00:00.21    
+[in#0/ivf @ 0x560220c75c80] Input file #0 (/tmp/tmp.TDwBDfGax8/input.ivf):
+[in#0/ivf @ 0x560220c75c80]   Input stream #0:0 (video): 15 packets read (39954 bytes); 15 frames decoded; 0 decode errors; 
+[in#0/ivf @ 0x560220c75c80]   Total: 15 packets (39954 bytes) demuxed
+[AVIOContext @ 0x560220c7e840] Statistics: 40166 bytes read, 0 seeks
+
+Exiting with exit code 0
+Intel D3D12 VP9 hardware decode: 15/15 frames match software reference
+ffmpeg version n9.1 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 16 (GCC)
+  configuration: --prefix=/usr --disable-debug --disable-static --disable-stripping --enable-amf --enable-avisynth --enable-cuda-llvm --enable-lto --enable-fontconfig --enable-frei0r --enable-gmp --enable-gnutls --enable-gpl --enable-ladspa --enable-lcms2 --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libdav1d --enable-libdrm --enable-libdvdnav --enable-libdvdread --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libharfbuzz --enable-libiec61883 --enable-libjack --enable-libjxl --enable-libmodplug --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libplacebo --enable-libpulse --enable-librav1e --enable-librsvg --enable-librubberband --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libv4l2 --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpl --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-nvdec --enable-nvenc --enable-opencl --enable-shared --enable-vapoursynth --enable-version3 --enable-vulkan --disable-decoder=magicyuv
+  libavutil      61. 19.100 / 61. 19.100
+  libavcodec     63. 24.100 / 63. 24.100
+  libavformat    63. 16.100 / 63. 16.100
+  libavdevice    63.  5.100 / 63.  5.100
+  libavfilter    12.  8.100 / 12.  8.100
+  libswscale     10.  5.100 / 10.  5.100
+  libswresample   7.  6.100 /  7.  6.100
+[VAAPI @ 0x560b12613c80] libva: VA-API version 1.24.0
+[VAAPI @ 0x560b12613c80] libva: User environment variable requested driver 'd3d12'
+[VAAPI @ 0x560b12613c80] libva: Trying to open /usr/lib/dri/d3d12_drv_video.so
+[VAAPI @ 0x560b12613c80] libva: Found init function __vaDriverInit_1_24
+[VAAPI @ 0x560b12613c80] libva: va_openDriver() returns 0
+[VAAPI @ 0x560b12613c80] Initialised VAAPI connection: version 1.24
+[VAAPI @ 0x560b12613c80] VAAPI driver: Mesa Gallium driver 26.3.1-arch1.3 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[VAAPI @ 0x560b12613c80] Driver not found in known nonstandard list, using standard behaviour.
+[Parsed_testsrc2_0 @ 0x560b128a6bc0] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 15 tbn
+[out#0/hevc @ 0x560b128d1000] No explicit maps, mapping streams automatically...
+[vost#0:0/hevc_vaapi @ 0x560b128d1780] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> hevc (hevc_vaapi))
+[vost#0:0/hevc_vaapi @ 0x560b128d1780] Starting thread...
+[vf#0:0 @ 0x560b128d2000] Starting thread...
+[vist#0:0/wrapped_avframe @ 0x560b128cfe80] [dec:wrapped_avframe @ 0x560b128b8ac0] Starting thread...
+[in#0/lavfi @ 0x560b12896d40] Starting thread...
+[graph -1 input from stream 0:0 @ 0x7f6c64001d40] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1 csp:unknown range:unknown alpha:unspecified chroma_loc:unspecified
+[auto_scale_0 @ 0x7f6c64003c00] w:iw h:ih flags:'' interl:0
+[Parsed_format_0 @ 0x7f6c640013c0] auto-inserting filter 'auto_scale_0' between the filter 'graph -1 input from stream 0:0' and the filter 'Parsed_format_0'
+[auto_scale_0 @ 0x7f6c64003c00] w:320 h:240 fmt:yuv420p csp:unknown range:unknown sar:1/1 -> w:320 h:240 fmt:nv12 csp:unknown range:tv sar:1/1 flags:0x00000004
+[auto_scale_0 @ 0x7f6c64003c00] [framesync @ 0x7f6c64003d10] Selected 1/15 time base
+[auto_scale_0 @ 0x7f6c64003c00] [framesync @ 0x7f6c64003d10] Sync level 1
+[graph -1 input from stream 0:0 @ 0x7f6c64001d40] video frame properties congruent with link at pts_time: 0
+[vost#0:0/hevc_vaapi @ 0x560b128d1780] [enc:hevc_vaapi @ 0x560b128d1cc0] Using input frames context (format vaapi) with hevc_vaapi encoder.
+[hevc_vaapi @ 0x560b128cf900] Input surface format is nv12.
+[hevc_vaapi @ 0x560b128cf900] Using VAAPI profile VAProfileHEVCMain (17).
+[hevc_vaapi @ 0x560b128cf900] Using VAAPI entrypoint VAEntrypointEncSlice (6).
+[hevc_vaapi @ 0x560b128cf900] Using VAAPI render target format YUV420 (0x1).
+[hevc_vaapi @ 0x560b128cf900] Using CTU size 64x64, min CB size 8x8.
+[hevc_vaapi @ 0x560b128cf900] No quality level set; using default (25).
+[hevc_vaapi @ 0x560b128cf900] RC mode: CQP.
+[hevc_vaapi @ 0x560b128cf900] Block Level bitrate control: OFF.
+[hevc_vaapi @ 0x560b128cf900] RC quality: 25.
+[hevc_vaapi @ 0x560b128cf900] RC framerate: 15/1 (15.00 fps).
+[hevc_vaapi @ 0x560b128cf900] Driver does not support P-frames, replacing them with B-frames.
+[hevc_vaapi @ 0x560b128cf900] Using intra and B-frames (supported references: 2 / 1).
+[hevc_vaapi @ 0x560b128cf900] All wanted packed headers available (wanted 0xd, found 0x1f).
+[hevc_vaapi @ 0x560b128cf900] Using level 2.
+Output #0, hevc, to '/tmp/tmp.TDwBDfGax8/encoded.hevc':
+  Metadata:
+    encoder         : Lavf63.16.100
+  Stream #0:0: Video: hevc (Main), 1 reference frame, nv12(tv, progressive), 320x240 [SAR 1:1 DAR 4:3], q=2-31, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc63.24.100 hevc_vaapi
+[out#0/hevc @ 0x560b128d1000] Starting thread...
+[hevc_vaapi @ 0x560b128cf900] Failed to end picture encode issue: 1 (operation failed).
+[hevc_vaapi @ 0x560b128cf900] Encode failed: Input/output error.
+[vost#0:0/hevc_vaapi @ 0x560b128d1780] [enc:hevc_vaapi @ 0x560b128d1cc0] Error submitting video frame to the encoder
+[vost#0:0/hevc_vaapi @ 0x560b128d1780] [enc:hevc_vaapi @ 0x560b128d1cc0] Error encoding a frame: Input/output error
+[vost#0:0/hevc_vaapi @ 0x560b128d1780] Task finished with error: Input/output error
+[vost#0:0/hevc_vaapi @ 0x560b128d1780] Terminating thread with error: Input/output error
+[out#0/hevc @ 0x560b128d1000] All streams finished
+[out#0/hevc @ 0x560b128d1000] Terminating thread with success
+[in#0/lavfi @ 0x560b12896d40] Terminating thread with success
+[vf#0:0 @ 0x560b128d2000] All consumers returned EOF
+[vist#0:0/wrapped_avframe @ 0x560b128cfe80] [dec:wrapped_avframe @ 0x560b128b8ac0] Decoder returned EOF, finishing
+[vist#0:0/wrapped_avframe @ 0x560b128cfe80] [dec:wrapped_avframe @ 0x560b128b8ac0] Terminating thread with success
+[vf#0:0 @ 0x560b128d2000] Terminating thread with success
+[AVIOContext @ 0x560b1287dec0] Statistics: 0 bytes written, 0 seeks, 0 writeouts
+[out#0/hevc @ 0x560b128d1000] Output file #0 (/tmp/tmp.TDwBDfGax8/encoded.hevc):
+[out#0/hevc @ 0x560b128d1000]   Output stream #0:0 (video): 8 frames encoded; 4 packets muxed (0 bytes); 
+[out#0/hevc @ 0x560b128d1000]   Total: 4 packets (0 bytes) muxed
+[out#0/hevc @ 0x560b128d1000] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    4 fps=0.0 q=-0.0 Lsize=       0KiB time=00:00:00.20 bitrate=   0.0kbits/s speed=0.463x elapsed=0:00:00.43    
+gpupv-video-profiles: line 7:   595 Killed                     timeout -k 4 30 ffmpeg -y -nostdin -loglevel verbose -vaapi_device "$dev" -f lavfi -i testsrc2=size=320x240:rate=15 -vf format=nv12,hwupload -frames:v 15 -c:v hevc_vaapi -f hevc "$work/encoded.hevc"
+identical_to_installed
+gpupv-va-runtime.tgz: OK
+ffmpeg	7:6.1.1-3ubuntu5
+libc6:amd64	2.39-0ubuntu8.9
+libllvm20:amd64	1:20.1.2-0ubuntu1~24.04.3
+libva2:amd64	2.20.0-2ubuntu0.2
+mesa-libgallium:amd64	25.2.8-0ubuntu0.24.04.5
+mesa-va-drivers:amd64	25.2.8-0ubuntu0.24.04.5
+vainfo	2.12.0+ds1-1
+total 0
+crw-rw---- 1 root video  226,   0 Nov 24 03:56 card0
+crw-rw---- 1 root video  226,   1 Nov 24 03:56 card1
+crw-rw-rw- 1 root render 226, 128 Nov 24 03:56 renderD128
+MESA-LOADER: failed to retrieve device information
+vainfo.bin: VA-API version: 1.20 (libva 2.12.0)
+vainfo.bin: Driver version: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.5 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo.bin: Supported profile and entrypoints
+      VAProfileH264ConstrainedBaseline:	VAEntrypointVLD
+      VAProfileH264ConstrainedBaseline:	VAEntrypointEncSlice
+      VAProfileH264Main               :	VAEntrypointVLD
+      VAProfileH264Main               :	VAEntrypointEncSlice
+      VAProfileH264High               :	VAEntrypointVLD
+      VAProfileH264High               :	VAEntrypointEncSlice
+      VAProfileHEVCMain               :	VAEntrypointVLD
+      VAProfileHEVCMain               :	VAEntrypointEncSlice
+      VAProfileHEVCMain10             :	VAEntrypointVLD
+      VAProfileHEVCMain10             :	VAEntrypointEncSlice
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+Testing Intel D3D12 H.264 on /dev/dri/renderD128
+[AVHWDeviceContext @ 0x55555d4a1ac0] libva: VA-API version 1.20.0
+[AVHWDeviceContext @ 0x55555d4a1ac0] libva: User environment variable requested driver 'd3d12'
+[AVHWDeviceContext @ 0x55555d4a1ac0] libva: Trying to open /home/tester/gpupv-va.6oPVd9Ju/lib/d3d12_drv_video.so
+[AVHWDeviceContext @ 0x55555d4a1ac0] libva: Found init function __vaDriverInit_1_20
+MESA-LOADER: failed to retrieve device information
+[AVHWDeviceContext @ 0x55555d4a1ac0] libva: va_openDriver() returns 0
+[AVHWDeviceContext @ 0x55555d4a1ac0] Initialised VAAPI connection: version 1.20
+[AVHWDeviceContext @ 0x55555d4a1ac0] VAAPI driver: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.5 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[AVHWDeviceContext @ 0x55555d4a1ac0] Driver not found in known nonstandard list, using standard behaviour.
+[Parsed_testsrc2_0 @ 0x55555d74ad80] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 15 tbn
+[out#0/h264 @ 0x55555d7927c0] No explicit maps, mapping streams automatically...
+[vost#0:0/h264_vaapi @ 0x55555d7939c0] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (h264_vaapi))
+[graph 0 input from stream 0:0 @ 0x55555d7fce00] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1
+[auto_scale_0 @ 0x55555d7fe0c0] w:iw h:ih flags:'' interl:0
+[Parsed_format_0 @ 0x55555d794500] auto-inserting filter 'auto_scale_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_format_0'
+[auto_scale_0 @ 0x55555d7fe0c0] w:320 h:240 fmt:yuv420p sar:1/1 -> w:320 h:240 fmt:nv12 sar:1/1 flags:0x00000004
+[h264_vaapi @ 0x55555d793d80] Using input frames context (format vaapi) with h264_vaapi encoder.
+[h264_vaapi @ 0x55555d793d80] Input surface format is nv12.
+[h264_vaapi @ 0x55555d793d80] Using VAAPI profile VAProfileH264High (7).
+[h264_vaapi @ 0x55555d793d80] Using VAAPI entrypoint VAEntrypointEncSlice (6).
+[h264_vaapi @ 0x55555d793d80] Using VAAPI render target format YUV420 (0x1).
+[h264_vaapi @ 0x55555d793d80] No quality level set; using default (20).
+[h264_vaapi @ 0x55555d793d80] RC mode: CQP.
+[h264_vaapi @ 0x55555d793d80] RC quality: 20.
+[h264_vaapi @ 0x55555d793d80] RC framerate: 15/1 (15.00 fps).
+[h264_vaapi @ 0x55555d793d80] Driver does not report any additional prediction constraints.
+[h264_vaapi @ 0x55555d793d80] Using intra and P-frames (supported references: 2 / 0).
+[h264_vaapi @ 0x55555d793d80] All wanted packed headers available (wanted 0xd, found 0x1f).
+[h264_vaapi @ 0x55555d793d80] Using level 1.2.
+Output #0, h264, to '/tmp/tmp.sr4bTsUHiC/test.h264':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: h264 (High), 1 reference frame, vaapi(tv, progressive), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 h264_vaapi
+gpupv-codec-comparison: line 18:   663 Killed                     timeout -k 5 60 ffmpeg -nostdin -nostats -hide_banner -loglevel verbose -vaapi_device "$node" -f lavfi -i testsrc2=size=320x240:rate=15 -vf format=nv12,hwupload -frames:v 15 -c:v h264_vaapi -f h264 "$tmp/test.h264"
+isolated_va_exit=137
+vainfo.bin: Driver version: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.5 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+device=/dev/dri/renderD128 drm=/sys/devices/faux/vgem/drm/renderD128
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+Selecting decoder 'vp9' because of requested hwaccel method vaapi
+Input #0, ivf, from '/tmp/tmp.fFW4YmeBGO/input.ivf':
+  Duration: 00:00:01.00, start: 0.000000, bitrate: 313 kb/s
+  Stream #0:0: Video: vp9 (Profile 0), 1 reference frame (VP90 / 0x30395056), yuv420p(tv), 320x240, 15 tbr, 15 tbn
+[out#0/framemd5 @ 0x55558b3edb80] No explicit maps, mapping streams automatically...
+[vost#0:0/rawvideo @ 0x55558b3f8980] Created video stream from input stream 0:0
+[AVHWDeviceContext @ 0x55558b426cc0] libva: VA-API version 1.20.0
+[AVHWDeviceContext @ 0x55558b426cc0] libva: User environment variable requested driver 'd3d12'
+[AVHWDeviceContext @ 0x55558b426cc0] libva: Trying to open /home/tester/gpupv-va.6oPVd9Ju/lib/d3d12_drv_video.so
+[AVHWDeviceContext @ 0x55558b426cc0] libva: Found init function __vaDriverInit_1_20
+MESA-LOADER: failed to retrieve device information
+[AVHWDeviceContext @ 0x55558b426cc0] libva: va_openDriver() returns 0
+[AVHWDeviceContext @ 0x55558b426cc0] Initialised VAAPI connection: version 1.20
+[AVHWDeviceContext @ 0x55558b426cc0] VAAPI driver: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.5 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[AVHWDeviceContext @ 0x55558b426cc0] Driver not found in known nonstandard list, using standard behaviour.
+Stream mapping:
+  Stream #0:0 -> #0:0 (vp9 (native) -> rawvideo (native))
+[graph 0 input from stream 0:0 @ 0x55558b6e7240] w:320 h:240 pixfmt:vaapi tb:1/15 fr:15/1 sar:0/1
+Output #0, framemd5, to '/tmp/tmp.fFW4YmeBGO/decoded':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: rawvideo, 1 reference frame (NV12 / 0x3231564E), nv12(tv, progressive), 320x240 (0x0), q=2-31, 13824 kb/s, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 rawvideo
+frame=    0 fps=0.0 q=-0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    
+[in#0/ivf @ 0x55558b3e7a00] EOF while reading input
+[in#0/ivf @ 0x55558b3e7a00] Terminating demuxer thread
+[vist#0:0/vp9 @ 0x55558b3e8cc0] Decoder thread received EOF packet
+[vist#0:0/vp9 @ 0x55558b3e8cc0] Decoder returned EOF, finishing
+[vist#0:0/vp9 @ 0x55558b3e8cc0] Terminating decoder thread
+No more output streams to write to, finishing.
+[out#0/framemd5 @ 0x55558b3edb80] All streams finished
+[out#0/framemd5 @ 0x55558b3edb80] Terminating muxer thread
+[AVIOContext @ 0x55558b6f8200] Statistics: 1415 bytes written, 0 seeks, 1 writeouts
+[out#0/framemd5 @ 0x55558b3edb80] Output file #0 (/tmp/tmp.fFW4YmeBGO/decoded):
+[out#0/framemd5 @ 0x55558b3edb80]   Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (1728000 bytes); 
+[out#0/framemd5 @ 0x55558b3edb80]   Total: 15 packets (1728000 bytes) muxed
+[out#0/framemd5 @ 0x55558b3edb80] video:1688kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+frame=   15 fps=0.0 q=-0.0 Lsize=       1kB time=00:00:00.93 bitrate=  12.1kbits/s speed=4.56x    
+[in#0/ivf @ 0x55558b3e7a00] Input file #0 (/tmp/tmp.fFW4YmeBGO/input.ivf):
+[in#0/ivf @ 0x55558b3e7a00]   Input stream #0:0 (video): 15 packets read (39033 bytes); 15 frames decoded; 0 decode errors; 
+[in#0/ivf @ 0x55558b3e7a00]   Total: 15 packets (39033 bytes) demuxed
+[AVIOContext @ 0x55558b3f01c0] Statistics: 39245 bytes read, 0 seeks
+Intel D3D12 VP9 hardware decode: 15/15 frames match software reference
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+[AVHWDeviceContext @ 0x55557073ea80] libva: VA-API version 1.20.0
+[AVHWDeviceContext @ 0x55557073ea80] libva: User environment variable requested driver 'd3d12'
+[AVHWDeviceContext @ 0x55557073ea80] libva: Trying to open /home/tester/gpupv-va.6oPVd9Ju/lib/d3d12_drv_video.so
+[AVHWDeviceContext @ 0x55557073ea80] libva: Found init function __vaDriverInit_1_20
+MESA-LOADER: failed to retrieve device information
+[AVHWDeviceContext @ 0x55557073ea80] libva: va_openDriver() returns 0
+[AVHWDeviceContext @ 0x55557073ea80] Initialised VAAPI connection: version 1.20
+[AVHWDeviceContext @ 0x55557073ea80] VAAPI driver: Mesa Gallium driver 25.2.8-0ubuntu0.24.04.5 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[AVHWDeviceContext @ 0x55557073ea80] Driver not found in known nonstandard list, using standard behaviour.
+[Parsed_testsrc2_0 @ 0x555570a274c0] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, 1 reference frame, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 15 tbn
+[out#0/hevc @ 0x555570a2f840] No explicit maps, mapping streams automatically...
+[vost#0:0/hevc_vaapi @ 0x555570a30800] Created video stream from input stream 0:0
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> hevc (hevc_vaapi))
+[graph 0 input from stream 0:0 @ 0x555570a97a80] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1
+[auto_scale_0 @ 0x555570a98e40] w:iw h:ih flags:'' interl:0
+[Parsed_format_0 @ 0x555570a31340] auto-inserting filter 'auto_scale_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_format_0'
+[auto_scale_0 @ 0x555570a98e40] w:320 h:240 fmt:yuv420p sar:1/1 -> w:320 h:240 fmt:nv12 sar:1/1 flags:0x00000004
+[hevc_vaapi @ 0x555570a30bc0] Using input frames context (format vaapi) with hevc_vaapi encoder.
+[hevc_vaapi @ 0x555570a30bc0] Input surface format is nv12.
+[hevc_vaapi @ 0x555570a30bc0] Using VAAPI profile VAProfileHEVCMain (17).
+[hevc_vaapi @ 0x555570a30bc0] Using VAAPI entrypoint VAEntrypointEncSlice (6).
+[hevc_vaapi @ 0x555570a30bc0] Using VAAPI render target format YUV420 (0x1).
+[hevc_vaapi @ 0x555570a30bc0] Using CTU size 64x64, min CB size 8x8.
+[hevc_vaapi @ 0x555570a30bc0] No quality level set; using default (25).
+[hevc_vaapi @ 0x555570a30bc0] RC mode: CQP.
+[hevc_vaapi @ 0x555570a30bc0] RC quality: 25.
+[hevc_vaapi @ 0x555570a30bc0] RC framerate: 15/1 (15.00 fps).
+[hevc_vaapi @ 0x555570a30bc0] Driver does not support P-frames, replacing them with B-frames.
+[hevc_vaapi @ 0x555570a30bc0] Using intra and B-frames (supported references: 2 / 1).
+[hevc_vaapi @ 0x555570a30bc0] All wanted packed headers available (wanted 0xd, found 0x1f).
+[hevc_vaapi @ 0x555570a30bc0] Using level 2.
+Output #0, hevc, to '/tmp/tmp.fFW4YmeBGO/encoded.hevc':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: hevc (Main), 1 reference frame, vaapi(tv, progressive), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc60.31.102 hevc_vaapi
+frame=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    
+gpupv-video-profiles: line 7:   718 Killed                     timeout -k 4 30 ffmpeg -y -nostdin -loglevel verbose -vaapi_device "$dev" -f lavfi -i testsrc2=size=320x240:rate=15 -vf format=nv12,hwupload -frames:v 15 -c:v hevc_vaapi -f hevc "$work/encoded.hevc"
+uid=1000(tester) gid=1001(tester) groups=1001(tester),983(video),998(wheel),1000(sudo)
+crw-rw---- 1 root video 10, 262 Nov 24 03:56 /dev/dxg
+
+/dev/dri:
+total 0
+crw-rw---- 1 root video  226,   0 Nov 24 03:56 card0
+crw-rw---- 1 root video  226,   1 Nov 24 03:56 card1
+crw-rw-rw- 1 root render 226, 128 Nov 24 03:56 renderD128
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/lib/libdxcore.so'
+	linux-vdso.so.1 (0x00007f5a1131c000)
+	libc.so.6 => /usr/lib/libc.so.6 (0x00007f5a10e00000)
+	libpthread.so.0 => /usr/lib/libpthread.so.0 (0x00007f5a11216000)
+	libm.so.6 => /usr/lib/libm.so.6 (0x00007f5a110df000)
+	libdl.so.2 => /usr/lib/libdl.so.2 (0x00007f5a110da000)
+	/usr/lib64/ld-linux-x86-64.so.2 (0x00007f5a1131e000)
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/lib/libd3d12.so'
+	linux-vdso.so.1 (0x00007fd7e0ab8000)
+	libc.so.6 => /usr/lib/libc.so.6 (0x00007fd7e0600000)
+	libpthread.so.0 => /usr/lib/libpthread.so.0 (0x00007fd7e09d4000)
+	libm.so.6 => /usr/lib/libm.so.6 (0x00007fd7e089d000)
+	libdl.so.2 => /usr/lib/libdl.so.2 (0x00007fd7e0898000)
+	/usr/lib64/ld-linux-x86-64.so.2 (0x00007fd7e0aba000)
+ldd: warning: you do not have execution permission for `/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so'
+	linux-vdso.so.1 (0x00007f4de60dc000)
+	libdl.so.2 => /usr/lib/libdl.so.2 (0x00007f4de60b4000)
+	libpthread.so.0 => /usr/lib/libpthread.so.0 (0x00007f4de60af000)
+	libstdc++.so.6 => /usr/lib/libstdc++.so.6 (0x00007f4de5c00000)
+	libm.so.6 => /usr/lib/libm.so.6 (0x00007f4de5f78000)
+	libgcc_s.so.1 => /usr/lib/libgcc_s.so.1 (0x00007f4de5f49000)
+	libc.so.6 => /usr/lib/libc.so.6 (0x00007f4de5800000)
+	/usr/lib64/ld-linux-x86-64.so.2 (0x00007f4de60de000)
+Platform #0: Intel(R) OpenCL Graphics (integrated)
+ `-- Device #0: Intel(R) Graphics [0x9a49]
+diagnostic_collection_finished
+managed_paths_clean
+managed_paths_clean

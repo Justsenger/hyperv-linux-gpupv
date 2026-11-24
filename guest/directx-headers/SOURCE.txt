@@ -1,0 +1,5 @@
+The headers in include/ are unmodified files from microsoft/DirectX-Headers,
+tag v1.614.1, commit 48a762973271c5a75869946bf1fdbc489a628a5c.
+The MIT license is reproduced in LICENSE. This subset is used to build the
+Linux D3D12 compute test offline from intel-compute.cpp with g++.
+https://github.com/microsoft/DirectX-Headers/tree/48a762973271c5a75869946bf1fdbc489a628a5c

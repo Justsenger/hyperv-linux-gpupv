@@ -1,0 +1,183 @@
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+Linux gpupv-test-76d49092ccb44e96b8cb1019fadc0bad 6.1.0-56-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.192-2 (2026-11-16) x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+0x1414
+0x008e
+a59d83df5394b44d92993722c5d305948431a82c417b933bd021ddbc77d6c721  /mnt/gpupv/guest/gpupv-guest
+4001f40d3fe9652feb87174e5653794e8754f07a2c10ca7446566a55ba029d43  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+/tmp/tmp.IA7B32ZD7O/probe.c: In function ‘p’:
+/tmp/tmp.IA7B32ZD7O/probe.c:2:62: error: too few arguments to function ‘eventfd_signal’
+    2 | void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+      |                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.IA7B32ZD7O/probe.c:1:
+/usr/src/linux-headers-6.1.0-56-common/include/linux/eventfd.h:42:7: note: declared here
+   42 | __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+      |       ^~~~~~~~~~~~~~
+make[1]: *** [/usr/src/linux-headers-6.1.0-56-common/scripts/Makefile.build:255: /tmp/tmp.IA7B32ZD7O/probe.o] Error 1
+make: *** [/usr/src/linux-headers-6.1.0-56-common/Makefile:2065: /tmp/tmp.IA7B32ZD7O] Error 2
+/tmp/tmp.IA7B32ZD7O/probe.c: In function ‘p’:
+/tmp/tmp.IA7B32ZD7O/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Werror=int-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.IA7B32ZD7O/probe.c:1:
+/usr/src/linux-headers-6.1.0-56-common/include/linux/dma-fence.h:451:45: note: expected ‘u64’ {aka ‘long long unsigned int’} but argument is of type ‘struct dma_fence *’
+  451 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[1]: *** [/usr/src/linux-headers-6.1.0-56-common/scripts/Makefile.build:255: /tmp/tmp.IA7B32ZD7O/probe.o] Error 1
+make: *** [/usr/src/linux-headers-6.1.0-56-common/Makefile:2065: /tmp/tmp.IA7B32ZD7O] Error 2
+/tmp/tmp.IA7B32ZD7O/probe.c:3:33: error: initialization of ‘int (*)(struct hv_device *)’ from incompatible pointer type ‘void (*)(struct hv_device *)’ [-Werror=incompatible-pointer-types]
+    3 | struct hv_driver p = {.remove = remove};
+      |                                 ^~~~~~
+/tmp/tmp.IA7B32ZD7O/probe.c:3:33: note: (near initialization for ‘p.remove’)
+cc1: all warnings being treated as errors
+make[1]: *** [/usr/src/linux-headers-6.1.0-56-common/scripts/Makefile.build:255: /tmp/tmp.IA7B32ZD7O/probe.o] Error 1
+make: *** [/usr/src/linux-headers-6.1.0-56-common/Makefile:2065: /tmp/tmp.IA7B32ZD7O] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 0
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-6.1.0-56-amd64'
+  CC [M]  /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmpckcpf_o9/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-headers-6.1.0-56-amd64'
+ldconfig: /usr/lib/wsl/lib/libcuda.so.1 is not a symbolic link
+
+glibc 2.36, x86_64, kernel 6.1.0-56-amd64, preflight OK
+glibc 2.36, x86_64, kernel 6.1.0-56-amd64, preflight OK
+/usr/lib/modules/6.1.0-56-amd64/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 3605835 Nov 24 01:49 /lib/modules/6.1.0-56-amd64/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 124 Nov 24 01:50 /dev/dxg
+boot_id=e083254b-545d-4c76-ae3e-2230f447e73c uid=1000 gpu=NVIDIA GeForce RTX 2060
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 2060, 617.42, 6144 MiB
+NVIDIA GeForce RTX 2060: 7 * 5 + 3 = 38
+NVIDIA GeForce RTX 2060: 7 * 19 + 3 = 136
+NVIDIA GeForce RTX 2060: 7 * 127 + 3 = 892
+[Parsed_testsrc2_0 @ 0x564ec9a3e880] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: rawvideo, 1 reference frame (I420 / 0x30323449), yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 tbr, 15 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (h264_nvenc))
+Press [q] to stop, [?] for help
+[graph 0 input from stream 0:0 @ 0x564ec9a9c940] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1
+[h264_nvenc @ 0x564ec9a7ed00] Loaded Nvenc version 13.1
+[h264_nvenc @ 0x564ec9a7ed00] Nvenc initialized successfully
+[h264_nvenc @ 0x564ec9a7ed00] 1 CUDA capable devices found
+[h264_nvenc @ 0x564ec9a7ed00] [ GPU #0 - < NVIDIA GeForce RTX 2060 > has Compute SM 7.5 ]
+[h264_nvenc @ 0x564ec9a7ed00] supports NVENC
+Output #0, matroska, to '/tmp/tmp.ZT6EtobNYH/test.mkv':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: h264 (Main), 1 reference frame (H264 / 0x34363248), yuv420p(progressive), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 2000 kb/s, 15 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc59.37.100 h264_nvenc
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/2000000 buffer size: 4000000 vbv_delay: N/A
+frame=    1 fps=0.0 q=0.0 size=       1kB time=00:00:00.00 bitrate=N/A speed=N/A    
+No more output streams to write to, finishing.
+frame=   15 fps=0.0 q=13.0 Lsize=      68kB time=00:00:00.73 bitrate= 757.8kbits/s speed=2.79x    
+video:67kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.047843%
+Input file #0 (testsrc2=size=320x240:rate=15):
+  Input stream #0:0 (video): 15 packets read (1728000 bytes); 15 frames decoded; 
+  Total: 15 packets (1728000 bytes) demuxed
+Output file #0 (/tmp/tmp.ZT6EtobNYH/test.mkv):
+  Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (68808 bytes); 
+  Total: 15 packets (68808 bytes) muxed
+[AVIOContext @ 0x564ec9a9b980] Statistics: 69529 bytes written, 0 seeks, 1 writeouts
+[h264_nvenc @ 0x564ec9a7ed00] Nvenc unloaded
+[h264 @ 0x55dd74559080] Reinit context to 320x240, pix_fmt: yuv420p
+[h264 @ 0x55dd74559080] Increasing reorder buffer to 1
+Input #0, matroska,webm, from '/tmp/tmp.ZT6EtobNYH/test.mkv':
+  Metadata:
+    ENCODER         : Lavf59.27.100
+  Duration: 00:00:01.00, start: 0.000000, bitrate: 556 kb/s
+  Stream #0:0: Video: h264 (Main), 1 reference frame, yuv420p(progressive, left), 320x240 [SAR 1:1 DAR 4:3], 15 fps, 15 tbr, 1k tbn
+    Metadata:
+      ENCODER         : Lavc59.37.100 h264_nvenc
+      DURATION        : 00:00:01.000000000
+[h264_cuvid @ 0x55dd74570fc0] CUVID capabilities for h264_cuvid:
+[h264_cuvid @ 0x55dd74570fc0] 8 bit: supported: 1, min_width: 48, max_width: 4096, min_height: 16, max_height: 4096
+[h264_cuvid @ 0x55dd74570fc0] 10 bit: supported: 0, min_width: 0, max_width: 0, min_height: 0, max_height: 0
+[h264_cuvid @ 0x55dd74570fc0] 12 bit: supported: 0, min_width: 0, max_width: 0, min_height: 0, max_height: 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (h264_cuvid) -> rawvideo (native))
+Press [q] to stop, [?] for help
+[h264_cuvid @ 0x55dd74570fc0] Formats: Original: cuda | HW: cuda | SW: nv12
+[graph 0 input from stream 0:0 @ 0x55dd7570af40] w:320 h:240 pixfmt:cuda tb:1/1000 fr:15/1 sar:1/1
+Output #0, framemd5, to '/tmp/tmp.ZT6EtobNYH/frames':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: rawvideo, 1 reference frame (NV12 / 0x3231564E), nv12(tv, progressive, left), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 13824 kb/s, 15 fps, 15 tbn
+    Metadata:
+      DURATION        : 00:00:01.000000000
+      encoder         : Lavc59.37.100 rawvideo
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.06 bitrate=  35.4kbits/s speed=2.11x    
+No more output streams to write to, finishing.
+frame=   15 fps=0.0 q=-0.0 Lsize=       1kB time=00:00:01.00 bitrate=  11.3kbits/s speed=23.9x    
+video:1688kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (/tmp/tmp.ZT6EtobNYH/test.mkv):
+  Input stream #0:0 (video): 15 packets read (68808 bytes); 15 frames decoded; 
+  Total: 15 packets (68808 bytes) demuxed
+Output file #0 (/tmp/tmp.ZT6EtobNYH/frames):
+  Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (1728000 bytes); 
+  Total: 15 packets (1728000 bytes) muxed
+[AVIOContext @ 0x55dd74570440] Statistics: 1415 bytes written, 0 seeks, 1 writeouts
+[AVIOContext @ 0x55dd7455f540] Statistics: 69529 bytes read, 0 seeks
+#format: frame checksums
+#version: 2
+#hash: MD5
+#software: Lavf59.27.100
+#tb 0: 1/15
+#media_type 0: video
+#codec_id 0: rawvideo
+#dimensions 0: 320x240
+#sar 0: 1/1
+#stream#, dts,        pts, duration,     size, hash
+0,          0,          0,        1,   115200, 3c0039b1d57e8461f43e16e48743fad9
+0,          1,          1,        1,   115200, 51c502c18ac54d9d252a0e4fe3feb0fb
+0,          2,          2,        1,   115200, 89a2191eae4683ba175cb303c5b72c50
+0,          3,          3,        1,   115200, 1b4d2f918b1cc7dd61fe6193e53b1192
+0,          4,          4,        1,   115200, 6022bb7f9d64ebf0fe46c2baa321fe95
+0,          5,          5,        1,   115200, b53546040e1e80049a84c8c997303085
+0,          6,          6,        1,   115200, 788b12d5a9121254e06a9a62991da0ef
+0,          7,          7,        1,   115200, 0cf222d8856d05401bac950f7ce3901b
+0,          8,          8,        1,   115200, e8d006226cf0d63dc21cd4712b265449
+0,          9,          9,        1,   115200, 5035b34500e986dfd75a5682a9a9fe79
+0,         10,         10,        1,   115200, eacd8b9bb690e26262e008edbb5beb77
+0,         11,         11,        1,   115200, d4311bd8e331a13cc1ead1ebebbd719b
+0,         12,         12,        1,   115200, d1021614b76f59a0455dff346490bb80
+0,         13,         13,        1,   115200, f6c34c754ac563ca720cdf62af2c9c07
+0,         14,         14,        1,   115200, f7157233bf6faadd4b4c4c3ff93e12b5
+managed_paths_clean
+managed_paths_clean

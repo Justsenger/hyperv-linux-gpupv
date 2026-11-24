@@ -1,0 +1,5 @@
+8f06889d-2c9a-4488-84d9-e7cb8e496399 confirmed shim menu management
+8f06889d-2c9a-4488-84d9-e7cb8e496399 confirmed shim menu view
+8f06889d-2c9a-4488-84d9-e7cb8e496399 confirmed shim menu confirm
+8f06889d-2c9a-4488-84d9-e7cb8e496399 confirmed shim menu password
+8f06889d-2c9a-4488-84d9-e7cb8e496399 confirmed shim menu reboot

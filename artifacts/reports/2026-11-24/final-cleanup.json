@@ -1,0 +1,115 @@
+{
+  "checked": "2026-11-24T14:21:33.7946528+08:00",
+  "registeredTestVMs": [],
+  "workspaceVirtualDisks": [],
+  "workspaceTestDirectoryExists": false,
+  "hostTemporaryPayloads": [],
+  "hostIsoMounts": [
+    {
+      "file": "irisxe-x64.iso",
+      "attached": false
+    },
+    {
+      "file": "rtx2060-x64.iso",
+      "attached": false
+    }
+  ],
+  "finalGuests": [
+    {
+      "case": "e2e-arch-Intel-cfcb1eb5",
+      "vmId": "d37f09cd-6b1c-4682-b8cd-3d38e3169f45",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-cfcb1eb5148b47afb3d1b0cd24fb4603",
+      "exists": false
+    },
+    {
+      "case": "e2e-arch-NVIDIA-44f81025",
+      "vmId": "3d647bab-ea95-43f1-9167-7652a0d4ac70",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-44f810256ef04fedb922c4241aa17f34",
+      "exists": false
+    },
+    {
+      "case": "e2e-debian-12-Intel-531c460b",
+      "vmId": "d17a55a6-be34-4af4-a857-4a86d250e419",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-531c460b496946f99a72748599ee61c2",
+      "exists": false
+    },
+    {
+      "case": "e2e-debian-12-NVIDIA-9d68e914",
+      "vmId": "e4375783-2a00-4d0b-bf72-3f56937eca0a",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-9d68e914919a486083d4a84a60f946b4",
+      "exists": false
+    },
+    {
+      "case": "e2e-debian-13-Intel-02917cb4",
+      "vmId": "d7702a20-08d5-4c0c-ad7c-e507edaae44f",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-02917cb4ac2540c8bc8cb53ce9c27819",
+      "exists": false
+    },
+    {
+      "case": "e2e-debian-13-NVIDIA-8ec49a2d",
+      "vmId": "69ac7e3f-0c61-46ee-bd22-d16d6935c914",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-8ec49a2dfee24350bab35f983bce8649",
+      "exists": false
+    },
+    {
+      "case": "e2e-fedora-44-Intel-ad23c26f",
+      "vmId": "59e74013-5a6a-4def-a791-fda6bf0f9d97",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-ad23c26f92fb457980e9ef68d093b133",
+      "exists": false
+    },
+    {
+      "case": "e2e-fedora-44-NVIDIA-95100868",
+      "vmId": "05672d02-c059-44af-9fe8-4eac6616f448",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-951008680583407685e5db901ea9b321",
+      "exists": false
+    },
+    {
+      "case": "e2e-leap-15.6-Intel-40e8c4b1",
+      "vmId": "19862997-adda-45f2-9840-7348df86812e",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-40e8c4b1785f4bb1b15867ca43d31683",
+      "exists": false
+    },
+    {
+      "case": "e2e-leap-15.6-NVIDIA-fe7f4d3d",
+      "vmId": "82b217db-148a-4f2b-8542-0bfa941fd018",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-fe7f4d3d9bd346f48e16d6e530025fd2",
+      "exists": false
+    },
+    {
+      "case": "e2e-rocky-9-Intel-cad5cabe",
+      "vmId": "52bd3f8e-ad97-476e-ba49-9c9501015720",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-cad5cabe22f94eb989e1f00473f36124",
+      "exists": false
+    },
+    {
+      "case": "e2e-rocky-9-NVIDIA-1c7f6a03",
+      "vmId": "5c9c2b0d-2052-4f3b-bc59-589a9dc7c7a2",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-1c7f6a03a3d844fd874a1dbd11e20ec7",
+      "exists": false
+    },
+    {
+      "case": "e2e-ubuntu-22.04-Intel-c80c4bc3",
+      "vmId": "8f06889d-2c9a-4488-84d9-e7cb8e496399",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-c80c4bc3e0254bee9142b4ab583eb296",
+      "exists": false
+    },
+    {
+      "case": "e2e-ubuntu-22.04-NVIDIA-5204546b",
+      "vmId": "e1105ce6-af66-4674-bca7-c0b1204a6723",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-5204546b409944c589f2a4dd24c5e971",
+      "exists": false
+    },
+    {
+      "case": "e2e-ubuntu-24.04-Intel-fac26ffd",
+      "vmId": "19fd3fc1-96d1-47a0-8856-c6fc7bfa6bd0",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-fac26ffd6fb24031aa4bfbab5ba498ca",
+      "exists": false
+    },
+    {
+      "case": "e2e-ubuntu-24.04-NVIDIA-c9d0f3e8",
+      "vmId": "aa54488d-c011-407f-8f58-b7337fe319e4",
+      "directory": "D:\\linux-pv\\.test\\gpupv-test-c9d0f3e8bb7142399dbbc3efb3e93b0f",
+      "exists": false
+    }
+  ]
+}

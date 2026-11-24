@@ -1,0 +1,5 @@
+59e74013-5a6a-4def-a791-fda6bf0f9d97 confirmed shim menu management
+59e74013-5a6a-4def-a791-fda6bf0f9d97 confirmed shim menu view
+59e74013-5a6a-4def-a791-fda6bf0f9d97 confirmed shim menu confirm
+59e74013-5a6a-4def-a791-fda6bf0f9d97 confirmed shim menu password
+59e74013-5a6a-4def-a791-fda6bf0f9d97 confirmed shim menu reboot

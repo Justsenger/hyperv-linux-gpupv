@@ -1,0 +1,3 @@
+Unknown argument "--skip-unavailable" for command "dnf5". Add "--help" for more information about the arguments.
+The argument is available for commands: download, history rollback, module disable, do, history redo, distro-sync, replay, debuginfo-install, downgrade, history undo, reinstall, builddep, module enable, mark, group install, upgrade, environment upgrade, group upgrade, module reset, install, environment install. (It has to be placed after the command.)
+package exit=2

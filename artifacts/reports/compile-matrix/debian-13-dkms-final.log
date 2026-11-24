@@ -1,0 +1,54 @@
+Creating symlink /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/source -> /mnt/build/gpupv-test-final/sources/gpupv-dxgkrnl-0.1
+Sign command: /lib/modules/6.12.117+deb13-amd64/build/scripts/sign-file
+Signing key: /var/lib/dkms/mok.key
+Public certificate (MOK): /var/lib/dkms/mok.pub
+
+Building module(s).......... done.
+Signing module /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.ko
+gpupv-dxgkrnl/0.1, 6.12.117+deb13-amd64, x86_64: built
+DKMS (dkms-3.2.2) make.log for gpupv-dxgkrnl/0.1 for kernel 6.12.117+deb13-amd64 (x86_64)
+Mon Nov 23 08:49:15 UTC 2026
+
+Building module(s)
+# command: sh build /lib/modules/6.12.117+deb13-amd64/build
+/tmp/tmp.W60Voiec5M/probe.c: In function ‘p’:
+/tmp/tmp.W60Voiec5M/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Wint-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.W60Voiec5M/probe.c:1:
+/usr/src/linux-headers-6.12.117+deb13-common/include/linux/dma-fence.h:472:45: note: expected ‘u64’ {aka ‘long long unsigned int’} but argument is of type ‘struct dma_fence *’
+  472 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+make[2]: *** [/usr/src/linux-headers-6.12.117+deb13-common/scripts/Makefile.build:234: /tmp/tmp.W60Voiec5M/probe.o] Error 1
+make[1]: *** [/usr/src/linux-headers-6.12.117+deb13-common/Makefile:2008: /tmp/tmp.W60Voiec5M] Error 2
+make: *** [/usr/src/linux-headers-6.12.117+deb13-common/Makefile:236: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-6.12.117+deb13-amd64'
+  CC [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  CC [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/.module-common.o
+  LD [M]  /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /mnt/build/gpupv-test-final/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.ko
+make: Leaving directory '/usr/src/linux-headers-6.12.117+deb13-amd64'
+
+# exit code: 0
+# elapsed time: 00:00:24
+----------------------------------------------------------------

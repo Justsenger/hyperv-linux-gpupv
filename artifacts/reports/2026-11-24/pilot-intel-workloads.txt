@@ -1,0 +1,74 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+SecureBoot enabled
+crw-rw---- 1 root video 10, 263 Nov 24 01:35 /dev/dxg
+O
+DKMS module signing key
+/usr/lib/wsl/lib/libdxcore.so
+	linux-vdso.so.1 (0x00007f025ea7d000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f025e78f000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f025e78a000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f025e69a000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f025e695000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f025ea7f000)
+/usr/lib/wsl/lib/libd3d12.so
+	linux-vdso.so.1 (0x00007f49499f1000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f4949725000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f4949720000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f4949630000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f494962b000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f49499f3000)
+/usr/lib/wsl/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so
+	linux-vdso.so.1 (0x00007f7aa4374000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f7aa4353000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f7aa434e000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f7aa4000000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f7aa3f10000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f7aa431f000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f7aa3d1c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f7aa4376000)
+DXCoreCreateAdapterFactory = 0x00000000
+CreateAdapterList(D3D12_GRAPHICS) = 0x00000000
+Adapter count = 1
+Adapter 0: 8086:9a49 hardware=1 Intel(R) Iris(R) Xe Graphics
+D3D12CreateDevice(11_0) = 0x00000000
+dxcore_exit=0
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 8086:9a49 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x80004001
+CreateComputePipelineState
+compute_exit=1
+total 0
+crw-rw---- 1 root video 226, 0 Nov 24 01:24 card0
+libva info: VA-API version 1.22.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_22
+pci id for fd 3: 1414:0006, driver (null)
+pci id for fd 4: 1414:0006, driver (null)
+kmsro: driver missing
+libva error: /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so init failed
+libva info: va_openDriver() returns 2
+vaInitialize failed with error code 2 (resource allocation failed),exit
+Trying display: drm
+No accessible Intel D3D12 VA display exposing both H.264 encode and decode.
+video_exit=77
+[  617.393018] dxgkrnl: loading out-of-tree module taints kernel.
+[  617.399634] hv_vmbus: registering driver dxgkrnl
+[  618.286388] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[  618.288946] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  618.290287] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  618.292428] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  618.293584] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[  618.575332] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[  618.576922] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  618.578057] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  618.579673] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[  618.580906] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2

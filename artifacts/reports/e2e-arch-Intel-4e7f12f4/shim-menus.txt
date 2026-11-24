@@ -1,0 +1,5 @@
+c0d1ca6a-6fc0-47ca-81e3-974872e3a4e8 confirmed shim menu management
+c0d1ca6a-6fc0-47ca-81e3-974872e3a4e8 confirmed shim menu view
+c0d1ca6a-6fc0-47ca-81e3-974872e3a4e8 confirmed shim menu confirm
+c0d1ca6a-6fc0-47ca-81e3-974872e3a4e8 confirmed shim menu password
+c0d1ca6a-6fc0-47ca-81e3-974872e3a4e8 confirmed shim menu reboot

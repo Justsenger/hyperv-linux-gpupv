@@ -1,0 +1,51 @@
+a327c651ea989fdec88eb6aec3cc3e8e2919625b39616c98522f0ef89cefd7a0  /mnt/gpupv/guest/gpupv-guest
+4001f40d3fe9652feb87174e5653794e8754f07a2c10ca7446566a55ba029d43  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+/tmp/tmp.uCVGvBL5ef/probe.c: In function ‘p’:
+/tmp/tmp.uCVGvBL5ef/probe.c:2:62: error: too few arguments to function ‘eventfd_signal’
+ void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.uCVGvBL5ef/probe.c:1:0:
+/usr/src/linux-6.4.0-150600.23.103/include/linux/eventfd.h:42:7: note: declared here
+ __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+       ^~~~~~~~~~~~~~
+make[1]: *** [/usr/src/linux-6.4.0-150600.23.103/scripts/Makefile.build:252: /tmp/tmp.uCVGvBL5ef/probe.o] Error 1
+make: *** [../../../linux-6.4.0-150600.23.103/Makefile:2059: /tmp/tmp.uCVGvBL5ef] Error 2
+/tmp/tmp.uCVGvBL5ef/probe.c: In function ‘p’:
+/tmp/tmp.uCVGvBL5ef/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Werror=int-conversion]
+ bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+                                                                                      ^
+In file included from /tmp/tmp.uCVGvBL5ef/probe.c:1:0:
+/usr/src/linux-6.4.0-150600.23.103/include/linux/dma-fence.h:471:20: note: expected ‘u64 {aka long long unsigned int}’ but argument is of type ‘struct dma_fence *’
+ static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+                    ^~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+make[1]: *** [/usr/src/linux-6.4.0-150600.23.103/scripts/Makefile.build:252: /tmp/tmp.uCVGvBL5ef/probe.o] Error 1
+make: *** [../../../linux-6.4.0-150600.23.103/Makefile:2059: /tmp/tmp.uCVGvBL5ef] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-6.4.0-150600.23.103-obj/x86_64/default'
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmp268y12m_/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-6.4.0-150600.23.103-obj/x86_64/default'
+glibc 2.38, x86_64, kernel 6.4.0-150600.23.103-default, preflight OK
+Mesa D3D12 VA-API: []
+OpenCL ICD: []

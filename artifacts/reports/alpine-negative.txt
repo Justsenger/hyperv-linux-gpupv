@@ -1,0 +1,20 @@
+uid=1000(alpine) gid=1000(alpine) groups=10(wheel),1000(alpine),1000(alpine)
+Linux gpupv-test-2ccc84613cfd43ecbfa5ce081e807df6 6.18.22-0-virt #1-Alpine SMP PREEMPT_DYNAMIC 2026-04-11 15:53:25 x86_64 Linux
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.23.4
+PRETTY_NAME="Alpine Linux v3.23"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
+musl libc (x86_64)
+Version 1.2.5
+Dynamic Program Loader
+Usage: /lib/ld-musl-x86_64.so.1 [options] [--] pathname
+需要 glibc 来宾。请使用发行版的 glibc 镜像。
+缺少当前内核 6.18.22-0-virt 的匹配头文件。请从官方源安装精确版本 linux-headers 或 kernel-devel。
+缺少 gcc，请从本发行版官方介质补装。
+缺少 make，请从本发行版官方介质补装。
+缺少 udevadm，请从本发行版官方介质补装。
+缺少宿主设备清单，请用宿主 CLI 重新打包。
+install_exit=1
+no_install_directory

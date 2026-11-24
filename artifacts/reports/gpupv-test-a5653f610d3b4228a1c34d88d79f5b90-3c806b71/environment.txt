@@ -1,0 +1,14 @@
+NAME="openSUSE Leap"
+VERSION="15.6"
+ID="opensuse-leap"
+ID_LIKE="suse opensuse"
+VERSION_ID="15.6"
+PRETTY_NAME="openSUSE Leap 15.6"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:opensuse:leap:15.6"
+BUG_REPORT_URL="https://bugs.opensuse.org"
+HOME_URL="https://www.opensuse.org/"
+DOCUMENTATION_URL="https://en.opensuse.org/Portal:Leap"
+LOGO="distributor-logo-Leap"
+Linux gpupv-test-a5653f610d3b4228a1c34d88d79f5b90 6.4.0-150600.23.103-default #1 SMP PREEMPT_DYNAMIC Fri May  8 13:08:22 UTC 2026 (52e00eb) x86_64 x86_64 x86_64 GNU/Linux
+uid=1000(tester) gid=100(users) groups=100(users),486(video),1000(sudo),1001(wheel)

@@ -1,0 +1,21 @@
+Ign:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Ign:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Ign:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Ign:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Ign:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Ign:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Ign:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Err:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+  Connection failed [IP: 192.168.1.6 9000]
+Err:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+  Connection failed [IP: 192.168.1.6 9000]
+Ign:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Ign:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Ign:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Err:1 http://archive.ubuntu.com/ubuntu noble InRelease
+  Connection failed [IP: 192.168.1.6 9000]
+Err:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+  Connection failed [IP: 192.168.1.6 9000]
+Reading package lists...
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/noble-updates/InRelease  Connection failed [IP: 192.168.1.6 9000]
+E: The repository 'http://archive.ubuntu.com/ubuntu noble-updates InRelease' is no longer signed.

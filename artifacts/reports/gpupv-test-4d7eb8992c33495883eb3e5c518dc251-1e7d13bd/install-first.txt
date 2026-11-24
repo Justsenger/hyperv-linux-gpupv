@@ -1,0 +1,39 @@
+52eb3d30159e155d3bc9581bb5631aca76fbb6bd7ef72a091c7580f52e86ee54  /mnt/gpupv/guest/gpupv-guest
+40575dd6ffda79d452eff72677d97f890287a0bd58a639b013031332cb03d6f9  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+probe.c:2:28: error: ‘struct dma_fence_ops’ has no member named ‘fence_value_str’
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[3]: *** [/usr/lib/modules/7.3.5-arch1-1/build/scripts/Makefile.build:290: probe.o] Error 1
+make[2]: *** [/usr/lib/modules/7.3.5-arch1-1/build/Makefile:2229: .] Error 2
+make[1]: *** [/usr/lib/modules/7.3.5-arch1-1/build/Makefile:248: __sub-make] Error 2
+make: *** [Makefile:248: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/lib/modules/7.3.5-arch1-1/build'
+make[1]: Entering directory '/tmp/tmpdhw41fqx/kernel/drivers/hv/dxgkrnl'
+  CC [M]  dxgmodule.o
+  CC [M]  hmgr.o
+  CC [M]  misc.o
+  CC [M]  dxgadapter.o
+  CC [M]  ioctl.o
+  CC [M]  dxgvmbus.o
+  CC [M]  dxgprocess.o
+  CC [M]  dxgsyncfile.o
+  LD [M]  dxgkrnl.o
+  MODPOST Module.symvers
+  CC [M]  dxgkrnl.mod.o
+  CC [M]  .module-common.o
+  LD [M]  dxgkrnl.ko
+  BTF [M] dxgkrnl.ko
+make[1]: Leaving directory '/tmp/tmpdhw41fqx/kernel/drivers/hv/dxgkrnl'
+make: Leaving directory '/usr/lib/modules/7.3.5-arch1-1/build'
+glibc 2.44, x86_64, kernel 7.3.5-arch1-1, preflight OK
+Mesa D3D12: ['/usr/lib64/dri/d3d12_dri.so', '/usr/lib/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []

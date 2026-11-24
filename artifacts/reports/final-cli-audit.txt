@@ -1,0 +1,22 @@
+syntax OK Get-WslFileMap.ps1
+syntax OK gpupv-host.ps1
+syntax OK New-GpuPvIso.ps1
+syntax OK Get-CloudImage.ps1
+syntax OK Get-QemuImg.ps1
+syntax OK Invoke-Acceptance.ps1
+syntax OK New-TestVM.ps1
+syntax OK Remove-TestVM.ps1
+syntax OK Test-CloudTransport.ps1
+syntax OK guest\gpupv-guest
+syntax OK build.py
+syntax OK guest\cuda-compute.py
+syntax OK guest\intel-opencl.py
+syntax OK tests\audit-matrix.py
+syntax OK tests\container-matrix.py
+
+Name                         Inf       Driver
+----                         ---       ------
+NVIDIA GeForce RTX 2060      oem39.inf 32.0.16.1742
+Intel(R) Iris(R) Xe Graphics oem26.inf 27.20.100.8935
+
+缺少匹配 x86_64 的 WSL 运行库：libd3d12.so, libd3d12core.so, libdxcore.so。请安装或更新 WSL 后重新运行 doctor。已检查 C:\Program Files\WSL\lib 和 C:\Windows\System32\lxss\lib。

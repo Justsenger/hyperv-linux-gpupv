@@ -1,0 +1,9 @@
+glibc 2.41, x86_64, kernel 6.12.118+deb13-amd64, preflight OK
+Mesa D3D12: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+glibc 2.41, x86_64, kernel 6.12.118+deb13-amd64, preflight OK
+Mesa D3D12: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so']
+Vulkan Dozen manifests: []
+af41687b-cac3-4897-b74b-2a7a4e0a8a75
+Running timer as unit: run-p4162-i4462.timer
+Will run service as unit: run-p4162-i4462.service

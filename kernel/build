@@ -1,0 +1,46 @@
+#!/bin/sh
+# SPDX-License-Identifier: GPL-2.0-only
+set -eu
+kdir=$(realpath "${1:-/lib/modules/$(uname -r)/build}")
+if grep -qs '^CONFIG_CC_IS_CLANG=y' "$kdir/.config" "$kdir/include/config/auto.conf"; then
+    export LLVM="${LLVM:-1}"
+fi
+src=$(cd "$(dirname "$0")/drivers/hv/dxgkrnl" && pwd)
+probe=$(mktemp -d)
+trap 'rm -rf "$probe"' EXIT
+printf 'obj-m := probe.o\nccflags-y += -Werror\n' > "$probe/Makefile"
+probe_api() {
+    name=$1
+    shift
+    printf '%s\n' "$@" > "$probe/probe.c"
+    rm -f "$probe/probe.o"
+    if make -s -C "$kdir" M="$probe" probe.o > "$probe/log" 2>&1; then
+        echo "#define $name 1" >> "$probe/compat.h"
+    else
+        cat "$probe/log" >&2
+        [ "$name" != GPUPV_KBUILD_WORKS ] || exit 1
+        echo "#define $name 0" >> "$probe/compat.h"
+    fi
+}
+probe_api GPUPV_KBUILD_WORKS '#include <linux/module.h>' 'MODULE_LICENSE("GPL");'
+probe_api GPUPV_PIN_PAGES '#include <linux/mm.h>' 'long p(unsigned long a, struct page **pages); long p(unsigned long a, struct page **pages){long n=pin_user_pages_fast(a,1,FOLL_WRITE,pages); if(n>0) unpin_user_pages(pages,n); return n;}'
+if grep -q '^#define GPUPV_PIN_PAGES 0$' "$probe/compat.h"; then
+    echo 'The target headers lack the pin_user_pages_fast/unpin_user_pages interface required for pinned GPU memory.' >&2
+    exit 1
+fi
+probe_api GPUPV_EVENTFD_ONE '#include <linux/eventfd.h>' 'void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}'
+probe_api GPUPV_FENCE_STR '#include <linux/dma-fence.h>' 'struct dma_fence_ops p = {.fence_value_str = NULL};'
+probe_api GPUPV_FENCE_FIRST '#include <linux/dma-fence.h>' 'bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}'
+probe_api GPUPV_STRUCT_GPADL '#include <linux/hyperv.h>' 'struct vmbus_gpadl p;'
+probe_api GPUPV_REMOVE_VOID '#include <linux/hyperv.h>' 'static void remove(struct hv_device *d) {}' 'struct hv_driver p = {.remove = remove};'
+probe_api GPUPV_CHANNEL_MAX_PKT '#include <linux/hyperv.h>' 'void p(struct vmbus_channel *c); void p(struct vmbus_channel *c){c->max_pkt_size = 1;}'
+cat "$probe/compat.h"
+cp "$probe/compat.h" "$src/gpupv_features.h"
+exec_make() { make -C "$kdir" M="$src" modules; }
+exec_make
+if [ "${2:-}" = --dkms-sign ]; then
+    keydir=/opt/hyperv-linux-gpupv
+    if [ -f "$keydir/signing-key-path" ]; then
+        python3 "$keydir/guest/sign-module.py" "$(cat "$keydir/signing-key-path")" "$(cat "$keydir/signing-cert-path")" "$src/dxgkrnl.ko"
+    fi
+fi

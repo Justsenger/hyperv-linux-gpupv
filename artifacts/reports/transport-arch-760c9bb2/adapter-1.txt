@@ -1,0 +1,37 @@
+
+InstancePath                                                                                                     Instanc
+                                                                                                                 eId
+------------                                                                                                     -------
+\\?\PCI#VEN_8086&DEV_9A49&SUBSYS_20908086&REV_01#3&11583659&0&10#{064092b3-625e-43bf-9eb5-dc845897dd59}\GPUPARAV 
+
+uid=1000(tester) gid=1001(tester) groups=1001(tester),983(video),998(wheel),1000(sudo)
+Linux gpupv-test-b0aef8458404490581396bf44e2ba327 7.3.4-arch1-2 #1 SMP PREEMPT_DYNAMIC Thu, 12 Nov 2026 20:11:37 +0000 x86_64 GNU/Linux
+NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+d088a932-cfc7-447c-9888-d6e8c3a2660a
+{525074dc-8985-46e2-8057-a307dc18a502}
+{a9a0f4e7-5a45-4d96-b827-8a841e8c03e6}
+{35fa2e29-ea23-4236-96ae-3a6ebacba440}
+{9527e630-d0ae-497b-adce-e80ab0175caf}
+{3375baf4-9e15-4b30-b765-67acb10d607b}
+{da0a7802-e377-4aac-8e77-0558eb1073f8}
+{cfa8b69e-5b4a-4cc0-b98b-8ba1a1f3f95a}
+{f8615163-df3e-46c5-913f-f2d2f965ed0e}
+{dde9cbc0-5060-4436-9448-ea1254a5d177}
+{6e382d18-3336-4f4b-acc4-2b7703d4df4a}
+{f8e65716-3cb3-4a06-9a60-1889c5cccab5}
+{44c4f61d-4444-4400-9d52-802e27ede19f}
+{0e0b6031-5213-4934-818b-38d90ced39db}
+{f912ad6d-2b17-48ea-bd65-f927a61c7684}
+{ba6163d9-04a1-4d29-b605-72e2ffb1dc7f}
+{276aacf4-ac15-426c-98dd-7521ad3f01fe}
+{57164f39-9115-4e78-ab55-382f3bd5422d}

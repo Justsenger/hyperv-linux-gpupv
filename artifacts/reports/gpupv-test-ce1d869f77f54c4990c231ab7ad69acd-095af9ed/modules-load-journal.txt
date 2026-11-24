@@ -1,0 +1,4 @@
+Nov 23 10:20:06 gpupv-test-ce1d869f77f54c4990c231ab7ad69acd systemd-modules-load[335]: Module 'i2c_dev' is built in
+Nov 23 10:20:06 gpupv-test-ce1d869f77f54c4990c231ab7ad69acd systemd-modules-load[335]: Inserted module 'msr'
+Nov 23 10:20:06 gpupv-test-ce1d869f77f54c4990c231ab7ad69acd systemd-modules-load[335]: Inserted module 'dm_multipath'
+Nov 23 10:20:06 gpupv-test-ce1d869f77f54c4990c231ab7ad69acd systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.

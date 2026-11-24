@@ -1,0 +1,3 @@
+glibc 2.44, x86_64, kernel 7.3.4-arch1-2, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib64/dri/d3d12_drv_video.so', '/usr/lib/dri/d3d12_drv_video.so']
+OpenCL ICD: ['/etc/OpenCL/vendors/intel.icd']

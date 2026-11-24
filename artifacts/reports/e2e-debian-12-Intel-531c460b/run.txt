@@ -1,0 +1,263 @@
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+Linux gpupv-test-531c460b496946f99a72748599ee61c2 6.1.0-56-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.192-2 (2026-11-16) x86_64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+0x1414
+0x008e
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libclang-cpp14 libigc1 libigdfcl1 libigdgmm12 libllvm14 libllvmspirvlib14
+  libopencl-clang14
+The following NEW packages will be installed:
+  intel-opencl-icd libclang-cpp14 libigc1 libigdfcl1 libigdgmm12 libllvm14
+  libllvmspirvlib14 libopencl-clang14
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 46.9 MB of archives.
+After this operation, 242 MB of additional disk space will be used.
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:2 https://deb.debian.org/debian bookworm/main amd64 libigdgmm12 amd64 22.3.3+ds1-1 [139 kB]
+Get:3 https://deb.debian.org/debian bookworm/main amd64 libllvm14 amd64 1:14.0.6-12 [21.8 MB]
+package exit=124
+b1b28048d6910cc765cedb301bf9eb4bc6be7dd35e89e4ccf3a8fdcf32b87b9d  /mnt/gpupv/guest/gpupv-guest
+4001f40d3fe9652feb87174e5653794e8754f07a2c10ca7446566a55ba029d43  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+/tmp/tmp.M1Qp8OJfB9/probe.c: In function ‘p’:
+/tmp/tmp.M1Qp8OJfB9/probe.c:2:62: error: too few arguments to function ‘eventfd_signal’
+    2 | void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+      |                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.M1Qp8OJfB9/probe.c:1:
+/usr/src/linux-headers-6.1.0-56-common/include/linux/eventfd.h:42:7: note: declared here
+   42 | __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+      |       ^~~~~~~~~~~~~~
+make[1]: *** [/usr/src/linux-headers-6.1.0-56-common/scripts/Makefile.build:255: /tmp/tmp.M1Qp8OJfB9/probe.o] Error 1
+make: *** [/usr/src/linux-headers-6.1.0-56-common/Makefile:2065: /tmp/tmp.M1Qp8OJfB9] Error 2
+/tmp/tmp.M1Qp8OJfB9/probe.c: In function ‘p’:
+/tmp/tmp.M1Qp8OJfB9/probe.c:2:86: error: passing argument 1 of ‘__dma_fence_is_later’ makes integer from pointer without a cast [-Werror=int-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.M1Qp8OJfB9/probe.c:1:
+/usr/src/linux-headers-6.1.0-56-common/include/linux/dma-fence.h:451:45: note: expected ‘u64’ {aka ‘long long unsigned int’} but argument is of type ‘struct dma_fence *’
+  451 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[1]: *** [/usr/src/linux-headers-6.1.0-56-common/scripts/Makefile.build:255: /tmp/tmp.M1Qp8OJfB9/probe.o] Error 1
+make: *** [/usr/src/linux-headers-6.1.0-56-common/Makefile:2065: /tmp/tmp.M1Qp8OJfB9] Error 2
+/tmp/tmp.M1Qp8OJfB9/probe.c:3:33: error: initialization of ‘int (*)(struct hv_device *)’ from incompatible pointer type ‘void (*)(struct hv_device *)’ [-Werror=incompatible-pointer-types]
+    3 | struct hv_driver p = {.remove = remove};
+      |                                 ^~~~~~
+/tmp/tmp.M1Qp8OJfB9/probe.c:3:33: note: (near initialization for ‘p.remove’)
+cc1: all warnings being treated as errors
+make[1]: *** [/usr/src/linux-headers-6.1.0-56-common/scripts/Makefile.build:255: /tmp/tmp.M1Qp8OJfB9/probe.o] Error 1
+make: *** [/usr/src/linux-headers-6.1.0-56-common/Makefile:2065: /tmp/tmp.M1Qp8OJfB9] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 0
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-6.1.0-56-amd64'
+  CC [M]  /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmp_93vf0cu/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-headers-6.1.0-56-amd64'
+glibc 2.36, x86_64, kernel 6.1.0-56-amd64, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so']
+OpenCL ICD: []
+glibc 2.36, x86_64, kernel 6.1.0-56-amd64, preflight OK
+Mesa D3D12 VA-API: ['/usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so']
+OpenCL ICD: []
+/usr/lib/modules/6.1.0-56-amd64/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 3605835 Nov 24 05:01 /lib/modules/6.1.0-56-amd64/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 124 Nov 24 05:02 /dev/dxg
+boot_id=dc47696f-7115-416f-a08b-8ec758350a2a uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+SecureBoot enabled
+GPU-PV module signing
+1B:79:A6:9C:FC:08:F1:2E:0C:71:EA:51:CF:CE:1E:D2:41:E3:81:C9
+O
+module dxgkrnl format gpupv +p
+boot_id=dc47696f-7115-416f-a08b-8ec758350a2a uid=1000 gpu=Intel(R) Iris(R) Xe Graphics
+Intel D3D12 UMD: ['/opt/hyperv-linux-gpupv/drivers/iigd_dch.inf_amd64_5c4e38fb27d0b8b3/libigd12umd64.so']
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 8086:9a49 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Intel OpenCL exit=77
+libva info: VA-API version 1.17.0
+libva info: User environment variable requested driver 'd3d12'
+libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+libva info: Found init function __vaDriverInit_1_17
+libva info: va_openDriver() returns 0
+vainfo: VA-API version: 1.17 (libva 2.12.0)
+vainfo: Driver version: Mesa Gallium driver 22.3.6 for D3D12 (Intel(R) Iris(R) Xe Graphics)
+vainfo: Supported profile and entrypoints
+      VAProfileH264ConstrainedBaseline:	VAEntrypointVLD
+      VAProfileH264ConstrainedBaseline:	VAEntrypointEncSlice
+      VAProfileH264Main               :	VAEntrypointVLD
+      VAProfileH264Main               :	VAEntrypointEncSlice
+      VAProfileH264High               :	VAEntrypointVLD
+      VAProfileH264High               :	VAEntrypointEncSlice
+      VAProfileHEVCMain               :	VAEntrypointVLD
+      VAProfileHEVCMain               :	VAEntrypointEncSlice
+      VAProfileHEVCMain10             :	VAEntrypointVLD
+      VAProfileHEVCMain10             :	VAEntrypointEncSlice
+      VAProfileVP9Profile0            :	VAEntrypointVLD
+      VAProfileVP9Profile2            :	VAEntrypointVLD
+      VAProfileAV1Profile0            :	VAEntrypointVLD
+      VAProfileNone                   :	VAEntrypointVideoProc
+Testing Intel D3D12 H.264 encode and VP9 decode on /dev/dri/card0
+[AVHWDeviceContext @ 0x55fc09d1bcc0] libva: VA-API version 1.17.0
+[AVHWDeviceContext @ 0x55fc09d1bcc0] libva: User environment variable requested driver 'd3d12'
+[AVHWDeviceContext @ 0x55fc09d1bcc0] libva: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+[AVHWDeviceContext @ 0x55fc09d1bcc0] libva: Found init function __vaDriverInit_1_17
+[AVHWDeviceContext @ 0x55fc09d1bcc0] libva: va_openDriver() returns 0
+[AVHWDeviceContext @ 0x55fc09d1bcc0] Initialised VAAPI connection: version 1.17
+[AVHWDeviceContext @ 0x55fc09d1bcc0] VAAPI driver: Mesa Gallium driver 22.3.6 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[AVHWDeviceContext @ 0x55fc09d1bcc0] Driver not found in known nonstandard list, using standard behaviour.
+[Parsed_testsrc2_0 @ 0x55fc0a616840] size:320x240 rate:15/1 duration:-1.000000 sar:1/1
+Input #0, lavfi, from 'testsrc2=size=320x240:rate=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: rawvideo, 1 reference frame (I420 / 0x30323449), yuv420p, 320x240 [SAR 1:1 DAR 4:3], 15 tbr, 15 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (h264_vaapi))
+[graph 0 input from stream 0:0 @ 0x55fc0a5ead40] w:320 h:240 pixfmt:yuv420p tb:1/15 fr:15/1 sar:1/1
+[auto_scale_0 @ 0x55fc0a5ee040] w:iw h:ih flags:'' interl:0
+[Parsed_format_0 @ 0x55fc0a5e7c80] auto-inserting filter 'auto_scale_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_format_0'
+[auto_scale_0 @ 0x55fc0a5ee040] w:320 h:240 fmt:yuv420p sar:1/1 -> w:320 h:240 fmt:nv12 sar:1/1 flags:0x0
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+[h264_vaapi @ 0x55fc0a051c40] Using input frames context (format vaapi) with h264_vaapi encoder.
+[h264_vaapi @ 0x55fc0a051c40] Input surface format is nv12.
+[h264_vaapi @ 0x55fc0a051c40] Using VAAPI profile VAProfileH264ConstrainedBaseline (13).
+[h264_vaapi @ 0x55fc0a051c40] Using VAAPI entrypoint VAEntrypointEncSlice (6).
+[h264_vaapi @ 0x55fc0a051c40] Using VAAPI render target format YUV420 (0x1).
+[h264_vaapi @ 0x55fc0a051c40] RC mode: CBR.
+[h264_vaapi @ 0x55fc0a051c40] RC target: 100% of 1000000 bps over 2000 ms.
+[h264_vaapi @ 0x55fc0a051c40] RC buffer: 2000000 bits, initial fullness 1500000 bits.
+[h264_vaapi @ 0x55fc0a051c40] RC framerate: 15/1 (15.00 fps).
+[h264_vaapi @ 0x55fc0a051c40] Using intra frames only.
+[h264_vaapi @ 0x55fc0a051c40] Driver does not support some wanted packed headers (wanted 0xd, found 0).
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+[h264_vaapi @ 0x55fc0a051c40] Using level 2.
+Output #0, h264, to '/tmp/tmp.5aKZ8KnnFr/test.h264':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: h264 (Constrained Baseline), 1 reference frame, vaapi(tv, progressive), 320x240 (0x0) [SAR 1:1 DAR 4:3], q=2-31, 1000 kb/s, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc59.37.100 h264_vaapi
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+No more output streams to write to, finishing.
+frame=   15 fps=0.0 q=-0.0 Lsize=     210kB time=00:00:01.00 bitrate=1717.9kbits/s speed=4.02x    
+video:210kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000000%
+Input file #0 (testsrc2=size=320x240:rate=15):
+  Input stream #0:0 (video): 15 packets read (1728000 bytes); 15 frames decoded; 
+  Total: 15 packets (1728000 bytes) demuxed
+Output file #0 (/tmp/tmp.5aKZ8KnnFr/test.h264):
+  Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (214732 bytes); 
+  Total: 15 packets (214732 bytes) muxed
+[AVIOContext @ 0x55fc0a5e8b00] Statistics: 214732 bytes written, 0 seeks, 1 writeouts
+Intel D3D12 H.264 intra hardware encode: 15 decodable frames (214732 bytes)
+Input #0, ivf, from '/tmp/tmp.5aKZ8KnnFr/input.ivf':
+  Duration: 00:00:01.00, start: 0.000000, bitrate: 313 kb/s
+  Stream #0:0: Video: vp9 (Profile 0), 1 reference frame (VP90 / 0x30395056), yuv420p(tv), 320x240, 15 tbr, 15 tbn
+[AVHWDeviceContext @ 0x560242586ec0] libva: VA-API version 1.17.0
+[AVHWDeviceContext @ 0x560242586ec0] libva: User environment variable requested driver 'd3d12'
+[AVHWDeviceContext @ 0x560242586ec0] libva: Trying to open /usr/lib/x86_64-linux-gnu/dri/d3d12_drv_video.so
+[AVHWDeviceContext @ 0x560242586ec0] libva: Found init function __vaDriverInit_1_17
+[AVHWDeviceContext @ 0x560242586ec0] libva: va_openDriver() returns 0
+[AVHWDeviceContext @ 0x560242586ec0] Initialised VAAPI connection: version 1.17
+[AVHWDeviceContext @ 0x560242586ec0] VAAPI driver: Mesa Gallium driver 22.3.6 for D3D12 (Intel(R) Iris(R) Xe Graphics).
+[AVHWDeviceContext @ 0x560242586ec0] Driver not found in known nonstandard list, using standard behaviour.
+Stream mapping:
+  Stream #0:0 -> #0:0 (vp9 (native) -> rawvideo (native))
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Invalid argument
+[graph 0 input from stream 0:0 @ 0x560243002440] w:320 h:240 pixfmt:vaapi tb:1/15 fr:15/1 sar:0/1
+Output #0, framemd5, to '/tmp/tmp.5aKZ8KnnFr/hw':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: rawvideo, 1 reference frame (NV12 / 0x3231564E), nv12(tv, progressive), 320x240 (0x0), q=2-31, 13824 kb/s, 15 fps, 15 tbn
+    Metadata:
+      encoder         : Lavc59.37.100 rawvideo
+No more output streams to write to, finishing.
+frame=   15 fps=0.0 q=-0.0 Lsize=       1kB time=00:00:01.00 bitrate=  11.3kbits/s speed=9.94x    
+video:1688kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (/tmp/tmp.5aKZ8KnnFr/input.ivf):
+  Input stream #0:0 (video): 15 packets read (39033 bytes); 15 frames decoded; 
+  Total: 15 packets (39033 bytes) demuxed
+Output file #0 (/tmp/tmp.5aKZ8KnnFr/hw):
+  Output stream #0:0 (video): 15 frames encoded; 15 packets muxed (1728000 bytes); 
+  Total: 15 packets (1728000 bytes) muxed
+[AVIOContext @ 0x560242586a00] Statistics: 1415 bytes written, 0 seeks, 1 writeouts
+[AVIOContext @ 0x560242579540] Statistics: 39245 bytes read, 0 seeks
+Intel D3D12 VP9 hardware decode: 15/15 frames match software reference
+0,          0,          0,        1,   115200, defa8d6ee8114c8f6f4955bb017e000e
+0,          1,          1,        1,   115200, 46cff9b4207b9241fd7a8fd2b5219405
+0,          2,          2,        1,   115200, 989437fa58ab7d37b21ab58d3c6383dd
+0,          3,          3,        1,   115200, 50dcfe7c25a47fa319ea9caa6624aeb6
+0,          4,          4,        1,   115200, e7f8e168bd6dceb609fdee89f59a650f
+0,          5,          5,        1,   115200, d54d6cb9bf3cc21d3ba085ea82fba4a5
+0,          6,          6,        1,   115200, 4f3e7286b89bb2f03308279a9a44c3c1
+0,          7,          7,        1,   115200, 4e066bccd953a92df2f05f1788b59b7e
+0,          8,          8,        1,   115200, ecfd62738daec056e05cfbd3619b1492
+0,          9,          9,        1,   115200, 48d2cbdb8fb2e482a4fe0fcc12d82d29
+0,         10,         10,        1,   115200, 6bcdc5ffe4aea446070837affd344b2f
+0,         11,         11,        1,   115200, 01f5c53cc8d3aa8c0847c592db00aff6
+0,         12,         12,        1,   115200, ebc8662f74f21e9136ff7d98124ef4f3
+0,         13,         13,        1,   115200, c042a3ed90e1dc09b1ab6069654e2f71
+0,         14,         14,        1,   115200, 329301bb9c2bb8034bf01b1a9f035ae8
+managed_paths_clean
+managed_paths_clean

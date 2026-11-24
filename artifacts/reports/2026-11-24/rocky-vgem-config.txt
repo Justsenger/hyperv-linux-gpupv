@@ -1,0 +1,16 @@
+CONFIG_DRM_HYPERV=m
+# CONFIG_DRM_VGEM is not set
+CONFIG_DRM_VKMS=m
+CONFIG_DRM_VKMS_KUNIT_TEST=m
+kernel-modules-core-5.14.0-741.22.1.el9_9.x86_64
+kernel-core-5.14.0-741.22.1.el9_9.x86_64
+kernel-modules-5.14.0-741.22.1.el9_9.x86_64
+kernel-tools-libs-5.14.0-741.22.1.el9_9.x86_64
+kernel-tools-5.14.0-741.22.1.el9_9.x86_64
+kernel-5.14.0-741.22.1.el9_9.x86_64
+kernel-headers-5.14.0-741.24.1.el9_9.x86_64
+kernel-devel-5.14.0-741.22.1.el9_9.x86_64
+total 0
+lrwxrwxrwx. 1 root root    0 Nov 24 04:37 card0 -> ../../devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171/drm/card0
+lrwxrwxrwx. 1 root root    0 Nov 24 04:37 card0-Virtual-1 -> ../../devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171/drm/card0/card0-Virtual-1
+-r--r--r--. 1 root root 4096 Nov 24 04:37 version

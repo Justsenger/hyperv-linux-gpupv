@@ -1,0 +1,30 @@
+Removed 8549eee5-c324-4850-9922-f3471bc6cbfa D:\linux-pv\.test\gpupv-test-2ccc84613cfd43ecbfa5ce081e807df6
+Removed bf220427-c9d7-4f6a-8c00-9ef8c5a3d6c8 D:\linux-pv\.test\gpupv-test-3052d25266164c46a749bd82b1aa3a85
+Removed c3eb860a-5bf4-4da1-8fcc-94bc45079df6 D:\linux-pv\.test\gpupv-test-4d218a7612d245e2933753746a92fa5b
+Removed 0eac1a15-baa2-4109-906a-59c0cfda1c32 D:\linux-pv\.test\gpupv-test-628d78458a5b4083a01a4aca25b15bec
+Removed 894a1472-cb9b-41ad-a71d-a77562ecdc00 D:\linux-pv\.test\gpupv-test-62fc1008bab040779cbdd3857cbca145
+Removed bbd10d8a-99ca-4819-ad3f-768f7109a32a D:\linux-pv\.test\gpupv-test-91fb7834a63e47f0b3793cde099c5be7
+Removed 85224c1c-e0fc-45be-ba0b-0e496c59a702 D:\linux-pv\.test\gpupv-test-b01dc3807f2e4aeab04f80e63c4067da
+Removed c88b6984-22b9-4c9c-83f8-58951600dd7d D:\linux-pv\.test\gpupv-test-b0aef8458404490581396bf44e2ba327
+Removed 5d5fa8cd-4414-4e84-9e86-dbf25178a1de D:\linux-pv\.test\gpupv-test-c8b75bda4e0c4e7d8611a23cd485e8eb
+Removed d531d0f7-77fd-4132-9569-8a3aaa87abef D:\linux-pv\.test\gpupv-test-d92844b76b83475585d0be48a9136ed4
+Removed file .test/images/gpupv-test-arch-dbd02830f6eb0fe0.img (569933312 bytes)
+Removed file .test/images/gpupv-test-debian-12-d597a8b422a0fa7f.img (448528384 bytes)
+Removed file .test/images/gpupv-test-fedora-44-28680fe5b371a5a8.img (583729152 bytes)
+Removed file .test/images/gpupv-test-leap-15.6-3b343d1d2e0fd4f0.img (730595328 bytes)
+Removed file .test/images/gpupv-test-rocky-9-4f88f4209de50813.img (649199616 bytes)
+Removed file .test/images/gpupv-test-ubuntu-22.04-77d19e53656f87c9.img (717777408 bytes)
+Removed file .tools/gpupv-test-alpine.qcow2 (200671232 bytes)
+Removed file .tools/gpupv-test-debian.qcow2 (434831360 bytes)
+Removed file .tools/gpupv-test-noble.img (621284352 bytes)
+Removed file .tools/gpupv-test-ubuntu.img (259981312 bytes)
+Removed file .test/gpupv-test-converter.vhdx (1384120320 bytes)
+Removed file .test/gpupv-test-kernel-source.iso (1769472 bytes)
+Removed file .test/gpupv-test-source-media.iso (1835008 bytes)
+Removed file .test/gpupv-test-key (419 bytes)
+Removed file .test/gpupv-test-key.pub (112 bytes)
+Removed file .tools/qemu-w64-setup-20260811.exe (206615928 bytes)
+Removed file .tools/qemu.exe (206615928 bytes)
+Removed file .tools/docker.tgz (81872801 bytes)
+Removed file .tools/debs.tar (62469632 bytes)
+Verified 11 owned VM IDs unregistered; downloaded cloud disks, converter disk, ISO files and temporary SSH key removed.

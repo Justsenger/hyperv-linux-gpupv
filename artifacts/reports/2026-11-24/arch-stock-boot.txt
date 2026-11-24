@@ -1,0 +1,11 @@
+7.3.4-arch1-2
+TARGET                    SOURCE    FSTYPE   OPTIONS
+/efi                      /dev/sda2 vfat     rw,nosuid,nodev,noexec,relatime,nosymfollow,fmask=0177,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro
+/sys/firmware/efi/efivars efivarfs  efivarfs rw,nosuid,nodev,noexec,relatime
+/boot/grub/x86_64-efi/core.efi
+/boot/grub/x86_64-efi/grub.efi
+CONFIG_MODULE_SIG=y
+CONFIG_INTEGRITY_MACHINE_KEYRING=y
+CONFIG_LOAD_UEFI_KEYS=y
+CONFIG_SECONDARY_TRUSTED_KEYRING=y
+BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=a4fe6a47-a8cc-4beb-966a-7757429a6771 rw net.ifnames=0 rootflags=compress=zstd:1 console=tty0 console=ttyS0,115200

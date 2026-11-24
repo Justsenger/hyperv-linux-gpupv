@@ -1,0 +1,8 @@
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:3 file:/etc/apt/mirrors/debian-security.list Mirrorlist [39 B]
+Get:2 https://deb.debian.org/debian trixie InRelease [140 kB]
+Get:4 https://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+Get:5 https://deb.debian.org/debian trixie-backports InRelease [54.0 kB]
+Get:6 https://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+Get:7 https://deb.debian.org/debian trixie/main Sources [10.5 MB]
+Get:8 https://deb.debian.org/debian trixie/main amd64 Packages [9679 kB]

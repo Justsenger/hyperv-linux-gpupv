@@ -1,0 +1,55 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),983(video),998(wheel),1000(sudo)
+Linux gpupv-test-b2926deb6e5c4c218fe09ec62c27f267 7.3.4-arch1-2 #1 SMP PREEMPT_DYNAMIC Thu, 12 Nov 2026 20:11:37 +0000 x86_64 GNU/Linux
+ls: cannot access '/dev/dxg': No such file or directory
+[    1.595908] hv_vmbus: hv_mmio=[mem 0xc0000000-0xfed3ffff],[mem 0xfe0000000-0x17dfffffff] fb=[mem 0xc0000000-0xc7ffffff]
+[    1.597130] hv_vmbus: Vmbus version:6.0
+[    1.597598] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    1.597613] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    1.617574] hv_vmbus: registering driver hyperv_drm
+[    1.618767] hv_vmbus: registering driver hid_hyperv
+[    1.619367] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input0
+[    1.619398] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    1.619591] hv_vmbus: registering driver hyperv_keyboard
+[    1.704362] hv_vmbus: registering driver hv_storvsc
+[    1.704970] hv_vmbus: registering driver hv_pci
+[    1.705593] hv_pci bfa9bd3f-12bf-4d13-8bc3-fc460e987a20: PCI VMBus probing: Using version 0x10004
+[    1.706406] hv_pci bfa9bd3f-12bf-4d13-8bc3-fc460e987a20: PCI host bridge to bus 12bf:00
+[    4.144296] hv_vmbus: registering driver hv_sock
+[    9.927117] hv_vmbus: registering driver hv_balloon
+[    9.933966] hv_vmbus: registering driver hv_netvsc
+[   10.046445] hv_vmbus: registering driver hv_utils
+ls: cannot access '/sys/bus/pci/devices/*/driver': No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda3        32G  2.1G   30G   7% /
+total 98236
+-rw-r--r-- 1 root root      582 Nov 12 20:11 Kconfig
+-rw-r--r-- 1 root root    81068 Nov 12 20:11 Makefile
+-rw-r--r-- 1 root root  2379456 Nov 12 20:11 Module.symvers
+-rw-r--r-- 1 root root 12035864 Nov 12 20:11 System.map
+drwxr-xr-x 1 root root       20 Nov 24 03:28 arch
+drwxr-xr-x 1 root root       64 Nov 24 03:28 block
+drwxr-xr-x 1 root root       14 Nov 24 03:28 certs
+drwxr-xr-x 1 root root       68 Nov 24 03:28 crypto
+drwxr-xr-x 1 root root     1416 Nov 24 03:28 drivers
+drwxr-xr-x 1 root root      672 Nov 24 03:28 fs
+drwxr-xr-x 1 root root      352 Nov 24 03:28 include
+drwxr-xr-x 1 root root       14 Nov 24 03:28 init
+drwxr-xr-x 1 root root       14 Nov 24 03:28 io_uring
+drwxr-xr-x 1 root root      258 Nov 24 03:28 kernel
+drwxr-xr-x 1 root root      262 Nov 24 03:28 lib
+-rw-r--r-- 1 root root        3 Nov 12 20:11 localversion.10-pkgrel
+-rw-r--r-- 1 root root        1 Nov 12 20:11 localversion.20-pkgname
+drwxr-xr-x 1 root root       50 Nov 24 03:28 mm
+drwxr-xr-x 1 root root      654 Nov 24 03:28 net
+drwxr-xr-x 1 root root      424 Nov 24 03:28 rust
+drwxr-xr-x 1 root root       32 Nov 24 03:28 samples
+drwxr-xr-x 1 root root     5992 Nov 24 03:28 scripts
+drwxr-xr-x 1 root root      204 Nov 24 03:28 security
+drwxr-xr-x 1 root root      210 Nov 24 03:28 sound
+drwxr-xr-x 1 root root       62 Nov 24 03:28 tools
+drwxr-xr-x 1 root root       14 Nov 24 03:28 usr
+-rw-r--r-- 1 root root       14 Nov 12 20:11 version
+drwxr-xr-x 1 root root       12 Nov 24 03:28 virt
+-rw-r--r-- 1 root root 82515424 Nov 12 20:11 vmlinux
+lrwxrwxrwx 1 root root       26 Nov 12 20:11 vmlinux-gdb.py -> scripts/gdb/vmlinux-gdb.py
+-rw-r--r-- 1 root root  3551653 Nov 12 20:11 vmlinux.h
