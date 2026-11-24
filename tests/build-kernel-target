@@ -28,6 +28,7 @@ deb)
     . /etc/os-release
     if [ "$ARCHIVE" = yes ] && ! update_sources; then
         case "$VERSION_CODENAME" in
+            oracular) snapshot=20250401T000000Z;;
             plucky) snapshot=20250801T000000Z;;
             questing) snapshot=20260301T000000Z;;
             *) echo "Unknown archived Ubuntu suite: $VERSION_CODENAME" >&2; exit 1;;
@@ -57,25 +58,36 @@ rpm)
         *" kernel-uek-devel "*)
             . /etc/os-release
             repo="https://yum.oracle.com/repo/OracleLinux/OL${VERSION_ID%%.*}/UEKR7/$(uname -m)"
-            key=$(find /etc/pki/rpm-gpg -name "RPM-GPG-KEY-oracle-ol${VERSION_ID%%.*}" | head -1)
-            test -f "$key"
-            printf '%s\n' '[linuxpv_uek7]' 'name=Oracle UEK R7' "baseurl=$repo" 'gpgcheck=1' "gpgkey=file://$key" >/etc/yum.repos.d/linuxpv-uek7.repo
+            key=$(sed -n 's/^[[:space:]]*gpgkey[[:space:]]*=[[:space:]]*//p' /etc/yum.repos.d/*.repo | head -1)
+            test -n "$key" || key="https://yum.oracle.com/RPM-GPG-KEY-oracle-ol${VERSION_ID%%.*}"
+            printf '%s\n' '[linuxpv_uek7]' 'name=Oracle UEK R7' "baseurl=$repo" 'gpgcheck=1' "gpgkey=$key" >/etc/yum.repos.d/linuxpv-uek7.repo
             ;;
     esac
-    retry "$manager" -y install gcc binutils make kmod elfutils-libelf-devel ca-certificates $PACKAGES
+    retry "$manager" -y install gcc binutils gawk make kmod elfutils-libelf-devel ca-certificates $PACKAGES
     if [ -n "$HEADER_URL" ] && ! command -v curl >/dev/null; then retry "$manager" -y install curl; fi
     ;;
 suse)
     if [ "$REPO_LINE" = slowroll ]; then
-        retry zypper --non-interactive refresh
-        retry zypper --non-interactive install --force-resolution openSUSE-repos-Slowroll
-        zypper lr -u | grep -i slowroll
+        # Isolate the Slowroll repositories inside this disposable container.
+        for dir in /etc/zypp/repos.d /etc/zypp/services.d; do
+            if [ -d "$dir" ]; then mv "$dir" "$dir.tumbleweed"; fi
+            mkdir -p "$dir"
+        done
+        for entry in slowroll update/slowroll; do
+            zypper --non-interactive addrepo "https://download.opensuse.org/$entry/repo/oss/" "$(echo "$entry" | tr / -)"
+        done
     fi
     retry zypper --non-interactive refresh
     retry zypper --non-interactive install --no-recommends gcc make kmod gawk libelf-devel curl $PACKAGES
     for pkg in kernel-default-devel kernel-devel; do
         zypper -q search -s --match-exact "$pkg" | awk -F'|' -v p="$pkg" '$2 ~ p && $3 ~ /package/ {gsub(/ /,"",$4);print $4}' | sort -u >/tmp/versions
-        while read -r version; do retry zypper --non-interactive install --oldpackage "$pkg=$version"; done </tmp/versions
+        while read -r version; do
+            if ! zypper --non-interactive install --oldpackage "$pkg=$version" >/tmp/linuxpv-zypper.log 2>&1; then
+                cat /tmp/linuxpv-zypper.log
+                grep -qi 'has been retracted' /tmp/linuxpv-zypper.log || exit 1
+                echo "Skipping retracted package $pkg=$version"
+            fi
+        done </tmp/versions
     done
     ;;
 arch)
@@ -88,7 +100,13 @@ arch)
         test -n "$pkg"; retry pacman -S --noconfirm --needed "$pkg"
     done
     ;;
-gentoo) retry emerge --sync; emerge --getbinpkg sys-apps/kmod $PACKAGES ;;
+gentoo)
+    retry emerge-webrsync
+    if ! emerge --quiet-build=y --getbinpkg sys-apps/kmod $PACKAGES >/tmp/linuxpv-emerge.log 2>&1; then
+        tail -160 /tmp/linuxpv-emerge.log
+        exit 1
+    fi
+    ;;
 *) exit 2;;
 esac
 if [ -n "$HEADER_URL" ]; then
