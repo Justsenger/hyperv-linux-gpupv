@@ -1,6 +1,6 @@
 # hyperv-linux-gpupv · 第一阶段计算版
 
-将 Windows Hyper-V 分区 GPU 提供给可写的 glibc Linux 来宾。一个虚拟机可以使用一张或多张 GPU。宿主机无需安装 WSL。按宿主架构选择 `linuxpv-bundle-x86_64-<version>.zip` 或 `linuxpv-bundle-aarch64-<version>.zip`，用同批 `SHA256SUMS` 校验。当前本地构建为 `phase1-local.2`。[本轮实测及覆盖范围](COMPATIBILITY.md)
+将 Windows Hyper-V 分区 GPU 提供给可写的 glibc Linux 来宾。一个虚拟机可以使用一张或多张 GPU。宿主机无需安装 WSL。按宿主架构选择 `linuxpv-bundle-x86_64-<version>.zip` 或 `linuxpv-bundle-aarch64-<version>.zip`，用同批 `SHA256SUMS` 校验。当前试构建的 x86_64 和 aarch64 部署包分别包含 166 和 118 个预编译内核版本。[本轮实测及覆盖范围](COMPATIBILITY.md)
 
 ## 安装
 

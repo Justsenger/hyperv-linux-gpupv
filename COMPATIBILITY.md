@@ -1,5 +1,15 @@
 # 第一阶段计算版兼容性
 
+## GitHub Actions 成品验收
+
+原生 x86_64 和 aarch64 runner 分别生成包含 166 和 118 个不同内核 release 的部署包。两包均通过三份微软运行库的固定摘要、模块 ELF、manifest 和跨架构拒绝检查。Debian 12 x86_64 是本次硬件验收环境。ARM64 已完成原生编译和成品检查，尚无 ARM64 Hyper-V GPU 运行证据。[发行版和内核逐项记录](artifacts/reports/actions-native-matrix.md) · [成品打包记录](https://github.com/Justsenger/hyperv-linux-gpupv/actions/runs/45390694286)
+
+本机将试构建成品与 RTX 2060、Iris Xe 宿主驱动合并为 UDF 光盘。全新 Debian 12 来宾在 6.1.0-56-amd64 上无需 gcc、make 或内核头。关闭 Secure Boot 时重复安装及重启后读写 /dev/dxg 均通过。开启 Secure Boot 后，首次安装提示 MOK 导入；录入公钥并真实重启后以受信任签名加载，启动日志中模块签名验证警告为零。
+
+普通用户在两种启动模式下均获得两张硬件适配器，D3D12 各回读 64/64，CUDA 三组数值均正确。工作负载区间的 dmesg 未出现 -75，保留了 escape -22、query_adapter_info -2/-22 等诊断。该结果不计为内核零报错。[关闭 Secure Boot 的数值输出](artifacts/reports/ci-bundle-ca173d3/accept-off/compute.txt) · [安全启动与数值输出](artifacts/reports/ci-bundle-ca173d3/signed-after-reboot.txt) · [内核日志](artifacts/reports/ci-bundle-ca173d3/accept-signed/compute-dmesg.txt)
+
+## 较早的 phase1-local.2 本地试验
+
 | 架构 | 本地包内的全部预编译内核 | 验证环境 |
 | --- | --- | --- |
 | x86_64 | Debian 12，6.1.0-56-amd64 | Debian 原生编译，Hyper-V 双卡 UDF 与 SSH 部署；签名启动、重启和普通用户数值验证 |

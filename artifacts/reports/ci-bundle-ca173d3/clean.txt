@@ -1,0 +1,3 @@
+SecureBoot enabled
+006c0f51-6617-4dcd-a0cb-8dd2f19aa177
+clean-after-uninstall-and-reboot

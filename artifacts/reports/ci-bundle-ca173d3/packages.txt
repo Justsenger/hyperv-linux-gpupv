@@ -1,0 +1,3 @@
+hyperv-linux-gpupv-source.zip source clean e92557691348c287eec4842cc4b8091e0e50831d3a1102060e5fbd4736161139
+linuxpv-bundle-aarch64-compute-preflight.zip: 118 kernel releases, 3 pinned runtimes, ELF and SHA256 verified d5adc1c1a9c1ca1a75143a3466c9d6a8ffe511a222027830388d763cb828d8a8
+linuxpv-bundle-x86_64-compute-preflight.zip: 166 kernel releases, 3 pinned runtimes, ELF and SHA256 verified 1917afcd585eee5562f4a7a65f3c84c38551dad4942bf5069f8603f598236e4c

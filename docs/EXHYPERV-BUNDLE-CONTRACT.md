@@ -43,3 +43,5 @@ ExHyperV 先按目标来宾架构选择 ZIP，用同一发行版本的 SHA256SUM
 来宾按 uname -m 和 uname -r 精确匹配模块，并用 modinfo 复核 name、vermagic、srcversion。匹配时只需 Python、kmod、udev 等运行工具，可在无 gcc、make 和 headers 的系统安装。未命中时从 kernel/ 编译，需要对应内核头与编译器。Secure Boot 已关闭时跳过 MOK；开启时使用本地受信任密钥和 OpenSSL CMS 签名预编译模块。首次信任需管理员完成 MOK 录入。
 
 纯算力验收以普通用户执行 `gpupv-guest verify` 的退出码、逐卡硬件 PCI 标识与数值回读为准。该命令默认不运行视频编解码。Debian x86_64 双卡已有 D3D12 Dispatch、CUDA 和 OpenCL 数值证据。ARM64 CI 覆盖模块 ELF、探针和整包校验；ARM64 GPU 实测需要相应的 Hyper-V 宿主。[双卡原始输出](../artifacts/reports/phase1/final-ssh/compute.txt)
+
+本次成品 UDF 合盘、Secure Boot 受信任签名重启和卸载复核见[成品兼容性记录](../COMPATIBILITY.md)及[卸载后重启证据](../artifacts/reports/ci-bundle-ca173d3/clean.txt)。
