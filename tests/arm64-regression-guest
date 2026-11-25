@@ -1,0 +1,293 @@
+#!/bin/sh
+# Actions run only in a disposable, authenticated ARM64 matrix guest.
+set -eu
+test "$(uname -m)" = aarch64
+case "$(hostname -s)" in gpupv-test-*) ;; *) exit 2;; esac
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export DEBIAN_FRONTEND=noninteractive LC_ALL=C
+action=$1
+target=$2
+k=$(uname -r)
+m=/mnt/gpupv
+home=/opt/hyperv-linux-gpupv
+. /etc/os-release
+apt_install(){ apt-get -o Acquire::Retries=2 -o DPkg::Lock::Timeout=90 install -y --no-install-recommends "$@"; }
+case "$action" in
+prepare)
+    uname -a; cat /etc/os-release; cat /proc/1/comm
+    if command -v cloud-init >/dev/null; then cloud-init status --wait --long || echo "cloud-init reported incomplete provisioning"; fi
+    if command -v zypper >/dev/null && { ! modinfo udf >/dev/null 2>&1 || ! modinfo pci_hyperv >/dev/null 2>&1; }; then
+        rpm -qa 'kernel-default*'
+        if [ "$target" = suse-tumbleweed ]; then
+            for f in /etc/zypp/repos.d/*.repo; do
+                sed -i 's@https\?://download.opensuse.org/ports/aarch64/tumbleweed/repo/oss@https://mirror.nju.edu.cn/opensuse/ports/aarch64/tumbleweed/repo/oss@g' "$f"
+            done
+        fi
+        zypper --non-interactive --gpg-auto-import-keys install --no-recommends --force-resolution kernel-default
+        for tree in /lib/modules/*; do
+            release=${tree##*/}
+            if modinfo -k "$release" udf >/dev/null && modinfo -k "$release" pci_hyperv >/dev/null; then
+                echo "Full distribution kernel provides UDF and hv_pci: $release"
+            fi
+        done
+    fi
+    if command -v apt-get >/dev/null; then
+        case "$target" in ubuntu-*)
+            mirror=https://mirrors.ustc.edu.cn/ubuntu-ports
+            if [ "$target" = ubuntu-24.10-ga ]; then mirror=https://old-releases.ubuntu.com/ubuntu; fi
+            for f in /etc/apt/sources.list /etc/apt/sources.list.d/ubuntu.sources; do
+                test ! -f "$f" || sed -i -E "s@https?://(ports.ubuntu.com/ubuntu-ports|archive.ubuntu.com/ubuntu|security.ubuntu.com/ubuntu)@$mirror@g" "$f"
+            done;;
+        esac
+        case "$ID" in ubuntu|debian|devuan|kali) ;;
+          *) echo "Debian package family $ID";; esac
+        if [ "$target" = debian-12-backports ]; then
+            echo 'deb https://deb.debian.org/debian bookworm-backports main' >/etc/apt/sources.list.d/gpupv-backports.list
+        fi
+        apt-get -o Acquire::Retries=2 -o Acquire::ForceIPv4=true update
+        apt_install mokutil openssl kmod udev python3
+        case "$target" in
+          ubuntu-*-hwe) v=${target#ubuntu-}; v=${v%-hwe}; apt_install "linux-image-generic-hwe-$v";;
+          ubuntu-*-ga-current) apt_install linux-image-generic;;
+          debian-12-backports) apt_install -t bookworm-backports linux-image-arm64;;
+          debian-testing|debian-sid|kali) apt_install linux-image-arm64;;
+          mmio-trace) apt_install strace;;
+          omv)
+            apt_install curl gpg systemd-resolved
+            systemctl enable --now systemd-resolved
+            curl -fsSL https://packages.openmediavault.org/public/archive.key -o /tmp/omv-archive.key
+            gpg --batch --dearmor --yes -o /usr/share/keyrings/openmediavault-archive-keyring.gpg /tmp/omv-archive.key
+            echo 'deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public sandworm main' >/etc/apt/sources.list.d/openmediavault.list
+            apt-get update
+            apt_install openmediavault
+            omv-confdbadm populate
+            if getent group _ssh >/dev/null; then usermod -aG _ssh tester; fi
+            dpkg-query -W openmediavault;;
+        esac
+    elif command -v mokutil >/dev/null && command -v openssl >/dev/null &&
+         command -v modprobe >/dev/null && command -v python3 >/dev/null; then
+        echo 'Required guest utilities are installed'
+    elif command -v dnf >/dev/null; then
+        dnf -y --setopt=install_weak_deps=False install mokutil openssl kmod python3
+    elif command -v zypper >/dev/null; then
+        if [ "$target" = suse-tumbleweed ]; then
+            for f in /etc/zypp/repos.d/*.repo; do
+                sed -i 's@https\?://download.opensuse.org/ports/aarch64/tumbleweed/repo/oss@https://mirror.nju.edu.cn/opensuse/ports/aarch64/tumbleweed/repo/oss@g' "$f"
+            done
+        fi
+        zypper --non-interactive --gpg-auto-import-keys install --no-recommends mokutil openssl kmod python3
+    elif command -v tdnf >/dev/null; then
+        tdnf -y install openssl kmod python3
+    fi
+    ;;
+thin-prebuilt)
+    test "$ID" = ubuntu
+    set --
+    for pkg in gcc make "linux-headers-$k"; do
+        if dpkg-query -W -f='${db:Status-Status}' "$pkg" 2>/dev/null | grep -qx installed; then set -- "$@" "$pkg"; fi
+    done
+    if [ "$#" -gt 0 ]; then
+        plan=$(apt-get -s remove "$@")
+        printf '%s\n' "$plan"
+        if printf '%s\n' "$plan" | grep -Eq '^Remv (linux-image|openssh|systemd|cloud-init|grub|shim|kmod)'; then exit 1; fi
+        apt-get -y remove "$@"
+    fi
+    ! command -v gcc >/dev/null || exit 1
+    ! command -v make >/dev/null || exit 1
+    test ! -f "/lib/modules/$k/build/Makefile";;
+transport)
+    if [ "$ID" = ubuntu ] && ! modinfo pci_hyperv >/dev/null 2>&1; then apt_install "linux-modules-extra-$k"; fi
+    modprobe pci_hyperv || true
+    udevadm settle
+    grep -Hi '^0x008e$' /sys/bus/pci/devices/*/device || true
+    if [ "$ID" = opensuse-leap ] && test -f /home/tester/leap-module-policy; then sh /home/tester/leap-module-policy enable; fi
+    mkdir -p "$m"; mountpoint -q "$m" || mount -o ro -L GPUPV "$m"
+    python3 - "$m/guest/gpupv-guest" <<'PY'
+import runpy, sys
+guest = runpy.run_path(sys.argv[1])
+module = guest["prebuilt"](guest["bundle_info"]())
+print("install_route=prebuilt" if module is not None else "install_route=source")
+PY
+    ;;
+build-deps)
+    if command -v apt-get >/dev/null; then apt_install gcc g++ make libc6-dev "linux-headers-$k"
+    elif command -v dnf >/dev/null; then
+        devel=kernel-devel; case "$k" in *uek*) devel=kernel-uek-devel;; *an23*) devel=kernel-devel;; esac
+        dnf -y --setopt=install_weak_deps=False install gcc gcc-c++ make elfutils-libelf-devel "$devel-$k"
+        if [ "$target" = oracle-9-uek ]; then
+            major=$(sed -n 's/^CONFIG_GCC_VERSION=//p' "/boot/config-$k")
+            if [ -n "$major" ] && [ "$((major / 10000))" -gt "$(gcc -dumpversion | cut -d. -f1)" ]; then
+                dnf -y install "gcc-toolset-$((major / 10000))-gcc"
+            fi
+        fi
+    elif command -v zypper >/dev/null; then
+        zypper --non-interactive install --no-recommends gcc gcc-c++ make kernel-default-devel kernel-devel libelf-devel
+    elif command -v tdnf >/dev/null; then tdnf -y install gcc gcc-c++ make kernel-devel elfutils-libelf-devel
+    fi
+    test -f "/lib/modules/$k/build/Makefile"
+    ;;
+update-kernel)
+    if command -v dnf >/dev/null; then
+        pkg=kernel; case "$k" in *uek*) pkg=kernel-uek;; esac
+        dnf -y --setopt=install_weak_deps=False install "$pkg" "$pkg-devel"
+        dnf -y --setopt=install_weak_deps=False upgrade "$pkg" "$pkg-devel"
+    elif command -v zypper >/dev/null; then
+        sh /home/tester/prepare-leap-kernel
+    elif command -v apt-get >/dev/null; then
+        case "$ID" in ubuntu) apt_install linux-image-generic;; *) apt_install linux-image-arm64;; esac
+    else
+        exit 1
+    fi;;
+firmware)
+    if [ "$target" = suse-15.5 ] && ! rpm -q shim >/dev/null; then
+        if zypper --non-interactive install --no-recommends shim; then
+            shim-install --removable --no-nvram --efi-directory=/boot/efi --config-file=/boot/grub2/grub.cfg
+        fi
+    fi
+    if command -v dnf >/dev/null; then
+        dnf -y --setopt=install_weak_deps=False install shim-aa64 grub2-efi-aa64 efibootmgr || true
+        dnf -y --setopt=install_weak_deps=False upgrade 'shim*' 'grub2*' || true
+        rpm -q shim-aa64 grub2-efi-aa64 || true
+    fi
+    find /boot/efi/EFI -maxdepth 2 -iname '*.efi' -print 2>/dev/null || true
+    if command -v efibootmgr >/dev/null; then efibootmgr -v || true; fi
+    if command -v dnf >/dev/null || find /boot/efi /efi /boot/EFI \( -iname 'mmaa64.efi' -o -iname 'shimaa64*.efi' -o -iname 'MokManager.efi' \) 2>/dev/null | grep -q .; then
+        echo retry_secure_boot
+    fi;;
+environment)
+    uname -srmo; cat /etc/os-release; printf 'init='; cat /proc/1/comm
+    for tool in gcc make; do command -v "$tool" || echo "absent=$tool"; done
+    if test -f "/lib/modules/$k/build/Makefile"; then echo headers=present; else echo headers=absent; fi
+    mokutil --sb-state || true
+    grep -H '^0x008e$' /sys/bus/pci/devices/*/device || true
+    ;;
+install)
+    mountpoint -q "$m" || mount -o ro -L GPUPV "$m"
+    if [ "$target" = oracle-9-uek ]; then
+        major=$(sed -n 's/^CONFIG_GCC_VERSION=//p' "/boot/config-$k")
+        if [ -n "$major" ] && [ -x "/opt/rh/gcc-toolset-$((major / 10000))/root/usr/bin/gcc" ]; then
+            export PATH="/opt/rh/gcc-toolset-$((major / 10000))/root/usr/bin:$PATH"
+        fi
+    fi
+    sh "$m/guest/setup";;
+azure-stock)
+    test "$ID" = azurelinux && test "$target" = azure-3.0
+    mountpoint -q "$m" || mount -o ro -L GPUPV "$m"
+    stock=$(modinfo -n dxgkrnl); echo "stock_module=$stock"
+    modinfo dxgkrnl
+    for dir in lib drivers; do
+        test ! -e "/usr/lib/wsl/$dir" && test ! -L "/usr/lib/wsl/$dir"
+    done
+    mkdir -p /usr/lib/wsl
+    ln -s "$m/lib" /usr/lib/wsl/lib
+    ln -s "$m/drivers" /usr/lib/wsl/drivers
+    trap 'rm -f /usr/lib/wsl/lib /usr/lib/wsl/drivers /tmp/gpupv-stock-compute' EXIT
+    install -m755 "$m/guest/d3d12-compute" /tmp/gpupv-stock-compute
+    su -s /bin/sh tester -c 'id; LD_LIBRARY_PATH=/usr/lib/wsl/lib /tmp/gpupv-stock-compute' || echo stock_compute_failed
+    ;;
+azure-isolate)
+    test "$ID" = azurelinux && test "$target" = azure-3.0
+    stock=$(modinfo -n dxgkrnl)
+    case "$(realpath "$stock")" in "/usr/lib/modules/$k/"*|"/lib/modules/$k/"*) ;; *) echo "Cannot isolate $stock"; exit 1;; esac
+    rpm -qf "$stock" || rpm -qf "$(realpath "$stock")"
+    save=/var/tmp/gpupv-test-stock
+    mkdir -m700 "$save"
+    printf '%s\n' "$stock" >"$save/path"
+    sha256sum "$stock" > "$save/sha256"
+    modprobe -r dxgkrnl
+    mv "$stock" "$save/module"
+    cp -p "/boot/initramfs-$k.img" "$save/initramfs"
+    depmod "$k"
+    dracut --force --omit-drivers dxgkrnl "/boot/initramfs-$k.img" "$k"
+    ! modinfo dxgkrnl >/dev/null 2>&1 || exit 1
+    ;;
+azure-restore)
+    test "$ID" = azurelinux && test "$target" = azure-3.0
+    save=/var/tmp/gpupv-test-stock
+    stock=$(cat "$save/path")
+    test ! -e "$stock"
+    mv "$save/module" "$stock"
+    mv "$save/initramfs" "/boot/initramfs-$k.img"
+    sha256sum -c "$save/sha256"
+    depmod "$k"; modinfo -n dxgkrnl;;
+trust)
+    cat /proc/1/comm; cat /proc/sys/kernel/random/boot_id; mokutil --sb-state || true
+    modinfo -F signer dxgkrnl; cat /sys/module/dxgkrnl/taint; ls -l /dev/dxg
+    warnings=$(dmesg | grep -Ei 'dxg.*(module verification failed|required key|signature.*fail)|module verification failed.*dxg' || true)
+    if [ -n "$warnings" ]; then printf '%s\n' "$warnings"; fi
+    if mokutil --sb-state 2>/dev/null | grep -q 'SecureBoot enabled'; then
+        if [ -z "$(modinfo -F signer dxgkrnl)" ]; then
+            # Some kmod builds report PKCS#7 without decoding the signer.
+            python3 - "$(modinfo -n dxgkrnl)" "$home/guest/gpupv-guest" <<'PY'
+from pathlib import Path
+import runpy
+import struct
+import subprocess
+import sys
+import tempfile
+
+blob = Path(sys.argv[1]).read_bytes()
+cert = runpy.run_path(sys.argv[2])["signing_pair"]()[1]
+magic = b"~Module signature appended~\n"
+if not blob.endswith(magic):
+    sys.exit("Missing module signature trailer")
+end = len(blob) - len(magic) - 12
+length = struct.unpack(">I", blob[end + 8:end + 12])[0]
+if not 0 < length < end:
+    sys.exit("Invalid detached signature length")
+with tempfile.TemporaryDirectory() as tmp:
+    dest = Path(tmp)
+    (dest / "signature").write_bytes(blob[end-length:end])
+    (dest / "content").write_bytes(blob[:end-length])
+    subprocess.check_call(["openssl", "x509", "-inform", "DER", "-in", str(cert),
+                           "-out", str(dest / "cert.pem")])
+    subprocess.check_call(["openssl", "cms", "-verify", "-binary", "-inform", "DER",
+                           "-in", str(dest / "signature"), "-content", str(dest / "content"),
+                           "-certfile", str(dest / "cert.pem"), "-nointern", "-noverify",
+                           "-out", "/dev/null"])
+print("module_signature_verified_with_enrolled_certificate")
+PY
+        fi
+        test -z "$warnings"
+        if grep -q E /sys/module/dxgkrnl/taint; then exit 1; fi
+        echo signature_warnings=0
+    fi
+    if [ "$target" = devuan ]; then sh "$0" udev-reload "$target"; fi;;
+sample)
+    test "$(id -u)" -ne 0; id; /usr/local/bin/gpupv-guest verify;;
+trace)
+    test "$(id -u)" -ne 0
+    strace -f -yy -s 4096 -e trace=file -o /tmp/gpupv-files.trace "$home/guest/d3d12-compute";;
+udev-reload)
+    test "$ID" = devuan
+    test "$(cat /proc/1/comm)" != systemd
+    rule=/etc/udev/rules.d/70-gpupv.rules
+    test -L "$rule" && test ! -e "$rule.gpupv-test"
+    dev=$(grep -l '^0x008e$' /sys/bus/pci/devices/*/device | head -1)
+    dev=${dev%/device}
+    test "$(cat "$dev/vendor")" = 0x1414
+    cat "$rule"
+    mv "$rule" "$rule.gpupv-test"
+    restore(){ mv -f "$rule.gpupv-test" "$rule"; udevadm control --reload; }
+    trap restore EXIT
+    sed '/kmod load dxgkrnl/d' "$rule.gpupv-test" >"$rule"
+    udevadm control --reload
+    modprobe -r dxgkrnl
+    udevadm trigger --action=add "$dev"; udevadm settle
+    if test -d /sys/module/dxgkrnl; then echo loaded_without_rule; else echo unloaded_without_rule; fi
+    restore; trap - EXIT
+    if test -d /sys/module/dxgkrnl; then modprobe -r dxgkrnl; fi
+    # Record the actual rule and operation selected by the distribution's udev.
+    udevadm test --action=add "$dev" >/tmp/gpupv-udev-test.txt 2>&1
+    grep -E '70-gpupv.rules.*kmod load dxgkrnl|run:.*kmod load dxgkrnl' /tmp/gpupv-udev-test.txt
+    if test -d /sys/module/dxgkrnl; then modprobe -r dxgkrnl; fi
+    udevadm trigger --action=add "$dev"; udevadm settle
+    test -d /sys/module/dxgkrnl && test -c /dev/dxg
+    ls -l /dev/dxg; echo loaded_with_rule;;
+clean)
+    for p in "$home" /dev/dxg /usr/local/bin/gpupv-guest /usr/lib/wsl/drivers /usr/lib/wsl/lib /etc/udev/rules.d/70-gpupv.rules /etc/modules-load.d/gpupv.conf; do
+        test ! -e "$p" && test ! -L "$p" || { echo "remains=$p"; exit 1; }; done
+    ! modinfo dxgkrnl >/dev/null 2>&1 || exit 1
+    echo managed_paths_clean;;
+*) exit 2;;
+esac

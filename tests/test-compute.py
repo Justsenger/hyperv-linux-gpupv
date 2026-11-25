@@ -1,11 +1,13 @@
 """Local release-contract and detached Linux module signature tests."""
 import json
 from pathlib import Path
+import runpy
 import struct
 import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
@@ -17,6 +19,35 @@ def fixture(kind,machine):
 
 
 class Contract(unittest.TestCase):
+    @unittest.skipUnless(sys.platform.startswith("linux"), "Linux guest CLI")
+    def test_prebuilt_symbol_versions(self):
+        check = runpy.run_path(str(ROOT/"guest/gpupv-guest"))["prebuilt_abi_mismatch"]
+        with tempfile.TemporaryDirectory() as tmp:
+            stock = Path(tmp)/"pci-hyperv.ko"
+            stock.touch()
+            def command(args, **kwargs):
+                if args[0] == "modinfo":
+                    return subprocess.CompletedProcess(args, 0, str(stock))
+                crc = "0x28615977" if args[-1] == str(stock) else "0xa0f12abe"
+                return subprocess.CompletedProcess(args, 0, crc + "\tmodule_layout\n")
+            with patch("shutil.which", return_value="/sbin/modprobe"), patch("subprocess.run", side_effect=command):
+                self.assertIsNone(check(stock))
+                self.assertIn("module_layout", check(Path(tmp)/"same-release.ko"))
+
+    @unittest.skipUnless(sys.platform.startswith("linux"), "Linux guest CLI")
+    def test_adapter_identity(self):
+        verify = runpy.run_path(str(ROOT/"guest/gpupv-guest"))["verify_adapter_ids"]
+        adreno = {"device": r"ACPI\VEN_QCOM&DEV_0636&SUBSYS_MSWW8280&REV_1823\0"}
+        intel = {"device": r"PCI\VEN_8086&DEV_9A49&SUBSYS_12345678\0"}
+        arm = "Adapter 4d4f4351:36333630 hardware=1\n"
+        pci = "Adapter 8086:9a49 hardware=1\n"
+        verify([adreno, intel], pci + arm + "Adapter 1414:008c hardware=0\n")
+        verify([adreno, adreno], arm + arm)
+        for cards, output in (([adreno], pci), ([adreno], arm + pci),
+                              ([adreno, adreno], arm), ([{"device":"unknown"}], arm)):
+            with self.assertRaises(RuntimeError):
+                verify(cards, output)
+
     def test_native_matrix(self):
         plan=json.loads(subprocess.check_output([sys.executable,str(ROOT/"tests/container-matrix.py"),"--plan"]))
         for row in plan["include"]:

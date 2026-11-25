@@ -3,6 +3,7 @@
 import os
 from pathlib import Path
 import runpy
+import struct
 import subprocess
 import sys
 
@@ -10,7 +11,7 @@ if os.geteuid() != 0 or not Path("/proc/sys/kernel/hostname").read_text().strip(
     sys.exit("Expected root on an owned test guest")
 scope = runpy.run_path(sys.argv[1])
 try:
-    scope["signing_pair"]()
+    scope["signing_pair"](dkms="--dkms" in sys.argv[2:])
     print("already_trusted")
 except RuntimeError as error:
     print(str(error), flush=True)
@@ -23,7 +24,22 @@ except RuntimeError as error:
     password = sys.stdin.readline().strip()
     if not password.isalnum() or len(password) < 8:
         sys.exit("Invalid ephemeral test password")
-    subprocess.run(["mokutil","--timeout","-1"],check=True)
+    options = subprocess.run(["mokutil", "--help"], stdout=subprocess.PIPE,
+                             stderr=subprocess.STDOUT).stdout
+    if b"--timeout" in options:
+        subprocess.run(["mokutil","--timeout","-1"],check=True)
+    else:
+        # Older EL8 mokutil lacks --timeout. Set shim's menu timeout on the
+        # disposable guest with the same EFI attributes and value as mokutil.
+        timeout = Path("/sys/firmware/efi/efivars/MokTimeout-605dab50-e046-4300-abb6-3dd810dd8b23")
+        value = struct.pack("<Ii", 7, -1)
+        if not timeout.exists() or timeout.read_bytes() != value:
+            timeout.write_bytes(value)
     subprocess.run(["mokutil","--import",str(cert)], input=(password+"\n"+password+"\n").encode(),check=True)
-    subprocess.run(["systemd-run","--on-active=3s","/usr/bin/systemctl","reboot"],check=True)
+    if Path("/run/systemd/system").is_dir():
+        subprocess.run(["systemd-run","--on-active=3s","/usr/bin/systemctl","reboot"],check=True)
+    else:
+        subprocess.Popen(["sh","-c","sleep 3 && exec /sbin/reboot"],
+                         stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
+                         stderr=subprocess.DEVNULL, start_new_session=True)
     print("enrollment_requested")

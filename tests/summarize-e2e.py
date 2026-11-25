@@ -26,6 +26,12 @@ def guest_run(folder, vendor):
     nvidia = all(f"7 * {value} + 3 = {7 * value + 3}" in workload for value in (5, 19, 127))
     frames = re.findall(r"^0,\s*\d+,\s*\d+,\s*\d+,\s*\d+,\s*[a-f0-9]{32}\s*$", workload, re.M)
     hardware = "—"
+    if vendor == "Qualcomm" and workload:
+        adapter = re.search(r"^Adapter (4d4f4351:[0-9a-f]{8}) hardware=1$", workload, re.M)
+        if adapter and "matched=64/64" in workload and "Verified hardware adapters=1" in workload:
+            hardware = f"Adreno {adapter[1]}，D3D12 Compute 64/64"
+        else:
+            hardware = "Adreno 计算未证实"
     if vendor == "NVIDIA" and workload:
         pieces = ["CUDA 数值通过" if nvidia else "CUDA 未证实"]
         pieces.append(f"NVENC/CUVID {len(frames)} 帧" if len(frames) == 15 else "编解码未通过")
@@ -63,7 +69,9 @@ def guest_run(folder, vendor):
     strict = "未完成"
     if result_path.exists():
         strict = "通过" if json.loads(read(result_path)).get("passed") is True else "未通过"
-    return kernel[1] if kernel else "—", lifecycle, hardware, strict
+    hwe = read(folder / "hwe-config.txt").splitlines()
+    release = hwe[0] if hwe and any(line.startswith("CONFIG_PCI_HYPERV=") for line in hwe) else (kernel[1] if kernel else "—")
+    return release, lifecycle, hardware, strict
 
 
 def main():
@@ -74,7 +82,7 @@ def main():
     for wrapper in sorted(reports.glob("e2e-*")):
         if not wrapper.is_dir():
             continue
-        match = re.fullmatch(r"e2e-(.+)-(Intel|NVIDIA)-([a-f0-9]{8})", wrapper.name)
+        match = re.fullmatch(r"e2e-(.+)-(Intel|NVIDIA|Qualcomm)-([a-f0-9]{8})", wrapper.name)
         if not match:
             continue
         base, vendor, prefix = match.groups()
@@ -98,6 +106,8 @@ def main():
             vendor = "NVIDIA"
         elif "Intel" in sample:
             vendor = "Intel"
+        elif "Qualcomm" in sample:
+            vendor = "Qualcomm"
         else:
             continue
         rows.append((base, vendor, *guest_run(folder, vendor), f"[试验记录]({folder.name}/)"))

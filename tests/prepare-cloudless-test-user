@@ -1,0 +1,22 @@
+#!/bin/sh
+# First boot of a disposable desktop image that has no packaged cloud-init.
+set -eu
+test -f /etc/gpupv-regression-seed
+seed=$(mktemp -d)
+trap 'umount "$seed" 2>/dev/null || true; rmdir "$seed"' EXIT
+mount -o ro,nodev,nosuid,noexec -L cidata "$seed"
+name=$(sed -n 's/^local-hostname: //p' "$seed/meta-data" | tr -d '\r')
+printf '%s\n' "$name" | grep -Eq '^gpupv-test-[0-9a-f]{32}$'
+key=$(sed -nE 's/^[[:space:]]*-[[:space:]]+(ssh-ed25519 [A-Za-z0-9+\/=]+)( .*)?\r?$/\1/p' "$seed/user-data" | head -1)
+test -n "$key"
+if ! id tester >/dev/null 2>&1; then useradd -m -s /bin/sh tester; fi
+usermod -aG video,sudo tester
+install -m700 -d -o tester -g "$(id -gn tester)" /home/tester/.ssh
+printf '%s\n' "$key" > /home/tester/.ssh/authorized_keys
+chown tester:"$(id -gn tester)" /home/tester/.ssh/authorized_keys
+chmod 600 /home/tester/.ssh/authorized_keys
+printf '%s\n' 'tester ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/90-gpupv-tester
+chmod 440 /etc/sudoers.d/90-gpupv-tester
+echo "$name" >/etc/hostname
+hostname "$name"
+ssh-keygen -A

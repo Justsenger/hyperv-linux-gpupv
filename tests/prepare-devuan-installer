@@ -1,0 +1,103 @@
+#!/bin/sh
+# Boot the official Devuan ARM64 network installer on this disposable VM.
+set -eu
+name=$(hostname -s)
+case "$name" in gpupv-test-*) ;; *) exit 2;; esac
+test -f /home/tester/.ssh/authorized_keys
+test -d /sys/firmware/efi
+umask 077
+export DEBIAN_FRONTEND=noninteractive
+apt-get -qq update
+apt-get -qy install --no-install-recommends curl ca-certificates cpio grub-common
+base=https://pkgmaster.devuan.org/devuan/dists/excalibur/main/installer-arm64/current/images
+work=$(mktemp -d)
+cd "$work"
+curl -fsSL --retry 2 "$base/SHA256SUMS" -o SHA256SUMS
+sub=netboot/debian-installer/arm64
+mkdir -p "$sub"
+for f in linux initrd.gz; do
+    curl -fsSL --retry 2 "$base/$sub/$f" -o "$sub/$f"
+    grep "  ./$sub/$f\$" SHA256SUMS | sha256sum -c -
+done
+mkdir -p /boot/gpupv-installer
+cp "$sub/linux" /boot/gpupv-installer/linux
+mkdir additions
+cd additions
+cat >preseed.cfg <<EOF
+d-i debian-installer/locale string en_US.UTF-8
+d-i keyboard-configuration/xkb-keymap select us
+d-i netcfg/choose_interface select auto
+d-i netcfg/hostname string $name
+d-i netcfg/get_hostname string $name
+d-i netcfg/get_domain string local
+d-i mirror/country string manual
+d-i mirror/http/hostname string deb.devuan.org
+d-i mirror/http/directory string /merged
+d-i mirror/http/proxy string
+d-i mirror/suite string excalibur
+d-i passwd/root-login boolean false
+d-i passwd/make-user boolean true
+d-i passwd/user-fullname string GPU regression
+d-i passwd/username string tester
+d-i passwd/user-password-crypted password !
+d-i clock-setup/utc boolean true
+d-i time/zone string Etc/UTC
+d-i clock-setup/ntp boolean false
+d-i partman-auto/disk string /dev/sda
+d-i partman-auto/method string regular
+d-i partman-auto/choose_recipe select atomic
+d-i partman-partitioning/confirm_write_new_label boolean true
+d-i partman/choose_partition select finish
+d-i partman/confirm boolean true
+d-i partman/confirm_nooverwrite boolean true
+d-i partman-md/device_remove_md boolean true
+d-i partman-lvm/device_remove_lvm boolean true
+d-i base-installer/kernel/image string linux-image-arm64
+d-i base-installer/init select sysvinit
+d-i choose-init/select_init select sysvinit
+tasksel tasksel/first multiselect standard, ssh-server
+d-i pkgsel/include string sysvinit-core openssh-server sudo mokutil openssl kmod python3
+d-i pkgsel/upgrade select none
+popularity-contest popularity-contest/participate boolean false
+d-i grub-installer/only_debian boolean true
+d-i grub-installer/bootdev string /dev/sda
+d-i grub-installer/force-efi-extra-removable boolean true
+d-i preseed/late_command string cp /gpupv-finish /target/tmp/gpupv-finish; cp /gpupv-pub /target/tmp/gpupv-pub; cp /gpupv-host-key /target/etc/ssh/ssh_host_ed25519_key; cp /gpupv-host-pub /target/etc/ssh/ssh_host_ed25519_key.pub; in-target sh /tmp/gpupv-finish
+d-i finish-install/reboot_in_progress note
+EOF
+cp /home/tester/.ssh/authorized_keys gpupv-pub
+# Keep the identity pinned by the Hyper-V runner across installation. These
+# keys stay inside the same disposable VM and its root-only installer initrd.
+cp /etc/ssh/ssh_host_ed25519_key gpupv-host-key
+cp /etc/ssh/ssh_host_ed25519_key.pub gpupv-host-pub
+cat >gpupv-finish <<EOF
+set -eu
+echo $name >/etc/hostname
+install -d -m700 -o tester -g tester /home/tester/.ssh
+install -m600 -o tester -g tester /tmp/gpupv-pub /home/tester/.ssh/authorized_keys
+usermod -aG video,sudo tester
+echo 'tester ALL=(ALL) NOPASSWD: ALL' >/etc/sudoers.d/90-gpupv-tester
+chmod 440 /etc/sudoers.d/90-gpupv-tester
+update-rc.d ssh defaults
+EOF
+cp "../$sub/initrd.gz" /boot/gpupv-installer/initrd.gz
+chmod 600 /boot/gpupv-installer/initrd.gz
+printf '%s\n' preseed.cfg gpupv-finish gpupv-pub gpupv-host-key gpupv-host-pub | cpio -o -H newc | gzip -c >>/boot/gpupv-installer/initrd.gz
+uuid=$(grub-probe --target=fs_uuid /boot)
+prefix=$(grub-mkrelpath /boot/gpupv-installer)
+cat >/etc/grub.d/43_gpupv_installer <<EOF
+#!/bin/sh
+cat <<'ENTRY'
+menuentry 'Devuan GPU regression installer' --id gpupv-devuan {
+    search --no-floppy --fs-uuid --set=root $uuid
+    linux $prefix/linux auto=true priority=critical DEBIAN_FRONTEND=noninteractive netcfg/hostname=$name netcfg/get_hostname=$name domain=local interface=auto locale=en_US.UTF-8 keymap=us
+    initrd $prefix/initrd.gz
+}
+ENTRY
+EOF
+chmod 755 /etc/grub.d/43_gpupv_installer
+mkdir -p /etc/default/grub.d
+echo 'GRUB_DEFAULT=saved' >/etc/default/grub.d/99-gpupv-installer.cfg
+update-grub
+grub-set-default gpupv-devuan
+grub-editenv list

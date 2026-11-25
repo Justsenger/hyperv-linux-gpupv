@@ -12,3 +12,13 @@ tests/build-kernel-target text eol=lf
 tests/compute-acceptance text eol=lf
 tests/prebuilt-container text eol=lf
 tests/isolate-dual-compute text eol=lf
+tests/prepare-leap-kernel text eol=lf
+tests/arm64-regression-guest text eol=lf
+tests/prepare-devuan-installer text eol=lf
+tests/leap-module-policy text eol=lf
+tests/arm64-offline-regression text eol=lf
+tests/prepare-cloudless-test-user text eol=lf
+tests/prepare-test-mok text eol=lf
+
+# Preserve native command transcripts, including terminal padding.
+artifacts/reports/**/*.txt -whitespace

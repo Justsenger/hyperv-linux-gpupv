@@ -1,0 +1,58 @@
+#!/bin/bash
+# Run the acceptance stages on a disposable guest without depending on SSH.
+set -euo pipefail
+base=/var/lib/gpupv-offline-test
+test "$(id -u)" = 0 && test -f "$base/target"
+target=$(cat "$base/target")
+case "$target" in anolis-23|kylin|deepin-arm64) ;; *) exit 2;; esac
+records=$base/records
+mkdir -p "$records" /run/gpupv-seed /mnt/gpupv
+mountpoint -q /run/gpupv-seed || mount -o ro,nodev,nosuid,noexec -L cidata /run/gpupv-seed
+name=$(sed -n 's/^local-hostname: //p' /run/gpupv-seed/meta-data | tr -d '\r')
+[[ "$name" =~ ^gpupv-test-[0-9a-f]{32}$ ]]
+hostname "$name"
+exec >>"$records/console.txt" 2>&1
+stage=$(cat "$base/stage" 2>/dev/null || echo enroll)
+now=$(cat /proc/sys/kernel/random/boot_id)
+echo "$stage $now" >>"$records/boots.txt"
+guest=$base/arm64-regression-guest
+fail_stage(){
+    echo "$stage returned $1" >"$records/failure.txt"
+    dmesg | tail -160 >"$records/failure-diagnostics.txt"
+    sync
+    systemctl --no-block poweroff
+}
+trap 'fail_stage "$?"' ERR
+advance(){ echo "$1" >"$base/stage";sync;systemctl --no-block reboot;exit 0; }
+mountpoint -q /mnt/gpupv || mount -o ro -L GPUPV /mnt/gpupv
+if [ "$stage" = enroll ]; then
+    sh "$guest" transport "$target" >"$records/transport.txt" 2>&1
+    sh "$guest" environment "$target" >"$records/environment.txt" 2>&1
+    uname -r >"$records/kernel.txt"
+    if mokutil --sb-state | grep -q 'SecureBoot enabled'; then
+        echo install >"$base/stage";sync
+        python3 "$base/prepare-test-mok" /mnt/gpupv/guest/gpupv-guest <"$base/mok-pass" >"$records/mok-request.txt" 2>&1
+        if grep -qx enrollment_requested "$records/mok-request.txt"; then exit 0; fi
+    fi
+    stage=install
+fi
+if [ "$stage" = install ]; then
+    sh "$guest" install "$target" >"$records/install.txt" 2>&1
+    advance verify
+fi
+if [ "$stage" = verify ]; then
+    sh "$guest" trust "$target" >"$records/trust.txt" 2>&1
+    mark="gpupv-sample-$now"
+    echo "$mark" >/dev/kmsg
+    rc=0
+    runuser -u tester -- sh "$guest" sample "$target" >"$records/workload.txt" 2>&1 || rc=$?
+    dmesg | sed -n "/$mark/,$ p" >"$records/dmesg.txt"
+    if [ "$rc" -ne 0 ]; then echo "workload returned $rc" >"$records/failure.txt"; fi
+    /usr/local/bin/gpupv-guest uninstall >"$records/uninstall.txt" 2>&1
+    advance clean
+fi
+if [ "$stage" = clean ]; then
+    sh "$guest" clean "$target" >"$records/cleanup.txt" 2>&1
+    echo finished >"$base/stage";sync
+    systemctl --no-block poweroff
+fi

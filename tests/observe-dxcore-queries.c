@@ -1,4 +1,4 @@
-/* x86_64 glibc PLT observer for an ordinary opt-in test process. */
+/* ELF64 glibc PLT observer for an ordinary opt-in test process. */
 #define _GNU_SOURCE
 #include <link.h>
 #include <errno.h>

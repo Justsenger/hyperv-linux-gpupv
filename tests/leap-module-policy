@@ -7,6 +7,11 @@ saved=/var/tmp/gpupv-matrix-module-policy
 config=/etc/modprobe.d/10-unsupported-modules.conf
 case "$1" in
 enable)
+    if test -d "$saved"; then
+        test ! -L "$saved" && test "$(stat -c '%u:%a' "$saved")" = '0:700' &&
+            test "$(cat "$config")" = 'allow_unsupported_modules 1'
+        exit $?
+    fi
     mkdir -m 700 "$saved"
     if test -e "$config" || test -L "$config"; then mv -T "$config" "$saved/original"; fi
     echo 'allow_unsupported_modules 1' > "$config"

@@ -21,10 +21,17 @@ from pathlib import Path
 device = json.loads(Path("/opt/hyperv-linux-gpupv/device.json").read_text())
 expected = Counter()
 for card in device.get("adapters", [device]):
-    pci = re.search(r"VEN_([0-9A-F]{4})&DEV_([0-9A-F]{4})", card["device"], re.I)
-    if not pci:
-        sys.exit("Unable to verify PCI identity: " + card["device"])
-    expected[":".join(pci.groups()).lower()] += 1
+    device_id = card["device"].upper()
+    if device_id.startswith("ACPI\\"):
+        match = re.match(r"ACPI\\VEN_([A-Z0-9]{4})&DEV_([0-9A-F]{4})(?:[&\\]|$)", device_id)
+        if not match:
+            sys.exit("Unable to verify ACPI identity: " + device_id)
+        expected[":".join(v.encode("ascii")[::-1].hex() for v in match.groups())] += 1
+    else:
+        pci = re.match(r"PCI\\VEN_([0-9A-F]{4})&DEV_([0-9A-F]{4})(?:[&\\]|$)", device_id)
+        if not pci:
+            sys.exit("Unable to verify PCI identity: " + device_id)
+        expected[":".join(pci.groups()).lower()] += 1
 observed = Counter(re.findall(r"^Adapter ([0-9a-f]+:[0-9a-f]+) hardware=1$", Path(sys.argv[1]).read_text(), re.M))
 if observed != expected:
     sys.exit("DXCore adapter mismatch: expected %s, observed %s" % (expected, observed))

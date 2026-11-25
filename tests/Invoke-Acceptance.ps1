@@ -1,6 +1,6 @@
 # Run on a VM created by New-TestVM.ps1, with the chosen GPU already attached.
 param([Parameter(Mandatory)][guid]$Id,[Parameter(Mandatory)][string]$Key,
-      [Parameter(Mandatory)][string]$Gpu,[Parameter(Mandatory)][string]$Address,[string]$Iso,[switch]$Dkms,[string]$CodecFixture)
+      [Parameter(Mandatory)][string]$Gpu,[Parameter(Mandatory)][string]$Address,[string]$Iso,[switch]$Dkms,[string]$CodecFixture,[string]$Bundle)
 $ErrorActionPreference='Stop'
 $vm=Get-VM -Id $Id
 if($vm.Name -notmatch '^gpupv-test-[0-9a-f]{32}$'){throw 'Unexpected test VM name'}
@@ -14,17 +14,17 @@ $report=New-Item -Type Directory "$root/artifacts/reports/$($vm.Name)-$([guid]::
 $ssh=@('-i',$Key,'-o','BatchMode=yes','-o','ConnectTimeout=5','-o','ServerAliveInterval=5','-o','ServerAliveCountMax=2','-o','StrictHostKeyChecking=accept-new','-o',"HostKeyAlias=$Id",'-o',"UserKnownHostsFile=$dir/known_hosts")
 $target="tester@$Address"
 function Invoke-Guest($Step,$Cmd){
-    $out=& ssh.exe @ssh $target $Cmd 2>&1
+    $out=& ssh.exe -n @ssh $target $Cmd 2>&1
     $rc=$LASTEXITCODE
     if($rc -eq 255 -and $Step -in 'intel-api-diagnostics','dmesg-after-workload','clean','clean-after-reboot','uninstall','module-trust-after-boot'){
         $out | Out-File "$report/$Step-transport.txt"
         $newIp=(Resolve-DnsName "$($vm.Name).mshome.net" -Type A -ErrorAction SilentlyContinue | Where-Object IPAddress | Select-Object -First 1 -ExpandProperty IPAddress)
         if($newIp){
             $next="tester@$newIp"
-            $identity=& ssh.exe @ssh $next 'cat /proc/sys/kernel/hostname' 2>$null
+            $identity=& ssh.exe -n @ssh $next 'cat /proc/sys/kernel/hostname' 2>$null
             if($LASTEXITCODE -eq 0 -and $identity -eq $vm.Name){
                 $script:target=$next
-                $out=& ssh.exe @ssh $next $Cmd 2>&1
+                $out=& ssh.exe -n @ssh $next $Cmd 2>&1
                 $rc=$LASTEXITCODE
             }
         }
@@ -45,7 +45,7 @@ function Restart-TestGuest($Label){
         $ips=Get-NetNeighbor -AddressFamily IPv4 | Where-Object {($_.LinkLayerAddress -replace '-','') -eq $mac} | Select-Object -ExpandProperty IPAddress
         $dns=@(Resolve-DnsName "$($vm.Name).mshome.net" -Type A -ErrorAction SilentlyContinue | Where-Object IPAddress | Select-Object -ExpandProperty IPAddress)
         foreach($candidate in ($dns+@($ips)+@($Address) | Select-Object -Unique)){
-            $next=& ssh.exe @ssh "tester@$candidate" 'cat /proc/sys/kernel/hostname /proc/sys/kernel/random/boot_id' 2>$null
+            $next=& ssh.exe -n @ssh "tester@$candidate" 'cat /proc/sys/kernel/hostname /proc/sys/kernel/random/boot_id' 2>$null
             if($LASTEXITCODE -eq 0 -and $next.Count -eq 2 -and $next[0] -eq $vm.Name -and $next[1] -match '^[a-f0-9-]{36}$' -and $next[1] -ne $old){
                 $next | Out-File "$report/$Label-after.txt"
                 return "tester@$candidate"
@@ -75,7 +75,7 @@ if(($environment -match '^ID="?arch"?$') -and (Get-VMFirmware -VM $vm).SecureBoo
         $ip=(Resolve-DnsName "$($vm.Name).mshome.net" -Type A -ErrorAction SilentlyContinue | Where-Object IPAddress | Select-Object -First 1 -ExpandProperty IPAddress)
         if(!$ip){continue}
         $target="tester@$ip"
-        $name=& ssh.exe @ssh $target 'cat /proc/sys/kernel/hostname' 2>$null
+        $name=& ssh.exe -n @ssh $target 'cat /proc/sys/kernel/hostname' 2>$null
         if($LASTEXITCODE -eq 0 -and $name -eq $vm.Name){break}
     }while((Get-Date) -lt $deadline)
     Invoke-Guest 'arch-signed-boot' 'set -eu; cat /proc/sys/kernel/hostname; uname -r; mokutil --sb-state | grep "SecureBoot enabled"; cat /proc/cmdline'
@@ -87,6 +87,14 @@ if($leap){
     Invoke-Guest 'third-party-module-policy' 'sudo -n sh "$HOME/gpupv-leap-module-policy" enable'
 }
 # Some Ubuntu cloud images omit the virtual PCI controller from their kernel package.
+if(($environment -match '^ID="?ubuntu"?$') -and ($environment -match '^VERSION_ID="?22\.04"?$') -and ($environment -match '\baarch64\b')){
+    $transportConfig=Invoke-Guest 'transport-config' 'set -eu; config=/boot/config-$(uname -r); test -r "$config"; if grep -Eq "^CONFIG_PCI_HYPERV=[ym]$" "$config"; then echo supported; else echo requires_hwe; fi'
+    if($transportConfig -contains 'requires_hwe'){
+        Invoke-Guest 'install-hwe' 'sudo -n env DEBIAN_FRONTEND=noninteractive apt-get -o DPkg::Lock::Timeout=120 install -y --no-install-recommends linux-generic-hwe-22.04'
+        $target=Restart-TestGuest 'hwe-boot'
+        Invoke-Guest 'hwe-config' 'set -eu; uname -r; grep -E "^CONFIG_PCI_HYPERV=[ym]$" /boot/config-$(uname -r); test -f /lib/modules/$(uname -r)/build/Makefile'
+    }
+}
 $transportPrep='set -eu; . /etc/os-release; if test "$ID" = ubuntu && ! modinfo pci_hyperv >/dev/null 2>&1; then sudo -n env DEBIAN_FRONTEND=noninteractive apt-get -o DPkg::Lock::Timeout=120 install -y --no-install-recommends "linux-modules-extra-$(uname -r)"; sudo -n modprobe pci_hyperv; sudo -n udevadm settle; fi; for d in /sys/bus/pci/devices/*; do if test -r "$d/vendor"; then cat "$d/vendor" "$d/device"; fi; done'
 Invoke-Guest 'transport-prerequisite' $transportPrep
 if($Gpu -like '*VEN_8086*'){
@@ -109,7 +117,7 @@ if($Iso){
     if(!(Get-VMDvdDrive -VM $vm | Where-Object Path -eq $isoPath)){throw 'Attach the selected deployment ISO to the owned VM first'}
     Invoke-Guest 'install-first' ('set -eu; sudo -n mkdir -p /mnt/gpupv; dev=$(sudo -n blkid -L GPUPV); sudo -n mount -o ro "$dev" /mnt/gpupv; sha256sum /mnt/gpupv/guest/gpupv-guest /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h; sudo -n sh /mnt/gpupv/guest/setup'+$installArgs)
 }else{
-    & "$root/host/gpupv-host.ps1" push -Gpu $Gpu -Destination $target -IdentityFile $Key -KnownHostsFile "$dir/known_hosts" -HostKeyAlias $Id *> "$report/install-first.txt"
+    & "$root/host/gpupv-host.ps1" push -Gpu $Gpu -Bundle $Bundle -Destination $target -IdentityFile $Key -KnownHostsFile "$dir/known_hosts" -HostKeyAlias $Id *> "$report/install-first.txt"
 }
 $failures=[Collections.Generic.List[string]]::new()
 Invoke-Guest 'install-repeat' "sudo -n $tool install$installArgs"
@@ -203,12 +211,17 @@ try{Invoke-Guest 'workload' $verify}catch{
 }
 $after=Invoke-Guest 'dmesg-after-workload' 'sudo -n dmesg'
 if($after -match '(?i)kernel panic|BUG:|Oops:|dxg(?:krnl|k)?.*(error|fail|timeout)|WARNING:.*dxg'){$failures.Add('Kernel diagnostic after workload requires review')}
-if(!$Iso -or $environment -match '^ID="?(fedora|rocky)"?$'){
+if($Gpu -like '*VEN_QCOM*' -or !$Iso -or $environment -match '^ID="?(fedora|rocky)"?$'){
     # Observe a second ordinary process after saving the acceptance kernel log.
     # This audit module only reads glibc call arguments and leaves return values intact.
     & scp.exe @ssh "$PSScriptRoot/observe-dxcore-queries.c" ("${target}:")
     if(!$LASTEXITCODE){
-        $audit='set -eu; d=$(mktemp -d); trap ''rm -rf "$d"'' EXIT; cc -O2 -shared -fPIC observe-dxcore-queries.c -o "$d/observer.so"; if test -x /opt/hyperv-linux-gpupv/guest/intel-compute && test -e /usr/lib/wsl/drivers/*/libigd12umd64.so; then LD_AUDIT="$d/observer.so" /opt/hyperv-linux-gpupv/guest/intel-compute; else LD_AUDIT="$d/observer.so" nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv; fi'
+        $audit='set -eu; command -v cc >/dev/null || { echo "No compiler for the optional observer"; exit 0; }; d=$(mktemp -d); trap ''rm -rf "$d"'' EXIT; cc -O2 -shared -fPIC observe-dxcore-queries.c -o "$d/observer.so"; '
+        if($Gpu -like '*VEN_QCOM*'){
+            $audit+='LD_AUDIT="$d/observer.so" /opt/hyperv-linux-gpupv/guest/d3d12-compute'
+        }else{
+            $audit+='if test -x /opt/hyperv-linux-gpupv/guest/intel-compute && test -e /usr/lib/wsl/drivers/*/libigd12umd64.so; then LD_AUDIT="$d/observer.so" /opt/hyperv-linux-gpupv/guest/intel-compute; else LD_AUDIT="$d/observer.so" nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv; fi'
+        }
         try{Invoke-Guest 'dxcore-call-metadata' $audit}catch{Write-Warning $_.Exception.Message}
     }
 }

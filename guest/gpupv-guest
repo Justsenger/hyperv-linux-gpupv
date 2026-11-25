@@ -97,6 +97,34 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def symbol_versions(module):
+    result = sp.run(["modprobe", "--dump-modversions", str(module)], stdout=sp.PIPE,
+                    stderr=sp.DEVNULL, universal_newlines=True)
+    if result.returncode:
+        return {}
+    return {name: int(crc, 16) for crc, name in
+            re.findall(r"^(0x[\da-fA-F]+)\s+(\w+)$", result.stdout, re.M)}
+
+
+def prebuilt_abi_mismatch(module):
+    # Ubuntu GA and HWE can share uname -r and vermagic but export different CRCs.
+    if not shutil.which("modprobe"):
+        return None
+    required = symbol_versions(module)
+    if not required:
+        return None
+    for driver in ("pci_hyperv", "hv_netvsc"):
+        result = sp.run(["modinfo", "-n", driver], stdout=sp.PIPE, stderr=sp.DEVNULL,
+                        universal_newlines=True)
+        reference = Path(result.stdout.strip())
+        if result.returncode or not reference.is_file():
+            continue
+        for name, crc in symbol_versions(reference).items():
+            if name in required and required[name] != crc:
+                return "{} ({:#010x} != {:#010x}, {})".format(name, required[name], crc, driver)
+    return None
+
+
 def prebuilt(meta):
     if BUNDLE == HOME and (HOME/"install.json").is_file():
         info = check_owner()
@@ -124,6 +152,11 @@ def prebuilt(meta):
             fail("Prebuilt module metadata mismatch: "+field)
     if matches[0]["name"] != "dxgkrnl" or matches[0]["vermagic"].split()[0] != RELEASE:
         fail("Incompatible prebuilt module")
+    mismatch = prebuilt_abi_mismatch(path)
+    if mismatch:
+        print("Prebuilt kernel ABI mismatch: {}. Using matching kernel headers.".format(mismatch),
+              file=sys.stderr, flush=True)
+        return None
     return path
 
 
@@ -267,13 +300,22 @@ def unload():
         sp.run(["modprobe", "-r", "dxgkrnl"], check=True)
 
 
-def signing_pair():
+def signing_pair(dkms=False):
     if not shutil.which("mokutil") or not shutil.which("openssl"):
         fail("模块签名需要发行版的 mokutil 和 openssl。")
     pairs = [(Path(k), Path(c)) for k, c in (
         ("/var/lib/shim-signed/mok/MOK.priv", "/var/lib/shim-signed/mok/MOK.der"),
         ("/var/lib/dkms/mok.key", "/var/lib/dkms/mok.pub"),
         ("/var/lib/gpupv-signing/MOK.priv", "/var/lib/gpupv-signing/MOK.der"))]
+    if dkms and shutil.which("update-secureboot-policy") and Path("/usr/lib/shim/mok/openssl.cnf").is_file():
+        # Ubuntu DKMS signs again after MAKE and may prompt inside a headless install.
+        # Enroll its distribution key before adding the module to the DKMS tree.
+        key, cert = pairs[0]
+        if not os.path.lexists(key) and not os.path.lexists(cert):
+            sp.run(["update-secureboot-policy", "--new-key"], check=True)
+        if not (key.is_file() and cert.is_file()):
+            fail(f"Ubuntu DKMS 签名需要完整的 {key} 和 {cert}。")
+        pairs = [(key, cert)]
     available = [(k,c) for k,c in pairs if k.is_file() and c.is_file()]
     if not available and shutil.which("dkms"):
         sp.run(["dkms", "generate_mok"], stdout=sp.DEVNULL, stderr=sp.DEVNULL)
@@ -347,7 +389,7 @@ def install(dkms=False, with_video=False):
     meta = bundle_info()
     module = prebuilt(meta)
     dkms = dkms and module is None
-    pair = signing_pair() if secure_boot() else None
+    pair = signing_pair(dkms=dkms) if secure_boot() else None
     nv_smi = (BUNDLE / "lib/nvidia-smi").is_file()
     paths = links(RELEASE,dkms,nv_smi)
     device = json.loads((BUNDLE / "device.json").read_text())
@@ -473,21 +515,33 @@ def check_device():
     return device
 
 
+def verify_adapter_ids(cards, output):
+    expected = Counter()
+    for card in cards:
+        device = card.get("device", "").upper()
+        pci = re.match(r"PCI\\VEN_([0-9A-F]{4})&DEV_([0-9A-F]{4})(?:[&\\]|$)", device)
+        acpi = re.match(r"ACPI\\VEN_([A-Z0-9]{4})&DEV_([0-9A-F]{4})(?:[&\\]|$)", device)
+        if pci:
+            identity = ":".join(pci.groups()).lower()
+        elif acpi:
+            # DXCore exposes the two four-character ACPI IDs as little-endian UINTs.
+            identity = ":".join(format(int.from_bytes(v.encode("ascii"), "little"), "08x")
+                                for v in acpi.groups())
+        else:
+            fail("Unrecognized adapter hardware ID: " + device)
+        expected[identity] += 1
+    observed = Counter(re.findall(r"^Adapter ([0-9a-f]+:[0-9a-f]+) hardware=1$", output, re.M))
+    if observed != expected:
+        fail("DXCore hardware inventory differs from device.json: expected {}, observed {}".format(expected, observed))
+
+
 def verify(with_video=False, va_runtime=None):
     device = check_device()
     guest = HOME/"guest"
     result = sp.run([str(guest/"d3d12-compute")], stdout=sp.PIPE, universal_newlines=True)
     print(result.stdout, end="", flush=True)
     result.check_returncode()
-    cards = adapters(device)
-    expected = Counter()
-    for card in cards:
-        pci = re.search(r"VEN_([0-9A-F]{4})&DEV_([0-9A-F]{4})", card.get("device",""), re.I)
-        if pci:
-            expected[":".join(pci.groups()).lower()] += 1
-    observed = Counter(re.findall(r"^Adapter ([0-9a-f]+:[0-9a-f]+) hardware=1$", result.stdout, re.M))
-    if expected - observed or sum(observed.values()) < len(cards):
-        fail("DXCore hardware inventory differs from device.json: expected {}, observed {}".format(expected, observed))
+    verify_adapter_ids(adapters(device), result.stdout)
     if ctypes.util.find_library("cuda") or (HOME/"lib/libcuda.so.1").is_file():
         sp.run([sys.executable,str(guest/"cuda-compute.py")],check=True)
     if ctypes.util.find_library("OpenCL"):
