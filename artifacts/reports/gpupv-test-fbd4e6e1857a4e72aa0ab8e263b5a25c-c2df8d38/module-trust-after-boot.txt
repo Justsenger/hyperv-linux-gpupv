@@ -1,0 +1,4 @@
+SecureBoot enabled
+GPU-PV module signing
+19:83:E6:06:1A:AD:16:1F:5B:F4:EF:5C:3D:AE:1B:E2:B7:1C:BD:62
+O

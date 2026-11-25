@@ -1,0 +1,5 @@
+6bc2d6d3-ec6f-4b20-bf72-781fb1bbbbde confirmed shim menu management
+6bc2d6d3-ec6f-4b20-bf72-781fb1bbbbde confirmed shim menu view
+6bc2d6d3-ec6f-4b20-bf72-781fb1bbbbde confirmed shim menu confirm
+6bc2d6d3-ec6f-4b20-bf72-781fb1bbbbde confirmed shim menu password
+6bc2d6d3-ec6f-4b20-bf72-781fb1bbbbde confirmed shim menu reboot

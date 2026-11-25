@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://repo.almalinux.org/almalinux/8/cloud/aarch64/images/AlmaLinux-8-GenericCloud-8.10-20261123.aarch64.qcow2",
+  "ChecksumSource": "https://repo.almalinux.org/almalinux/8/cloud/aarch64/images/CHECKSUM",
+  "PublishedDigest": "6ba57ec8dca368820e949f8d1cb74ce397ba34c83d4cd6cd86ddcbef8a3d4399",
+  "OriginalSha256": null,
+  "Sha256": "6ba57ec8dca368820e949f8d1cb74ce397ba34c83d4cd6cd86ddcbef8a3d4399"
+}

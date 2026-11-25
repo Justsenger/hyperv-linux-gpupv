@@ -1,0 +1,99 @@
+Raw report: gpupv-test-fbd4e6e1857a4e72aa0ab8e263b5a25c-c2df8d38
+
+environment.txt
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+Linux gpupv-test-fbd4e6e1857a4e72aa0ab8e263b5a25c 5.15.0-203-generic #213-Ubuntu SMP Fri Oct 23 13:20:09 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+
+hwe-config.txt
+6.8.0-149-generic
+CONFIG_PCI_HYPERV=m
+
+installed-module.txt
+/usr/lib/modules/6.8.0-149-generic/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 3903875 Nov 25 00:48 /lib/modules/6.8.0-149-generic/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+
+install-repeat.txt
+glibc 2.35, aarch64, kernel 6.8.0-149-generic, preflight OK
+
+installed-boot-before.txt
+32857300-cb16-4d8e-afe3-a3e0dc9621e9
+
+installed-boot-after.txt
+gpupv-test-fbd4e6e1857a4e72aa0ab8e263b5a25c
+6fd9ecd2-1835-4da6-831a-63789ea93aeb
+
+module-trust-after-boot.txt
+SecureBoot enabled
+GPU-PV module signing
+19:83:E6:06:1A:AD:16:1F:5B:F4:EF:5C:3D:AE:1B:E2:B7:1C:BD:62
+O
+
+workload.txt
+boot_id=6fd9ecd2-1835-4da6-831a-63789ea93aeb uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1
+
+uninstalled-boot-before.txt
+6fd9ecd2-1835-4da6-831a-63789ea93aeb
+
+uninstalled-boot-after.txt
+gpupv-test-fbd4e6e1857a4e72aa0ab8e263b5a25c
+8c201ab2-4f27-4228-9a9e-b1c962759b6e
+
+clean-after-reboot.txt
+managed_paths_clean
+
+result.json
+{
+  "gpu": "\\\\?\\ACPI#VEN_QCOM&DEV_0636&SUBSYS_MSWW8280&REV_1823#0#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+  "passed": false,
+  "failures": [
+    "Kernel diagnostic after workload requires review"
+  ],
+  "hostBuild": "10.0.29671.0",
+  "vm": "gpupv-test-fbd4e6e1857a4e72aa0ab8e263b5a25c"
+}
+
+dxg ioctl diagnostics from dmesg-after-workload.txt
+[   19.147835] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   19.154508] gpupv query caller=d3d12-compute pid=1113 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   19.154517] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   19.159496] gpupv query caller=d3d12-compute pid=1113 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   19.159505] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   19.165283] gpupv query caller=d3d12-compute pid=1113 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   19.165292] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   19.170419] gpupv query caller=d3d12-compute pid=1113 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   19.170520] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2

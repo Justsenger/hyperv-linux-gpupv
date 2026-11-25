@@ -1,0 +1,7 @@
+/mnt/gpupv/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdx12arm64wslum.so: /lib64/libm.so.6: version `GLIBC_2.29' not found (required by /mnt/gpupv/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdx12arm64wslum.so)
+/mnt/gpupv/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so: /lib64/libm.so.6: version `GLIBC_2.29' not found (required by /mnt/gpupv/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so)
+/mnt/gpupv/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /mnt/gpupv/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so)
+/mnt/gpupv/lib/libqcdx12arm64wslum.so: /lib64/libm.so.6: version `GLIBC_2.29' not found (required by /mnt/gpupv/lib/libqcdx12arm64wslum.so)
+/mnt/gpupv/lib/libqcdxarm64wslcompiler.so: /lib64/libm.so.6: version `GLIBC_2.29' not found (required by /mnt/gpupv/lib/libqcdxarm64wslcompiler.so)
+/mnt/gpupv/lib/libqcdxarm64wslcompiler.so: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /mnt/gpupv/lib/libqcdxarm64wslcompiler.so)
+fa38ce3d-bae0-42ef-8635-beca253f155c

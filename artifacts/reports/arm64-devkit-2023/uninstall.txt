@@ -1,0 +1,5 @@
+managed_paths_removed
+fc8ce859-4e20-4cb9-8ba6-e553980f05fe
+1fa3cede-84ab-4fec-bdb0-cfdbc5e70c00
+SecureBoot enabled
+managed_paths_clean_after_reboot

@@ -1,0 +1,19 @@
+Linux gpupv-test-f2551c94b9eb479282ac8dcf8c412ffc 4.18.0-553.186.1.0.1.an8.aarch64 #1 SMP Mon Nov 16 18:44:14 CST 2026 aarch64 aarch64 aarch64 GNU/Linux
+NAME="Anolis OS"
+VERSION="8.10"
+ID="anolis"
+ID_LIKE="rhel fedora centos"
+VERSION_ID="8.10"
+PLATFORM_ID="platform:an8"
+PRETTY_NAME="Anolis OS 8.10"
+ANSI_COLOR="0;31"
+HOME_URL="https://openanolis.cn/"
+
+systemd
+
+status: done
+boot_status_code: enabled-by-generator
+last_update: Wed, 25 Nov 2026 03:32:03 +0000
+detail:
+DataSourceNoCloud [seed=/dev/sr0][dsmode=net]
+Required guest utilities are installed

@@ -1,0 +1,164 @@
+Linux gpupv-test-e49d5bcc648b4bf48d617657806e47ea 5.14.21-150500.55.103-default #1 SMP PREEMPT_DYNAMIC Tue May 13 09:00:37 UTC 2025 (1fdbb8b) aarch64 aarch64 aarch64 GNU/Linux
+[    0.796508] SCSI subsystem initialized
+[    1.016110] random: crng init done
+[    1.016120] random: 7 urandom warning(s) missed due to ratelimiting
+[    1.092220] device-mapper: uevent: version 1.0.3
+[    1.092308] device-mapper: ioctl: 4.47.0-ioctl (2022-07-28) initialised: dm-devel@redhat.com
+[    1.120059] RPC: Registered named UNIX socket transport module.
+[    1.120067] RPC: Registered udp transport module.
+[    1.120068] RPC: Registered tcp transport module.
+[    1.120070] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.338257] hv_vmbus: externally supported module, setting X kernel taint flag.
+[    1.368574] hv_vmbus: Vmbus version:5.3
+[    1.369061] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    1.369081] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    1.387490] hid_hyperv: externally supported module, setting X kernel taint flag.
+[    1.387500] hv_vmbus: registering driver hid_hyperv
+[    1.388869] hyperv_keyboard: externally supported module, setting X kernel taint flag.
+[    1.388874] hv_vmbus: registering driver hyperv_keyboard
+[    1.389014] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input0
+[    1.389067] hid 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    1.394102] hv_storvsc: externally supported module, setting X kernel taint flag.
+[    1.394108] hv_vmbus: registering driver hv_storvsc
+[    1.395249] input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio0/input/input1
+[    1.409474] pci_hyperv_intf: externally supported module, setting X kernel taint flag.
+[    1.410288] pci_hyperv: externally supported module, setting X kernel taint flag.
+[    1.410302] hv_vmbus: registering driver hv_pci
+[    1.413265] hv_netvsc: externally supported module, setting X kernel taint flag.
+[    1.413284] hv_vmbus: registering driver hv_netvsc
+[    1.413971] hv_pci fa27973b-4792-4530-9e2f-71155b58c599: PCI VMBus probing: Using version 0x10004
+[    1.415028] hv_pci fa27973b-4792-4530-9e2f-71155b58c599: PCI host bridge to bus 4792:00
+[    1.415033] pci_bus 4792:00: No busn resource found for root bus, will use [bus 00-ff]
+[    1.415525] pci 4792:00:00.0: [1414:008e] type 00 class 0x030200
+[    1.421584] pci_bus 4792:00: busn_res: [bus 00-ff] end is updated to 00
+[    1.426052] scsi host0: storvsc_host_t
+[    1.426708] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    1.429382] scsi 0:0:0:1: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    1.429797] scsi 0:0:0:2: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    1.432498] scsi 0:0:0:0: Attached scsi generic sg0 type 0
+[    1.432562] scsi 0:0:0:1: Attached scsi generic sg1 type 5
+[    1.432616] scsi 0:0:0:2: Attached scsi generic sg2 type 5
+[    1.453484] sr 0:0:0:1: [sr0] scsi-1 drive
+[    1.453493] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    1.457125] sr 0:0:0:1: Attached scsi CD-ROM sr0
+[    1.457570] sr 0:0:0:2: [sr1] scsi-1 drive
+[    1.460574] sr 0:0:0:2: Attached scsi CD-ROM sr1
+[    1.490062] sd 0:0:0:0: [sda] 67108864 512-byte logical blocks: (34.4 GB/32.0 GiB)
+[    1.490171] sd 0:0:0:0: [sda] Write Protect is off
+[    1.490173] sd 0:0:0:0: [sda] Mode Sense: 0f 00 00 00
+[    1.490282] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.492420] GPT:Primary header thinks Alt. header is not at the end of the disk.
+[    1.492424] GPT:20971519 != 67108863
+[    1.492425] GPT:Alternate GPT header not at the end of the disk.
+[    1.492426] GPT:20971519 != 67108863
+[    1.492427] GPT: Use GNU Parted to correct GPT errors.
+[    1.492432]  sda: sda1 sda2
+[    1.492518] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.509146] hv_storvsc 1b06c1fb-3cc9-4ef3-95a2-6a3cd0d6f63e: tag#24 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    1.509906] hv_storvsc 1b06c1fb-3cc9-4ef3-95a2-6a3cd0d6f63e: tag#28 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    1.566486] hv_storvsc 1b06c1fb-3cc9-4ef3-95a2-6a3cd0d6f63e: tag#47 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    1.567549] hv_storvsc 1b06c1fb-3cc9-4ef3-95a2-6a3cd0d6f63e: tag#51 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    1.591043] hv_storvsc 1b06c1fb-3cc9-4ef3-95a2-6a3cd0d6f63e: tag#24 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    1.591685] hv_storvsc 1b06c1fb-3cc9-4ef3-95a2-6a3cd0d6f63e: tag#28 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    1.688664] SGI XFS with ACLs, security attributes, quota, no debug enabled
+[    1.691030] XFS (sda2): Mounting V5 Filesystem
+[    1.704777] XFS (sda2): Ending clean mount
+[    2.317511] systemd-journald[209]: Received SIGTERM from PID 1 (systemd).
+[    2.443083] systemd[1]: systemd 249.17+suse.228.gcba4725678 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR -IMA -SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=hybrid)
+[    2.443159] systemd[1]: Detected virtualization microsoft.
+[    2.443164] systemd[1]: Detected architecture arm64.
+[    2.444564] systemd[1]: Initializing machine ID from random generator.
+[    2.444641] systemd[1]: Installed transient /etc/machine-id file.
+[    2.731441] systemd[1]: initrd-switch-root.service: Deactivated successfully.
+[    2.731634] systemd[1]: Stopped Switch Root.
+[    2.731829] systemd[1]: haveged.service: Scheduled restart job, restart counter is at 1.
+[    2.731919] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[    2.732181] systemd[1]: Created slice Slice /system/getty.
+[    2.732319] systemd[1]: Created slice User and Session Slice.
+[    2.732380] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    2.732504] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    2.732527] systemd[1]: Reached target Local Encrypted Volumes.
+[    2.732548] systemd[1]: Stopped target Switch Root.
+[    2.732560] systemd[1]: Stopped target Initrd File Systems.
+[    2.732569] systemd[1]: Stopped target Initrd Root File System.
+[    2.732596] systemd[1]: Reached target Remote File Systems.
+[    2.732607] systemd[1]: Reached target Slice Units.
+[    2.732621] systemd[1]: Reached target Swaps.
+[    2.732632] systemd[1]: Reached target System Time Set.
+[    2.732657] systemd[1]: Reached target Local Verity Protected Volumes.
+[    2.732708] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    2.733136] systemd[1]: Listening on LVM2 poll daemon socket.
+[    2.733185] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    2.733283] systemd[1]: Listening on udev Control Socket.
+[    2.733340] systemd[1]: Listening on udev Kernel Socket.
+[    2.733902] systemd[1]: Mounting Huge Pages File System...
+[    2.734427] systemd[1]: Mounting POSIX Message Queue File System...
+[    2.734923] systemd[1]: Mounting Kernel Debug File System...
+[    2.735401] systemd[1]: Mounting Kernel Trace File System...
+[    2.735979] systemd[1]: Starting Load AppArmor profiles...
+[    2.736678] systemd[1]: Starting Create List of Static Device Nodes...
+[    2.737202] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    2.737748] systemd[1]: Starting Load Kernel Module configfs...
+[    2.739266] systemd[1]: Starting Load Kernel Module drm...
+[    2.741540] systemd[1]: Starting Load Kernel Module efi_pstore...
+[    2.756570] systemd[1]: Starting Load Kernel Module fuse...
+[    2.756674] systemd[1]: Stopped Journal Service.
+[    2.757605] systemd[1]: Listening on Syslog Socket.
+[    2.757650] systemd[1]: Stopped Entropy Daemon based on the HAVEGE algorithm.
+[    2.765562] ACPI: bus type drm_connector registered
+[    2.766159] systemd[1]: Started Entropy Daemon based on the HAVEGE algorithm.
+[    2.778081] systemd[1]: Starting Journal Service...
+[    2.809237] systemd[1]: Starting Load Kernel Modules...
+[    2.829043] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    2.831926] systemd[1]: Starting Coldplug All udev Devices...
+[    2.834046] systemd[1]: Mounted Huge Pages File System.
+[    2.834790] systemd[1]: Mounted POSIX Message Queue File System.
+[    2.834930] systemd[1]: Mounted Kernel Debug File System.
+[    2.835034] systemd[1]: Mounted Kernel Trace File System.
+[    2.865551] fuse: init (API version 7.34)
+[    2.870416] systemd[1]: Finished Create List of Static Device Nodes.
+[    2.871207] systemd[1]: Finished Load AppArmor profiles.
+[    2.871423] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[    2.871607] systemd[1]: Finished Load Kernel Module configfs.
+[    2.871788] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[    2.886942] systemd[1]: Finished Load Kernel Module drm.
+[    2.887656] systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+[    2.896568] systemd[1]: Finished Load Kernel Module efi_pstore.
+[    2.897039] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[    2.897890] systemd[1]: Finished Load Kernel Module fuse.
+[    2.898261] systemd[1]: Finished Load Kernel Modules.
+[    2.899620] systemd[1]: Mounting FUSE Control File System...
+[    2.900586] systemd[1]: Starting Apply Kernel Variables for 5.14.21-150500.55.103-default from /boot...
+[    2.908163] systemd[1]: Started Journal Service.
+[    2.925054] xfs filesystem being remounted at / supports timestamps until 2038-01-19 (0x7fffffff)
+[    3.010508] systemd-journald[670]: Received client request to flush runtime journal.
+[    3.848490] hv_balloon: externally supported module, setting X kernel taint flag.
+[    3.848502] hv_vmbus: registering driver hv_balloon
+[    3.849661] hv_balloon: Using Dynamic Memory protocol version 2.0
+[    3.849666] hv_balloon: Memory hot add disabled on ARM64
+[    3.861756] hv_utils: externally supported module, setting X kernel taint flag.
+[    3.861768] hv_utils: Registering HyperV Utility Driver
+[    3.861770] hv_vmbus: registering driver hv_utils
+[    3.863103] hv_utils: Heartbeat IC version 3.0
+[    3.866952] hv_utils: Shutdown IC version 3.2
+[    3.869041] hv_utils: TimeSync IC version 4.0
+[    3.869937] hv_utils: VSS IC version 5.0
+[    3.928637] hv_vmbus: registering driver hyperv_drm
+[    3.939938] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] Synthvid Version major 3, minor 5
+[    3.940279] checking generic (e0000000 300000) vs hw (e0000000 300000)
+[    3.940282] fb0: switching to hyperv_drm from EFI VGA
+[    3.940377] Console: switching to colour dummy device 80x25
+[    3.948434] [drm] Initialized hyperv_drm 1.0.0 2020 for 5620e0c7-8062-4dce-aeb7-520c7ef76171 on minor 0
+[    3.951284] Console: switching to colour frame buffer device 128x48
+[    3.952693] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] fb0: hyperv_drmdrmfb frame buffer device
+[    3.960592] hv_storvsc 1b06c1fb-3cc9-4ef3-95a2-6a3cd0d6f63e: tag#14 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    3.965551] hv_storvsc 1b06c1fb-3cc9-4ef3-95a2-6a3cd0d6f63e: tag#17 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    6.115572] ISO 9660 Extensions: Microsoft Joliet Level 3
+[    6.115826] ISOFS: changing to secondary root
+[    6.478028] No iBFT detected.
+[    6.487874] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[    6.514213] NET: Registered PF_PACKET protocol family
+[   14.054291] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.
+ls: cannot access '/dev/dxg': No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        32G  1.7G   31G   6% /

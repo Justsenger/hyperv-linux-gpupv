@@ -1,0 +1,126 @@
+Raw report: gpupv-test-089c170cd456467bbe4a9f41db399f04-41e4757f
+
+environment.txt
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+Linux gpupv-test-089c170cd456467bbe4a9f41db399f04 6.1.0-56-arm64 #1 SMP Debian 6.1.192-2 (2026-11-16) aarch64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+
+installed-module.txt
+/usr/lib/modules/6.1.0-56-arm64/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4012659 Nov 25 01:13 /lib/modules/6.1.0-56-arm64/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+
+install-repeat.txt
+glibc 2.36, aarch64, kernel 6.1.0-56-arm64, preflight OK
+
+installed-boot-before.txt
+f13f1b55-a20b-4c37-add3-635586a7123f
+
+installed-boot-after.txt
+gpupv-test-089c170cd456467bbe4a9f41db399f04
+51197dda-1110-4579-b498-b08763f22c4d
+
+module-trust-after-boot.txt
+SecureBoot enabled
+GPU-PV module signing
+2C:F9:29:03:23:16:6B:C5:B8:40:E2:13:8C:CB:7B:99:82:12:C8:5D
+O
+
+workload.txt
+boot_id=51197dda-1110-4579-b498-b08763f22c4d uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1
+
+dxcore-call-metadata.txt
+dxcore ioctl observer bound in ordinary guest process
+dxcore feature_failed adapter=0 feature=268435456
+dxcore enumerated_adapter handle=0x40000000
+dxcore query_failed type=1 bytes=524 KMTUMDVERSION=0
+dxcore query_failed type=1 bytes=524 KMTUMDVERSION=1
+dxcore query_failed type=1 bytes=524 KMTUMDVERSION=2
+dxcore query_failed type=48 bytes=552 query_type=1 flags=0 ValueName=DXCoreWSLAttributes
+dxcore open_adapter handle=0x40000040
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1
+dxcore close_adapter handle=0x40000040
+dxcore close_adapter handle=0x40000000
+
+uninstalled-boot-before.txt
+51197dda-1110-4579-b498-b08763f22c4d
+
+uninstalled-boot-after.txt
+gpupv-test-089c170cd456467bbe4a9f41db399f04
+46361ace-4cce-4fea-a712-ba3e521d9889
+
+clean-after-reboot.txt
+managed_paths_clean
+
+result.json
+{
+  "vm": "gpupv-test-089c170cd456467bbe4a9f41db399f04",
+  "gpu": "\\\\?\\ACPI#VEN_QCOM&DEV_0636&SUBSYS_MSWW8280&REV_1823#0#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+  "hostBuild": "10.0.29671.0",
+  "failures": [
+    "Kernel diagnostic after workload requires review"
+  ],
+  "passed": false
+}
+
+dxg ioctl diagnostics from dmesg-after-workload.txt
+[   10.630624] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   10.631798] gpupv query caller=d3d12-compute pid=482 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   10.631803] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   10.631882] gpupv query caller=d3d12-compute pid=482 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   10.631885] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   10.632017] gpupv query caller=d3d12-compute pid=482 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   10.632020] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   10.632168] gpupv query caller=d3d12-compute pid=482 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   10.632170] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2

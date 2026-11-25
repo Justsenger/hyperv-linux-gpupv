@@ -1,0 +1,7 @@
+[   45.846093] gpupv-sample-ce8b1e61143c468a91b32eb9a194a825
+[   46.395058] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   46.404796] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   46.404883] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   46.404942] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   46.405110] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   46.472523] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.

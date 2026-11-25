@@ -1,0 +1,13 @@
+[   22.518657] gpupv-sample-01dc7e19ab85412880adfe5c786795a1
+[   23.017794] misc dxg: dxgk: dxgk_ioctl: ioctl mismatch. Code: 1 User: 5401 Kernel: c00c4701
+[   23.051538] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   23.053517] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   23.053618] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   23.053703] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   23.055935] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   49.468346] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   49.470235] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   49.473387] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   49.477490] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   49.478909] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   59.710164] hv_balloon: Max. dynamic memory size: 1408 MB

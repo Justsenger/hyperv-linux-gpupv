@@ -1,0 +1,1 @@
+glibc 2.34, aarch64, kernel 5.14.0-741.22.1.el9_9.aarch64, preflight OK

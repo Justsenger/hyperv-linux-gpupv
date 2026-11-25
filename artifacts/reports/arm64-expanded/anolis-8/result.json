@@ -1,0 +1,24 @@
+{
+  "target": "anolis-8",
+  "vm": "gpupv-test-f2551c94b9eb479282ac8dcf8c412ffc",
+  "vmId": "88d96d4c-aeec-4d65-8175-034c6ef2d53c",
+  "started": "2026-11-25T11:28:07.1126682+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": false,
+  "route": "prebuilt",
+  "kernel": "4.18.0-553.186.1.0.1.an8.aarch64",
+  "compute": false,
+  "clean": true,
+  "errors": [
+    "workload: workload exited 1"
+  ],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "workload",
+  "finished": "2026-11-25T11:33:09.7435414+08:00"
+}

@@ -1,0 +1,5 @@
+b738f469-1e85-42d4-910d-6b17642ae1c0 confirmed shim menu management
+b738f469-1e85-42d4-910d-6b17642ae1c0 confirmed shim menu view
+b738f469-1e85-42d4-910d-6b17642ae1c0 confirmed shim menu confirm
+b738f469-1e85-42d4-910d-6b17642ae1c0 confirmed shim menu password
+b738f469-1e85-42d4-910d-6b17642ae1c0 confirmed shim menu reboot

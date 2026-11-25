@@ -1,0 +1,18 @@
+{
+  "target": "ubuntu-22.04-ga",
+  "vm": "gpupv-test-86b6255531b0448590dfe38ce4eff40a",
+  "vmId": "073f4aa6-e200-4a04-ab7d-2f38dc79b005",
+  "started": "2026-11-25T11:19:26.4524998+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": true,
+  "route": "source",
+  "kernel": "5.15.0-203-generic",
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "install exited 1"
+  ],
+  "diagnostics": [],
+  "stage": "install",
+  "finished": "2026-11-25T11:21:38.9661064+08:00"
+}

@@ -1,0 +1,9 @@
+{
+  "gpu": "\\\\?\\ACPI#VEN_QCOM&DEV_0636&SUBSYS_MSWW8280&REV_1823#0#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+  "passed": false,
+  "failures": [
+    "Kernel diagnostic after workload requires review"
+  ],
+  "hostBuild": "10.0.29671.0",
+  "vm": "gpupv-test-fbd4e6e1857a4e72aa0ab8e263b5a25c"
+}

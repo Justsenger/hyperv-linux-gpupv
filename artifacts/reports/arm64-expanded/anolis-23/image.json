@@ -1,0 +1,7 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://mirrors.openanolis.cn/anolis/23/isos/GA/aarch64/AnolisOS-23.5-aarch64.qcow2",
+  "ChecksumSource": "https://mirrors.openanolis.cn/anolis/23/isos/GA/aarch64/AnolisOS-23.5-aarch64.qcow2.sha256sum",
+  "OriginalSha256": "eaf0be993a91d0c9eec2ddb4db7eeea5dd69d269590f5a2e6894c4a41951cae9",
+  "Sha256": "580a2537c6768f5a06c4c08f751a9df307f0438c25b9e9d7203c8505df67ca0b"
+}

@@ -1,0 +1,22 @@
+{
+  "target": "fedora-rawhide",
+  "vm": "gpupv-test-7a3c264f12124bff8204e2a879e1715c",
+  "vmId": "0d644407-8c43-49ae-90b8-ebfaee39f34c",
+  "started": "2026-11-25T11:08:50.8112961+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "7.4.0-0.rc3.261119g4405c18c95d2.29.fc46.aarch64",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T11:11:50.7431946+08:00"
+}

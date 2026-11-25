@@ -1,0 +1,17 @@
+{
+  "target": "kali",
+  "vm": "gpupv-test-61de0bce18404d3382dc600f3824eab7",
+  "vmId": "9df51a21-dfd1-4643-a62f-40d5b1bbe74c",
+  "started": "2026-11-25T10:21:11.4705470+08:00",
+  "secureBoot": null,
+  "route": null,
+  "kernel": null,
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "Guest identity or new boot ID unavailable after 120 seconds"
+  ],
+  "diagnostics": [],
+  "stage": "boot",
+  "finished": "2026-11-25T10:26:36.7114737+08:00"
+}

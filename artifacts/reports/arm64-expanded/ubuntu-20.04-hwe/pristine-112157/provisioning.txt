@@ -1,0 +1,145 @@
+CHANGED: partition=1 start=206848 old: size=4405215 end=4612062 new: size=66901983 end=67108830
+cloudimg-rootfs: 74036/275536 files (0.0% non-contiguous), 380238/550651 blocks
+Resizing the filesystem on /dev/sde1 to 8362747 (4k) blocks.
+The filesystem on /dev/sde1 is now 8362747 (4k) blocks long.
+
+Get:1 https://mirrors.ustc.edu.cn/ubuntu-ports focal InRelease [265 kB]
+Get:2 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates InRelease [128 kB]
+Get:3 https://mirrors.ustc.edu.cn/ubuntu-ports focal/main arm64 Packages [940 kB]
+Get:4 https://mirrors.ustc.edu.cn/ubuntu-ports focal/main Translation-en [506 kB]
+Get:5 https://mirrors.ustc.edu.cn/ubuntu-ports focal/main arm64 c-n-f Metadata [28.6 kB]
+Get:6 https://mirrors.ustc.edu.cn/ubuntu-ports focal/universe arm64 Packages [8458 kB]
+Get:7 https://mirrors.ustc.edu.cn/ubuntu-ports focal/universe Translation-en [5124 kB]
+Get:8 https://mirrors.ustc.edu.cn/ubuntu-ports focal/universe arm64 c-n-f Metadata [255 kB]
+Get:9 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/main arm64 Packages [3119 kB]
+Get:10 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/main Translation-en [601 kB]
+Get:11 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/main arm64 c-n-f Metadata [17.6 kB]
+Get:12 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/universe arm64 Packages [1199 kB]
+Get:13 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/universe Translation-en [302 kB]
+Get:14 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/universe arm64 c-n-f Metadata [27.2 kB]
+Fetched 21.0 MB in 24s (882 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  crda iw libnl-3-200 libnl-genl-3-200 linux-firmware
+  linux-image-5.15.0-139-generic linux-modules-5.15.0-139-generic
+  linux-modules-extra-5.15.0-139-generic wireless-regdb
+Suggested packages:
+  fdutils linux-doc | linux-hwe-5.15-source-5.15.0 linux-hwe-5.15-tools
+  linux-headers-5.15.0-139-generic
+The following NEW packages will be installed:
+  crda iw libnl-3-200 libnl-genl-3-200 linux-firmware
+  linux-image-5.15.0-139-generic linux-image-generic-hwe-20.04
+  linux-modules-5.15.0-139-generic linux-modules-extra-5.15.0-139-generic
+  wireless-regdb
+0 upgraded, 10 newly installed, 0 to remove and 25 not upgraded.
+Need to get 235 MB of archives.
+After this operation, 1364 MB of additional disk space will be used.
+Get:1 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/main arm64 libnl-3-200 arm64 3.4.0-1ubuntu0.1 [51.2 kB]
+Get:2 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/main arm64 libnl-genl-3-200 arm64 3.4.0-1ubuntu0.1 [10.9 kB]
+Get:3 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/main arm64 wireless-regdb all 2026.05.30-0ubuntu1~20.04.1 [9564 B]
+Get:4 https://mirrors.ustc.edu.cn/ubuntu-ports focal/main arm64 iw arm64 5.4-1 [90.5 kB]
+Get:5 https://mirrors.ustc.edu.cn/ubuntu-ports focal/main arm64 crda arm64 3.18-1build1 [62.7 kB]
+Get:6 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/main arm64 linux-firmware all 1.187.39 [136 MB]
+Get:7 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/main arm64 linux-modules-5.15.0-139-generic arm64 5.15.0-139.149~20.04.1 [22.4 MB]
+Get:8 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/main arm64 linux-image-5.15.0-139-generic arm64 5.15.0-139.149~20.04.1 [15.0 MB]
+Get:9 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/main arm64 linux-modules-extra-5.15.0-139-generic arm64 5.15.0-139.149~20.04.1 [61.7 MB]
+Get:10 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/main arm64 linux-image-generic-hwe-20.04 arm64 5.15.0.139.149~20.04.1 [2620 B]
+Fetched 235 MB in 31s (7669 kB/s)
+Selecting previously unselected package libnl-3-200:arm64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 65018 files and directories currently installed.)
+Preparing to unpack .../0-libnl-3-200_3.4.0-1ubuntu0.1_arm64.deb ...
+Unpacking libnl-3-200:arm64 (3.4.0-1ubuntu0.1) ...
+Selecting previously unselected package libnl-genl-3-200:arm64.
+Preparing to unpack .../1-libnl-genl-3-200_3.4.0-1ubuntu0.1_arm64.deb ...
+Unpacking libnl-genl-3-200:arm64 (3.4.0-1ubuntu0.1) ...
+Selecting previously unselected package wireless-regdb.
+Preparing to unpack .../2-wireless-regdb_2026.05.30-0ubuntu1~20.04.1_all.deb ...
+Unpacking wireless-regdb (2026.05.30-0ubuntu1~20.04.1) ...
+Selecting previously unselected package iw.
+Preparing to unpack .../3-iw_5.4-1_arm64.deb ...
+Unpacking iw (5.4-1) ...
+Selecting previously unselected package crda.
+Preparing to unpack .../4-crda_3.18-1build1_arm64.deb ...
+Unpacking crda (3.18-1build1) ...
+Selecting previously unselected package linux-firmware.
+Preparing to unpack .../5-linux-firmware_1.187.39_all.deb ...
+Unpacking linux-firmware (1.187.39) ...
+Selecting previously unselected package linux-modules-5.15.0-139-generic.
+Preparing to unpack .../6-linux-modules-5.15.0-139-generic_5.15.0-139.149~20.04.1_arm64.deb ...
+Unpacking linux-modules-5.15.0-139-generic (5.15.0-139.149~20.04.1) ...
+Selecting previously unselected package linux-image-5.15.0-139-generic.
+Preparing to unpack .../7-linux-image-5.15.0-139-generic_5.15.0-139.149~20.04.1_arm64.deb ...
+Unpacking linux-image-5.15.0-139-generic (5.15.0-139.149~20.04.1) ...
+Selecting previously unselected package linux-modules-extra-5.15.0-139-generic.
+Preparing to unpack .../8-linux-modules-extra-5.15.0-139-generic_5.15.0-139.149~20.04.1_arm64.deb ...
+Unpacking linux-modules-extra-5.15.0-139-generic (5.15.0-139.149~20.04.1) ...
+Selecting previously unselected package linux-image-generic-hwe-20.04.
+Preparing to unpack .../9-linux-image-generic-hwe-20.04_5.15.0.139.149~20.04.1_arm64.deb ...
+Unpacking linux-image-generic-hwe-20.04 (5.15.0.139.149~20.04.1) ...
+Setting up linux-firmware (1.187.39) ...
+update-initramfs: Generating /boot/initrd.img-5.4.0-216-generic
+W: mkconf: MD subsystem is not loaded, thus I cannot scan for arrays.
+W: mdadm: failed to auto-generate temporary mdadm.conf file.
+Ignoring old or unknown version 5.4.0-216-generic (latest is 5.15.0-139-generic)
+Setting up wireless-regdb (2026.05.30-0ubuntu1~20.04.1) ...
+Setting up libnl-3-200:arm64 (3.4.0-1ubuntu0.1) ...
+Setting up libnl-genl-3-200:arm64 (3.4.0-1ubuntu0.1) ...
+Setting up iw (5.4-1) ...
+Setting up crda (3.18-1build1) ...
+Setting up linux-image-5.15.0-139-generic (5.15.0-139.149~20.04.1) ...
+I: /boot/vmlinuz is now a symlink to vmlinuz-5.15.0-139-generic
+I: /boot/initrd.img is now a symlink to initrd.img-5.15.0-139-generic
+Setting up linux-modules-extra-5.15.0-139-generic (5.15.0-139.149~20.04.1) ...
+Setting up linux-image-generic-hwe-20.04 (5.15.0.139.149~20.04.1) ...
+Setting up linux-modules-5.15.0-139-generic (5.15.0-139.149~20.04.1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.18) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for linux-image-5.15.0-139-generic (5.15.0-139.149~20.04.1) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-5.15.0-139-generic
+W: mkconf: MD subsystem is not loaded, thus I cannot scan for arrays.
+W: mdadm: failed to auto-generate temporary mdadm.conf file.
+flash-kernel: deferring update (trigger activated)
+/etc/kernel/postinst.d/zz-flash-kernel:
+flash-kernel: deferring update (trigger activated)
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.15.0-139-generic
+Found initrd image: /boot/initrd.img-5.15.0-139-generic
+Found linux image: /boot/vmlinuz-5.4.0-216-generic
+Found initrd image: /boot/initrd.img-5.4.0-216-generic
+done
+Processing triggers for flash-kernel (3.103ubuntu1~20.04.4) ...
+Unsupported platform on EFI system, doing nothing.
+CONFIG_HYPERV_STORAGE=m
+CONFIG_HYPERV_NET=m
+CONFIG_HYPERV=m
+update-initramfs: Generating /boot/initrd.img-5.15.0-139-generic
+Unsupported platform on EFI system, doing nothing.
+cloud_kernel_ready

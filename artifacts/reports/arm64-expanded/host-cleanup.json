@@ -1,0 +1,10 @@
+{
+  "registeredVMCount": 13,
+  "temporaryTestVMsRemaining": 0,
+  "repositoryTestDisksRemaining": false,
+  "temporaryExternalDiskDirectoryRemaining": false,
+  "temporaryQemuCacheRemaining": false,
+  "hostLastBoot": "2026-11-12T23:55:15.898335+08:00",
+  "verifiedAt": "2026-11-25T11:46:39.3807798+08:00",
+  "temporaryWorkspaceDiskOrIsoCount": 0
+}

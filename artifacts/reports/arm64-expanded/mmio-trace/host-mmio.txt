@@ -1,0 +1,6 @@
+
+LowMemoryMappedIoSpace        : 3758096384
+HighMemoryMappedIoSpace       : 33285996544
+HighMemoryMappedIoBaseAddress : 34359738368
+MemoryStartup                 : 2147483648
+

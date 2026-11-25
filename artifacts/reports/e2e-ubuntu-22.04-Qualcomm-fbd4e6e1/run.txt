@@ -1,0 +1,201 @@
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+Linux gpupv-test-fbd4e6e1857a4e72aa0ab8e263b5a25c 5.15.0-203-generic #213-Ubuntu SMP Fri Oct 23 13:20:09 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  linux-firmware linux-headers-6.8.0-149-generic
+  linux-headers-generic-hwe-22.04 linux-hwe-6.8-headers-6.8.0-149
+  linux-image-6.8.0-149-generic linux-image-generic-hwe-22.04
+  linux-modules-6.8.0-149-generic linux-modules-extra-6.8.0-149-generic
+  wireless-regdb
+Suggested packages:
+  fdutils linux-hwe-6.8-tools
+Recommended packages:
+  firmware-sof-signed linux-tools-6.8.0-149-generic ubuntu-kernel-accessories
+The following NEW packages will be installed:
+  linux-firmware linux-generic-hwe-22.04 linux-headers-6.8.0-149-generic
+  linux-headers-generic-hwe-22.04 linux-hwe-6.8-headers-6.8.0-149
+  linux-image-6.8.0-149-generic linux-image-generic-hwe-22.04
+  linux-modules-6.8.0-149-generic linux-modules-extra-6.8.0-149-generic
+  wireless-regdb
+0 upgraded, 10 newly installed, 0 to remove and 20 not upgraded.
+Need to get 461 MB of archives.
+After this operation, 1953 MB of additional disk space will be used.
+Get:1 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-firmware all 20220329.git681281e4-0ubuntu3.42 [316 MB]
+Get:2 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-modules-6.8.0-149-generic arm64 6.8.0-149.149~22.04.1 [26.8 MB]
+Get:3 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-image-6.8.0-149-generic arm64 6.8.0-149.149~22.04.1 [18.4 MB]
+Get:4 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 wireless-regdb all 2026.05.30-0ubuntu1~22.04.1 [10.2 kB]
+Get:5 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-modules-extra-6.8.0-149-generic arm64 6.8.0-149.149~22.04.1 [82.5 MB]
+Get:6 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-image-generic-hwe-22.04 arm64 6.8.0-149.149~22.04.1 [2552 B]
+Get:7 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-hwe-6.8-headers-6.8.0-149 all 6.8.0-149.149~22.04.1 [13.8 MB]
+Get:8 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-headers-6.8.0-149-generic arm64 6.8.0-149.149~22.04.1 [3325 kB]
+Get:9 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-headers-generic-hwe-22.04 arm64 6.8.0-149.149~22.04.1 [2438 B]
+Get:10 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-generic-hwe-22.04 arm64 6.8.0-149.149~22.04.1 [1724 B]
+Fetched 461 MB in 1min 11s (6521 kB/s)
+Selecting previously unselected package linux-firmware.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 70648 files and directories currently installed.)
+Preparing to unpack .../0-linux-firmware_20220329.git681281e4-0ubuntu3.42_all.deb ...
+Unpacking linux-firmware (20220329.git681281e4-0ubuntu3.42) ...
+Selecting previously unselected package linux-modules-6.8.0-149-generic.
+Preparing to unpack .../1-linux-modules-6.8.0-149-generic_6.8.0-149.149~22.04.1_arm64.deb ...
+Unpacking linux-modules-6.8.0-149-generic (6.8.0-149.149~22.04.1) ...
+Selecting previously unselected package linux-image-6.8.0-149-generic.
+Preparing to unpack .../2-linux-image-6.8.0-149-generic_6.8.0-149.149~22.04.1_arm64.deb ...
+Unpacking linux-image-6.8.0-149-generic (6.8.0-149.149~22.04.1) ...
+Selecting previously unselected package wireless-regdb.
+Preparing to unpack .../3-wireless-regdb_2026.05.30-0ubuntu1~22.04.1_all.deb ...
+Unpacking wireless-regdb (2026.05.30-0ubuntu1~22.04.1) ...
+Selecting previously unselected package linux-modules-extra-6.8.0-149-generic.
+Preparing to unpack .../4-linux-modules-extra-6.8.0-149-generic_6.8.0-149.149~22.04.1_arm64.deb ...
+Unpacking linux-modules-extra-6.8.0-149-generic (6.8.0-149.149~22.04.1) ...
+Selecting previously unselected package linux-image-generic-hwe-22.04.
+Preparing to unpack .../5-linux-image-generic-hwe-22.04_6.8.0-149.149~22.04.1_arm64.deb ...
+Unpacking linux-image-generic-hwe-22.04 (6.8.0-149.149~22.04.1) ...
+Selecting previously unselected package linux-hwe-6.8-headers-6.8.0-149.
+Preparing to unpack .../6-linux-hwe-6.8-headers-6.8.0-149_6.8.0-149.149~22.04.1_all.deb ...
+Unpacking linux-hwe-6.8-headers-6.8.0-149 (6.8.0-149.149~22.04.1) ...
+Selecting previously unselected package linux-headers-6.8.0-149-generic.
+Preparing to unpack .../7-linux-headers-6.8.0-149-generic_6.8.0-149.149~22.04.1_arm64.deb ...
+Unpacking linux-headers-6.8.0-149-generic (6.8.0-149.149~22.04.1) ...
+Selecting previously unselected package linux-headers-generic-hwe-22.04.
+Preparing to unpack .../8-linux-headers-generic-hwe-22.04_6.8.0-149.149~22.04.1_arm64.deb ...
+Unpacking linux-headers-generic-hwe-22.04 (6.8.0-149.149~22.04.1) ...
+Selecting previously unselected package linux-generic-hwe-22.04.
+Preparing to unpack .../9-linux-generic-hwe-22.04_6.8.0-149.149~22.04.1_arm64.deb ...
+Unpacking linux-generic-hwe-22.04 (6.8.0-149.149~22.04.1) ...
+Setting up linux-firmware (20220329.git681281e4-0ubuntu3.42) ...
+update-initramfs: Generating /boot/initrd.img-5.15.0-203-generic
+flash-kernel: deferring update (trigger activated)
+Setting up wireless-regdb (2026.05.30-0ubuntu1~22.04.1) ...
+Setting up linux-hwe-6.8-headers-6.8.0-149 (6.8.0-149.149~22.04.1) ...
+Setting up linux-modules-6.8.0-149-generic (6.8.0-149.149~22.04.1) ...
+Setting up linux-image-6.8.0-149-generic (6.8.0-149.149~22.04.1) ...
+I: /boot/vmlinuz is now a symlink to vmlinuz-6.8.0-149-generic
+I: /boot/initrd.img is now a symlink to initrd.img-6.8.0-149-generic
+Setting up linux-headers-6.8.0-149-generic (6.8.0-149.149~22.04.1) ...
+Setting up linux-modules-extra-6.8.0-149-generic (6.8.0-149.149~22.04.1) ...
+Setting up linux-headers-generic-hwe-22.04 (6.8.0-149.149~22.04.1) ...
+Setting up linux-image-generic-hwe-22.04 (6.8.0-149.149~22.04.1) ...
+Setting up linux-generic-hwe-22.04 (6.8.0-149.149~22.04.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for flash-kernel (3.104ubuntu22) ...
+flash-kernel: requested kernel 6.8.0-149-generic is in state triggers-pending.
+flash-kernel: quitting cleanly, anticipating a future run
+Processing triggers for linux-image-6.8.0-149-generic (6.8.0-149.149~22.04.1) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-6.8.0-149-generic
+flash-kernel: deferring update (trigger activated)
+/etc/kernel/postinst.d/zz-flash-kernel:
+flash-kernel: deferring update (trigger activated)
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.8.0-149-generic
+Found initrd image: /boot/initrd.img-6.8.0-149-generic
+Found linux image: /boot/vmlinuz-5.15.0-203-generic
+Found initrd image: /boot/initrd.img-5.15.0-203-generic
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Processing triggers for flash-kernel (3.104ubuntu22) ...
+System running in EFI mode, skipping.
+Pending kernel upgrade!
+
+Running kernel version:
+  5.15.0-203-generic
+
+Diagnostics:
+  The currently running kernel version is not the expected kernel version 6.8.0-149-generic.
+
+Restarting the system to load the new kernel will not be handled automatically, so you should consider rebooting. [Return]
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+6.8.0-149-generic
+CONFIG_PCI_HYPERV=m
+0x1414
+0x008e
+dfd8615280e95cff5136c094bd3fae5e75b31911e146b4db523776fcc86df0ca  /mnt/gpupv/guest/gpupv-guest
+97bb966aecdb8c114eb84d4985c65d0850dff8e95dd82576bcd8dec33a8cabf0  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+glibc 2.35, aarch64, kernel 6.8.0-149-generic, preflight OK
+glibc 2.35, aarch64, kernel 6.8.0-149-generic, preflight OK
+/usr/lib/modules/6.8.0-149-generic/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 3903875 Nov 25 00:48 /lib/modules/6.8.0-149-generic/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 263 Nov 25 00:48 /dev/dxg
+boot_id=6fd9ecd2-1835-4da6-831a-63789ea93aeb uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+SecureBoot enabled
+GPU-PV module signing
+19:83:E6:06:1A:AD:16:1F:5B:F4:EF:5C:3D:AE:1B:E2:B7:1C:BD:62
+O
+module dxgkrnl format gpupv +p
+boot_id=6fd9ecd2-1835-4da6-831a-63789ea93aeb uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1
+managed_paths_clean
+managed_paths_clean

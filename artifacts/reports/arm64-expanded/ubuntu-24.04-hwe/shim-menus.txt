@@ -1,0 +1,5 @@
+354e806c-628f-4201-b94e-4364af0af3df confirmed shim menu management
+354e806c-628f-4201-b94e-4364af0af3df confirmed shim menu view
+354e806c-628f-4201-b94e-4364af0af3df confirmed shim menu confirm
+354e806c-628f-4201-b94e-4364af0af3df confirmed shim menu password
+354e806c-628f-4201-b94e-4364af0af3df confirmed shim menu reboot

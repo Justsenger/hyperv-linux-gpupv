@@ -1,0 +1,63 @@
+Generating a RSA private key
+................++++
+......................................................................................................++++
+writing new private key to '/var/lib/gpupv-signing/tmp4wyp7n_j/MOK.priv'
+-----
+绛惧悕鍏挜灏氭湭鍙椾俊浠汇€傝繍琛?sudo mokutil --import /var/lib/gpupv-signing/MOK.der锛岃缃竴娆℃€у瘑鐮侊紝閲嶅惎骞跺湪 MOK Manager 涓€夋嫨 Enroll MOK锛岀‘璁ゅ悗閲嶆柊鎵ц瀹夎銆?subject=CN = GPU-PV module signing
+SHA256 Fingerprint=18:0A:60:DE:8B:FA:F9:EE:4C:9A:87:A9:A0:14:2E:A1:80:B5:43:A7:54:11:57:53:D3:46:83:41:9E:46:3C:86
+mokutil: unrecognized option '--timeout'
+mokutil: invalid option -- '1'
+Usage:
+  mokutil OPTIONS [ARGS...]
+
+Options:
+  --help				Show help
+  --list-enrolled			List the enrolled keys
+  --list-new				List the keys to be enrolled
+  --list-delete				List the keys to be deleted
+  --import <der file...>		Import keys
+  --delete <der file...>		Delete specific keys
+  --revoke-import			Revoke the import request
+  --revoke-delete			Revoke the delete request
+  --export				Export enrolled keys to files
+  --password				Set MOK password
+  --clear-password			Clear MOK password
+  --disable-validation			Disable signature validation
+  --enable-validation			Enable signature validation
+  --sb-state				Show SecureBoot State
+  --test-key <der file>			Test if the key is enrolled or not
+  --reset				Reset MOK list
+  --generate-hash[=password]		Generate the password hash
+  --ignore-db				Ignore DB for validation
+  --use-db				Use DB for validation
+  --import-hash <hash>			Import a hash into MOK or MOKX
+  --delete-hash <hash>			Delete a hash in MOK or MOKX
+  --set-verbosity <true/false>		Set the verbosity bit for shim
+  --set-fallback-verbosity <true/false>		Set the verbosity bit for fallback
+  --set-fallback-noreboot <true/false>		Prevent fallback from automatically rebooting
+  --pk					List the keys in PK
+  --kek					List the keys in KEK
+  --db					List the keys in db
+  --dbx					List the keys in dbx
+
+Supplimentary Options:
+  --hash-file <hash file>		Use the specific password hash
+  --root-pw				Use the root password
+  --simple-hash				Use the old password hash method
+  --mokx				Manipulate the MOK blacklist
+Traceback (most recent call last):
+  File "/home/tester/prepare-test-mok", line 13, in <module>
+    scope["signing_pair"](dkms="--dkms" in sys.argv[2:])
+  File "/mnt/gpupv/guest/gpupv-guest", line 316, in signing_pair
+    fail(f"绛惧悕鍏挜灏氭湭鍙椾俊浠汇€傝繍琛?sudo mokutil --import {cert}锛岃缃竴娆℃€у瘑鐮侊紝"
+  File "/mnt/gpupv/guest/gpupv-guest", line 43, in fail
+    raise RuntimeError(reason)
+RuntimeError: 绛惧悕鍏挜灏氭湭鍙椾俊浠汇€傝繍琛?sudo mokutil --import /var/lib/gpupv-signing/MOK.der锛岃缃竴娆℃€у瘑鐮侊紝閲嶅惎骞跺湪 MOK Manager 涓€夋嫨 Enroll MOK锛岀‘璁ゅ悗閲嶆柊鎵ц瀹夎銆?
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tester/prepare-test-mok", line 26, in <module>
+    subprocess.run(["mokutil","--timeout","-1"],check=True)
+  File "/usr/lib64/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['mokutil', '--timeout', '-1']' returned non-zero exit status 255.

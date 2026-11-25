@@ -1,0 +1,5 @@
+cad65633-4407-4840-b749-21ce590e66e9 confirmed shim menu management
+cad65633-4407-4840-b749-21ce590e66e9 confirmed shim menu view
+cad65633-4407-4840-b749-21ce590e66e9 confirmed shim menu confirm
+cad65633-4407-4840-b749-21ce590e66e9 confirmed shim menu password
+cad65633-4407-4840-b749-21ce590e66e9 confirmed shim menu reboot

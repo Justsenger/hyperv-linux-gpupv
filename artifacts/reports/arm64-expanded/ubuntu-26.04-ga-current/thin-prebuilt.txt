@@ -1,0 +1,59 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Solving dependencies...
+The following packages were automatically installed and are no longer required:
+  bpfcc-tools bpftrace ieee-data libbpfcc libc-dev-bin libc6-dev
+  libclang-cpp21 libclang1-21 libllvm21 linux-headers-7.0.0-44 linux-libc-dev
+  manpages-dev python3-bpfcc python3-netaddr rpcsvc-proto
+  ubuntu-kernel-accessories
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  linux-headers-7.0.0-44-generic linux-headers-generic linux-headers-virtual
+  linux-virtual
+0 upgraded, 0 newly installed, 4 to remove and 27 not upgraded.
+Remv linux-virtual [7.0.0-44.44]
+Remv linux-headers-virtual [7.0.0-44.44]
+Remv linux-headers-generic [7.0.0-44.44]
+Remv linux-headers-7.0.0-44-generic [7.0.0-44.44]
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Solving dependencies...
+The following packages were automatically installed and are no longer required:
+  bpfcc-tools bpftrace ieee-data libbpfcc libc-dev-bin libc6-dev
+  libclang-cpp21 libclang1-21 libllvm21 linux-headers-7.0.0-44 linux-libc-dev
+  manpages-dev python3-bpfcc python3-netaddr rpcsvc-proto
+  ubuntu-kernel-accessories
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  linux-headers-7.0.0-44-generic linux-headers-generic linux-headers-virtual
+  linux-virtual
+0 upgraded, 0 newly installed, 4 to remove and 27 not upgraded.
+After this operation, 187 MB disk space will be freed.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 150758 files and directories currently installed.)
+Removing linux-virtual (7.0.0-44.44) ...
+Removing linux-headers-virtual (7.0.0-44.44) ...
+Removing linux-headers-generic (7.0.0-44.44) ...
+Removing linux-headers-7.0.0-44-generic (7.0.0-44.44) ...

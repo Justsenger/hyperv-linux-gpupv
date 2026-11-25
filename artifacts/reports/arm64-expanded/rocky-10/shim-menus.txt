@@ -1,0 +1,5 @@
+09b5a931-acbc-4175-9213-5325d9305cfb confirmed shim menu management
+09b5a931-acbc-4175-9213-5325d9305cfb confirmed shim menu view
+09b5a931-acbc-4175-9213-5325d9305cfb confirmed shim menu confirm
+09b5a931-acbc-4175-9213-5325d9305cfb confirmed shim menu password
+09b5a931-acbc-4175-9213-5325d9305cfb confirmed shim menu reboot

@@ -1,0 +1,21 @@
+{
+  "target": "ubuntu-25.04-ga",
+  "vm": "gpupv-test-2b4f8d33a9ae409d93c8db5ef0ff8b34",
+  "vmId": "878bcc38-201c-40fc-b580-74cd60b7c891",
+  "started": "2026-11-25T10:24:45.8347094+08:00",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "6.14.0-37-generic",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T10:30:52.5828726+08:00"
+}

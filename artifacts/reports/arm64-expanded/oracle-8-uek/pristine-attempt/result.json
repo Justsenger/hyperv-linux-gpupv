@@ -1,0 +1,17 @@
+{
+  "target": "oracle-8-uek",
+  "vm": "gpupv-test-a1c856e4f9024ed7904668a0399f9528",
+  "vmId": "44ad0d96-852a-4aed-93b4-f9dd7d5df580",
+  "started": "2026-11-25T10:01:23.7491370+08:00",
+  "secureBoot": null,
+  "route": null,
+  "kernel": null,
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "Guest identity or new boot ID unavailable after 120 seconds"
+  ],
+  "diagnostics": [],
+  "stage": "boot",
+  "finished": "2026-11-25T10:06:46.7543608+08:00"
+}

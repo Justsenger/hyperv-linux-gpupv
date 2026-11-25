@@ -1,0 +1,17 @@
+{
+  "target": "ubuntu-22.04-hwe",
+  "vm": "gpupv-test-25a51c94d78b4aeb9907e7fd2cd2ee61",
+  "vmId": "02bad115-8934-4591-bbe9-fe4d67d54fba",
+  "started": "2026-11-25T10:07:04.2728165+08:00",
+  "secureBoot": null,
+  "route": null,
+  "kernel": null,
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "prepare exited 100"
+  ],
+  "diagnostics": [],
+  "stage": "prepare",
+  "finished": "2026-11-25T10:07:45.6856171+08:00"
+}

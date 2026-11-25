@@ -1,0 +1,44 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)
+kernel-6.6.161.1-1.azl3.aarch64
+dracut[I]: Executing: /usr/bin/dracut --force --omit-drivers dxgkrnl /boot/initramfs-6.6.161.1-1.azl3.img 6.6.161.1-1.azl3
+dracut[I]: 62bluetooth: Could not find any command of '/usr/lib/bluetooth/bluetoothd /usr/libexec/bluetooth/bluetoothd'!
+dracut[I]: 95nfs: Could not find any command of 'rpcbind portmap'!
+dracut[I]: 62bluetooth: Could not find any command of '/usr/lib/bluetooth/bluetoothd /usr/libexec/bluetooth/bluetoothd'!
+dracut[I]: 95nfs: Could not find any command of 'rpcbind portmap'!
+dracut[I]: *** Including module: systemd ***
+dracut[I]: *** Including module: systemd-ask-password ***
+dracut[I]: *** Including module: systemd-initrd ***
+dracut[I]: *** Including module: systemd-journald ***
+dracut[I]: *** Including module: systemd-modules-load ***
+dracut[I]: *** Including module: systemd-sysctl ***
+dracut[I]: *** Including module: systemd-sysusers ***
+dracut[I]: *** Including module: systemd-tmpfiles ***
+dracut[I]: *** Including module: systemd-udevd ***
+dracut[I]: *** Including module: i18n ***
+dracut[I]: No KEYMAP configured.
+dracut[I]: *** Including module: kernel-modules ***
+dracut[I]: *** Including module: kernel-modules-extra ***
+dracut[I]: *** Including module: pcmcia ***
+dracut[I]: *** Including module: rootfs-block ***
+dracut[I]: *** Including module: terminfo ***
+dracut[I]: *** Including module: udev-rules ***
+dracut[I]: *** Including module: dracut-systemd ***
+dracut[I]: *** Including module: usrmount ***
+dracut[I]: *** Including module: base ***
+dracut[I]: *** Including module: fs-lib ***
+dracut[I]: *** Including module: shutdown ***
+dracut[I]: *** Including modules done ***
+dracut[I]: *** Installing kernel module dependencies ***
+dracut[I]: *** Installing kernel module dependencies done ***
+dracut[I]: *** Resolving executable dependencies ***
+dracut[I]: *** Resolving executable dependencies done ***
+dracut[I]: *** Hardlinking files ***
+dracut[I]: *** Hardlinking files done ***
+dracut[I]: *** Store current command line parameters ***
+dracut[I]: Stored kernel commandline:
+dracut[I]:  root=UUID=8b72ff6a-83a2-46a7-8f36-48f1c72b8b39 rootfstype=ext4 rootflags=rw,relatime
+dracut[I]: *** Stripping files ***
+dracut[I]: *** Stripping files done ***
+dracut[I]: *** Creating image file '/boot/initramfs-6.6.161.1-1.azl3.img' ***
+dracut[I]: Using auto-determined compression method 'gzip'
+dracut[I]: *** Creating initramfs image file '/boot/initramfs-6.6.161.1-1.azl3.img' done ***

@@ -1,0 +1,3 @@
+/usr/lib/modules/6.8.0-147-generic/updates/dkms/dxgkrnl.ko.zst
+-rw-r--r-- 1 root root ? 76911 Nov 25 01:12 /lib/modules/6.8.0-147-generic/updates/dkms/dxgkrnl.ko.zst
+gpupv-test-916d15af6ae7472d9902 Secure Boot Module Signature key

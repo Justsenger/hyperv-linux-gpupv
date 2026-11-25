@@ -1,0 +1,6 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://cloud.debian.org/images/cloud/sid/daily/latest/debian-sid-generic-arm64-daily.qcow2",
+  "ChecksumSource": "https://cloud.debian.org/images/cloud/sid/daily/latest/SHA512SUMS",
+  "Sha256": "336a1720f8ceda8e7bf4a7fed95a8107c446b003c1ddf1026f60d6792ff7539c"
+}

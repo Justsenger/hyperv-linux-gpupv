@@ -1,0 +1,46 @@
+glibc 2.28, aarch64, kernel 4.18.0-553.el8_10.aarch64, preflight OK
+/tmp/tmp.VOm8BFKxw9/probe.c: In function 'p':
+/tmp/tmp.VOm8BFKxw9/probe.c:2:62: error: too few arguments to function 'eventfd_signal'
+ void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.VOm8BFKxw9/probe.c:1:
+./include/linux/eventfd.h:41:7: note: declared here
+ __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+       ^~~~~~~~~~~~~~
+make[1]: *** [scripts/Makefile.build:324: /tmp/tmp.VOm8BFKxw9/probe.o] Error 1
+make: *** [Makefile:1808: probe.o] Error 2
+/tmp/tmp.VOm8BFKxw9/probe.c: In function 'p':
+/tmp/tmp.VOm8BFKxw9/probe.c:2:86: error: passing argument 1 of '__dma_fence_is_later' makes integer from pointer without a cast [-Werror=int-conversion]
+ bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+                                                                                      ^
+In file included from /tmp/tmp.VOm8BFKxw9/probe.c:1:
+./include/linux/dma-fence.h:451:45: note: expected 'u64' {aka 'long long unsigned int'} but argument is of type 'struct dma_fence *'
+ static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[1]: *** [scripts/Makefile.build:324: /tmp/tmp.VOm8BFKxw9/probe.o] Error 1
+make: *** [Makefile:1808: probe.o] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/4.18.0-553.el8_10.aarch64'
+  CC [M]  /tmp/tmp_4xw1r0h/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmp_4xw1r0h/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmp_4xw1r0h/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmp_4xw1r0h/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmp_4xw1r0h/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmp_4xw1r0h/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmp_4xw1r0h/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmp_4xw1r0h/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmp_4xw1r0h/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /tmp/tmp_4xw1r0h/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmp_4xw1r0h/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+make: Leaving directory '/usr/src/kernels/4.18.0-553.el8_10.aarch64'
+\u8fd0\u884c\u5185\u6838\u672a\u4fe1\u4efb\u6a21\u5757\u7b7e\u540d\u3002\u8bf7\u4f7f\u7528 shim \u5f15\u5bfc\uff0c\u5e76\u68c0\u67e5 MOK \u662f\u5426\u8fdb\u5165\u5185\u6838\u53d7\u4fe1\u4efb\u5bc6\u94a5\u73af\u3002

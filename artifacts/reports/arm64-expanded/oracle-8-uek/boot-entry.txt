@@ -1,0 +1,48 @@
++ r=/mnt/ol
+++ hostname -s
++ test gpupv-test-635f204dc3f2460e8d8aba512119f834 = gpupv-test-635f204dc3f2460e8d8aba512119f834
++ for pair in "$r:313437ea-29fb-4adf-be1c-dac9edf5ba26" "$r/boot:786b6a2f-d55b-45ab-849f-401bd3bd3559" "$r/boot/efi:1EDF-3EA4"
++ p=/mnt/ol
+++ findmnt -no UUID /mnt/ol
++ test 313437ea-29fb-4adf-be1c-dac9edf5ba26 = 313437ea-29fb-4adf-be1c-dac9edf5ba26
++ mount -o remount,rw /mnt/ol
++ for pair in "$r:313437ea-29fb-4adf-be1c-dac9edf5ba26" "$r/boot:786b6a2f-d55b-45ab-849f-401bd3bd3559" "$r/boot/efi:1EDF-3EA4"
++ p=/mnt/ol/boot
+++ findmnt -no UUID /mnt/ol/boot
++ test 786b6a2f-d55b-45ab-849f-401bd3bd3559 = 786b6a2f-d55b-45ab-849f-401bd3bd3559
++ mount -o remount,rw /mnt/ol/boot
++ for pair in "$r:313437ea-29fb-4adf-be1c-dac9edf5ba26" "$r/boot:786b6a2f-d55b-45ab-849f-401bd3bd3559" "$r/boot/efi:1EDF-3EA4"
++ p=/mnt/ol/boot/efi
+++ findmnt -no UUID /mnt/ol/boot/efi
++ test 1EDF-3EA4 = 1EDF-3EA4
++ mount -o remount,rw /mnt/ol/boot/efi
++ old=5.15.0-320.202.8.5.el8uek.aarch64
++ new=5.15.0-326.224.5.2.el8uek.aarch64
++ install -m0755 /mnt/ol/usr/lib/modules/5.15.0-326.224.5.2.el8uek.aarch64/vmlinuz /mnt/ol/boot/vmlinuz-5.15.0-326.224.5.2.el8uek.aarch64
+++ find /mnt/ol/boot/loader/entries -name '*5.15.0-320.202.8.5.el8uek.aarch64.conf'
++ orig=/mnt/ol/boot/loader/entries/74aff21aad9446c99a26932e95a63e81-5.15.0-320.202.8.5.el8uek.aarch64.conf
++ entry=/mnt/ol/boot/loader/entries/74aff21aad9446c99a26932e95a63e81-5.15.0-326.224.5.2.el8uek.aarch64.conf
++ sed s/5.15.0-320.202.8.5.el8uek.aarch64/5.15.0-326.224.5.2.el8uek.aarch64/g /mnt/ol/boot/loader/entries/74aff21aad9446c99a26932e95a63e81-5.15.0-320.202.8.5.el8uek.aarch64.conf
+++ basename /mnt/ol/boot/loader/entries/74aff21aad9446c99a26932e95a63e81-5.15.0-326.224.5.2.el8uek.aarch64.conf .conf
++ chroot /mnt/ol grub2-editenv /boot/efi/EFI/redhat/grubenv set saved_entry=74aff21aad9446c99a26932e95a63e81-5.15.0-326.224.5.2.el8uek.aarch64 'kernelopts=root=UUID=313437ea-29fb-4adf-be1c-dac9edf5ba26 ro net.ifnames=0 biosdevname=0'
++ chroot /mnt/ol grub2-editenv /boot/efi/EFI/redhat/grubenv list
++ cat /mnt/ol/boot/loader/entries/74aff21aad9446c99a26932e95a63e81-5.15.0-326.224.5.2.el8uek.aarch64.conf
+saved_entry=74aff21aad9446c99a26932e95a63e81-5.15.0-326.224.5.2.el8uek.aarch64
+kernelopts=root=UUID=313437ea-29fb-4adf-be1c-dac9edf5ba26 ro net.ifnames=0 biosdevname=0
+title Oracle Linux Server (5.15.0-326.224.5.2.el8uek.aarch64 with Unbreakable Enterprise Kernel) 8.10
+version 5.15.0-326.224.5.2.el8uek.aarch64
+linux /vmlinuz-5.15.0-326.224.5.2.el8uek.aarch64
+initrd /initramfs-5.15.0-326.224.5.2.el8uek.aarch64.img
+options $kernelopts
+id ol-20260527170349-5.15.0-326.224.5.2.el8uek.aarch64
+grub_users $grub_users
+grub_arg --unrestricted
+grub_class kernel
++ sha256sum /mnt/ol/boot/vmlinuz-5.15.0-326.224.5.2.el8uek.aarch64
+dba5381d9176430326a875aa1b0faddb6ddcb98d84c37574cb28387a952e0b74  /mnt/ol/boot/vmlinuz-5.15.0-326.224.5.2.el8uek.aarch64
++ sync
++ umount /mnt/ol/boot/efi
++ umount /mnt/ol/boot
++ umount /mnt/ol
+oracle_bls_ready
++ echo oracle_bls_ready

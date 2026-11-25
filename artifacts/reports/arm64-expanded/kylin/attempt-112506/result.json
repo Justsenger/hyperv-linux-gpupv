@@ -1,0 +1,18 @@
+{
+  "target": "kylin",
+  "vm": "gpupv-test-85735e5f00b84f168cb761ad35456766",
+  "vmId": "988e0573-d35b-4356-92f5-9f74f440f8c9",
+  "started": "2026-11-25T11:10:45.4781257+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": null,
+  "route": null,
+  "kernel": null,
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "Guest identity or new boot ID unavailable after 120 seconds"
+  ],
+  "diagnostics": [],
+  "stage": "boot",
+  "finished": "2026-11-25T11:16:13.0340283+08:00"
+}

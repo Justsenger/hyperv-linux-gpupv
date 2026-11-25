@@ -1,0 +1,5 @@
+78276865-30b5-4f03-b913-dfaaa99aaedc confirmed shim menu management
+78276865-30b5-4f03-b913-dfaaa99aaedc confirmed shim menu view
+78276865-30b5-4f03-b913-dfaaa99aaedc confirmed shim menu confirm
+78276865-30b5-4f03-b913-dfaaa99aaedc confirmed shim menu password
+78276865-30b5-4f03-b913-dfaaa99aaedc confirmed shim menu reboot

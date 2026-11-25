@@ -1,0 +1,5 @@
+{
+  "HighMmioGapBase": 32768,
+  "HighMmioGapSize": 31744,
+  "LowMmioGapSize": 3584
+}

@@ -1,0 +1,1 @@
+glibc 2.39, aarch64, kernel 6.8.0-147-generic, preflight OK

@@ -1,0 +1,5 @@
+fcd41da1-8b92-489e-8619-8d67370438bb confirmed shim menu management
+fcd41da1-8b92-489e-8619-8d67370438bb confirmed shim menu view
+fcd41da1-8b92-489e-8619-8d67370438bb confirmed shim menu confirm
+fcd41da1-8b92-489e-8619-8d67370438bb confirmed shim menu password
+fcd41da1-8b92-489e-8619-8d67370438bb confirmed shim menu reboot

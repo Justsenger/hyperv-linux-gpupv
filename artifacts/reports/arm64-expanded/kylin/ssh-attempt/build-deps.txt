@@ -1,0 +1,16 @@
+sudo: unable to resolve host gpupv-test-85735e5f00b84f168cb761ad35456766: Name or service not known
+Reading package lists...
+Building dependency tree...
+Reading state information...
+gcc is already the newest version (4:15.2.0-5ubuntu1-ok2).
+gcc set to manually installed.
+g++ is already the newest version (4:15.2.0-5ubuntu1-ok2).
+g++ set to manually installed.
+make is already the newest version (4.4.1-ok1).
+make set to manually installed.
+libc6-dev is already the newest version (2.43-ok2).
+libc6-dev set to manually installed.
+linux-headers-7.0.0-4-generic is already the newest version (7.0.0-4.0ok1).
+linux-headers-7.0.0-4-generic set to manually installed.
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.

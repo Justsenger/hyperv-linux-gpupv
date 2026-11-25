@@ -1,0 +1,275 @@
+Linux gpupv-test-a1bd030f4161418eaf725ff3b4c10d9a 7.2.15+kali-arm64 #1 SMP PREEMPT Kali 7.2.15-1kali1 (2026-11-03) aarch64 GNU/Linux
+PRETTY_NAME="Kali GNU/Linux Rolling"
+NAME="Kali GNU/Linux"
+VERSION_ID="2026.3"
+VERSION="2026.3"
+VERSION_CODENAME=kali-rolling
+ID=kali
+ID_LIKE=debian
+HOME_URL="https://www.kali.org/"
+SUPPORT_URL="https://forums.kali.org/"
+BUG_REPORT_URL="https://bugs.kali.org/"
+ANSI_COLOR="1;31"
+systemd
+status: disabled
+extended_status: disabled
+boot_status_code: disabled-by-marker-file
+detail: Cloud-init disabled by /etc/cloud/cloud-init.disabled
+errors: []
+recoverable_errors: {}
+Get:1 file:/etc/apt/mirrors/kali.list Mirrorlist [26 B]
+Hit:3 https://mirrors.ustc.edu.cn/kali kali-rolling InRelease
+Hit:2 http://kali.download/kali kali-last-snapshot InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+kmod is already the newest version (34.2-2kali1).
+kmod set to manually installed.
+python3 is already the newest version (3.14.7-3).
+python3 set to manually installed.
+Solving dependencies...
+The following packages were automatically installed and are no longer required:
+  libgcrypt20 libgpg-error-l10n libgpg-error0
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libnss-myhostname libnss-resolve libnss-systemd libpam-systemd libssl3t64
+  libsystemd-shared libsystemd0 libudev1 openssl-provider-legacy systemd
+  systemd-cryptsetup systemd-resolved systemd-sysv systemd-timesyncd
+  systemd-tpm systemd-userdbd
+The following NEW packages will be installed:
+  mokutil
+The following packages will be upgraded:
+  libnss-myhostname libnss-resolve libnss-systemd libpam-systemd libssl3t64
+  libsystemd-shared libsystemd0 libudev1 openssl openssl-provider-legacy
+  systemd systemd-cryptsetup systemd-resolved systemd-sysv systemd-timesyncd
+  systemd-tpm systemd-userdbd udev
+18 upgraded, 1 newly installed, 0 to remove and 164 not upgraded.
+Need to get 13.7 MB of archives.
+After this operation, 927 kB of additional disk space will be used.
+Get:1 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 libsystemd0 arm64 262.2-1 [432 kB]
+Get:2 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 libpam-systemd arm64 262.2-1 [298 kB]
+Get:3 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 libnss-systemd arm64 262.2-1 [211 kB]
+Get:4 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 systemd-userdbd arm64 262.2-1 [81.1 kB]
+Get:5 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 systemd-tpm arm64 262.2-1 [154 kB]
+Get:6 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 systemd-sysv arm64 262.2-1 [42.1 kB]
+Get:7 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 systemd-resolved arm64 262.2-1 [295 kB]
+Get:8 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 libsystemd-shared arm64 262.2-1 [2330 kB]
+Get:9 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 systemd arm64 262.2-1 [3176 kB]
+Get:10 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 systemd-timesyncd arm64 262.2-1 [71.3 kB]
+Get:11 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 systemd-cryptsetup arm64 262.2-1 [172 kB]
+Get:12 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 udev arm64 262.2-1 [1447 kB]
+Get:13 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 libudev1 arm64 262.2-1 [131 kB]
+Get:14 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 openssl-provider-legacy arm64 3.6.5-1 [324 kB]
+Get:15 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 libssl3t64 arm64 3.6.5-1 [2794 kB]
+Get:16 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 libnss-myhostname arm64 262.2-1 [105 kB]
+Get:17 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 libnss-resolve arm64 262.2-1 [151 kB]
+Get:18 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 mokutil arm64 0.7.2-2 [25.3 kB]
+Get:19 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 openssl arm64 3.6.5-1 [1507 kB]
+Fetched 13.7 MB in 9s (1548 kB/s)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 38037 files and directories currently installed.)
+Preparing to unpack .../libsystemd0_262.2-1_arm64.deb ...
+Unpacking libsystemd0:arm64 (262.2-1) over (261.2-1) ...
+Setting up libsystemd0:arm64 (262.2-1) ...
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 38037 files and directories currently installed.)
+Preparing to unpack .../0-libpam-systemd_262.2-1_arm64.deb ...
+Unpacking libpam-systemd:arm64 (262.2-1) over (261.2-1) ...
+Preparing to unpack .../1-libnss-systemd_262.2-1_arm64.deb ...
+Unpacking libnss-systemd:arm64 (262.2-1) over (261.2-1) ...
+Preparing to unpack .../2-systemd-userdbd_262.2-1_arm64.deb ...
+Unpacking systemd-userdbd (262.2-1) over (261.2-1) ...
+Preparing to unpack .../3-systemd-tpm_262.2-1_arm64.deb ...
+Unpacking systemd-tpm (262.2-1) over (261.2-1) ...
+Preparing to unpack .../4-systemd-sysv_262.2-1_arm64.deb ...
+Unpacking systemd-sysv (262.2-1) over (261.2-1) ...
+Preparing to unpack .../5-systemd-resolved_262.2-1_arm64.deb ...
+Unpacking systemd-resolved (262.2-1) over (261.2-1) ...
+Preparing to unpack .../6-libsystemd-shared_262.2-1_arm64.deb ...
+Unpacking libsystemd-shared:arm64 (262.2-1) over (261.2-1) ...
+Setting up libsystemd-shared:arm64 (262.2-1) ...
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 38039 files and directories currently installed.)
+Preparing to unpack .../systemd_262.2-1_arm64.deb ...
+Unpacking systemd (262.2-1) over (261.2-1) ...
+Preparing to unpack .../systemd-timesyncd_262.2-1_arm64.deb ...
+Unpacking systemd-timesyncd (262.2-1) over (261.2-1) ...
+Preparing to unpack .../systemd-cryptsetup_262.2-1_arm64.deb ...
+Unpacking systemd-cryptsetup (262.2-1) over (261.2-1) ...
+Preparing to unpack .../udev_262.2-1_arm64.deb ...
+Unpacking udev (262.2-1) over (261.2-1) ...
+Preparing to unpack .../libudev1_262.2-1_arm64.deb ...
+Unpacking libudev1:arm64 (262.2-1) over (261.2-1) ...
+Setting up libudev1:arm64 (262.2-1) ...
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 38058 files and directories currently installed.)
+Preparing to unpack .../openssl-provider-legacy_3.6.5-1_arm64.deb ...
+Unpacking openssl-provider-legacy (3.6.5-1) over (3.6.3-1) ...
+Setting up openssl-provider-legacy (3.6.5-1) ...
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 38058 files and directories currently installed.)
+Preparing to unpack .../libssl3t64_3.6.5-1_arm64.deb ...
+Unpacking libssl3t64:arm64 (3.6.5-1) over (3.6.3-1) ...
+Setting up libssl3t64:arm64 (3.6.5-1) ...
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 38058 files and directories currently installed.)
+Preparing to unpack .../libnss-myhostname_262.2-1_arm64.deb ...
+Unpacking libnss-myhostname:arm64 (262.2-1) over (261.2-1) ...
+Preparing to unpack .../libnss-resolve_262.2-1_arm64.deb ...
+Unpacking libnss-resolve:arm64 (262.2-1) over (261.2-1) ...
+Selecting previously unselected package mokutil.
+Preparing to unpack .../mokutil_0.7.2-2_arm64.deb ...
+Unpacking mokutil (0.7.2-2) ...
+Preparing to unpack .../openssl_3.6.5-1_arm64.deb ...
+Unpacking openssl (3.6.5-1) over (3.6.3-1) ...
+Setting up mokutil (0.7.2-2) ...
+Setting up systemd-tpm (262.2-1) ...
+Setting up libnss-systemd:arm64 (262.2-1) ...
+Setting up systemd (262.2-1) ...
+Setting up systemd-cryptsetup (262.2-1) ...
+Setting up systemd-timesyncd (262.2-1) ...
+systemd-time-wait-sync.service is a disabled or a static unit not running, not starting it.
+Setting up udev (262.2-1) ...
+Setting up libnss-myhostname:arm64 (262.2-1) ...
+Setting up openssl (3.6.5-1) ...
+Setting up libnss-resolve:arm64 (262.2-1) ...
+Setting up systemd-resolved (262.2-1) ...
+Setting up systemd-userdbd (262.2-1) ...
+Setting up systemd-sysv (262.2-1) ...
+Setting up libpam-systemd:arm64 (262.2-1) ...
+Processing triggers for dbus (1.16.2-5+b1) ...
+Processing triggers for shared-mime-info (2.4-5+b4) ...
+Processing triggers for dracut (112-2) ...
+update-initramfs: Generating /boot/initrd.img-7.2.15+kali-cloud-arm64
+Processing triggers for procps (2:4.0.6-3) ...
+Processing triggers for libc-bin (2.43-4) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+linux-image-arm64 is already the newest version (7.2.15-1kali1).
+Solving dependencies...
+The following packages were automatically installed and are no longer required:
+  libgcrypt20 libgpg-error-l10n libgpg-error0
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 164 not upgraded.

@@ -1,0 +1,5 @@
+bc0026a8-f202-4a1e-88d3-59cbedd81742 confirmed shim menu management
+bc0026a8-f202-4a1e-88d3-59cbedd81742 confirmed shim menu view
+bc0026a8-f202-4a1e-88d3-59cbedd81742 confirmed shim menu confirm
+bc0026a8-f202-4a1e-88d3-59cbedd81742 confirmed shim menu password
+bc0026a8-f202-4a1e-88d3-59cbedd81742 confirmed shim menu reboot

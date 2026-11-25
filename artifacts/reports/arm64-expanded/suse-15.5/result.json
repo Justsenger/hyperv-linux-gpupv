@@ -1,0 +1,22 @@
+{
+  "target": "suse-15.5",
+  "vm": "gpupv-test-9fb4bb71765c4ab79ff69eab183a2664",
+  "vmId": "0c4dff6f-5d7f-4599-be33-c1120bc91ea5",
+  "started": "2026-11-25T11:31:43.1221093+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "5.14.21-150500.55.88-default",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T11:33:11.8709282+08:00"
+}

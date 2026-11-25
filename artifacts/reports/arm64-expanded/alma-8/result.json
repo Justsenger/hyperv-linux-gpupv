@@ -1,0 +1,17 @@
+{
+  "target": "alma-8",
+  "vm": "gpupv-test-a987cd6ab0d448508a471fa657c5dcbb",
+  "vmId": "0ae3662f-5fae-4507-9330-81149e7cc02a",
+  "started": "2026-11-25T10:35:49.7784193+08:00",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "4.18.0-553.187.1.el8_10.aarch64",
+  "compute": false,
+  "clean": true,
+  "errors": [
+    "install exited 1"
+  ],
+  "diagnostics": [],
+  "stage": "install",
+  "finished": "2026-11-25T10:36:59.7011852+08:00"
+}

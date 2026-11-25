@@ -1,0 +1,164 @@
+Linux gpupv-test-1e63ea8756c447a08eff67d5ce02237b 4.18.0-553.187.1.el8_10.aarch64 #1 SMP Thu Nov 19 17:45:43 EST 2026 aarch64 aarch64 aarch64 GNU/Linux
+[    0.912279] Asymmetric key parser 'x509' registered
+[    0.912281] Running certificate verification selftests
+[    0.914542] Loaded X.509 cert 'Certificate verification self-testing key: f58703bb33ce1b73ee02eccdee5b8817518fe3db'
+[    0.914909] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+[    0.914943] io scheduler mq-deadline registered
+[    0.914945] io scheduler kyber registered
+[    0.914986] io scheduler bfq registered
+[    0.915031] atomic64_test: passed
+[    0.915194] efifb: probing for efifb
+[    0.915203] efifb: framebuffer at 0xe0000000, using 3072k, total 3072k
+[    0.915205] efifb: mode is 1024x768x32, linelength=4096, pages=1
+[    0.915207] efifb: scrolling: redraw
+[    0.915208] efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    0.915302] Console: switching to colour frame buffer device 128x48
+[    0.921221] fb0: EFI VGA frame buffer device
+[    0.921625] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.921882] rdac: device handler registered
+[    0.921911] hp_sw: device handler registered
+[    0.921919] emc: device handler registered
+[    0.921939] alua: device handler registered
+[    0.922080] libphy: Fixed MDIO Bus: probed
+[    0.922266] usbcore: registered new interface driver usbserial_generic
+[    0.922285] usbserial: USB Serial support registered for generic
+[    0.922343] mousedev: PS/2 mouse device common for all mice
+[    0.923834] rtc-efi rtc-efi.0: rtc core: registered rtc-efi as rtc0
+[    0.923967] EFI Variables Facility v0.08 2004-May-17
+[    0.935531] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    0.935574] hid: raw HID events driver (C) Jiri Kosina
+[    0.935640] usbcore: registered new interface driver usbhid
+[    0.935650] usbhid: USB HID core driver
+[    0.935725] drop_monitor: Initializing network drop monitor service
+[    0.935786] Initializing XFRM netlink socket
+[    0.935888] NET: Registered protocol family 10
+[    0.936099] Segment Routing with IPv6
+[    0.936116] NET: Registered protocol family 17
+[    0.936152] mpls_gso: MPLS GSO support
+[    0.936239] registered taskstats version 1
+[    0.936573] Loading compiled-in X.509 certificates
+[    0.937158] Loaded X.509 cert 'AlmaLinux kernel signing key: bce9b6b6fa35d0c21a66e20477d9dcb5e37a5d45'
+[    0.937499] Loaded X.509 cert 'AlmaLinux Driver update signing key: 7b863e0240ed208ab6b81b8a6f2860c0f4e8c7d6'
+[    0.937815] Loaded X.509 cert 'AlmaLinux kpatch signing key: 69a6d9eed3f620d5c2e13a1d211c46510a5ad9f5'
+[    0.938165] zswap: loaded using pool lzo/zbud
+[    0.938530] page_owner is disabled
+[    0.940776] Key type big_key registered
+[    0.941330] rtc-efi rtc-efi.0: setting system clock to 2026-11-25 02:27:21 UTC (1795573641)
+[    0.942624] Freeing unused kernel memory: 6272K
+[    1.007961] systemd[1]: systemd 239 (239-82.el8_10.19) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+[    1.011176] systemd[1]: Detected virtualization microsoft.
+[    1.013162] systemd[1]: Detected architecture arm64.
+[    1.014863] systemd[1]: Running in initial RAM disk.
+[    1.022559] systemd[1]: No hostname configured.
+[    1.022911] systemd[1]: Set hostname to <localhost>.
+[    1.023283] random: systemd: uninitialized urandom read (16 bytes read)
+[    1.023625] systemd[1]: Initializing machine ID from random generator.
+[    1.143798] random: systemd: uninitialized urandom read (16 bytes read)
+[    1.146150] systemd[1]: Reached target Timers.
+[    1.147034] random: systemd: uninitialized urandom read (16 bytes read)
+[    1.147780] systemd[1]: Listening on Journal Socket (/dev/log).
+[    1.148642] systemd[1]: Listening on udev Control Socket.
+[    1.265089] i2c /dev entries driver
+[    1.558917] device-mapper: uevent: version 1.0.3
+[    1.573140] device-mapper: ioctl: 4.46.0-ioctl (2022-02-22) initialised: dm-devel@redhat.com
+[    1.633348] RPC: Registered named UNIX socket transport module.
+[    1.649671] RPC: Registered udp transport module.
+[    1.650018] RPC: Registered tcp transport module.
+[    1.650359] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    2.282748] hv_vmbus: Vmbus version:5.3
+[    2.283787] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    2.284127] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    2.337395] hv_vmbus: registering driver hyperv_keyboard
+[    2.358258] hv_vmbus: registering driver hid_hyperv
+[    2.359761] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input0
+[    2.365455] hv_vmbus: registering driver hv_netvsc
+[    2.371169] input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio0/input/input1
+[    2.381756] hid-generic 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    2.417417] hv_vmbus: registering driver hv_pci
+[    2.422857] hv_vmbus: registering driver hv_storvsc
+[    2.433491] scsi host0: storvsc_host_t
+[    2.434964] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    2.435475] hv_pci 85bdbd21-0c1f-45d5-885e-51b4a32d71b9: PCI VMBus probing: Using version 0x10004
+[    2.436753] hv_pci 85bdbd21-0c1f-45d5-885e-51b4a32d71b9: PCI host bridge to bus 0c1f:00
+[    2.437115] pci_bus 0c1f:00: No busn resource found for root bus, will use [bus 00-ff]
+[    2.438120] pci 0c1f:00:00.0: [1414:008e] type 00 class 0x030200
+[    2.447124] scsi 0:0:0:1: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    2.448003] scsi 0:0:0:2: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    2.458682] pci_bus 0c1f:00: busn_res: [bus 00-ff] end is updated to 00
+[    2.467177] sd 0:0:0:0: [sda] 67108864 512-byte logical blocks: (34.4 GB/32.0 GiB)
+[    2.468724] sd 0:0:0:0: [sda] Write Protect is off
+[    2.469099] sd 0:0:0:0: [sda] Mode Sense: 0f 00 00 00
+[    2.469217] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    2.473601] GPT:Primary header thinks Alt. header is not at the end of the disk.
+[    2.473949] GPT:20971519 != 67108863
+[    2.474913] GPT:Alternate GPT header not at the end of the disk.
+[    2.475257] GPT:20971519 != 67108863
+[    2.475893] GPT: Use GNU Parted to correct GPT errors.
+[    2.476454]  sda: sda1 sda2 sda3
+[    2.478608] sd 0:0:0:0: [sda] Attached SCSI disk
+[    2.511132] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    2.512207] scsi 0:0:0:1: Attached scsi generic sg1 type 5
+[    2.515858] scsi 0:0:0:2: Attached scsi generic sg2 type 5
+[    2.541800] sr 0:0:0:1: [sr0] scsi-1 drive
+[    2.542153] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    2.546901] sr 0:0:0:1: Attached scsi CD-ROM sr0
+[    2.547419] sr 0:0:0:2: [sr1] scsi-1 drive
+[    2.555361] sr 0:0:0:2: Attached scsi CD-ROM sr1
+[    2.633228] random: fast init done
+[    2.634713] hv_storvsc fb801582-ceec-4a42-a5f8-023bf01a904d: tag#53 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    2.645035] hv_storvsc fb801582-ceec-4a42-a5f8-023bf01a904d: tag#33 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    2.711788] hv_storvsc fb801582-ceec-4a42-a5f8-023bf01a904d: tag#44 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    2.747090] hv_storvsc fb801582-ceec-4a42-a5f8-023bf01a904d: tag#52 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    3.128289] SGI XFS with ACLs, security attributes, quota, no debug enabled
+[    3.139079] XFS (sda3): Mounting V5 Filesystem
+[    3.155807] XFS (sda3): Ending clean mount
+[    4.033296] printk: systemd: 25 output lines suppressed due to ratelimiting
+[    4.115064] audit: type=1404 audit(1795573644.659:2): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=1 old-enabled=1 lsm=selinux res=1
+[    4.582745] SELinux:  policy capability network_peer_controls=1
+[    4.585116] SELinux:  policy capability open_perms=1
+[    4.585976] SELinux:  policy capability extended_socket_class=1
+[    4.586260] SELinux:  policy capability always_check_network=0
+[    4.586539] SELinux:  policy capability cgroup_seclabel=1
+[    4.586897] SELinux:  policy capability nnp_nosuid_transition=1
+[    4.619456] audit: type=1403 audit(1795573645.159:3): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    4.622980] systemd[1]: Successfully loaded SELinux policy in 508.298ms.
+[    4.693072] systemd[1]: Relabelled /dev, /run and /sys/fs/cgroup in 57.277ms.
+[    4.703716] systemd[1]: systemd 239 (239-82.el8_10.19) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+[    4.704575] systemd[1]: Detected virtualization microsoft.
+[    4.704846] systemd[1]: Detected architecture arm64.
+[    4.712608] systemd[1]: Initializing machine ID from random generator.
+[    4.713008] systemd[1]: Installed transient /etc/machine-id file.
+[    5.315656] systemd[1]: initrd-switch-root.service: Succeeded.
+[    5.327990] systemd[1]: Stopped Switch Root.
+[    5.329618] systemd[1]: systemd-journald.service: Service has no hold-off time (RestartSec=0), scheduling restart.
+[    5.330074] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[    5.333837] systemd[1]: Stopped Journal Service.
+[    5.966652] XFS (sda2): Mounting V5 Filesystem
+[    6.040515] XFS (sda2): Ending clean mount
+[    6.475181] hv_utils: Registering HyperV Utility Driver
+[    6.477310] hv_vmbus: registering driver hv_utils
+[    6.478432] hv_utils: Heartbeat IC version 3.0
+[    6.495361] hv_vmbus: registering driver hyperv_fb
+[    6.497504] hyperv_fb: Synthvid Version major 3, minor 5
+[    6.499212] hyperv_fb: Screen resolution: 1024x768, Color depth: 32, Frame buffer size: 8388608
+[    6.499891] checking generic (e0000000 300000) vs hw (e0000000 300000)
+[    6.499894] fb0: switching to hyperv_fb from EFI VGA
+[    6.500377] Console: switching to colour dummy device 80x25
+[    6.511115] Console: switching to colour frame buffer device 128x48
+[    6.565935] hv_utils: Shutdown IC version 3.2
+[    6.566020] hv_utils: TimeSync IC version 4.0
+[    6.566108] hv_utils: VSS IC version 5.0
+[    6.777605] hv_storvsc fb801582-ceec-4a42-a5f8-023bf01a904d: tag#36 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    6.872183] hv_storvsc fb801582-ceec-4a42-a5f8-023bf01a904d: tag#56 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[   10.844549] random: crng init done
+[   10.847201] random: 7 urandom warning(s) missed due to ratelimiting
+[   14.236459] ISO 9660 Extensions: Microsoft Joliet Level 3
+[   14.396023] ISOFS: changing to secondary root
+[   17.063793] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   17.070700] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   17.071100] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   26.230777] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.
+[   28.522127] UDF-fs: INFO Mounting volume 'GPUPV', timestamp 2026/11/25 01:09 (1000)
+ls: cannot access '/dev/dxg': No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda3        31G  2.8G   29G  10% /

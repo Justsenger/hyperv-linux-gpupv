@@ -48,6 +48,17 @@ sudo docker run --rm --privileged \
 
 ## 已验证模块池与发布
 
+在 ARM64 Hyper-V 宿主上，`tests/Get-CloudImage.ps1 -Target debian-12` 默认获取 Debian 的 arm64 云镜像，并根据发行方清单校验。Ubuntu 使用 arm64 镜像和 ubuntu-ports 软件源。Qualcomm 的端到端矩阵只需提供对应的本机光盘。下例在管理员 PowerShell 中运行，`$key` 是测试用 Ed25519 私钥路径，同目录需有对应的 `.pub` 文件。
+
+```powershell
+$qemu = ./tests/Get-QemuImg.ps1
+./tests/Invoke-IsoMatrix.ps1 -Target debian-13 -QemuImg $qemu -Key $key -VendorNames Qualcomm -QualcommIso $iso -MemoryMiB 2048
+```
+
+要复测 SSH 部署，可将上例的 `-QualcommIso $iso` 换为 `-SshPush -Bundle $bundle`，其中 `$bundle` 指向待验的 ARM64 部署 ZIP。
+
+每组报告分别记录工作负载、签名启动、内核日志和清理结果。计算通过后若日志仍触发严格检查，总结果会报告失败。[Dev Kit 2023 的逐项结果](../artifacts/reports/arm64-devkit-2023/results.md)
+
 `targets/prebuilt-pool.json` 固定每个架构与内核 release 的生产作业、目标名和模块 SHA-256。打包作业从本仓库的 Actions artifacts 恢复这些文件，逐个校验后生成部署包。相同架构和 release 只收录一份；编译次数和发行版别名不增加模块数量。修改 kernel 源树或生产 artifacts 过期时需使用 Refresh native module artifacts 手动构建并更新锁表。保留正式 ZIP 和 SHA256SUMS 可长期离线部署。每次推送 compute-preflight 分支或手动运行 Compute bundles 可验证成品；推送 v 开头标签才触发 GitHub Release，带连字符的标签标记为 prerelease。
 
 `targets/matrix.json` 中 excluded 记录每个架构退出默认编译门槛的原因。OpenCloudOS 8 缺少页固定接口。Debian 11 与 openEuler 22.03 的 ARM64 头文件缺少 Hyper-V 架构头；openEuler 24.03、Arch Linux ARM、Amazon Linux 2023 的已测 ARM64 内核缺少 VMBus 导出。Oracle ARM64 仅提供 UEK，Slowroll ARM64 仓库缺少原生开发包，这两项按发行方供包情况单列。

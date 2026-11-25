@@ -1,0 +1,12 @@
+Linux gpupv-test-cfe5da3a6a7d46558044edb2c4aef13e 6.18.64-p1-gentoo-dist #1 SMP PREEMPT_DYNAMIC Mon Nov 23 03:03:30 UTC 2026 aarch64 GNU/Linux
+NAME='Gentoo'
+ID='gentoo'
+PRETTY_NAME='Gentoo Linux'
+VERSION='2.18'
+VERSION_ID='2.18'
+HOME_URL='https://www.gentoo.org/'
+SUPPORT_URL='https://www.gentoo.org/support/'
+BUG_REPORT_URL='https://bugs.gentoo.org/'
+ANSI_COLOR='1;32'
+systemd
+..............status: done

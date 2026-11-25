@@ -1,0 +1,18 @@
+{
+  "target": "ubuntu-20.04-hwe",
+  "vm": "gpupv-test-dd44526d2572421e8799d4b5fc940085",
+  "vmId": "51cbfd84-1201-4515-9fa4-32e46c427bc8",
+  "started": "2026-11-25T11:22:17.6128758+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "5.15.0-139-generic",
+  "compute": false,
+  "clean": true,
+  "errors": [
+    "install exited 1"
+  ],
+  "diagnostics": [],
+  "stage": "install",
+  "finished": "2026-11-25T11:24:12.4900487+08:00"
+}

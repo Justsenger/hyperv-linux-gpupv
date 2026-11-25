@@ -1,0 +1,2 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)
+gpupv-sample-c3d9a67de39b4715a0a62151528b3490

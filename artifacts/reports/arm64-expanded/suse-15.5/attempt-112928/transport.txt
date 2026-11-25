@@ -1,0 +1,3 @@
+/sys/bus/pci/devices/4988:00:00.0/device:0x008e
+allow_unsupported_modules 1
+install_route=source

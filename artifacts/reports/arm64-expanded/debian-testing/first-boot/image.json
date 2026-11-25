@@ -1,0 +1,6 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://cloud.debian.org/images/cloud/forky/daily/latest/debian-14-generic-arm64-daily.qcow2",
+  "ChecksumSource": "https://cloud.debian.org/images/cloud/forky/daily/latest/SHA512SUMS",
+  "Sha256": "00a39b99643a8d5dae69b517e6cb88881193b6e19c2921dc0f9bad1a0fda5df7"
+}

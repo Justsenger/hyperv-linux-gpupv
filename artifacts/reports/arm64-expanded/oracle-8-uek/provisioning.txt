@@ -1,0 +1,103 @@
+kernel-uek-core-5.15.0-320.202.8.5.el8uek.aarch64
+Oracle Linux 8 BaseOS Latest (aarch64)           16 MB/s | 186 MB     00:11    
+Oracle Linux 8 Application Stream (aarch64)      11 MB/s |  80 MB     00:07    
+Latest Unbreakable Enterprise Kernel Release 7   11 MB/s | 131 MB     00:11    
+Last metadata expiration check: 0:00:21 ago on Wed Nov 25 02:11:49 2026.
+Dependencies resolved.
+===========================================================================================
+ Package              Arch     Version                             Repository          Size
+===========================================================================================
+Installing:
+ kernel-uek           aarch64  5.15.0-326.224.5.2.el8uek           ol8_UEKR7          4.0 M
+ kernel-uek-core      aarch64  5.15.0-326.224.5.2.el8uek           ol8_UEKR7           60 M
+Installing dependencies:
+ kernel-uek-modules   aarch64  5.15.0-326.224.5.2.el8uek           ol8_UEKR7           75 M
+ linux-firmware       noarch   999:20260327-999.47.git85786b44.el8 ol8_baseos_latest  663 M
+
+Transaction Summary
+===========================================================================================
+Install  4 Packages
+
+Total download size: 802 M
+Installed size: 2.0 G
+Downloading Packages:
+(1/4): kernel-uek-5.15.0-326.224.5.2.el8uek.aar 1.8 MB/s | 4.0 MB     00:02    
+(2/4): kernel-uek-core-5.15.0-326.224.5.2.el8ue 9.1 MB/s |  60 MB     00:06    
+(3/4): kernel-uek-modules-5.15.0-326.224.5.2.el  13 MB/s |  75 MB     00:05    
+(4/4): linux-firmware-20260327-999.47.git85786b 2.8 MB/s | 663 MB     03:54    
+--------------------------------------------------------------------------------
+Total                                           3.4 MB/s | 802 MB     03:54     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Running scriptlet: linux-firmware-999:20260327-999.47.git85786b44.el8.n   1/1 
+  Preparing        :                                                        1/1 
+  Running scriptlet: kernel-uek-core-5.15.0-326.224.5.2.el8uek.aarch64      1/4 
+  Installing       : kernel-uek-core-5.15.0-326.224.5.2.el8uek.aarch64      1/4 
+  Running scriptlet: kernel-uek-core-5.15.0-326.224.5.2.el8uek.aarch64      1/4 
+  Installing       : linux-firmware-999:20260327-999.47.git85786b44.el8.n   2/4 
+  Installing       : kernel-uek-modules-5.15.0-326.224.5.2.el8uek.aarch64   3/4 
+  Running scriptlet: kernel-uek-modules-5.15.0-326.224.5.2.el8uek.aarch64   3/4 
+  Installing       : kernel-uek-5.15.0-326.224.5.2.el8uek.aarch64           4/4 
+  Running scriptlet: kernel-uek-core-5.15.0-326.224.5.2.el8uek.aarch64      4/4 
+  Running scriptlet: kernel-uek-5.15.0-326.224.5.2.el8uek.aarch64           4/4 
+  Verifying        : linux-firmware-999:20260327-999.47.git85786b44.el8.n   1/4 
+  Verifying        : kernel-uek-5.15.0-326.224.5.2.el8uek.aarch64           2/4 
+  Verifying        : kernel-uek-core-5.15.0-326.224.5.2.el8uek.aarch64      3/4 
+  Verifying        : kernel-uek-modules-5.15.0-326.224.5.2.el8uek.aarch64   4/4 
+
+Installed:
+  kernel-uek-5.15.0-326.224.5.2.el8uek.aarch64                                  
+  kernel-uek-core-5.15.0-326.224.5.2.el8uek.aarch64                             
+  kernel-uek-modules-5.15.0-326.224.5.2.el8uek.aarch64                          
+  linux-firmware-999:20260327-999.47.git85786b44.el8.noarch                     
+
+Complete!
+Last metadata expiration check: 0:06:44 ago on Wed Nov 25 02:11:49 2026.
+Package kernel-uek-modules-5.15.0-326.224.5.2.el8uek.aarch64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:06:54 ago on Wed Nov 25 02:11:49 2026.
+Dependencies resolved.
+================================================================================
+ Package                   Arch     Version                    Repository  Size
+================================================================================
+Installing:
+ kernel-uek-modules-extra  aarch64  5.15.0-326.224.5.2.el8uek  ol8_UEKR7  7.0 M
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 7.0 M
+Installed size: 2.9 M
+Downloading Packages:
+kernel-uek-modules-extra-5.15.0-326.224.5.2.el8 1.4 MB/s | 7.0 MB     00:05    
+--------------------------------------------------------------------------------
+Total                                           1.4 MB/s | 7.0 MB     00:05     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : kernel-uek-modules-extra-5.15.0-326.224.5.2.el8uek.a   1/1 
+  Running scriptlet: kernel-uek-modules-extra-5.15.0-326.224.5.2.el8uek.a   1/1 
+  Verifying        : kernel-uek-modules-extra-5.15.0-326.224.5.2.el8uek.a   1/1 
+
+Installed:
+  kernel-uek-modules-extra-5.15.0-326.224.5.2.el8uek.aarch64                    
+
+Complete!
+/lib/modules/5.15.0-326.224.5.2.el8uek.aarch64/kernel/drivers/hv/hv_vmbus.ko.xz
+/lib/modules/5.15.0-326.224.5.2.el8uek.aarch64/kernel/drivers/scsi/hv_storvsc.ko.xz
+/lib/modules/5.15.0-326.224.5.2.el8uek.aarch64/kernel/drivers/net/hyperv/hv_netvsc.ko.xz
+dracut: No '/dev/log' or 'logger' included for syslog logging
+Arguments: --force --no-hostonly --add-drivers 'hv_vmbus hv_storvsc hv_netvsc'
+-rw-r--r--   1 root     root        70708 Dec 18  2025 usr/lib/modules/5.15.0-326.224.5.2.el8uek.aarch64/kernel/drivers/hv/hv_vmbus.ko.xz
+-rw-r--r--   1 root     root        80420 Dec 18  2025 usr/lib/modules/5.15.0-326.224.5.2.el8uek.aarch64/kernel/drivers/net/hyperv/hv_netvsc.ko.xz
+-rw-r--r--   1 root     root        26864 Dec 18  2025 usr/lib/modules/5.15.0-326.224.5.2.el8uek.aarch64/kernel/drivers/scsi/hv_storvsc.ko.xz
+The param /boot/vmlinuz-5.15.0-326.224.5.2.el8uek.aarch64 is incorrect

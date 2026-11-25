@@ -1,0 +1,21 @@
+{
+  "target": "anolis-23",
+  "vm": "gpupv-test-9790186c44594fb2959788fc41490103",
+  "vmId": "0c9ea362-7e1f-4513-9c60-c3c9c3530607",
+  "stage": "finished",
+  "started": "2026-11-25T11:05:41.7200567+08:00",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "route": "prebuilt",
+  "finished": "2026-11-25T11:10:32.2662765+08:00",
+  "kernel": "6.6.102-8.0.2.an23.aarch64",
+  "secureBoot": false
+}

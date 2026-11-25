@@ -1,0 +1,17 @@
+{
+  "target": "debian-testing",
+  "vm": "gpupv-test-74ec2077eaf44e40813e5d29a52ea6fc",
+  "vmId": "8a7a8d23-dbe6-41cf-957d-f2906e084e9f",
+  "started": "2026-11-25T09:45:39.7665604+08:00",
+  "secureBoot": null,
+  "route": null,
+  "kernel": null,
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "Guest identity or new boot ID unavailable after 120 seconds"
+  ],
+  "diagnostics": [],
+  "stage": "boot",
+  "finished": "2026-11-25T09:49:08.0763558+08:00"
+}

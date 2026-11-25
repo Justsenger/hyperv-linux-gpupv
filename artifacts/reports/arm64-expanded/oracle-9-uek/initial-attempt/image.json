@@ -1,0 +1,6 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://yum.oracle.com/templates/OracleLinux/OL9/u8/aarch64/OL9U8_aarch64-kvm-cloud-b182.qcow2",
+  "ChecksumSource": "https://yum.oracle.com/oracle-linux-templates.html",
+  "Sha256": "4793c3ec49d9f8b27a932d3bd88ec45d08249c5195faa3b0fac876ab0d5f5856"
+}

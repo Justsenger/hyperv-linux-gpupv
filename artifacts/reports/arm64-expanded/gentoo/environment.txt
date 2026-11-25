@@ -1,0 +1,16 @@
+Linux 6.18.64-p1-gentoo-dist-bin aarch64 GNU/Linux
+NAME='Gentoo'
+ID='gentoo'
+PRETTY_NAME='Gentoo Linux'
+VERSION='2.18'
+VERSION_ID='2.18'
+HOME_URL='https://www.gentoo.org/'
+SUPPORT_URL='https://www.gentoo.org/support/'
+BUG_REPORT_URL='https://bugs.gentoo.org/'
+ANSI_COLOR='1;32'
+init=systemd
+/usr/sbin/gcc
+/usr/sbin/make
+headers=present
+/home/tester/arm64-regression-guest: line 156: mokutil: command not found
+/sys/bus/pci/devices/b393:00:00.0/device:0x008e

@@ -1,0 +1,5 @@
+6f304215-ad93-428c-9ba4-366a5a0f7171 confirmed shim menu management
+6f304215-ad93-428c-9ba4-366a5a0f7171 confirmed shim menu view
+6f304215-ad93-428c-9ba4-366a5a0f7171 confirmed shim menu confirm
+6f304215-ad93-428c-9ba4-366a5a0f7171 confirmed shim menu password
+6f304215-ad93-428c-9ba4-366a5a0f7171 confirmed shim menu reboot

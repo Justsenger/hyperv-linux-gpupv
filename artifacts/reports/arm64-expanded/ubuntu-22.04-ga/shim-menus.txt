@@ -1,0 +1,5 @@
+073f4aa6-e200-4a04-ab7d-2f38dc79b005 confirmed shim menu management
+073f4aa6-e200-4a04-ab7d-2f38dc79b005 confirmed shim menu view
+073f4aa6-e200-4a04-ab7d-2f38dc79b005 confirmed shim menu confirm
+073f4aa6-e200-4a04-ab7d-2f38dc79b005 confirmed shim menu password
+073f4aa6-e200-4a04-ab7d-2f38dc79b005 confirmed shim menu reboot

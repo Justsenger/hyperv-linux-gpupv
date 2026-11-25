@@ -1,0 +1,115 @@
+Loading repository data...
+Warning: Repository 'Update repository of openSUSE Backports' metadata expired since 2025-03-02 19:18:12 UTC.
+Warning: Repository 'Update Repository (Debug)' metadata expired since 2025-08-30 08:17:53 UTC.
+Warning: Repository 'Main Update Repository' metadata expired since 2025-08-30 08:17:31 UTC.
+Warning: Repository 'Update Repository (Non-Oss)' metadata expired since 2025-04-10 11:03:28 UTC.
+
+    Warning: Repository metadata expired: Check if 'autorefresh' is turned on (zypper lr), otherwise
+    manually refresh the repository (zypper ref). If this does not solve the issue, it could be that
+    you are using a broken mirror or the server has actually discontinued to support the repository.
+
+Reading installed packages...
+Resolving package dependencies...
+
+The following 29 NEW packages are going to be installed:
+  cpp cpp7 dwarves gcc gcc-c++ gcc7 gcc7-c++ glibc-devel kernel-default-devel kernel-devel kernel-macros libasan4 libatomic1 libbpf0 libdwarves1 libelf-devel libgomp1 libisl15 libitm1 liblsan0 libmpc3 libmpfr6 libstdc++6-devel-gcc7 libtsan0 libubsan0 libxcrypt-devel linux-glibc-devel make zlib-devel
+
+29 new packages to install.
+
+Package download size:    93.9 MiB
+
+Package install size change:
+              |     214.3 MiB  required by packages that will be installed
+   214.3 MiB  |  -      0 B    released by packages that will be removed
+
+Backend:  classic_rpmtrans
+Continue? [y/n/v/...? shows all options] (y): y
+Retrieving: libbpf0-0.5.0-150400.3.3.1.aarch64 (Main Repository) (1/29), 131.9 KiB    
+Retrieving: libbpf0-0.5.0-150400.3.3.1.aarch64.rpm [....done (49.9 KiB/s)]
+Retrieving: libisl15-0.18-1.443.aarch64 (Main Repository) (2/29), 524.3 KiB    
+Retrieving: libisl15-0.18-1.443.aarch64.rpm [..done]
+Retrieving: libmpfr6-4.0.2-3.3.1.aarch64 (Main Repository) (3/29), 196.1 KiB    
+Retrieving: libmpfr6-4.0.2-3.3.1.aarch64.rpm [..done]
+Retrieving: libtsan0-11.3.0+git1637-150000.1.11.2.aarch64 (Main Repository) (4/29), 303.3 KiB    
+Retrieving: libtsan0-11.3.0+git1637-150000.1.11.2.aarch64.rpm [..done]
+Retrieving: make-4.2.1-7.3.2.aarch64 (Main Repository) (5/29), 275.5 KiB    
+Retrieving: make-4.2.1-7.3.2.aarch64.rpm [..done]
+Retrieving: libdwarves1-1.22-150400.2.10.aarch64 (Main Repository) (6/29),  78.0 KiB    
+Retrieving: libdwarves1-1.22-150400.2.10.aarch64.rpm [...done (43.1 KiB/s)]
+Retrieving: libmpc3-1.1.0-1.47.aarch64 (Main Repository) (7/29),  50.3 KiB    
+Retrieving: libmpc3-1.1.0-1.47.aarch64.rpm [..done (2.8 KiB/s)]
+Retrieving: dwarves-1.22-150400.2.10.aarch64 (Main Repository) (8/29), 106.1 KiB    
+Retrieving: dwarves-1.22-150400.2.10.aarch64.rpm [..done]
+Retrieving: kernel-macros-5.14.21-150500.55.88.1.noarch (Update repository with updates from SUSE Linux Enterprise 15) (9/29),  11.8 MiB    
+Retrieving: kernel-macros-5.14.21-150500.55.88.1.noarch.rpm [......done (11.8 MiB/s)]
+Retrieving: libasan4-7.5.0+r278197-150000.4.41.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (10/29), 342.5 KiB    
+Retrieving: libasan4-7.5.0+r278197-150000.4.41.1.aarch64.rpm [...done (126.6 KiB/s)]
+Retrieving: libatomic1-14.2.0+git10526-150000.1.6.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (11/29),  21.9 KiB    
+Retrieving: libatomic1-14.2.0+git10526-150000.1.6.1.aarch64.rpm [..done (11.1 KiB/s)]
+Retrieving: libgomp1-14.2.0+git10526-150000.1.6.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (12/29), 128.5 KiB    
+Retrieving: libgomp1-14.2.0+git10526-150000.1.6.1.aarch64.rpm [...done (63.9 KiB/s)]
+Retrieving: libitm1-14.2.0+git10526-150000.1.6.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (13/29),  35.2 KiB    
+Retrieving: libitm1-14.2.0+git10526-150000.1.6.1.aarch64.rpm [..done (2.8 KiB/s)]
+Retrieving: liblsan0-14.2.0+git10526-150000.1.6.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (14/29), 175.6 KiB    
+Retrieving: liblsan0-14.2.0+git10526-150000.1.6.1.aarch64.rpm [...done (63.9 KiB/s)]
+Retrieving: libubsan0-7.5.0+r278197-150000.4.41.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (15/29), 135.4 KiB    
+Retrieving: libubsan0-7.5.0+r278197-150000.4.41.1.aarch64.rpm [..done]
+Retrieving: libxcrypt-devel-4.4.15-150300.4.7.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (16/29),  32.6 KiB    
+Retrieving: libxcrypt-devel-4.4.15-150300.4.7.1.aarch64.rpm [..done (2.2 KiB/s)]
+Retrieving: linux-glibc-devel-5.14-150500.12.3.2.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (17/29),   1.1 MiB    
+Retrieving: linux-glibc-devel-5.14-150500.12.3.2.aarch64.rpm [........done (903.3 KiB/s)]
+Retrieving: cpp7-7.5.0+r278197-150000.4.41.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (18/29),   6.4 MiB    
+Retrieving: cpp7-7.5.0+r278197-150000.4.41.1.aarch64.rpm [......done (5.3 MiB/s)]
+Retrieving: kernel-devel-5.14.21-150500.55.88.1.noarch (Update repository with updates from SUSE Linux Enterprise 15) (19/29),  25.9 MiB    
+Retrieving: kernel-devel-5.14.21-150500.55.88.1.noarch.rpm [......done (16.6 MiB/s)]
+Retrieving: glibc-devel-2.31-150300.89.2.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (20/29), 593.6 KiB    
+Retrieving: glibc-devel-2.31-150300.89.2.aarch64.rpm [..done]
+Retrieving: zlib-devel-1.2.13-150500.4.3.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (21/29), 121.3 KiB    
+Retrieving: zlib-devel-1.2.13-150500.4.3.1.aarch64.rpm [..done]
+Retrieving: libstdc++6-devel-gcc7-7.5.0+r278197-150000.4.41.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (22/29),   6.7 MiB    
+Retrieving: libstdc++6-devel-gcc7-7.5.0+r278197-150000.4.41.1.aarch64.rpm [....done (1.8 MiB/s)]
+Retrieving: gcc7-7.5.0+r278197-150000.4.41.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (23/29),  15.6 MiB    
+Retrieving: gcc7-7.5.0+r278197-150000.4.41.1.aarch64.rpm [.....done (8.7 MiB/s)]
+Retrieving: gcc7-c++-7.5.0+r278197-150000.4.41.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (24/29),   7.3 MiB    
+Retrieving: gcc7-c++-7.5.0+r278197-150000.4.41.1.aarch64.rpm [....done (1.4 MiB/s)]
+Retrieving: cpp-7-3.9.1.aarch64 (Main Repository) (25/29),   9.4 KiB    
+Retrieving: cpp-7-3.9.1.aarch64.rpm [..done (2.8 KiB/s)]
+Retrieving: libelf-devel-0.185-150400.5.3.1.aarch64 (Main Repository) (26/29), 744.9 KiB    
+Retrieving: libelf-devel-0.185-150400.5.3.1.aarch64.rpm [..done]
+Retrieving: gcc-7-3.9.1.aarch64 (Main Repository) (27/29),  10.4 KiB    
+Retrieving: gcc-7-3.9.1.aarch64.rpm [..done (2.8 KiB/s)]
+Retrieving: gcc-c++-7-3.9.1.aarch64 (Main Repository) (28/29),   9.2 KiB    
+Retrieving: gcc-c++-7-3.9.1.aarch64.rpm [..done (2.8 KiB/s)]
+Retrieving: kernel-default-devel-5.14.21-150500.55.88.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (29/29),  15.2 MiB    
+Retrieving: kernel-default-devel-5.14.21-150500.55.88.1.aarch64.rpm [....done (8.3 MiB/s)]
+
+Checking for file conflicts: [........done]
+( 1/29) Installing: libbpf0-0.5.0-150400.3.3.1.aarch64 [..done]
+( 2/29) Installing: libisl15-0.18-1.443.aarch64 [..done]
+( 3/29) Installing: libmpfr6-4.0.2-3.3.1.aarch64 [..done]
+( 4/29) Installing: libtsan0-11.3.0+git1637-150000.1.11.2.aarch64 [..done]
+( 5/29) Installing: make-4.2.1-7.3.2.aarch64 [..done]
+( 6/29) Installing: libdwarves1-1.22-150400.2.10.aarch64 [..done]
+( 7/29) Installing: libmpc3-1.1.0-1.47.aarch64 [..done]
+( 8/29) Installing: dwarves-1.22-150400.2.10.aarch64 [..done]
+( 9/29) Installing: kernel-macros-5.14.21-150500.55.88.1.noarch [..done]
+(10/29) Installing: libasan4-7.5.0+r278197-150000.4.41.1.aarch64 [..done]
+(11/29) Installing: libatomic1-14.2.0+git10526-150000.1.6.1.aarch64 [..done]
+(12/29) Installing: libgomp1-14.2.0+git10526-150000.1.6.1.aarch64 [..done]
+(13/29) Installing: libitm1-14.2.0+git10526-150000.1.6.1.aarch64 [..done]
+(14/29) Installing: liblsan0-14.2.0+git10526-150000.1.6.1.aarch64 [..done]
+(15/29) Installing: libubsan0-7.5.0+r278197-150000.4.41.1.aarch64 [..done]
+(16/29) Installing: libxcrypt-devel-4.4.15-150300.4.7.1.aarch64 [..done]
+(17/29) Installing: linux-glibc-devel-5.14-150500.12.3.2.aarch64 [.....done]
+(18/29) Installing: cpp7-7.5.0+r278197-150000.4.41.1.aarch64 [.......done]
+(19/29) Installing: kernel-devel-5.14.21-150500.55.88.1.noarch [............................................done]
+(20/29) Installing: glibc-devel-2.31-150300.89.2.aarch64 [...done]
+(21/29) Installing: zlib-devel-1.2.13-150500.4.3.1.aarch64 [..done]
+(22/29) Installing: libstdc++6-devel-gcc7-7.5.0+r278197-150000.4.41.1.aarch64 [.......done]
+(23/29) Installing: gcc7-7.5.0+r278197-150000.4.41.1.aarch64 [..................done]
+(24/29) Installing: gcc7-c++-7.5.0+r278197-150000.4.41.1.aarch64 [......done]
+(25/29) Installing: cpp-7-3.9.1.aarch64 [..done]
+(26/29) Installing: libelf-devel-0.185-150400.5.3.1.aarch64 [..done]
+(27/29) Installing: gcc-7-3.9.1.aarch64 [..done]
+(28/29) Installing: gcc-c++-7-3.9.1.aarch64 [..done]
+(29/29) Installing: kernel-default-devel-5.14.21-150500.55.88.1.aarch64 [............done]

@@ -1,0 +1,6 @@
+systemd
+9dcf8189-3300-4885-b057-db5a6b352ac3
+/home/tester/arm64-regression-guest: line 209: mokutil: command not found
+OE
+crw-rw---- 1 root video 10, 261 Nov 25 03:14 /dev/dxg
+[    5.366042] dxgkrnl: module verification failed: signature and/or required key missing - tainting kernel

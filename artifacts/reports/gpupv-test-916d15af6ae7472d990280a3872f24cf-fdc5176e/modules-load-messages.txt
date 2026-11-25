@@ -1,0 +1,3 @@
+Module 'i2c_dev' is built in
+Inserted module 'dm_multipath'
+Finished systemd-modules-load.service - Load Kernel Modules.

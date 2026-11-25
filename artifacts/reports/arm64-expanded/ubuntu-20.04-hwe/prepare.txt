@@ -1,0 +1,79 @@
+sudo: unable to resolve host gpupv-test-dd44526d2572421e8799d4b5fc940085: Name or service not known
+Linux gpupv-test-dd44526d2572421e8799d4b5fc940085 5.15.0-139-generic #149~20.04.1-Ubuntu SMP Wed Apr 16 08:29:43 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+NAME="Ubuntu"
+VERSION="20.04.6 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.6 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+systemd
+..........status: done
+extended_status: done
+boot_status_code: enabled-by-generator
+last_update: Thu, 01 Jan 1970 00:00:20 +0000
+detail: DataSourceNoCloud [seed=/dev/sr0]
+errors: []
+recoverable_errors: {}
+Hit:1 https://mirrors.ustc.edu.cn/ubuntu-ports focal InRelease
+Hit:2 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates InRelease
+Get:3 https://mirrors.ustc.edu.cn/ubuntu-ports focal-backports InRelease [128 kB]
+Get:4 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security InRelease [128 kB]
+Get:5 https://mirrors.ustc.edu.cn/ubuntu-ports focal/restricted arm64 Packages [1300 B]
+Get:6 https://mirrors.ustc.edu.cn/ubuntu-ports focal/restricted Translation-en [6212 B]
+Get:7 https://mirrors.ustc.edu.cn/ubuntu-ports focal/restricted arm64 c-n-f Metadata [108 B]
+Get:8 https://mirrors.ustc.edu.cn/ubuntu-ports focal/multiverse arm64 Packages [114 kB]
+Get:9 https://mirrors.ustc.edu.cn/ubuntu-ports focal/multiverse Translation-en [104 kB]
+Get:10 https://mirrors.ustc.edu.cn/ubuntu-ports focal/multiverse arm64 c-n-f Metadata [8024 B]
+Get:11 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/restricted arm64 Packages [63.8 kB]
+Get:12 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/restricted Translation-en [548 kB]
+Get:13 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/restricted arm64 c-n-f Metadata [428 B]
+Get:14 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/multiverse arm64 Packages [13.1 kB]
+Get:15 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/multiverse Translation-en [8284 B]
+Get:16 https://mirrors.ustc.edu.cn/ubuntu-ports focal-updates/multiverse arm64 c-n-f Metadata [504 B]
+Get:17 https://mirrors.ustc.edu.cn/ubuntu-ports focal-backports/main arm64 Packages [45.7 kB]
+Get:18 https://mirrors.ustc.edu.cn/ubuntu-ports focal-backports/main Translation-en [16.2 kB]
+Get:19 https://mirrors.ustc.edu.cn/ubuntu-ports focal-backports/main arm64 c-n-f Metadata [1420 B]
+Get:20 https://mirrors.ustc.edu.cn/ubuntu-ports focal-backports/restricted arm64 c-n-f Metadata [116 B]
+Get:21 https://mirrors.ustc.edu.cn/ubuntu-ports focal-backports/universe arm64 Packages [24.4 kB]
+Get:22 https://mirrors.ustc.edu.cn/ubuntu-ports focal-backports/universe Translation-en [16.3 kB]
+Get:23 https://mirrors.ustc.edu.cn/ubuntu-ports focal-backports/universe arm64 c-n-f Metadata [864 B]
+Get:24 https://mirrors.ustc.edu.cn/ubuntu-ports focal-backports/multiverse arm64 c-n-f Metadata [116 B]
+Get:25 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/main arm64 Packages [2802 kB]
+Get:26 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/main Translation-en [518 kB]
+Get:27 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/main arm64 c-n-f Metadata [14.1 kB]
+Get:28 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/restricted arm64 Packages [59.2 kB]
+Get:29 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/restricted Translation-en [527 kB]
+Get:30 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/restricted arm64 c-n-f Metadata [400 B]
+Get:31 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/universe arm64 Packages [975 kB]
+Get:32 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/universe Translation-en [220 kB]
+Get:33 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/universe arm64 c-n-f Metadata [20.4 kB]
+Get:34 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/multiverse arm64 Packages [7252 B]
+Get:35 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/multiverse Translation-en [6416 B]
+Get:36 https://mirrors.ustc.edu.cn/ubuntu-ports focal-security/multiverse arm64 c-n-f Metadata [284 B]
+Fetched 6380 kB in 3s (2130 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3 is already the newest version (3.8.2-0ubuntu2).
+python3 set to manually installed.
+kmod is already the newest version (27-1ubuntu2.1).
+kmod set to manually installed.
+mokutil is already the newest version (0.6.0-2~20.04.2).
+mokutil set to manually installed.
+openssl is already the newest version (1.1.1f-1ubuntu2.24).
+openssl set to manually installed.
+udev is already the newest version (245.4-4ubuntu3.24).
+udev set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 25 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+linux-image-generic-hwe-20.04 is already the newest version (5.15.0.139.149~20.04.1).
+0 upgraded, 0 newly installed, 0 to remove and 25 not upgraded.

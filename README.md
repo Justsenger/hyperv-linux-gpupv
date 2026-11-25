@@ -35,6 +35,8 @@ flowchart LR
     L1 --> L2
 ```
 
+在 Windows Dev Kit 2023（Adreno 8cx Gen 3）上，44 个 ARM64 矩阵条目已有真机结果。38 个完成普通用户 D3D12 回读 64/64 和卸载重启，其中 27 个在 Secure Boot 与 MOK 下通过。窗口内的内核错误码、关闭安全启动的原因和未通过的 6 项均有逐项记录。本轮使用本地修订部署包，已发布的 RC1 与本轮包的修复内容有所不同。[ARM64 实测矩阵](artifacts/reports/arm64-expanded/results.md)
+
 ## 适用范围
 
 | 项目 | 说明 |
@@ -80,6 +82,21 @@ $bundle = './linuxpv-bundle-x86_64-<version>.zip'
 - 开启 Secure Boot 且本机首次安装时，请按提示运行 `sudo mokutil --import ...` 设置一次密码，重启进入蓝底 MOK Manager 选择 `Enroll MOK` 确认，回到系统后重新执行一次安装命令即可。
 - Ubuntu 等部分云镜像默认精简了 `pci_hyperv` 模块，如自检提示找不到虚拟 PCI 设备，请先安装 `linux-modules-extra-$(uname -r)`。
 
+### Windows ARM64 与 Adreno 8cx Gen 3
+
+本机新建第 2 代 VM 的默认高位 MMIO 基址为 65024 MiB，高位和低位大小各为 512 MiB。对采用这个默认布局的**关机测试 VM**，以下参数使高位窗口从 32768 MiB 开始，并在 64 GiB 地址空间顶部保留 1024 MiB。Debian 12 已在此配置下完成签名加载和普通用户计算。[WMI 原值、配置公式与文件访问采样](artifacts/reports/arm64-expanded/mmio-trace/sampling.md)
+
+```powershell
+$vm = Get-VM -Name '你的虚拟机'
+Set-VM -VM $vm -HighMemoryMappedIoBaseAddress 32GB -HighMemoryMappedIoSpace 31744MB -LowMemoryMappedIoSpace 3584MB
+$bundle = './linuxpv-bundle-aarch64-<version>.zip'
+$gpu = 'Qualcomm(R) Adreno(TM) 8cx Gen 3'
+./host/gpupv-host.ps1 doctor -Bundle $bundle -Gpu $gpu
+./host/gpupv-host.ps1 iso -Bundle $bundle -Gpu $gpu -Output ./gpu.iso -VMName $vm.Name
+```
+
+Ubuntu ARM64 来宾可用 `grep CONFIG_PCI_HYPERV /boot/config-$(uname -r)` 核对 Hyper-V PCI 支持。配置为模块时，可安装匹配的 `linux-modules-extra-$(uname -r)`，然后执行 `sudo modprobe pci_hyperv`。实测 Ubuntu 22.04 GA 5.15 和 20.04 HWE 5.15 缺少该模块。22.04 换用 `linux-generic-hwe-22.04` 并重启后完成了计算。[Ubuntu 22.04 HWE 原始结果](artifacts/reports/arm64-expanded/ubuntu-22.04-hwe/result.json)
+
 ## 验证与卸载
 
 安装完成后，用 `video` 组普通用户检查设备与计算能力，或由管理员卸载清理：
@@ -94,7 +111,7 @@ sudo gpupv-guest uninstall
 
 ## 后续计划
 
-- 补齐 ARM64 实机（高通骁龙）、AMD 显卡以及更多主流与衍生 Linux 发行版的适配
+- 扩展到其他 ARM64 实机和 AMD 显卡，并跟踪 ARM64 矩阵中未通过的发行版与内核
 - 完善 ExHyperV 2.0.0 及以上版本图形界面中的选包、自动合盘与配置引导体验
 - 精简宿主驱动合盘文件以减小光盘体积，并逐步推进硬件视频编解码和桌面图形（VA-API / Vulkan / Wayland）支持
 

@@ -1,0 +1,329 @@
+Updating and loading repositories:
+Repositories loaded.
+Package                                 Arch    Version              Repository                            Size
+Upgrading:
+ elfutils-debuginfod-client             aarch64 0.195-1.fc42         updates                          144.0 KiB
+   replacing elfutils-debuginfod-client aarch64 0.192-9.fc42         17bed3bd0467414ebb607f42137aa1ef 143.9 KiB
+ elfutils-libelf                        aarch64 0.195-1.fc42         updates                            1.2 MiB
+   replacing elfutils-libelf            aarch64 0.192-9.fc42         17bed3bd0467414ebb607f42137aa1ef   1.2 MiB
+ elfutils-libs                          aarch64 0.195-1.fc42         updates                          746.7 KiB
+   replacing elfutils-libs              aarch64 0.192-9.fc42         17bed3bd0467414ebb607f42137aa1ef 746.3 KiB
+ glibc                                  aarch64 2.41-18.fc42         updates                            6.2 MiB
+   replacing glibc                      aarch64 2.41-1.fc42          17bed3bd0467414ebb607f42137aa1ef   6.2 MiB
+ glibc-common                           aarch64 2.41-18.fc42         updates                            1.3 MiB
+   replacing glibc-common               aarch64 2.41-1.fc42          17bed3bd0467414ebb607f42137aa1ef   1.3 MiB
+ glibc-gconv-extra                      aarch64 2.41-18.fc42         updates                           18.6 MiB
+   replacing glibc-gconv-extra          aarch64 2.41-1.fc42          17bed3bd0467414ebb607f42137aa1ef  18.6 MiB
+ glibc-langpack-en                      aarch64 2.41-18.fc42         updates                            5.7 MiB
+   replacing glibc-langpack-en          aarch64 2.41-1.fc42          17bed3bd0467414ebb607f42137aa1ef   5.7 MiB
+ glibc-minimal-langpack                 aarch64 2.41-18.fc42         updates                            0.0   B
+   replacing glibc-minimal-langpack     aarch64 2.41-1.fc42          17bed3bd0467414ebb607f42137aa1ef   0.0   B
+ libgcc                                 aarch64 15.2.1-7.fc42        updates                          222.2 KiB
+   replacing libgcc                     aarch64 15.0.1-0.11.fc42     17bed3bd0467414ebb607f42137aa1ef 222.2 KiB
+ libgomp                                aarch64 15.2.1-7.fc42        updates                          517.0 KiB
+   replacing libgomp                    aarch64 15.0.1-0.11.fc42     17bed3bd0467414ebb607f42137aa1ef 513.1 KiB
+ libstdc++                              aarch64 15.2.1-7.fc42        updates                            2.8 MiB
+   replacing libstdc++                  aarch64 15.0.1-0.11.fc42     17bed3bd0467414ebb607f42137aa1ef   2.8 MiB
+ libxcrypt                              aarch64 4.5.2-1.fc42         updates                          273.4 KiB
+   replacing libxcrypt                  aarch64 4.4.38-6.fc42        17bed3bd0467414ebb607f42137aa1ef 272.5 KiB
+ openssl                                aarch64 1:3.2.6-4.fc42       updates                            1.6 MiB
+   replacing openssl                    aarch64 1:3.2.4-3.fc42       17bed3bd0467414ebb607f42137aa1ef   1.6 MiB
+ openssl-libs                           aarch64 1:3.2.6-4.fc42       updates                            6.3 MiB
+   replacing openssl-libs               aarch64 1:3.2.4-3.fc42       17bed3bd0467414ebb607f42137aa1ef   6.3 MiB
+ zlib-ng-compat                         aarch64 2.2.5-2.fc42         updates                          133.4 KiB
+   replacing zlib-ng-compat             aarch64 2.2.4-3.fc42         17bed3bd0467414ebb607f42137aa1ef 133.4 KiB
+Installing:
+ elfutils-libelf-devel                  aarch64 0.195-1.fc42         updates                          104.8 KiB
+ gcc                                    aarch64 15.2.1-7.fc42        updates                           99.3 MiB
+ gcc-c++                                aarch64 15.2.1-7.fc42        updates                           38.9 MiB
+ kernel-devel                           aarch64 6.14.0-63.fc42       fedora                            75.5 MiB
+ make                                   aarch64 1:4.4.1-10.fc42      fedora                             1.8 MiB
+Installing dependencies:
+ binutils                               aarch64 2.44-12.fc42         updates                           29.3 MiB
+ bison                                  aarch64 3.8.2-11.fc42        updates                            3.5 MiB
+ cmake-filesystem                       aarch64 3.31.11-1.fc42       updates                            0.0   B
+ cpp                                    aarch64 15.2.1-7.fc42        updates                           35.5 MiB
+ flex                                   aarch64 2.6.4-19.fc42        fedora                           817.2 KiB
+ glibc-devel                            aarch64 2.41-18.fc42         updates                            2.2 MiB
+ kernel-headers                         aarch64 6.19.6-100.fc42      updates                            6.8 MiB
+ libasan                                aarch64 15.2.1-7.fc42        updates                            1.5 MiB
+ libmpc                                 aarch64 1.3.1-7.fc42         fedora                           152.7 KiB
+ libstdc++-devel                        aarch64 15.2.1-7.fc42        updates                           15.7 MiB
+ libubsan                               aarch64 15.2.1-7.fc42        updates                          475.6 KiB
+ libxcrypt-devel                        aarch64 4.5.2-1.fc42         updates                           31.1 KiB
+ libzstd-devel                          aarch64 1.5.7-1.fc42         fedora                           208.0 KiB
+ m4                                     aarch64 1.4.19-12.fc42       fedora                           604.4 KiB
+ openssl-devel                          aarch64 1:3.2.6-4.fc42       updates                            4.3 MiB
+ perl-AutoLoader                        noarch  5.74-520.fc42        updates                           20.5 KiB
+ perl-B                                 aarch64 1.89-520.fc42        updates                          542.0 KiB
+ perl-Carp                              noarch  1.54-512.fc42        fedora                            46.6 KiB
+ perl-Class-Struct                      noarch  0.68-520.fc42        updates                           25.4 KiB
+ perl-Data-Dumper                       aarch64 2.189-513.fc42       fedora                           135.6 KiB
+ perl-Digest                            noarch  1.20-512.fc42        fedora                            35.3 KiB
+ perl-Digest-MD5                        aarch64 2.59-6.fc42          fedora                           103.7 KiB
+ perl-DynaLoader                        aarch64 1.56-520.fc42        updates                           32.1 KiB
+ perl-Encode                            aarch64 4:3.21-512.fc42      fedora                             4.8 MiB
+ perl-Errno                             aarch64 1.38-520.fc42        updates                            8.3 KiB
+ perl-Exporter                          noarch  5.78-512.fc42        fedora                            54.3 KiB
+ perl-Fcntl                             aarch64 1.18-520.fc42        updates                           92.9 KiB
+ perl-File-Basename                     noarch  2.86-520.fc42        updates                           14.0 KiB
+ perl-File-Path                         noarch  2.18-512.fc42        fedora                            63.5 KiB
+ perl-File-Temp                         noarch  1:0.231.100-512.fc42 fedora                           162.3 KiB
+ perl-File-stat                         noarch  1.14-520.fc42        updates                           12.5 KiB
+ perl-FileHandle                        noarch  2.05-520.fc42        updates                            9.3 KiB
+ perl-Getopt-Long                       noarch  1:2.58-3.fc42        fedora                           144.5 KiB
+ perl-Getopt-Std                        noarch  1.14-520.fc42        updates                           11.2 KiB
+ perl-HTTP-Tiny                         noarch  0.090-2.fc42         fedora                           154.4 KiB
+ perl-IO                                aarch64 1.55-520.fc42        updates                          191.0 KiB
+ perl-IO-Socket-IP                      noarch  0.43-2.fc42          fedora                           100.3 KiB
+ perl-IO-Socket-SSL                     noarch  2.089-2.fc42         fedora                           703.3 KiB
+ perl-IPC-Open3                         noarch  1.22-520.fc42        updates                           22.5 KiB
+ perl-MIME-Base32                       noarch  1.303-23.fc42        fedora                            30.7 KiB
+ perl-MIME-Base64                       aarch64 3.16-512.fc42        fedora                            94.1 KiB
+ perl-Net-SSLeay                        aarch64 1.94-8.fc42          fedora                             1.4 MiB
+ perl-POSIX                             aarch64 2.20-520.fc42        updates                          263.1 KiB
+ perl-PathTools                         aarch64 3.91-513.fc42        fedora                           224.0 KiB
+ perl-Pod-Escapes                       noarch  1:1.07-512.fc42      fedora                            24.9 KiB
+ perl-Pod-Perldoc                       noarch  3.28.01-513.fc42     fedora                           163.7 KiB
+ perl-Pod-Simple                        noarch  1:3.45-512.fc42      fedora                           560.8 KiB
+ perl-Pod-Usage                         noarch  4:2.05-1.fc42        fedora                            86.3 KiB
+ perl-Scalar-List-Utils                 aarch64 5:1.70-1.fc42        updates                          152.9 KiB
+ perl-SelectSaver                       noarch  1.02-520.fc42        updates                            2.2 KiB
+ perl-Socket                            aarch64 4:2.038-512.fc42     fedora                           144.0 KiB
+ perl-Storable                          aarch64 1:3.32-512.fc42      fedora                           244.3 KiB
+ perl-Symbol                            noarch  1.09-520.fc42        updates                            6.8 KiB
+ perl-Term-ANSIColor                    noarch  5.01-513.fc42        fedora                            97.5 KiB
+ perl-Term-Cap                          noarch  1.18-512.fc42        fedora                            29.3 KiB
+ perl-Text-ParseWords                   noarch  3.31-512.fc42        fedora                            13.6 KiB
+ perl-Text-Tabs+Wrap                    noarch  2024.001-512.fc42    fedora                            22.6 KiB
+ perl-Time-Local                        noarch  2:1.350-512.fc42     fedora                            68.9 KiB
+ perl-URI                               noarch  5.31-2.fc42          fedora                           257.0 KiB
+ perl-base                              noarch  2.27-520.fc42        updates                           12.5 KiB
+ perl-constant                          noarch  1.33-513.fc42        fedora                            26.2 KiB
+ perl-if                                noarch  0.61.000-520.fc42    updates                            5.8 KiB
+ perl-interpreter                       aarch64 4:5.40.4-520.fc42    updates                          174.5 KiB
+ perl-libnet                            noarch  3.15-513.fc42        fedora                           289.4 KiB
+ perl-libs                              aarch64 4:5.40.4-520.fc42    updates                            9.9 MiB
+ perl-locale                            noarch  1.12-520.fc42        updates                            6.5 KiB
+ perl-mro                               aarch64 1.29-520.fc42        updates                           81.6 KiB
+ perl-overload                          noarch  1.37-520.fc42        updates                           71.5 KiB
+ perl-overloading                       noarch  0.02-520.fc42        updates                            4.8 KiB
+ perl-parent                            noarch  1:0.244-2.fc42       fedora                            10.3 KiB
+ perl-podlators                         noarch  1:6.0.2-3.fc42       fedora                           317.5 KiB
+ perl-vars                              noarch  1.05-520.fc42        updates                            3.9 KiB
+ zlib-ng-compat-devel                   aarch64 2.2.5-2.fc42         updates                          107.0 KiB
+
+Transaction Summary:
+ Installing:        78 packages
+ Upgrading:         15 packages
+ Replacing:         15 packages
+
+Total size of inbound packages is 116 MiB. Need to download 116 MiB.
+After this operation, 339 MiB extra will be used (install 385 MiB, remove 46 MiB).
+[ 1/93] make-1:4.4.1-10.fc42.aarch64    100% | 368.6 KiB/s | 584.7 KiB |  00m02s
+[ 2/93] flex-0:2.6.4-19.fc42.aarch64    100% | 175.9 KiB/s | 291.6 KiB |  00m02s
+[ 3/93] m4-0:1.4.19-12.fc42.aarch64     100% | 403.6 KiB/s | 300.7 KiB |  00m01s
+[ 4/93] cpp-0:15.2.1-7.fc42.aarch64     100% |   2.2 MiB/s |  11.8 MiB |  00m05s
+[ 5/93] gcc-0:15.2.1-7.fc42.aarch64     100% |   5.8 MiB/s |  36.2 MiB |  00m06s
+[ 6/93] libmpc-0:1.3.1-7.fc42.aarch64   100% | 136.4 KiB/s |  71.3 KiB |  00m01s
+[ 7/93] gcc-c++-0:15.2.1-7.fc42.aarch64 100% |   6.3 MiB/s |  14.0 MiB |  00m02s
+[ 8/93] libstdc++-devel-0:15.2.1-7.fc42 100% |   1.0 MiB/s |   2.9 MiB |  00m03s
+[ 9/93] elfutils-libelf-devel-0:0.195-1 100% | 118.2 KiB/s | 123.9 KiB |  00m01s
+[10/93] libzstd-devel-0:1.5.7-1.fc42.aa 100% | 164.8 KiB/s |  53.1 KiB |  00m00s
+[11/93] bison-0:3.8.2-11.fc42.aarch64   100% |   1.9 MiB/s | 989.0 KiB |  00m00s
+[12/93] openssl-devel-1:3.2.6-4.fc42.aa 100% |   3.6 MiB/s |   2.8 MiB |  00m01s
+[13/93] perl-interpreter-4:5.40.4-520.f 100% | 129.7 KiB/s |  71.5 KiB |  00m01s
+[14/93] perl-Carp-0:1.54-512.fc42.noarc 100% | 145.8 KiB/s |  28.9 KiB |  00m00s
+[15/93] perl-libs-4:5.40.4-520.fc42.aar 100% |   2.9 MiB/s |   2.3 MiB |  00m01s
+[16/93] perl-Exporter-0:5.78-512.fc42.n 100% | 153.4 KiB/s |  31.0 KiB |  00m00s
+[17/93] perl-Encode-4:3.21-512.fc42.aar 100% |   1.5 MiB/s |   1.0 MiB |  00m01s
+[18/93] perl-Getopt-Long-1:2.58-3.fc42. 100% | 296.3 KiB/s |  63.7 KiB |  00m00s
+[19/93] perl-PathTools-0:3.91-513.fc42. 100% | 206.8 KiB/s |  87.3 KiB |  00m00s
+[20/93] perl-MIME-Base64-0:3.16-512.fc4 100% | 129.0 KiB/s |  30.1 KiB |  00m00s
+[21/93] perl-constant-0:1.33-513.fc42.n 100% | 101.7 KiB/s |  23.0 KiB |  00m00s
+[22/93] perl-Storable-1:3.32-512.fc42.a 100% | 214.9 KiB/s |  96.1 KiB |  00m00s
+[23/93] perl-parent-1:0.244-2.fc42.noar 100% |  59.9 KiB/s |  15.2 KiB |  00m00s
+[24/93] perl-Errno-0:1.38-520.fc42.aarc 100% |  68.5 KiB/s |  14.1 KiB |  00m00s
+[25/93] perl-Pod-Usage-4:2.05-1.fc42.no 100% | 206.7 KiB/s |  40.5 KiB |  00m00s
+[26/93] perl-Text-ParseWords-0:3.31-512 100% |  74.2 KiB/s |  16.5 KiB |  00m00s
+[27/93] perl-Pod-Perldoc-0:3.28.01-513. 100% | 201.0 KiB/s |  85.8 KiB |  00m00s
+[28/93] perl-podlators-1:6.0.2-3.fc42.n 100% | 276.0 KiB/s | 128.6 KiB |  00m00s
+[29/93] perl-File-Temp-1:0.231.100-512. 100% | 241.5 KiB/s |  59.2 KiB |  00m00s
+[30/93] perl-HTTP-Tiny-0:0.090-2.fc42.n 100% | 294.4 KiB/s |  56.5 KiB |  00m00s
+[31/93] perl-Term-ANSIColor-0:5.01-513. 100% | 248.4 KiB/s |  47.7 KiB |  00m00s
+[32/93] perl-Pod-Simple-1:3.45-512.fc42 100% | 483.4 KiB/s | 219.0 KiB |  00m00s
+[33/93] perl-Term-Cap-0:1.18-512.fc42.n 100% |  93.9 KiB/s |  22.2 KiB |  00m00s
+[34/93] perl-File-Path-0:2.18-512.fc42. 100% | 175.9 KiB/s |  35.2 KiB |  00m00s
+[35/93] perl-IO-Socket-SSL-0:2.089-2.fc 100% | 477.6 KiB/s | 230.2 KiB |  00m00s
+[36/93] perl-Net-SSLeay-0:1.94-8.fc42.a 100% | 531.5 KiB/s | 378.4 KiB |  00m01s
+[37/93] perl-Socket-4:2.038-512.fc42.aa 100% | 129.7 KiB/s |  55.1 KiB |  00m00s
+[38/93] perl-Time-Local-2:1.350-512.fc4 100% | 169.8 KiB/s |  34.5 KiB |  00m00s
+[39/93] perl-Pod-Escapes-1:1.07-512.fc4 100% |  98.1 KiB/s |  19.8 KiB |  00m00s
+[40/93] perl-Text-Tabs+Wrap-0:2024.001- 100% |  70.3 KiB/s |  21.8 KiB |  00m00s
+[41/93] perl-IO-Socket-IP-0:0.43-2.fc42 100% | 124.2 KiB/s |  42.4 KiB |  00m00s
+[42/93] perl-Data-Dumper-0:2.189-513.fc 100% | 161.8 KiB/s |  55.0 KiB |  00m00s
+[43/93] perl-URI-0:5.31-2.fc42.noarch   100% | 296.2 KiB/s | 140.7 KiB |  00m00s
+[44/93] perl-MIME-Base32-0:1.303-23.fc4 100% |  93.7 KiB/s |  20.5 KiB |  00m00s
+[45/93] perl-Digest-MD5-0:2.59-6.fc42.a 100% | 165.5 KiB/s |  35.9 KiB |  00m00s
+[46/93] perl-libnet-0:3.15-513.fc42.noa 100% | 230.1 KiB/s | 128.4 KiB |  00m01s
+[47/93] perl-Digest-0:1.20-512.fc42.noa 100% | 110.8 KiB/s |  24.9 KiB |  00m00s
+[48/93] perl-DynaLoader-0:1.56-520.fc42 100% | 102.5 KiB/s |  25.2 KiB |  00m00s
+[49/93] perl-vars-0:1.05-520.fc42.noarc 100% |  33.9 KiB/s |  12.2 KiB |  00m00s
+[50/93] binutils-0:2.44-12.fc42.aarch64 100% |   4.1 MiB/s |   6.1 MiB |  00m02s
+[51/93] glibc-devel-0:2.41-18.fc42.aarc 100% | 377.0 KiB/s | 580.5 KiB |  00m02s
+[52/93] libasan-0:15.2.1-7.fc42.aarch64 100% |   1.1 MiB/s | 506.0 KiB |  00m00s
+[53/93] libubsan-0:15.2.1-7.fc42.aarch6 100% | 547.0 KiB/s | 228.1 KiB |  00m00s
+[54/93] zlib-ng-compat-devel-0:2.2.5-2. 100% | 177.3 KiB/s |  38.3 KiB |  00m00s
+[55/93] perl-File-Basename-0:2.86-520.f 100% |  70.6 KiB/s |  16.4 KiB |  00m00s
+[56/93] perl-Fcntl-0:1.18-520.fc42.aarc 100% | 130.9 KiB/s |  29.1 KiB |  00m00s
+[57/93] perl-POSIX-0:2.20-520.fc42.aarc 100% | 223.3 KiB/s |  96.7 KiB |  00m00s
+[58/93] perl-FileHandle-0:2.05-520.fc42 100% |  67.2 KiB/s |  14.7 KiB |  00m00s
+[59/93] perl-Symbol-0:1.09-520.fc42.noa 100% |  45.5 KiB/s |  13.4 KiB |  00m00s
+[60/93] perl-IO-0:1.55-520.fc42.aarch64 100% | 179.0 KiB/s |  81.1 KiB |  00m00s
+[61/93] perl-base-0:2.27-520.fc42.noarc 100% |  67.0 KiB/s |  15.4 KiB |  00m00s
+[62/93] perl-Scalar-List-Utils-5:1.70-1 100% | 175.8 KiB/s |  72.8 KiB |  00m00s
+[63/93] perl-overload-0:1.37-520.fc42.n 100% | 194.6 KiB/s |  44.8 KiB |  00m00s
+[64/93] perl-if-0:0.61.000-520.fc42.noa 100% |  58.2 KiB/s |  13.2 KiB |  00m00s
+[65/93] perl-IPC-Open3-0:1.22-520.fc42. 100% |  60.4 KiB/s |  21.1 KiB |  00m00s
+[66/93] perl-AutoLoader-0:5.74-520.fc42 100% |  80.2 KiB/s |  20.4 KiB |  00m00s
+[67/93] perl-Getopt-Std-0:1.14-520.fc42 100% |  60.1 KiB/s |  14.9 KiB |  00m00s
+[68/93] cmake-filesystem-0:3.31.11-1.fc 100% |  60.8 KiB/s |  12.8 KiB |  00m00s
+[69/93] perl-B-0:1.89-520.fc42.aarch64  100% | 423.1 KiB/s | 176.0 KiB |  00m00s
+[70/93] perl-mro-0:1.29-520.fc42.aarch6 100% |  92.0 KiB/s |  28.7 KiB |  00m00s
+[71/93] perl-overloading-0:0.02-520.fc4 100% |  34.7 KiB/s |  12.1 KiB |  00m00s
+[72/93] perl-locale-0:1.12-520.fc42.noa 100% |  58.1 KiB/s |  12.8 KiB |  00m00s
+[73/93] perl-File-stat-0:1.14-520.fc42. 100% |  72.9 KiB/s |  16.3 KiB |  00m00s
+[74/93] perl-SelectSaver-0:1.02-520.fc4 100% |  49.0 KiB/s |  10.9 KiB |  00m00s
+[75/93] perl-Class-Struct-0:0.68-520.fc 100% |  50.3 KiB/s |  21.3 KiB |  00m00s
+[76/93] libxcrypt-devel-0:4.5.2-1.fc42. 100% | 142.5 KiB/s |  29.9 KiB |  00m00s
+[77/93] kernel-headers-0:6.19.6-100.fc4 100% |   1.9 MiB/s |   1.7 MiB |  00m01s
+[78/93] libgcc-0:15.2.1-7.fc42.aarch64  100% | 189.7 KiB/s | 120.5 KiB |  00m01s
+[79/93] libgomp-0:15.2.1-7.fc42.aarch64 100% | 803.1 KiB/s | 365.4 KiB |  00m00s
+[80/93] libstdc++-0:15.2.1-7.fc42.aarch 100% |   1.5 MiB/s | 854.1 KiB |  00m01s
+[81/93] elfutils-libelf-0:0.195-1.fc42. 100% | 287.2 KiB/s | 206.5 KiB |  00m01s
+[82/93] elfutils-libs-0:0.195-1.fc42.aa 100% | 422.2 KiB/s | 266.4 KiB |  00m01s
+[83/93] elfutils-debuginfod-client-0:0. 100% | 199.0 KiB/s |  45.4 KiB |  00m00s
+[84/93] openssl-libs-1:3.2.6-4.fc42.aar 100% |   1.5 MiB/s |   2.2 MiB |  00m01s
+[85/93] openssl-1:3.2.6-4.fc42.aarch64  100% | 682.9 KiB/s |   1.1 MiB |  00m02s
+[86/93] glibc-0:2.41-18.fc42.aarch64    100% |   1.4 MiB/s |   1.8 MiB |  00m01s
+[87/93] glibc-common-0:2.41-18.fc42.aar 100% | 264.1 KiB/s | 338.8 KiB |  00m01s
+[88/93] glibc-minimal-langpack-0:2.41-1 100% |  71.1 KiB/s |  63.9 KiB |  00m01s
+[89/93] glibc-gconv-extra-0:2.41-18.fc4 100% |   1.6 MiB/s |   1.7 MiB |  00m01s
+[90/93] glibc-langpack-en-0:2.41-18.fc4 100% | 293.9 KiB/s | 606.2 KiB |  00m02s
+[91/93] zlib-ng-compat-0:2.2.5-2.fc42.a 100% | 119.7 KiB/s |  65.8 KiB |  00m01s
+[92/93] libxcrypt-0:4.5.2-1.fc42.aarch6 100% | 263.0 KiB/s | 125.2 KiB |  00m00s
+[93/93] kernel-devel-0:6.14.0-63.fc42.a 100% | 211.1 KiB/s |  21.1 MiB |  01m43s
+--------------------------------------------------------------------------------
+[93/93] Total                           100% |   1.1 MiB/s | 116.5 MiB |  01m44s
+Running transaction
+[  1/110] Verify package files          100% | 131.0   B/s |  93.0   B |  00m01s
+[  2/110] Prepare transaction           100% | 196.0   B/s | 108.0   B |  00m01s
+[  3/110] Upgrading libgcc-0:15.2.1-7.f 100% |   7.3 MiB/s | 223.9 KiB |  00m00s
+[  4/110] Upgrading glibc-common-0:2.41 100% |  15.8 MiB/s |   1.3 MiB |  00m00s
+[  5/110] Upgrading glibc-minimal-langp 100% |  15.1 KiB/s | 124.0   B |  00m00s
+[  6/110] Upgrading glibc-gconv-extra-0 100% |  60.4 MiB/s |  18.7 MiB |  00m00s
+[  7/110] Upgrading glibc-0:2.41-18.fc4 100% |   5.0 MiB/s |   6.3 MiB |  00m01s
+[  8/110] Upgrading zlib-ng-compat-0:2. 100% |   2.8 MiB/s | 134.2 KiB |  00m00s
+[  9/110] Upgrading openssl-libs-1:3.2. 100% |  91.8 MiB/s |   6.3 MiB |  00m00s
+[ 10/110] Upgrading libstdc++-0:15.2.1- 100% |  51.4 MiB/s |   2.8 MiB |  00m00s
+[ 11/110] Upgrading elfutils-libelf-0:0 100% |  33.6 MiB/s |   1.2 MiB |  00m00s
+[ 12/110] Installing libmpc-0:1.3.1-7.f 100% |  13.7 MiB/s | 154.2 KiB |  00m00s
+[ 13/110] Installing make-1:4.4.1-10.fc 100% |  19.5 MiB/s |   1.9 MiB |  00m00s
+[ 14/110] Installing m4-0:1.4.19-12.fc4 100% |   6.6 MiB/s | 610.8 KiB |  00m00s
+[ 15/110] Upgrading libxcrypt-0:4.5.2-1 100% |   2.1 MiB/s | 276.1 KiB |  00m00s
+[ 16/110] Installing perl-Digest-0:1.20 100% | 823.9 KiB/s |  37.1 KiB |  00m00s
+[ 17/110] Installing perl-Digest-MD5-0: 100% |   3.2 MiB/s | 105.6 KiB |  00m00s
+[ 18/110] Installing perl-B-0:1.89-520. 100% |   5.6 MiB/s | 545.3 KiB |  00m00s
+[ 19/110] Installing perl-FileHandle-0: 100% | 114.8 KiB/s |   9.8 KiB |  00m00s
+[ 20/110] Installing perl-MIME-Base32-0 100% | 440.6 KiB/s |  32.2 KiB |  00m00s
+[ 21/110] Installing perl-Data-Dumper-0 100% |   3.5 MiB/s | 137.5 KiB |  00m00s
+[ 22/110] Installing perl-libnet-0:3.15 100% |   8.0 MiB/s | 294.7 KiB |  00m00s
+[ 23/110] Installing perl-AutoLoader-0: 100% |   2.0 MiB/s |  20.9 KiB |  00m00s
+[ 24/110] Installing perl-IO-Socket-IP- 100% |   6.7 MiB/s | 102.2 KiB |  00m00s
+[ 25/110] Installing perl-URI-0:5.31-2. 100% |   6.1 MiB/s | 269.6 KiB |  00m00s
+[ 26/110] Installing perl-Time-Local-2: 100% |   2.5 MiB/s |  70.6 KiB |  00m00s
+[ 27/110] Installing perl-Text-Tabs+Wra 100% | 682.9 KiB/s |  23.9 KiB |  00m00s
+[ 28/110] Installing perl-Pod-Escapes-1 100% | 720.2 KiB/s |  25.9 KiB |  00m00s
+[ 29/110] Installing perl-File-Path-0:2 100% |   1.9 MiB/s |  64.5 KiB |  00m00s
+[ 30/110] Installing perl-if-0:0.61.000 100% | 221.7 KiB/s |   6.2 KiB |  00m00s
+[ 31/110] Installing perl-Net-SSLeay-0: 100% |  23.9 MiB/s |   1.4 MiB |  00m00s
+[ 32/110] Installing perl-locale-0:1.12 100% | 265.5 KiB/s |   6.9 KiB |  00m00s
+[ 33/110] Installing perl-IO-Socket-SSL 100% |  13.5 MiB/s | 707.4 KiB |  00m00s
+[ 34/110] Installing perl-Term-ANSIColo 100% |   8.1 MiB/s |  99.2 KiB |  00m00s
+[ 35/110] Installing perl-Term-Cap-0:1. 100% |   3.7 MiB/s |  30.6 KiB |  00m00s
+[ 36/110] Installing perl-POSIX-0:2.20- 100% |  12.3 MiB/s | 264.4 KiB |  00m00s
+[ 37/110] Installing perl-File-Temp-1:0 100% |   9.4 MiB/s | 164.1 KiB |  00m00s
+[ 38/110] Installing perl-IPC-Open3-0:1 100% |   1.4 MiB/s |  23.3 KiB |  00m00s
+[ 39/110] Installing perl-Class-Struct- 100% |   1.6 MiB/s |  25.9 KiB |  00m00s
+[ 40/110] Installing perl-HTTP-Tiny-0:0 100% |  19.1 MiB/s | 156.4 KiB |  00m00s
+[ 41/110] Installing perl-Pod-Simple-1: 100% |  18.6 MiB/s | 570.4 KiB |  00m00s
+[ 42/110] Installing perl-Socket-4:2.03 100% |   4.2 MiB/s | 146.0 KiB |  00m00s
+[ 43/110] Installing perl-Symbol-0:1.09 100% | 343.8 KiB/s |   7.2 KiB |  00m00s
+[ 44/110] Installing perl-SelectSaver-0 100% |  80.6 KiB/s |   2.6 KiB |  00m00s
+[ 45/110] Installing perl-File-stat-0:1 100% |   2.5 MiB/s |  13.1 KiB |  00m00s
+[ 46/110] Installing perl-Pod-Perldoc-0 100% |   2.8 MiB/s | 169.2 KiB |  00m00s
+[ 47/110] Installing perl-podlators-1:6 100% |   5.9 MiB/s | 321.4 KiB |  00m00s
+[ 48/110] Installing perl-Text-ParseWor 100% |   2.4 MiB/s |  14.6 KiB |  00m00s
+[ 49/110] Installing perl-Fcntl-0:1.18- 100% |   8.4 MiB/s |  94.1 KiB |  00m00s
+[ 50/110] Installing perl-base-0:2.27-5 100% | 862.8 KiB/s |  12.9 KiB |  00m00s
+[ 51/110] Installing perl-mro-0:1.29-52 100% |   8.1 MiB/s |  82.7 KiB |  00m00s
+[ 52/110] Installing perl-overloading-0 100% |   1.4 MiB/s |   5.5 KiB |  00m00s
+[ 53/110] Installing perl-IO-0:1.55-520 100% |  23.8 MiB/s | 195.3 KiB |  00m00s
+[ 54/110] Installing perl-Pod-Usage-4:2 100% |   2.2 MiB/s |  87.9 KiB |  00m00s
+[ 55/110] Installing perl-MIME-Base64-0 100% |  10.4 MiB/s |  96.3 KiB |  00m00s
+[ 56/110] Installing perl-constant-0:1. 100% |   4.5 MiB/s |  27.4 KiB |  00m00s
+[ 57/110] Installing perl-parent-1:0.24 100% |   2.7 MiB/s |  11.0 KiB |  00m00s
+[ 58/110] Installing perl-Errno-0:1.38- 100% |   1.1 MiB/s |   8.7 KiB |  00m00s
+[ 59/110] Installing perl-vars-0:1.05-5 100% |   1.0 MiB/s |   4.3 KiB |  00m00s
+[ 60/110] Installing perl-File-Basename 100% |   3.6 MiB/s |  14.6 KiB |  00m00s
+[ 61/110] Installing perl-Scalar-List-U 100% |  12.7 MiB/s | 156.7 KiB |  00m00s
+[ 62/110] Installing perl-Getopt-Std-0: 100% | 977.2 KiB/s |  11.7 KiB |  00m00s
+[ 63/110] Installing perl-overload-0:1. 100% |  10.0 MiB/s |  71.9 KiB |  00m00s
+[ 64/110] Installing perl-Storable-1:3. 100% |  24.0 MiB/s | 245.9 KiB |  00m00s
+[ 65/110] Installing perl-Getopt-Long-1 100% |  10.3 MiB/s | 147.2 KiB |  00m00s
+[ 66/110] Installing perl-Carp-0:1.54-5 100% |   5.8 MiB/s |  47.7 KiB |  00m00s
+[ 67/110] Installing perl-Exporter-0:5. 100% |  10.9 MiB/s |  55.6 KiB |  00m00s
+[ 68/110] Installing perl-DynaLoader-0: 100% |   6.3 MiB/s |  32.5 KiB |  00m00s
+[ 69/110] Installing perl-PathTools-0:3 100% |  17.2 MiB/s | 228.6 KiB |  00m00s
+[ 70/110] Installing perl-Encode-4:3.21 100% |  27.8 MiB/s |   4.8 MiB |  00m00s
+[ 71/110] Installing perl-libs-4:5.40.4 100% |  29.4 MiB/s |  10.0 MiB |  00m00s
+[ 72/110] Installing perl-interpreter-4 100% |   5.4 MiB/s | 176.1 KiB |  00m00s
+[ 73/110] Installing flex-0:2.6.4-19.fc 100% |  15.2 MiB/s | 823.3 KiB |  00m00s
+[ 74/110] Installing bison-0:3.8.2-11.f 100% |  42.7 MiB/s |   3.5 MiB |  00m00s
+[ 75/110] Installing cpp-0:15.2.1-7.fc4 100% |  92.6 MiB/s |  35.5 MiB |  00m00s
+[ 76/110] Upgrading elfutils-libs-0:0.1 100% |  29.2 MiB/s | 748.6 KiB |  00m00s
+[ 77/110] Upgrading elfutils-debuginfod 100% | 881.7 KiB/s | 146.4 KiB |  00m00s
+[ 78/110] Installing binutils-0:2.44-12 100% |  65.4 MiB/s |  29.3 MiB |  00m00s
+[ 79/110] Installing libstdc++-devel-0: 100% |  61.5 MiB/s |  15.9 MiB |  00m00s
+[ 80/110] Installing libasan-0:15.2.1-7 100% |  57.1 MiB/s |   1.5 MiB |  00m00s
+[ 81/110] Installing libubsan-0:15.2.1- 100% |  18.6 MiB/s | 476.3 KiB |  00m00s
+[ 82/110] Installing openssl-devel-1:3. 100% |   3.5 MiB/s |   5.2 MiB |  00m01s
+[ 83/110] Upgrading libgomp-0:15.2.1-7. 100% |  26.6 MiB/s | 518.4 KiB |  00m00s
+[ 84/110] Installing kernel-headers-0:6 100% |  16.9 MiB/s |   6.9 MiB |  00m00s
+[ 85/110] Installing libxcrypt-devel-0: 100% |   3.0 MiB/s |  33.4 KiB |  00m00s
+[ 86/110] Installing glibc-devel-0:2.41 100% |   8.5 MiB/s |   2.3 MiB |  00m00s
+[ 87/110] Installing gcc-0:15.2.1-7.fc4 100% | 104.0 MiB/s |  99.3 MiB |  00m01s
+[ 88/110] Installing cmake-filesystem-0 100% |  90.4 KiB/s |   7.6 KiB |  00m00s
+[ 89/110] Installing zlib-ng-compat-dev 100% |  11.8 MiB/s | 108.5 KiB |  00m00s
+[ 90/110] Installing libzstd-devel-0:1. 100% |  14.6 MiB/s | 208.8 KiB |  00m00s
+[ 91/110] Installing elfutils-libelf-de 100% |   1.1 MiB/s | 122.1 KiB |  00m00s
+[ 92/110] Installing kernel-devel-0:6.1 100% |   2.6 MiB/s |  79.9 MiB |  00m30s
+[ 93/110] Installing gcc-c++-0:15.2.1-7 100% | 211.2 MiB/s |  38.9 MiB |  00m00s
+[ 94/110] Upgrading openssl-1:3.2.6-4.f 100% |   7.4 MiB/s |   1.7 MiB |  00m00s
+[ 95/110] Upgrading glibc-langpack-en-0 100% |  28.8 MiB/s |   5.8 MiB |  00m00s
+[ 96/110] Removing elfutils-debuginfod- 100% | 518.0   B/s |  14.0   B |  00m00s
+[ 97/110] Removing elfutils-libs-0:0.19 100% | 600.0   B/s |  12.0   B |  00m00s
+[ 98/110] Removing openssl-1:3.2.4-3.fc 100% |  11.6 KiB/s | 310.0   B |  00m00s
+[ 99/110] Removing libstdc++-0:15.0.1-0 100% |   3.8 KiB/s |  31.0   B |  00m00s
+[100/110] Removing openssl-libs-1:3.2.4 100% |   2.7 KiB/s |  38.0   B |  00m00s
+[101/110] Removing elfutils-libelf-0:0. 100% |   2.4 KiB/s |  15.0   B |  00m00s
+[102/110] Removing libxcrypt-0:4.4.38-6 100% |   1.8 KiB/s |  18.0   B |  00m00s
+[103/110] Removing zlib-ng-compat-0:2.2 100% | 833.0   B/s |   5.0   B |  00m00s
+[104/110] Removing libgomp-0:15.0.1-0.1 100% |   1.3 KiB/s |   9.0   B |  00m00s
+[105/110] Removing glibc-langpack-en-0: 100% |  19.2 KiB/s | 492.0   B |  00m00s
+[106/110] Removing glibc-0:2.41-1.fc42. 100% |   2.1 KiB/s | 103.0   B |  00m00s
+[107/110] Removing glibc-minimal-langpa 100% |  14.0 KiB/s | 100.0   B |  00m00s
+[108/110] Removing glibc-gconv-extra-0: 100% |   7.8 KiB/s | 627.0   B |  00m00s
+[109/110] Removing glibc-common-0:2.41- 100% |   1.9 KiB/s |  52.0   B |  00m00s
+[110/110] Removing libgcc-0:15.0.1-0.11 100% |  11.0   B/s |  11.0   B |  00m01s
+Complete!

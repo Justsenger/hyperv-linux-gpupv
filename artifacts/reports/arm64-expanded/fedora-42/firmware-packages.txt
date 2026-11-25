@@ -1,0 +1,88 @@
+Updating and loading repositories:
+ Fedora 42 - aarch64 - Updates          100% |   2.0 MiB/s |  11.0 MiB |  00m06s
+ Fedora 42 openh264 (From Cisco) - aarc 100% |   1.4 KiB/s |   5.8 KiB |  00m04s
+ Fedora 42 - aarch64                    100% | 203.0 KiB/s |  34.2 MiB |  02m52s
+Repositories loaded.
+Nothing to do.
+Package "shim-aa64-15.8-3.aarch64" is already installed.
+Package "grub2-efi-aa64-1:2.12-28.fc42.aarch64" is already installed.
+Package "efibootmgr-18-9.fc42.aarch64" is already installed.
+
+Updating and loading repositories:
+Repositories loaded.
+Package                             Arch    Version        Repository                            Size
+Upgrading:
+ grub2-common                       noarch  1:2.12-32.fc42 updates                            6.1 MiB
+   replacing grub2-common           noarch  1:2.12-28.fc42 17bed3bd0467414ebb607f42137aa1ef   6.1 MiB
+ grub2-efi-aa64                     aarch64 1:2.12-32.fc42 updates                            6.3 MiB
+   replacing grub2-efi-aa64         aarch64 1:2.12-28.fc42 17bed3bd0467414ebb607f42137aa1ef   6.3 MiB
+ grub2-efi-aa64-modules             noarch  1:2.12-32.fc42 updates                            5.7 MiB
+   replacing grub2-efi-aa64-modules noarch  1:2.12-28.fc42 17bed3bd0467414ebb607f42137aa1ef   5.7 MiB
+ grub2-tools                        aarch64 1:2.12-32.fc42 updates                            6.7 MiB
+   replacing grub2-tools            aarch64 1:2.12-28.fc42 17bed3bd0467414ebb607f42137aa1ef   6.7 MiB
+ grub2-tools-extra                  aarch64 1:2.12-32.fc42 updates                            5.4 MiB
+   replacing grub2-tools-extra      aarch64 1:2.12-28.fc42 17bed3bd0467414ebb607f42137aa1ef   5.4 MiB
+ grub2-tools-minimal                aarch64 1:2.12-32.fc42 updates                            3.2 MiB
+   replacing grub2-tools-minimal    aarch64 1:2.12-28.fc42 17bed3bd0467414ebb607f42137aa1ef   3.2 MiB
+
+Transaction Summary:
+ Upgrading:          6 packages
+ Replacing:          6 packages
+
+Total size of inbound packages is 7 MiB. Need to download 7 MiB.
+After this operation, 608 B extra will be used (install 34 MiB, remove 34 MiB).
+[1/6] grub2-tools-extra-1:2.12-32.fc42. 100% | 489.3 KiB/s | 808.8 KiB |  00m02s
+[2/6] grub2-common-1:2.12-32.fc42.noarc 100% | 561.6 KiB/s |   1.0 MiB |  00m02s
+[3/6] grub2-tools-minimal-1:2.12-32.fc4 100% | 274.2 KiB/s | 587.4 KiB |  00m02s
+[4/6] grub2-tools-1:2.12-32.fc42.aarch6 100% |   1.8 MiB/s |   1.7 MiB |  00m01s
+[5/6] grub2-efi-aa64-modules-1:2.12-32. 100% |   1.3 MiB/s |   1.0 MiB |  00m01s
+[6/6] grub2-efi-aa64-1:2.12-32.fc42.aar 100% |   2.3 MiB/s |   2.1 MiB |  00m01s
+--------------------------------------------------------------------------------
+[6/6] Total                             100% |   2.2 MiB/s |   7.2 MiB |  00m03s
+Running transaction
+Importing OpenPGP key 0x105EF944:
+ UserID     : "Fedora (42) <fedora-42-primary@fedoraproject.org>"
+ Fingerprint: B0F4950458F69E1150C6C5EDC8AC4916105EF944
+ From       : file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-42-aarch64
+The key was successfully imported.
+[ 1/14] Verify package files            100% | 103.0   B/s |   6.0   B |  00m00s
+[ 2/14] Prepare transaction             100% |  69.0   B/s |  12.0   B |  00m00s
+[ 3/14] Upgrading grub2-common-1:2.12-3 100% |  24.4 MiB/s |   6.2 MiB |  00m00s
+[ 4/14] Upgrading grub2-tools-minimal-1 100% |  21.8 MiB/s |   3.2 MiB |  00m00s
+[ 5/14] Upgrading grub2-tools-1:2.12-32 100% |  29.8 MiB/s |   6.7 MiB |  00m00s
+[ 6/14] Upgrading grub2-efi-aa64-1:2.12 100% |  79.8 MiB/s |   6.3 MiB |  00m00s
+[ 7/14] Upgrading grub2-tools-extra-1:2 100% |  37.6 MiB/s |   5.4 MiB |  00m00s
+[ 8/14] Upgrading grub2-efi-aa64-module 100% |  17.2 MiB/s |   5.8 MiB |  00m00s
+[ 9/14] Removing grub2-efi-aa64-1:2.12- 100% | 277.0   B/s |  10.0   B |  00m00s
+[10/14] Removing grub2-tools-extra-1:2. 100% | 804.0   B/s |  37.0   B |  00m00s
+[11/14] Removing grub2-efi-aa64-modules 100% |   5.9 KiB/s | 248.0   B |  00m00s
+[12/14] Removing grub2-tools-minimal-1: 100% | 350.0   B/s |  27.0   B |  00m00s
+[13/14] Removing grub2-tools-1:2.12-28. 100% | 173.0   B/s |  72.0   B |  00m00s
+[14/14] Removing grub2-common-1:2.12-28 100% |  11.0   B/s |  57.0   B |  00m05s
+Complete!
+shim-aa64-15.8-3.aarch64
+grub2-efi-aa64-2.12-32.fc42.aarch64
+/boot/efi/EFI/BOOT/BOOTAA64.EFI
+/boot/efi/EFI/BOOT/fbaa64.efi
+/boot/efi/EFI/BOOT/grubaa64.efi
+/boot/efi/EFI/BOOT/mmaa64.efi
+/boot/efi/EFI/fedora/grubaa64.efi
+/boot/efi/EFI/fedora/mmaa64.efi
+/boot/efi/EFI/fedora/shim.efi
+/boot/efi/EFI/fedora/shimaa64.efi
+BootCurrent: 0001
+Timeout: 0 seconds
+BootOrder: 0005,0001,0000,0002,0003
+Boot0000* EFI Network	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,635161f83edfc546913ff2d2f965ed0e6930de8ce540f64f966deff6a6775bf7)/MAC(000000000000,0)/IPv4(0.0.0.0,0,DHCP,0.0.0.0,0.0.0.0,0.0.0.0)
+      dp: 02 02 18 00 00 00 00 00 00 00 00 00 00 00 00 00 56 4d 42 75 73 00 00 00 / 01 04 34 00 a2 e5 17 9b 91 08 dd 42 b6 53 80 b5 c2 28 09 ba 63 51 61 f8 3e df c5 46 91 3f f2 d2 f9 65 ed 0e 69 30 de 8c e5 40 f6 4f 96 6d ef f6 a6 77 5b f7 / 03 0b 25 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 / 03 0c 1b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 / 7f ff 04 00
+Boot0001* EFI SCSI Device	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,d96361baa104294db60572e2ffb1dc7f1fa7a0bc2295e443a45ebabaa3237372)/SCSI(0,0)
+      dp: 02 02 18 00 00 00 00 00 00 00 00 00 00 00 00 00 56 4d 42 75 73 00 00 00 / 01 04 34 00 a2 e5 17 9b 91 08 dd 42 b6 53 80 b5 c2 28 09 ba d9 63 61 ba a1 04 29 4d b6 05 72 e2 ff b1 dc 7f 1f a7 a0 bc 22 95 e4 43 a4 5e ba ba a3 23 73 72 / 03 02 08 00 00 00 00 00 / 7f ff 04 00
+Boot0002* EFI SCSI Device	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,d96361baa104294db60572e2ffb1dc7f1fa7a0bc2295e443a45ebabaa3237372)/SCSI(0,1)
+      dp: 02 02 18 00 00 00 00 00 00 00 00 00 00 00 00 00 56 4d 42 75 73 00 00 00 / 01 04 34 00 a2 e5 17 9b 91 08 dd 42 b6 53 80 b5 c2 28 09 ba d9 63 61 ba a1 04 29 4d b6 05 72 e2 ff b1 dc 7f 1f a7 a0 bc 22 95 e4 43 a4 5e ba ba a3 23 73 72 / 03 02 08 00 00 00 01 00 / 7f ff 04 00
+Boot0003* EFI SCSI Device	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,d96361baa104294db60572e2ffb1dc7f1fa7a0bc2295e443a45ebabaa3237372)/SCSI(0,2)
+      dp: 02 02 18 00 00 00 00 00 00 00 00 00 00 00 00 00 56 4d 42 75 73 00 00 00 / 01 04 34 00 a2 e5 17 9b 91 08 dd 42 b6 53 80 b5 c2 28 09 ba d9 63 61 ba a1 04 29 4d b6 05 72 e2 ff b1 dc 7f 1f a7 a0 bc 22 95 e4 43 a4 5e ba ba a3 23 73 72 / 03 02 08 00 00 00 02 00 / 7f ff 04 00
+Boot0004* FrontPage	MemoryMapped(11,0x200000,0x7fffff)/FvFile(4042708a-0f2d-4823-ac60-0d77b3111889)
+      dp: 01 03 18 00 0b 00 00 00 00 00 20 00 00 00 00 00 ff ff 7f 00 00 00 00 00 / 04 06 14 00 8a 70 42 40 2d 0f 23 48 ac 60 0d 77 b3 11 18 89 / 7f ff 04 00
+Boot0005* Fedora	HD(1,GPT,9f2600a6-bf61-4492-b23f-f5cfd4c2db65,0x800,0x32000)/\EFI\fedora\shimaa64.efi
+      dp: 04 01 2a 00 01 00 00 00 00 08 00 00 00 00 00 00 00 20 03 00 00 00 00 00 a6 00 26 9f 61 bf 92 44 b2 3f f5 cf d4 c2 db 65 02 02 / 04 04 36 00 5c 00 45 00 46 00 49 00 5c 00 66 00 65 00 64 00 6f 00 72 00 61 00 5c 00 73 00 68 00 69 00 6d 00 61 00 61 00 36 00 34 00 2e 00 65 00 66 00 69 00 00 00 / 7f ff 04 00
+retry_secure_boot

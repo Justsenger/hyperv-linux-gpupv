@@ -1,0 +1,265 @@
+AnolisOS-8 - AppStream                           17 MB/s |  17 MB     00:01    
+AnolisOS-8 - BaseOS                              27 MB/s |  47 MB     00:01    
+AnolisOS-8 - Extras                             5.8 kB/s | 2.3 kB     00:00    
+AnolisOS-8 - PowerTools                         6.3 MB/s | 2.7 MB     00:00    
+Extra Packages for Enterprise Linux 8 - aarch64 2.8 MB/s |  14 MB     00:04    
+Extra Packages for Enterprise Linux Modular 8 -  33 kB/s | 743 kB     00:22    
+Package openssh-server-8.0p1-25.0.1.an8.aarch64 is already installed.
+Package sudo-1.9.5p2-1.0.1.an8.aarch64 is already installed.
+Package openssl-1:1.1.1k-14.0.1.an8.aarch64 is already installed.
+Package python36-3.6.8-39.module+an8.9.0+11221+05282142.aarch64 is already installed.
+Package mokutil-1:0.3.0-12.0.1.an8.aarch64 is already installed.
+Dependencies resolved.
+==========================================================================================
+ Package                  Arch     Version                                Repo        Size
+==========================================================================================
+Installing:
+ cloud-init               noarch   23.2.2-1.0.2.an8                       AppStream  1.3 M
+Upgrading:
+ openssh                  aarch64  8.0p1-33.0.1.an8                       BaseOS     494 k
+ openssh-clients          aarch64  8.0p1-33.0.1.an8                       BaseOS     632 k
+ openssh-server           aarch64  8.0p1-33.0.1.an8                       BaseOS     480 k
+ openssl                  aarch64  1:1.1.1k-18.0.1.an8                    BaseOS     693 k
+ openssl-libs             aarch64  1:1.1.1k-18.0.1.an8                    BaseOS     1.4 M
+ sudo                     aarch64  1.9.5p2-2.0.1.an8                      BaseOS     1.0 M
+Installing dependencies:
+ platform-python-devel    aarch64  3.6.8-69.0.1.an8                       AppStream  241 k
+ python-rpm-macros        noarch   3-45.an8                               AppStream   15 k
+ python-srpm-macros       noarch   3-45.an8                               AppStream   15 k
+ python3-babel            noarch   2.5.1-7.0.1.an8                        AppStream  4.8 M
+ python3-cffi             aarch64  1.11.5-6.0.1.an8                       BaseOS     238 k
+ python3-configobj        noarch   5.0.6-11.el8                           BaseOS      67 k
+ python3-cryptography     aarch64  3.2.1-8.an8                            BaseOS     542 k
+ python3-jinja2           noarch   2.10.1-7.0.1.an8                       AppStream  510 k
+ python3-jsonpatch        noarch   1.21-2.el8                             AppStream   25 k
+ python3-jsonpointer      noarch   1.10-11.el8                            AppStream   19 k
+ python3-jsonschema       noarch   2.6.0-4.el8                            AppStream   81 k
+ python3-jwt              noarch   1.6.1-2.0.1.an8.1                      BaseOS      41 k
+ python3-markupsafe       aarch64  0.23-19.el8                            AppStream   38 k
+ python3-netifaces        aarch64  0.10.6-4.el8                           AppStream   24 k
+ python3-oauthlib         noarch   2.1.0-1.el8                            BaseOS     154 k
+ python3-pycparser        noarch   2.14-14.el8                            BaseOS     108 k
+ python3-pyserial         noarch   3.1.1-9.an8                            AppStream  168 k
+ python3-pytz             noarch   2017.2-11.an8                          AppStream   53 k
+ python3-rpm-generators   noarch   5-8.an8                                AppStream   24 k
+ python3-rpm-macros       noarch   3-45.an8                               AppStream   14 k
+ python36-devel           aarch64  3.6.8-39.module+an8.9.0+11221+05282142 AppStream   16 k
+
+Transaction Summary
+==========================================================================================
+Install  22 Packages
+Upgrade   6 Packages
+
+Total download size: 13 M
+Downloading Packages:
+(1/28): python-rpm-macros-3-45.an8.noarch.rpm    83 kB/s |  15 kB     00:00    
+(2/28): platform-python-devel-3.6.8-69.0.1.an8. 1.1 MB/s | 241 kB     00:00    
+(3/28): python-srpm-macros-3-45.an8.noarch.rpm  123 kB/s |  15 kB     00:00    
+(4/28): cloud-init-23.2.2-1.0.2.an8.noarch.rpm  4.0 MB/s | 1.3 MB     00:00    
+(5/28): python3-jsonpatch-1.21-2.el8.noarch.rpm 232 kB/s |  25 kB     00:00    
+(6/28): python3-jinja2-2.10.1-7.0.1.an8.noarch. 2.8 MB/s | 510 kB     00:00    
+(7/28): python3-jsonpointer-1.10-11.el8.noarch. 192 kB/s |  19 kB     00:00    
+(8/28): python3-babel-2.5.1-7.0.1.an8.noarch.rp  15 MB/s | 4.8 MB     00:00    
+(9/28): python3-jsonschema-2.6.0-4.el8.noarch.r 609 kB/s |  81 kB     00:00    
+(10/28): python3-markupsafe-0.23-19.el8.aarch64 359 kB/s |  38 kB     00:00    
+(11/28): python3-netifaces-0.10.6-4.el8.aarch64 216 kB/s |  24 kB     00:00    
+(12/28): python3-pytz-2017.2-11.an8.noarch.rpm  507 kB/s |  53 kB     00:00    
+(13/28): python3-pyserial-3.1.1-9.an8.noarch.rp 1.2 MB/s | 168 kB     00:00    
+(14/28): python3-rpm-generators-5-8.an8.noarch. 233 kB/s |  24 kB     00:00    
+(15/28): python36-devel-3.6.8-39.module+an8.9.0 131 kB/s |  16 kB     00:00    
+(16/28): python3-rpm-macros-3-45.an8.noarch.rpm 111 kB/s |  14 kB     00:00    
+(17/28): python3-cffi-1.11.5-6.0.1.an8.aarch64. 1.5 MB/s | 238 kB     00:00    
+(18/28): python3-configobj-5.0.6-11.el8.noarch. 498 kB/s |  67 kB     00:00    
+(19/28): python3-cryptography-3.2.1-8.an8.aarch 3.4 MB/s | 542 kB     00:00    
+(20/28): python3-jwt-1.6.1-2.0.1.an8.1.noarch.r 342 kB/s |  41 kB     00:00    
+(21/28): python3-pycparser-2.14-14.el8.noarch.r 876 kB/s | 108 kB     00:00    
+(22/28): openssh-8.0p1-33.0.1.an8.aarch64.rpm   3.6 MB/s | 494 kB     00:00    
+(23/28): python3-oauthlib-2.1.0-1.el8.noarch.rp 813 kB/s | 154 kB     00:00    
+(24/28): openssh-clients-8.0p1-33.0.1.an8.aarch 5.9 MB/s | 632 kB     00:00    
+(25/28): openssh-server-8.0p1-33.0.1.an8.aarch6 3.5 MB/s | 480 kB     00:00    
+(26/28): openssl-1.1.1k-18.0.1.an8.aarch64.rpm  4.7 MB/s | 693 kB     00:00    
+(27/28): openssl-libs-1.1.1k-18.0.1.an8.aarch64 8.1 MB/s | 1.4 MB     00:00    
+(28/28): sudo-1.9.5p2-2.0.1.an8.aarch64.rpm     6.3 MB/s | 1.0 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                           8.8 MB/s |  13 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Running scriptlet: openssl-libs-1:1.1.1k-18.0.1.an8.aarch64               1/1 
+  Upgrading        : openssl-libs-1:1.1.1k-18.0.1.an8.aarch64              1/34 
+  Running scriptlet: openssl-libs-1:1.1.1k-18.0.1.an8.aarch64              1/34 
+  Running scriptlet: openssh-8.0p1-33.0.1.an8.aarch64                      2/34 
+  Upgrading        : openssh-8.0p1-33.0.1.an8.aarch64                      2/34 
+  Installing       : python-srpm-macros-3-45.an8.noarch                    3/34 
+  Installing       : python-rpm-macros-3-45.an8.noarch                     4/34 
+  Installing       : python3-rpm-macros-3-45.an8.noarch                    5/34 
+  Upgrading        : sudo-1.9.5p2-2.0.1.an8.aarch64                        6/34 
+  Running scriptlet: sudo-1.9.5p2-2.0.1.an8.aarch64                        6/34 
+  Installing       : python3-pycparser-2.14-14.el8.noarch                  7/34 
+  Installing       : python3-cffi-1.11.5-6.0.1.an8.aarch64                 8/34 
+  Installing       : python3-cryptography-3.2.1-8.an8.aarch64              9/34 
+  Installing       : python3-jwt-1.6.1-2.0.1.an8.1.noarch                 10/34 
+  Installing       : python3-oauthlib-2.1.0-1.el8.noarch                  11/34 
+  Installing       : python3-configobj-5.0.6-11.el8.noarch                12/34 
+  Installing       : python3-rpm-generators-5-8.an8.noarch                13/34 
+  Installing       : platform-python-devel-3.6.8-69.0.1.an8.aarch64       14/34 
+  Installing       : python36-devel-3.6.8-39.module+an8.9.0+11221+05282   15/34 
+  Running scriptlet: python36-devel-3.6.8-39.module+an8.9.0+11221+05282   15/34 
+  Installing       : python3-pytz-2017.2-11.an8.noarch                    16/34 
+  Installing       : python3-babel-2.5.1-7.0.1.an8.noarch                 17/34 
+  Installing       : python3-pyserial-3.1.1-9.an8.noarch                  18/34 
+  Installing       : python3-netifaces-0.10.6-4.el8.aarch64               19/34 
+  Installing       : python3-markupsafe-0.23-19.el8.aarch64               20/34 
+  Installing       : python3-jinja2-2.10.1-7.0.1.an8.noarch               21/34 
+  Installing       : python3-jsonschema-2.6.0-4.el8.noarch                22/34 
+  Installing       : python3-jsonpointer-1.10-11.el8.noarch               23/34 
+  Installing       : python3-jsonpatch-1.21-2.el8.noarch                  24/34 
+  Installing       : cloud-init-23.2.2-1.0.2.an8.noarch                   25/34 
+  Running scriptlet: cloud-init-23.2.2-1.0.2.an8.noarch                   25/34 
+  Upgrading        : openssh-clients-8.0p1-33.0.1.an8.aarch64             26/34 
+  Running scriptlet: openssh-server-8.0p1-33.0.1.an8.aarch64              27/34 
+  Upgrading        : openssh-server-8.0p1-33.0.1.an8.aarch64              27/34 
+  Running scriptlet: openssh-server-8.0p1-33.0.1.an8.aarch64              27/34 
+  Upgrading        : openssl-1:1.1.1k-18.0.1.an8.aarch64                  28/34 
+  Cleanup          : openssl-1:1.1.1k-14.0.1.an8.aarch64                  29/34 
+  Running scriptlet: openssh-server-8.0p1-25.0.1.an8.aarch64              30/34 
+  Cleanup          : openssh-server-8.0p1-25.0.1.an8.aarch64              30/34 
+  Running scriptlet: openssh-server-8.0p1-25.0.1.an8.aarch64              30/34 
+  Cleanup          : openssh-clients-8.0p1-25.0.1.an8.aarch64             31/34 
+  Cleanup          : openssh-8.0p1-25.0.1.an8.aarch64                     32/34 
+  Cleanup          : openssl-libs-1:1.1.1k-14.0.1.an8.aarch64             33/34 
+  Running scriptlet: openssl-libs-1:1.1.1k-14.0.1.an8.aarch64             33/34 
+  Cleanup          : sudo-1.9.5p2-1.0.1.an8.aarch64                       34/34 
+  Running scriptlet: sudo-1.9.5p2-1.0.1.an8.aarch64                       34/34 
+  Verifying        : cloud-init-23.2.2-1.0.2.an8.noarch                    1/34 
+  Verifying        : platform-python-devel-3.6.8-69.0.1.an8.aarch64        2/34 
+  Verifying        : python-rpm-macros-3-45.an8.noarch                     3/34 
+  Verifying        : python-srpm-macros-3-45.an8.noarch                    4/34 
+  Verifying        : python3-babel-2.5.1-7.0.1.an8.noarch                  5/34 
+  Verifying        : python3-jinja2-2.10.1-7.0.1.an8.noarch                6/34 
+  Verifying        : python3-jsonpatch-1.21-2.el8.noarch                   7/34 
+  Verifying        : python3-jsonpointer-1.10-11.el8.noarch                8/34 
+  Verifying        : python3-jsonschema-2.6.0-4.el8.noarch                 9/34 
+  Verifying        : python3-markupsafe-0.23-19.el8.aarch64               10/34 
+  Verifying        : python3-netifaces-0.10.6-4.el8.aarch64               11/34 
+  Verifying        : python3-pyserial-3.1.1-9.an8.noarch                  12/34 
+  Verifying        : python3-pytz-2017.2-11.an8.noarch                    13/34 
+  Verifying        : python3-rpm-generators-5-8.an8.noarch                14/34 
+  Verifying        : python3-rpm-macros-3-45.an8.noarch                   15/34 
+  Verifying        : python36-devel-3.6.8-39.module+an8.9.0+11221+05282   16/34 
+  Verifying        : python3-cffi-1.11.5-6.0.1.an8.aarch64                17/34 
+  Verifying        : python3-configobj-5.0.6-11.el8.noarch                18/34 
+  Verifying        : python3-cryptography-3.2.1-8.an8.aarch64             19/34 
+  Verifying        : python3-jwt-1.6.1-2.0.1.an8.1.noarch                 20/34 
+  Verifying        : python3-oauthlib-2.1.0-1.el8.noarch                  21/34 
+  Verifying        : python3-pycparser-2.14-14.el8.noarch                 22/34 
+  Verifying        : openssh-8.0p1-33.0.1.an8.aarch64                     23/34 
+  Verifying        : openssh-8.0p1-25.0.1.an8.aarch64                     24/34 
+  Verifying        : openssh-clients-8.0p1-33.0.1.an8.aarch64             25/34 
+  Verifying        : openssh-clients-8.0p1-25.0.1.an8.aarch64             26/34 
+  Verifying        : openssh-server-8.0p1-33.0.1.an8.aarch64              27/34 
+  Verifying        : openssh-server-8.0p1-25.0.1.an8.aarch64              28/34 
+  Verifying        : openssl-1:1.1.1k-18.0.1.an8.aarch64                  29/34 
+  Verifying        : openssl-1:1.1.1k-14.0.1.an8.aarch64                  30/34 
+  Verifying        : openssl-libs-1:1.1.1k-18.0.1.an8.aarch64             31/34 
+  Verifying        : openssl-libs-1:1.1.1k-14.0.1.an8.aarch64             32/34 
+  Verifying        : sudo-1.9.5p2-2.0.1.an8.aarch64                       33/34 
+  Verifying        : sudo-1.9.5p2-1.0.1.an8.aarch64                       34/34 
+
+Upgraded:
+  openssh-8.0p1-33.0.1.an8.aarch64                                              
+  openssh-clients-8.0p1-33.0.1.an8.aarch64                                      
+  openssh-server-8.0p1-33.0.1.an8.aarch64                                       
+  openssl-1:1.1.1k-18.0.1.an8.aarch64                                           
+  openssl-libs-1:1.1.1k-18.0.1.an8.aarch64                                      
+  sudo-1.9.5p2-2.0.1.an8.aarch64                                                
+Installed:
+  cloud-init-23.2.2-1.0.2.an8.noarch                                            
+  platform-python-devel-3.6.8-69.0.1.an8.aarch64                                
+  python-rpm-macros-3-45.an8.noarch                                             
+  python-srpm-macros-3-45.an8.noarch                                            
+  python3-babel-2.5.1-7.0.1.an8.noarch                                          
+  python3-cffi-1.11.5-6.0.1.an8.aarch64                                         
+  python3-configobj-5.0.6-11.el8.noarch                                         
+  python3-cryptography-3.2.1-8.an8.aarch64                                      
+  python3-jinja2-2.10.1-7.0.1.an8.noarch                                        
+  python3-jsonpatch-1.21-2.el8.noarch                                           
+  python3-jsonpointer-1.10-11.el8.noarch                                        
+  python3-jsonschema-2.6.0-4.el8.noarch                                         
+  python3-jwt-1.6.1-2.0.1.an8.1.noarch                                          
+  python3-markupsafe-0.23-19.el8.aarch64                                        
+  python3-netifaces-0.10.6-4.el8.aarch64                                        
+  python3-oauthlib-2.1.0-1.el8.noarch                                           
+  python3-pycparser-2.14-14.el8.noarch                                          
+  python3-pyserial-3.1.1-9.an8.noarch                                           
+  python3-pytz-2017.2-11.an8.noarch                                             
+  python3-rpm-generators-5-8.an8.noarch                                         
+  python3-rpm-macros-3-45.an8.noarch                                            
+  python36-devel-3.6.8-39.module+an8.9.0+11221+05282142.aarch64                 
+
+Complete!
+Last metadata expiration check: 0:00:34 ago on Wed Nov 25 11:05:27 2026.
+Dependencies resolved.
+================================================================================
+ Package            Arch        Version                        Repository  Size
+================================================================================
+Installing:
+ kernel             aarch64     4.18.0-553.186.1.0.1.an8       BaseOS      11 M
+ kernel-core        aarch64     4.18.0-553.186.1.0.1.an8       BaseOS      40 M
+ kernel-modules     aarch64     4.18.0-553.186.1.0.1.an8       BaseOS      21 M
+
+Transaction Summary
+================================================================================
+Install  3 Packages
+
+Total download size: 71 M
+Installed size: 77 M
+Downloading Packages:
+(1/3): kernel-4.18.0-553.186.1.0.1.an8.aarch64.  15 MB/s |  11 MB     00:00    
+(2/3): kernel-modules-4.18.0-553.186.1.0.1.an8.  15 MB/s |  21 MB     00:01    
+(3/3): kernel-core-4.18.0-553.186.1.0.1.an8.aar  18 MB/s |  40 MB     00:02    
+--------------------------------------------------------------------------------
+Total                                            31 MB/s |  71 MB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : kernel-core-4.18.0-553.186.1.0.1.an8.aarch64           1/3 
+  Running scriptlet: kernel-core-4.18.0-553.186.1.0.1.an8.aarch64           1/3 
+  Installing       : kernel-modules-4.18.0-553.186.1.0.1.an8.aarch64        2/3 
+  Running scriptlet: kernel-modules-4.18.0-553.186.1.0.1.an8.aarch64        2/3 
+  Installing       : kernel-4.18.0-553.186.1.0.1.an8.aarch64                3/3 
+  Running scriptlet: kernel-core-4.18.0-553.186.1.0.1.an8.aarch64           3/3 
+dracut: No '/dev/log' or 'logger' included for syslog logging
+
+  Running scriptlet: kernel-modules-4.18.0-553.186.1.0.1.an8.aarch64        3/3 
+  Running scriptlet: kernel-4.18.0-553.186.1.0.1.an8.aarch64                3/3 
+  Verifying        : kernel-4.18.0-553.186.1.0.1.an8.aarch64                1/3 
+  Verifying        : kernel-core-4.18.0-553.186.1.0.1.an8.aarch64           2/3 
+  Verifying        : kernel-modules-4.18.0-553.186.1.0.1.an8.aarch64        3/3 
+
+Installed:
+  kernel-4.18.0-553.186.1.0.1.an8.aarch64                                       
+  kernel-core-4.18.0-553.186.1.0.1.an8.aarch64                                  
+  kernel-modules-4.18.0-553.186.1.0.1.an8.aarch64                               
+
+Complete!
+NAME="Anolis OS"
+VERSION="8.10"
+ID="anolis"
+ID_LIKE="rhel fedora centos"
+VERSION_ID="8.10"
+PLATFORM_ID="platform:an8"
+PRETTY_NAME="Anolis OS 8.10"
+ANSI_COLOR="0;31"
+HOME_URL="https://openanolis.cn/"
+
+kernel-4.18.0-553.46.1.0.1.an8.aarch64
+kernel-4.18.0-553.186.1.0.1.an8.aarch64
+cloud-init-23.2.2-1.0.2.an8.noarch
+anolis_rhck_ready

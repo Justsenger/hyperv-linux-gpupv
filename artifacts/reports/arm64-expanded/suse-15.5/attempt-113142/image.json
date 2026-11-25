@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://download.opensuse.org/repositories/Cloud:/Images:/Leap_15.5/images/openSUSE-Leap-15.5.aarch64-NoCloud.qcow2",
+  "ChecksumSource": "https://download.opensuse.org/repositories/Cloud:/Images:/Leap_15.5/images/openSUSE-Leap-15.5.aarch64-NoCloud.qcow2.sha256",
+  "PublishedDigest": "6435184d06cbabbcd9fc0fab34ef7beb0ba498ed0742abeeea2f838d4d1e8026",
+  "OriginalSha256": null,
+  "Sha256": "6435184d06cbabbcd9fc0fab34ef7beb0ba498ed0742abeeea2f838d4d1e8026"
+}

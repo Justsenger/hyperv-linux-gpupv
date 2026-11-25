@@ -1,0 +1,1 @@
+glibc 2.44.9000, aarch64, kernel 7.4.0-0.rc3.261119g4405c18c95d2.29.fc46.aarch64, preflight OK

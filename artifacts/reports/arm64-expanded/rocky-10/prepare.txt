@@ -1,0 +1,71 @@
+Linux gpupv-test-9907e6ed5633448abfac61178ebe814e 6.12.0-264.16.1.el10_3.aarch64 #1 SMP PREEMPT_DYNAMIC Thu Nov 12 15:54:03 UTC 2026 aarch64 GNU/Linux
+NAME="Rocky Linux"
+VERSION="10.3 (Red Quartz)"
+RELEASE_TYPE="stable"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="10.3"
+PLATFORM_ID="platform:el10"
+PRETTY_NAME="Rocky Linux 10.3 (Red Quartz)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:10::baseos"
+HOME_URL="https://rockylinux.org/"
+VENDOR_NAME="RESF"
+VENDOR_URL="https://resf.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2035-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-10"
+ROCKY_SUPPORT_PRODUCT_VERSION="10.3"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="10.3"
+systemd
+......status: done
+Rocky Linux 10 - BaseOS                         2.6 MB/s | 4.4 MB     00:01    
+Rocky Linux 10 - AppStream                      1.3 MB/s | 2.5 MB     00:01    
+Rocky Linux 10 - Extras                         5.2 kB/s | 6.4 kB     00:01    
+Package mokutil-2:0.7.2-4.el10.aarch64 is already installed.
+Package openssl-1:3.5.9-1.el10_3.aarch64 is already installed.
+Package kmod-31-13.el10.aarch64 is already installed.
+Package python3-3.12.16-2.el10_3.aarch64 is already installed.
+Dependencies resolved.
+================================================================================
+ Package         Architecture    Version                   Repository      Size
+================================================================================
+Upgrading:
+ mokutil         aarch64         2:0.7.2-7.el10_3          baseos          48 k
+
+Transaction Summary
+================================================================================
+Upgrade  1 Package
+
+Total download size: 48 k
+Downloading Packages:
+mokutil-0.7.2-7.el10_3.aarch64.rpm              262 kB/s |  48 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                            26 kB/s |  48 kB     00:01     
+Rocky Linux 10 - BaseOS                          12 MB/s |  18 kB     00:00    
+Importing GPG key 0x6FEDFC85:
+ Userid     : "Release Engineering (Rocky Linux 10) <releng@rockylinux.org>"
+ Fingerprint: FC22 6859 C086 0BF0 DDB9 5B08 5B10 6C73 6FED FC85
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-Rocky-10
+Key imported successfully
+Importing GPG key 0x2EBBA43F:
+ Userid     : "Release Engineering (Rocky Linux 10) <releng@rockylinux.org>"
+ Fingerprint: E336 84D4 2EBB A43F CB7D 2CC3 C0F4 72FC 3280 EB2F 3A6F 3850 C232 12DB ECF4 49E0
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-Rocky-10
+Key imported successfully
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : mokutil-2:0.7.2-7.el10_3.aarch64                       1/2 
+  Cleanup          : mokutil-2:0.7.2-4.el10.aarch64                         2/2 
+  Running scriptlet: mokutil-2:0.7.2-4.el10.aarch64                         2/2 
+
+Upgraded:
+  mokutil-2:0.7.2-7.el10_3.aarch64                                              
+
+Complete!

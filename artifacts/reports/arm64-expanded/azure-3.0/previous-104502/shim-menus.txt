@@ -1,0 +1,5 @@
+fd79c297-6680-4a9c-8644-bdc027bfdcd4 confirmed shim menu management
+fd79c297-6680-4a9c-8644-bdc027bfdcd4 confirmed shim menu view
+fd79c297-6680-4a9c-8644-bdc027bfdcd4 confirmed shim menu confirm
+fd79c297-6680-4a9c-8644-bdc027bfdcd4 confirmed shim menu password
+fd79c297-6680-4a9c-8644-bdc027bfdcd4 confirmed shim menu reboot

@@ -1,0 +1,17 @@
+{
+  "target": "ubuntu-20.04-hwe",
+  "vm": "gpupv-test-864a4a7e04c64b6e96a823ad82df58c4",
+  "vmId": "6bdedad7-1e66-4e52-a6e2-11056e5d15b8",
+  "started": "2026-11-25T10:08:05.6851181+08:00",
+  "secureBoot": null,
+  "route": null,
+  "kernel": null,
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "Guest identity or new boot ID unavailable after 120 seconds"
+  ],
+  "diagnostics": [],
+  "stage": "boot",
+  "finished": "2026-11-25T10:13:30.8787781+08:00"
+}

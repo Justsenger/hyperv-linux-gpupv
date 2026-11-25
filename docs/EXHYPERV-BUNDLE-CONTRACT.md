@@ -38,10 +38,16 @@ sudo mkdir -p /mnt/gpupv && { mountpoint -q /mnt/gpupv || sudo mount -o ro "$(su
 
 ## 接入与验收
 
+Windows Dev Kit 2023 的新建 ARM64 来宾在 WMI 中读回高位基址 65024 MiB、高位大小 512 MiB、低位大小 512 MiB。以默认高位窗口结束地址 `E = base + size` 计算，实测可用配置为 `HighMmioGapBase = E − 32768`、`HighMmioGapSize = 32768 − 1024`、`LowMmioGapSize = 3584`，各值以 MiB 计。在这台宿主上高位窗口覆盖 [32768, 64512) MiB，顶部保留 1024 MiB，Adreno 计算回读 64/64。[WMI 与计算记录](../artifacts/reports/arm64-expanded/mmio-trace/sampling.md)
+
+同一 `uname -r` 和 vermagic 可能对应不同的发行版内核 ABI。预编译模块还会与当前内核随附的 Hyper-V 模块比对共同引用的符号 CRC。发现差异后使用该来宾的内核头文件进行源码构建。[Ubuntu GA 与 HWE 对照](../artifacts/reports/arm64-expanded/ubuntu-26.04-ga/abi-comparison.txt)
+
+本机驱动 30.0.4122.4000 在一次普通用户 D3D12 计算中成功打开三个微软运行库及两个 Qualcomm ELF 库。此结果仅覆盖这次计算的用户态路径。提取范围应随宿主驱动与工作负载验证。[实际打开的文件与原始 strace](../artifacts/reports/arm64-expanded/mmio-trace/sampling.md)
+
 ExHyperV 先按目标来宾架构选择 ZIP，用同一发行版本的 SHA256SUMS 校验整包，再校验 manifest 中的每个 SHA-256。合盘时保留 guest/d3d12-compute，设置 Linux 可执行权限由安装器完成。可用 `python3 tests/check-bundle.py <zip> <arch>` 在解包前执行与 CI 一致的契约检查。
 
 来宾按 uname -m 和 uname -r 精确匹配模块，并用 modinfo 复核 name、vermagic、srcversion。匹配时只需 Python、kmod、udev 等运行工具，可在无 gcc、make 和 headers 的系统安装。未命中时从 kernel/ 编译，需要对应内核头与编译器。Secure Boot 已关闭时跳过 MOK；开启时使用本地受信任密钥和 OpenSSL CMS 签名预编译模块。首次信任需管理员完成 MOK 录入。
 
-纯算力验收以普通用户执行 `gpupv-guest verify` 的退出码、逐卡硬件 PCI 标识与数值回读为准。该命令默认不运行视频编解码。Debian x86_64 双卡已有 D3D12 Dispatch、CUDA 和 OpenCL 数值证据。ARM64 CI 覆盖模块 ELF、探针和整包校验；ARM64 GPU 实测需要相应的 Hyper-V 宿主。[双卡原始输出](../artifacts/reports/phase1/final-ssh/compute.txt)
+纯算力验收以普通用户执行 `gpupv-guest verify` 的退出码、硬件适配器标识及数量、逐卡数值回读为准。合盘时保留完整的宿主 PnP 实例 ID。PCI 使用十六进制厂商和设备号。本机 Adreno 的 ACPI 标识 `VEN_QCOM&DEV_0636` 对应 DXCore 的 `4d4f4351:36333630`。ARM64 本地版同时检查这两个 32 位值。Debian x86_64 双卡已有 D3D12、CUDA 和 OpenCL 数值证据，ARM64 Adreno 已实测 D3D12。[双卡原始输出](../artifacts/reports/phase1/final-ssh/compute.txt) · [Adreno 签名重启后的原始输出](../artifacts/reports/arm64-devkit-2023/signed-reboot.txt)
 
 本次成品 UDF 合盘、Secure Boot 受信任签名重启和卸载复核见[成品兼容性记录](../COMPATIBILITY.md)及[卸载后重启证据](../artifacts/reports/ci-bundle-ca173d3/clean.txt)。

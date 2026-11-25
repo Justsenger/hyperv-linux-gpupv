@@ -1,0 +1,43 @@
+Linux gpupv-test-d4d3ed24a3e44a308468f2ffe151f126 6.1.0-56-arm64 #1 SMP Debian 6.1.192-2 (2026-11-16) aarch64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+SecureBoot enabled
+GPU-PV module signing
+O
+fc8ce859-4e20-4cb9-8ba6-e553980f05fe
+crw-rw---- 1 root video 10, 124 Nov 24 16:31 /dev/dxg
+module dxgkrnl format gpupv +p
+Hardware adapter identities verified: ['4d4f4351:36333630']
+boot_id=fc8ce859-4e20-4cb9-8ba6-e553980f05fe uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1
+[   50.115574] linuxpv-compute-502c37d6-cb34-4434-9b58-0b549449bde9
+[   50.161095] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   50.161925] gpupv query caller=d3d12-compute pid=487 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   50.161931] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   50.161995] gpupv query caller=d3d12-compute pid=487 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   50.161998] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   50.162063] gpupv query caller=d3d12-compute pid=487 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   50.162066] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   50.162300] gpupv query caller=d3d12-compute pid=487 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   50.162303] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+0

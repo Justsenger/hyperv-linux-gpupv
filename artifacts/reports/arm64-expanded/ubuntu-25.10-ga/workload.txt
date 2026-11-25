@@ -1,0 +1,24 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+boot_id=cdc3a32d-9440-4008-a79c-bcd4a8b38443 uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1

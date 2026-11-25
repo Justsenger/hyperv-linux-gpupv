@@ -1,0 +1,5 @@
+15a07e9f-eff3-4716-a2bb-763d8c2ef1d0 confirmed shim menu management
+15a07e9f-eff3-4716-a2bb-763d8c2ef1d0 confirmed shim menu view
+15a07e9f-eff3-4716-a2bb-763d8c2ef1d0 confirmed shim menu confirm
+15a07e9f-eff3-4716-a2bb-763d8c2ef1d0 confirmed shim menu password
+15a07e9f-eff3-4716-a2bb-763d8c2ef1d0 confirmed shim menu reboot

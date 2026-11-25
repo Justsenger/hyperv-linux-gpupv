@@ -1,0 +1,6 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://cloud-images.ubuntu.com/releases/resolute/release/ubuntu-26.04-server-cloudimg-arm64.img",
+  "ChecksumSource": "https://cloud-images.ubuntu.com/releases/resolute/release/SHA256SUMS",
+  "Sha256": "cf3b8472b84e7de37cdc2d2e9a9bf82b3edf0ab97113a1422eff048f26688e2f"
+}

@@ -1,0 +1,3 @@
+/sys/bus/pci/devices/afa3:00:00.0/device:0x008e
+install_route=source
+Prebuilt kernel ABI mismatch: vmbus_sendpacket (0x24b8c2f2 != 0x10f5f5b5, pci_hyperv). Using matching kernel headers.

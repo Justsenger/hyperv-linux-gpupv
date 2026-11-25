@@ -1,0 +1,165 @@
+Linux gpupv-test-dd44526d2572421e8799d4b5fc940085 5.15.0-139-generic #149~20.04.1-Ubuntu SMP Wed Apr 16 08:29:43 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+sudo: unable to resolve host gpupv-test-dd44526d2572421e8799d4b5fc940085: Name or service not known
+[    0.544518] sr 0:0:0:1: Attached scsi CD-ROM sr0
+[    0.544596] sr 0:0:0:1: Attached scsi generic sg1 type 5
+[    0.544711] sr 0:0:0:2: [sr1] scsi-1 drive
+[    0.545356] sr 0:0:0:2: Attached scsi CD-ROM sr1
+[    0.545390] sr 0:0:0:2: Attached scsi generic sg2 type 5
+[    0.546920]  sda: sda1 sda15
+[    0.547444] sd 0:0:0:0: [sda] Attached SCSI disk
+[    0.567798] hv_storvsc 1f17b91e-ab8f-4bde-bacd-ac39c3739bcf: tag#10 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    0.571268] hv_storvsc 1f17b91e-ab8f-4bde-bacd-ac39c3739bcf: tag#24 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    0.573774] hv_vmbus: registering driver hyperv_drm
+[    0.574758] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] Synthvid Version major 3, minor 5
+[    0.580873] [drm] Initialized hyperv_drm 1.0.0 2020 for 5620e0c7-8062-4dce-aeb7-520c7ef76171 on minor 0
+[    0.581260] fbcon: Deferring console take-over
+[    0.581264] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] fb0: hyperv_drmdrmfb frame buffer device
+[    0.588294] hv_storvsc 1f17b91e-ab8f-4bde-bacd-ac39c3739bcf: tag#39 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    0.594608] hv_storvsc 1f17b91e-ab8f-4bde-bacd-ac39c3739bcf: tag#16 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    0.727696] raid6: neonx8   gen() 23126 MB/s
+[    0.795695] raid6: neonx8   xor() 19447 MB/s
+[    0.863696] raid6: neonx4   gen() 22715 MB/s
+[    0.931696] raid6: neonx4   xor() 18002 MB/s
+[    0.999697] raid6: neonx2   gen() 19164 MB/s
+[    1.067699] raid6: neonx2   xor() 16903 MB/s
+[    1.135697] raid6: neonx1   gen() 16228 MB/s
+[    1.203695] raid6: neonx1   xor() 15035 MB/s
+[    1.271698] raid6: int64x8  gen() 10230 MB/s
+[    1.339696] raid6: int64x8  xor()  5640 MB/s
+[    1.407740] raid6: int64x4  gen()  6339 MB/s
+[    1.475853] raid6: int64x4  xor()  5060 MB/s
+[    1.543696] raid6: int64x2  gen()  8448 MB/s
+[    1.611715] raid6: int64x2  xor()  3738 MB/s
+[    1.679698] raid6: int64x1  gen()  5911 MB/s
+[    1.747697] raid6: int64x1  xor()  3641 MB/s
+[    1.747706] raid6: using algorithm neonx8 gen() 23126 MB/s
+[    1.747707] raid6: .... xor() 19447 MB/s, rmw enabled
+[    1.747708] raid6: using neon recovery algorithm
+[    1.749628] xor: measuring software checksum speed
+[    1.749763]    8regs           : 25076 MB/sec
+[    1.749888]    32regs          : 26613 MB/sec
+[    1.749962]    arm64_neon      : 44771 MB/sec
+[    1.749963] xor: using function: arm64_neon (44771 MB/sec)
+[    1.750797] async_tx: api initialized (async)
+[    1.767508] fbcon: Taking over console
+[    1.769885] Console: switching to colour frame buffer device 128x48
+[    1.806502] Btrfs loaded, crc32c=crc32c-generic, zoned=yes, fsverity=yes
+[    1.855247] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+[    2.032370] systemd[1]: Inserted module 'autofs4'
+[    2.058983] systemd[1]: systemd 245.4-4ubuntu3.24 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[    2.059042] systemd[1]: Detected virtualization microsoft.
+[    2.059046] systemd[1]: Detected architecture arm64.
+[    2.059785] systemd[1]: Set hostname to <gpupv-test-dd44526d2572421e8799d4b5fc940085>.
+[    2.222322] systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    2.236098] systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+[    2.315000] systemd[1]: Created slice system-modprobe.slice.
+[    2.315241] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[    2.315680] systemd[1]: Created slice User and Session Slice.
+[    2.316001] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    2.316230] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    2.316289] systemd[1]: Reached target User and Group Name Lookups.
+[    2.316305] systemd[1]: Reached target Slices.
+[    2.316315] systemd[1]: Reached target Mounting snaps.
+[    2.316326] systemd[1]: Reached target Swap.
+[    2.316406] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    2.316541] systemd[1]: Listening on LVM2 poll daemon socket.
+[    2.316609] systemd[1]: Listening on multipathd control socket.
+[    2.316700] systemd[1]: Listening on Syslog Socket.
+[    2.316785] systemd[1]: Listening on fsck to fsckd communication Socket.
+[    2.316840] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    2.317017] systemd[1]: Listening on Journal Audit Socket.
+[    2.317108] systemd[1]: Listening on Journal Socket (/dev/log).
+[    2.317214] systemd[1]: Listening on Journal Socket.
+[    2.317342] systemd[1]: Listening on Network Service Netlink Socket.
+[    2.317443] systemd[1]: Listening on udev Control Socket.
+[    2.317528] systemd[1]: Listening on udev Kernel Socket.
+[    2.318627] systemd[1]: Mounting Huge Pages File System...
+[    2.319571] systemd[1]: Mounting POSIX Message Queue File System...
+[    2.320630] systemd[1]: Mounting Kernel Debug File System...
+[    2.321927] systemd[1]: Mounting Kernel Trace File System...
+[    2.328708] systemd[1]: Starting Journal Service...
+[    2.331302] systemd[1]: Starting Set the console keyboard layout...
+[    2.336068] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[    2.337034] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    2.337740] systemd[1]: Starting Load Kernel Module chromeos_pstore...
+[    2.337768] systemd[1]: Condition check resulted in Load Kernel Module drm being skipped.
+[    2.338468] systemd[1]: Starting Load Kernel Module efi_pstore...
+[    2.346257] systemd[1]: Starting Load Kernel Module pstore_blk...
+[    2.347327] systemd[1]: Starting Load Kernel Module pstore_zone...
+[    2.347969] systemd[1]: Starting Load Kernel Module ramoops...
+[    2.348020] systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+[    2.348788] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[    2.348821] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[    2.352155] systemd[1]: Starting Load Kernel Modules...
+[    2.353276] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    2.372634] systemd[1]: Starting udev Coldplug all Devices...
+[    2.373597] systemd[1]: Starting Uncomplicated firewall...
+[    2.374789] systemd[1]: Mounted Huge Pages File System.
+[    2.375848] systemd[1]: Mounted POSIX Message Queue File System.
+[    2.376413] systemd[1]: Mounted Kernel Debug File System.
+[    2.376597] systemd[1]: Mounted Kernel Trace File System.
+[    2.379421] systemd[1]: Finished Create list of static device nodes for the current kernel.
+[    2.385384] systemd[1]: Finished Uncomplicated firewall.
+[    2.392855] systemd[1]: Finished Load Kernel Modules.
+[    2.393746] systemd[1]: Mounting FUSE Control File System...
+[    2.394379] systemd[1]: Mounting Kernel Configuration File System...
+[    2.394944] systemd[1]: Starting Apply Kernel Variables...
+[    2.398112] systemd[1]: Mounted FUSE Control File System.
+[    2.402664] systemd[1]: Mounted Kernel Configuration File System.
+[    2.408321] EXT4-fs (sda1): re-mounted. Opts: (null). Quota mode: none.
+[    2.411666] systemd[1]: Finished Remount Root and Kernel File Systems.
+[    2.412311] systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+[    2.413064] systemd[1]: Starting Load/Save Random Seed...
+[    2.413818] systemd[1]: Starting Create System Users...
+[    2.429026] systemd[1]: Finished Load/Save Random Seed.
+[    2.431250] systemd[1]: Finished Apply Kernel Variables.
+[    2.432605] systemd[1]: Finished Create System Users.
+[    2.433499] systemd[1]: Starting Create Static Device Nodes in /dev...
+[    2.449916] systemd[1]: Finished Create Static Device Nodes in /dev.
+[    2.450903] systemd[1]: Starting udev Kernel Device Manager...
+[    2.455859] systemd[1]: modprobe@chromeos_pstore.service: Succeeded.
+[    2.456146] systemd[1]: Finished Load Kernel Module chromeos_pstore.
+[    2.476392] systemd[1]: modprobe@pstore_zone.service: Succeeded.
+[    2.476689] systemd[1]: Finished Load Kernel Module pstore_zone.
+[    2.488992] systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+[    2.497387] pstore: Using crash dump compression: deflate
+[    2.497399] pstore: Registered efi as persistent store backend
+[    2.497913] systemd[1]: modprobe@efi_pstore.service: Succeeded.
+[    2.498204] systemd[1]: Finished Load Kernel Module efi_pstore.
+[    2.499639] systemd[1]: modprobe@pstore_blk.service: Succeeded.
+[    2.499940] systemd[1]: Finished Load Kernel Module pstore_blk.
+[    2.501028] systemd[1]: modprobe@ramoops.service: Succeeded.
+[    2.501283] systemd[1]: Finished Load Kernel Module ramoops.
+[    2.501382] systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+[    2.514194] systemd[1]: Started Journal Service.
+[    2.519923] systemd-journald[387]: Received client request to flush runtime journal.
+[    2.903171] hv_vmbus: registering driver hyperv_fb
+[    2.917118] hv_vmbus: registering driver hv_balloon
+[    2.917698] hv_balloon: Using Dynamic Memory protocol version 2.0
+[    2.917700] hv_balloon: Memory hot add disabled on ARM64
+[    3.036791] hv_storvsc 1f17b91e-ab8f-4bde-bacd-ac39c3739bcf: tag#1 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    3.040114] hv_storvsc 1f17b91e-ab8f-4bde-bacd-ac39c3739bcf: tag#9 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    3.394251] alua: device handler registered
+[    3.397418] emc: device handler registered
+[    3.401732] rdac: device handler registered
+[    3.453704] loop0: detected capacity change from 0 to 188304
+[    3.459985] loop1: detected capacity change from 0 to 121960
+[    3.460047] loop2: detected capacity change from 0 to 90648
+[    3.649777] audit: type=1400 audit(1795577038.157:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache" pid=567 comm="apparmor_parser"
+[    3.649785] audit: type=1400 audit(1795577038.157:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods" pid=567 comm="apparmor_parser"
+[    3.649788] audit: type=1400 audit(1795577038.157:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods_gpgv" pid=567 comm="apparmor_parser"
+[    3.649791] audit: type=1400 audit(1795577038.157:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//cloud_id" pid=567 comm="apparmor_parser"
+[    3.649793] audit: type=1400 audit(1795577038.157:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//dpkg" pid=567 comm="apparmor_parser"
+[    3.649794] audit: type=1400 audit(1795577038.157:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//ps" pid=567 comm="apparmor_parser"
+[    3.649796] audit: type=1400 audit(1795577038.157:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//ubuntu_distro_info" pid=567 comm="apparmor_parser"
+[    3.649798] audit: type=1400 audit(1795577038.157:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache_systemctl" pid=567 comm="apparmor_parser"
+[    3.649799] audit: type=1400 audit(1795577038.157:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache_systemd_detect_virt" pid=567 comm="apparmor_parser"
+[    4.632768] ISO 9660 Extensions: Microsoft Joliet Level 3
+[    4.632910] ISOFS: changing to secondary root
+[    4.817250] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[    8.048544] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.
+[   13.760298] loop3: detected capacity change from 0 to 8
+[   14.477918] UDF-fs: INFO Mounting volume 'GPUPV', timestamp 2026/11/25 02:05 (1000)
+ls: cannot access '/dev/dxg': No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        31G  3.2G   28G  11% /

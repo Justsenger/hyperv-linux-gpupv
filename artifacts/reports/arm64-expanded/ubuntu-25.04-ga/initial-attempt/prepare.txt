@@ -1,0 +1,33 @@
+Linux gpupv-test-425ed22a8f644952a60e3f5f78172e6a 6.14.0-37-generic #37-Ubuntu SMP PREEMPT_DYNAMIC Fri Nov 14 23:05:04 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 25.04"
+NAME="Ubuntu"
+VERSION_ID="25.04"
+VERSION="25.04 (Plucky Puffin)"
+VERSION_CODENAME=plucky
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=plucky
+LOGO=ubuntu-logo
+systemd
+status: done
+Ign:1 https://old-releases.ubuntu.com/ubuntu plucky InRelease
+Ign:2 https://old-releases.ubuntu.com/ubuntu plucky-updates InRelease
+Ign:3 https://old-releases.ubuntu.com/ubuntu plucky-backports InRelease
+Ign:4 https://old-releases.ubuntu.com/ubuntu plucky-security InRelease
+Err:5 https://old-releases.ubuntu.com/ubuntu plucky Release
+  404  Not Found [IP: 162.213.35.94 443]
+Err:6 https://old-releases.ubuntu.com/ubuntu plucky-updates Release
+  404  Not Found [IP: 162.213.35.94 443]
+Err:7 https://old-releases.ubuntu.com/ubuntu plucky-backports Release
+  404  Not Found [IP: 162.213.35.94 443]
+Err:8 https://old-releases.ubuntu.com/ubuntu plucky-security Release
+  404  Not Found [IP: 162.213.35.94 443]
+Reading package lists...
+E: The repository 'https://old-releases.ubuntu.com/ubuntu plucky Release' does not have a Release file.
+E: The repository 'https://old-releases.ubuntu.com/ubuntu plucky-updates Release' does not have a Release file.
+E: The repository 'https://old-releases.ubuntu.com/ubuntu plucky-backports Release' does not have a Release file.
+E: The repository 'https://old-releases.ubuntu.com/ubuntu plucky-security Release' does not have a Release file.

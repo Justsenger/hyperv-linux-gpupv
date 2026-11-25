@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://cdimage.openkylin.top/3.0-SP1/openKylin-Desktop-V3.0-SP1-20261110-arm64.iso",
+  "ChecksumSource": "ISO SHA-256 calculated locally; official ISO contains SHA256SUMS for its files",
+  "PublishedDigest": null,
+  "OriginalSha256": "e0e2d2349282401f1973dedf6e2de08e8a55e17897fb13acb1b78769427f8ae9",
+  "Sha256": "ccd031a59685639d96ed9fc5ecadd52944c9f0282dc59388d293ba59a02cb492"
+}

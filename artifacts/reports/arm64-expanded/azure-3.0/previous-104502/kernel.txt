@@ -1,0 +1,2 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)
+6.6.161.1-1.azl3

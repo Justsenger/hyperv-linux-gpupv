@@ -1,0 +1,22 @@
+{
+  "target": "suse-tumbleweed",
+  "vm": "gpupv-test-4e7b01e6244b4a3eb886de6e965b465c",
+  "vmId": "fc0452b3-bbcf-44d2-bbe6-aa1ce7a3c50a",
+  "started": "2026-11-25T10:53:26.6103390+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "7.3.5-1-default",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T11:01:14.0220955+08:00"
+}

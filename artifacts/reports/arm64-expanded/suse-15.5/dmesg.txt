@@ -1,0 +1,7 @@
+[   10.962726] gpupv-sample-ed0cd44f4a7d46d0ae358ece1f6fe53b
+[   11.168147] misc dxg: dxgk: dxgk_ioctl: ioctl mismatch. Code: 1 User: 5401 Kernel: c00c4701
+[   11.172914] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   11.173325] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   11.173352] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   11.173378] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   11.173471] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2

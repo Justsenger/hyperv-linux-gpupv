@@ -1,0 +1,2 @@
+Running timer as unit: run-p931-i931.timer
+Will run service as unit: run-p931-i931.service

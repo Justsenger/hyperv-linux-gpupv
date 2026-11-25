@@ -1,0 +1,7 @@
+[   16.597402] gpupv-sample-57897ea8c6974b2e813ffacb393b9a2d
+[   17.302890] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   17.306661] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   17.307819] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   17.309719] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   17.313589] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   17.936635] systemd-journald[535]: Time jumped backwards, rotating.

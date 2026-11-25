@@ -1,0 +1,17 @@
+sudo: unable to resolve host gpupv-test-85735e5f00b84f168cb761ad35456766: Name or service not known
+Linux 7.0.0-4-generic aarch64 GNU/Linux
+NAME="openKylin"
+FULL_NAME="openKylin"
+VERSION="3.0 (huanghe)"
+VERSION_US="3.0 (huanghe)"
+ID=openkylin
+PRETTY_NAME="openKylin 3.0"
+VERSION_ID="3.0"
+HOME_URL="https://www.openkylin.top/"
+VERSION_CODENAME=huanghe
+init=systemd
+/usr/bin/gcc
+/usr/bin/make
+headers=present
+SecureBoot disabled
+/sys/bus/pci/devices/5cb7:00:00.0/device:0x008e

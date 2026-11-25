@@ -1,0 +1,21 @@
+{
+  "target": "opencloudos-9",
+  "vm": "gpupv-test-647c4d9c7b1d422aabb9f8075aa65812",
+  "vmId": "d7ade912-7b0c-4235-9b48-aac21fcd942d",
+  "started": "2026-11-25T10:10:34.2777224+08:00",
+  "secureBoot": false,
+  "route": "source",
+  "kernel": "6.6.119-52.7.oc9.aarch64",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T10:20:58.9104301+08:00"
+}

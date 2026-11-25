@@ -1,0 +1,6 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://cloud-images.ubuntu.com/releases/plucky/release/ubuntu-25.04-server-cloudimg-arm64.img",
+  "ChecksumSource": "https://cloud-images.ubuntu.com/releases/plucky/release/SHA256SUMS",
+  "Sha256": "202945537a70805a41901e767d0ecb8b2badd824f9441b43880b98b63f963d63"
+}

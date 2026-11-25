@@ -1,0 +1,104 @@
+Raw report: gpupv-test-f1f978b83c984f8095199733e658cf5c-c7e779ce
+
+environment.txt
+NAME="Fedora Linux"
+VERSION="44 (Cloud Edition)"
+RELEASE_TYPE=stable
+ID=fedora
+VERSION_ID=44
+VERSION_CODENAME=""
+PRETTY_NAME="Fedora Linux 44 (Cloud Edition)"
+ANSI_COLOR="0;38;2;60;110;180"
+LOGO=fedora-logo-icon
+CPE_NAME="cpe:/o:fedoraproject:fedora:44"
+HOME_URL="https://fedoraproject.org/"
+DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US/fedora/f44/"
+SUPPORT_URL="https://ask.fedoraproject.org/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+REDHAT_BUGZILLA_PRODUCT="Fedora"
+REDHAT_BUGZILLA_PRODUCT_VERSION=44
+REDHAT_SUPPORT_PRODUCT="Fedora"
+REDHAT_SUPPORT_PRODUCT_VERSION=44
+SUPPORT_END=2027-05-19
+VARIANT="Cloud Edition"
+VARIANT_ID=cloud
+Linux gpupv-test-f1f978b83c984f8095199733e658cf5c 7.3.4-200.fc44.aarch64 #1 SMP PREEMPT_DYNAMIC Tue Nov 10 22:40:10 UTC 2026 aarch64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+
+installed-module.txt
+/usr/lib/modules/7.3.4-200.fc44.aarch64/updates/gpupv/dxgkrnl.ko
+-rw-r--r--. 1 root root system_u:object_r:modules_object_t:s0 4751235 Nov 25 00:50 /lib/modules/7.3.4-200.fc44.aarch64/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+
+install-repeat.txt
+glibc 2.43, aarch64, kernel 7.3.4-200.fc44.aarch64, preflight OK
+
+installed-boot-before.txt
+da7cd1c2-271e-4f20-bc52-b9968bc61616
+
+installed-boot-after.txt
+gpupv-test-f1f978b83c984f8095199733e658cf5c
+b27ffb0a-8618-462a-8a03-532e6878cf95
+
+module-trust-after-boot.txt
+SecureBoot enabled
+GPU-PV module signing
+01:07:51:B3:D3:56:D0:D2:57:C4:C6:C0:23:0F:F6:3A:0B:10:2A:8A
+O
+
+workload.txt
+boot_id=b27ffb0a-8618-462a-8a03-532e6878cf95 uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1
+
+uninstalled-boot-before.txt
+b27ffb0a-8618-462a-8a03-532e6878cf95
+
+uninstalled-boot-after.txt
+gpupv-test-f1f978b83c984f8095199733e658cf5c
+9c67abc7-2c89-4b6b-866a-4c5b14899455
+
+clean-after-reboot.txt
+managed_paths_clean
+
+result.json
+{
+  "failures": [
+    "Kernel diagnostic after workload requires review"
+  ],
+  "hostBuild": "10.0.29671.0",
+  "gpu": "\\\\?\\ACPI#VEN_QCOM&DEV_0636&SUBSYS_MSWW8280&REV_1823#0#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+  "passed": false,
+  "vm": "gpupv-test-f1f978b83c984f8095199733e658cf5c"
+}
+
+dxg ioctl diagnostics from dmesg-after-workload.txt
+[   14.234997] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   14.235587] gpupv query caller=d3d12-compute pid=870 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   14.235592] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   14.235646] gpupv query caller=d3d12-compute pid=870 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   14.235648] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   14.235700] gpupv query caller=d3d12-compute pid=870 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   14.235702] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   14.235828] gpupv query caller=d3d12-compute pid=870 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   14.235831] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2

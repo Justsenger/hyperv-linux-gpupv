@@ -1,0 +1,5 @@
+30764fe3-6333-4ac1-92be-d1952d85caa8 confirmed shim menu management
+30764fe3-6333-4ac1-92be-d1952d85caa8 confirmed shim menu view
+30764fe3-6333-4ac1-92be-d1952d85caa8 confirmed shim menu confirm
+30764fe3-6333-4ac1-92be-d1952d85caa8 confirmed shim menu password
+30764fe3-6333-4ac1-92be-d1952d85caa8 confirmed shim menu reboot

@@ -1,0 +1,6 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://kali.download/cloud-images/current/kali-linux-2026.3-cloud-genericcloud-arm64.tar.xz",
+  "ChecksumSource": "https://kali.download/cloud-images/current/SHA256SUMS",
+  "Sha256": "1d2c844d41d690a8e21e45768c8bca4912d3128be6506d6ab52b9f362120d0bb"
+}

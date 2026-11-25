@@ -1,0 +1,1 @@
+glibc 2.43, aarch64, kernel 7.2.15+kali-arm64, preflight OK

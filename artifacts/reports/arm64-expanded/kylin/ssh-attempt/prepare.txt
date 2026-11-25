@@ -1,0 +1,31 @@
+sudo: unable to resolve host gpupv-test-85735e5f00b84f168cb761ad35456766: Name or service not known
+Linux gpupv-test-85735e5f00b84f168cb761ad35456766 7.0.0-4-generic #0ok1-KYLINOS SMP PREEMPT_DYNAMIC Fri Oct 23 03:14:12 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+NAME="openKylin"
+FULL_NAME="openKylin"
+VERSION="3.0 (huanghe)"
+VERSION_US="3.0 (huanghe)"
+ID=openkylin
+PRETTY_NAME="openKylin 3.0"
+VERSION_ID="3.0"
+HOME_URL="https://www.openkylin.top/"
+VERSION_CODENAME=huanghe
+systemd
+Debian package family openkylin
+Get:1 https://archive.build.openkylin.top/openkylin huanghe InRelease [43.5 kB]
+Hit:2 https://archive.build.openkylin.top/openkylin huanghe-security InRelease
+Hit:3 https://archive.build.openkylin.top/openkylin huanghe-updates InRelease
+Fetched 43.5 kB in 1s (72.8 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mokutil is already the newest version (0.7.2-2ok1).
+openssl is already the newest version (3.5.5-ok9).
+openssl set to manually installed.
+kmod is already the newest version (34.2-2-ok2).
+kmod set to manually installed.
+udev is already the newest version (259.5-ok1.5).
+udev set to manually installed.
+python3 is already the newest version (3.12.2-ok1).
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.

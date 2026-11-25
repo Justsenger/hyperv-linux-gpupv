@@ -1,0 +1,9 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)
+-----
+绛惧悕鍏挜灏氭湭鍙椾俊浠汇€傝繍琛?sudo mokutil --import /var/lib/gpupv-signing/MOK.der锛岃缃竴娆℃€у瘑鐮侊紝閲嶅惎骞跺湪 MOK Manager 涓€夋嫨 Enroll MOK锛岀‘璁ゅ悗閲嶆柊鎵ц瀹夎銆?subject=CN=GPU-PV module signing
+sha256 Fingerprint=D6:23:B5:5E:1D:50:DC:69:6A:EA:98:EB:3E:2B:DF:61:F4:1D:E2:11:87:CC:C7:9D:76:2D:72:1E:91:9D:95:C9
+input password: 
+input password again: 
+Running timer as unit: run-ra99372d317654924b6ed9808c59a026a.timer
+Will run service as unit: run-ra99372d317654924b6ed9808c59a026a.service
+enrollment_requested

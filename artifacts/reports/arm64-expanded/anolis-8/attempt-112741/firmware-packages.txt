@@ -1,0 +1,93 @@
+Waiting for process with pid 1112 to finish.
+Last metadata expiration check: 0:15:05 ago on Wed Nov 25 11:05:27 2026.
+Package shim-aa64-15.8-2.0.1.an8.aarch64 is already installed.
+Package grub2-efi-aa64-1:2.02-162.0.1.an8.aarch64 is already installed.
+Package efibootmgr-16-1.0.2.an8.aarch64 is already installed.
+Dependencies resolved.
+================================================================================
+ Package                 Arch        Version                   Repository  Size
+================================================================================
+Upgrading:
+ grub2-common            noarch      1:2.02-170.0.1.an8.1      BaseOS     898 k
+ grub2-efi-aa64          aarch64     1:2.02-170.0.1.an8.1      BaseOS     471 k
+ grub2-tools             aarch64     1:2.02-170.0.1.an8.1      BaseOS     1.8 M
+ grub2-tools-extra       aarch64     1:2.02-170.0.1.an8.1      BaseOS     1.0 M
+ grub2-tools-minimal     aarch64     1:2.02-170.0.1.an8.1      BaseOS     208 k
+
+Transaction Summary
+================================================================================
+Upgrade  5 Packages
+
+Total download size: 4.4 M
+Downloading Packages:
+(1/5): grub2-efi-aa64-2.02-170.0.1.an8.1.aarch6 1.0 MB/s | 471 kB     00:00    
+(2/5): grub2-common-2.02-170.0.1.an8.1.noarch.r 1.9 MB/s | 898 kB     00:00    
+(3/5): grub2-tools-2.02-170.0.1.an8.1.aarch64.r 3.6 MB/s | 1.8 MB     00:00    
+(4/5): grub2-tools-minimal-2.02-170.0.1.an8.1.a 836 kB/s | 208 kB     00:00    
+(5/5): grub2-tools-extra-2.02-170.0.1.an8.1.aar 3.2 MB/s | 1.0 MB     00:00    
+--------------------------------------------------------------------------------
+Total                                           5.6 MB/s | 4.4 MB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Running scriptlet: grub2-common-1:2.02-170.0.1.an8.1.noarch               1/1 
+  Upgrading        : grub2-common-1:2.02-170.0.1.an8.1.noarch              1/10 
+  Upgrading        : grub2-tools-minimal-1:2.02-170.0.1.an8.1.aarch64      2/10 
+  Upgrading        : grub2-tools-extra-1:2.02-170.0.1.an8.1.aarch64        3/10 
+  Running scriptlet: grub2-tools-1:2.02-170.0.1.an8.1.aarch64              4/10 
+  Upgrading        : grub2-tools-1:2.02-170.0.1.an8.1.aarch64              4/10 
+  Running scriptlet: grub2-tools-1:2.02-170.0.1.an8.1.aarch64              4/10 
+  Upgrading        : grub2-efi-aa64-1:2.02-170.0.1.an8.1.aarch64           5/10 
+  Cleanup          : grub2-efi-aa64-1:2.02-162.0.1.an8.aarch64             6/10 
+  Cleanup          : grub2-tools-extra-1:2.02-162.0.1.an8.aarch64          7/10 
+  Cleanup          : grub2-tools-minimal-1:2.02-162.0.1.an8.aarch64        8/10 
+  Running scriptlet: grub2-tools-1:2.02-162.0.1.an8.aarch64                9/10 
+  Cleanup          : grub2-tools-1:2.02-162.0.1.an8.aarch64                9/10 
+  Cleanup          : grub2-common-1:2.02-162.0.1.an8.noarch               10/10 
+  Running scriptlet: grub2-common-1:2.02-170.0.1.an8.1.noarch             10/10 
+  Running scriptlet: grub2-common-1:2.02-162.0.1.an8.noarch               10/10 
+  Verifying        : grub2-common-1:2.02-170.0.1.an8.1.noarch              1/10 
+  Verifying        : grub2-common-1:2.02-162.0.1.an8.noarch                2/10 
+  Verifying        : grub2-efi-aa64-1:2.02-170.0.1.an8.1.aarch64           3/10 
+  Verifying        : grub2-efi-aa64-1:2.02-162.0.1.an8.aarch64             4/10 
+  Verifying        : grub2-tools-1:2.02-170.0.1.an8.1.aarch64              5/10 
+  Verifying        : grub2-tools-1:2.02-162.0.1.an8.aarch64                6/10 
+  Verifying        : grub2-tools-extra-1:2.02-170.0.1.an8.1.aarch64        7/10 
+  Verifying        : grub2-tools-extra-1:2.02-162.0.1.an8.aarch64          8/10 
+  Verifying        : grub2-tools-minimal-1:2.02-170.0.1.an8.1.aarch64      9/10 
+  Verifying        : grub2-tools-minimal-1:2.02-162.0.1.an8.aarch64       10/10 
+
+Upgraded:
+  grub2-common-1:2.02-170.0.1.an8.1.noarch                                      
+  grub2-efi-aa64-1:2.02-170.0.1.an8.1.aarch64                                   
+  grub2-tools-1:2.02-170.0.1.an8.1.aarch64                                      
+  grub2-tools-extra-1:2.02-170.0.1.an8.1.aarch64                                
+  grub2-tools-minimal-1:2.02-170.0.1.an8.1.aarch64                              
+
+Complete!
+Last metadata expiration check: 0:15:11 ago on Wed Nov 25 11:05:27 2026.
+Dependencies resolved.
+Nothing to do.
+Complete!
+shim-aa64-15.8-2.0.1.an8.aarch64
+grub2-efi-aa64-2.02-170.0.1.an8.1.aarch64
+/boot/efi/EFI/anolis/mmaa64.efi
+/boot/efi/EFI/anolis/shim.efi
+/boot/efi/EFI/anolis/shimaa64.efi
+/boot/efi/EFI/anolis/grubaa64.efi
+/boot/efi/EFI/anolis/shimaa64-anolis.efi
+/boot/efi/EFI/BOOT/fbaa64.efi
+/boot/efi/EFI/BOOT/BOOTAA64.EFI
+BootCurrent: 0001
+Timeout: 0 seconds
+BootOrder: 0005,0001,0000,0002,0003
+Boot0000* EFI Network	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,635161f83edfc546913ff2d2f965ed0ed83e8f945b25164fb57b0f6bab3ec971)/MAC(000000000000,0)/IPv4(0.0.0.00.0.0.0,0,0)
+Boot0001* EFI SCSI Device	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,d96361baa104294db60572e2ffb1dc7f024e342aab7cae4ba0f598dd1c659d15)/SCSI(0,0)
+Boot0002* EFI SCSI Device	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,d96361baa104294db60572e2ffb1dc7f024e342aab7cae4ba0f598dd1c659d15)/SCSI(0,1)
+Boot0003* EFI SCSI Device	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,d96361baa104294db60572e2ffb1dc7f024e342aab7cae4ba0f598dd1c659d15)/SCSI(0,2)
+Boot0004* FrontPage	MemoryMapped(11,0x200000,0x7fffff)/FvFile(4042708a-0f2d-4823-ac60-0d77b3111889)
+Boot0005* Anolis OS	HD(1,GPT,d9820c9d-604f-4adf-ac54-6183b44e75cf,0x800,0xfa000)/File(\EFI\anolis\shimaa64.efi)
+retry_secure_boot

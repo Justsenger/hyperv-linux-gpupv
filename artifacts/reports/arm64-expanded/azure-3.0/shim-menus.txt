@@ -1,0 +1,5 @@
+9f407cdb-e106-46a5-b547-84501ef37869 confirmed shim menu management
+9f407cdb-e106-46a5-b547-84501ef37869 confirmed shim menu view
+9f407cdb-e106-46a5-b547-84501ef37869 confirmed shim menu confirm
+9f407cdb-e106-46a5-b547-84501ef37869 confirmed shim menu password
+9f407cdb-e106-46a5-b547-84501ef37869 confirmed shim menu reboot

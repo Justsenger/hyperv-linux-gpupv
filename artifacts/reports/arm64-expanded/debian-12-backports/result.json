@@ -1,0 +1,21 @@
+{
+  "target": "debian-12-backports",
+  "vm": "gpupv-test-ecb4ab07a47348799d1a1a6c04011397",
+  "vmId": "6f304215-ad93-428c-9ba4-366a5a0f7171",
+  "started": "2026-11-25T09:39:02.3069987+08:00",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "6.12.95+deb12-arm64",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T09:43:20.3517656+08:00"
+}

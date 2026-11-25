@@ -1,0 +1,6 @@
+[   15.302329] [    T820] gpupv-sample-c16e297d1395430ebb362dfc882e2fee
+[   16.147631] [    T833] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   16.162176] [    T833] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   16.162558] [    T833] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   16.163746] [    T833] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   16.184960] [    T833] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2

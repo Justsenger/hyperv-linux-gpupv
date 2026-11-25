@@ -1,0 +1,12 @@
+[    9.488821] gpupv-sample-5dd3d1faf7ae4997ae8b879bb4017f77
+[    9.622898] audit: type=1400 audit(1795514677.511:115): apparmor="ALLOWED" operation="open" class="file" profile="unix-chkpwd" name="/dev/console" pid=1377 comm="unix_chkpwd" requested_mask="w" denied_mask="w" fsuid=0 ouid=0
+[    9.633888] elogind-daemon[1249]: New session 4 of user tester.
+[    9.816758] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[    9.820085] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[    9.820794] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[    9.821750] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[    9.822473] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   10.224461] elogind-daemon[1249]: Removed session 4.
+[   10.367873] audit: type=1400 audit(1795514678.255:116): apparmor="ALLOWED" operation="open" class="file" profile="unix-chkpwd" name="/dev/console" pid=1404 comm="unix_chkpwd" requested_mask="w" denied_mask="w" fsuid=0 ouid=0
+[   10.381758] elogind-daemon[1249]: New session 5 of user tester.
+[   10.394790] audit: type=1400 audit(1795514678.283:117): apparmor="ALLOWED" operation="open" class="file" profile="unix-chkpwd" name="/dev/console" pid=1413 comm="unix_chkpwd" requested_mask="w" denied_mask="w" fsuid=0 ouid=0

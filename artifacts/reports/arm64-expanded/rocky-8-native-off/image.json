@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://dl.rockylinux.org/pub/rocky/8/images/aarch64/Rocky-8-GenericCloud-Base.latest.aarch64.qcow2",
+  "ChecksumSource": "https://dl.rockylinux.org/pub/rocky/8/images/aarch64/Rocky-8-GenericCloud-Base.latest.aarch64.qcow2.CHECKSUM",
+  "PublishedDigest": "946b5b9845aa5e3ed98f1bc6ee9873201712a2aef01b87731aed16857e0ca13f",
+  "OriginalSha256": null,
+  "Sha256": "946b5b9845aa5e3ed98f1bc6ee9873201712a2aef01b87731aed16857e0ca13f"
+}

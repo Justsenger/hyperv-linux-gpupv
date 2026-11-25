@@ -1,0 +1,9 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://community-packages.deepin.com/beige/dists/crimson/",
+  "ChecksumSource": "https://community-packages.deepin.com/beige/dists/crimson/InRelease",
+  "PublishedDigest": null,
+  "OriginalSha256": "8ebedac44fdbc408183f4acbdf9243abdf683e760698dbbe66bef87574ee6f3a",
+  "Sha256": "8b05f1bd0c6a4085ec44a78ad7c39fec6c303425aac0d66f5d8f24df6ed31279",
+  "InstallerSource": "https://cdimage.deepin.com/releases/25.3.0/arm64/deepin-desktop-community-25.3.0-arm64.iso"
+}

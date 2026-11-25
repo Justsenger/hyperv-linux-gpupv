@@ -1,0 +1,23 @@
+{
+  "target": "deepin-arm64",
+  "vm": "gpupv-test-3c71d4ae29c34547b2c3c9e8968035e4",
+  "vmId": "39a39dc5-df36-4d81-8dda-8c7809a08fec",
+  "started": "2026-11-25T11:27:44.8418546+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": false,
+  "route": "source",
+  "kernel": "6.18.38-arm64-desktop-rolling",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T11:45:12.7997373+08:00",
+  "transport": "offline UDF, guest-local records"
+}

@@ -1,0 +1,1 @@
+缂哄皯 pci_hyperv 椹卞姩銆傝妫€鏌?CONFIG_PCI_HYPERV锛孶buntu 鏉ュ璇峰畨瑁呬笌褰撳墠鍐呮牳鍖归厤鐨?linux-modules-extra銆?

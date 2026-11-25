@@ -1,0 +1,6 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://download.opensuse.org/ports/aarch64/tumbleweed/appliances/openSUSE-Tumbleweed-Minimal-VM.aarch64-Cloud.qcow2",
+  "ChecksumSource": "https://download.opensuse.org/ports/aarch64/tumbleweed/appliances/openSUSE-Tumbleweed-Minimal-VM.aarch64-Cloud.qcow2.sha256",
+  "Sha256": "4758863fb624f5b2c9116633d4f1d3b1f5990639001660c5686c737cac681b02"
+}

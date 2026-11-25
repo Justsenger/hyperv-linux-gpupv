@@ -1,0 +1,5 @@
+43428a32-81e3-4360-bc37-9c6b9d23ee65 confirmed shim menu management
+43428a32-81e3-4360-bc37-9c6b9d23ee65 confirmed shim menu view
+43428a32-81e3-4360-bc37-9c6b9d23ee65 confirmed shim menu confirm
+43428a32-81e3-4360-bc37-9c6b9d23ee65 confirmed shim menu password
+43428a32-81e3-4360-bc37-9c6b9d23ee65 confirmed shim menu reboot

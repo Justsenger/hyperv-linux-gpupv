@@ -1,0 +1,75 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  wireless-regdb
+The following NEW packages will be installed:
+  linux-modules-extra-6.11.0-29-generic wireless-regdb
+0 upgraded, 2 newly installed, 0 to remove and 28 not upgraded.
+Need to get 125 MB of archives.
+After this operation, 123 MB of additional disk space will be used.
+Get:1 https://old-releases.ubuntu.com/ubuntu oracular-updates/main arm64 wireless-regdb all 2024.10.07-0ubuntu2~24.10.1 [7332 B]
+Get:2 https://old-releases.ubuntu.com/ubuntu oracular-updates/main arm64 linux-modules-extra-6.11.0-29-generic arm64 6.11.0-29.29 [125 MB]
+Fetched 125 MB in 19s (6693 kB/s)
+Selecting previously unselected package wireless-regdb.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 79042 files and directories currently installed.)
+Preparing to unpack .../wireless-regdb_2024.10.07-0ubuntu2~24.10.1_all.deb ...
+Unpacking wireless-regdb (2024.10.07-0ubuntu2~24.10.1) ...
+Selecting previously unselected package linux-modules-extra-6.11.0-29-generic.
+Preparing to unpack .../linux-modules-extra-6.11.0-29-generic_6.11.0-29.29_arm64.deb ...
+Unpacking linux-modules-extra-6.11.0-29-generic (6.11.0-29.29) ...
+Setting up wireless-regdb (2024.10.07-0ubuntu2~24.10.1) ...
+Setting up linux-modules-extra-6.11.0-29-generic (6.11.0-29.29) ...
+Processing triggers for man-db (2.12.1-3) ...
+Processing triggers for linux-image-6.11.0-29-generic (6.11.0-29.29) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-6.11.0-29-generic
+flash-kernel: deferring update (trigger activated)
+/etc/kernel/postinst.d/zz-flash-kernel:
+flash-kernel: deferring update (trigger activated)
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.11.0-29-generic
+Found initrd image: /boot/initrd.img-6.11.0-29-generic
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Processing triggers for flash-kernel (3.107ubuntu13~24.10.4) ...
+System running in EFI mode, skipping.
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+/sys/bus/pci/devices/99e0:00:00.0/device:0x008e
+install_route=prebuilt

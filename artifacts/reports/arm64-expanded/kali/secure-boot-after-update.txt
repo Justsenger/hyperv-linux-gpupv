@@ -1,0 +1,1 @@
+No ARM64 shim or MOK manager found on the guest EFI filesystem after the initial secure boot attempt.

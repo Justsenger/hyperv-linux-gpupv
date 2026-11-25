@@ -1,0 +1,5 @@
+e35a21b9-d196-4a64-a38e-4d71b1287dcf confirmed shim menu management
+e35a21b9-d196-4a64-a38e-4d71b1287dcf confirmed shim menu view
+e35a21b9-d196-4a64-a38e-4d71b1287dcf confirmed shim menu confirm
+e35a21b9-d196-4a64-a38e-4d71b1287dcf confirmed shim menu password
+e35a21b9-d196-4a64-a38e-4d71b1287dcf confirmed shim menu reboot

@@ -1,0 +1,11 @@
+Module gpupv-dxgkrnl-0.1 for kernel 6.8.0-147-generic (aarch64).
+Before uninstall, this module version was ACTIVE on this kernel.
+
+dxgkrnl.ko.zst:
+ - Uninstallation
+   - Deleting from: /lib/modules/6.8.0-147-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+depmod....
+Deleting module gpupv-dxgkrnl-0.1 completely from the DKMS tree.

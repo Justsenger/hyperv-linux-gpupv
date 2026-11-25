@@ -1,0 +1,17 @@
+{
+  "target": "gentoo",
+  "vm": "gpupv-test-cfe5da3a6a7d46558044edb2c4aef13e",
+  "vmId": "1f9f9b95-8d3a-4f73-aff9-ca3c9e218db2",
+  "started": "2026-11-25T10:35:07.5253309+08:00",
+  "secureBoot": null,
+  "route": null,
+  "kernel": null,
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "Guest identity or new boot ID unavailable after 100 seconds"
+  ],
+  "diagnostics": [],
+  "stage": "firmware-packages",
+  "finished": "2026-11-25T10:42:25.6304470+08:00"
+}

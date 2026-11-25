@@ -1,0 +1,41 @@
+DIST gentoo-kernel-6.18.64_p1-1.arm64.gpkg.tar 460011520 BLAKE2B 98384cd925c0059ed153911e18eeaf86e826fde51db0a01eb9d3156c2524888ff929af434fa87bca9ff7a674778ecb4a5267bf36bf4357fdabdb3510898e0b2e SHA512 0ba5471d090942be405017d15b87d6df4a532df7c934d128cf177b3a5df7acfde68fd3dc384266f709635a020522e20393fabc9b41c39e6d63691d0243828feb
+/usr/src/linux-6.18.64-p1-gentoo-dist-bin/arch/arm64/boot/uki.efi:     file format pei-aarch64-little
+ 11 .linux        014b2bf0  00000001d1fa4000  00000001d1fa4000  0001c400  2**2
+ 12 .initrd       04aca604  00000001d3457000  00000001d3457000  014cf000  2**2
++ case "$(hostname -s)" in
+++ hostname -s
++ cd /home/tester
++ f=gentoo-kernel-6.18.64_p1-1.arm64.gpkg.tar
++ echo '0ba5471d090942be405017d15b87d6df4a532df7c934d128cf177b3a5df7acfde68fd3dc384266f709635a020522e20393fabc9b41c39e6d63691d0243828feb  gentoo-kernel-6.18.64_p1-1.arm64.gpkg.tar'
++ sha512sum -c -
+gentoo-kernel-6.18.64_p1-1.arm64.gpkg.tar: OK
++ k=6.18.64-p1-gentoo-dist-bin
++ cat /lib/modules/6.18.64-p1-gentoo-dist-bin/build/include/config/kernel.release
+6.18.64-p1-gentoo-dist-bin
+++ cat /lib/modules/6.18.64-p1-gentoo-dist-bin/build/include/config/kernel.release
++ test 6.18.64-p1-gentoo-dist-bin = 6.18.64-p1-gentoo-dist-bin
++ install -m755 /lib/modules/6.18.64-p1-gentoo-dist-bin/vmlinuz /boot/kernel-6.18.64-p1-gentoo-dist-bin
++ depmod 6.18.64-p1-gentoo-dist-bin
+depmod: ERROR: fstatat(3, System.map): No such file or directory
+depmod: ERROR: fstatat(3, config): No such file or directory
++ dracut --force --no-hostonly --add-drivers 'hv_storvsc hv_netvsc' /boot/initramfs-6.18.64-p1-gentoo-dist-bin.img 6.18.64-p1-gentoo-dist-bin
++ printf '\nGRUB_TOP_LEVEL=/boot/kernel-%s\n' 6.18.64-p1-gentoo-dist-bin
++ grub-mkconfig -o /boot/grub/grub.cfg
+Generating grub configuration file ...
+Found theme: /boot/grub/themes/gentoo_glass/theme.txt
+Found linux image: /boot/kernel-6.18.64-p1-gentoo-dist-bin
+Found initrd image: /boot/initramfs-6.18.64-p1-gentoo-dist-bin.img
+Found linux image: /boot/kernel-6.18.64-p1-gentoo-dist
+Found initrd image: /boot/initramfs-6.18.64-p1-gentoo-dist.img
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+Warning: EFI firmware detected but efibootmgr is missing. Skipping the creation of EFI bootnext menu entries.
+done
++ grep -m1 -E '^\s*linux\s+' /boot/grub/grub.cfg
++ grep 6.18.64-p1-gentoo-dist-bin
+	linux	/kernel-6.18.64-p1-gentoo-dist-bin root=UUID=b81b013e-afc5-4a22-9985-a1301272bc6a ro console=ttyS0 console=tty0 
+gentoo_paired_kernel_ready
++ echo gentoo_paired_kernel_ready
++ sync

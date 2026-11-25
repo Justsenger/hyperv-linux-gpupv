@@ -1,0 +1,168 @@
+Loading repository data...
+Warning: Repository 'Update repository of openSUSE Backports' metadata expired since 2025-03-02 19:18:12 UTC.
+Warning: Repository 'Update Repository (Debug)' metadata expired since 2025-08-30 08:17:53 UTC.
+Warning: Repository 'Main Update Repository' metadata expired since 2025-08-30 08:17:31 UTC.
+Warning: Repository 'Update Repository (Non-Oss)' metadata expired since 2025-04-10 11:03:28 UTC.
+
+    Warning: Repository metadata expired: Check if 'autorefresh' is turned on (zypper lr), otherwise
+    manually refresh the repository (zypper ref). If this does not solve the issue, it could be that
+    you are using a broken mirror or the server has actually discontinued to support the repository.
+
+Reading installed packages...
+'gcc-c++' is already installed.
+No update candidate for 'gcc-c++-7-3.9.1.aarch64'. The highest available version is already installed.
+'gcc' is already installed.
+No update candidate for 'gcc-7-3.9.1.aarch64'. The highest available version is already installed.
+'make' is already installed.
+No update candidate for 'make-4.2.1-7.3.2.aarch64'. The highest available version is already installed.
+'gawk' is already installed.
+No update candidate for 'gawk-4.2.1-150000.3.3.1.aarch64'. The highest available version is already installed.
+'kmod' is already installed.
+No update candidate for 'kmod-29-4.15.1.aarch64'. The highest available version is already installed.
+'mokutil' is already installed.
+No update candidate for 'mokutil-0.5.0-150400.3.3.1.aarch64'. The highest available version is already installed.
+'openssl' is already installed.
+No update candidate for 'openssl-1.1.1l-150400.1.5.noarch'. The highest available version is already installed.
+'libelf-devel' is already installed.
+No update candidate for 'libelf-devel-0.185-150400.5.3.1.aarch64'. The highest available version is already installed.
+'kernel-devel' is already installed.
+No update candidate for 'kernel-devel-5.14.21-150500.55.88.1.noarch'. The highest available version is already installed.
+'kernel-default-devel' is already installed.
+No update candidate for 'kernel-default-devel-5.14.21-150500.55.88.1.aarch64'. The highest available version is already installed.
+Resolving package dependencies...
+Nothing to do.
+Loading repository data...
+Warning: Repository 'Update repository of openSUSE Backports' metadata expired since 2025-03-02 19:18:12 UTC.
+Warning: Repository 'Update Repository (Debug)' metadata expired since 2025-08-30 08:17:53 UTC.
+Warning: Repository 'Main Update Repository' metadata expired since 2025-08-30 08:17:31 UTC.
+Warning: Repository 'Update Repository (Non-Oss)' metadata expired since 2025-04-10 11:03:28 UTC.
+
+    Warning: Repository metadata expired: Check if 'autorefresh' is turned on (zypper lr), otherwise
+    manually refresh the repository (zypper ref). If this does not solve the issue, it could be that
+    you are using a broken mirror or the server has actually discontinued to support the repository.
+
+Reading installed packages...
+Resolving package dependencies...
+
+The following NEW package is going to be installed:
+  kernel-default-5.14.21-150500.55.88.1
+
+The following package requires a system reboot:
+  kernel-default-5.14.21-150500.55.88.1
+
+1 new package to install.
+
+Package download size:   115.7 MiB
+
+Package install size change:
+              |     182.6 MiB  required by packages that will be installed
+   182.6 MiB  |  -      0 B    released by packages that will be removed
+
+    Note: System reboot required.
+
+Backend:  classic_rpmtrans
+Continue? [y/n/v/...? shows all options] (y): y
+Retrieving: kernel-default-5.14.21-150500.55.88.1.aarch64 (Update repository with updates from SUSE Linux Enterprise 15) (1/1), 115.7 MiB    
+Retrieving: kernel-default-5.14.21-150500.55.88.1.aarch64.rpm [............................done (37.4 MiB/s)]
+
+Checking for file conflicts: [.....done]
+(1/1) Installing: kernel-default-5.14.21-150500.55.88.1.aarch64 [......................................................................................
+dracut: Executing: /usr/bin/dracut -f /boot/initrd-5.14.21-150500.55.88-default 5.14.21-150500.55.88-default
+dracut: dracut module 'systemd-coredump' will not be installed, because command 'coredumpctl' could not be found!
+dracut: dracut module 'systemd-coredump' will not be installed, because command '/usr/lib/systemd/systemd-coredump' could not be found!
+dracut: dracut module 'systemd-networkd' will not be installed, because command 'networkctl' could not be found!
+dracut: dracut module 'systemd-networkd' will not be installed, because command '/usr/lib/systemd/systemd-networkd' could not be found!
+dracut: dracut module 'systemd-networkd' will not be installed, because command '/usr/lib/systemd/systemd-networkd-wait-online' could not be found!
+dracut: dracut module 'systemd-repart' will not be installed, because command 'systemd-repart' could not be found!
+dracut: dracut module 'systemd-resolved' will not be installed, because command 'resolvectl' could not be found!
+dracut: dracut module 'systemd-resolved' will not be installed, because command '/usr/lib/systemd/systemd-resolved' could not be found!
+dracut: dracut module 'dbus-broker' will not be installed, because command 'dbus-broker' could not be found!
+dracut: dracut module 'rngd' will not be installed, because command 'rngd' could not be found!
+dracut: 62bluetooth: Could not find any command of '/usr/lib/bluetooth/bluetoothd /usr/libexec/bluetooth/bluetoothd'!
+dracut: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+dracut: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut: dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
+dracut: dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+dracut: dracut module 'tpm2-tss' will not be installed, because command 'tpm2' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+dracut: dracut module 'nvmf' will not be installed, because command 'nvme' could not be found!
+dracut: dracut module 'nvmf' will not be installed, because command 'jq' could not be found!
+dracut: dracut module 'biosdevname' will not be installed, because command 'biosdevname' could not be found!
+dracut: dracut module 'memstrack' will not be installed, because command 'memstrack' could not be found!
+dracut: memstrack is not available
+dracut: If you need to use rd.memdebug>=4, please install memstrack and procps-ng
+dracut: dracut module 'squash' will not be installed, because command 'mksquashfs' could not be found!
+dracut: dracut module 'squash' will not be installed, because command 'unsquashfs' could not be found!
+dracut: dracut module 'systemd-coredump' will not be installed, because command 'coredumpctl' could not be found!
+dracut: dracut module 'systemd-coredump' will not be installed, because command '/usr/lib/systemd/systemd-coredump' could not be found!
+dracut: dracut module 'systemd-repart' will not be installed, because command 'systemd-repart' could not be found!
+dracut: dracut module 'systemd-resolved' will not be installed, because command 'resolvectl' could not be found!
+dracut: dracut module 'systemd-resolved' will not be installed, because command '/usr/lib/systemd/systemd-resolved' could not be found!
+dracut: dracut module 'dbus-broker' will not be installed, because command 'dbus-broker' could not be found!
+dracut: dracut module 'rngd' will not be installed, because command 'rngd' could not be found!
+dracut: 62bluetooth: Could not find any command of '/usr/lib/bluetooth/bluetoothd /usr/libexec/bluetooth/bluetoothd'!
+dracut: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+dracut: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut: dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
+dracut: dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+dracut: dracut module 'tpm2-tss' will not be installed, because command 'tpm2' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+dracut: dracut module 'nvmf' will not be installed, because command 'nvme' could not be found!
+dracut: dracut module 'nvmf' will not be installed, because command 'jq' could not be found!
+dracut: dracut module 'memstrack' will not be installed, because command 'memstrack' could not be found!
+dracut: memstrack is not available
+dracut: If you need to use rd.memdebug>=4, please install memstrack and procps-ng
+dracut: dracut module 'squash' will not be installed, because command 'mksquashfs' could not be found!
+dracut: dracut module 'squash' will not be installed, because command 'unsquashfs' could not be found!
+dracut: *** Including module: systemd ***
+dracut: *** Including module: systemd-initrd ***
+dracut: *** Including module: i18n ***
+dracut: *** Including module: kernel-modules ***
+dracut: *** Including module: kernel-modules-extra ***
+dracut: *** Including module: rootfs-block ***
+dracut: *** Including module: suse-xfs ***
+dracut: *** Including module: terminfo ***
+dracut: *** Including module: udev-rules ***
+dracut: Skipping udev rule: 40-redhat.rules
+dracut: Skipping udev rule: 50-firmware.rules
+dracut: Skipping udev rule: 50-udev.rules
+dracut: Skipping udev rule: 91-permissions.rules
+dracut: Skipping udev rule: 80-drivers-modprobe.rules
+dracut: *** Including module: dracut-systemd ***
+dracut: *** Including module: haveged ***
+dracut: *** Including module: usrmount ***
+dracut: *** Including module: base ***
+dracut: *** Including module: fs-lib ***
+dracut: *** Including module: shutdown ***
+dracut: *** Including module: suse ***
+dracut: *** Including module: suse-initrd ***
+dracut: *** Including modules done ***
+dracut: *** Installing kernel module dependencies ***
+dracut: *** Installing kernel module dependencies done ***
+dracut: *** Resolving executable dependencies ***
+dracut: *** Resolving executable dependencies done ***
+dracut: *** Hardlinking files ***
+dracut: Mode:           real
+dracut: Files:          560
+dracut: Linked:         1 files
+dracut: Compared:       0 xattrs
+dracut: Compared:       66 files
+dracut: Saved:          692 B
+dracut: Duration:       0.006706 seconds
+dracut: *** Hardlinking files done ***
+dracut: *** Store current command line parameters ***
+dracut: Stored kernel commandline:
+dracut:  root=UUID=5b34808e-f5c3-456a-89c1-5301d7f7bf21 rootfstype=xfs rootflags=rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota
+dracut: *** Stripping files ***
+dracut: *** Stripping files done ***
+dracut: *** Creating image file '/boot/initrd-5.14.21-150500.55.88-default' ***
+dracut: *** Creating initramfs image file '/boot/initrd-5.14.21-150500.55.88-default' done ***
+Failed to get root password hash
+Failed to import /etc/uefi/certs/76B6A6A0.crt
+warning: %post(kernel-default-5.14.21-150500.55.88.1.aarch64) scriptlet failed, exit status 255
+done]
+Running post-transaction scripts [...done]

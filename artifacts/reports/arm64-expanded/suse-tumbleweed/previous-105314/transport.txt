@@ -1,0 +1,4 @@
+modprobe: FATAL: Module pci_hyperv not found in directory /usr/lib/modules/7.3.5-1-default
+grep: /sys/bus/pci/devices/*/device: No such file or directory
+mount: /mnt/gpupv: unknown filesystem type 'udf'.
+       dmesg(1) may have more information after failed mount system call.

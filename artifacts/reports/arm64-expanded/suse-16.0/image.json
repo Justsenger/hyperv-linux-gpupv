@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://download.opensuse.org/distribution/leap/16.0/appliances/Leap-16.0-Minimal-VM.aarch64-Cloud.qcow2",
+  "ChecksumSource": "https://download.opensuse.org/distribution/leap/16.0/appliances/Leap-16.0-Minimal-VM.aarch64-Cloud.qcow2.sha256",
+  "PublishedDigest": "b2da386b7af09f5ece0681c6659cf1f7a6f034799f0c04029c7890c75816c18f",
+  "OriginalSha256": null,
+  "Sha256": "b2da386b7af09f5ece0681c6659cf1f7a6f034799f0c04029c7890c75816c18f"
+}

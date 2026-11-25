@@ -1,0 +1,164 @@
+Linux gpupv-test-d8d8189331544d7798300da78af3c7bb 6.12.0-204.92.4.2.el9uek.aarch64 #2 SMP Thu Jul  2 08:13:04 PDT 2026 aarch64 aarch64 aarch64 GNU/Linux
+[    1.487088] systemd[1]: Starting Journal Service...
+[    1.494947] systemd[1]: Starting Load Kernel Modules...
+[    1.499569] systemd[1]: Starting Create System Users...
+[    1.522884] systemd[1]: Starting Setup Virtual Console...
+[    1.526861] systemd[1]: Finished Create List of Static Device Nodes.
+[    1.528050] systemd[1]: Finished Load Kernel Modules.
+[    1.529027] systemd[1]: Finished Create System Users.
+[    1.543455] systemd[1]: Starting Apply Kernel Variables...
+[    1.546033] systemd[1]: Starting Create Static Device Nodes in /dev...
+[    1.552219] systemd[1]: Started Journal Service.
+[    1.826671] raid6: neonx8   gen() 28373 MB/s
+[    1.894671] raid6: neonx4   gen() 23667 MB/s
+[    1.962685] raid6: neonx2   gen() 18672 MB/s
+[    2.030679] raid6: neonx1   gen() 15960 MB/s
+[    2.098676] raid6: int64x8  gen() 10612 MB/s
+[    2.166672] raid6: int64x4  gen()  9742 MB/s
+[    2.234674] raid6: int64x2  gen()  8707 MB/s
+[    2.302685] raid6: int64x1  gen()  4156 MB/s
+[    2.303008] raid6: using algorithm neonx8 gen() 28373 MB/s
+[    2.370672] raid6: .... xor() 21813 MB/s, rmw enabled
+[    2.370935] raid6: using neon recovery algorithm
+[    2.376256] xor: measuring software checksum speed
+[    2.376654]    8regs           : 24163 MB/sec
+[    2.376989]    32regs          : 24228 MB/sec
+[    2.377353]    arm64_neon      : 39247 MB/sec
+[    2.377523] xor: using function: arm64_neon (39247 MB/sec)
+[    2.563851] Btrfs loaded, zoned=yes, fsverity=yes
+[    3.253581] Key type psk registered
+[    3.318769] hv_vmbus: Vmbus version:5.3
+[    3.323011] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    3.323747] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    3.328483] hv_vmbus: registering driver hid_hyperv
+[    3.349627] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input0
+[    3.356477] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    3.360058] hv_vmbus: registering driver hyperv_keyboard
+[    3.371393] hv_vmbus: registering driver hv_pci
+[    3.378337] input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio0/input/input1
+[    3.384610] hv_vmbus: registering driver hv_netvsc
+[    3.390914] hv_vmbus: registering driver hv_storvsc
+[    3.398780] hv_pci 87262dfa-6c2f-4579-8eaa-821f098f4760: PCI VMBus probing: Using version 0x10004
+[    3.414802] scsi host0: storvsc_host_t
+[    3.419876] hv_pci 87262dfa-6c2f-4579-8eaa-821f098f4760: PCI host bridge to bus 6c2f:00
+[    3.420220] pci_bus 6c2f:00: No busn resource found for root bus, will use [bus 00-ff]
+[    3.422797] pci 6c2f:00:00.0: [1414:008e] type 00 class 0x030200 conventional PCI endpoint
+[    3.446501] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    3.458308] scsi 0:0:0:1: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    3.479542] pci_bus 6c2f:00: busn_res: [bus 00-ff] end is updated to 00
+[    3.482701] scsi 0:0:0:2: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    3.519720] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    3.530974] sd 0:0:0:0: [sda] 67108864 512-byte logical blocks: (34.4 GB/32.0 GiB)
+[    3.531505] sr 0:0:0:1: [sr0] scsi-1 drive
+[    3.533360] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    3.533945] sd 0:0:0:0: [sda] Write Protect is off
+[    3.534271] sd 0:0:0:0: [sda] Mode Sense: 0f 00 00 00
+[    3.534652] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    3.540858] sr 0:0:0:1: Attached scsi CD-ROM sr0
+[    3.541679] sr 0:0:0:1: Attached scsi generic sg1 type 5
+[    3.548755] sr 0:0:0:2: [sr1] scsi-1 drive
+[    3.559179] sr 0:0:0:2: Attached scsi CD-ROM sr1
+[    3.559417] sr 0:0:0:2: Attached scsi generic sg2 type 5
+[    3.566703]  sda: sda1 sda2 sda3 sda4
+[    3.572299] sd 0:0:0:0: [sda] Attached SCSI disk
+[    3.745875] hv_storvsc 40205f35-48b0-4dfe-9c4b-eacbf91a9cfa: tag#218 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    3.759192] hv_storvsc 40205f35-48b0-4dfe-9c4b-eacbf91a9cfa: tag#224 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    3.883255] hv_storvsc 40205f35-48b0-4dfe-9c4b-eacbf91a9cfa: tag#209 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    3.923607] hv_storvsc 40205f35-48b0-4dfe-9c4b-eacbf91a9cfa: tag#253 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    4.277942] SGI XFS with ACLs, security attributes, realtime, scrub, repair, quota, no debug enabled
+[    4.282489] XFS (sda4): Mounting V5 Filesystem 50f91468-7f95-43e1-b2bc-de66f8e66524
+[    4.297413] XFS (sda4): Ending clean mount
+[    4.756281] systemd-journald[189]: Received SIGTERM from PID 1 (systemd).
+[    4.872501] audit: type=1404 audit(1795572846.451:5): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=1 old-enabled=1 lsm=selinux res=1
+[    4.927157] SELinux:  Class user_namespace not defined in policy.
+[    4.927653] SELinux: the above unknown classes and permissions will be allowed
+[    4.937985] SELinux:  policy capability network_peer_controls=1
+[    4.938214] SELinux:  policy capability open_perms=1
+[    4.938368] SELinux:  policy capability extended_socket_class=1
+[    4.938530] SELinux:  policy capability always_check_network=0
+[    4.938731] SELinux:  policy capability cgroup_seclabel=1
+[    4.938902] SELinux:  policy capability nnp_nosuid_transition=1
+[    4.939049] SELinux:  policy capability genfs_seclabel_symlinks=1
+[    4.939198] SELinux:  policy capability ioctl_skip_cloexec=0
+[    4.941682] SELinux:  policy capability userspace_initial_context=0
+[    4.985030] audit: type=1403 audit(1795572846.563:6): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    4.991296] systemd[1]: Successfully loaded SELinux policy in 119.270ms.
+[    5.070980] systemd[1]: Relabelled /dev, /dev/shm, /run, /sys/fs/cgroup in 58.883ms.
+[    5.083878] systemd[1]: systemd 252-67.0.1.el9_8.2 running in system mode (+PAM +AUDIT +SELINUX -APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    5.084510] systemd[1]: Detected virtualization microsoft.
+[    5.084727] systemd[1]: Detected architecture arm64.
+[    5.090852] systemd[1]: Hostname set to <gpupv-test-d8d8189331544d7798300da78af3c7bb>.
+[    5.245138] systemd-rc-local-generator[517]: /etc/rc.d/rc.local is not marked executable, skipping.
+[    5.717853] systemd[1]: initrd-switch-root.service: Deactivated successfully.
+[    5.720351] systemd[1]: Stopped Switch Root.
+[    5.721486] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[    5.722118] systemd[1]: Created slice Slice /system/getty.
+[    5.723613] systemd[1]: Created slice Slice /system/sshd-keygen.
+[    5.724995] systemd[1]: Created slice Slice /system/systemd-fsck.
+[    5.725956] systemd[1]: Created slice User and Session Slice.
+[    5.727183] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    5.728882] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    5.729963] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    5.730637] systemd[1]: Reached target Local Encrypted Volumes.
+[    5.733054] systemd[1]: Stopped target Switch Root.
+[    5.733956] systemd[1]: Stopped target Initrd File Systems.
+[    5.734575] systemd[1]: Stopped target Initrd Root File System.
+[    5.736623] systemd[1]: Reached target Local Integrity Protected Volumes.
+[    5.737654] systemd[1]: Reached target Path Units.
+[    5.738240] systemd[1]: Reached target Remote File Systems.
+[    5.740066] systemd[1]: Reached target Slice Units.
+[    5.741235] systemd[1]: Reached target Local Verity Protected Volumes.
+[    5.751236] systemd[1]: Listening on Process Core Dump Socket.
+[    5.753906] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    5.756486] systemd[1]: Listening on udev Control Socket.
+ls: cannot access '/dev/dxg': No such file or directory
+[    5.757508] systemd[1]: Listening on udev Kernel Socket.
+[    5.771006] systemd[1]: Mounting Huge Pages File System...
+[    5.782822] systemd[1]: Mounting POSIX Message Queue File System...
+[    5.802910] systemd[1]: Mounting Kernel Debug File System...
+[    5.809523] systemd[1]: Mounting Kernel Trace File System...
+[    5.833150] systemd[1]: Starting Create List of Static Device Nodes...
+[    5.845642] systemd[1]: Starting Load Kernel Module configfs...
+[    5.852036] systemd[1]: Starting Load Kernel Module drm...
+[    5.871026] systemd[1]: Starting Load Kernel Module efi_pstore...
+[    5.881870] systemd[1]: Starting Load Kernel Module fuse...
+[    5.907836] systemd[1]: Starting Read and set NIS domainname from /etc/sysconfig/network...
+[    5.910414] systemd[1]: systemd-fsck-root.service: Deactivated successfully.
+[    5.919141] systemd[1]: Stopped File System Check on Root Device.
+[    5.920674] systemd[1]: Stopped Journal Service.
+[    5.937382] fuse: init (API version 7.41)
+[    5.951030] systemd[1]: Starting Journal Service...
+[    5.963336] systemd[1]: Starting Load Kernel Modules...
+[    5.979415] systemd[1]: Starting Generate network units from Kernel command line...
+[    5.980761] systemd[1]: TPM2 PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/StubPcrKernelImage-4a67b082-0a4c-41cf-b6c7-440b29bb8c4f).
+[    6.023622] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    6.028555] systemd[1]: Repartition Root Disk was skipped because no trigger condition checks were met.
+[    6.031422] systemd[1]: Starting Coldplug All udev Devices...
+[    6.058297] systemd[1]: Started Journal Service.
+[    6.250720] systemd-journald[552]: Received client request to flush runtime journal.
+[    7.407128] hv_storvsc 40205f35-48b0-4dfe-9c4b-eacbf91a9cfa: tag#202 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    7.566365] hv_storvsc 40205f35-48b0-4dfe-9c4b-eacbf91a9cfa: tag#246 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    7.818222] Adding 4194300k swap on /dev/sda3.  Priority:-2 extents:1 across:4194300k 
+[    7.907626] hv_vmbus: registering driver hv_balloon
+[    7.927225] hv_balloon: Using Dynamic Memory protocol version 2.0
+[    7.927879] hv_balloon: Memory hot add disabled on ARM64
+[    7.945407] hv_vmbus: registering driver hyperv_fb
+[    7.947370] hyperv_fb: Synthvid Version major 3, minor 5
+[    7.949084] hyperv_fb: Screen resolution: 1024x768, Color depth: 32, Frame buffer size: 8388608
+[    7.964642] hv_utils: Registering HyperV Utility Driver
+[    7.964939] hv_vmbus: registering driver hv_utils
+[    7.968011] hv_utils: Heartbeat IC version 3.0
+[    7.976688] XFS (sda2): Mounting V5 Filesystem 20cc2866-0e50-4bd9-8165-980f4d12846d
+[    7.985442] Console: switching to colour dummy device 80x25
+[    8.000437] hv_utils: TimeSync IC version 4.0
+[    8.006445] hv_utils: Shutdown IC version 3.2
+[    8.022641] hv_utils: VSS IC version 5.0
+[    8.028079] Console: switching to colour frame buffer device 128x48
+[    8.042410] systemd-journald[552]: Time jumped backwards, rotating.
+[    8.076015] hv_vmbus: registering driver hyperv_drm
+[    8.105269] XFS (sda2): Ending clean mount
+[   10.942732] ISO 9660 Extensions: Microsoft Joliet Level 3
+[   10.942969] ISOFS: changing to secondary root
+[   15.878637] UDF-fs: INFO Mounting volume 'GPUPV', timestamp 2026/11/25 01:09 (1000)
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda4        27G  2.4G   25G   9% /

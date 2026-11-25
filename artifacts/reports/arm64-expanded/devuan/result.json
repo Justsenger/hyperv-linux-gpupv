@@ -1,0 +1,22 @@
+{
+  "target": "devuan",
+  "vm": "gpupv-test-4207456d208445aaa20a8bdef02c6eec",
+  "vmId": "11aab297-c034-48e8-ae32-c6f1dce776e2",
+  "started": "2026-11-25T11:29:58.7005571+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": true,
+  "route": "source",
+  "kernel": "6.12.117+deb13-arm64",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T11:35:06.2906282+08:00"
+}

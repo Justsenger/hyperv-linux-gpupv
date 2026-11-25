@@ -1,0 +1,4 @@
+SecureBoot enabled
+gpupv-test-916d15af6ae7472d9902 Secure Boot Module Signature key
+3A:A2:8E:AC:9F:61:D8:A2:5C:DE:0F:9B:EE:38:81:2F:3F:8E:A0:13
+O

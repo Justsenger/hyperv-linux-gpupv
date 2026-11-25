@@ -1,0 +1,25 @@
+Linux gpupv-test-b12d827b0ef64db194a952527b5253e2 6.12.117+deb13-arm64 #1 SMP Debian 6.12.117-1 (2026-11-12) aarch64 GNU/Linux
+PRETTY_NAME="Devuan GNU/Linux 6 (excalibur)"
+NAME="Devuan GNU/Linux"
+VERSION_ID="6"
+VERSION="6 (excalibur)"
+VERSION_CODENAME="excalibur"
+ID=devuan
+ID_LIKE=debian
+HOME_URL="https://www.devuan.org/"
+SUPPORT_URL="https://devuan.org/os/community"
+BUG_REPORT_URL="https://bugs.devuan.org/"
+init
+Hit:1 http://deb.devuan.org/merged excalibur InRelease
+Hit:2 http://deb.devuan.org/merged excalibur-security InRelease
+Hit:3 http://deb.devuan.org/merged excalibur-updates InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mokutil is already the newest version (0.7.2-1).
+openssl is already the newest version (3.5.9-1~deb13u1).
+kmod is already the newest version (34.2-2).
+udev is already the newest version (1:3.2.9+devuan4).
+python3 is already the newest version (3.13.5-1).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.

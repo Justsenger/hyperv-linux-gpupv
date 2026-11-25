@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://cloud-images.ubuntu.com/releases/jammy/release/ubuntu-22.04-server-cloudimg-arm64.img",
+  "ChecksumSource": "https://cloud-images.ubuntu.com/releases/jammy/release/SHA256SUMS",
+  "PublishedDigest": "e429865ad84a083a84fdbd51bf6fd6e4174bbb1610ba0d72ca01014c656d45bc",
+  "OriginalSha256": null,
+  "Sha256": "e429865ad84a083a84fdbd51bf6fd6e4174bbb1610ba0d72ca01014c656d45bc"
+}

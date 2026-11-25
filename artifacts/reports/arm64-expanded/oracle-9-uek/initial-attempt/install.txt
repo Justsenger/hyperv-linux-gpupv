@@ -1,0 +1,9 @@
+glibc 2.34, aarch64, kernel 6.12.0-204.92.4.2.el9uek.aarch64, preflight OK
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (GCC) 14.2.1 20250110 (Red Hat 14.2.1-13)
+  You are using:           gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-15.0.1)
+gcc: error: unrecognized command-line option '-fmin-function-alignment=8'; did you mean '-flimit-function-alignment'?
+make[2]: *** [scripts/Makefile.build:229: /tmp/tmp.WIZ7FuLZUJ/probe.o] Error 1
+make[1]: *** [/usr/src/kernels/6.12.0-204.92.4.2.el9uek.aarch64/Makefile:1974: /tmp/tmp.WIZ7FuLZUJ] Error 2
+make: *** [Makefile:226: __sub-make] Error 2
+Command '['sh', '/tmp/tmpq1pywddv/kernel/build', '/lib/modules/6.12.0-204.92.4.2.el9uek.aarch64/build']' returned non-zero exit status 1.

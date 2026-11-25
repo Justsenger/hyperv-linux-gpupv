@@ -1,0 +1,5 @@
+31cf2829-8608-4f9d-ae91-57f956bf49ed confirmed shim menu management
+31cf2829-8608-4f9d-ae91-57f956bf49ed confirmed shim menu view
+31cf2829-8608-4f9d-ae91-57f956bf49ed confirmed shim menu confirm
+31cf2829-8608-4f9d-ae91-57f956bf49ed confirmed shim menu password
+31cf2829-8608-4f9d-ae91-57f956bf49ed confirmed shim menu reboot

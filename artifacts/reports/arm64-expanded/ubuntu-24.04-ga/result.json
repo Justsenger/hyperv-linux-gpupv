@@ -1,0 +1,22 @@
+{
+  "target": "ubuntu-24.04-ga",
+  "vm": "gpupv-test-ce34e63b78954c2298fe2a32aa8642eb",
+  "vmId": "3281dabb-276e-416f-963c-77590b3e32c0",
+  "started": "2026-11-25T11:22:05.3538163+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": true,
+  "route": "source",
+  "kernel": "6.8.0-147-generic",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T11:26:13.1264534+08:00"
+}

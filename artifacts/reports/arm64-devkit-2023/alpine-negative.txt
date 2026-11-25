@@ -1,0 +1,9 @@
+Linux gpupv-test-365e945a187c4bcfa076c4fc9d1da074 6.18.22-0-virt #1-Alpine SMP PREEMPT_DYNAMIC 2026-04-11 15:53:25 aarch64 Linux
+3.23.4
+需要 glibc 来宾。请使用发行版的 glibc 镜像。
+缺少当前内核 6.18.22-0-virt 的匹配头文件。请安装 linux-headers 或 kernel-devel。
+缺少 udevadm，请从本发行版官方介质补装。
+缺少 make，请从本发行版官方介质补装。
+缺少 gcc，请从本发行版官方介质补装。
+install_exit=1
+no_installation_created

@@ -1,0 +1,20 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+ls: cannot access '/dev/dxg': No such file or directory
+Linux gpupv-test-50de4d6b781446ecacbb60741a795daf 5.15.0-203-generic #213-Ubuntu SMP Fri Oct 23 13:20:09 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+[    1.528653] hv_vmbus: hv_mmio=[mem 0xe0000000-0xfed3ffff],[mem 0x800000000-0xfffffffff] fb=[mem 0xe0000000-0xe7ffffff]
+[    1.573559] hv_vmbus: Vmbus version:5.3
+[    1.579124] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    1.584541] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    1.597887] hv_vmbus: registering driver hv_utils
+[    1.606875] hv_vmbus: registering driver hv_storvsc
+[    1.617565] hv_vmbus: registering driver hyperv_keyboard
+[    1.623425] hv_vmbus: registering driver hv_netvsc
+[    1.725857] hv_vmbus: registering driver hid_hyperv
+[    1.729543] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input1
+[    1.736195] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    5.637053] hv_vmbus: registering driver hv_balloon
+[    5.641850] hv_vmbus: registering driver hyperv_fb
+ls: cannot access '/sys/bus/pci/devices/*/driver': No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        31G  2.9G   28G  10% /
+lrwxrwxrwx 1 root root 41 Oct 23 12:46 /lib/modules/5.15.0-203-generic/build -> /usr/src/linux-headers-5.15.0-203-generic

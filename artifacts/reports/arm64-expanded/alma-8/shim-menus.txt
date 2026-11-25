@@ -1,0 +1,5 @@
+0ae3662f-5fae-4507-9330-81149e7cc02a confirmed shim menu management
+0ae3662f-5fae-4507-9330-81149e7cc02a confirmed shim menu view
+0ae3662f-5fae-4507-9330-81149e7cc02a confirmed shim menu confirm
+0ae3662f-5fae-4507-9330-81149e7cc02a confirmed shim menu password
+0ae3662f-5fae-4507-9330-81149e7cc02a confirmed shim menu reboot

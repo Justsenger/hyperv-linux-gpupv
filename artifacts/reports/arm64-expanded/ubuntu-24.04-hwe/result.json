@@ -1,0 +1,21 @@
+{
+  "target": "ubuntu-24.04-hwe",
+  "vm": "gpupv-test-72a592f3276b4f91a87e8415e37eef9b",
+  "vmId": "354e806c-628f-4201-b94e-4364af0af3df",
+  "started": "2026-11-25T10:16:36.8243744+08:00",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "7.0.0-43-generic",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T10:24:18.6131872+08:00"
+}

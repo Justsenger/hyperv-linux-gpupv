@@ -1,0 +1,6 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://cloud-images.ubuntu.com/releases/oracular/release/ubuntu-24.10-server-cloudimg-arm64.img",
+  "ChecksumSource": "https://cloud-images.ubuntu.com/releases/oracular/release/SHA256SUMS",
+  "Sha256": "3d1d134d66318f982d32f02aec00fe879bfeb0338147b4038a25d1f9cddb527f"
+}

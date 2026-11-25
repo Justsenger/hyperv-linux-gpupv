@@ -1,0 +1,5 @@
+3b73efd8-8b16-4ff1-b8a5-87f41cb9cbdd confirmed shim menu management
+3b73efd8-8b16-4ff1-b8a5-87f41cb9cbdd confirmed shim menu view
+3b73efd8-8b16-4ff1-b8a5-87f41cb9cbdd confirmed shim menu confirm
+3b73efd8-8b16-4ff1-b8a5-87f41cb9cbdd confirmed shim menu password
+3b73efd8-8b16-4ff1-b8a5-87f41cb9cbdd confirmed shim menu reboot

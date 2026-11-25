@@ -1,0 +1,5 @@
+8b59f84f-aab3-4afe-9a08-3ff001c29607 confirmed shim menu management
+8b59f84f-aab3-4afe-9a08-3ff001c29607 confirmed shim menu view
+8b59f84f-aab3-4afe-9a08-3ff001c29607 confirmed shim menu confirm
+8b59f84f-aab3-4afe-9a08-3ff001c29607 confirmed shim menu password
+8b59f84f-aab3-4afe-9a08-3ff001c29607 confirmed shim menu reboot

@@ -1,0 +1,5 @@
+62ae4395-323d-4b45-afe5-a2794035d881 confirmed shim menu management
+62ae4395-323d-4b45-afe5-a2794035d881 confirmed shim menu view
+62ae4395-323d-4b45-afe5-a2794035d881 confirmed shim menu confirm
+62ae4395-323d-4b45-afe5-a2794035d881 confirmed shim menu password
+62ae4395-323d-4b45-afe5-a2794035d881 confirmed shim menu reboot

@@ -1,0 +1,2 @@
+sudo: unable to resolve host gpupv-test-dd44526d2572421e8799d4b5fc940085: Name or service not known
+缂哄皯 pci_hyperv 椹卞姩銆傝妫€鏌?CONFIG_PCI_HYPERV锛孶buntu 鏉ュ璇峰畨瑁呬笌褰撳墠鍐呮牳鍖归厤鐨?linux-modules-extra銆?

@@ -1,0 +1,240 @@
+Last metadata expiration check: 0:00:30 ago on Wed Nov 25 02:11:57 2026.
+Dependencies resolved.
+===============================================================================================
+ Package                             Arch     Version                  Repository          Size
+===============================================================================================
+Installing:
+ elfutils-libelf-devel               aarch64  0.195-1.el9              ol9_appstream      219 k
+ gcc                                 aarch64  11.5.0-15.0.1.el9        ol9_appstream       30 M
+ gcc-c++                             aarch64  11.5.0-15.0.1.el9        ol9_appstream       12 M
+ kernel-uek-devel                    aarch64  6.12.0-204.92.4.2.el9uek ol9_UEKR8           46 M
+ make                                aarch64  1:4.3-8.el9              ol9_baseos_latest  566 k
+Upgrading:
+ elfutils-debuginfod-client          aarch64  0.195-1.el9              ol9_baseos_latest   51 k
+ elfutils-libelf                     aarch64  0.195-1.el9              ol9_baseos_latest  214 k
+ elfutils-libs                       aarch64  0.195-1.el9              ol9_baseos_latest  271 k
+ libgcc                              aarch64  11.5.0-15.0.1.el9        ol9_baseos_latest   85 k
+ libgomp                             aarch64  11.5.0-15.0.1.el9        ol9_baseos_latest  259 k
+ libstdc++                           aarch64  11.5.0-15.0.1.el9        ol9_baseos_latest  719 k
+Installing dependencies:
+ cpp                                 aarch64  11.5.0-15.0.1.el9        ol9_appstream       10 M
+ environment-modules                 aarch64  5.3.0-3.el9_9            ol9_baseos_latest  627 k
+ gcc-toolset-14-annobin-docs         noarch   12.88-1.el9              ol9_appstream       91 k
+ gcc-toolset-14-annobin-plugin-gcc   aarch64  12.88-1.el9              ol9_appstream      975 k
+ gcc-toolset-14-binutils             aarch64  2.41-6.el9               ol9_appstream      7.1 M
+ gcc-toolset-14-binutils-devel       aarch64  2.41-6.el9               ol9_appstream       15 M
+ gcc-toolset-14-gcc                  aarch64  14.2.1-13.el9            ol9_appstream       42 M
+ gcc-toolset-14-gcc-c++              aarch64  14.2.1-13.el9            ol9_appstream       13 M
+ gcc-toolset-14-libstdc++-devel      aarch64  14.2.1-13.el9            ol9_appstream      4.3 M
+ gcc-toolset-14-runtime              aarch64  14.0-2.el9               ol9_appstream       31 k
+ glibc-devel                         aarch64  2.34-272.0.1.el9_8       ol9_appstream      944 k
+ kernel-headers                      aarch64  5.14.0-741.24.1.el9_9    ol9_appstream      3.4 M
+ libasan                             aarch64  11.5.0-15.0.1.el9        ol9_appstream      398 k
+ libmpc                              aarch64  1.2.1-4.el9              ol9_appstream       67 k
+ libpkgconf                          aarch64  1.7.3-10.el9             ol9_baseos_latest   35 k
+ libstdc++-devel                     aarch64  11.5.0-15.0.1.el9        ol9_appstream      3.0 M
+ libubsan                            aarch64  11.5.0-15.0.1.el9        ol9_appstream      174 k
+ libxcrypt-devel                     aarch64  4.4.18-3.el9             ol9_appstream       42 k
+ libzstd-devel                       aarch64  1.5.5-1.el9              ol9_appstream       54 k
+ pkgconf                             aarch64  1.7.3-10.el9             ol9_baseos_latest   49 k
+ pkgconf-m4                          noarch   1.7.3-10.el9             ol9_baseos_latest   14 k
+ pkgconf-pkg-config                  aarch64  1.7.3-10.el9             ol9_baseos_latest  9.8 k
+ policycoreutils-python-utils        noarch   3.6-5.el9                ol9_appstream      112 k
+ scl-utils                           aarch64  1:2.0.3-4.el9            ol9_appstream       46 k
+ tcl                                 aarch64  1:8.6.10-7.el9           ol9_baseos_latest  1.3 M
+ vim-filesystem                      noarch   2:8.2.2637-44.0.1.el9_9  ol9_baseos_latest   13 k
+ zlib-devel                          aarch64  1.2.11-40.el9            ol9_appstream       51 k
+
+Transaction Summary
+===============================================================================================
+Install  32 Packages
+Upgrade   6 Packages
+
+Total download size: 194 M
+Downloading Packages:
+(1/38): libpkgconf-1.7.3-10.el9.aarch64.rpm      41 kB/s |  35 kB     00:00    
+(2/38): pkgconf-1.7.3-10.el9.aarch64.rpm        150 kB/s |  49 kB     00:00    
+(3/38): pkgconf-m4-1.7.3-10.el9.noarch.rpm       55 kB/s |  14 kB     00:00    
+(4/38): make-4.3-8.el9.aarch64.rpm              373 kB/s | 566 kB     00:01    
+(5/38): pkgconf-pkg-config-1.7.3-10.el9.aarch64  48 kB/s | 9.8 kB     00:00    
+(6/38): environment-modules-5.3.0-3.el9_9.aarch 379 kB/s | 627 kB     00:01    
+(7/38): vim-filesystem-8.2.2637-44.0.1.el9_9.no  62 kB/s |  13 kB     00:00    
+(8/38): tcl-8.6.10-7.el9.aarch64.rpm            2.4 MB/s | 1.3 MB     00:00    
+(9/38): elfutils-libelf-devel-0.195-1.el9.aarch 364 kB/s | 219 kB     00:00    
+(10/38): cpp-11.5.0-15.0.1.el9.aarch64.rpm      3.4 MB/s |  10 MB     00:03    
+(11/38): gcc-c++-11.5.0-15.0.1.el9.aarch64.rpm  5.4 MB/s |  12 MB     00:02    
+(12/38): gcc-toolset-14-annobin-docs-12.88-1.el 459 kB/s |  91 kB     00:00    
+(13/38): gcc-toolset-14-annobin-plugin-gcc-12.8 4.4 MB/s | 975 kB     00:00    
+(14/38): gcc-11.5.0-15.0.1.el9.aarch64.rpm      9.2 MB/s |  30 MB     00:03    
+(15/38): gcc-toolset-14-binutils-2.41-6.el9.aar 8.5 MB/s | 7.1 MB     00:00    
+(16/38): gcc-toolset-14-binutils-devel-2.41-6.e 7.9 MB/s |  15 MB     00:01    
+(17/38): gcc-toolset-14-gcc-c++-14.2.1-13.el9.a 6.7 MB/s |  13 MB     00:01    
+(18/38): gcc-toolset-14-libstdc++-devel-14.2.1- 4.3 MB/s | 4.3 MB     00:00    
+(19/38): gcc-toolset-14-runtime-14.0-2.el9.aarc 162 kB/s |  31 kB     00:00    
+(20/38): kernel-headers-5.14.0-741.24.1.el9_9.a  12 MB/s | 3.4 MB     00:00    
+(21/38): libasan-11.5.0-15.0.1.el9.aarch64.rpm  1.8 MB/s | 398 kB     00:00    
+(22/38): libmpc-1.2.1-4.el9.aarch64.rpm         331 kB/s |  67 kB     00:00    
+(23/38): libstdc++-devel-11.5.0-15.0.1.el9.aarc  10 MB/s | 3.0 MB     00:00    
+(24/38): libubsan-11.5.0-15.0.1.el9.aarch64.rpm 836 kB/s | 174 kB     00:00    
+(25/38): libxcrypt-devel-4.4.18-3.el9.aarch64.r 115 kB/s |  42 kB     00:00    
+(26/38): gcc-toolset-14-gcc-14.2.1-13.el9.aarch 9.9 MB/s |  42 MB     00:04    
+(27/38): libzstd-devel-1.5.5-1.el9.aarch64.rpm  251 kB/s |  54 kB     00:00    
+(28/38): policycoreutils-python-utils-3.6-5.el9 589 kB/s | 112 kB     00:00    
+(29/38): scl-utils-2.0.3-4.el9.aarch64.rpm      235 kB/s |  46 kB     00:00    
+(30/38): zlib-devel-1.2.11-40.el9.aarch64.rpm   265 kB/s |  51 kB     00:00    
+(31/38): elfutils-debuginfod-client-0.195-1.el9 263 kB/s |  51 kB     00:00    
+(32/38): elfutils-libelf-0.195-1.el9.aarch64.rp 1.1 MB/s | 214 kB     00:00    
+(33/38): elfutils-libs-0.195-1.el9.aarch64.rpm  1.3 MB/s | 271 kB     00:00    
+(34/38): libgcc-11.5.0-15.0.1.el9.aarch64.rpm   433 kB/s |  85 kB     00:00    
+(35/38): libgomp-11.5.0-15.0.1.el9.aarch64.rpm  1.2 MB/s | 259 kB     00:00    
+(36/38): libstdc++-11.5.0-15.0.1.el9.aarch64.rp 3.2 MB/s | 719 kB     00:00    
+(37/38): glibc-devel-2.34-272.0.1.el9_8.aarch64 231 kB/s | 944 kB     00:04    
+(38/38): kernel-uek-devel-6.12.0-204.92.4.2.el9 4.4 MB/s |  46 MB     00:10    
+--------------------------------------------------------------------------------
+Total                                           9.6 MB/s | 194 MB     00:20     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : libgcc-11.5.0-15.0.1.el9.aarch64                      1/44 
+  Running scriptlet: libgcc-11.5.0-15.0.1.el9.aarch64                      1/44 
+  Upgrading        : libstdc++-11.5.0-15.0.1.el9.aarch64                   2/44 
+  Installing       : libmpc-1.2.1-4.el9.aarch64                            3/44 
+  Upgrading        : elfutils-libelf-0.195-1.el9.aarch64                   4/44 
+  Upgrading        : libgomp-11.5.0-15.0.1.el9.aarch64                     5/44 
+  Installing       : make-1:4.3-8.el9.aarch64                              6/44 
+  Upgrading        : elfutils-libs-0.195-1.el9.aarch64                     7/44 
+  Upgrading        : elfutils-debuginfod-client-0.195-1.el9.aarch64        8/44 
+  Installing       : cpp-11.5.0-15.0.1.el9.aarch64                         9/44 
+  Installing       : libasan-11.5.0-15.0.1.el9.aarch64                    10/44 
+  Installing       : libstdc++-devel-11.5.0-15.0.1.el9.aarch64            11/44 
+  Installing       : libubsan-11.5.0-15.0.1.el9.aarch64                   12/44 
+  Installing       : policycoreutils-python-utils-3.6-5.el9.noarch        13/44 
+  Installing       : kernel-headers-5.14.0-741.24.1.el9_9.aarch64         14/44 
+  Installing       : vim-filesystem-2:8.2.2637-44.0.1.el9_9.noarch        15/44 
+  Installing       : tcl-1:8.6.10-7.el9.aarch64                           16/44 
+  Installing       : environment-modules-5.3.0-3.el9_9.aarch64            17/44 
+  Running scriptlet: environment-modules-5.3.0-3.el9_9.aarch64            17/44 
+  Installing       : scl-utils-1:2.0.3-4.el9.aarch64                      18/44 
+  Installing       : gcc-toolset-14-runtime-14.0-2.el9.aarch64            19/44 
+  Running scriptlet: gcc-toolset-14-runtime-14.0-2.el9.aarch64            19/44 
+  Installing       : gcc-toolset-14-binutils-2.41-6.el9.aarch64           20/44 
+  Running scriptlet: gcc-toolset-14-binutils-2.41-6.el9.aarch64           20/44 
+  Installing       : gcc-toolset-14-annobin-docs-12.88-1.el9.noarch       21/44 
+  Installing       : gcc-toolset-14-libstdc++-devel-14.2.1-13.el9.aarch   22/44 
+  Installing       : pkgconf-m4-1.7.3-10.el9.noarch                       23/44 
+  Installing       : libpkgconf-1.7.3-10.el9.aarch64                      24/44 
+  Installing       : pkgconf-1.7.3-10.el9.aarch64                         25/44 
+  Installing       : pkgconf-pkg-config-1.7.3-10.el9.aarch64              26/44 
+  Installing       : zlib-devel-1.2.11-40.el9.aarch64                     27/44 
+  Installing       : gcc-toolset-14-binutils-devel-2.41-6.el9.aarch64     28/44 
+  Running scriptlet: gcc-toolset-14-binutils-devel-2.41-6.el9.aarch64     28/44 
+  Installing       : glibc-devel-2.34-272.0.1.el9_8.aarch64               29/44 
+  Installing       : libxcrypt-devel-4.4.18-3.el9.aarch64                 30/44 
+  Installing       : gcc-toolset-14-gcc-14.2.1-13.el9.aarch64             31/44 
+  Installing       : gcc-toolset-14-annobin-plugin-gcc-12.88-1.el9.aarc   32/44 
+  Running scriptlet: gcc-toolset-14-annobin-plugin-gcc-12.88-1.el9.aarc   32/44 
+  Installing       : gcc-toolset-14-gcc-c++-14.2.1-13.el9.aarch64         33/44 
+  Installing       : gcc-11.5.0-15.0.1.el9.aarch64                        34/44 
+  Installing       : libzstd-devel-1.5.5-1.el9.aarch64                    35/44 
+  Installing       : elfutils-libelf-devel-0.195-1.el9.aarch64            36/44 
+  Installing       : gcc-c++-11.5.0-15.0.1.el9.aarch64                    37/44 
+  Installing       : kernel-uek-devel-6.12.0-204.92.4.2.el9uek.aarch64    38/44 
+  Running scriptlet: kernel-uek-devel-6.12.0-204.92.4.2.el9uek.aarch64    38/44 
+  Cleanup          : elfutils-debuginfod-client-0.194-1.el9.aarch64       39/44 
+  Cleanup          : elfutils-libs-0.194-1.el9.aarch64                    40/44 
+  Cleanup          : libstdc++-11.5.0-14.0.1.el9.aarch64                  41/44 
+  Cleanup          : libgcc-11.5.0-14.0.1.el9.aarch64                     42/44 
+  Running scriptlet: libgcc-11.5.0-14.0.1.el9.aarch64                     42/44 
+  Cleanup          : elfutils-libelf-0.194-1.el9.aarch64                  43/44 
+  Cleanup          : libgomp-11.5.0-14.0.1.el9.aarch64                    44/44 
+  Running scriptlet: libgomp-11.5.0-14.0.1.el9.aarch64                    44/44 
+  Verifying        : environment-modules-5.3.0-3.el9_9.aarch64             1/44 
+  Verifying        : libpkgconf-1.7.3-10.el9.aarch64                       2/44 
+  Verifying        : make-1:4.3-8.el9.aarch64                              3/44 
+  Verifying        : pkgconf-1.7.3-10.el9.aarch64                          4/44 
+  Verifying        : pkgconf-m4-1.7.3-10.el9.noarch                        5/44 
+  Verifying        : pkgconf-pkg-config-1.7.3-10.el9.aarch64               6/44 
+  Verifying        : tcl-1:8.6.10-7.el9.aarch64                            7/44 
+  Verifying        : vim-filesystem-2:8.2.2637-44.0.1.el9_9.noarch         8/44 
+  Verifying        : cpp-11.5.0-15.0.1.el9.aarch64                         9/44 
+  Verifying        : elfutils-libelf-devel-0.195-1.el9.aarch64            10/44 
+  Verifying        : gcc-11.5.0-15.0.1.el9.aarch64                        11/44 
+  Verifying        : gcc-c++-11.5.0-15.0.1.el9.aarch64                    12/44 
+  Verifying        : gcc-toolset-14-annobin-docs-12.88-1.el9.noarch       13/44 
+  Verifying        : gcc-toolset-14-annobin-plugin-gcc-12.88-1.el9.aarc   14/44 
+  Verifying        : gcc-toolset-14-binutils-2.41-6.el9.aarch64           15/44 
+  Verifying        : gcc-toolset-14-binutils-devel-2.41-6.el9.aarch64     16/44 
+  Verifying        : gcc-toolset-14-gcc-14.2.1-13.el9.aarch64             17/44 
+  Verifying        : gcc-toolset-14-gcc-c++-14.2.1-13.el9.aarch64         18/44 
+  Verifying        : gcc-toolset-14-libstdc++-devel-14.2.1-13.el9.aarch   19/44 
+  Verifying        : gcc-toolset-14-runtime-14.0-2.el9.aarch64            20/44 
+  Verifying        : glibc-devel-2.34-272.0.1.el9_8.aarch64               21/44 
+  Verifying        : kernel-headers-5.14.0-741.24.1.el9_9.aarch64         22/44 
+  Verifying        : libasan-11.5.0-15.0.1.el9.aarch64                    23/44 
+  Verifying        : libmpc-1.2.1-4.el9.aarch64                           24/44 
+  Verifying        : libstdc++-devel-11.5.0-15.0.1.el9.aarch64            25/44 
+  Verifying        : libubsan-11.5.0-15.0.1.el9.aarch64                   26/44 
+  Verifying        : libxcrypt-devel-4.4.18-3.el9.aarch64                 27/44 
+  Verifying        : libzstd-devel-1.5.5-1.el9.aarch64                    28/44 
+  Verifying        : policycoreutils-python-utils-3.6-5.el9.noarch        29/44 
+  Verifying        : scl-utils-1:2.0.3-4.el9.aarch64                      30/44 
+  Verifying        : zlib-devel-1.2.11-40.el9.aarch64                     31/44 
+  Verifying        : kernel-uek-devel-6.12.0-204.92.4.2.el9uek.aarch64    32/44 
+  Verifying        : elfutils-debuginfod-client-0.195-1.el9.aarch64       33/44 
+  Verifying        : elfutils-debuginfod-client-0.194-1.el9.aarch64       34/44 
+  Verifying        : elfutils-libelf-0.195-1.el9.aarch64                  35/44 
+  Verifying        : elfutils-libelf-0.194-1.el9.aarch64                  36/44 
+  Verifying        : elfutils-libs-0.195-1.el9.aarch64                    37/44 
+  Verifying        : elfutils-libs-0.194-1.el9.aarch64                    38/44 
+  Verifying        : libgcc-11.5.0-15.0.1.el9.aarch64                     39/44 
+  Verifying        : libgcc-11.5.0-14.0.1.el9.aarch64                     40/44 
+  Verifying        : libgomp-11.5.0-15.0.1.el9.aarch64                    41/44 
+  Verifying        : libgomp-11.5.0-14.0.1.el9.aarch64                    42/44 
+  Verifying        : libstdc++-11.5.0-15.0.1.el9.aarch64                  43/44 
+  Verifying        : libstdc++-11.5.0-14.0.1.el9.aarch64                  44/44 
+
+Upgraded:
+  elfutils-debuginfod-client-0.195-1.el9.aarch64                                
+  elfutils-libelf-0.195-1.el9.aarch64                                           
+  elfutils-libs-0.195-1.el9.aarch64                                             
+  libgcc-11.5.0-15.0.1.el9.aarch64                                              
+  libgomp-11.5.0-15.0.1.el9.aarch64                                             
+  libstdc++-11.5.0-15.0.1.el9.aarch64                                           
+Installed:
+  cpp-11.5.0-15.0.1.el9.aarch64                                                 
+  elfutils-libelf-devel-0.195-1.el9.aarch64                                     
+  environment-modules-5.3.0-3.el9_9.aarch64                                     
+  gcc-11.5.0-15.0.1.el9.aarch64                                                 
+  gcc-c++-11.5.0-15.0.1.el9.aarch64                                             
+  gcc-toolset-14-annobin-docs-12.88-1.el9.noarch                                
+  gcc-toolset-14-annobin-plugin-gcc-12.88-1.el9.aarch64                         
+  gcc-toolset-14-binutils-2.41-6.el9.aarch64                                    
+  gcc-toolset-14-binutils-devel-2.41-6.el9.aarch64                              
+  gcc-toolset-14-gcc-14.2.1-13.el9.aarch64                                      
+  gcc-toolset-14-gcc-c++-14.2.1-13.el9.aarch64                                  
+  gcc-toolset-14-libstdc++-devel-14.2.1-13.el9.aarch64                          
+  gcc-toolset-14-runtime-14.0-2.el9.aarch64                                     
+  glibc-devel-2.34-272.0.1.el9_8.aarch64                                        
+  kernel-headers-5.14.0-741.24.1.el9_9.aarch64                                  
+  kernel-uek-devel-6.12.0-204.92.4.2.el9uek.aarch64                             
+  libasan-11.5.0-15.0.1.el9.aarch64                                             
+  libmpc-1.2.1-4.el9.aarch64                                                    
+  libpkgconf-1.7.3-10.el9.aarch64                                               
+  libstdc++-devel-11.5.0-15.0.1.el9.aarch64                                     
+  libubsan-11.5.0-15.0.1.el9.aarch64                                            
+  libxcrypt-devel-4.4.18-3.el9.aarch64                                          
+  libzstd-devel-1.5.5-1.el9.aarch64                                             
+  make-1:4.3-8.el9.aarch64                                                      
+  pkgconf-1.7.3-10.el9.aarch64                                                  
+  pkgconf-m4-1.7.3-10.el9.noarch                                                
+  pkgconf-pkg-config-1.7.3-10.el9.aarch64                                       
+  policycoreutils-python-utils-3.6-5.el9.noarch                                 
+  scl-utils-1:2.0.3-4.el9.aarch64                                               
+  tcl-1:8.6.10-7.el9.aarch64                                                    
+  vim-filesystem-2:8.2.2637-44.0.1.el9_9.noarch                                 
+  zlib-devel-1.2.11-40.el9.aarch64                                              
+
+Complete!

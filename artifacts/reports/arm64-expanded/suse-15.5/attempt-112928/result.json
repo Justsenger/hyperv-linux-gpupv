@@ -1,0 +1,18 @@
+{
+  "target": "suse-15.5",
+  "vm": "gpupv-test-9fb4bb71765c4ab79ff69eab183a2664",
+  "vmId": "0c4dff6f-5d7f-4599-be33-c1120bc91ea5",
+  "started": "2026-11-25T11:19:29.7770774+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": null,
+  "route": "source",
+  "kernel": "5.14.21-150500.55.103-default",
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "update-kernel exited 107"
+  ],
+  "diagnostics": [],
+  "stage": "update-kernel",
+  "finished": "2026-11-25T11:26:15.6508513+08:00"
+}

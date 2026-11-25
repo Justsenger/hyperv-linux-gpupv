@@ -1,0 +1,6 @@
+SHA-256: 85c2d78253828f6f9a390f8ee9d9064c2d93d4771f9f593ac56ff6ba37970cd3
+41523 repeated password prompts.
+Certificate or key are missing, generating them using update-secureboot-policy...
+third-party drivers, a new Machine-Owner Key (MOK) has been generated. This key 
+Public certificate (MOK): /var/lib/shim-signed/mok/MOK.der
+modprobe: ERROR: could not insert 'dxgkrnl': Key was rejected by service

@@ -1,0 +1,25 @@
+Linux 6.12.0-204.92.4.2.el9uek.aarch64 aarch64 GNU/Linux
+NAME="Oracle Linux Server"
+VERSION="9.8"
+ID="ol"
+ID_LIKE="fedora"
+VARIANT="Server"
+VARIANT_ID="server"
+VERSION_ID="9.8"
+PLATFORM_ID="platform:el9"
+PRETTY_NAME="Oracle Linux Server 9.8"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:oracle:linux:9:8:server"
+HOME_URL="https://linux.oracle.com/"
+BUG_REPORT_URL="https://github.com/oracle/oracle-linux"
+
+ORACLE_BUGZILLA_PRODUCT="Oracle Linux 9"
+ORACLE_BUGZILLA_PRODUCT_VERSION=9.8
+ORACLE_SUPPORT_PRODUCT="Oracle Linux"
+ORACLE_SUPPORT_PRODUCT_VERSION=9.8
+init=systemd
+/usr/bin/gcc
+/usr/bin/make
+headers=present
+SecureBoot enabled
+/sys/bus/pci/devices/0bc1:00:00.0/device:0x008e

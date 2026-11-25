@@ -1,0 +1,43 @@
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcvidencx86mfthevc8280.DLL:    PE32 executable (DLL) (GUI) Intel 80386, for MS Windows, 5 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcvidencarm64xmfth2648280.DLL: PE32+ executable (DLL) (GUI) Aarch64, for MS Windows, 8 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcvidencum8280.DLL:            PE32 executable (DLL) (GUI) ARMv7 Thumb, for MS Windows, 6 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcvidencmfth2648280.DLL:       PE32 executable (DLL) (GUI) ARMv7 Thumb, for MS Windows, 6 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxkmbase8280_75.bin:         DIY-Thermocam raw data (Lepton 2.x), scale 0-2048, spot sensor temperature 0.000000, unit celsius, color scheme 0, minimum point enabled, maximum point enabled, calibration: offset 0.000000, slope 8592818176.000000
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdx11x86um8280.dll:           PE32 executable (DLL) (GUI) Intel 80386, for MS Windows, 5 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdx12arm64xum8280.dll:        PE32+ executable (DLL) (GUI) Aarch64, for MS Windows, 8 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcvidencarm64xum8280.DLL:      PE32+ executable (DLL) (GUI) Aarch64, for MS Windows, 8 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxarm32compiler8280.DLL:     PE32 executable (DLL) (GUI) ARMv7 Thumb, for MS Windows, 6 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdx12arm64wslum.so:        ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=2c15895343b75a996ebcfbb0af5f7fd6077a7b63, with debug_info, not stripped
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qchdcpumd8280.dll:             PE32+ executable (DLL) (GUI) Aarch64, for MS Windows, 6 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdx12x86um8280.dll:           PE32 executable (DLL) (GUI) Intel 80386, for MS Windows, 5 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxchpecompiler8280.dll:      PE32 executable (DLL) (GUI) Intel 80386, for MS Windows, 15 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxsdx86.dll:                 PE32 executable (DLL) (GUI) Intel 80386, for MS Windows, 5 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcvss8280.mbn:                 ELF 32-bit LSB executable, Tensilica Xtensa, version 1 (SYSV), statically linked, no section header
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdx12chpeum8280.dll:          PE32 executable (DLL) (GUI) Intel 80386, for MS Windows, 14 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcvidencx86mfth2648280.DLL:    PE32 executable (DLL) (GUI) Intel 80386, for MS Windows, 5 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdx8280.inf:                  Windows setup INFormation
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdx12arm32um8280.dll:         PE32 executable (DLL) (GUI) ARMv7 Thumb, for MS Windows, 6 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxkm8280.sys:                PE32+ executable (native) Aarch64, for MS Windows, 10 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxkmbase8280.bin:            DIY-Thermocam raw data (Lepton 2.x), scale 0-2048, spot sensor temperature 0.000000, unit celsius, color scheme 0, minimum point enabled, maximum point enabled, calibration: offset 0.000000, slope 8592818176.000000
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxsdarm64x.dll:              PE32+ executable (DLL) (GUI) Aarch64, for MS Windows, 8 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdx11arm64xum8280.dll:        PE32+ executable (DLL) (GUI) Aarch64, for MS Windows, 8 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdx11arm32um8280.dll:         PE32 executable (DLL) (GUI) ARMv7 Thumb, for MS Windows, 6 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxwsaum.img:                 Linux rev 1.0 ext4 filesystem data, UUID=68cd7e51-e049-4353-bd7d-9fc953fbbf3e (extents) (64bit) (large files) (huge files)
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdx11chpeum8280.dll:          PE32 executable (DLL) (GUI) Intel 80386, for MS Windows, 13 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxkmsuc8280.mbn:             ELF 32-bit LSB executable, QUALCOMM DSP6, version 1 (SYSV), statically linked, no section header
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdx8280.cat:                  DER Encoded PKCS#7 Signed Data
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so:    ELF 64-bit LSB shared object, ARM aarch64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=10a75217d3812cd9007053f645fd9b34bca729b9, not stripped
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcvidencmfthevc8280.DLL:       PE32 executable (DLL) (GUI) ARMv7 Thumb, for MS Windows, 6 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxkmbase8280_54.bin:         DIY-Thermocam raw data (Lepton 2.x), scale 0-2048, spot sensor temperature 0.000000, unit celsius, color scheme 0, minimum point enabled, maximum point enabled, calibration: offset 0.000000, slope 8592818176.000000
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxsdchpe.dll:                PE32 executable (DLL) (GUI) Intel 80386, for MS Windows, 13 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxx86compiler8280.DLL:       PE32 executable (DLL) (GUI) Intel 80386, for MS Windows, 5 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxarm64xcompiler8280.DLL:    PE32+ executable (DLL) (GUI) Aarch64, for MS Windows, 8 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcvidencx86um8280.DLL:         PE32 executable (DLL) (GUI) Intel 80386, for MS Windows, 5 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcdxsdarm32.dll:               PE32 executable (DLL) (GUI) ARMv7 Thumb, for MS Windows, 6 sections
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/qcvidencarm64xmfthevc8280.DLL: PE32+ executable (DLL) (GUI) Aarch64, for MS Windows, 8 sections
+/usr/lib/wsl/lib/libd3d12core.so:                                                       ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, stripped
+/usr/lib/wsl/lib/libqcdx12arm64wslum.so:                                                ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=2c15895343b75a996ebcfbb0af5f7fd6077a7b63, with debug_info, not stripped
+/usr/lib/wsl/lib/liba4xcompiler.so:                                                     symbolic link to libqcdxarm64wslcompiler.so
+/usr/lib/wsl/lib/libqcdxarm64wslcompiler.so:                                            ELF 64-bit LSB shared object, ARM aarch64, version 1 (GNU/Linux), dynamically linked, BuildID[sha1]=10a75217d3812cd9007053f645fd9b34bca729b9, not stripped
+/usr/lib/wsl/lib/libd3d12.so:                                                           ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, stripped
+/usr/lib/wsl/lib/libdxcore.so:                                                          ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, stripped

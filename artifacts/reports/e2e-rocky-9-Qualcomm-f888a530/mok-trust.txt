@@ -1,0 +1,6 @@
+SecureBoot enabled
+9bb5b1fe-3fe5-4fa4-8845-890ca715b1d0
+SHA1 Fingerprint: 0e:2a:bf:72:66:32:95:3a:d2:05:b3:cd:c7:eb:24:15:8b:31:b3:bb
+        Issuer: C=US, ST=Delaware, L=Dover, O=Rocky Enterprise Software Foundation, OU=Release engineering team, CN=Rocky Linux Secure Boot Root CA/emailAddress=security@rockylinux.org
+SHA1 Fingerprint: 69:c1:66:a8:70:48:9e:3a:a8:71:a1:1e:7c:1c:ed:74:2e:43:a7:ab
+        Issuer: CN=GPU-PV module signing

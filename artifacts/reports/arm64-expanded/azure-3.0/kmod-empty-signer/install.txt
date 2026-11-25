@@ -1,0 +1,2 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)
+glibc 2.38, aarch64, kernel 6.6.161.1-1.azl3, preflight OK

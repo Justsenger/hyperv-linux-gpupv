@@ -1,0 +1,6 @@
+SecureBoot enabled
+e74a1be6-dec0-48a2-88c4-ccb6a54695e5
+SHA1 Fingerprint: bc:a4:e3:8e:d1:84:2b:c8:6f:f7:6d:4d:a7:49:51:f1:62:88:59:f8
+        Issuer: CN=SUSE Linux Enterprise Secure Boot CA, C=DE, L=Nuremberg, O=SUSE Linux Products GmbH, OU=Build Team/emailAddress=build@suse.de
+SHA1 Fingerprint: 0b:61:c4:d1:19:9d:8e:b5:29:1e:c7:92:dc:04:46:95:1a:d5:ae:ef
+        Issuer: CN=GPU-PV module signing

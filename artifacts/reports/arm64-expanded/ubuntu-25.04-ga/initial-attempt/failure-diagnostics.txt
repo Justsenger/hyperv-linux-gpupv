@@ -1,0 +1,164 @@
+Linux gpupv-test-425ed22a8f644952a60e3f5f78172e6a 6.14.0-37-generic #37-Ubuntu SMP PREEMPT_DYNAMIC Fri Nov 14 23:05:04 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+[    3.893746] input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio0/input/input0
+[    3.914967] hv_vmbus: registering driver hid_hyperv
+[    3.930147] scsi host0: storvsc_host_t
+[    3.955235] hv_utils: Heartbeat IC version 3.0
+[    3.970576] hv_utils: Shutdown IC version 3.2
+[    3.975477] hv_utils: VSS IC version 5.0
+[    3.979459] hv_utils: TimeSync IC version 4.0
+[    3.986211] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input1
+[    3.994627] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    4.005376] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    4.021307] scsi 0:0:0:1: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    4.031734] scsi 0:0:0:2: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    4.040441] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    4.046650] sd 0:0:0:0: [sda] 67108864 512-byte logical blocks: (34.4 GB/32.0 GiB)
+[    4.057769] sr 0:0:0:1: [sr0] scsi-1 drive
+[    4.061715] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    4.073052] sd 0:0:0:0: [sda] Write Protect is off
+[    4.082700] sd 0:0:0:0: [sda] Mode Sense: 0f 00 00 00
+[    4.083491] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    4.096804] hv_storvsc dded0dce-b2ed-484c-8748-e7a8f771c0b1: tag#271 cmd 0x5a status: scsi 0x2 srb 0x86 hv 0xc0000001
+[    4.119534] sr 0:0:0:1: Attached scsi CD-ROM sr0
+[    4.119907] sr 0:0:0:1: Attached scsi generic sg1 type 5
+[    4.138066] sr 0:0:0:2: [sr1] scsi-1 drive
+[    4.143458] hv_storvsc dded0dce-b2ed-484c-8748-e7a8f771c0b1: tag#286 cmd 0x5a status: scsi 0x2 srb 0x86 hv 0xc0000001
+[    4.162225] sr 0:0:0:2: Attached scsi CD-ROM sr1
+[    4.162655] sr 0:0:0:2: Attached scsi generic sg2 type 5
+[    4.172862] GPT:Primary header thinks Alt. header is not at the end of the disk.
+[    4.183698] GPT:7340031 != 67108863
+[    4.186384] GPT:Alternate GPT header not at the end of the disk.
+[    4.190832] GPT:7340031 != 67108863
+[    4.195389] GPT: Use GNU Parted to correct GPT errors.
+[    4.207728]  sda: sda1 sda13 sda15
+[    4.218482] sd 0:0:0:0: [sda] Attached SCSI disk
+[    4.501271] raid6: neonx8   gen() 12376 MB/s
+[    4.520092] raid6: neonx4   gen() 12820 MB/s
+[    4.541081] raid6: neonx2   gen() 14557 MB/s
+[    4.565080] raid6: neonx1   gen() 10916 MB/s
+[    4.589699] raid6: int64x8  gen()  5876 MB/s
+[    4.610077] raid6: int64x4  gen()  3960 MB/s
+[    4.630081] raid6: int64x2  gen()  4365 MB/s
+[    4.648079] raid6: int64x1  gen()  2947 MB/s
+[    4.650930] raid6: using algorithm neonx2 gen() 14557 MB/s
+[    4.672073] raid6: .... xor() 12010 MB/s, rmw enabled
+[    4.679686] raid6: using neon recovery algorithm
+[    4.688802] xor: measuring software checksum speed
+[    4.694968]    8regs           : 23879 MB/sec
+[    4.699472]    32regs          : 23664 MB/sec
+[    4.710555]    arm64_neon      : 39718 MB/sec
+[    4.714761] xor: using function: arm64_neon (39718 MB/sec)
+[    4.722021] async_tx: api initialized (async)
+[    4.954974] Btrfs loaded, zoned=yes, fsverity=yes
+[    5.103093] EXT4-fs (sda1): orphan cleanup on readonly fs
+[    5.116866] EXT4-fs (sda1): mounted filesystem 53486497-01b6-4304-b689-8e804006764c ro with ordered data mode. Quota mode: none.
+[    5.348819] systemd[1]: Inserted module 'autofs4'
+[    5.378629] systemd[1]: systemd 257.4-1ubuntu3.2 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[    5.425695] systemd[1]: Detected virtualization microsoft.
+[    5.435724] systemd[1]: Detected architecture arm64.
+[    5.473461] systemd[1]: Hostname set to <ubuntu>.
+[    5.488323] systemd[1]: Initializing machine ID from random generator.
+[    5.503938] systemd[1]: Installed transient /etc/machine-id file.
+[    5.595016] systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[    5.743482] NET: Registered PF_VSOCK protocol family
+[    5.787711] Guest personality initialized and is inactive
+[    5.816698] VMCI host device registered (name=vmci, major=10, minor=119)
+[    5.832232] Initialized host personality
+[    5.873492] hv_vmbus: registering driver hv_sock
+[    6.476187] systemd[1]: Queued start job for default target graphical.target.
+[    6.502659] systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+[    6.545812] systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+[    6.607179] systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+[    6.646478] systemd[1]: Created slice user.slice - User and Session Slice.
+[    6.683953] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[    6.724970] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[    6.758626] systemd[1]: Expecting device dev-disk-by\x2dlabel-BOOT.device - /dev/disk/by-label/BOOT...
+[    6.800565] systemd[1]: Expecting device dev-disk-by\x2dlabel-UEFI.device - /dev/disk/by-label/UEFI...
+[    6.827155] systemd[1]: Expecting device dev-ttyAMA0.device - /dev/ttyAMA0...
+[    6.853280] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[    6.866569] systemd[1]: Reached target slices.target - Slice Units.
+[    6.884637] systemd[1]: Reached target snapd.mounts-pre.target - Mounting snaps.
+[    6.912534] systemd[1]: Reached target snapd.mounts.target - Mounted snaps.
+[    6.931827] systemd[1]: Reached target swap.target - Swaps.
+[    6.941154] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[    6.958709] systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+[    6.974601] systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+[    6.992704] systemd[1]: Listening on syslog.socket - Syslog Socket.
+[    7.005143] systemd[1]: Listening on systemd-creds.socket - Credential Encryption/Decryption.
+[    7.025001] systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+[    7.041268] systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+[    7.063631] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[    7.086845] systemd[1]: Listening on systemd-journald.socket - Journal Sockets.
+[    7.101377] systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+[    7.117646] systemd[1]: systemd-pcrextend.socket - TPM PCR Measurements was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    7.143698] systemd[1]: systemd-pcrlock.socket - Make TPM PCR Policy was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    7.163144] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[    7.210706] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[    7.230525] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+[    7.264819] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+[    7.317501] systemd[1]: Mounting run-lock.mount - Legacy Locks Directory /run/lock...
+[    7.394275] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+[    7.506227] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+[    7.579366] systemd[1]: Mounting tmp.mount - Temporary Directory /tmp...
+[    7.624495] systemd[1]: Starting systemd-journald.service - Journal Service...
+[    7.702312] systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+[    7.736430] systemd-journald[315]: Collecting audit messages is disabled.
+[    7.761577] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[    7.875421] systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    7.941268] systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+[    7.971977] systemd[1]: Starting modprobe@dm_multipath.service - Load Kernel Module dm_multipath...
+[    8.005465] systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+[    8.035290] systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[    8.069295] systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+[    8.089340] pstore: Using crash dump compression: deflate
+[    8.095177] systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+[    8.122900] systemd[1]: Starting systemd-fsck-root.service - File System Check on Root Device...
+[    8.135415] pstore: Registered efi_pstore as persistent store backend
+[    8.148159] systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67).
+[    8.166234] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[    8.184687] systemd[1]: systemd-pcrmachine.service - TPM PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    8.195389] systemd[1]: systemd-tpm2-setup-early.service - Early TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    8.212280] systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+[    8.253299] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[    8.309487] systemd[1]: Started systemd-journald.service - Journal Service.
+[    9.080916] EXT4-fs (sda1): re-mounted 53486497-01b6-4304-b689-8e804006764c r/w.
+[    9.346472] systemd-journald[315]: Received client request to flush runtime journal.
+[   13.489885] hv_vmbus: registering driver hv_balloon
+[   13.490789] hv_balloon: Using Dynamic Memory protocol version 2.0
+[   13.490794] hv_balloon: Memory hot add disabled on ARM64
+[   13.505204] EXT4-fs (sda13): mounted filesystem 21132601-0e9a-4a1e-aba3-d92f5ec1ac29 r/w with ordered data mode. Quota mode: none.
+[   14.040184] audit: type=1400 audit(1795572855.876:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=517 comm="apparmor_parser"
+[   14.093617] audit: type=1400 audit(1795572855.931:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=523 comm="apparmor_parser"
+[   14.095769] audit: type=1400 audit(1795572855.934:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=525 comm="apparmor_parser"
+[   14.165424] audit: type=1400 audit(1795572855.998:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=526 comm="apparmor_parser"
+[   14.840864] audit: type=1400 audit(1795572856.679:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Xorg" pid=528 comm="apparmor_parser"
+[   14.980733] audit: type=1400 audit(1795572856.819:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="alsamixer" pid=553 comm="apparmor_parser"
+[   15.091537] audit: type=1400 audit(1795572856.930:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="babeld" pid=564 comm="apparmor_parser"
+[   15.094666] audit: type=1400 audit(1795572856.933:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=565 comm="apparmor_parser"
+[   15.117480] audit: type=1400 audit(1795572856.956:12): apparmor="STATUS" operation="profile_load" profile="unconfined" name="bfdd" pid=566 comm="apparmor_parser"
+[   15.195291] audit: type=1400 audit(1795572857.031:13): apparmor="STATUS" operation="profile_load" profile="unconfined" name="bgpd" pid=567 comm="apparmor_parser"
+[   19.041756] kauditd_printk_skb: 140 callbacks suppressed
+[   19.041761] audit: type=1400 audit(1795572860.880:154): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=688 comm="apparmor_parser"
+[   19.260316] audit: type=1400 audit(1795572861.099:155): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=689 comm="apparmor_parser"
+[   19.379863] audit: type=1400 audit(1795572861.218:156): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=690 comm="apparmor_parser"
+[   19.380907] audit: type=1400 audit(1795572861.219:157): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=690 comm="apparmor_parser"
+[   19.432461] audit: type=1400 audit(1795572861.271:158): apparmor="STATUS" operation="profile_load" profile="unconfined" name="rsyslogd" pid=691 comm="apparmor_parser"
+[   19.434986] audit: type=1400 audit(1795572861.273:159): apparmor="STATUS" operation="profile_load" profile="unconfined" name="uwsgi-core" pid=692 comm="apparmor_parser"
+[   19.436876] audit: type=1400 audit(1795572861.275:160): apparmor="STATUS" operation="profile_load" profile="unconfined" name="vdens" pid=693 comm="apparmor_parser"
+[   19.439144] audit: type=1400 audit(1795572861.278:161): apparmor="STATUS" operation="profile_load" profile="unconfined" name="virtiofsd" pid=694 comm="apparmor_parser"
+[   19.441019] audit: type=1400 audit(1795572861.279:162): apparmor="STATUS" operation="profile_load" profile="unconfined" name="vivaldi-bin" pid=695 comm="apparmor_parser"
+[   19.442576] audit: type=1400 audit(1795572861.281:163): apparmor="STATUS" operation="profile_load" profile="unconfined" name="vpnns" pid=696 comm="apparmor_parser"
+[   19.891784] ISO 9660 Extensions: Microsoft Joliet Level 3
+[   19.892191] ISOFS: changing to secondary root
+[   21.838616] systemd-journald[315]: Time jumped backwards, rotating.
+[   22.821507] EXT4-fs (sda1): resizing filesystem from 655099 to 8126203 blocks
+[   22.945508] EXT4-fs (sda1): resized filesystem to 8126203
+[   27.309164] kauditd_printk_skb: 9 callbacks suppressed
+[   27.309172] audit: type=1400 audit(1795572867.976:173): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=962 comm="apparmor_parser"
+[   29.059885] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.
+[   30.097638] loop0: detected capacity change from 0 to 8
+[   30.933346] audit: type=1400 audit(1795572871.650:174): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1177 comm="apparmor_parser"
+[   30.937882] audit: type=1400 audit(1795572871.654:175): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1177 comm="apparmor_parser"
+ls: cannot access '/dev/dxg': No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        30G  2.0G   29G   7% /

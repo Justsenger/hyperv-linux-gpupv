@@ -1,0 +1,133 @@
+511   execve("/opt/hyperv-linux-gpupv/guest/d3d12-compute", ["/opt/hyperv-linux-gpupv/guest/d3d12-compute"], 0xffffe7b12740 /* 16 vars */) = 0
+511   faccessat(AT_FDCWD</home/tester>, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+511   newfstatat(3</etc/ld.so.cache>, "", {st_mode=S_IFREG|0644, st_size=11671, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libdl.so.2>
+511   newfstatat(3</usr/lib/aarch64-linux-gnu/libdl.so.2>, "", {st_mode=S_IFREG|0644, st_size=67528, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libm.so.6>
+511   newfstatat(3</usr/lib/aarch64-linux-gnu/libm.so.6>, "", {st_mode=S_IFREG|0644, st_size=591960, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libpthread.so.0>
+511   newfstatat(3</usr/lib/aarch64-linux-gnu/libpthread.so.0>, "", {st_mode=S_IFREG|0644, st_size=67528, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libc.so.6>
+511   newfstatat(3</usr/lib/aarch64-linux-gnu/libc.so.6>, "", {st_mode=S_IFREG|0755, st_size=1651408, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+511   newfstatat(3</etc/ld.so.cache>, "", {st_mode=S_IFREG|0644, st_size=11671, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/libdxcore.so", O_RDONLY|O_CLOEXEC) = 3</opt/hyperv-linux-gpupv/lib/libdxcore.so>
+511   newfstatat(3</opt/hyperv-linux-gpupv/lib/libdxcore.so>, "", {st_mode=S_IFREG|0644, st_size=910072, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/dev/dxg", O_RDONLY|O_CLOEXEC) = 3</dev/dxg<char 10:124>>
+511   openat(AT_FDCWD</home/tester>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4</etc/ld.so.cache>
+511   newfstatat(4</etc/ld.so.cache>, "", {st_mode=S_IFREG|0644, st_size=11671, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/libd3d12.so", O_RDONLY|O_CLOEXEC) = 4</opt/hyperv-linux-gpupv/lib/libd3d12.so>
+511   newfstatat(4</opt/hyperv-linux-gpupv/lib/libd3d12.so>, "", {st_mode=S_IFREG|0644, st_size=739288, ...}, AT_EMPTY_PATH) = 0
+511   newfstatat(1<pipe:[15907]>, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/tls/aarch64/atomics/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/tls/aarch64/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/tls/atomics/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/tls/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/aarch64/atomics/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/aarch64/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/atomics/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/tls/aarch64/atomics/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/tls/aarch64/atomics", 0xffffeaddc610, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/tls/aarch64/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/tls/aarch64", 0xffffeaddc610, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/tls/atomics/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/tls/atomics", 0xffffeaddc610, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/tls/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/tls", 0xffffeaddc610, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/aarch64/atomics/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/aarch64/atomics", 0xffffeaddc610, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/aarch64/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/aarch64", 0xffffeaddc610, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/atomics/libd3d12core.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/atomics", 0xffffeaddc610, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/libd3d12core.so", O_RDONLY|O_CLOEXEC) = 4</opt/hyperv-linux-gpupv/lib/libd3d12core.so>
+511   newfstatat(4</opt/hyperv-linux-gpupv/lib/libd3d12core.so>, "", {st_mode=S_IFREG|0644, st_size=5999136, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdx12arm64wslum.so", O_RDONLY|O_CLOEXEC) = 4</opt/hyperv-linux-gpupv/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdx12arm64wslum.so>
+511   newfstatat(4</opt/hyperv-linux-gpupv/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdx12arm64wslum.so>, "", {st_mode=S_IFREG|0644, st_size=49141728, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4</etc/ld.so.cache>
+511   newfstatat(4</etc/ld.so.cache>, "", {st_mode=S_IFREG|0644, st_size=11671, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 4</usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30>
+511   newfstatat(4</usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.30>, "", {st_mode=S_IFREG|0644, st_size=2174296, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 4</usr/lib/aarch64-linux-gnu/libgcc_s.so.1>
+511   newfstatat(4</usr/lib/aarch64-linux-gnu/libgcc_s.so.1>, "", {st_mode=S_IFREG|0644, st_size=133448, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 4</sys/devices/system/cpu/online>
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so", O_RDONLY|O_CLOEXEC) = 4</opt/hyperv-linux-gpupv/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so>
+511   newfstatat(4</opt/hyperv-linux-gpupv/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so>, "", {st_mode=S_IFREG|0644, st_size=60461072, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/tls/aarch64/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/tls/aarch64/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/tls/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/tls/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/aarch64/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/aarch64/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "$$$/usr/lib/wsl/lib/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/wsl/lib/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4</etc/ld.so.cache>
+511   newfstatat(4</etc/ld.so.cache>, "", {st_mode=S_IFREG|0644, st_size=11671, ...}, AT_EMPTY_PATH) = 0
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/tls/aarch64/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/tls/aarch64/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/tls/aarch64/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/tls/aarch64", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/tls/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/tls/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/tls/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/tls", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/aarch64/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/aarch64/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/aarch64/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/aarch64", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/aarch64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/tls/aarch64/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/tls/aarch64/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/tls/aarch64/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/tls/aarch64", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/tls/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/tls/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/tls/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/tls", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/aarch64/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/aarch64/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/aarch64/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/aarch64", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/aarch64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=16384, ...}, 0) = 0
+511   openat(AT_FDCWD</home/tester>, "/lib/tls/aarch64/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/tls/aarch64/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/tls/aarch64/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/tls/aarch64", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/tls/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/tls/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/tls/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/tls", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/aarch64/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/aarch64/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/aarch64", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/lib/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/tls/aarch64/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/tls/aarch64/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/tls/aarch64/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/tls/aarch64", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/tls/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/tls/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/tls/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/tls", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/aarch64/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/aarch64/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/aarch64/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/aarch64", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/atomics/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib/atomics", 0xffffeaddc060, 0) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD</home/tester>, "/usr/lib/D3DDriverVerifier.dll", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+511   newfstatat(AT_FDCWD</home/tester>, "/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+511   +++ exited with 0 +++

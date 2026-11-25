@@ -1,0 +1,164 @@
+Linux gpupv-test-edf5d08e233f412cbc2525910d7d84cd 5.15.0-326.224.5.2.el8uek.aarch64 #2 SMP Thu Nov 19 09:42:38 PST 2026 aarch64 aarch64 aarch64 GNU/Linux
+[    2.626041] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    2.659839] hv_vmbus: registering driver hyperv_keyboard
+[    2.665996] input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio0/input/input0
+[    2.677491] random: systemd: uninitialized urandom read (16 bytes read)
+[    2.713647] hv_vmbus: registering driver hid_hyperv
+[    2.719665] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input1
+[    2.720226] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    2.735127] hv_vmbus: registering driver hv_pci
+[    2.758911] hv_vmbus: registering driver hv_storvsc
+[    2.769808] scsi host0: storvsc_host_t
+[    2.789871] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    2.795718] hv_pci 8f8f4c43-3392-41bb-97c5-24672496d4b2: PCI VMBus probing: Using version 0x10004
+[    2.803596] hv_pci 8f8f4c43-3392-41bb-97c5-24672496d4b2: PCI host bridge to bus 3392:00
+[    2.804410] scsi 0:0:0:1: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    2.806311] pci_bus 3392:00: No busn resource found for root bus, will use [bus 00-ff]
+[    2.806810] scsi 0:0:0:2: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    2.823653] hv_vmbus: registering driver hv_netvsc
+[    2.843300] pci 3392:00:00.0: [1414:008e] type 00 class 0x030200
+[    2.870359] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    2.873569] sr 0:0:0:1: [sr0] scsi-1 drive
+[    2.879830] sd 0:0:0:0: [sda] 67108864 512-byte logical blocks: (34.4 GB/32.0 GiB)
+[    2.881260] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    2.886023] sd 0:0:0:0: [sda] Write Protect is off
+[    2.886478] sd 0:0:0:0: [sda] Mode Sense: 0f 00 00 00
+[    2.892442] sr 0:0:0:1: Attached scsi CD-ROM sr0
+[    2.894868] sr 0:0:0:1: Attached scsi generic sg1 type 5
+[    2.895274] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    2.896102] sr 0:0:0:2: [sr1] scsi-1 drive
+[    2.897804] pci_bus 3392:00: busn_res: [bus 00-ff] end is updated to 00
+[    2.925744] sr 0:0:0:2: Attached scsi CD-ROM sr1
+[    2.926777] sr 0:0:0:2: Attached scsi generic sg2 type 5
+[    2.929260]  sda: sda1 sda2 sda3 sda4
+[    2.932712] sd 0:0:0:0: [sda] Attached SCSI disk
+[    3.061508] hv_storvsc 4d175d9d-2307-4542-9d8b-3533316167b9: tag#250 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    3.085478] hv_storvsc 4d175d9d-2307-4542-9d8b-3533316167b9: tag#197 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    3.209386] hv_storvsc 4d175d9d-2307-4542-9d8b-3533316167b9: tag#233 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    3.211750] hv_storvsc 4d175d9d-2307-4542-9d8b-3533316167b9: tag#234 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    3.591701] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.597743] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.603731] random: systemd-journal: uninitialized urandom read (16 bytes read)
+[    3.975869] SGI XFS with ACLs, security attributes, realtime, scrub, quota, no debug enabled
+[    3.987910] XFS (sda4): Mounting V5 Filesystem
+[    4.043130] XFS (sda4): Ending clean mount
+[    4.730473] random: systemd: uninitialized urandom read (16 bytes read)
+[    5.123159] printk: systemd: 19 output lines suppressed due to ratelimiting
+[    5.513280] audit: type=1404 audit(1795574228.639:4): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=1 old-enabled=1 lsm=selinux res=1
+[    6.556203] SELinux:  Permission watch in class filesystem not defined in policy.
+[    6.562355] SELinux:  Permission watch in class file not defined in policy.
+[    6.562574] SELinux:  Permission watch_mount in class file not defined in policy.
+[    6.562781] SELinux:  Permission watch_sb in class file not defined in policy.
+[    6.562986] SELinux:  Permission watch_with_perm in class file not defined in policy.
+[    6.563237] SELinux:  Permission watch_reads in class file not defined in policy.
+[    6.563519] SELinux:  Permission watch in class dir not defined in policy.
+[    6.563794] SELinux:  Permission watch_mount in class dir not defined in policy.
+[    6.564070] SELinux:  Permission watch_sb in class dir not defined in policy.
+[    6.564350] SELinux:  Permission watch_with_perm in class dir not defined in policy.
+[    6.564666] SELinux:  Permission watch_reads in class dir not defined in policy.
+[    6.564962] SELinux:  Permission watch in class lnk_file not defined in policy.
+[    6.565256] SELinux:  Permission watch_mount in class lnk_file not defined in policy.
+[    6.565557] SELinux:  Permission watch_sb in class lnk_file not defined in policy.
+[    6.565861] SELinux:  Permission watch_with_perm in class lnk_file not defined in policy.
+[    6.566169] SELinux:  Permission watch_reads in class lnk_file not defined in policy.
+[    6.566482] SELinux:  Permission watch in class chr_file not defined in policy.
+[    6.572744] SELinux:  Permission watch_mount in class chr_file not defined in policy.
+[    6.573955] SELinux:  Permission watch_sb in class chr_file not defined in policy.
+[    6.574296] SELinux:  Permission watch_with_perm in class chr_file not defined in policy.
+[    6.574620] SELinux:  Permission watch_reads in class chr_file not defined in policy.
+[    6.574953] SELinux:  Permission watch in class blk_file not defined in policy.
+[    6.575278] SELinux:  Permission watch_mount in class blk_file not defined in policy.
+[    6.575606] SELinux:  Permission watch_sb in class blk_file not defined in policy.
+[    6.575933] SELinux:  Permission watch_with_perm in class blk_file not defined in policy.
+[    6.576264] SELinux:  Permission watch_reads in class blk_file not defined in policy.
+[    6.578560] SELinux:  Permission watch in class sock_file not defined in policy.
+[    6.578913] SELinux:  Permission watch_mount in class sock_file not defined in policy.
+[    6.579252] SELinux:  Permission watch_sb in class sock_file not defined in policy.
+[    6.579592] SELinux:  Permission watch_with_perm in class sock_file not defined in policy.
+[    6.579934] SELinux:  Permission watch_reads in class sock_file not defined in policy.
+[    6.580273] SELinux:  Permission watch in class fifo_file not defined in policy.
+[    6.580630] SELinux:  Permission watch_mount in class fifo_file not defined in policy.
+[    6.580978] SELinux:  Permission watch_sb in class fifo_file not defined in policy.
+[    6.581330] SELinux:  Permission watch_with_perm in class fifo_file not defined in policy.
+[    6.582042] SELinux:  Permission watch_reads in class fifo_file not defined in policy.
+[    6.582734] SELinux:  Permission perfmon in class capability2 not defined in policy.
+[    6.583273] SELinux:  Permission bpf in class capability2 not defined in policy.
+[    6.590024] SELinux:  Permission perfmon in class cap2_userns not defined in policy.
+[    6.590399] SELinux:  Permission bpf in class cap2_userns not defined in policy.
+[    6.590788] SELinux:  Class mctp_socket not defined in policy.
+[    6.591136] SELinux:  Class lockdown not defined in policy.
+[    6.591470] SELinux:  Class anon_inode not defined in policy.
+[    6.591797] SELinux: the above unknown classes and permissions will be allowed
+[    6.603090] SELinux:  policy capability network_peer_controls=1
+[    6.603468] SELinux:  policy capability open_perms=1
+[    6.603800] SELinux:  policy capability extended_socket_class=1
+[    6.604127] SELinux:  policy capability always_check_network=0
+[    6.604454] SELinux:  policy capability cgroup_seclabel=1
+[    6.604823] SELinux:  policy capability nnp_nosuid_transition=1
+[    6.605143] SELinux:  policy capability genfs_seclabel_symlinks=0
+[    6.609279] SELinux:  policy capability ioctl_skip_cloexec=0
+[    6.659105] audit: type=1403 audit(1795574229.783:5): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    6.664945] systemd[1]: Successfully loaded SELinux policy in 1.152372s.
+[    6.779698] systemd[1]: Relabelled /dev, /run and /sys/fs/cgroup in 45.646ms.
+[    6.826883] systemd[1]: systemd 239 (239-82.0.12.el8_10.16) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+[    6.828040] systemd[1]: Detected virtualization microsoft.
+[    6.828403] systemd[1]: Detected architecture arm64.
+[    6.840209] systemd[1]: Set hostname to <gpupv-test-edf5d08e233f412cbc2525910d7d84cd>.
+[   10.144994] systemd[1]: initrd-switch-root.service: Succeeded.
+[   10.150503] systemd[1]: Stopped Switch Root.
+[   10.152029] systemd[1]: systemd-journald.service: Service has no hold-off time (RestartSec=0), scheduling restart.
+[   10.152480] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[   10.153137] systemd[1]: Stopped Journal Service.
+[   10.157686] systemd[1]: Starting Journal Service...
+[   10.562192] Adding 4194300k swap on /dev/sda3.  Priority:-2 extents:1 across:4194300k FS
+[   10.563824] xfs filesystem being remounted at / supports timestamps until 2038-01-19 (0x7fffffff)
+[   10.589524] random: crng init done
+[   10.589840] random: 226 urandom warning(s) missed due to ratelimiting
+[   10.685724] audit: type=1400 audit(1795574233.811:6): avc:  denied  { getattr } for  pid=512 comm="systemd-modules" path="/etc/modprobe.d/atm-blacklist.conf" dev="sda4" ino=26614691 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=0
+[   10.695635] audit: type=1400 audit(1795574233.811:7): avc:  denied  { getattr } for  pid=512 comm="systemd-modules" path="/etc/modprobe.d/batman-adv-blacklist.conf" dev="sda4" ino=26614692 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=0
+[   10.696666] audit: type=1400 audit(1795574233.811:8): avc:  denied  { getattr } for  pid=512 comm="systemd-modules" path="/etc/modprobe.d/l2tp_eth-blacklist.conf" dev="sda4" ino=26614693 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=0
+[   10.697741] audit: type=1400 audit(1795574233.811:9): avc:  denied  { getattr } for  pid=512 comm="systemd-modules" path="/etc/modprobe.d/l2tp_ip-blacklist.conf" dev="sda4" ino=26614694 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=0
+[   10.698989] audit: type=1400 audit(1795574233.811:10): avc:  denied  { getattr } for  pid=512 comm="systemd-modules" path="/etc/modprobe.d/l2tp_ip6-blacklist.conf" dev="sda4" ino=26614699 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=0
+[   10.700216] audit: type=1400 audit(1795574233.811:11): avc:  denied  { getattr } for  pid=512 comm="systemd-modules" path="/etc/modprobe.d/l2tp_netlink-blacklist.conf" dev="sda4" ino=26614700 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=0
+[   10.701536] audit: type=1400 audit(1795574233.811:12): avc:  denied  { getattr } for  pid=512 comm="systemd-modules" path="/etc/modprobe.d/l2tp_ppp-blacklist.conf" dev="sda4" ino=26614701 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=0
+[   10.702891] audit: type=1400 audit(1795574233.811:13): avc:  denied  { getattr } for  pid=512 comm="systemd-modules" path="/etc/modprobe.d/sctp-blacklist.conf" dev="sda4" ino=26614702 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=0
+[   10.704300] audit: type=1400 audit(1795574233.811:14): avc:  denied  { getattr } for  pid=512 comm="systemd-modules" path="/etc/modprobe.d/sctp_diag-blacklist.conf" dev="sda4" ino=26614703 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=0
+[   10.705809] audit: type=1400 audit(1795574233.811:15): avc:  denied  { getattr } for  pid=512 comm="systemd-modules" path="/etc/modprobe.d/xsk_diag-blacklist.conf" dev="sda4" ino=26614704 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=0
+[   11.481729] hv_vmbus: registering driver hv_balloon
+[   11.502045] hv_utils: Registering HyperV Utility Driver
+[   11.508475] hv_vmbus: registering driver hv_utils
+[   11.522798] hv_vmbus: registering driver hyperv_fb
+[   11.575975] hyperv_fb: Synthvid Version major 3, minor 5
+[   11.580088] hv_balloon: Using Dynamic Memory protocol version 2.0
+[   11.580567] hv_balloon: Memory hot add disabled on ARM64
+[   11.585498] hyperv_fb: Screen resolution: 1024x768, Color depth: 32, Frame buffer size: 8388608
+[   11.586439] checking generic (e0000000 300000) vs hw (e0000000 300000)
+[   11.586443] fb0: switching to hyperv_fb from EFI VGA
+[   11.587299] Console: switching to colour dummy device 80x25
+[   11.596749] Console: switching to colour frame buffer device 128x48
+[   11.626992] hv_utils: Heartbeat IC version 3.0
+[   11.627024] hv_utils: Shutdown IC version 3.2
+[   11.627035] hv_utils: TimeSync IC version 4.0
+[   11.627046] hv_utils: VSS IC version 5.0
+[   11.747330] dxgkrnl: loading out-of-tree module taints kernel.
+[   11.782136] hv_vmbus: registering driver dxgkrnl
+[   11.882551] hv_storvsc 4d175d9d-2307-4542-9d8b-3533316167b9: tag#224 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[   11.905747] hv_storvsc 4d175d9d-2307-4542-9d8b-3533316167b9: tag#232 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[   11.968328] cryptd: max_cpu_qlen set to 1000
+[   12.202595] hv_vmbus: registering driver hyperv_drm
+[   12.354890] XFS (sda2): Mounting V5 Filesystem
+[   13.064884] XFS (sda2): Ending clean mount
+[   13.069956] xfs filesystem being mounted at /boot supports timestamps until 2038-01-19 (0x7fffffff)
+[   16.263884] ISO 9660 Extensions: Microsoft Joliet Level 3
+[   16.269032] ISOFS: changing to secondary root
+[   16.993205] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   22.518657] gpupv-sample-01dc7e19ab85412880adfe5c786795a1
+[   23.017794] misc dxg: dxgk: dxgk_ioctl: ioctl mismatch. Code: 1 User: 5401 Kernel: c00c4701
+[   23.051538] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   23.053517] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   23.053618] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   23.053703] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   23.055935] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+crw-rw----. 1 root video 10, 123 Nov 25 02:37 /dev/dxg
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda4        27G  4.3G   23G  16% /

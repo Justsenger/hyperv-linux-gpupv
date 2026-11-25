@@ -1,0 +1,13 @@
+init
+66ed2bbd-f018-4ef3-b409-72ae24924ade
+SecureBoot enabled
+GPU-PV module signing
+O
+crw-rw---- 1 root video 10, 262 Nov 25  2026 /dev/dxg
+signature_warnings=0
+KERNEL=="dxg", GROUP="video", MODE="0660", TAG+="uaccess"
+ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x1414", ATTR{device}=="0x008e", RUN{builtin}+="kmod load dxgkrnl"
+loaded_without_rule
+run: 'kmod load dxgkrnl'
+crw-rw---- 1 root video 10, 262 Nov 24 11:34 /dev/dxg
+loaded_with_rule

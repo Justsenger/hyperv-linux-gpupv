@@ -1,0 +1,5 @@
+0d644407-8c43-49ae-90b8-ebfaee39f34c confirmed shim menu management
+0d644407-8c43-49ae-90b8-ebfaee39f34c confirmed shim menu view
+0d644407-8c43-49ae-90b8-ebfaee39f34c confirmed shim menu confirm
+0d644407-8c43-49ae-90b8-ebfaee39f34c confirmed shim menu password
+0d644407-8c43-49ae-90b8-ebfaee39f34c confirmed shim menu reboot

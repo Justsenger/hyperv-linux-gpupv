@@ -1,0 +1,17 @@
+{
+  "target": "ubuntu-26.04-ga",
+  "vm": "gpupv-test-1edc30fa5779472894ed9735c1927e0e",
+  "vmId": "30764fe3-6333-4ac1-92be-d1952d85caa8",
+  "started": "2026-11-25T09:56:52.2683603+08:00",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "7.0.0-43-generic",
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "install exited 1"
+  ],
+  "diagnostics": [],
+  "stage": "install",
+  "finished": "2026-11-25T09:58:46.6343884+08:00"
+}

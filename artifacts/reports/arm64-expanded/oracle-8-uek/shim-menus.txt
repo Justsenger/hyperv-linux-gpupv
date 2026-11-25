@@ -1,0 +1,5 @@
+6e030c42-8def-4625-8264-8cd8943556a0 confirmed shim menu management
+6e030c42-8def-4625-8264-8cd8943556a0 confirmed shim menu view
+6e030c42-8def-4625-8264-8cd8943556a0 confirmed shim menu confirm
+6e030c42-8def-4625-8264-8cd8943556a0 confirmed shim menu password
+6e030c42-8def-4625-8264-8cd8943556a0 confirmed shim menu reboot

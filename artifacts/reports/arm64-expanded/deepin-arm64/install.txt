@@ -1,0 +1,41 @@
+glibc 2.38, aarch64, kernel 6.18.38-arm64-desktop-rolling, preflight OK
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (Deepin 12.3.0-17deepin15) 12.3.0
+  You are using:           gcc (Deepin 12.3.0-17deepin19) 12.3.0
+probe.c:2:28: error: ‘struct dma_fence_ops’ has no member named ‘fence_value_str’
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[3]: *** [/usr/src/linux-headers-6.18.38-arm64-desktop-rolling/scripts/Makefile.build:287: probe.o] Error 1
+make[2]: *** [/usr/src/linux-headers-6.18.38-arm64-desktop-rolling/Makefile:2043: .] Error 2
+make[1]: *** [/usr/src/linux-headers-6.18.38-arm64-desktop-rolling/Makefile:248: __sub-make] Error 2
+make: *** [Makefile:248: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-6.18.38-arm64-desktop-rolling'
+make[1]: Entering directory '/tmp/tmp6f223bat/kernel/drivers/hv/dxgkrnl'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (Deepin 12.3.0-17deepin15) 12.3.0
+  You are using:           gcc (Deepin 12.3.0-17deepin19) 12.3.0
+  CC [M]  dxgmodule.o
+  CC [M]  hmgr.o
+  CC [M]  misc.o
+  CC [M]  dxgadapter.o
+  CC [M]  ioctl.o
+  CC [M]  dxgvmbus.o
+  CC [M]  dxgprocess.o
+  CC [M]  dxgsyncfile.o
+  LD [M]  dxgkrnl.o
+  MODPOST Module.symvers
+  CC [M]  dxgkrnl.mod.o
+  CC [M]  .module-common.o
+  LD [M]  dxgkrnl.ko
+  BTF [M] dxgkrnl.ko
+Skipping BTF generation for dxgkrnl.ko due to unavailability of vmlinux
+make[1]: Leaving directory '/tmp/tmp6f223bat/kernel/drivers/hv/dxgkrnl'
+make: Leaving directory '/usr/src/linux-headers-6.18.38-arm64-desktop-rolling'

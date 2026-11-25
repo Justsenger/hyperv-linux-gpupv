@@ -1,0 +1,24 @@
+{
+  "target": "alma-8-native-off",
+  "vm": "gpupv-test-06a342738b9b4e04a088a510f35ad542",
+  "vmId": "94b9808a-4427-4da7-b2d0-923ec9294186",
+  "started": "2026-11-25T11:38:51.9286084+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": false,
+  "route": "prebuilt",
+  "kernel": "4.18.0-553.187.1.el8_10.aarch64",
+  "compute": false,
+  "clean": true,
+  "errors": [
+    "workload: workload exited 1"
+  ],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "workload",
+  "finished": "2026-11-25T11:39:41.3252496+08:00"
+}

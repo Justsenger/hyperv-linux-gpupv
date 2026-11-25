@@ -1,0 +1,48 @@
+sudo: unable to resolve host gpupv-test-85735e5f00b84f168cb761ad35456766: Name or service not known
+glibc 2.43, aarch64, kernel 7.0.0-4-generic, preflight OK
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: aarch64-linux-gnu-gcc (Openkylin 15.2.0-16ok8) 15.2.0
+  You are using:           gcc (Openkylin 15.2.0-16ok8) 15.2.0
+warning: pahole version differs from the one used to build the kernel
+  The kernel was built with: 131
+  You are using:             0
+probe.c:2:28: error: 'struct dma_fence_ops' has no member named 'fence_value_str'
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[3]: *** [/usr/src/linux-headers-7.0.0-4-generic/scripts/Makefile.build:289: probe.o] Error 1
+make[2]: *** [/usr/src/linux-headers-7.0.0-4-generic/Makefile:2110: .] Error 2
+make[1]: *** [/usr/src/linux-headers-7.0.0-4-generic/Makefile:248: __sub-make] Error 2
+make: *** [Makefile:248: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-7.0.0-4-generic'
+make[1]: Entering directory '/var/tmp/tmpjsehrv2d/kernel/drivers/hv/dxgkrnl'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: aarch64-linux-gnu-gcc (Openkylin 15.2.0-16ok8) 15.2.0
+  You are using:           gcc (Openkylin 15.2.0-16ok8) 15.2.0
+warning: pahole version differs from the one used to build the kernel
+  The kernel was built with: 131
+  You are using:             0
+  CC [M]  dxgmodule.o
+  CC [M]  hmgr.o
+  CC [M]  misc.o
+  CC [M]  dxgadapter.o
+  CC [M]  ioctl.o
+  CC [M]  dxgvmbus.o
+  CC [M]  dxgprocess.o
+  CC [M]  dxgsyncfile.o
+  LD [M]  dxgkrnl.o
+  MODPOST Module.symvers
+  CC [M]  dxgkrnl.mod.o
+  CC [M]  .module-common.o
+  LD [M]  dxgkrnl.ko
+  BTF [M] dxgkrnl.ko
+Skipping BTF generation for dxgkrnl.ko due to unavailability of vmlinux
+make[1]: Leaving directory '/var/tmp/tmpjsehrv2d/kernel/drivers/hv/dxgkrnl'
+make: Leaving directory '/usr/src/linux-headers-7.0.0-4-generic'

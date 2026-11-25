@@ -1,0 +1,22 @@
+{
+  "target": "centos-stream-10",
+  "vm": "gpupv-test-72691912347a42318731fa15aa57dee1",
+  "vmId": "9d2809d2-e0e1-4461-bb7b-373d2f40a362",
+  "started": "2026-11-25T11:05:48.5322577+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": false,
+  "route": "prebuilt",
+  "kernel": "6.12.0-284.el10.aarch64",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T11:10:47.3853874+08:00"
+}

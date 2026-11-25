@@ -1,0 +1,40 @@
+Linux gpupv-test-fe4bf32ee34843889ed4fd5df778605a 7.3.5+deb14-arm64 #1 SMP PREEMPT Debian 7.3.5-1 (2026-11-18) aarch64 GNU/Linux
+PRETTY_NAME="Debian GNU/Linux forky/sid"
+NAME="Debian GNU/Linux"
+VERSION_CODENAME=forky
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+systemd
+status: done
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:2 https://deb.debian.org/debian sid InRelease [193 kB]
+Get:3 https://deb.debian.org/debian sid/non-free-firmware Sources [10.7 kB]
+Get:4 https://deb.debian.org/debian sid/main Sources [12.2 MB]
+Get:5 https://deb.debian.org/debian sid/main arm64 Packages [10.8 MB]
+Get:6 https://deb.debian.org/debian sid/main Translation-en [7803 kB]
+Get:7 https://deb.debian.org/debian sid/non-free-firmware arm64 Packages [11.3 kB]
+Get:8 https://deb.debian.org/debian sid/non-free-firmware Translation-en [7048 B]
+Fetched 31.1 MB in 2min 38s (196 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mokutil is already the newest version (0.7.2-2).
+mokutil set to manually installed.
+openssl is already the newest version (3.6.5-1).
+kmod is already the newest version (34.4-1).
+kmod set to manually installed.
+udev is already the newest version (262.2-1).
+udev set to manually installed.
+python3 is already the newest version (3.14.8-1).
+python3 set to manually installed.
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+linux-image-arm64 is already the newest version (7.3.5-1).
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.

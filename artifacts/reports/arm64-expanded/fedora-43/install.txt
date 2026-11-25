@@ -1,0 +1,41 @@
+glibc 2.42, aarch64, kernel 6.17.1-300.fc43.aarch64, preflight OK
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (GCC) 15.2.1 20250924 (Red Hat 15.2.1-2)
+  You are using:           gcc (GCC) 15.3.1 20260722 (Red Hat 15.3.1-1)
+probe.c:2:28: error: 'struct dma_fence_ops' has no member named 'fence_value_str'
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[3]: *** [/usr/src/kernels/6.17.1-300.fc43.aarch64/scripts/Makefile.build:287: probe.o] Error 1
+make[2]: *** [/usr/src/kernels/6.17.1-300.fc43.aarch64/Makefile:2047: .] Error 2
+make[1]: *** [/usr/src/kernels/6.17.1-300.fc43.aarch64/Makefile:248: __sub-make] Error 2
+make: *** [Makefile:248: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/6.17.1-300.fc43.aarch64'
+make[1]: Entering directory '/tmp/tmpkld17vhi/kernel/drivers/hv/dxgkrnl'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (GCC) 15.2.1 20250924 (Red Hat 15.2.1-2)
+  You are using:           gcc (GCC) 15.3.1 20260722 (Red Hat 15.3.1-1)
+  CC [M]  dxgmodule.o
+  CC [M]  hmgr.o
+  CC [M]  misc.o
+  CC [M]  dxgadapter.o
+  CC [M]  ioctl.o
+  CC [M]  dxgvmbus.o
+  CC [M]  dxgprocess.o
+  CC [M]  dxgsyncfile.o
+  LD [M]  dxgkrnl.o
+  MODPOST Module.symvers
+  CC [M]  dxgkrnl.mod.o
+  CC [M]  .module-common.o
+  LD [M]  dxgkrnl.ko
+  BTF [M] dxgkrnl.ko
+Skipping BTF generation for dxgkrnl.ko due to unavailability of vmlinux
+make[1]: Leaving directory '/tmp/tmpkld17vhi/kernel/drivers/hv/dxgkrnl'
+make: Leaving directory '/usr/src/kernels/6.17.1-300.fc43.aarch64'

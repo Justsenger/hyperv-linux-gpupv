@@ -1,0 +1,164 @@
+Linux gpupv-test-84958896e7a9469b9bf55dad97ca614c 7.3.5-1-default #1 SMP PREEMPT_DYNAMIC Wed Nov 18 05:53:17 UTC 2026 (b2eda32) aarch64 aarch64 aarch64 GNU/Linux
+[    2.454607] [    T301] sr 0:0:0:2: Attached scsi CD-ROM sr1
+[    2.605923] [      C0] hv_storvsc 8434822e-63f1-4998-8c3c-40a01356b609: tag#185 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[    2.659676] [      C0] hv_storvsc 8434822e-63f1-4998-8c3c-40a01356b609: tag#138 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[    2.775629] [      C0] hv_storvsc 8434822e-63f1-4998-8c3c-40a01356b609: tag#173 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[    2.814282] [      C0] hv_storvsc 8434822e-63f1-4998-8c3c-40a01356b609: tag#146 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[    2.942393] [    T353] SGI XFS with ACLs, security attributes, realtime, quota, no debug enabled
+[    2.947836] [    T352] XFS (sda2): Mounting V5 Filesystem c9d192fa-0f3d-475e-7f85-2888ad38991b
+[    2.962508] [    T352] XFS (sda2): Ending clean mount
+[    3.242143] [    T341] XFS (sda2): Unmounting Filesystem c9d192fa-0f3d-475e-7f85-2888ad38991b
+[   35.229908] [    T678]  sda: sda1 sda2
+ls: cannot access '/dev/dxg': No such file or directory
+[   39.001953] [    T748]  sda: sda1
+[   40.040151] [    T756]  sda: sda1 sda2
+[   41.149322] [    T762]  sda: sda1 sda2
+[   43.303011] [    T819] XFS (sda2): Mounting V5 Filesystem c9d192fa-0f3d-475e-7f85-2888ad38991b
+[   43.320247] [    T819] XFS (sda2): Ending clean mount
+[   44.263593] [    T831] XFS (sda2): Unmounting Filesystem c9d192fa-0f3d-475e-7f85-2888ad38991b
+[   45.457128] [    T845] XFS (sda2): Mounting V5 Filesystem c9d192fa-0f3d-475e-7f85-2888ad38991b
+[   45.499277] [    T845] XFS (sda2): Ending clean mount
+[   48.312051] [    T105] systemd-journald[105]: Received SIGTERM from PID 1 (systemd).
+[   48.350111] [     T25] audit: type=1404 audit(1795574412.651:5): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=1 old-enabled=1 lsm=selinux res=1
+[   48.374105] [      T1] SELinux:  Permission firmware_load in class system not defined in policy.
+[   48.374114] [      T1] SELinux:  Permission kexec_image_load in class system not defined in policy.
+[   48.374116] [      T1] SELinux:  Permission kexec_initramfs_load in class system not defined in policy.
+[   48.374117] [      T1] SELinux:  Permission policy_load in class system not defined in policy.
+[   48.374117] [      T1] SELinux:  Permission x509_certificate_load in class system not defined in policy.
+[   48.374165] [      T1] SELinux:  Permission map_create_as in class bpf not defined in policy.
+[   48.374166] [      T1] SELinux:  Permission prog_load_as in class bpf not defined in policy.
+[   48.374169] [      T1] SELinux:  Permission allowed in class io_uring not defined in policy.
+[   48.374170] [      T1] SELinux:  Class memfd_file not defined in policy.
+[   48.374171] [      T1] SELinux: the above unknown classes and permissions will be allowed
+[   48.376538] [      T1] SELinux:  policy capability network_peer_controls=1
+[   48.376545] [      T1] SELinux:  policy capability open_perms=1
+[   48.376546] [      T1] SELinux:  policy capability extended_socket_class=1
+[   48.376547] [      T1] SELinux:  policy capability always_check_network=0
+[   48.376548] [      T1] SELinux:  policy capability cgroup_seclabel=1
+[   48.376548] [      T1] SELinux:  policy capability nnp_nosuid_transition=1
+[   48.376549] [      T1] SELinux:  policy capability genfs_seclabel_symlinks=1
+[   48.376550] [      T1] SELinux:  policy capability ioctl_skip_cloexec=0
+[   48.376550] [      T1] SELinux:  policy capability userspace_initial_context=0
+[   48.376551] [      T1] SELinux:  policy capability netlink_xperm=0
+[   48.376552] [      T1] SELinux:  policy capability netif_wildcard=0
+[   48.376552] [      T1] SELinux:  policy capability genfs_seclabel_wildcard=0
+[   48.376553] [      T1] SELinux:  policy capability functionfs_seclabel=0
+[   48.376554] [      T1] SELinux:  policy capability memfd_class=0
+[   48.376554] [      T1] SELinux:  policy capability bpf_token_perms=0
+[   48.405936] [     T25] audit: type=1403 audit(1795574412.707:6): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[   48.407862] [      T1] systemd[1]: Successfully loaded SELinux policy in 57.960ms.
+[   48.613724] [      T1] NET: Registered PF_VSOCK protocol family
+[   48.614820] [      T1] hv_vmbus: registering driver hv_sock
+[   48.644301] [      T1] systemd[1]: Relabeled /dev/, /dev/shm/, /run/ in 27.872ms.
+[   48.647484] [      T1] systemd[1]: systemd 262.2 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE -SMACK +SECCOMP +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +LIBARCHIVE)
+[   48.647494] [      T1] systemd[1]: Detected virtualization microsoft.
+[   48.647564] [      T1] systemd[1]: Detected architecture arm64.
+[   48.647613] [      T1] systemd[1]: Detected first boot.
+[   48.666900] [      T1] systemd[1]: Initializing machine ID from random generator.
+[   48.679054] [     T25] audit: type=1400 audit(1795574412.979:7): avc:  denied  { create } for  pid=1 comm="systemd" name=".#default-hostnameab143c63e082946a" scontext=system_u:system_r:init_t:s0 tcontext=system_u:object_r:hostname_etc_t:s0 tclass=file permissive=0
+[   48.679095] [      T1] systemd[1]: Failed to create "/run/systemd/default-hostname", ignoring: Permission denied
+[   48.797049] [      T1] systemd[1]: bpf-restrict-fs: LSM BPF program attached
+[   49.125580] [      T1] systemd[1]: Applying preset policy.
+[   49.409690] [      T1] systemd[1]: Populated /etc with preset unit settings.
+[   49.903798] [      T1] systemd[1]: initrd-switch-root.service: Deactivated successfully.
+[   49.903974] [      T1] systemd[1]: Stopped Switch Root.
+[   49.910120] [      T1] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[   49.910570] [      T1] systemd[1]: Created slice Slice /system/getty.
+[   49.911042] [      T1] systemd[1]: Created slice Slice /system/serial-getty.
+[   49.911397] [      T1] systemd[1]: Created slice User and Session Slice.
+[   49.911747] [      T1] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[   49.912485] [      T1] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   49.926969] [      T1] systemd[1]: Expecting device /dev/disk/by-uuid/A619-8D78...
+[   49.927263] [      T1] systemd[1]: Expecting device /dev/ttyAMA0...
+[   49.927464] [      T1] systemd[1]: Reached target Image Downloads.
+[   49.927649] [      T1] systemd[1]: Stopped target Switch Root.
+[   49.927802] [      T1] systemd[1]: Stopped target Initrd File Systems.
+[   49.927951] [      T1] systemd[1]: Stopped target Initrd Root File System.
+[   49.928109] [      T1] systemd[1]: Reached target Local Integrity Protected Volumes.
+[   49.928272] [      T1] systemd[1]: Reached target Remote File Systems.
+[   49.928402] [      T1] systemd[1]: Reached target Slice Units.
+[   49.928546] [      T1] systemd[1]: Reached target Swaps.
+[   49.928712] [      T1] systemd[1]: Reached target System Time Set.
+[   49.928869] [      T1] systemd[1]: Reached target System Time Synchronized.
+[   49.929027] [      T1] systemd[1]: Reached target Local Verity Protected Volumes.
+[   49.929551] [      T1] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[   49.931393] [      T1] systemd[1]: Listening on LVM2 poll daemon socket.
+[   49.935259] [      T1] systemd[1]: Listening on Query the User Interactively for a Password.
+[   49.941015] [      T1] systemd[1]: Listening on Process Core Dump Socket.
+[   49.944891] [      T1] systemd[1]: Listening on Credential Encryption/Decryption.
+[   49.948255] [      T1] systemd[1]: Listening on Disk Encryption Enrollment Service Socket.
+[   49.948932] [      T1] systemd[1]: Listening on Hostname Service Socket.
+[   49.949211] [      T1] systemd[1]: TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-os
+[   49.949231] [      T1] systemd[1]: Make TPM PCR Policy skipped, unmet condition check ConditionSecurity=measured-uki
+[   49.956285] [      T1] systemd[1]: Listening on Disk Repartitioning Service Socket.
+[   49.957817] [      T1] systemd[1]: Listening on udev Varlink Socket.
+[   49.963662] [      T1] systemd[1]: Mounting Huge Pages File System...
+[   49.974606] [      T1] systemd[1]: Mounting POSIX Message Queue File System...
+[   49.981981] [      T1] systemd[1]: Mounting Kernel Debug File System...
+[   49.988498] [      T1] systemd[1]: Mounting Kernel Trace File System...
+[   49.997409] [      T1] systemd[1]: Mounting Temporary Directory /tmp...
+[   50.020617] [      T1] systemd[1]: Starting Availability of block devices...
+[   50.037934] [      T1] systemd[1]: Starting Create List of Static Device Nodes...
+[   50.038251] [      T1] systemd[1]: Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+[   50.038284] [      T1] systemd[1]: Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+[   50.044795] [      T1] systemd[1]: Starting Load Kernel Module efi_pstore...
+[   50.053744] [      T1] systemd[1]: Starting Load Kernel Module fuse...
+[   50.054113] [      T1] systemd[1]: Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+[   50.101039] [      T1] systemd[1]: Starting Journal Service...
+[   50.127016] [      T1] systemd[1]: Load Kernel Modules skipped, no trigger condition checks were met.
+[   50.127183] [      T1] systemd[1]: Apply Kernel Variables for 7.3.5-1-default from /boot skipped, unmet condition check ConditionPathExists=!/usr/lib/modules/7.3.5-1-default/sysctl.conf
+[   50.143925] [      T1] systemd[1]: Starting Apply Kernel Variables for 7.3.5-1-default...
+[   50.144280] [      T1] systemd[1]: TPM PCR Machine ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+[   50.144322] [      T1] systemd[1]: TPM PCR NvPCR Initialization Separator skipped, unmet condition check ConditionPathExists=/etc/initrd-release
+[   50.144339] [      T1] systemd[1]: TPM PCR OS Separator skipped, unmet condition check ConditionSecurity=measured-os
+[   50.144357] [      T1] systemd[1]: Reached target Local Encrypted Volumes.
+[   50.144572] [      T1] systemd[1]: TPM NvPCR Product ID Measurement skipped, unmet condition check ConditionSecurity=measured-os
+[   50.156977] [      T1] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   50.189942] [      T1] systemd[1]: Starting Load udev Rules from Credentials...
+[   50.209309] [      T1] systemd[1]: Starting Coldplug All udev Devices...
+[   50.232004] [      T1] systemd[1]: Mounted Huge Pages File System.
+[   50.257157] [      T1] systemd[1]: Mounted POSIX Message Queue File System.
+[   50.257502] [      T1] systemd[1]: Mounted Kernel Debug File System.
+[   50.257766] [      T1] systemd[1]: Mounted Kernel Trace File System.
+[   50.262542] [      T1] systemd[1]: Mounted Temporary Directory /tmp.
+[   50.263317] [      T1] systemd[1]: Finished Availability of block devices.
+[   50.263832] [      T1] systemd[1]: Finished Create List of Static Device Nodes.
+[   50.264275] [      T1] systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+[   50.264401] [      T1] systemd[1]: Finished Load Kernel Module efi_pstore.
+[   50.307970] [      T1] systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+[   50.315076] [    T953] fuse: init (API version 7.46)
+[   50.330159] [      T1] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[   50.330330] [      T1] systemd[1]: Finished Load Kernel Module fuse.
+[   50.331108] [      T1] systemd[1]: Finished Apply Kernel Variables for 7.3.5-1-default.
+[   50.353915] [      T1] systemd[1]: Mounting FUSE Control File System...
+[   50.425980] [      T1] systemd[1]: Starting Apply Kernel Variables...
+[   50.468514] [      T1] systemd[1]: Finished Remount Root and Kernel File Systems.
+[   50.531615] [      T1] systemd[1]: Starting Mark autorelabel as done...
+[   50.552204] [      T1] systemd[1]: Starting Rebuild Hardware Database...
+[   50.552768] [      T1] systemd[1]: Platform Persistent Storage Archival skipped, unmet condition check ConditionDirectoryNotEmpty=/sys/fs/pstore
+[   50.564133] [    T954] systemd-journald[954]: Collecting audit messages is disabled.
+[   50.585962] [      T1] systemd[1]: Starting Load/Save OS Random Seed...
+[   50.598458] [      T1] systemd[1]: Finished Load udev Rules from Credentials.
+[   50.599743] [      T1] systemd[1]: Mounted FUSE Control File System.
+[   50.632563] [      T1] systemd[1]: Started Journal Service.
+[   50.810786] [    T954] systemd-journald[954]: Received client request to flush runtime journal.
+[   53.453512] [      C0] hv_storvsc 8434822e-63f1-4998-8c3c-40a01356b609: tag#176 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[   53.642260] [      C0] hv_storvsc 8434822e-63f1-4998-8c3c-40a01356b609: tag#143 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[   54.198772] [   T1009] hv_utils: Registering HyperV Utility Driver
+[   54.198782] [   T1009] hv_vmbus: registering driver hv_utils
+[   54.205237] [      C0] hv_utils: Heartbeat IC version 3.0
+[   54.216176] [      C0] hv_utils: Shutdown IC version 3.2
+[   54.218153] [      C0] hv_utils: VSS IC version 5.0
+[   54.218564] [      C0] hv_utils: TimeSync IC version 4.0
+[   54.240817] [   T1000] hv_vmbus: registering driver hv_balloon
+[   54.252735] [     T28] hv_balloon: Using Dynamic Memory protocol version 2.0
+[   54.252744] [     T28] hv_balloon: Memory hot add disabled on ARM64
+[   60.097883] [   T1190] ISO 9660 Extensions: Microsoft Joliet Level 3
+[   60.101379] [   T1190] ISOFS: changing to secondary root
+[   61.498803] [   T1211] NET: Registered PF_PACKET protocol family
+[   67.326851] [    T954] systemd-journald[954]: Time jumped backwards, rotating.
+[   72.553172] [      C0] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.
+[  102.368718] [      C0] hv_balloon: Max. dynamic memory size: 1792 MB
+[  133.324392] [   T1467] NOTICE: Automounting of tracing to debugfs is deprecated and will be removed in 2030
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        32G  1.5G   31G   5% /

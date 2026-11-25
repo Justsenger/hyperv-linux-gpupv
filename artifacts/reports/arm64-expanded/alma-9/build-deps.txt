@@ -1,0 +1,433 @@
+AlmaLinux 9 - AppStream                         6.6 MB/s |  13 MB     00:01    
+AlmaLinux 9 - BaseOS                            5.5 MB/s | 9.5 MB     00:01    
+AlmaLinux 9 - Extras                             26 kB/s |  33 kB     00:01    
+Last metadata expiration check: 0:00:01 ago on Wed Nov 25 02:21:53 2026.
+Dependencies resolved.
+================================================================================
+ Package                  Arch      Version                   Repository   Size
+================================================================================
+Installing:
+ elfutils-libelf-devel    aarch64   0.195-1.el9.alma.1        appstream   103 k
+ gcc                      aarch64   11.5.0-17.el9_9.alma.1    appstream    30 M
+ gcc-c++                  aarch64   11.5.0-17.el9_9.alma.1    appstream    12 M
+ kernel-devel             aarch64   5.14.0-741.22.1.el9_9     appstream    17 M
+ make                     aarch64   1:4.3-8.el9               baseos      526 k
+Installing dependencies:
+ bison                    aarch64   3.7.4-5.el9               appstream   910 k
+ cpp                      aarch64   11.5.0-17.el9_9.alma.1    appstream    10 M
+ flex                     aarch64   2.6.4-9.el9               appstream   300 k
+ glibc-devel              aarch64   2.34-290.el9_9            appstream   449 k
+ kernel-headers           aarch64   5.14.0-741.26.1.el9_9     appstream   2.4 M
+ libasan                  aarch64   11.5.0-17.el9_9.alma.1    appstream   396 k
+ libmpc                   aarch64   1.2.1-4.el9               appstream    62 k
+ libpkgconf               aarch64   1.7.3-10.el9              baseos       35 k
+ libstdc++-devel          aarch64   11.5.0-17.el9_9.alma.1    appstream   2.2 M
+ libubsan                 aarch64   11.5.0-17.el9_9.alma.1    appstream   171 k
+ libxcrypt-devel          aarch64   4.4.18-3.el9              appstream    28 k
+ libzstd-devel            aarch64   1.5.5-1.el9               appstream    50 k
+ m4                       aarch64   1.4.19-1.el9              appstream   291 k
+ openssl-devel            aarch64   1:3.5.9-1.el9_9           appstream   3.5 M
+ perl-AutoLoader          noarch    5.74-484.el9_8            appstream    20 k
+ perl-B                   aarch64   1.80-484.el9_8            appstream   178 k
+ perl-Carp                noarch    1.50-460.el9              appstream    29 k
+ perl-Class-Struct        noarch    0.66-484.el9_8            appstream    21 k
+ perl-Data-Dumper         aarch64   2.174-462.el9             appstream    54 k
+ perl-Digest              noarch    1.19-4.el9                appstream    25 k
+ perl-Digest-MD5          aarch64   2.58-4.el9                appstream    36 k
+ perl-Encode              aarch64   4:3.08-462.el9            appstream   1.7 M
+ perl-Errno               aarch64   1.30-484.el9_8            appstream    13 k
+ perl-Exporter            noarch    5.74-461.el9              appstream    31 k
+ perl-Fcntl               aarch64   1.13-484.el9_8            appstream    19 k
+ perl-File-Basename       noarch    2.85-484.el9_8            appstream    16 k
+ perl-File-Path           noarch    2.18-4.el9                appstream    35 k
+ perl-File-Temp           noarch    1:0.231.100-4.el9         appstream    59 k
+ perl-File-stat           noarch    1.09-484.el9_8            appstream    16 k
+ perl-FileHandle          noarch    2.03-484.el9_8            appstream    14 k
+ perl-Getopt-Long         noarch    1:2.52-4.el9              appstream    59 k
+ perl-Getopt-Std          noarch    1.12-484.el9_8            appstream    14 k
+ perl-HTTP-Tiny           noarch    0.076-462.el9             appstream    53 k
+ perl-IO                  aarch64   1.43-484.el9_8            appstream    85 k
+ perl-IO-Socket-IP        noarch    0.41-5.el9                appstream    42 k
+ perl-IO-Socket-SSL       noarch    2.073-2.el9               appstream   214 k
+ perl-IPC-Open3           noarch    1.21-484.el9_8            appstream    21 k
+ perl-MIME-Base64         aarch64   3.16-4.el9                appstream    30 k
+ perl-Mozilla-CA          noarch    20200520-6.el9            appstream    12 k
+ perl-Net-SSLeay          aarch64   1.94-4.el9                appstream   390 k
+ perl-POSIX               aarch64   1.94-484.el9_8            appstream    95 k
+ perl-PathTools           aarch64   3.78-461.el9              appstream    85 k
+ perl-Pod-Escapes         noarch    1:1.07-460.el9            appstream    20 k
+ perl-Pod-Perldoc         noarch    3.28.01-461.el9           appstream    83 k
+ perl-Pod-Simple          noarch    1:3.42-4.el9              appstream   215 k
+ perl-Pod-Usage           noarch    4:2.01-4.el9              appstream    40 k
+ perl-Scalar-List-Utils   aarch64   4:1.56-462.el9            appstream    68 k
+ perl-SelectSaver         noarch    1.02-484.el9_8            appstream    10 k
+ perl-Socket              aarch64   4:2.031-4.el9             appstream    54 k
+ perl-Storable            aarch64   1:3.21-460.el9            appstream    93 k
+ perl-Symbol              noarch    1.08-484.el9_8            appstream    13 k
+ perl-Term-ANSIColor      noarch    5.01-461.el9              appstream    48 k
+ perl-Term-Cap            noarch    1.17-460.el9              appstream    22 k
+ perl-Text-ParseWords     noarch    3.30-460.el9              appstream    16 k
+ perl-Text-Tabs+Wrap      noarch    2013.0523-460.el9         appstream    22 k
+ perl-Time-Local          noarch    2:1.300-7.el9             appstream    33 k
+ perl-URI                 noarch    5.09-4.el9_9              appstream   107 k
+ perl-Unicode-Normalize   aarch64   1.27-461.el9              appstream    86 k
+ perl-base                noarch    2.27-484.el9_8            appstream    15 k
+ perl-constant            noarch    1.33-461.el9              appstream    23 k
+ perl-if                  noarch    0.60.800-484.el9_8        appstream    13 k
+ perl-interpreter         aarch64   4:5.32.1-484.el9_8        appstream    69 k
+ perl-libnet              noarch    3.13-4.el9                appstream   125 k
+ perl-libs                aarch64   4:5.32.1-484.el9_8        appstream   2.0 M
+ perl-mro                 aarch64   1.23-484.el9_8            appstream    26 k
+ perl-overload            noarch    1.31-484.el9_8            appstream    44 k
+ perl-overloading         noarch    0.02-484.el9_8            appstream    11 k
+ perl-parent              noarch    1:0.238-460.el9           appstream    14 k
+ perl-podlators           noarch    1:4.14-460.el9            appstream   111 k
+ perl-subs                noarch    1.03-484.el9_8            appstream    10 k
+ perl-vars                noarch    1.05-484.el9_8            appstream    12 k
+ pkgconf                  aarch64   1.7.3-10.el9              baseos       39 k
+ pkgconf-m4               noarch    1.7.3-10.el9              baseos       14 k
+ pkgconf-pkg-config       aarch64   1.7.3-10.el9              baseos      9.9 k
+ zlib-devel               aarch64   1.2.11-40.el9             appstream    44 k
+
+Transaction Summary
+================================================================================
+Install  80 Packages
+
+Total download size: 88 M
+Installed size: 266 M
+Downloading Packages:
+[MIRROR] bison-3.7.4-5.el9.aarch64.rpm: Status code: 503 for http://mirrors.qlu.edu.cn/almalinux/9.9/AppStream/aarch64/os/Packages/bison-3.7.4-5.el9.aarch64.rpm (IP: 210.44.151.62)
+(1/80): elfutils-libelf-devel-0.195-1.el9.alma. 324 kB/s | 103 kB     00:00    
+(2/80): bison-3.7.4-5.el9.aarch64.rpm           1.3 MB/s | 910 kB     00:00    
+(3/80): cpp-11.5.0-17.el9_9.alma.1.aarch64.rpm   14 MB/s |  10 MB     00:00    
+(4/80): flex-2.6.4-9.el9.aarch64.rpm            712 kB/s | 300 kB     00:00    
+[MIRROR] glibc-devel-2.34-290.el9_9.aarch64.rpm: Status code: 503 for http://mirrors.qlu.edu.cn/almalinux/9.9/AppStream/aarch64/os/Packages/glibc-devel-2.34-290.el9_9.aarch64.rpm (IP: 210.44.151.62)
+(5/80): glibc-devel-2.34-290.el9_9.aarch64.rpm  2.3 MB/s | 449 kB     00:00    
+(6/80): kernel-devel-5.14.0-741.22.1.el9_9.aarc  18 MB/s |  17 MB     00:00    
+(7/80): gcc-c++-11.5.0-17.el9_9.alma.1.aarch64.  10 MB/s |  12 MB     00:01    
+(8/80): kernel-headers-5.14.0-741.26.1.el9_9.aa 6.3 MB/s | 2.4 MB     00:00    
+(9/80): libasan-11.5.0-17.el9_9.alma.1.aarch64. 1.2 MB/s | 396 kB     00:00    
+(10/80): libmpc-1.2.1-4.el9.aarch64.rpm         647 kB/s |  62 kB     00:00    
+(11/80): libstdc++-devel-11.5.0-17.el9_9.alma.1  16 MB/s | 2.2 MB     00:00    
+(12/80): libubsan-11.5.0-17.el9_9.alma.1.aarch6 1.9 MB/s | 171 kB     00:00    
+(13/80): gcc-11.5.0-17.el9_9.alma.1.aarch64.rpm  16 MB/s |  30 MB     00:01    
+(14/80): libxcrypt-devel-4.4.18-3.el9.aarch64.r 186 kB/s |  28 kB     00:00    
+(15/80): libzstd-devel-1.5.5-1.el9.aarch64.rpm  409 kB/s |  50 kB     00:00    
+(16/80): m4-1.4.19-1.el9.aarch64.rpm            2.1 MB/s | 291 kB     00:00    
+(17/80): perl-AutoLoader-5.74-484.el9_8.noarch. 150 kB/s |  20 kB     00:00    
+(18/80): openssl-devel-3.5.9-1.el9_9.aarch64.rp  15 MB/s | 3.5 MB     00:00    
+(19/80): perl-Carp-1.50-460.el9.noarch.rpm      254 kB/s |  29 kB     00:00    
+(20/80): perl-B-1.80-484.el9_8.aarch64.rpm      1.4 MB/s | 178 kB     00:00    
+(21/80): perl-Class-Struct-0.66-484.el9_8.noarc 316 kB/s |  21 kB     00:00    
+(22/80): perl-Data-Dumper-2.174-462.el9.aarch64 761 kB/s |  54 kB     00:00    
+(23/80): perl-Digest-1.19-4.el9.noarch.rpm      312 kB/s |  25 kB     00:00    
+(24/80): perl-Digest-MD5-2.58-4.el9.aarch64.rpm 303 kB/s |  36 kB     00:00    
+(25/80): perl-Encode-3.08-462.el9.aarch64.rpm    10 MB/s | 1.7 MB     00:00    
+(26/80): perl-Errno-1.30-484.el9_8.aarch64.rpm   79 kB/s |  13 kB     00:00    
+(27/80): perl-Exporter-5.74-461.el9.noarch.rpm  282 kB/s |  31 kB     00:00    
+(28/80): perl-Fcntl-1.13-484.el9_8.aarch64.rpm  223 kB/s |  19 kB     00:00    
+(29/80): perl-File-Basename-2.85-484.el9_8.noar 225 kB/s |  16 kB     00:00    
+(30/80): perl-File-Path-2.18-4.el9.noarch.rpm   381 kB/s |  35 kB     00:00    
+(31/80): perl-File-Temp-0.231.100-4.el9.noarch. 803 kB/s |  59 kB     00:00    
+(32/80): perl-File-stat-1.09-484.el9_8.noarch.r 219 kB/s |  16 kB     00:00    
+(33/80): perl-FileHandle-2.03-484.el9_8.noarch. 146 kB/s |  14 kB     00:00    
+(34/80): perl-Getopt-Std-1.12-484.el9_8.noarch. 171 kB/s |  14 kB     00:00    
+(35/80): perl-Getopt-Long-2.52-4.el9.noarch.rpm 618 kB/s |  59 kB     00:00    
+(36/80): perl-HTTP-Tiny-0.076-462.el9.noarch.rp 522 kB/s |  53 kB     00:00    
+(37/80): perl-IO-Socket-IP-0.41-5.el9.noarch.rp 443 kB/s |  42 kB     00:00    
+(38/80): perl-IO-1.43-484.el9_8.aarch64.rpm     792 kB/s |  85 kB     00:00    
+(39/80): perl-IPC-Open3-1.21-484.el9_8.noarch.r 276 kB/s |  21 kB     00:00    
+(40/80): perl-MIME-Base64-3.16-4.el9.aarch64.rp 316 kB/s |  30 kB     00:00    
+(41/80): perl-IO-Socket-SSL-2.073-2.el9.noarch. 1.6 MB/s | 214 kB     00:00    
+(42/80): perl-Mozilla-CA-20200520-6.el9.noarch. 131 kB/s |  12 kB     00:00    
+(43/80): perl-Net-SSLeay-1.94-4.el9.aarch64.rpm 2.4 MB/s | 390 kB     00:00    
+(44/80): perl-POSIX-1.94-484.el9_8.aarch64.rpm  605 kB/s |  95 kB     00:00    
+(45/80): perl-Pod-Escapes-1.07-460.el9.noarch.r 116 kB/s |  20 kB     00:00    
+(46/80): perl-PathTools-3.78-461.el9.aarch64.rp 309 kB/s |  85 kB     00:00    
+(47/80): perl-Pod-Perldoc-3.28.01-461.el9.noarc 433 kB/s |  83 kB     00:00    
+(48/80): perl-Pod-Simple-3.42-4.el9.noarch.rpm  1.9 MB/s | 215 kB     00:00    
+(49/80): perl-Pod-Usage-2.01-4.el9.noarch.rpm   363 kB/s |  40 kB     00:00    
+(50/80): perl-Scalar-List-Utils-1.56-462.el9.aa 640 kB/s |  68 kB     00:00    
+(51/80): perl-SelectSaver-1.02-484.el9_8.noarch 152 kB/s |  10 kB     00:00    
+(52/80): perl-Symbol-1.08-484.el9_8.noarch.rpm  131 kB/s |  13 kB     00:00    
+(53/80): perl-Storable-3.21-460.el9.aarch64.rpm 620 kB/s |  93 kB     00:00    
+(54/80): perl-Socket-2.031-4.el9.aarch64.rpm    307 kB/s |  54 kB     00:00    
+(55/80): perl-Term-ANSIColor-5.01-461.el9.noarc 557 kB/s |  48 kB     00:00    
+(56/80): perl-Text-ParseWords-3.30-460.el9.noar 157 kB/s |  16 kB     00:00    
+(57/80): perl-Term-Cap-1.17-460.el9.noarch.rpm  182 kB/s |  22 kB     00:00    
+(58/80): perl-Text-Tabs+Wrap-2013.0523-460.el9. 340 kB/s |  22 kB     00:00    
+(59/80): perl-Time-Local-1.300-7.el9.noarch.rpm 411 kB/s |  33 kB     00:00    
+(60/80): perl-URI-5.09-4.el9_9.noarch.rpm       893 kB/s | 107 kB     00:00    
+(61/80): perl-Unicode-Normalize-1.27-461.el9.aa 673 kB/s |  86 kB     00:00    
+(62/80): perl-base-2.27-484.el9_8.noarch.rpm    145 kB/s |  15 kB     00:00    
+(63/80): perl-constant-1.33-461.el9.noarch.rpm  244 kB/s |  23 kB     00:00    
+(64/80): perl-if-0.60.800-484.el9_8.noarch.rpm  130 kB/s |  13 kB     00:00    
+(65/80): perl-interpreter-5.32.1-484.el9_8.aarc 562 kB/s |  69 kB     00:00    
+(66/80): perl-libnet-3.13-4.el9.noarch.rpm      815 kB/s | 125 kB     00:00    
+(67/80): perl-mro-1.23-484.el9_8.aarch64.rpm    353 kB/s |  26 kB     00:00    
+(68/80): perl-libs-5.32.1-484.el9_8.aarch64.rpm 9.7 MB/s | 2.0 MB     00:00    
+(69/80): perl-overloading-0.02-484.el9_8.noarch 133 kB/s |  11 kB     00:00    
+(70/80): perl-overload-1.31-484.el9_8.noarch.rp 458 kB/s |  44 kB     00:00    
+(71/80): perl-parent-0.238-460.el9.noarch.rpm   131 kB/s |  14 kB     00:00    
+(72/80): perl-subs-1.03-484.el9_8.noarch.rpm    105 kB/s |  10 kB     00:00    
+(73/80): perl-podlators-4.14-460.el9.noarch.rpm 1.0 MB/s | 111 kB     00:00    
+(74/80): perl-vars-1.05-484.el9_8.noarch.rpm    158 kB/s |  12 kB     00:00    
+(75/80): libpkgconf-1.7.3-10.el9.aarch64.rpm    549 kB/s |  35 kB     00:00    
+(76/80): zlib-devel-1.2.11-40.el9.aarch64.rpm   507 kB/s |  44 kB     00:00    
+(77/80): pkgconf-1.7.3-10.el9.aarch64.rpm       627 kB/s |  39 kB     00:00    
+(78/80): pkgconf-m4-1.7.3-10.el9.noarch.rpm     249 kB/s |  14 kB     00:00    
+(79/80): make-4.3-8.el9.aarch64.rpm             5.4 MB/s | 526 kB     00:00    
+(80/80): pkgconf-pkg-config-1.7.3-10.el9.aarch6 164 kB/s | 9.9 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                            13 MB/s |  88 MB     00:06     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libmpc-1.2.1-4.el9.aarch64                            1/80 
+  Installing       : make-1:4.3-8.el9.aarch64                              2/80 
+  Installing       : m4-1.4.19-1.el9.aarch64                               3/80 
+  Installing       : bison-3.7.4-5.el9.aarch64                             4/80 
+  Installing       : flex-2.6.4-9.el9.aarch64                              5/80 
+  Installing       : cpp-11.5.0-17.el9_9.alma.1.aarch64                    6/80 
+  Installing       : perl-Digest-1.19-4.el9.noarch                         7/80 
+  Installing       : perl-Digest-MD5-2.58-4.el9.aarch64                    8/80 
+  Installing       : perl-B-1.80-484.el9_8.aarch64                         9/80 
+  Installing       : perl-FileHandle-2.03-484.el9_8.noarch                10/80 
+  Installing       : perl-Unicode-Normalize-1.27-461.el9.aarch64          11/80 
+  Installing       : perl-Data-Dumper-2.174-462.el9.aarch64               12/80 
+  Installing       : perl-libnet-3.13-4.el9.noarch                        13/80 
+  Installing       : perl-base-2.27-484.el9_8.noarch                      14/80 
+  Installing       : perl-URI-5.09-4.el9_9.noarch                         15/80 
+  Installing       : perl-AutoLoader-5.74-484.el9_8.noarch                16/80 
+  Installing       : perl-Mozilla-CA-20200520-6.el9.noarch                17/80 
+  Installing       : perl-if-0.60.800-484.el9_8.noarch                    18/80 
+  Installing       : perl-IO-Socket-IP-0.41-5.el9.noarch                  19/80 
+  Installing       : perl-Time-Local-2:1.300-7.el9.noarch                 20/80 
+  Installing       : perl-File-Path-2.18-4.el9.noarch                     21/80 
+  Installing       : perl-Pod-Escapes-1:1.07-460.el9.noarch               22/80 
+  Installing       : perl-Text-Tabs+Wrap-2013.0523-460.el9.noarch         23/80 
+  Installing       : perl-IO-Socket-SSL-2.073-2.el9.noarch                24/80 
+  Installing       : perl-Net-SSLeay-1.94-4.el9.aarch64                   25/80 
+  Installing       : perl-Class-Struct-0.66-484.el9_8.noarch              26/80 
+  Installing       : perl-POSIX-1.94-484.el9_8.aarch64                    27/80 
+  Installing       : perl-Term-ANSIColor-5.01-461.el9.noarch              28/80 
+  Installing       : perl-IPC-Open3-1.21-484.el9_8.noarch                 29/80 
+  Installing       : perl-subs-1.03-484.el9_8.noarch                      30/80 
+  Installing       : perl-File-Temp-1:0.231.100-4.el9.noarch              31/80 
+  Installing       : perl-Term-Cap-1.17-460.el9.noarch                    32/80 
+  Installing       : perl-Pod-Simple-1:3.42-4.el9.noarch                  33/80 
+  Installing       : perl-HTTP-Tiny-0.076-462.el9.noarch                  34/80 
+  Installing       : perl-Socket-4:2.031-4.el9.aarch64                    35/80 
+  Installing       : perl-SelectSaver-1.02-484.el9_8.noarch               36/80 
+  Installing       : perl-Symbol-1.08-484.el9_8.noarch                    37/80 
+  Installing       : perl-File-stat-1.09-484.el9_8.noarch                 38/80 
+  Installing       : perl-podlators-1:4.14-460.el9.noarch                 39/80 
+  Installing       : perl-Pod-Perldoc-3.28.01-461.el9.noarch              40/80 
+  Installing       : perl-Fcntl-1.13-484.el9_8.aarch64                    41/80 
+  Installing       : perl-Text-ParseWords-3.30-460.el9.noarch             42/80 
+  Installing       : perl-mro-1.23-484.el9_8.aarch64                      43/80 
+  Installing       : perl-IO-1.43-484.el9_8.aarch64                       44/80 
+  Installing       : perl-overloading-0.02-484.el9_8.noarch               45/80 
+  Installing       : perl-Pod-Usage-4:2.01-4.el9.noarch                   46/80 
+  Installing       : perl-Errno-1.30-484.el9_8.aarch64                    47/80 
+  Installing       : perl-File-Basename-2.85-484.el9_8.noarch             48/80 
+  Installing       : perl-Getopt-Std-1.12-484.el9_8.noarch                49/80 
+  Installing       : perl-MIME-Base64-3.16-4.el9.aarch64                  50/80 
+  Installing       : perl-Scalar-List-Utils-4:1.56-462.el9.aarch64        51/80 
+  Installing       : perl-constant-1.33-461.el9.noarch                    52/80 
+  Installing       : perl-Storable-1:3.21-460.el9.aarch64                 53/80 
+  Installing       : perl-overload-1.31-484.el9_8.noarch                  54/80 
+  Installing       : perl-parent-1:0.238-460.el9.noarch                   55/80 
+  Installing       : perl-vars-1.05-484.el9_8.noarch                      56/80 
+  Installing       : perl-Getopt-Long-1:2.52-4.el9.noarch                 57/80 
+  Installing       : perl-Carp-1.50-460.el9.noarch                        58/80 
+  Installing       : perl-Exporter-5.74-461.el9.noarch                    59/80 
+  Installing       : perl-PathTools-3.78-461.el9.aarch64                  60/80 
+  Installing       : perl-Encode-4:3.08-462.el9.aarch64                   61/80 
+  Installing       : perl-libs-4:5.32.1-484.el9_8.aarch64                 62/80 
+  Installing       : perl-interpreter-4:5.32.1-484.el9_8.aarch64          63/80 
+  Installing       : pkgconf-m4-1.7.3-10.el9.noarch                       64/80 
+  Installing       : libpkgconf-1.7.3-10.el9.aarch64                      65/80 
+  Installing       : pkgconf-1.7.3-10.el9.aarch64                         66/80 
+  Installing       : pkgconf-pkg-config-1.7.3-10.el9.aarch64              67/80 
+  Installing       : libzstd-devel-1.5.5-1.el9.aarch64                    68/80 
+  Installing       : openssl-devel-1:3.5.9-1.el9_9.aarch64                69/80 
+  Installing       : zlib-devel-1.2.11-40.el9.aarch64                     70/80 
+  Installing       : elfutils-libelf-devel-0.195-1.el9.alma.1.aarch64     71/80 
+  Installing       : libubsan-11.5.0-17.el9_9.alma.1.aarch64              72/80 
+  Installing       : libstdc++-devel-11.5.0-17.el9_9.alma.1.aarch64       73/80 
+  Installing       : libasan-11.5.0-17.el9_9.alma.1.aarch64               74/80 
+  Installing       : kernel-headers-5.14.0-741.26.1.el9_9.aarch64         75/80 
+  Installing       : libxcrypt-devel-4.4.18-3.el9.aarch64                 76/80 
+  Installing       : glibc-devel-2.34-290.el9_9.aarch64                   77/80 
+  Installing       : gcc-11.5.0-17.el9_9.alma.1.aarch64                   78/80 
+  Installing       : gcc-c++-11.5.0-17.el9_9.alma.1.aarch64               79/80 
+  Installing       : kernel-devel-5.14.0-741.22.1.el9_9.aarch64           80/80 
+  Running scriptlet: kernel-devel-5.14.0-741.22.1.el9_9.aarch64           80/80 
+  Verifying        : bison-3.7.4-5.el9.aarch64                             1/80 
+  Verifying        : cpp-11.5.0-17.el9_9.alma.1.aarch64                    2/80 
+  Verifying        : elfutils-libelf-devel-0.195-1.el9.alma.1.aarch64      3/80 
+  Verifying        : flex-2.6.4-9.el9.aarch64                              4/80 
+  Verifying        : gcc-11.5.0-17.el9_9.alma.1.aarch64                    5/80 
+  Verifying        : gcc-c++-11.5.0-17.el9_9.alma.1.aarch64                6/80 
+  Verifying        : glibc-devel-2.34-290.el9_9.aarch64                    7/80 
+  Verifying        : kernel-devel-5.14.0-741.22.1.el9_9.aarch64            8/80 
+  Verifying        : kernel-headers-5.14.0-741.26.1.el9_9.aarch64          9/80 
+  Verifying        : libasan-11.5.0-17.el9_9.alma.1.aarch64               10/80 
+  Verifying        : libmpc-1.2.1-4.el9.aarch64                           11/80 
+  Verifying        : libstdc++-devel-11.5.0-17.el9_9.alma.1.aarch64       12/80 
+  Verifying        : libubsan-11.5.0-17.el9_9.alma.1.aarch64              13/80 
+  Verifying        : libxcrypt-devel-4.4.18-3.el9.aarch64                 14/80 
+  Verifying        : libzstd-devel-1.5.5-1.el9.aarch64                    15/80 
+  Verifying        : m4-1.4.19-1.el9.aarch64                              16/80 
+  Verifying        : openssl-devel-1:3.5.9-1.el9_9.aarch64                17/80 
+  Verifying        : perl-AutoLoader-5.74-484.el9_8.noarch                18/80 
+  Verifying        : perl-B-1.80-484.el9_8.aarch64                        19/80 
+  Verifying        : perl-Carp-1.50-460.el9.noarch                        20/80 
+  Verifying        : perl-Class-Struct-0.66-484.el9_8.noarch              21/80 
+  Verifying        : perl-Data-Dumper-2.174-462.el9.aarch64               22/80 
+  Verifying        : perl-Digest-1.19-4.el9.noarch                        23/80 
+  Verifying        : perl-Digest-MD5-2.58-4.el9.aarch64                   24/80 
+  Verifying        : perl-Encode-4:3.08-462.el9.aarch64                   25/80 
+  Verifying        : perl-Errno-1.30-484.el9_8.aarch64                    26/80 
+  Verifying        : perl-Exporter-5.74-461.el9.noarch                    27/80 
+  Verifying        : perl-Fcntl-1.13-484.el9_8.aarch64                    28/80 
+  Verifying        : perl-File-Basename-2.85-484.el9_8.noarch             29/80 
+  Verifying        : perl-File-Path-2.18-4.el9.noarch                     30/80 
+  Verifying        : perl-File-Temp-1:0.231.100-4.el9.noarch              31/80 
+  Verifying        : perl-File-stat-1.09-484.el9_8.noarch                 32/80 
+  Verifying        : perl-FileHandle-2.03-484.el9_8.noarch                33/80 
+  Verifying        : perl-Getopt-Long-1:2.52-4.el9.noarch                 34/80 
+  Verifying        : perl-Getopt-Std-1.12-484.el9_8.noarch                35/80 
+  Verifying        : perl-HTTP-Tiny-0.076-462.el9.noarch                  36/80 
+  Verifying        : perl-IO-1.43-484.el9_8.aarch64                       37/80 
+  Verifying        : perl-IO-Socket-IP-0.41-5.el9.noarch                  38/80 
+  Verifying        : perl-IO-Socket-SSL-2.073-2.el9.noarch                39/80 
+  Verifying        : perl-IPC-Open3-1.21-484.el9_8.noarch                 40/80 
+  Verifying        : perl-MIME-Base64-3.16-4.el9.aarch64                  41/80 
+  Verifying        : perl-Mozilla-CA-20200520-6.el9.noarch                42/80 
+  Verifying        : perl-Net-SSLeay-1.94-4.el9.aarch64                   43/80 
+  Verifying        : perl-POSIX-1.94-484.el9_8.aarch64                    44/80 
+  Verifying        : perl-PathTools-3.78-461.el9.aarch64                  45/80 
+  Verifying        : perl-Pod-Escapes-1:1.07-460.el9.noarch               46/80 
+  Verifying        : perl-Pod-Perldoc-3.28.01-461.el9.noarch              47/80 
+  Verifying        : perl-Pod-Simple-1:3.42-4.el9.noarch                  48/80 
+  Verifying        : perl-Pod-Usage-4:2.01-4.el9.noarch                   49/80 
+  Verifying        : perl-Scalar-List-Utils-4:1.56-462.el9.aarch64        50/80 
+  Verifying        : perl-SelectSaver-1.02-484.el9_8.noarch               51/80 
+  Verifying        : perl-Socket-4:2.031-4.el9.aarch64                    52/80 
+  Verifying        : perl-Storable-1:3.21-460.el9.aarch64                 53/80 
+  Verifying        : perl-Symbol-1.08-484.el9_8.noarch                    54/80 
+  Verifying        : perl-Term-ANSIColor-5.01-461.el9.noarch              55/80 
+  Verifying        : perl-Term-Cap-1.17-460.el9.noarch                    56/80 
+  Verifying        : perl-Text-ParseWords-3.30-460.el9.noarch             57/80 
+  Verifying        : perl-Text-Tabs+Wrap-2013.0523-460.el9.noarch         58/80 
+  Verifying        : perl-Time-Local-2:1.300-7.el9.noarch                 59/80 
+  Verifying        : perl-URI-5.09-4.el9_9.noarch                         60/80 
+  Verifying        : perl-Unicode-Normalize-1.27-461.el9.aarch64          61/80 
+  Verifying        : perl-base-2.27-484.el9_8.noarch                      62/80 
+  Verifying        : perl-constant-1.33-461.el9.noarch                    63/80 
+  Verifying        : perl-if-0.60.800-484.el9_8.noarch                    64/80 
+  Verifying        : perl-interpreter-4:5.32.1-484.el9_8.aarch64          65/80 
+  Verifying        : perl-libnet-3.13-4.el9.noarch                        66/80 
+  Verifying        : perl-libs-4:5.32.1-484.el9_8.aarch64                 67/80 
+  Verifying        : perl-mro-1.23-484.el9_8.aarch64                      68/80 
+  Verifying        : perl-overload-1.31-484.el9_8.noarch                  69/80 
+  Verifying        : perl-overloading-0.02-484.el9_8.noarch               70/80 
+  Verifying        : perl-parent-1:0.238-460.el9.noarch                   71/80 
+  Verifying        : perl-podlators-1:4.14-460.el9.noarch                 72/80 
+  Verifying        : perl-subs-1.03-484.el9_8.noarch                      73/80 
+  Verifying        : perl-vars-1.05-484.el9_8.noarch                      74/80 
+  Verifying        : zlib-devel-1.2.11-40.el9.aarch64                     75/80 
+  Verifying        : libpkgconf-1.7.3-10.el9.aarch64                      76/80 
+  Verifying        : make-1:4.3-8.el9.aarch64                             77/80 
+  Verifying        : pkgconf-1.7.3-10.el9.aarch64                         78/80 
+  Verifying        : pkgconf-m4-1.7.3-10.el9.noarch                       79/80 
+  Verifying        : pkgconf-pkg-config-1.7.3-10.el9.aarch64              80/80 
+
+Installed:
+  bison-3.7.4-5.el9.aarch64                                                     
+  cpp-11.5.0-17.el9_9.alma.1.aarch64                                            
+  elfutils-libelf-devel-0.195-1.el9.alma.1.aarch64                              
+  flex-2.6.4-9.el9.aarch64                                                      
+  gcc-11.5.0-17.el9_9.alma.1.aarch64                                            
+  gcc-c++-11.5.0-17.el9_9.alma.1.aarch64                                        
+  glibc-devel-2.34-290.el9_9.aarch64                                            
+  kernel-devel-5.14.0-741.22.1.el9_9.aarch64                                    
+  kernel-headers-5.14.0-741.26.1.el9_9.aarch64                                  
+  libasan-11.5.0-17.el9_9.alma.1.aarch64                                        
+  libmpc-1.2.1-4.el9.aarch64                                                    
+  libpkgconf-1.7.3-10.el9.aarch64                                               
+  libstdc++-devel-11.5.0-17.el9_9.alma.1.aarch64                                
+  libubsan-11.5.0-17.el9_9.alma.1.aarch64                                       
+  libxcrypt-devel-4.4.18-3.el9.aarch64                                          
+  libzstd-devel-1.5.5-1.el9.aarch64                                             
+  m4-1.4.19-1.el9.aarch64                                                       
+  make-1:4.3-8.el9.aarch64                                                      
+  openssl-devel-1:3.5.9-1.el9_9.aarch64                                         
+  perl-AutoLoader-5.74-484.el9_8.noarch                                         
+  perl-B-1.80-484.el9_8.aarch64                                                 
+  perl-Carp-1.50-460.el9.noarch                                                 
+  perl-Class-Struct-0.66-484.el9_8.noarch                                       
+  perl-Data-Dumper-2.174-462.el9.aarch64                                        
+  perl-Digest-1.19-4.el9.noarch                                                 
+  perl-Digest-MD5-2.58-4.el9.aarch64                                            
+  perl-Encode-4:3.08-462.el9.aarch64                                            
+  perl-Errno-1.30-484.el9_8.aarch64                                             
+  perl-Exporter-5.74-461.el9.noarch                                             
+  perl-Fcntl-1.13-484.el9_8.aarch64                                             
+  perl-File-Basename-2.85-484.el9_8.noarch                                      
+  perl-File-Path-2.18-4.el9.noarch                                              
+  perl-File-Temp-1:0.231.100-4.el9.noarch                                       
+  perl-File-stat-1.09-484.el9_8.noarch                                          
+  perl-FileHandle-2.03-484.el9_8.noarch                                         
+  perl-Getopt-Long-1:2.52-4.el9.noarch                                          
+  perl-Getopt-Std-1.12-484.el9_8.noarch                                         
+  perl-HTTP-Tiny-0.076-462.el9.noarch                                           
+  perl-IO-1.43-484.el9_8.aarch64                                                
+  perl-IO-Socket-IP-0.41-5.el9.noarch                                           
+  perl-IO-Socket-SSL-2.073-2.el9.noarch                                         
+  perl-IPC-Open3-1.21-484.el9_8.noarch                                          
+  perl-MIME-Base64-3.16-4.el9.aarch64                                           
+  perl-Mozilla-CA-20200520-6.el9.noarch                                         
+  perl-Net-SSLeay-1.94-4.el9.aarch64                                            
+  perl-POSIX-1.94-484.el9_8.aarch64                                             
+  perl-PathTools-3.78-461.el9.aarch64                                           
+  perl-Pod-Escapes-1:1.07-460.el9.noarch                                        
+  perl-Pod-Perldoc-3.28.01-461.el9.noarch                                       
+  perl-Pod-Simple-1:3.42-4.el9.noarch                                           
+  perl-Pod-Usage-4:2.01-4.el9.noarch                                            
+  perl-Scalar-List-Utils-4:1.56-462.el9.aarch64                                 
+  perl-SelectSaver-1.02-484.el9_8.noarch                                        
+  perl-Socket-4:2.031-4.el9.aarch64                                             
+  perl-Storable-1:3.21-460.el9.aarch64                                          
+  perl-Symbol-1.08-484.el9_8.noarch                                             
+  perl-Term-ANSIColor-5.01-461.el9.noarch                                       
+  perl-Term-Cap-1.17-460.el9.noarch                                             
+  perl-Text-ParseWords-3.30-460.el9.noarch                                      
+  perl-Text-Tabs+Wrap-2013.0523-460.el9.noarch                                  
+  perl-Time-Local-2:1.300-7.el9.noarch                                          
+  perl-URI-5.09-4.el9_9.noarch                                                  
+  perl-Unicode-Normalize-1.27-461.el9.aarch64                                   
+  perl-base-2.27-484.el9_8.noarch                                               
+  perl-constant-1.33-461.el9.noarch                                             
+  perl-if-0.60.800-484.el9_8.noarch                                             
+  perl-interpreter-4:5.32.1-484.el9_8.aarch64                                   
+  perl-libnet-3.13-4.el9.noarch                                                 
+  perl-libs-4:5.32.1-484.el9_8.aarch64                                          
+  perl-mro-1.23-484.el9_8.aarch64                                               
+  perl-overload-1.31-484.el9_8.noarch                                           
+  perl-overloading-0.02-484.el9_8.noarch                                        
+  perl-parent-1:0.238-460.el9.noarch                                            
+  perl-podlators-1:4.14-460.el9.noarch                                          
+  perl-subs-1.03-484.el9_8.noarch                                               
+  perl-vars-1.05-484.el9_8.noarch                                               
+  pkgconf-1.7.3-10.el9.aarch64                                                  
+  pkgconf-m4-1.7.3-10.el9.noarch                                                
+  pkgconf-pkg-config-1.7.3-10.el9.aarch64                                       
+  zlib-devel-1.2.11-40.el9.aarch64                                              
+
+Complete!

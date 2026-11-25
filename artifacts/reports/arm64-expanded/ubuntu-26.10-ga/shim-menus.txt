@@ -1,0 +1,5 @@
+e3c467d3-a11e-4161-aa18-e14deee0ae8b confirmed shim menu management
+e3c467d3-a11e-4161-aa18-e14deee0ae8b confirmed shim menu view
+e3c467d3-a11e-4161-aa18-e14deee0ae8b confirmed shim menu confirm
+e3c467d3-a11e-4161-aa18-e14deee0ae8b confirmed shim menu password
+e3c467d3-a11e-4161-aa18-e14deee0ae8b confirmed shim menu reboot

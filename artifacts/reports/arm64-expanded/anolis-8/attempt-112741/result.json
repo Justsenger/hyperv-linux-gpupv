@@ -1,0 +1,18 @@
+{
+  "target": "anolis-8",
+  "vm": "gpupv-test-2e0a36a26f79480a9a073261a0a57c79",
+  "vmId": "aae71162-01ec-48e5-a904-a2e60141dc04",
+  "started": "2026-11-25T11:16:27.2855342+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": null,
+  "route": null,
+  "kernel": null,
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "Guest identity or new boot ID unavailable after 200 seconds"
+  ],
+  "diagnostics": [],
+  "stage": "firmware-packages",
+  "finished": "2026-11-25T11:26:40.3633664+08:00"
+}

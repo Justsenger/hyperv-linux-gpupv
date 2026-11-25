@@ -1,0 +1,9 @@
+test_adapter_identity (__main__.Contract.test_adapter_identity) ... ok
+test_architectures (__main__.Contract.test_architectures) ... ok
+test_native_matrix (__main__.Contract.test_native_matrix) ... ok
+test_signed_module (__main__.Contract.test_signed_module) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.393s
+
+OK

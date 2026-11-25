@@ -1,0 +1,164 @@
+Linux gpupv-test-86b6255531b0448590dfe38ce4eff40a 5.15.0-203-generic #213-Ubuntu SMP Fri Oct 23 13:20:09 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+[    2.280812] evm: security.apparmor
+[    2.282610] evm: security.ima
+[    2.288439] evm: security.capability
+[    2.290764] evm: HMAC attrs: 0x1
+[    2.293080] clk: Disabling unused clocks
+[    2.297132] Freeing unused kernel memory: 9664K
+[    2.306605] Checked W+X mappings: passed, no W+X pages found
+[    2.315010] Run /init as init process
+[    2.322592]   with arguments:
+[    2.322596]     /init
+[    2.322597]   with environment:
+[    2.322598]     HOME=/
+[    2.322598]     TERM=linux
+[    2.616978] hv_vmbus: hv_mmio=[mem 0xe0000000-0xfed3ffff],[mem 0x800000000-0xfffffffff] fb=[mem 0xe0000000-0xe7ffffff]
+[    2.713095] hv_vmbus: Vmbus version:5.3
+[    2.715146] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    2.717317] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    2.781760] hv_utils: Registering HyperV Utility Driver
+[    2.783870] hv_vmbus: registering driver hv_utils
+[    2.794273] hv_vmbus: registering driver hv_storvsc
+[    2.803325] scsi host0: storvsc_host_t
+[    2.806345] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    2.812072] hid: raw HID events driver (C) Jiri Kosina
+[    2.818038] scsi 0:0:0:1: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    2.825492] hv_vmbus: registering driver hyperv_keyboard
+[    2.827866] input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio0/input/input0
+[    2.833431] scsi 0:0:0:2: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    2.859549] hv_utils: Heartbeat IC version 3.0
+[    2.862423] hv_utils: Shutdown IC version 3.2
+[    2.865176] scsi 0:0:0:0: Attached scsi generic sg0 type 0
+[    2.868348] hv_utils: TimeSync IC version 4.0
+[    2.868353] hv_utils: VSS IC version 5.0
+[    2.874733] sd 0:0:0:0: [sda] 67108864 512-byte logical blocks: (34.4 GB/32.0 GiB)
+[    2.885746] hv_vmbus: registering driver hv_netvsc
+[    2.889569] sd 0:0:0:0: [sda] Write Protect is off
+[    2.892511] sd 0:0:0:0: [sda] Mode Sense: 0f 00 00 00
+[    2.893507] sr 0:0:0:1: [sr0] scsi-1 drive
+[    2.915093] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    2.919410] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    2.924924] sr 0:0:0:1: Attached scsi CD-ROM sr0
+[    2.925017] sr 0:0:0:1: Attached scsi generic sg1 type 5
+[    2.928180] sr 0:0:0:2: [sr1] scsi-1 drive
+[    2.935759]  sda: sda1 sda15
+[    2.947264] sr 0:0:0:2: Attached scsi CD-ROM sr1
+[    2.947351] sr 0:0:0:2: Attached scsi generic sg2 type 5
+[    2.953671] sd 0:0:0:0: [sda] Attached SCSI disk
+[    2.967791] hv_vmbus: registering driver hid_hyperv
+[    3.024451] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input1
+[    3.050128] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    3.105186] hv_vmbus: registering driver hyperv_drm
+[    3.112856] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] Synthvid Version major 3, minor 5
+[    3.146585] [drm] Initialized hyperv_drm 1.0.0 2020 for 5620e0c7-8062-4dce-aeb7-520c7ef76171 on minor 0
+[    3.171699] Console: switching to colour frame buffer device 128x48
+[    3.179463] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] fb0: hyperv_drmdrmfb frame buffer device
+[    3.488699] raid6: neonx8   gen() 15933 MB/s
+[    3.556697] raid6: neonx8   xor() 19946 MB/s
+[    3.624697] raid6: neonx4   gen() 23597 MB/s
+[    3.700698] raid6: neonx4   xor() 17787 MB/s
+[    3.772722] raid6: neonx2   gen() 13738 MB/s
+[    3.844697] raid6: neonx2   xor() 15300 MB/s
+[    3.916697] raid6: neonx1   gen() 14461 MB/s
+[    4.004697] raid6: neonx1   xor() 12557 MB/s
+[    4.072699] raid6: int64x8  gen() 10307 MB/s
+[    4.140698] raid6: int64x8  xor()  5362 MB/s
+[    4.208698] raid6: int64x4  gen()  9981 MB/s
+[    4.276696] raid6: int64x4  xor()  5436 MB/s
+[    4.344697] raid6: int64x2  gen()  8708 MB/s
+[    4.412698] raid6: int64x2  xor()  4539 MB/s
+[    4.480696] raid6: int64x1  gen()  6822 MB/s
+[    4.549091] raid6: int64x1  xor()  3398 MB/s
+[    4.558833] raid6: using algorithm neonx4 gen() 23597 MB/s
+[    4.562458] raid6: .... xor() 17787 MB/s, rmw enabled
+[    4.567226] raid6: using neon recovery algorithm
+[    4.574234] xor: measuring software checksum speed
+[    4.577346]    8regs           : 25606 MB/sec
+[    4.579690]    32regs          : 26008 MB/sec
+[    4.582565]    arm64_neon      : 36496 MB/sec
+[    4.584978] xor: using function: arm64_neon (36496 MB/sec)
+[    4.589523] async_tx: api initialized (async)
+[    4.653326] Btrfs loaded, crc32c=crc32c-generic, zoned=yes, fsverity=yes
+[    4.734497] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+[    4.898935] systemd[1]: Inserted module 'autofs4'
+[    4.920050] systemd[1]: systemd 249.11-0ubuntu3.23 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    4.941829] systemd[1]: Detected virtualization microsoft.
+[    4.947062] systemd[1]: Detected architecture arm64.
+[    4.955094] systemd[1]: Hostname set to <gpupv-test-86b6255531b0448590dfe38ce4eff40a>.
+[    5.124616] systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    5.150831] systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+[    5.204396] systemd[1]: Queued start job for default target Graphical Interface.
+[    5.211309] systemd[1]: Created slice Slice /system/modprobe.
+[    5.219497] systemd[1]: Created slice Slice /system/serial-getty.
+[    5.235080] systemd[1]: Created slice Slice /system/systemd-fsck.
+[    5.244378] systemd[1]: Created slice User and Session Slice.
+[    5.252333] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    5.263290] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    5.275143] systemd[1]: Reached target Slice Units.
+[    5.283117] systemd[1]: Reached target Mounting snaps.
+[    5.291296] systemd[1]: Reached target Swaps.
+[    5.297883] systemd[1]: Reached target Local Verity Protected Volumes.
+[    5.307416] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    5.317121] systemd[1]: Listening on LVM2 poll daemon socket.
+[    5.325293] systemd[1]: Listening on multipathd control socket.
+[    5.334137] systemd[1]: Listening on Syslog Socket.
+[    5.341142] systemd[1]: Listening on fsck to fsckd communication Socket.
+[    5.349696] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    5.358245] systemd[1]: Listening on Journal Audit Socket.
+[    5.365380] systemd[1]: Listening on Journal Socket (/dev/log).
+[    5.374021] systemd[1]: Listening on Journal Socket.
+[    5.383678] systemd[1]: Listening on Network Service Netlink Socket.
+[    5.393680] systemd[1]: Listening on udev Control Socket.
+[    5.407361] systemd[1]: Listening on udev Kernel Socket.
+[    5.431502] systemd[1]: Mounting Huge Pages File System...
+[    5.447906] systemd[1]: Mounting POSIX Message Queue File System...
+[    5.467274] systemd[1]: Mounting Kernel Debug File System...
+[    5.484463] systemd[1]: Mounting Kernel Trace File System...
+[    5.496113] systemd[1]: Starting Journal Service...
+[    5.517584] systemd[1]: Starting Set the console keyboard layout...
+[    5.542458] systemd[1]: Starting Create List of Static Device Nodes...
+[    5.577522] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    5.625000] systemd[1]: Condition check resulted in LXD - agent being skipped.
+[    5.645156] systemd[1]: Starting Load Kernel Module configfs...
+[    5.661732] systemd[1]: Starting Load Kernel Module drm...
+[    5.673469] systemd[1]: Starting Load Kernel Module efi_pstore...
+[    5.688328] systemd[1]: Starting Load Kernel Module fuse...
+[    5.696193] pstore: Using crash dump compression: deflate
+[    5.700305] pstore: Registered efi as persistent store backend
+[    5.708751] systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+[    5.714786] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[    5.722346] systemd[1]: Starting Load Kernel Modules...
+[    5.733983] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    5.746961] systemd[1]: Starting Coldplug All udev Devices...
+[    5.752994] EXT4-fs (sda1): re-mounted. Opts: discard,errors=remount-ro. Quota mode: none.
+[    5.763879] systemd[1]: Started Journal Service.
+[    5.898533] systemd-journald[391]: Received client request to flush runtime journal.
+[    5.918228] alua: device handler registered
+[    5.946274] emc: device handler registered
+[    5.951255] rdac: device handler registered
+[    6.048245] loop0: detected capacity change from 0 to 141400
+[    6.055095] loop1: detected capacity change from 0 to 212648
+[    6.066482] loop2: detected capacity change from 0 to 57152
+[    6.675321] hv_vmbus: registering driver hyperv_fb
+[    6.679071] hv_vmbus: registering driver hv_balloon
+[    6.679696] hv_balloon: Using Dynamic Memory protocol version 2.0
+[    6.679699] hv_balloon: Memory hot add disabled on ARM64
+[    7.444555] audit: type=1400 audit(1795576890.384:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=545 comm="apparmor_parser"
+[    7.473888] audit: type=1400 audit(1795576890.412:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=548 comm="apparmor_parser"
+[    7.473898] audit: type=1400 audit(1795576890.412:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=548 comm="apparmor_parser"
+[    7.542371] audit: type=1400 audit(1795576890.480:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=549 comm="apparmor_parser"
+[    7.542381] audit: type=1400 audit(1795576890.480:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=549 comm="apparmor_parser"
+[    7.542384] audit: type=1400 audit(1795576890.480:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=549 comm="apparmor_parser"
+[    7.542385] audit: type=1400 audit(1795576890.480:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=549 comm="apparmor_parser"
+[    7.553888] audit: type=1400 audit(1795576890.492:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=552 comm="apparmor_parser"
+[    7.635834] audit: type=1400 audit(1795576890.576:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache" pid=554 comm="apparmor_parser"
+[    7.635840] audit: type=1400 audit(1795576890.576:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods" pid=554 comm="apparmor_parser"
+[    8.957972] ISO 9660 Extensions: Microsoft Joliet Level 3
+[    8.958147] ISOFS: changing to secondary root
+[    9.194215] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   12.771401] loop3: detected capacity change from 0 to 8
+[   13.714490] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.
+[   15.663161] UDF-fs: INFO Mounting volume 'GPUPV', timestamp 2026/11/25 02:05 (1000)
+ls: cannot access '/dev/dxg': No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        31G  2.6G   29G   9% /

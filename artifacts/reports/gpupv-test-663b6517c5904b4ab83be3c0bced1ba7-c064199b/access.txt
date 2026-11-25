@@ -1,0 +1,3 @@
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+crw-rw---- 1 root video 10, 261 Nov 25 00:57 /dev/dxg
+boot_id=e404f4b5-86ab-4aa3-ab7e-014cd7bc734c uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3

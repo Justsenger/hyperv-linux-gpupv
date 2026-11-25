@@ -1,0 +1,391 @@
+Last metadata expiration check: 0:00:10 ago on Wed Nov 25 02:40:02 2026.
+Dependencies resolved.
+===========================================================================================
+ Package                  Arch     Version                                 Repo        Size
+===========================================================================================
+Installing:
+ elfutils-libelf-devel    aarch64  0.190-2.el8                             baseos      61 k
+ gcc                      aarch64  8.5.0-31.el8_10                         appstream   19 M
+ gcc-c++                  aarch64  8.5.0-31.el8_10                         appstream   10 M
+ kernel-devel             aarch64  4.18.0-553.el8_10                       baseos      23 M
+ make                     aarch64  1:4.2.1-11.el8                          baseos     489 k
+Upgrading:
+ libgcc                   aarch64  8.5.0-31.el8_10                         baseos      75 k
+ libgomp                  aarch64  8.5.0-31.el8_10                         baseos     200 k
+ libstdc++                aarch64  8.5.0-31.el8_10                         baseos     444 k
+Installing dependencies:
+ binutils                 aarch64  2.30-128.el8_10                         baseos     6.0 M
+ cpp                      aarch64  8.5.0-31.el8_10                         appstream  8.6 M
+ glibc-devel              aarch64  2.28-251.el8_10.2                       baseos      85 k
+ glibc-headers            aarch64  2.28-251.el8_10.2                       baseos     482 k
+ isl                      aarch64  0.16.1-6.el8                            appstream  772 k
+ kernel-headers           aarch64  4.18.0-553.187.1.el8_10                 baseos      12 M
+ libasan                  aarch64  8.5.0-31.el8_10                         baseos     387 k
+ libatomic                aarch64  8.5.0-31.el8_10                         baseos      26 k
+ libmpc                   aarch64  1.1.0-9.1.el8                           appstream   59 k
+ libpkgconf               aarch64  1.4.2-1.el8                             baseos      33 k
+ libstdc++-devel          aarch64  8.5.0-31.el8_10                         appstream  2.1 M
+ libubsan                 aarch64  8.5.0-31.el8_10                         baseos     145 k
+ libxcrypt-devel          aarch64  4.1.1-6.el8                             baseos      24 k
+ libzstd-devel            aarch64  1.4.4-1.el8                             baseos      43 k
+ perl-Carp                noarch   1.42-396.el8                            baseos      29 k
+ perl-Data-Dumper         aarch64  2.167-399.el8                           baseos      56 k
+ perl-Digest              noarch   1.17-395.el8                            appstream   26 k
+ perl-Digest-MD5          aarch64  2.55-396.el8                            appstream   36 k
+ perl-Encode              aarch64  4:2.97-3.el8                            baseos     1.5 M
+ perl-Errno               aarch64  1.28-423.el8_10.1                       baseos      76 k
+ perl-Exporter            noarch   5.72-396.el8                            baseos      33 k
+ perl-File-Path           noarch   2.15-2.el8                              baseos      37 k
+ perl-File-Temp           noarch   0.230.600-1.el8                         baseos      62 k
+ perl-Getopt-Long         noarch   1:2.50-4.el8                            baseos      62 k
+ perl-HTTP-Tiny           noarch   0.074-3.el8                             baseos      58 k
+ perl-IO                  aarch64  1.38-423.el8_10.1                       baseos     141 k
+ perl-IO-Socket-IP        noarch   0.39-5.el8                              appstream   46 k
+ perl-IO-Socket-SSL       noarch   2.066-4.module+el8.9.0+1517+e71a7a62    appstream  297 k
+ perl-MIME-Base64         aarch64  3.15-396.el8                            baseos      30 k
+ perl-Mozilla-CA          noarch   20160104-7.module+el8.9.0+1521+0101edce appstream   14 k
+ perl-Net-SSLeay          aarch64  1.88-2.module+el8.9.0+1517+e71a7a62     appstream  372 k
+ perl-PathTools           aarch64  3.74-1.el8                              baseos      89 k
+ perl-Pod-Escapes         noarch   1:1.07-395.el8                          baseos      19 k
+ perl-Pod-Perldoc         noarch   3.28-396.el8                            baseos      85 k
+ perl-Pod-Simple          noarch   1:3.35-395.el8                          baseos     212 k
+ perl-Pod-Usage           noarch   4:1.69-395.el8                          baseos      33 k
+ perl-Scalar-List-Utils   aarch64  3:1.49-2.el8                            baseos      65 k
+ perl-Socket              aarch64  4:2.027-3.el8                           baseos      58 k
+ perl-Storable            aarch64  1:3.11-3.el8                            baseos      94 k
+ perl-Term-ANSIColor      noarch   4.06-396.el8                            baseos      45 k
+ perl-Term-Cap            noarch   1.17-395.el8                            baseos      22 k
+ perl-Text-ParseWords     noarch   3.30-395.el8                            baseos      17 k
+ perl-Text-Tabs+Wrap      noarch   2013.0523-395.el8                       baseos      23 k
+ perl-Time-Local          noarch   1:1.280-1.el8                           baseos      32 k
+ perl-URI                 noarch   1.73-4.el8_10                           baseos     116 k
+ perl-Unicode-Normalize   aarch64  1.25-396.el8                            baseos      77 k
+ perl-constant            noarch   1.33-396.el8                            baseos      24 k
+ perl-interpreter         aarch64  4:5.26.3-423.el8_10.1                   baseos     6.3 M
+ perl-libnet              noarch   3.11-3.el8                              appstream  120 k
+ perl-libs                aarch64  4:5.26.3-423.el8_10.1                   baseos     1.5 M
+ perl-macros              aarch64  4:5.26.3-423.el8_10.1                   baseos      72 k
+ perl-parent              noarch   1:0.237-1.el8                           baseos      19 k
+ perl-podlators           noarch   4.11-1.el8                              baseos     117 k
+ perl-threads             aarch64  1:2.21-2.el8                            baseos      59 k
+ perl-threads-shared      aarch64  1.58-2.el8                              baseos      46 k
+ pkgconf                  aarch64  1.4.2-1.el8                             baseos      36 k
+ pkgconf-m4               noarch   1.4.2-1.el8                             baseos      16 k
+ pkgconf-pkg-config       aarch64  1.4.2-1.el8                             baseos      14 k
+ zlib-devel               aarch64  1.2.11-26.el8                           baseos      58 k
+Enabling module streams:
+ perl                              5.26                                                    
+ perl-IO-Socket-SSL                2.066                                                   
+ perl-libwww-perl                  6.34                                                    
+
+Transaction Summary
+===========================================================================================
+Install  64 Packages
+Upgrade   3 Packages
+
+Total download size: 96 M
+Downloading Packages:
+(1/67): cpp-8.5.0-31.el8_10.aarch64.rpm         7.8 MB/s | 8.6 MB     00:01    
+(2/67): isl-0.16.1-6.el8.aarch64.rpm            945 kB/s | 772 kB     00:00    
+(3/67): libmpc-1.1.0-9.1.el8.aarch64.rpm        456 kB/s |  59 kB     00:00    
+(4/67): libstdc++-devel-8.5.0-31.el8_10.aarch64 3.7 MB/s | 2.1 MB     00:00    
+(5/67): perl-Digest-1.17-395.el8.noarch.rpm     564 kB/s |  26 kB     00:00    
+(6/67): perl-Digest-MD5-2.55-396.el8.aarch64.rp 357 kB/s |  36 kB     00:00    
+(7/67): perl-IO-Socket-IP-0.39-5.el8.noarch.rpm 500 kB/s |  46 kB     00:00    
+(8/67): perl-IO-Socket-SSL-2.066-4.module+el8.9 2.3 MB/s | 297 kB     00:00    
+(9/67): perl-Mozilla-CA-20160104-7.module+el8.9 264 kB/s |  14 kB     00:00    
+(10/67): perl-Net-SSLeay-1.88-2.module+el8.9.0+ 1.6 MB/s | 372 kB     00:00    
+(11/67): perl-libnet-3.11-3.el8.noarch.rpm      1.9 MB/s | 120 kB     00:00    
+(12/67): gcc-c++-8.5.0-31.el8_10.aarch64.rpm    3.0 MB/s |  10 MB     00:03    
+(13/67): elfutils-libelf-devel-0.190-2.el8.aarc 295 kB/s |  61 kB     00:00    
+(14/67): glibc-devel-2.28-251.el8_10.2.aarch64. 735 kB/s |  85 kB     00:00    
+(15/67): glibc-headers-2.28-251.el8_10.2.aarch6 1.6 MB/s | 482 kB     00:00    
+(16/67): binutils-2.30-128.el8_10.aarch64.rpm   6.0 MB/s | 6.0 MB     00:01    
+(17/67): gcc-8.5.0-31.el8_10.aarch64.rpm        4.3 MB/s |  19 MB     00:04    
+(18/67): libasan-8.5.0-31.el8_10.aarch64.rpm    2.1 MB/s | 387 kB     00:00    
+(19/67): libatomic-8.5.0-31.el8_10.aarch64.rpm  492 kB/s |  26 kB     00:00    
+(20/67): libpkgconf-1.4.2-1.el8.aarch64.rpm     434 kB/s |  33 kB     00:00    
+(21/67): libubsan-8.5.0-31.el8_10.aarch64.rpm   1.0 MB/s | 145 kB     00:00    
+(22/67): libxcrypt-devel-4.1.1-6.el8.aarch64.rp 275 kB/s |  24 kB     00:00    
+(23/67): libzstd-devel-1.4.4-1.el8.aarch64.rpm  412 kB/s |  43 kB     00:00    
+(24/67): make-4.2.1-11.el8.aarch64.rpm          1.7 MB/s | 489 kB     00:00    
+(25/67): perl-Carp-1.42-396.el8.noarch.rpm      516 kB/s |  29 kB     00:00    
+(26/67): perl-Data-Dumper-2.167-399.el8.aarch64 503 kB/s |  56 kB     00:00    
+(27/67): perl-Encode-2.97-3.el8.aarch64.rpm     2.8 MB/s | 1.5 MB     00:00    
+(28/67): perl-Errno-1.28-423.el8_10.1.aarch64.r 969 kB/s |  76 kB     00:00    
+(29/67): perl-Exporter-5.72-396.el8.noarch.rpm  376 kB/s |  33 kB     00:00    
+(30/67): perl-File-Path-2.15-2.el8.noarch.rpm   875 kB/s |  37 kB     00:00    
+(31/67): perl-File-Temp-0.230.600-1.el8.noarch. 1.1 MB/s |  62 kB     00:00    
+(32/67): kernel-headers-4.18.0-553.187.1.el8_10 5.9 MB/s |  12 MB     00:02    
+(33/67): perl-Getopt-Long-2.50-4.el8.noarch.rpm 667 kB/s |  62 kB     00:00    
+(34/67): perl-HTTP-Tiny-0.074-3.el8.noarch.rpm  587 kB/s |  58 kB     00:00    
+(35/67): perl-IO-1.38-423.el8_10.1.aarch64.rpm  1.4 MB/s | 141 kB     00:00    
+(36/67): perl-PathTools-3.74-1.el8.aarch64.rpm  1.5 MB/s |  89 kB     00:00    
+(37/67): perl-MIME-Base64-3.15-396.el8.aarch64. 204 kB/s |  30 kB     00:00    
+(38/67): perl-Pod-Escapes-1.07-395.el8.noarch.r 239 kB/s |  19 kB     00:00    
+(39/67): perl-Pod-Perldoc-3.28-396.el8.noarch.r 1.3 MB/s |  85 kB     00:00    
+(40/67): perl-Pod-Simple-3.35-395.el8.noarch.rp 2.1 MB/s | 212 kB     00:00    
+(41/67): perl-Pod-Usage-1.69-395.el8.noarch.rpm 667 kB/s |  33 kB     00:00    
+(42/67): perl-Socket-2.027-3.el8.aarch64.rpm    652 kB/s |  58 kB     00:00    
+(43/67): perl-Scalar-List-Utils-1.49-2.el8.aarc 553 kB/s |  65 kB     00:00    
+(44/67): perl-Term-ANSIColor-4.06-396.el8.noarc 851 kB/s |  45 kB     00:00    
+(45/67): perl-Storable-3.11-3.el8.aarch64.rpm   1.2 MB/s |  94 kB     00:00    
+(46/67): perl-Term-Cap-1.17-395.el8.noarch.rpm  380 kB/s |  22 kB     00:00    
+(47/67): perl-Text-ParseWords-3.30-395.el8.noar 268 kB/s |  17 kB     00:00    
+(48/67): perl-Text-Tabs+Wrap-2013.0523-395.el8. 498 kB/s |  23 kB     00:00    
+(49/67): perl-Time-Local-1.280-1.el8.noarch.rpm 698 kB/s |  32 kB     00:00    
+(50/67): perl-URI-1.73-4.el8_10.noarch.rpm      1.9 MB/s | 116 kB     00:00    
+(51/67): perl-Unicode-Normalize-1.25-396.el8.aa 996 kB/s |  77 kB     00:00    
+(52/67): perl-constant-1.33-396.el8.noarch.rpm  481 kB/s |  24 kB     00:00    
+(53/67): perl-libs-5.26.3-423.el8_10.1.aarch64. 2.6 MB/s | 1.5 MB     00:00    
+(54/67): perl-macros-5.26.3-423.el8_10.1.aarch6 867 kB/s |  72 kB     00:00    
+(55/67): perl-parent-0.237-1.el8.noarch.rpm     369 kB/s |  19 kB     00:00    
+(56/67): perl-podlators-4.11-1.el8.noarch.rpm   1.9 MB/s | 117 kB     00:00    
+(57/67): perl-threads-2.21-2.el8.aarch64.rpm    802 kB/s |  59 kB     00:00    
+(58/67): perl-threads-shared-1.58-2.el8.aarch64 584 kB/s |  46 kB     00:00    
+(59/67): pkgconf-1.4.2-1.el8.aarch64.rpm        565 kB/s |  36 kB     00:00    
+(60/67): pkgconf-m4-1.4.2-1.el8.noarch.rpm      212 kB/s |  16 kB     00:00    
+(61/67): perl-interpreter-5.26.3-423.el8_10.1.a 5.6 MB/s | 6.3 MB     00:01    
+(62/67): pkgconf-pkg-config-1.4.2-1.el8.aarch64 152 kB/s |  14 kB     00:00    
+(63/67): zlib-devel-1.2.11-26.el8.aarch64.rpm   609 kB/s |  58 kB     00:00    
+(64/67): libgcc-8.5.0-31.el8_10.aarch64.rpm     873 kB/s |  75 kB     00:00    
+(65/67): libgomp-8.5.0-31.el8_10.aarch64.rpm    3.3 MB/s | 200 kB     00:00    
+(66/67): libstdc++-8.5.0-31.el8_10.aarch64.rpm  2.3 MB/s | 444 kB     00:00    
+(67/67): kernel-devel-4.18.0-553.el8_10.aarch64 2.9 MB/s |  23 MB     00:07    
+--------------------------------------------------------------------------------
+Total                                           7.3 MB/s |  96 MB     00:13     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : libgcc-8.5.0-31.el8_10.aarch64                        1/70 
+  Running scriptlet: libgcc-8.5.0-31.el8_10.aarch64                        1/70 
+  Upgrading        : libstdc++-8.5.0-31.el8_10.aarch64                     2/70 
+  Running scriptlet: libstdc++-8.5.0-31.el8_10.aarch64                     2/70 
+  Installing       : libmpc-1.1.0-9.1.el8.aarch64                          3/70 
+  Installing       : cpp-8.5.0-31.el8_10.aarch64                           4/70 
+  Running scriptlet: cpp-8.5.0-31.el8_10.aarch64                           4/70 
+  Installing       : libstdc++-devel-8.5.0-31.el8_10.aarch64               5/70 
+  Installing       : binutils-2.30-128.el8_10.aarch64                      6/70 
+  Running scriptlet: binutils-2.30-128.el8_10.aarch64                      6/70 
+  Installing       : libasan-8.5.0-31.el8_10.aarch64                       7/70 
+  Running scriptlet: libasan-8.5.0-31.el8_10.aarch64                       7/70 
+  Installing       : libubsan-8.5.0-31.el8_10.aarch64                      8/70 
+  Running scriptlet: libubsan-8.5.0-31.el8_10.aarch64                      8/70 
+  Installing       : perl-Digest-1.17-395.el8.noarch                       9/70 
+  Installing       : perl-Digest-MD5-2.55-396.el8.aarch64                 10/70 
+  Installing       : perl-Data-Dumper-2.167-399.el8.aarch64               11/70 
+  Installing       : perl-libnet-3.11-3.el8.noarch                        12/70 
+  Installing       : perl-URI-1.73-4.el8_10.noarch                        13/70 
+  Installing       : perl-Pod-Escapes-1:1.07-395.el8.noarch               14/70 
+  Installing       : perl-Net-SSLeay-1.88-2.module+el8.9.0+1517+e71a7a6   15/70 
+  Installing       : perl-Mozilla-CA-20160104-7.module+el8.9.0+1521+010   16/70 
+  Installing       : perl-IO-Socket-IP-0.39-5.el8.noarch                  17/70 
+  Installing       : perl-Time-Local-1:1.280-1.el8.noarch                 18/70 
+  Installing       : perl-IO-Socket-SSL-2.066-4.module+el8.9.0+1517+e71   19/70 
+  Installing       : perl-Term-ANSIColor-4.06-396.el8.noarch              20/70 
+  Installing       : perl-Term-Cap-1.17-395.el8.noarch                    21/70 
+  Installing       : perl-File-Temp-0.230.600-1.el8.noarch                22/70 
+  Installing       : perl-Pod-Simple-1:3.35-395.el8.noarch                23/70 
+  Installing       : perl-HTTP-Tiny-0.074-3.el8.noarch                    24/70 
+  Installing       : perl-podlators-4.11-1.el8.noarch                     25/70 
+  Installing       : perl-Pod-Perldoc-3.28-396.el8.noarch                 26/70 
+  Installing       : perl-Text-ParseWords-3.30-395.el8.noarch             27/70 
+  Installing       : perl-Pod-Usage-4:1.69-395.el8.noarch                 28/70 
+  Installing       : perl-MIME-Base64-3.15-396.el8.aarch64                29/70 
+  Installing       : perl-Storable-1:3.11-3.el8.aarch64                   30/70 
+  Installing       : perl-Getopt-Long-1:2.50-4.el8.noarch                 31/70 
+  Installing       : perl-Errno-1.28-423.el8_10.1.aarch64                 32/70 
+  Installing       : perl-Socket-4:2.027-3.el8.aarch64                    33/70 
+  Installing       : perl-Encode-4:2.97-3.el8.aarch64                     34/70 
+  Installing       : perl-Carp-1.42-396.el8.noarch                        35/70 
+  Installing       : perl-Exporter-5.72-396.el8.noarch                    36/70 
+  Installing       : perl-libs-4:5.26.3-423.el8_10.1.aarch64              37/70 
+  Installing       : perl-Scalar-List-Utils-3:1.49-2.el8.aarch64          38/70 
+  Installing       : perl-parent-1:0.237-1.el8.noarch                     39/70 
+  Installing       : perl-macros-4:5.26.3-423.el8_10.1.aarch64            40/70 
+  Installing       : perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch         41/70 
+  Installing       : perl-Unicode-Normalize-1.25-396.el8.aarch64          42/70 
+  Installing       : perl-File-Path-2.15-2.el8.noarch                     43/70 
+  Installing       : perl-IO-1.38-423.el8_10.1.aarch64                    44/70 
+  Installing       : perl-PathTools-3.74-1.el8.aarch64                    45/70 
+  Installing       : perl-constant-1.33-396.el8.noarch                    46/70 
+  Installing       : perl-threads-1:2.21-2.el8.aarch64                    47/70 
+  Installing       : perl-threads-shared-1.58-2.el8.aarch64               48/70 
+  Installing       : perl-interpreter-4:5.26.3-423.el8_10.1.aarch64       49/70 
+  Upgrading        : libgomp-8.5.0-31.el8_10.aarch64                      50/70 
+  Running scriptlet: libgomp-8.5.0-31.el8_10.aarch64                      50/70 
+  Installing       : pkgconf-m4-1.4.2-1.el8.noarch                        51/70 
+  Installing       : make-1:4.2.1-11.el8.aarch64                          52/70 
+  Running scriptlet: make-1:4.2.1-11.el8.aarch64                          52/70 
+  Installing       : libpkgconf-1.4.2-1.el8.aarch64                       53/70 
+  Installing       : pkgconf-1.4.2-1.el8.aarch64                          54/70 
+  Installing       : pkgconf-pkg-config-1.4.2-1.el8.aarch64               55/70 
+  Installing       : libzstd-devel-1.4.4-1.el8.aarch64                    56/70 
+  Installing       : zlib-devel-1.2.11-26.el8.aarch64                     57/70 
+  Installing       : elfutils-libelf-devel-0.190-2.el8.aarch64            58/70 
+  Installing       : libatomic-8.5.0-31.el8_10.aarch64                    59/70 
+  Running scriptlet: libatomic-8.5.0-31.el8_10.aarch64                    59/70 
+  Installing       : kernel-headers-4.18.0-553.187.1.el8_10.aarch64       60/70 
+  Running scriptlet: glibc-headers-2.28-251.el8_10.2.aarch64              61/70 
+  Installing       : glibc-headers-2.28-251.el8_10.2.aarch64              61/70 
+  Installing       : libxcrypt-devel-4.1.1-6.el8.aarch64                  62/70 
+  Installing       : glibc-devel-2.28-251.el8_10.2.aarch64                63/70 
+  Running scriptlet: glibc-devel-2.28-251.el8_10.2.aarch64                63/70 
+  Installing       : isl-0.16.1-6.el8.aarch64                             64/70 
+  Running scriptlet: isl-0.16.1-6.el8.aarch64                             64/70 
+  Installing       : gcc-8.5.0-31.el8_10.aarch64                          65/70 
+  Running scriptlet: gcc-8.5.0-31.el8_10.aarch64                          65/70 
+  Installing       : gcc-c++-8.5.0-31.el8_10.aarch64                      66/70 
+  Installing       : kernel-devel-4.18.0-553.el8_10.aarch64               67/70 
+  Running scriptlet: kernel-devel-4.18.0-553.el8_10.aarch64               67/70 
+  Cleanup          : libstdc++-8.5.0-22.el8_10.aarch64                    68/70 
+  Running scriptlet: libstdc++-8.5.0-22.el8_10.aarch64                    68/70 
+  Cleanup          : libgcc-8.5.0-22.el8_10.aarch64                       69/70 
+  Running scriptlet: libgcc-8.5.0-22.el8_10.aarch64                       69/70 
+  Running scriptlet: libgomp-8.5.0-22.el8_10.aarch64                      70/70 
+  Cleanup          : libgomp-8.5.0-22.el8_10.aarch64                      70/70 
+  Running scriptlet: libgomp-8.5.0-22.el8_10.aarch64                      70/70 
+  Verifying        : cpp-8.5.0-31.el8_10.aarch64                           1/70 
+  Verifying        : gcc-8.5.0-31.el8_10.aarch64                           2/70 
+  Verifying        : gcc-c++-8.5.0-31.el8_10.aarch64                       3/70 
+  Verifying        : isl-0.16.1-6.el8.aarch64                              4/70 
+  Verifying        : libmpc-1.1.0-9.1.el8.aarch64                          5/70 
+  Verifying        : libstdc++-devel-8.5.0-31.el8_10.aarch64               6/70 
+  Verifying        : perl-Digest-1.17-395.el8.noarch                       7/70 
+  Verifying        : perl-Digest-MD5-2.55-396.el8.aarch64                  8/70 
+  Verifying        : perl-IO-Socket-IP-0.39-5.el8.noarch                   9/70 
+  Verifying        : perl-IO-Socket-SSL-2.066-4.module+el8.9.0+1517+e71   10/70 
+  Verifying        : perl-Mozilla-CA-20160104-7.module+el8.9.0+1521+010   11/70 
+  Verifying        : perl-Net-SSLeay-1.88-2.module+el8.9.0+1517+e71a7a6   12/70 
+  Verifying        : perl-libnet-3.11-3.el8.noarch                        13/70 
+  Verifying        : binutils-2.30-128.el8_10.aarch64                     14/70 
+  Verifying        : elfutils-libelf-devel-0.190-2.el8.aarch64            15/70 
+  Verifying        : glibc-devel-2.28-251.el8_10.2.aarch64                16/70 
+  Verifying        : glibc-headers-2.28-251.el8_10.2.aarch64              17/70 
+  Verifying        : kernel-devel-4.18.0-553.el8_10.aarch64               18/70 
+  Verifying        : kernel-headers-4.18.0-553.187.1.el8_10.aarch64       19/70 
+  Verifying        : libasan-8.5.0-31.el8_10.aarch64                      20/70 
+  Verifying        : libatomic-8.5.0-31.el8_10.aarch64                    21/70 
+  Verifying        : libpkgconf-1.4.2-1.el8.aarch64                       22/70 
+  Verifying        : libubsan-8.5.0-31.el8_10.aarch64                     23/70 
+  Verifying        : libxcrypt-devel-4.1.1-6.el8.aarch64                  24/70 
+  Verifying        : libzstd-devel-1.4.4-1.el8.aarch64                    25/70 
+  Verifying        : make-1:4.2.1-11.el8.aarch64                          26/70 
+  Verifying        : perl-Carp-1.42-396.el8.noarch                        27/70 
+  Verifying        : perl-Data-Dumper-2.167-399.el8.aarch64               28/70 
+  Verifying        : perl-Encode-4:2.97-3.el8.aarch64                     29/70 
+  Verifying        : perl-Errno-1.28-423.el8_10.1.aarch64                 30/70 
+  Verifying        : perl-Exporter-5.72-396.el8.noarch                    31/70 
+  Verifying        : perl-File-Path-2.15-2.el8.noarch                     32/70 
+  Verifying        : perl-File-Temp-0.230.600-1.el8.noarch                33/70 
+  Verifying        : perl-Getopt-Long-1:2.50-4.el8.noarch                 34/70 
+  Verifying        : perl-HTTP-Tiny-0.074-3.el8.noarch                    35/70 
+  Verifying        : perl-IO-1.38-423.el8_10.1.aarch64                    36/70 
+  Verifying        : perl-MIME-Base64-3.15-396.el8.aarch64                37/70 
+  Verifying        : perl-PathTools-3.74-1.el8.aarch64                    38/70 
+  Verifying        : perl-Pod-Escapes-1:1.07-395.el8.noarch               39/70 
+  Verifying        : perl-Pod-Perldoc-3.28-396.el8.noarch                 40/70 
+  Verifying        : perl-Pod-Simple-1:3.35-395.el8.noarch                41/70 
+  Verifying        : perl-Pod-Usage-4:1.69-395.el8.noarch                 42/70 
+  Verifying        : perl-Scalar-List-Utils-3:1.49-2.el8.aarch64          43/70 
+  Verifying        : perl-Socket-4:2.027-3.el8.aarch64                    44/70 
+  Verifying        : perl-Storable-1:3.11-3.el8.aarch64                   45/70 
+  Verifying        : perl-Term-ANSIColor-4.06-396.el8.noarch              46/70 
+  Verifying        : perl-Term-Cap-1.17-395.el8.noarch                    47/70 
+  Verifying        : perl-Text-ParseWords-3.30-395.el8.noarch             48/70 
+  Verifying        : perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch         49/70 
+  Verifying        : perl-Time-Local-1:1.280-1.el8.noarch                 50/70 
+  Verifying        : perl-URI-1.73-4.el8_10.noarch                        51/70 
+  Verifying        : perl-Unicode-Normalize-1.25-396.el8.aarch64          52/70 
+  Verifying        : perl-constant-1.33-396.el8.noarch                    53/70 
+  Verifying        : perl-interpreter-4:5.26.3-423.el8_10.1.aarch64       54/70 
+  Verifying        : perl-libs-4:5.26.3-423.el8_10.1.aarch64              55/70 
+  Verifying        : perl-macros-4:5.26.3-423.el8_10.1.aarch64            56/70 
+  Verifying        : perl-parent-1:0.237-1.el8.noarch                     57/70 
+  Verifying        : perl-podlators-4.11-1.el8.noarch                     58/70 
+  Verifying        : perl-threads-1:2.21-2.el8.aarch64                    59/70 
+  Verifying        : perl-threads-shared-1.58-2.el8.aarch64               60/70 
+  Verifying        : pkgconf-1.4.2-1.el8.aarch64                          61/70 
+  Verifying        : pkgconf-m4-1.4.2-1.el8.noarch                        62/70 
+  Verifying        : pkgconf-pkg-config-1.4.2-1.el8.aarch64               63/70 
+  Verifying        : zlib-devel-1.2.11-26.el8.aarch64                     64/70 
+  Verifying        : libgcc-8.5.0-31.el8_10.aarch64                       65/70 
+  Verifying        : libgcc-8.5.0-22.el8_10.aarch64                       66/70 
+  Verifying        : libgomp-8.5.0-31.el8_10.aarch64                      67/70 
+  Verifying        : libgomp-8.5.0-22.el8_10.aarch64                      68/70 
+  Verifying        : libstdc++-8.5.0-31.el8_10.aarch64                    69/70 
+  Verifying        : libstdc++-8.5.0-22.el8_10.aarch64                    70/70 
+
+Upgraded:
+  libgcc-8.5.0-31.el8_10.aarch64          libgomp-8.5.0-31.el8_10.aarch64      
+  libstdc++-8.5.0-31.el8_10.aarch64      
+Installed:
+  binutils-2.30-128.el8_10.aarch64                                              
+  cpp-8.5.0-31.el8_10.aarch64                                                   
+  elfutils-libelf-devel-0.190-2.el8.aarch64                                     
+  gcc-8.5.0-31.el8_10.aarch64                                                   
+  gcc-c++-8.5.0-31.el8_10.aarch64                                               
+  glibc-devel-2.28-251.el8_10.2.aarch64                                         
+  glibc-headers-2.28-251.el8_10.2.aarch64                                       
+  isl-0.16.1-6.el8.aarch64                                                      
+  kernel-devel-4.18.0-553.el8_10.aarch64                                        
+  kernel-headers-4.18.0-553.187.1.el8_10.aarch64                                
+  libasan-8.5.0-31.el8_10.aarch64                                               
+  libatomic-8.5.0-31.el8_10.aarch64                                             
+  libmpc-1.1.0-9.1.el8.aarch64                                                  
+  libpkgconf-1.4.2-1.el8.aarch64                                                
+  libstdc++-devel-8.5.0-31.el8_10.aarch64                                       
+  libubsan-8.5.0-31.el8_10.aarch64                                              
+  libxcrypt-devel-4.1.1-6.el8.aarch64                                           
+  libzstd-devel-1.4.4-1.el8.aarch64                                             
+  make-1:4.2.1-11.el8.aarch64                                                   
+  perl-Carp-1.42-396.el8.noarch                                                 
+  perl-Data-Dumper-2.167-399.el8.aarch64                                        
+  perl-Digest-1.17-395.el8.noarch                                               
+  perl-Digest-MD5-2.55-396.el8.aarch64                                          
+  perl-Encode-4:2.97-3.el8.aarch64                                              
+  perl-Errno-1.28-423.el8_10.1.aarch64                                          
+  perl-Exporter-5.72-396.el8.noarch                                             
+  perl-File-Path-2.15-2.el8.noarch                                              
+  perl-File-Temp-0.230.600-1.el8.noarch                                         
+  perl-Getopt-Long-1:2.50-4.el8.noarch                                          
+  perl-HTTP-Tiny-0.074-3.el8.noarch                                             
+  perl-IO-1.38-423.el8_10.1.aarch64                                             
+  perl-IO-Socket-IP-0.39-5.el8.noarch                                           
+  perl-IO-Socket-SSL-2.066-4.module+el8.9.0+1517+e71a7a62.noarch                
+  perl-MIME-Base64-3.15-396.el8.aarch64                                         
+  perl-Mozilla-CA-20160104-7.module+el8.9.0+1521+0101edce.noarch                
+  perl-Net-SSLeay-1.88-2.module+el8.9.0+1517+e71a7a62.aarch64                   
+  perl-PathTools-3.74-1.el8.aarch64                                             
+  perl-Pod-Escapes-1:1.07-395.el8.noarch                                        
+  perl-Pod-Perldoc-3.28-396.el8.noarch                                          
+  perl-Pod-Simple-1:3.35-395.el8.noarch                                         
+  perl-Pod-Usage-4:1.69-395.el8.noarch                                          
+  perl-Scalar-List-Utils-3:1.49-2.el8.aarch64                                   
+  perl-Socket-4:2.027-3.el8.aarch64                                             
+  perl-Storable-1:3.11-3.el8.aarch64                                            
+  perl-Term-ANSIColor-4.06-396.el8.noarch                                       
+  perl-Term-Cap-1.17-395.el8.noarch                                             
+  perl-Text-ParseWords-3.30-395.el8.noarch                                      
+  perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch                                  
+  perl-Time-Local-1:1.280-1.el8.noarch                                          
+  perl-URI-1.73-4.el8_10.noarch                                                 
+  perl-Unicode-Normalize-1.25-396.el8.aarch64                                   
+  perl-constant-1.33-396.el8.noarch                                             
+  perl-interpreter-4:5.26.3-423.el8_10.1.aarch64                                
+  perl-libnet-3.11-3.el8.noarch                                                 
+  perl-libs-4:5.26.3-423.el8_10.1.aarch64                                       
+  perl-macros-4:5.26.3-423.el8_10.1.aarch64                                     
+  perl-parent-1:0.237-1.el8.noarch                                              
+  perl-podlators-4.11-1.el8.noarch                                              
+  perl-threads-1:2.21-2.el8.aarch64                                             
+  perl-threads-shared-1.58-2.el8.aarch64                                        
+  pkgconf-1.4.2-1.el8.aarch64                                                   
+  pkgconf-m4-1.4.2-1.el8.noarch                                                 
+  pkgconf-pkg-config-1.4.2-1.el8.aarch64                                        
+  zlib-devel-1.2.11-26.el8.aarch64                                              
+
+Complete!

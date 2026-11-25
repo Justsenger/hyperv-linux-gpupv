@@ -1,0 +1,37 @@
+Linux gpupv-test-d4d3ed24a3e44a308468f2ffe151f126 6.1.0-56-arm64 #1 SMP Debian 6.1.192-2 (2026-11-16) aarch64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),27(sudo),44(video),1000(wheel)
+SecureBoot disabled
+40092CC329CC9C3901374BC
+fae22d11-d592-474e-90b3-f3954187cbee
+[    0.372381] hv_vmbus: hv_mmio=[mem 0xe0000000-0xfed3ffff],[mem 0x800000000-0xfffffffff] fb=[mem 0xe0000000-0xe7ffffff]
+[    0.424850] pci 599f:00:00.0: [1414:008e] type 00 class 0x030200
+Hardware adapter identities verified: ['4d4f4351:36333630']
+boot_id=fae22d11-d592-474e-90b3-f3954187cbee uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1
+[   82.877962] linuxpv-compute-dfe2a661-0d00-40b9-8014-99cafa52d05f
+[   82.912278] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   82.912915] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   82.912977] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   82.913031] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   82.913164] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2

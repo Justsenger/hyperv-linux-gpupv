@@ -1,0 +1,17 @@
+{
+  "target": "ubuntu-24.04-hwe",
+  "vm": "gpupv-test-0f8dd21c0c2f4903b074f247c3f52a7a",
+  "vmId": "fcd41da1-8b92-489e-8619-8d67370438bb",
+  "started": "2026-11-25T10:05:24.7271904+08:00",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "7.0.0-44-generic",
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "install exited 1"
+  ],
+  "diagnostics": [],
+  "stage": "install",
+  "finished": "2026-11-25T10:10:14.0855704+08:00"
+}

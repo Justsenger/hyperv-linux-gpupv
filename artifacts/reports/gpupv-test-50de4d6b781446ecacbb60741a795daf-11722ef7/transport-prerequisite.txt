@@ -1,0 +1,74 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  wireless-regdb
+The following NEW packages will be installed:
+  linux-modules-extra-5.15.0-203-generic wireless-regdb
+0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+Need to get 66.3 MB of archives.
+After this operation, 371 MB of additional disk space will be used.
+Get:1 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 wireless-regdb all 2026.05.30-0ubuntu1~22.04.1 [10.2 kB]
+Get:2 https://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-modules-extra-5.15.0-203-generic arm64 5.15.0-203.213 [66.3 MB]
+Fetched 66.3 MB in 11s (5874 kB/s)
+Selecting previously unselected package wireless-regdb.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 70648 files and directories currently installed.)
+Preparing to unpack .../wireless-regdb_2026.05.30-0ubuntu1~22.04.1_all.deb ...
+Unpacking wireless-regdb (2026.05.30-0ubuntu1~22.04.1) ...
+Selecting previously unselected package linux-modules-extra-5.15.0-203-generic.
+Preparing to unpack .../linux-modules-extra-5.15.0-203-generic_5.15.0-203.213_arm64.deb ...
+Unpacking linux-modules-extra-5.15.0-203-generic (5.15.0-203.213) ...
+Setting up wireless-regdb (2026.05.30-0ubuntu1~22.04.1) ...
+Setting up linux-modules-extra-5.15.0-203-generic (5.15.0-203.213) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for linux-image-5.15.0-203-generic (5.15.0-203.213) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-5.15.0-203-generic
+flash-kernel: deferring update (trigger activated)
+/etc/kernel/postinst.d/zz-flash-kernel:
+flash-kernel: deferring update (trigger activated)
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.15.0-203-generic
+Found initrd image: /boot/initrd.img-5.15.0-203-generic
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Processing triggers for flash-kernel (3.104ubuntu22) ...
+System running in EFI mode, skipping.
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+modprobe: FATAL: Module pci_hyperv not found in directory /lib/modules/5.15.0-203-generic

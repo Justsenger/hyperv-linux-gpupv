@@ -1,0 +1,32 @@
+glibc 2.39, aarch64, kernel 6.12.0-264.16.1.el10_3.aarch64, preflight OK
+/tmp/tmp.f9yIFpAheG/probe.c:2:28: error: 'struct dma_fence_ops' has no member named 'fence_value_str'
+    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[2]: *** [scripts/Makefile.build:229: /tmp/tmp.f9yIFpAheG/probe.o] Error 1
+make[1]: *** [/usr/src/kernels/6.12.0-264.16.1.el10_3.aarch64/Makefile:2003: /tmp/tmp.f9yIFpAheG] Error 2
+make: *** [Makefile:242: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/6.12.0-264.16.1.el10_3.aarch64'
+  CC [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  CC [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/.module-common.o
+  LD [M]  /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmproy2f_ii/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/kernels/6.12.0-264.16.1.el10_3.aarch64'

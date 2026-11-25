@@ -1,0 +1,12 @@
+uid=1001(tester) gid=1002(tester) groups=1002(tester),10(wheel),39(video),1001(sudo)
+boot_id=d498efef-319a-4711-b2a4-fc055685c308 uid=1001 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+D3D12CreateDevice
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x887a0004
+Command '['/opt/hyperv-linux-gpupv/guest/d3d12-compute']' returned non-zero exit status 1.

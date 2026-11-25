@@ -1,0 +1,164 @@
+CHANGED: partition=1 start=262144 old: size=52164608 end=52426751 new: size=66846687 end=67108830
+/dev/sdb1: 34245/1630208 files (0.1% non-contiguous), 351887/6520576 blocks
+Resizing the filesystem on /dev/sdb1 to 8355835 (4k) blocks.
+The filesystem on /dev/sdb1 is now 8355835 (4k) blocks long.
+
+Get:1 file:/etc/apt/mirrors/kali.list Mirrorlist [26 B]
+Get:3 https://mirrors.ustc.edu.cn/kali kali-rolling InRelease [34.0 kB]
+Get:4 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 Packages [21.8 MB]
+Get:2 http://kali.download/kali kali-last-snapshot InRelease [34.0 kB]
+Get:5 http://kali.download/kali kali-last-snapshot/main arm64 Packages [21.4 MB]
+Get:6 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 Contents (deb) [50.9 MB]
+Get:7 http://kali.download/kali kali-last-snapshot/main arm64 Contents (deb) [50.4 MB]
+Get:8 http://kali.download/kali kali-last-snapshot/contrib arm64 Packages [100 kB]
+Get:9 http://kali.download/kali kali-last-snapshot/contrib arm64 Contents (deb) [182 kB]
+Get:10 http://kali.download/kali kali-last-snapshot/non-free arm64 Packages [143 kB]
+Get:11 http://kali.download/kali kali-last-snapshot/non-free arm64 Contents (deb) [882 kB]
+Get:12 https://mirrors.ustc.edu.cn/kali kali-rolling/contrib arm64 Packages [98.0 kB]
+Get:13 https://mirrors.ustc.edu.cn/kali kali-rolling/contrib arm64 Contents (deb) [162 kB]
+Get:14 http://kali.download/kali kali-last-snapshot/non-free-firmware arm64 Packages [15.1 kB]
+Get:15 https://mirrors.ustc.edu.cn/kali kali-rolling/non-free arm64 Packages [129 kB]
+Get:16 https://mirrors.ustc.edu.cn/kali kali-rolling/non-free arm64 Contents (deb) [849 kB]
+Get:17 http://kali.download/kali kali-last-snapshot/non-free-firmware arm64 Contents (deb) [40.8 kB]
+Get:18 https://mirrors.ustc.edu.cn/kali kali-rolling/non-free-firmware arm64 Packages [16.4 kB]
+Get:19 https://mirrors.ustc.edu.cn/kali kali-rolling/non-free-firmware arm64 Contents (deb) [43.3 kB]
+Fetched 147 MB in 1min 22s (1802 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Solving dependencies...
+The following additional packages will be installed:
+  linux-base-7.2.15+kali-arm64 linux-base-7.2.15+kali-cloud-arm64
+  linux-base-arm64 linux-base-cloud-arm64 linux-binary-7.2.15+kali-arm64
+  linux-binary-7.2.15+kali-cloud-arm64 linux-image-7.2.15+kali-arm64
+  linux-image-7.2.15+kali-cloud-arm64 linux-image-cloud-arm64
+  linux-modules-7.2.15+kali-arm64 linux-modules-7.2.15+kali-cloud-arm64
+Suggested packages:
+  debian-kernel-handbook firmware-linux-free linux-doc-7.2
+The following NEW packages will be installed:
+  linux-base-7.2.15+kali-arm64 linux-base-7.2.15+kali-cloud-arm64
+  linux-base-arm64 linux-binary-7.2.15+kali-arm64
+  linux-binary-7.2.15+kali-cloud-arm64 linux-image-7.2.15+kali-arm64
+  linux-image-7.2.15+kali-cloud-arm64 linux-image-arm64
+  linux-modules-7.2.15+kali-arm64 linux-modules-7.2.15+kali-cloud-arm64
+The following packages will be upgraded:
+  linux-base-cloud-arm64 linux-image-cloud-arm64
+2 upgraded, 10 newly installed, 0 to remove and 182 not upgraded.
+Need to get 141 MB of archives.
+After this operation, 363 MB of additional disk space will be used.
+Get:1 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-base-7.2.15+kali-arm64 arm64 7.2.15-1kali1 [3980 kB]
+Get:2 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-binary-7.2.15+kali-arm64 arm64 7.2.15-1kali1 [11.9 MB]
+Get:3 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-modules-7.2.15+kali-arm64 arm64 7.2.15-1kali1 [93.3 MB]
+Get:4 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-image-7.2.15+kali-arm64 arm64 7.2.15-1kali1 [1908 B]
+Get:5 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-base-7.2.15+kali-cloud-arm64 arm64 7.2.15-1kali1 [1661 kB]
+Get:6 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-binary-7.2.15+kali-cloud-arm64 arm64 7.2.15-1kali1 [10.2 MB]
+Get:7 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-modules-7.2.15+kali-cloud-arm64 arm64 7.2.15-1kali1 [20.0 MB]
+Get:8 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-image-7.2.15+kali-cloud-arm64 arm64 7.2.15-1kali1 [1924 B]
+Get:9 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-base-arm64 arm64 7.2.15-1kali1 [1252 B]
+Get:10 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-image-cloud-arm64 arm64 7.2.15-1kali1 [1688 B]
+Get:11 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-base-cloud-arm64 arm64 7.2.15-1kali1 [1248 B]
+Get:12 https://mirrors.ustc.edu.cn/kali kali-rolling/main arm64 linux-image-arm64 arm64 7.2.15-1kali1 [1672 B]
+Fetched 141 MB in 18s (7851 kB/s)
+Selecting previously unselected package linux-base-7.2.15+kali-arm64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 29018 files and directories currently installed.)
+Preparing to unpack .../00-linux-base-7.2.15+kali-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-base-7.2.15+kali-arm64 (7.2.15-1kali1) ...
+Selecting previously unselected package linux-binary-7.2.15+kali-arm64.
+Preparing to unpack .../01-linux-binary-7.2.15+kali-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-binary-7.2.15+kali-arm64 (7.2.15-1kali1) ...
+Selecting previously unselected package linux-modules-7.2.15+kali-arm64.
+Preparing to unpack .../02-linux-modules-7.2.15+kali-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-modules-7.2.15+kali-arm64 (7.2.15-1kali1) ...
+Selecting previously unselected package linux-image-7.2.15+kali-arm64.
+Preparing to unpack .../03-linux-image-7.2.15+kali-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-image-7.2.15+kali-arm64 (7.2.15-1kali1) ...
+Selecting previously unselected package linux-base-7.2.15+kali-cloud-arm64.
+Preparing to unpack .../04-linux-base-7.2.15+kali-cloud-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-base-7.2.15+kali-cloud-arm64 (7.2.15-1kali1) ...
+Selecting previously unselected package linux-binary-7.2.15+kali-cloud-arm64.
+Preparing to unpack .../05-linux-binary-7.2.15+kali-cloud-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-binary-7.2.15+kali-cloud-arm64 (7.2.15-1kali1) ...
+Selecting previously unselected package linux-modules-7.2.15+kali-cloud-arm64.
+Preparing to unpack .../06-linux-modules-7.2.15+kali-cloud-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-modules-7.2.15+kali-cloud-arm64 (7.2.15-1kali1) ...
+Selecting previously unselected package linux-image-7.2.15+kali-cloud-arm64.
+Preparing to unpack .../07-linux-image-7.2.15+kali-cloud-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-image-7.2.15+kali-cloud-arm64 (7.2.15-1kali1) ...
+Selecting previously unselected package linux-base-arm64.
+Preparing to unpack .../08-linux-base-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-base-arm64 (7.2.15-1kali1) ...
+Preparing to unpack .../09-linux-image-cloud-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-image-cloud-arm64 (7.2.15-1kali1) over (7.1.5-1kali1) ...
+Preparing to unpack .../10-linux-base-cloud-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-base-cloud-arm64 (7.2.15-1kali1) over (7.1.5-1kali1) ...
+Selecting previously unselected package linux-image-arm64.
+Preparing to unpack .../11-linux-image-arm64_7.2.15-1kali1_arm64.deb ...
+Unpacking linux-image-arm64 (7.2.15-1kali1) ...
+Setting up linux-base-7.2.15+kali-cloud-arm64 (7.2.15-1kali1) ...
+Setting up linux-binary-7.2.15+kali-cloud-arm64 (7.2.15-1kali1) ...
+Setting up linux-base-7.2.15+kali-arm64 (7.2.15-1kali1) ...
+Setting up linux-modules-7.2.15+kali-arm64 (7.2.15-1kali1) ...
+Setting up linux-base-cloud-arm64 (7.2.15-1kali1) ...
+Setting up linux-base-arm64 (7.2.15-1kali1) ...
+Setting up linux-modules-7.2.15+kali-cloud-arm64 (7.2.15-1kali1) ...
+Setting up linux-image-7.2.15+kali-cloud-arm64 (7.2.15-1kali1) ...
+/etc/kernel/postinst.d/dracut:
+dracut: Generating /boot/initrd.img-7.2.15+kali-cloud-arm64
+/etc/kernel/postinst.d/zz-update-grub:
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.2.15+kali-cloud-arm64
+Found initrd image: /boot/initrd.img-7.2.15+kali-cloud-arm64
+Found linux image: /boot/vmlinuz-7.1.5+kali-cloud-arm64
+Found initrd image: /boot/initrd.img-7.1.5+kali-cloud-arm64
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Setting up linux-binary-7.2.15+kali-arm64 (7.2.15-1kali1) ...
+Setting up linux-image-cloud-arm64 (7.2.15-1kali1) ...
+Setting up linux-image-7.2.15+kali-arm64 (7.2.15-1kali1) ...
+/etc/kernel/postinst.d/dracut:
+dracut: Generating /boot/initrd.img-7.2.15+kali-arm64
+/etc/kernel/postinst.d/zz-update-grub:
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-7.2.15+kali-cloud-arm64
+Found initrd image: /boot/initrd.img-7.2.15+kali-cloud-arm64
+Found linux image: /boot/vmlinuz-7.2.15+kali-arm64
+Found initrd image: /boot/initrd.img-7.2.15+kali-arm64
+Found linux image: /boot/vmlinuz-7.1.5+kali-cloud-arm64
+Found initrd image: /boot/initrd.img-7.1.5+kali-cloud-arm64
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Setting up linux-image-arm64 (7.2.15-1kali1) ...
+CONFIG_PCI_HYPERV=m
+CONFIG_HYPERV_STORAGE=m
+CONFIG_HYPERV_NET=m
+CONFIG_HYPERV=y
+CONFIG_HYPERV_VMBUS=y
+CONFIG_PCI_HYPERV=m
+CONFIG_HYPERV_STORAGE=m
+CONFIG_HYPERV_NET=m
+CONFIG_HYPERV=y
+CONFIG_HYPERV_VMBUS=y
+	linux	/boot/vmlinuz-7.2.15+kali-arm64 root=PARTUUID=709f8e8e-ec40-4069-80ab-0f2d4fc9f9db ro  
+kali_ready

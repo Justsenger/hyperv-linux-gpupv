@@ -1,0 +1,5 @@
+3281dabb-276e-416f-963c-77590b3e32c0 confirmed shim menu management
+3281dabb-276e-416f-963c-77590b3e32c0 confirmed shim menu view
+3281dabb-276e-416f-963c-77590b3e32c0 confirmed shim menu confirm
+3281dabb-276e-416f-963c-77590b3e32c0 confirmed shim menu password
+3281dabb-276e-416f-963c-77590b3e32c0 confirmed shim menu reboot

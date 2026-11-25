@@ -1,0 +1,109 @@
+Linux gpupv-test-ecb4ab07a47348799d1a1a6c04011397 6.1.0-56-arm64 #1 SMP Debian 6.1.192-2 (2026-11-16) aarch64 GNU/Linux
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+systemd
+
+status: done
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:5 file:/etc/apt/mirrors/debian-security.list Mirrorlist [39 B]
+Get:7 https://deb.debian.org/debian bookworm-backports InRelease [59.4 kB]
+Get:4 https://deb.debian.org/debian bookworm-backports InRelease [59.4 kB]
+Get:2 https://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:3 https://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:6 https://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+Get:20 https://deb.debian.org/debian bookworm-backports/main arm64 Packages [299 kB]
+Get:9 https://deb.debian.org/debian bookworm-backports/main arm64 Packages [299 kB]
+Get:21 https://deb.debian.org/debian bookworm-backports/main Translation-en [252 kB]
+Get:10 https://deb.debian.org/debian bookworm-backports/main Translation-en [252 kB]
+Get:8 https://deb.debian.org/debian bookworm-backports/main Sources [322 kB]
+Get:11 https://deb.debian.org/debian bookworm/main Sources [9492 kB]
+Get:12 https://deb.debian.org/debian bookworm/main arm64 Packages [8689 kB]
+Ign:12 https://deb.debian.org/debian bookworm/main arm64 Packages
+Get:13 https://deb.debian.org/debian bookworm/main Translation-en [6107 kB]
+Get:14 https://deb.debian.org/debian bookworm-updates/main Sources [3288 B]
+Get:15 https://deb.debian.org/debian bookworm-updates/main arm64 Packages [6936 B]
+Get:16 https://deb.debian.org/debian bookworm-updates/main Translation-en [5448 B]
+Get:17 https://deb.debian.org/debian-security bookworm-security/main Sources [301 kB]
+Get:18 https://deb.debian.org/debian-security bookworm-security/main arm64 Packages [378 kB]
+Get:19 https://deb.debian.org/debian-security bookworm-security/main Translation-en [238 kB]
+Get:12 https://deb.debian.org/debian bookworm/main arm64 Packages [8689 kB]
+Fetched 24.1 MB in 1min 57s (207 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mokutil is already the newest version (0.6.0-2).
+mokutil set to manually installed.
+openssl is already the newest version (3.0.22-1~deb12u2).
+kmod is already the newest version (30+20221128-1).
+kmod set to manually installed.
+udev is already the newest version (252.39-1~deb12u2).
+udev set to manually installed.
+python3 is already the newest version (3.11.2-1+b1).
+python3 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  linux-image-6.12.95+deb12-arm64
+Suggested packages:
+  firmware-linux-free linux-doc-6.12 debian-kernel-handbook
+The following NEW packages will be installed:
+  linux-image-6.12.95+deb12-arm64
+The following packages will be upgraded:
+  linux-image-arm64
+1 upgraded, 1 newly installed, 0 to remove and 34 not upgraded.
+Need to get 92.3 MB of archives.
+After this operation, 184 MB of additional disk space will be used.
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:2 https://deb.debian.org/debian bookworm-backports/main arm64 linux-image-6.12.95+deb12-arm64 arm64 6.12.95-1~bpo12+1 [92.3 MB]
+Get:3 https://deb.debian.org/debian bookworm-backports/main arm64 linux-image-arm64 arm64 6.12.95-1~bpo12+1 [1452 B]
+apt-listchanges: Reading changelogs...
+Fetched 92.3 MB in 8s (11.8 MB/s)
+Selecting previously unselected package linux-image-6.12.95+deb12-arm64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 24243 files and directories currently installed.)
+Preparing to unpack .../linux-image-6.12.95+deb12-arm64_6.12.95-1~bpo12+1_arm64.deb ...
+Unpacking linux-image-6.12.95+deb12-arm64 (6.12.95-1~bpo12+1) ...
+Preparing to unpack .../linux-image-arm64_6.12.95-1~bpo12+1_arm64.deb ...
+Unpacking linux-image-arm64 (6.12.95-1~bpo12+1) over (6.1.192-2) ...
+Setting up linux-image-6.12.95+deb12-arm64 (6.12.95-1~bpo12+1) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-6.12.95+deb12-arm64
+/etc/kernel/postinst.d/zz-update-grub:
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.12.95+deb12-arm64
+Found initrd image: /boot/initrd.img-6.12.95+deb12-arm64
+Found linux image: /boot/vmlinuz-6.1.0-56-arm64
+Found initrd image: /boot/initrd.img-6.1.0-56-arm64
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Setting up linux-image-arm64 (6.12.95-1~bpo12+1) ...

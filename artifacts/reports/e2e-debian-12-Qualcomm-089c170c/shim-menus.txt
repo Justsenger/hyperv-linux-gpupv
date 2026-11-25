@@ -1,0 +1,5 @@
+0911538f-34eb-4167-9ac9-c64b85588b3d confirmed shim menu management
+0911538f-34eb-4167-9ac9-c64b85588b3d confirmed shim menu view
+0911538f-34eb-4167-9ac9-c64b85588b3d confirmed shim menu confirm
+0911538f-34eb-4167-9ac9-c64b85588b3d confirmed shim menu password
+0911538f-34eb-4167-9ac9-c64b85588b3d confirmed shim menu reboot

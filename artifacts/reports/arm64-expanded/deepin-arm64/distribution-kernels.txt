@@ -1,0 +1,18 @@
+PRETTY_NAME="Deepin 25"
+NAME="Deepin"
+VERSION_CODENAME=crimson
+ID=deepin
+HOME_URL="https://www.deepin.org/"
+BUG_REPORT_URL="https://bbs.deepin.org"
+VERSION_ID="25"
+VERSION="25"
+/mnt/droot/boot/config-6.6.159-arm64-desktop-hwe:CONFIG_ARM64_4K_PAGES=y
+/mnt/droot/boot/config-6.6.159-arm64-desktop-hwe:# CONFIG_PCI_HYPERV is not set
+/mnt/droot/boot/config-6.6.159-arm64-desktop-hwe:CONFIG_PCI_HYPERV_INTERFACE=m
+/mnt/droot/boot/config-6.6.159-arm64-desktop-hwe:CONFIG_HYPERV_STORAGE=m
+/mnt/droot/boot/config-6.6.159-arm64-desktop-hwe:# CONFIG_HYPERV_NET is not set
+/tmp/gpupv-deepin-headers/usr/src/linux-headers-6.18.38-arm64-desktop-rolling/.config:CONFIG_ARM64_4K_PAGES=y
+/tmp/gpupv-deepin-headers/usr/src/linux-headers-6.18.38-arm64-desktop-rolling/.config:CONFIG_PCI_HYPERV=m
+/tmp/gpupv-deepin-headers/usr/src/linux-headers-6.18.38-arm64-desktop-rolling/.config:CONFIG_PCI_HYPERV_INTERFACE=m
+/tmp/gpupv-deepin-headers/usr/src/linux-headers-6.18.38-arm64-desktop-rolling/.config:CONFIG_HYPERV_STORAGE=m
+/tmp/gpupv-deepin-headers/usr/src/linux-headers-6.18.38-arm64-desktop-rolling/.config:CONFIG_HYPERV_NET=m

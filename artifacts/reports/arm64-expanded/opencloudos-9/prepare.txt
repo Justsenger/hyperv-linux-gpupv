@@ -1,0 +1,89 @@
+Linux gpupv-test-647c4d9c7b1d422aabb9f8075aa65812 6.6.119-52.7.oc9.aarch64 #1 SMP Tue Sep 15 16:38:08 CST 2026 aarch64 aarch64 aarch64 GNU/Linux
+NAME="OpenCloudOS"
+VERSION="9.6"
+ID="opencloudos"
+ID_LIKE="opencloudos"
+VERSION_ID="9.6"
+PLATFORM_ID="platform:oc9"
+PRETTY_NAME="OpenCloudOS 9.6"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:opencloudos:opencloudos:9"
+HOME_URL="https://www.opencloudos.org/"
+BUG_REPORT_URL="https://bugs.opencloudos.tech/"
+systemd
+
+status: done
+BaseOS 9 - aarch64                              5.3 MB/s | 3.7 MB     00:00    
+AppStream 9 - aarch64                           3.2 MB/s |  16 MB     00:04    
+extras 9 - aarch64                              497 kB/s | 330 kB     00:00    
+Extra Packages for OpenCloudOS Linux 9 - EPOL    13 MB/s |  19 MB     00:01    
+Package mokutil-0.6.0-7.oc9.aarch64 is already installed.
+Package openssl-3.0.12-27.oc9.aarch64 is already installed.
+Package kmod-30-4.oc9.aarch64 is already installed.
+Package python3-3.11.6-31.oc9.aarch64 is already installed.
+Dependencies resolved.
+================================================================================
+ Package                       Arch       Version            Repository    Size
+================================================================================
+Upgrading:
+ openssl                       aarch64    3.0.12-28.oc9      BaseOS       975 k
+ openssl-libs                  aarch64    3.0.12-28.oc9      BaseOS       2.2 M
+ python-unversioned-command    noarch     3.11.6-31.oc9.3    AppStream     16 k
+ python3                       aarch64    3.11.6-31.oc9.3    BaseOS        32 k
+ python3-libs                  aarch64    3.11.6-31.oc9.3    BaseOS       9.7 M
+
+Transaction Summary
+================================================================================
+Upgrade  5 Packages
+
+Total download size: 13 M
+Downloading Packages:
+(1/5): python3-3.11.6-31.oc9.3.aarch64.rpm      101 kB/s |  32 kB     00:00    
+(2/5): openssl-3.0.12-28.oc9.aarch64.rpm        1.7 MB/s | 975 kB     00:00    
+(3/5): python-unversioned-command-3.11.6-31.oc9  63 kB/s |  16 kB     00:00    
+(4/5): openssl-libs-3.0.12-28.oc9.aarch64.rpm   2.0 MB/s | 2.2 MB     00:01    
+(5/5): python3-libs-3.11.6-31.oc9.3.aarch64.rpm 3.0 MB/s | 9.7 MB     00:03    
+--------------------------------------------------------------------------------
+Total                                           3.7 MB/s |  13 MB     00:03     
+BaseOS 9 - aarch64                              851 kB/s | 3.1 kB     00:00    
+Importing GPG key 0xB1EE0065:
+ Userid     : "OpenCloudOS <infrastructure@opencloudos.tech>"
+ Fingerprint: 99F4 DC2D 73F4 B6D5 DA95 D9CF CF86 BFE8 B1EE 0065
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-OpenCloudOS-9
+Key imported successfully
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : openssl-libs-3.0.12-28.oc9.aarch64                    1/10 
+  Upgrading        : python-unversioned-command-3.11.6-31.oc9.3.noarch     2/10 
+  Upgrading        : python3-3.11.6-31.oc9.3.aarch64                       3/10 
+  Upgrading        : python3-libs-3.11.6-31.oc9.3.aarch64                  4/10 
+  Upgrading        : openssl-3.0.12-28.oc9.aarch64                         5/10 
+  Cleanup          : openssl-3.0.12-27.oc9.aarch64                         6/10 
+  Cleanup          : python3-3.11.6-31.oc9.aarch64                         7/10 
+  Cleanup          : python-unversioned-command-3.11.6-31.oc9.noarch       8/10 
+  Cleanup          : python3-libs-3.11.6-31.oc9.aarch64                    9/10 
+  Cleanup          : openssl-libs-3.0.12-27.oc9.aarch64                   10/10 
+  Running scriptlet: openssl-libs-3.0.12-27.oc9.aarch64                   10/10 
+  Verifying        : openssl-3.0.12-28.oc9.aarch64                         1/10 
+  Verifying        : openssl-3.0.12-27.oc9.aarch64                         2/10 
+  Verifying        : openssl-libs-3.0.12-28.oc9.aarch64                    3/10 
+  Verifying        : openssl-libs-3.0.12-27.oc9.aarch64                    4/10 
+  Verifying        : python3-3.11.6-31.oc9.3.aarch64                       5/10 
+  Verifying        : python3-3.11.6-31.oc9.aarch64                         6/10 
+  Verifying        : python3-libs-3.11.6-31.oc9.3.aarch64                  7/10 
+  Verifying        : python3-libs-3.11.6-31.oc9.aarch64                    8/10 
+  Verifying        : python-unversioned-command-3.11.6-31.oc9.3.noarch     9/10 
+  Verifying        : python-unversioned-command-3.11.6-31.oc9.noarch      10/10 
+
+Upgraded:
+  openssl-3.0.12-28.oc9.aarch64                                                 
+  openssl-libs-3.0.12-28.oc9.aarch64                                            
+  python-unversioned-command-3.11.6-31.oc9.3.noarch                             
+  python3-3.11.6-31.oc9.3.aarch64                                               
+  python3-libs-3.11.6-31.oc9.3.aarch64                                          
+
+Complete!

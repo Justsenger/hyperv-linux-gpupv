@@ -1,0 +1,6 @@
+SecureBoot enabled
+bfc8cafc-5c86-4802-8008-a796a9baf0d4
+SHA1 Fingerprint: 76:a0:92:06:58:00:bf:37:69:01:c3:72:cd:55:a9:0e:1f:de:d2:e0
+        Issuer: C=GB, ST=Isle of Man, L=Douglas, O=Canonical Ltd., CN=Canonical Ltd. Master Certificate Authority
+SHA1 Fingerprint: e1:90:1c:76:9d:66:69:74:1b:51:38:18:53:5a:ea:05:14:fe:dc:4a
+        Issuer: CN=gpupv-test-916d15af6ae7472d9902 Secure Boot Module Signature key

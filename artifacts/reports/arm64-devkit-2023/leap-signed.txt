@@ -1,0 +1,95 @@
+Raw report: gpupv-test-c9bc68ed482745588408c4a3b0dba42d-879a67f0
+
+environment.txt
+NAME="openSUSE Leap"
+VERSION="15.6"
+ID="opensuse-leap"
+ID_LIKE="suse opensuse"
+VERSION_ID="15.6"
+PRETTY_NAME="openSUSE Leap 15.6"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:opensuse:leap:15.6"
+BUG_REPORT_URL="https://bugs.opensuse.org"
+HOME_URL="https://www.opensuse.org/"
+DOCUMENTATION_URL="https://en.opensuse.org/Portal:Leap"
+LOGO="distributor-logo-Leap"
+Linux gpupv-test-c9bc68ed482745588408c4a3b0dba42d 6.4.0-150600.23.103-default #1 SMP PREEMPT_DYNAMIC Fri May  8 13:08:22 UTC 2026 (52e00eb) aarch64 aarch64 aarch64 GNU/Linux
+uid=1000(tester) gid=100(users) groups=100(users),486(video),1000(sudo),1001(wheel)
+
+installed-module.txt
+/lib/modules/6.4.0-150600.23.103-default/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4353643 Nov 25 00:56 /lib/modules/6.4.0-150600.23.103-default/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+
+install-repeat.txt
+glibc 2.38, aarch64, kernel 6.4.0-150600.23.103-default, preflight OK
+
+installed-boot-before.txt
+e74a1be6-dec0-48a2-88c4-ccb6a54695e5
+
+installed-boot-after.txt
+gpupv-test-c9bc68ed482745588408c4a3b0dba42d
+6b1b90d5-7efb-490c-a543-a81244d123a5
+
+module-trust-after-boot.txt
+SecureBoot enabled
+GPU-PV module signing
+6D:8B:16:18:D4:16:46:A9:C0:E6:62:1B:56:FF:33:AC:AE:CD:75:A4
+On
+
+workload.txt
+boot_id=6b1b90d5-7efb-490c-a543-a81244d123a5 uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1
+
+uninstalled-boot-before.txt
+6b1b90d5-7efb-490c-a543-a81244d123a5
+
+uninstalled-boot-after.txt
+gpupv-test-c9bc68ed482745588408c4a3b0dba42d
+d08241f5-9abf-4817-a42c-8a35c06b22a5
+
+clean-after-reboot.txt
+managed_paths_clean
+
+result.json
+{
+  "failures": [
+    "Kernel diagnostic after workload requires review"
+  ],
+  "gpu": "\\\\?\\ACPI#VEN_QCOM&DEV_0636&SUBSYS_MSWW8280&REV_1823#0#{064092b3-625e-43bf-9eb5-dc845897dd59}\\GPUPARAV",
+  "passed": false,
+  "hostBuild": "10.0.29671.0",
+  "vm": "gpupv-test-c9bc68ed482745588408c4a3b0dba42d"
+}
+
+dxg ioctl diagnostics from dmesg-after-workload.txt
+[   14.951026] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   14.951516] gpupv query caller=d3d12-compute pid=1231 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   14.951520] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   14.951567] gpupv query caller=d3d12-compute pid=1231 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   14.951569] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   14.951603] gpupv query caller=d3d12-compute pid=1231 type=1 bytes=524 host_status=0xc000000d errno=-22
+[   14.951604] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   14.951718] gpupv query caller=d3d12-compute pid=1231 type=48 bytes=552 host_status=0xc0000034 errno=-2
+[   14.951720] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2

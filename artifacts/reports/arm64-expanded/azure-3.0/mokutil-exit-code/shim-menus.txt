@@ -1,0 +1,5 @@
+33feb6e1-6d00-49be-afb4-4b4684ce23e9 confirmed shim menu management
+33feb6e1-6d00-49be-afb4-4b4684ce23e9 confirmed shim menu view
+33feb6e1-6d00-49be-afb4-4b4684ce23e9 confirmed shim menu confirm
+33feb6e1-6d00-49be-afb4-4b4684ce23e9 confirmed shim menu password
+33feb6e1-6d00-49be-afb4-4b4684ce23e9 confirmed shim menu reboot

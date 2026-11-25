@@ -1,0 +1,6 @@
+systemd
+6ef43c4b-85ac-4694-85f3-6992227b02f4
+SecureBoot disabled
+OE
+crw-rw----. 1 root video 10, 121 Nov 25 03:18 /dev/dxg
+[    3.151143] dxgkrnl: module verification failed: signature and/or required key missing - tainting kernel

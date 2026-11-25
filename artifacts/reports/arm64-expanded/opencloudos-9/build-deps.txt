@@ -1,0 +1,163 @@
+Last metadata expiration check: 0:02:33 ago on Wed Nov 25 10:14:46 2026.
+Dependencies resolved.
+================================================================================
+ Package                  Arch       Version                 Repository    Size
+================================================================================
+Installing:
+ elfutils-libelf-devel    aarch64    0.190-6.oc9             BaseOS        19 k
+ gcc                      aarch64    12.3.1.8-9.oc9          BaseOS        27 M
+ gcc-c++                  aarch64    12.3.1.8-9.oc9          AppStream     11 M
+ kernel-devel             aarch64    6.6.119-52.7.oc9        BaseOS        15 M
+ make                     aarch64    4.4.1-4.oc9             BaseOS       568 k
+Upgrading:
+ elfutils-libelf          aarch64    0.190-6.oc9             BaseOS       188 k
+ elfutils-libs            aarch64    0.190-6.oc9             BaseOS       237 k
+ libgcc                   aarch64    12.3.1.8-9.oc9          BaseOS        77 k
+ libgomp                  aarch64    12.3.1.8-9.oc9          BaseOS       271 k
+ libstdc++                aarch64    12.3.1.8-9.oc9          BaseOS       715 k
+Installing dependencies:
+ binutils                 aarch64    2.41-26.oc9.1           BaseOS       7.1 M
+ binutils-gold            aarch64    2.41-26.oc9.1           BaseOS       844 k
+ cpp                      aarch64    12.3.1.8-9.oc9          BaseOS       9.0 M
+ glibc-devel              aarch64    2.38-49.oc9.2           BaseOS       1.6 M
+ kernel-headers           aarch64    6.6.119-53.10.oc9       BaseOS       1.9 M
+ libasan                  aarch64    12.3.1.8-9.oc9          BaseOS       383 k
+ libitm                   aarch64    12.3.1.8-9.oc9          BaseOS        66 k
+ libmpc                   aarch64    1.3.1-5.oc9             BaseOS        97 k
+ libstdc++-devel          aarch64    12.3.1.8-9.oc9          AppStream    2.6 M
+ libubsan                 aarch64    12.3.1.8-9.oc9          BaseOS       168 k
+ libxcrypt-devel          aarch64    4.4.36-9.oc9            BaseOS       113 k
+ libzstd-devel            aarch64    1.5.5-7.oc9             BaseOS       310 k
+ zlib-devel               aarch64    1.2.13-9.oc9            BaseOS        38 k
+
+Transaction Summary
+================================================================================
+Install  18 Packages
+Upgrade   5 Packages
+
+Total download size: 80 M
+Downloading Packages:
+(1/23): binutils-gold-2.41-26.oc9.1.aarch64.rpm 4.3 MB/s | 844 kB     00:00    
+(2/23): elfutils-libelf-devel-0.190-6.oc9.aarch 359 kB/s |  19 kB     00:00    
+(3/23): binutils-2.41-26.oc9.1.aarch64.rpm       11 MB/s | 7.1 MB     00:00    
+(4/23): glibc-devel-2.38-49.oc9.2.aarch64.rpm   9.7 MB/s | 1.6 MB     00:00    
+(5/23): gcc-12.3.1.8-9.oc9.aarch64.rpm           15 MB/s |  27 MB     00:01    
+(6/23): kernel-headers-6.6.119-53.10.oc9.aarch6 7.9 MB/s | 1.9 MB     00:00    
+(7/23): libasan-12.3.1.8-9.oc9.aarch64.rpm      3.0 MB/s | 383 kB     00:00    
+(8/23): libitm-12.3.1.8-9.oc9.aarch64.rpm       1.5 MB/s |  66 kB     00:00    
+(9/23): libmpc-1.3.1-5.oc9.aarch64.rpm          1.3 MB/s |  97 kB     00:00    
+(10/23): libubsan-12.3.1.8-9.oc9.aarch64.rpm    1.6 MB/s | 168 kB     00:00    
+(11/23): libxcrypt-devel-4.4.36-9.oc9.aarch64.r 2.2 MB/s | 113 kB     00:00    
+(12/23): libzstd-devel-1.5.5-7.oc9.aarch64.rpm  4.6 MB/s | 310 kB     00:00    
+(13/23): make-4.4.1-4.oc9.aarch64.rpm           4.4 MB/s | 568 kB     00:00    
+(14/23): zlib-devel-1.2.13-9.oc9.aarch64.rpm    203 kB/s |  38 kB     00:00    
+(15/23): cpp-12.3.1.8-9.oc9.aarch64.rpm         2.6 MB/s | 9.0 MB     00:03    
+(16/23): libstdc++-devel-12.3.1.8-9.oc9.aarch64 2.6 MB/s | 2.6 MB     00:01    
+(17/23): elfutils-libelf-0.190-6.oc9.aarch64.rp 792 kB/s | 188 kB     00:00    
+(18/23): elfutils-libs-0.190-6.oc9.aarch64.rpm  836 kB/s | 237 kB     00:00    
+(19/23): libgcc-12.3.1.8-9.oc9.aarch64.rpm      283 kB/s |  77 kB     00:00    
+(20/23): libgomp-12.3.1.8-9.oc9.aarch64.rpm     412 kB/s | 271 kB     00:00    
+(21/23): libstdc++-12.3.1.8-9.oc9.aarch64.rpm   1.7 MB/s | 715 kB     00:00    
+(22/23): gcc-c++-12.3.1.8-9.oc9.aarch64.rpm     2.8 MB/s |  11 MB     00:03    
+(23/23): kernel-devel-6.6.119-52.7.oc9.aarch64. 2.5 MB/s |  15 MB     00:06    
+--------------------------------------------------------------------------------
+Total                                            11 MB/s |  80 MB     00:07     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : libgcc-12.3.1.8-9.oc9.aarch64                         1/28 
+  Running scriptlet: libgcc-12.3.1.8-9.oc9.aarch64                         1/28 
+  Upgrading        : libstdc++-12.3.1.8-9.oc9.aarch64                      2/28 
+  Running scriptlet: libstdc++-12.3.1.8-9.oc9.aarch64                      2/28 
+  Installing       : libmpc-1.3.1-5.oc9.aarch64                            3/28 
+  Installing       : binutils-gold-2.41-26.oc9.1.aarch64                   4/28 
+  Installing       : binutils-2.41-26.oc9.1.aarch64                        5/28 
+  Running scriptlet: binutils-2.41-26.oc9.1.aarch64                        5/28 
+  Upgrading        : elfutils-libelf-0.190-6.oc9.aarch64                   6/28 
+  Installing       : cpp-12.3.1.8-9.oc9.aarch64                            7/28 
+  Installing       : libasan-12.3.1.8-9.oc9.aarch64                        8/28 
+  Running scriptlet: libasan-12.3.1.8-9.oc9.aarch64                        8/28 
+  Installing       : libubsan-12.3.1.8-9.oc9.aarch64                       9/28 
+  Running scriptlet: libubsan-12.3.1.8-9.oc9.aarch64                       9/28 
+  Installing       : libstdc++-devel-12.3.1.8-9.oc9.aarch64               10/28 
+  Upgrading        : libgomp-12.3.1.8-9.oc9.aarch64                       11/28 
+  Running scriptlet: libgomp-12.3.1.8-9.oc9.aarch64                       11/28 
+  Installing       : zlib-devel-1.2.13-9.oc9.aarch64                      12/28 
+  Installing       : make-4.4.1-4.oc9.aarch64                             13/28 
+  Installing       : libzstd-devel-1.5.5-7.oc9.aarch64                    14/28 
+  Installing       : libitm-12.3.1.8-9.oc9.aarch64                        15/28 
+  Running scriptlet: libitm-12.3.1.8-9.oc9.aarch64                        15/28 
+  Installing       : kernel-headers-6.6.119-53.10.oc9.aarch64             16/28 
+  Installing       : libxcrypt-devel-4.4.36-9.oc9.aarch64                 17/28 
+  Installing       : glibc-devel-2.38-49.oc9.2.aarch64                    18/28 
+  Installing       : gcc-12.3.1.8-9.oc9.aarch64                           19/28 
+  Installing       : gcc-c++-12.3.1.8-9.oc9.aarch64                       20/28 
+  Installing       : elfutils-libelf-devel-0.190-6.oc9.aarch64            21/28 
+  Upgrading        : elfutils-libs-0.190-6.oc9.aarch64                    22/28 
+  Installing       : kernel-devel-6.6.119-52.7.oc9.aarch64                23/28 
+  Running scriptlet: kernel-devel-6.6.119-52.7.oc9.aarch64                23/28 
+  Cleanup          : elfutils-libs-0.190-5.oc9.aarch64                    24/28 
+  Cleanup          : libstdc++-12.3.1.8-8.oc9.aarch64                     25/28 
+  Running scriptlet: libstdc++-12.3.1.8-8.oc9.aarch64                     25/28 
+  Cleanup          : libgcc-12.3.1.8-8.oc9.aarch64                        26/28 
+  Running scriptlet: libgcc-12.3.1.8-8.oc9.aarch64                        26/28 
+  Cleanup          : elfutils-libelf-0.190-5.oc9.aarch64                  27/28 
+  Cleanup          : libgomp-12.3.1.8-8.oc9.aarch64                       28/28 
+  Running scriptlet: libgomp-12.3.1.8-8.oc9.aarch64                       28/28 
+  Verifying        : binutils-2.41-26.oc9.1.aarch64                        1/28 
+  Verifying        : binutils-gold-2.41-26.oc9.1.aarch64                   2/28 
+  Verifying        : cpp-12.3.1.8-9.oc9.aarch64                            3/28 
+  Verifying        : elfutils-libelf-devel-0.190-6.oc9.aarch64             4/28 
+  Verifying        : gcc-12.3.1.8-9.oc9.aarch64                            5/28 
+  Verifying        : glibc-devel-2.38-49.oc9.2.aarch64                     6/28 
+  Verifying        : kernel-devel-6.6.119-52.7.oc9.aarch64                 7/28 
+  Verifying        : kernel-headers-6.6.119-53.10.oc9.aarch64              8/28 
+  Verifying        : libasan-12.3.1.8-9.oc9.aarch64                        9/28 
+  Verifying        : libitm-12.3.1.8-9.oc9.aarch64                        10/28 
+  Verifying        : libmpc-1.3.1-5.oc9.aarch64                           11/28 
+  Verifying        : libubsan-12.3.1.8-9.oc9.aarch64                      12/28 
+  Verifying        : libxcrypt-devel-4.4.36-9.oc9.aarch64                 13/28 
+  Verifying        : libzstd-devel-1.5.5-7.oc9.aarch64                    14/28 
+  Verifying        : make-4.4.1-4.oc9.aarch64                             15/28 
+  Verifying        : zlib-devel-1.2.13-9.oc9.aarch64                      16/28 
+  Verifying        : gcc-c++-12.3.1.8-9.oc9.aarch64                       17/28 
+  Verifying        : libstdc++-devel-12.3.1.8-9.oc9.aarch64               18/28 
+  Verifying        : elfutils-libelf-0.190-6.oc9.aarch64                  19/28 
+  Verifying        : elfutils-libelf-0.190-5.oc9.aarch64                  20/28 
+  Verifying        : elfutils-libs-0.190-6.oc9.aarch64                    21/28 
+  Verifying        : elfutils-libs-0.190-5.oc9.aarch64                    22/28 
+  Verifying        : libgcc-12.3.1.8-9.oc9.aarch64                        23/28 
+  Verifying        : libgcc-12.3.1.8-8.oc9.aarch64                        24/28 
+  Verifying        : libgomp-12.3.1.8-9.oc9.aarch64                       25/28 
+  Verifying        : libgomp-12.3.1.8-8.oc9.aarch64                       26/28 
+  Verifying        : libstdc++-12.3.1.8-9.oc9.aarch64                     27/28 
+  Verifying        : libstdc++-12.3.1.8-8.oc9.aarch64                     28/28 
+
+Upgraded:
+  elfutils-libelf-0.190-6.oc9.aarch64     elfutils-libs-0.190-6.oc9.aarch64    
+  libgcc-12.3.1.8-9.oc9.aarch64           libgomp-12.3.1.8-9.oc9.aarch64       
+  libstdc++-12.3.1.8-9.oc9.aarch64       
+Installed:
+  binutils-2.41-26.oc9.1.aarch64                                                
+  binutils-gold-2.41-26.oc9.1.aarch64                                           
+  cpp-12.3.1.8-9.oc9.aarch64                                                    
+  elfutils-libelf-devel-0.190-6.oc9.aarch64                                     
+  gcc-12.3.1.8-9.oc9.aarch64                                                    
+  gcc-c++-12.3.1.8-9.oc9.aarch64                                                
+  glibc-devel-2.38-49.oc9.2.aarch64                                             
+  kernel-devel-6.6.119-52.7.oc9.aarch64                                         
+  kernel-headers-6.6.119-53.10.oc9.aarch64                                      
+  libasan-12.3.1.8-9.oc9.aarch64                                                
+  libitm-12.3.1.8-9.oc9.aarch64                                                 
+  libmpc-1.3.1-5.oc9.aarch64                                                    
+  libstdc++-devel-12.3.1.8-9.oc9.aarch64                                        
+  libubsan-12.3.1.8-9.oc9.aarch64                                               
+  libxcrypt-devel-4.4.36-9.oc9.aarch64                                          
+  libzstd-devel-1.5.5-7.oc9.aarch64                                             
+  make-4.4.1-4.oc9.aarch64                                                      
+  zlib-devel-1.2.13-9.oc9.aarch64                                               
+
+Complete!

@@ -1,0 +1,7 @@
+{
+  "Image": "C:\\Users\\saniye\\Documents\\GitHub\\hyperv-linux-gpupv\\.test\\images\\gpupv-test-alpine-3.23-737b0eb365944ffc.img",
+  "Arch": "aarch64",
+  "Sha256": "EEDA75C83FCADE4C9F0C461C923B965DF0FB1B294E5C66D4EF09ED0DC2AD360C",
+  "Source": "https://dl-4.alpinelinux.org/alpine/v3.23/releases/cloud/nocloud_alpine-3.23.4-aarch64-uefi-cloudinit-r0.qcow2",
+  "ChecksumSource": "https://dl-4.alpinelinux.org/alpine/v3.23/releases/cloud/nocloud_alpine-3.23.4-aarch64-uefi-cloudinit-r0.qcow2.sha512"
+}

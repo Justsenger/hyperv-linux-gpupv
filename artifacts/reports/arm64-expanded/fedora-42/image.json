@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://mirror.nju.edu.cn/fedora-archive/fedora/linux/releases/42/Cloud/aarch64/images/Fedora-Cloud-Base-Generic-42-1.1.aarch64.qcow2",
+  "ChecksumSource": "https://mirror.nju.edu.cn/fedora-archive/fedora/linux/releases/42/Cloud/aarch64/images/Fedora-Cloud-42-1.1-aarch64-CHECKSUM",
+  "PublishedDigest": "e10658419a8d50231037dc781c3155aa94180a8c7a74e5cac2a6b09eaa9342b7",
+  "OriginalSha256": null,
+  "Sha256": "e10658419a8d50231037dc781c3155aa94180a8c7a74e5cac2a6b09eaa9342b7"
+}

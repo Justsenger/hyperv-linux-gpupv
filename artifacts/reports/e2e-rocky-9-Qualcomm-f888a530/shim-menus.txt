@@ -1,0 +1,5 @@
+7526d987-a7f4-47e5-aebe-362e820fc9d5 confirmed shim menu management
+7526d987-a7f4-47e5-aebe-362e820fc9d5 confirmed shim menu view
+7526d987-a7f4-47e5-aebe-362e820fc9d5 confirmed shim menu confirm
+7526d987-a7f4-47e5-aebe-362e820fc9d5 confirmed shim menu password
+7526d987-a7f4-47e5-aebe-362e820fc9d5 confirmed shim menu reboot

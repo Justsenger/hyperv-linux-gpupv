@@ -1,0 +1,5 @@
+2a9dbb6d-f757-4674-8ff7-4b38d795c977 confirmed shim menu management
+2a9dbb6d-f757-4674-8ff7-4b38d795c977 confirmed shim menu view
+2a9dbb6d-f757-4674-8ff7-4b38d795c977 confirmed shim menu confirm
+2a9dbb6d-f757-4674-8ff7-4b38d795c977 confirmed shim menu password
+2a9dbb6d-f757-4674-8ff7-4b38d795c977 confirmed shim menu reboot

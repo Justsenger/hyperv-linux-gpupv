@@ -1,0 +1,93 @@
+NAME="Rocky Linux"
+VERSION="9.9 (Blue Onyx)"
+RELEASE_TYPE="stable"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="9.9"
+PLATFORM_ID="platform:el9"
+PRETTY_NAME="Rocky Linux 9.9 (Blue Onyx)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:9::baseos"
+HOME_URL="https://rockylinux.org/"
+VENDOR_NAME="RESF"
+VENDOR_URL="https://resf.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2032-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-9"
+ROCKY_SUPPORT_PRODUCT_VERSION="9.9"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="9.9"
+Linux gpupv-test-f888a5302b754f1aa8be137aca09260d 5.14.0-741.22.1.el9_9.aarch64 #1 SMP PREEMPT_DYNAMIC Thu Nov 12 15:41:01 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+0x1414
+0x008e
+dfd8615280e95cff5136c094bd3fae5e75b31911e146b4db523776fcc86df0ca  /mnt/gpupv/guest/gpupv-guest
+97bb966aecdb8c114eb84d4985c65d0850dff8e95dd82576bcd8dec33a8cabf0  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+glibc 2.34, aarch64, kernel 5.14.0-741.22.1.el9_9.aarch64, preflight OK
+/tmp/tmp.gbtJaEIwX9/probe.c:2:28: error: 鈥榮truct dma_fence_ops鈥?has no member named 鈥榝ence_value_str鈥?    2 | struct dma_fence_ops p = {.fence_value_str = NULL};
+      |                            ^~~~~~~~~~~~~~~
+make[1]: *** [scripts/Makefile.build:250: /tmp/tmp.gbtJaEIwX9/probe.o] Error 1
+make: *** [Makefile:1977: /tmp/tmp.gbtJaEIwX9] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 0
+#define GPUPV_FENCE_FIRST 1
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/5.14.0-741.22.1.el9_9.aarch64'
+  CC [M]  /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmp41owdnv4/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/kernels/5.14.0-741.22.1.el9_9.aarch64'
+glibc 2.34, aarch64, kernel 5.14.0-741.22.1.el9_9.aarch64, preflight OK
+/usr/lib/modules/5.14.0-741.22.1.el9_9.aarch64/updates/gpupv/dxgkrnl.ko
+-rw-r--r--. 1 root root system_u:object_r:modules_object_t:s0 4486899 Nov 25 00:44 /lib/modules/5.14.0-741.22.1.el9_9.aarch64/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
+uid=1000(tester) gid=1001(tester) groups=1001(tester),10(wheel),39(video),1000(sudo) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+crw-rw----. 1 root video 10, 122 Nov 25 00:45 /dev/dxg
+boot_id=2dcce8de-7c3e-4bbc-98ca-81e686774384 uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+SecureBoot enabled
+GPU-PV module signing
+7A:1E:2C:76:79:50:80:1A:E0:51:5F:F2:E8:44:D0:41:13:FD:36:DD
+O
+module dxgkrnl format gpupv +p
+boot_id=2dcce8de-7c3e-4bbc-98ca-81e686774384 uid=1000 gpu=Qualcomm(R) Adreno(TM) 8cx Gen 3
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1
+managed_paths_clean
+managed_paths_clean

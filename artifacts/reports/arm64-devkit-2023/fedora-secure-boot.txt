@@ -1,0 +1,7 @@
+7.3.4-200.fc44.aarch64
+gpupv-test-f1f978b83c984f8095199733e658cf5c
+SecureBoot enabled
+shim-aa64-16.1-7.aarch64
+grub2-efi-aa64-2.12-66.fc44.aarch64
+kernel-devel-7.3.4-200.fc44.aarch64
+d96d:00:00.0

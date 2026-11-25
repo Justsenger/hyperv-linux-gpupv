@@ -1,0 +1,5 @@
+11aab297-c034-48e8-ae32-c6f1dce776e2 confirmed shim menu management
+11aab297-c034-48e8-ae32-c6f1dce776e2 confirmed shim menu view
+11aab297-c034-48e8-ae32-c6f1dce776e2 confirmed shim menu confirm
+11aab297-c034-48e8-ae32-c6f1dce776e2 confirmed shim menu password
+11aab297-c034-48e8-ae32-c6f1dce776e2 confirmed shim menu reboot

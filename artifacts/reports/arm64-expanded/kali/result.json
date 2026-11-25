@@ -1,0 +1,22 @@
+{
+  "target": "kali",
+  "vm": "gpupv-test-a1bd030f4161418eaf725ff3b4c10d9a",
+  "vmId": "47cd0a3e-aba9-40de-bd22-596e963e10f1",
+  "started": "2026-11-25T11:26:16.7756556+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": false,
+  "route": "prebuilt",
+  "kernel": "7.2.15+kali-arm64",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T11:28:03.0908393+08:00"
+}

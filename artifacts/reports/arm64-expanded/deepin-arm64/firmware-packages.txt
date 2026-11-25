@@ -1,0 +1,29 @@
+shim-signed:
+  Installed: 1.36.11+15.4.1-7
+  Candidate: 1.36.11+15.4.1-7
+  Version table:
+ *** 1.36.11+15.4.1-7 500
+        500 https://community-packages.deepin.com/beige crimson/main arm64 Packages
+        100 /var/lib/dpkg/status
+grub-efi-arm64-signed:
+  Installed: 1+2.12+deepin
+  Candidate: 1+2.12+deepin
+  Version table:
+ *** 1+2.12+deepin 500
+        500 https://community-packages.deepin.com/beige crimson/main arm64 Packages
+        100 /var/lib/dpkg/status
+137fe80b200e681de5654e347a629a556a781b2f4cdcc74575ba41ea1fc8589f  /mnt/c36/usr/lib/shim/BOOTAA64.CSV
+1e53ac6d9299879b9df933b715a50dbc53654adc6f35f947375e21e22fb52ed6  /mnt/c36/usr/lib/shim/fbaa64.efi
+e5397210def341c50775826c5248f24e9451241e0f5a768e9d88b4075d541096  /mnt/c36/usr/lib/shim/shimaa64.efi
+d43df54dd18d7a3e400127ef00b6eb85aeeb2b913ea31fd24d2a8ea123c41e83  /mnt/c36/usr/lib/shim/mmaa64.efi.signed
+4cbbd224cbba4507ec70e6d09c762555c2d60957ac9c4d8259403c33c8758c50  /mnt/c36/usr/lib/shim/mmaa64.efi
+9c60088869699b0e80e7ac8cb9454bbfc1da181cf7029a17cff28d60a5768910  /mnt/c36/usr/lib/shim/shimaa64.efi.signed
+58f6ff0d84a0f960d51085c90127453ee6c1ce86a8ba974ef026528f112141f6  /mnt/c36/usr/lib/shim/fbaa64.efi.signed
+9c60088869699b0e80e7ac8cb9454bbfc1da181cf7029a17cff28d60a5768910  /mnt/c36/boot/efi/EFI/BOOT/BOOTAA64.EFI
+913066eef72b2f047c400433cf512d2b4b47b0797e37a85888ab5ac9d15268d5  /mnt/c36/boot/efi/EFI/BOOT/grubaa64.efi
+d43df54dd18d7a3e400127ef00b6eb85aeeb2b913ea31fd24d2a8ea123c41e83  /mnt/c36/boot/efi/EFI/BOOT/mmaa64.efi
+137fe80b200e681de5654e347a629a556a781b2f4cdcc74575ba41ea1fc8589f  /mnt/c36/boot/efi/EFI/BOOT/BOOTAA64.CSV
+c17bc56c2dd3b78c9881d06410d14151e6a46fab163735504cfbddb49be77235  /mnt/c36/boot/efi/EFI/BOOT/grub.cfg
+gcc	4:13.2.0+really12.3.0-0deepin2
+linux-headers-6.18.38-arm64-desktop-rolling	25.01.01.28
+make	4.4.1-2

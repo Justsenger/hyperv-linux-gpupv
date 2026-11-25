@@ -1,0 +1,6 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://mirrors.opencloudos.tech/opencloudos/9.6/images/qcow2/aarch64/20260922.0/OpenCloudOS-GenericCloud-9.6-20260922.0.aarch64.qcow2",
+  "ChecksumSource": "https://mirrors.opencloudos.tech/opencloudos/9.6/images/qcow2/aarch64/20260922.0/OpenCloudOS-GenericCloud-9.6-20260922.0.aarch64.qcow2.sha256",
+  "Sha256": "8791e33d6b946014014febae1662d9332e20cb820e40401452f370ec6b691a64"
+}

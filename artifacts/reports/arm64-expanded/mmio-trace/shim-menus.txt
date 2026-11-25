@@ -1,0 +1,5 @@
+8838a41d-75ba-4da8-b63e-b742cdb98579 confirmed shim menu management
+8838a41d-75ba-4da8-b63e-b742cdb98579 confirmed shim menu view
+8838a41d-75ba-4da8-b63e-b742cdb98579 confirmed shim menu confirm
+8838a41d-75ba-4da8-b63e-b742cdb98579 confirmed shim menu password
+8838a41d-75ba-4da8-b63e-b742cdb98579 confirmed shim menu reboot

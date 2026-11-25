@@ -1,0 +1,59 @@
+glibc 2.38, aarch64, kernel 6.6.119-52.7.oc9.aarch64, preflight OK
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (Tencent Compiler 12.3.1.8) 12.3.1 20230912 (OpenCloudOS 12.3.1.8-8)
+  You are using:           gcc (Tencent Compiler 12.3.1.8) 12.3.1 20230912 (OpenCloudOS 12.3.1.8-9)
+/tmp/tmp.XQYAzYCQE4/probe.c: In function 'p':
+/tmp/tmp.XQYAzYCQE4/probe.c:2:62: error: too few arguments to function 'eventfd_signal'
+    2 | void p(struct eventfd_ctx *c); void p(struct eventfd_ctx *c){eventfd_signal(c);}
+      |                                                              ^~~~~~~~~~~~~~
+In file included from /tmp/tmp.XQYAzYCQE4/probe.c:1:
+./include/linux/eventfd.h:38:7: note: declared here
+   38 | __u64 eventfd_signal(struct eventfd_ctx *ctx, __u64 n);
+      |       ^~~~~~~~~~~~~~
+make[2]: *** [scripts/Makefile.build:243: /tmp/tmp.XQYAzYCQE4/probe.o] Error 1
+make[1]: *** [/usr/src/kernels/6.6.119-52.7.oc9.aarch64/Makefile:1941: /tmp/tmp.XQYAzYCQE4] Error 2
+make: *** [Makefile:241: __sub-make] Error 2
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (Tencent Compiler 12.3.1.8) 12.3.1 20230912 (OpenCloudOS 12.3.1.8-8)
+  You are using:           gcc (Tencent Compiler 12.3.1.8) 12.3.1 20230912 (OpenCloudOS 12.3.1.8-9)
+/tmp/tmp.XQYAzYCQE4/probe.c: In function 'p':
+/tmp/tmp.XQYAzYCQE4/probe.c:2:86: error: passing argument 1 of '__dma_fence_is_later' makes integer from pointer without a cast [-Werror=int-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.XQYAzYCQE4/probe.c:1:
+./include/linux/dma-fence.h:471:45: note: expected 'u64' {aka 'long long unsigned int'} but argument is of type 'struct dma_fence *'
+  471 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:243: /tmp/tmp.XQYAzYCQE4/probe.o] Error 1
+make[1]: *** [/usr/src/kernels/6.6.119-52.7.oc9.aarch64/Makefile:1941: /tmp/tmp.XQYAzYCQE4] Error 2
+make: *** [Makefile:241: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 0
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/6.6.119-52.7.oc9.aarch64'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (Tencent Compiler 12.3.1.8) 12.3.1 20230912 (OpenCloudOS 12.3.1.8-8)
+  You are using:           gcc (Tencent Compiler 12.3.1.8) 12.3.1 20230912 (OpenCloudOS 12.3.1.8-9)
+  CC [M]  /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+make: Leaving directory '/usr/src/kernels/6.6.119-52.7.oc9.aarch64'
+Skipping BTF generation for /tmp/tmp778j_1eu/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux

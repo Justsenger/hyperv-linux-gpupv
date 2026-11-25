@@ -1,0 +1,14 @@
+Linux 7.3.5+deb14-arm64 aarch64 GNU/Linux
+PRETTY_NAME="Debian GNU/Linux forky/sid"
+NAME="Debian GNU/Linux"
+VERSION_CODENAME=forky
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+init=systemd
+absent=gcc
+absent=make
+headers=absent
+SecureBoot enabled
+/sys/bus/pci/devices/2097:00:00.0/device:0x008e

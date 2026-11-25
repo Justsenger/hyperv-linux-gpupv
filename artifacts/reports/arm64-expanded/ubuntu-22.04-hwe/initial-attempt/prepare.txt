@@ -1,0 +1,32 @@
+Linux gpupv-test-25a51c94d78b4aeb9907e7fd2cd2ee61 5.15.0-203-generic #213-Ubuntu SMP Fri Oct 23 13:20:09 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+systemd
+.................status: done
+Ign:1 https://ports.ubuntu.com/ubuntu-ports jammy InRelease
+Ign:2 https://ports.ubuntu.com/ubuntu-ports jammy-updates InRelease
+Ign:3 https://ports.ubuntu.com/ubuntu-ports jammy-backports InRelease
+Ign:4 https://ports.ubuntu.com/ubuntu-ports jammy-security InRelease
+Err:5 https://ports.ubuntu.com/ubuntu-ports jammy Release
+  Cannot initiate the connection to ports.ubuntu.com:443 (2606:4700:10::6814:1cf6). - connect (101: Network is unreachable) Cannot initiate the connection to ports.ubuntu.com:443 (2606:4700:10::ac42:98b0). - connect (101: Network is unreachable)
+Err:6 https://ports.ubuntu.com/ubuntu-ports jammy-updates Release
+  Cannot initiate the connection to ports.ubuntu.com:443 (2606:4700:10::6814:1cf6). - connect (101: Network is unreachable) Cannot initiate the connection to ports.ubuntu.com:443 (2606:4700:10::ac42:98b0). - connect (101: Network is unreachable)
+Err:7 https://ports.ubuntu.com/ubuntu-ports jammy-backports Release
+  Cannot initiate the connection to ports.ubuntu.com:443 (2606:4700:10::6814:1cf6). - connect (101: Network is unreachable) Cannot initiate the connection to ports.ubuntu.com:443 (2606:4700:10::ac42:98b0). - connect (101: Network is unreachable)
+Err:8 https://ports.ubuntu.com/ubuntu-ports jammy-security Release
+  Cannot initiate the connection to ports.ubuntu.com:443 (2606:4700:10::6814:1cf6). - connect (101: Network is unreachable) Cannot initiate the connection to ports.ubuntu.com:443 (2606:4700:10::ac42:98b0). - connect (101: Network is unreachable)
+Reading package lists...
+E: The repository 'https://ports.ubuntu.com/ubuntu-ports jammy Release' no longer has a Release file.
+E: The repository 'https://ports.ubuntu.com/ubuntu-ports jammy-updates Release' no longer has a Release file.
+E: The repository 'https://ports.ubuntu.com/ubuntu-ports jammy-backports Release' does not have a Release file.
+E: The repository 'https://ports.ubuntu.com/ubuntu-ports jammy-security Release' no longer has a Release file.

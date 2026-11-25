@@ -1,0 +1,21 @@
+{
+  "target": "omv",
+  "vm": "gpupv-test-9dc6b9dac78945f883446ba8b68d15d5",
+  "vmId": "62ae4395-323d-4b45-afe5-a2794035d881",
+  "started": "2026-11-25T09:49:31.3289704+08:00",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "6.1.0-56-arm64",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T10:01:05.7121753+08:00"
+}

@@ -1,0 +1,84 @@
+Linux gpupv-test-def2e1a80aad457a895c22c484c9698f 7.3.0-10-generic #10-Ubuntu SMP PREEMPT_DYNAMIC Thu Oct 22 07:54:48 UTC 2026 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 26.10"
+NAME="Ubuntu"
+VERSION_ID="26.10"
+VERSION="26.10 (Stonking Stingray)"
+VERSION_CODENAME=stonking
+RELEASE_TYPE=stable
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+DOCUMENTATION_URL="https://docs.ubuntu.com"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+LOGO=ubuntu-logo
+VENDOR_NAME="Canonical"
+VENDOR_URL="https://canonical.com/"
+UBUNTU_CODENAME=stonking
+systemd
+....status: done
+Get:1 https://ports.ubuntu.com/ubuntu-ports stonking InRelease [170 kB]
+Get:2 https://ports.ubuntu.com/ubuntu-ports stonking-updates InRelease [72.6 kB]
+Get:3 https://ports.ubuntu.com/ubuntu-ports stonking-backports InRelease [60.7 kB]
+Get:4 https://ports.ubuntu.com/ubuntu-ports stonking-security InRelease [72.6 kB]
+Get:5 https://ports.ubuntu.com/ubuntu-ports stonking/main arm64 Packages [992 kB]
+Get:6 https://ports.ubuntu.com/ubuntu-ports stonking/main Translation-en [519 kB]
+Get:7 https://ports.ubuntu.com/ubuntu-ports stonking/main arm64 Components [405 kB]
+Get:8 https://ports.ubuntu.com/ubuntu-ports stonking/main arm64 c-n-f Metadata [32.1 kB]
+Get:9 https://ports.ubuntu.com/ubuntu-ports stonking/universe arm64 Packages [11.1 MB]
+Get:10 https://ports.ubuntu.com/ubuntu-ports stonking/universe Translation-en [6524 kB]
+Get:11 https://ports.ubuntu.com/ubuntu-ports stonking/universe arm64 Components [4065 kB]
+Get:12 https://ports.ubuntu.com/ubuntu-ports stonking/universe arm64 c-n-f Metadata [313 kB]
+Get:13 https://ports.ubuntu.com/ubuntu-ports stonking/restricted arm64 Packages [73.7 kB]
+Get:14 https://ports.ubuntu.com/ubuntu-ports stonking/restricted Translation-en [17.1 kB]
+Get:15 https://ports.ubuntu.com/ubuntu-ports stonking/restricted arm64 c-n-f Metadata [380 B]
+Get:16 https://ports.ubuntu.com/ubuntu-ports stonking/multiverse arm64 Packages [174 kB]
+Get:17 https://ports.ubuntu.com/ubuntu-ports stonking/multiverse Translation-en [124 kB]
+Get:18 https://ports.ubuntu.com/ubuntu-ports stonking/multiverse arm64 Components [46.2 kB]
+Get:19 https://ports.ubuntu.com/ubuntu-ports stonking/multiverse arm64 c-n-f Metadata [8044 B]
+Get:20 https://ports.ubuntu.com/ubuntu-ports stonking-updates/main arm64 Packages [148 kB]
+Get:21 https://ports.ubuntu.com/ubuntu-ports stonking-updates/main Translation-en [50.3 kB]
+Get:22 https://ports.ubuntu.com/ubuntu-ports stonking-updates/main arm64 Components [7512 B]
+Get:23 https://ports.ubuntu.com/ubuntu-ports stonking-updates/main arm64 c-n-f Metadata [112 B]
+Get:24 https://ports.ubuntu.com/ubuntu-ports stonking-updates/universe arm64 Packages [52.2 kB]
+Get:25 https://ports.ubuntu.com/ubuntu-ports stonking-updates/universe Translation-en [24.3 kB]
+Get:26 https://ports.ubuntu.com/ubuntu-ports stonking-updates/universe arm64 Components [30.1 kB]
+Get:27 https://ports.ubuntu.com/ubuntu-ports stonking-updates/universe arm64 c-n-f Metadata [116 B]
+Get:28 https://ports.ubuntu.com/ubuntu-ports stonking-updates/restricted arm64 Packages [63.5 kB]
+Get:29 https://ports.ubuntu.com/ubuntu-ports stonking-updates/restricted Translation-en [16.8 kB]
+Get:30 https://ports.ubuntu.com/ubuntu-ports stonking-updates/restricted arm64 c-n-f Metadata [116 B]
+Get:31 https://ports.ubuntu.com/ubuntu-ports stonking-updates/multiverse arm64 c-n-f Metadata [116 B]
+Get:32 https://ports.ubuntu.com/ubuntu-ports stonking-backports/main arm64 c-n-f Metadata [112 B]
+Get:33 https://ports.ubuntu.com/ubuntu-ports stonking-backports/universe arm64 c-n-f Metadata [116 B]
+Get:34 https://ports.ubuntu.com/ubuntu-ports stonking-backports/restricted arm64 c-n-f Metadata [120 B]
+Get:35 https://ports.ubuntu.com/ubuntu-ports stonking-backports/multiverse arm64 c-n-f Metadata [120 B]
+Get:36 https://ports.ubuntu.com/ubuntu-ports stonking-security/main arm64 Packages [107 kB]
+Get:37 https://ports.ubuntu.com/ubuntu-ports stonking-security/main Translation-en [38.6 kB]
+Get:38 https://ports.ubuntu.com/ubuntu-ports stonking-security/main arm64 Components [420 B]
+Get:39 https://ports.ubuntu.com/ubuntu-ports stonking-security/main arm64 c-n-f Metadata [112 B]
+Get:40 https://ports.ubuntu.com/ubuntu-ports stonking-security/universe arm64 Packages [37.2 kB]
+Get:41 https://ports.ubuntu.com/ubuntu-ports stonking-security/universe Translation-en [17.0 kB]
+Get:42 https://ports.ubuntu.com/ubuntu-ports stonking-security/universe arm64 Components [744 B]
+Get:43 https://ports.ubuntu.com/ubuntu-ports stonking-security/universe arm64 c-n-f Metadata [116 B]
+Get:44 https://ports.ubuntu.com/ubuntu-ports stonking-security/restricted arm64 Packages [55.2 kB]
+Get:45 https://ports.ubuntu.com/ubuntu-ports stonking-security/restricted Translation-en [14.5 kB]
+Get:46 https://ports.ubuntu.com/ubuntu-ports stonking-security/restricted arm64 c-n-f Metadata [120 B]
+Get:47 https://ports.ubuntu.com/ubuntu-ports stonking-security/multiverse arm64 c-n-f Metadata [120 B]
+Fetched 25.4 MB in 53s (476 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mokutil is already the newest version (0.7.2-2build1).
+mokutil set to manually installed.
+openssl is already the newest version (4.0.3-1ubuntu1).
+openssl set to manually installed.
+kmod is already the newest version (34.2-2ubuntu3).
+kmod set to manually installed.
+udev is already the newest version (261.3-0ubuntu3).
+udev set to manually installed.
+python3 is already the newest version (3.14.7-3).
+python3 set to manually installed.
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 27 not upgraded.

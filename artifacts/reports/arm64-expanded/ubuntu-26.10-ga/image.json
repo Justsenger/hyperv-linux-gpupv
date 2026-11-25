@@ -1,0 +1,6 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://cloud-images.ubuntu.com/releases/stonking/release/ubuntu-26.10-server-cloudimg-arm64.img",
+  "ChecksumSource": "https://cloud-images.ubuntu.com/releases/stonking/release/SHA256SUMS",
+  "Sha256": "90c07f4b58d7a06bc5525a41db4d32501e36fbab3e6ae05405b81e38c406d7a8"
+}

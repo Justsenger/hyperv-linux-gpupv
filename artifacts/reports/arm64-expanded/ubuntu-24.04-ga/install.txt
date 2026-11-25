@@ -1,0 +1,44 @@
+glibc 2.39, aarch64, kernel 6.8.0-147-generic, preflight OK
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: aarch64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+  You are using:           gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+/tmp/tmp.AnX1a14saJ/probe.c: In function 鈥榩鈥?
+/tmp/tmp.AnX1a14saJ/probe.c:2:86: error: passing argument 1 of 鈥榑_dma_fence_is_later鈥?makes integer from pointer without a cast [-Werror=int-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.AnX1a14saJ/probe.c:1:
+./include/linux/dma-fence.h:472:45: note: expected 鈥榰64鈥?{aka 鈥榣ong long unsigned int鈥檥 but argument is of type 鈥榮truct dma_fence *鈥?  472 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+cc1: all warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:243: /tmp/tmp.AnX1a14saJ/probe.o] Error 1
+make[1]: *** [/usr/src/linux-headers-6.8.0-147-generic/Makefile:1946: /tmp/tmp.AnX1a14saJ] Error 2
+make: *** [Makefile:240: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/linux-headers-6.8.0-147-generic'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: aarch64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+  You are using:           gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+  CC [M]  /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmp9mlutr11/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-headers-6.8.0-147-generic'

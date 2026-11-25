@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://mirror.nju.edu.cn/fedora/development/rawhide/Cloud/aarch64/images/Fedora-Cloud-Base-Generic-Rawhide-20261124.n.0.aarch64.qcow2",
+  "ChecksumSource": "https://mirror.nju.edu.cn/fedora/development/rawhide/Cloud/aarch64/images/Fedora-Cloud-images-Rawhide-aarch64-20261124.n.0-CHECKSUM",
+  "PublishedDigest": "39a095151798a164888640e83f1322679fd02de02d520572b15fe3324db66c2a",
+  "OriginalSha256": null,
+  "Sha256": "39a095151798a164888640e83f1322679fd02de02d520572b15fe3324db66c2a"
+}

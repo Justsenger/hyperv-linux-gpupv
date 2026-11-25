@@ -1,0 +1,94 @@
+Linux gpupv-test-4633cd244cac44df946d125589f25da3 6.11.0-29-generic #29-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 13 20:32:41 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.10"
+NAME="Ubuntu"
+VERSION_ID="24.10"
+VERSION="24.10 (Oracular Oriole)"
+VERSION_CODENAME=oracular
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=oracular
+LOGO=ubuntu-logo
+systemd
+status: done
+Get:1 https://old-releases.ubuntu.com/ubuntu oracular InRelease [265 kB]
+Get:2 https://old-releases.ubuntu.com/ubuntu oracular-updates InRelease [126 kB]
+Get:3 https://old-releases.ubuntu.com/ubuntu oracular-backports InRelease [126 kB]
+Get:4 https://old-releases.ubuntu.com/ubuntu oracular-security InRelease [126 kB]
+Get:5 https://old-releases.ubuntu.com/ubuntu oracular/main arm64 Packages [1409 kB]
+Get:6 https://old-releases.ubuntu.com/ubuntu oracular/main Translation-en [517 kB]
+Get:7 https://old-releases.ubuntu.com/ubuntu oracular/main arm64 Components [404 kB]
+Get:8 https://old-releases.ubuntu.com/ubuntu oracular/main arm64 c-n-f Metadata [31.0 kB]
+Get:9 https://old-releases.ubuntu.com/ubuntu oracular/universe arm64 Packages [15.5 MB]
+Get:10 https://old-releases.ubuntu.com/ubuntu oracular/universe Translation-en [6132 kB]
+Get:11 https://old-releases.ubuntu.com/ubuntu oracular/universe arm64 Components [4120 kB]
+Get:12 https://old-releases.ubuntu.com/ubuntu oracular/universe arm64 c-n-f Metadata [301 kB]
+Get:13 https://old-releases.ubuntu.com/ubuntu oracular/restricted arm64 Packages [71.4 kB]
+Get:14 https://old-releases.ubuntu.com/ubuntu oracular/restricted Translation-en [12.8 kB]
+Get:15 https://old-releases.ubuntu.com/ubuntu oracular/restricted arm64 Components [196 B]
+Get:16 https://old-releases.ubuntu.com/ubuntu oracular/restricted arm64 c-n-f Metadata [352 B]
+Get:17 https://old-releases.ubuntu.com/ubuntu oracular/multiverse arm64 Packages [205 kB]
+Get:18 https://old-releases.ubuntu.com/ubuntu oracular/multiverse Translation-en [117 kB]
+Get:19 https://old-releases.ubuntu.com/ubuntu oracular/multiverse arm64 Components [38.0 kB]
+Get:20 https://old-releases.ubuntu.com/ubuntu oracular/multiverse arm64 c-n-f Metadata [5840 B]
+Get:21 https://old-releases.ubuntu.com/ubuntu oracular-updates/main arm64 Packages [429 kB]
+Get:22 https://old-releases.ubuntu.com/ubuntu oracular-updates/main Translation-en [117 kB]
+Get:23 https://old-releases.ubuntu.com/ubuntu oracular-updates/main arm64 Components [59.6 kB]
+Get:24 https://old-releases.ubuntu.com/ubuntu oracular-updates/main arm64 c-n-f Metadata [7756 B]
+Get:25 https://old-releases.ubuntu.com/ubuntu oracular-updates/universe arm64 Packages [332 kB]
+Get:26 https://old-releases.ubuntu.com/ubuntu oracular-updates/universe Translation-en [125 kB]
+Get:27 https://old-releases.ubuntu.com/ubuntu oracular-updates/universe arm64 Components [63.7 kB]
+Get:28 https://old-releases.ubuntu.com/ubuntu oracular-updates/universe arm64 c-n-f Metadata [7212 B]
+Get:29 https://old-releases.ubuntu.com/ubuntu oracular-updates/restricted arm64 Packages [490 kB]
+Get:30 https://old-releases.ubuntu.com/ubuntu oracular-updates/restricted Translation-en [69.7 kB]
+Get:31 https://old-releases.ubuntu.com/ubuntu oracular-updates/restricted arm64 Components [216 B]
+Get:32 https://old-releases.ubuntu.com/ubuntu oracular-updates/restricted arm64 c-n-f Metadata [388 B]
+Get:33 https://old-releases.ubuntu.com/ubuntu oracular-updates/multiverse arm64 Packages [10.7 kB]
+Get:34 https://old-releases.ubuntu.com/ubuntu oracular-updates/multiverse Translation-en [2596 B]
+Get:35 https://old-releases.ubuntu.com/ubuntu oracular-updates/multiverse arm64 Components [212 B]
+Get:36 https://old-releases.ubuntu.com/ubuntu oracular-updates/multiverse arm64 c-n-f Metadata [384 B]
+Get:37 https://old-releases.ubuntu.com/ubuntu oracular-backports/main arm64 Components [212 B]
+Get:38 https://old-releases.ubuntu.com/ubuntu oracular-backports/main arm64 c-n-f Metadata [112 B]
+Get:39 https://old-releases.ubuntu.com/ubuntu oracular-backports/universe arm64 Packages [4912 B]
+Get:40 https://old-releases.ubuntu.com/ubuntu oracular-backports/universe Translation-en [1296 B]
+Get:41 https://old-releases.ubuntu.com/ubuntu oracular-backports/universe arm64 Components [9696 B]
+Get:42 https://old-releases.ubuntu.com/ubuntu oracular-backports/universe arm64 c-n-f Metadata [176 B]
+Get:43 https://old-releases.ubuntu.com/ubuntu oracular-backports/restricted arm64 Components [216 B]
+Get:44 https://old-releases.ubuntu.com/ubuntu oracular-backports/restricted arm64 c-n-f Metadata [120 B]
+Get:45 https://old-releases.ubuntu.com/ubuntu oracular-backports/multiverse arm64 Components [216 B]
+Get:46 https://old-releases.ubuntu.com/ubuntu oracular-backports/multiverse arm64 c-n-f Metadata [120 B]
+Get:47 https://old-releases.ubuntu.com/ubuntu oracular-security/main arm64 Packages [330 kB]
+Get:48 https://old-releases.ubuntu.com/ubuntu oracular-security/main Translation-en [85.0 kB]
+Get:49 https://old-releases.ubuntu.com/ubuntu oracular-security/main arm64 Components [18.4 kB]
+Get:50 https://old-releases.ubuntu.com/ubuntu oracular-security/main arm64 c-n-f Metadata [4284 B]
+Get:51 https://old-releases.ubuntu.com/ubuntu oracular-security/universe arm64 Packages [272 kB]
+Get:52 https://old-releases.ubuntu.com/ubuntu oracular-security/universe Translation-en [101 kB]
+Get:53 https://old-releases.ubuntu.com/ubuntu oracular-security/universe arm64 Components [10.2 kB]
+Get:54 https://old-releases.ubuntu.com/ubuntu oracular-security/universe arm64 c-n-f Metadata [5388 B]
+Get:55 https://old-releases.ubuntu.com/ubuntu oracular-security/restricted arm64 Packages [482 kB]
+Get:56 https://old-releases.ubuntu.com/ubuntu oracular-security/restricted Translation-en [69.1 kB]
+Get:57 https://old-releases.ubuntu.com/ubuntu oracular-security/restricted arm64 Components [212 B]
+Get:58 https://old-releases.ubuntu.com/ubuntu oracular-security/restricted arm64 c-n-f Metadata [368 B]
+Get:59 https://old-releases.ubuntu.com/ubuntu oracular-security/multiverse arm64 Packages [9812 B]
+Get:60 https://old-releases.ubuntu.com/ubuntu oracular-security/multiverse Translation-en [2572 B]
+Get:61 https://old-releases.ubuntu.com/ubuntu oracular-security/multiverse arm64 Components [212 B]
+Get:62 https://old-releases.ubuntu.com/ubuntu oracular-security/multiverse arm64 c-n-f Metadata [372 B]
+Fetched 32.6 MB in 12s (2759 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mokutil is already the newest version (0.6.0-2build3).
+mokutil set to manually installed.
+openssl is already the newest version (3.3.1-2ubuntu2.1).
+openssl set to manually installed.
+kmod is already the newest version (31+20240202-2ubuntu8).
+kmod set to manually installed.
+udev is already the newest version (256.5-2ubuntu3.3).
+udev set to manually installed.
+python3 is already the newest version (3.12.6-0ubuntu1).
+python3 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 28 not upgraded.

@@ -1,0 +1,5 @@
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdx12arm64wslum.so
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdx12arm64wslum.so: /lib64/libm.so.6: version `GLIBC_2.29' not found (required by /usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdx12arm64wslum.so)
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so: /lib64/libm.so.6: version `GLIBC_2.29' not found (required by /usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so)
+/usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /usr/lib/wsl/drivers/qcdx8280.inf_arm64_ce29b34c1ddc2154/libqcdxarm64wslcompiler.so)

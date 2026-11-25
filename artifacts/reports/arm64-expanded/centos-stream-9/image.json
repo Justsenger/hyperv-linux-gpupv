@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://cloud.centos.org/centos/9-stream/aarch64/images/CentOS-Stream-GenericCloud-9-20261118.0.aarch64.qcow2",
+  "ChecksumSource": "https://cloud.centos.org/centos/9-stream/aarch64/images/CHECKSUM",
+  "PublishedDigest": "166b30bfc8b4c1ac4e690fe0b7ebe004c40a3c94ddb983913d09801bb858e6ce",
+  "OriginalSha256": null,
+  "Sha256": "166b30bfc8b4c1ac4e690fe0b7ebe004c40a3c94ddb983913d09801bb858e6ce"
+}

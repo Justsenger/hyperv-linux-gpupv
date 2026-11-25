@@ -1,0 +1,6 @@
+5.15.0-139-generic
+CONFIG_HYPERV_NET=m
+sudo: unable to resolve host gpupv-test-dd44526d2572421e8799d4b5fc940085: Name or service not known
+modinfo: ERROR: Module pci_hyperv not found.
+total 0
+linux-modules-extra-5.15.0-139-generic	5.15.0-139.149~20.04.1

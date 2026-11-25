@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-arm64.img",
+  "ChecksumSource": "https://cloud-images.ubuntu.com/releases/focal/release/SHA256SUMS",
+  "PublishedDigest": "d4603cd783e2578f838c63f7c3a8dae6b554bd6358870f2c8eb182aa51ade465",
+  "OriginalSha256": "d4603cd783e2578f838c63f7c3a8dae6b554bd6358870f2c8eb182aa51ade465",
+  "Sha256": "eb8bd9303ea4d73a3444c6fd3df78e9a960172347d010e5eb62d677d5521e133"
+}

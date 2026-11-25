@@ -1,0 +1,18 @@
+{
+  "target": "gentoo",
+  "vm": "gpupv-test-11a9dc3628a24813aab4deaf04a97acb",
+  "vmId": "0e6a5b74-f4c3-4427-8846-6f7229bfdbd1",
+  "started": "2026-11-25T10:48:51.6946668+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": null,
+  "route": "source",
+  "kernel": "6.18.64-p1-gentoo-dist",
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "update-kernel exited 1"
+  ],
+  "diagnostics": [],
+  "stage": "update-kernel",
+  "finished": "2026-11-25T10:53:12.9448904+08:00"
+}

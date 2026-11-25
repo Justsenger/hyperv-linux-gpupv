@@ -1,0 +1,21 @@
+{
+  "target": "mmio-trace",
+  "vm": "gpupv-test-5fec4c285c8b4257b16c88a02d48ae40",
+  "vmId": "8838a41d-75ba-4da8-b63e-b742cdb98579",
+  "started": "2026-11-25T09:38:30.9661384+08:00",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "6.1.0-56-arm64",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T09:41:00.5327837+08:00"
+}

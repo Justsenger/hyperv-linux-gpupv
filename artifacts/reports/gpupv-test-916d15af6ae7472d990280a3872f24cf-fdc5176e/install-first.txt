@@ -1,0 +1,22 @@
+ca333f9dc8d779b463686fd936646e4b14cf5569801aa67ad1138797e980b2cb  /mnt/gpupv/guest/gpupv-guest
+97bb966aecdb8c114eb84d4985c65d0850dff8e95dd82576bcd8dec33a8cabf0  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+glibc 2.39, aarch64, kernel 6.8.0-147-generic, preflight OK
+Creating symlink /var/lib/dkms/gpupv-dxgkrnl/0.1/source -> /usr/src/gpupv-dxgkrnl-0.1
+Sign command: /usr/bin/kmodsign
+Signing key: /var/lib/shim-signed/mok/MOK.priv
+Public certificate (MOK): /var/lib/shim-signed/mok/MOK.der
+
+Building module:
+Cleaning build area...(bad exit status: 2)
+sh build /lib/modules/6.8.0-147-generic/build --dkms-sign........
+Signing module /var/lib/dkms/gpupv-dxgkrnl/0.1/build/drivers/hv/dxgkrnl/dxgkrnl.ko
+Cleaning build area...(bad exit status: 2)
+
+dxgkrnl.ko.zst:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/6.8.0-147-generic/updates/dkms/
+depmod...

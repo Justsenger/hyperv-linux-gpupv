@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://mcr.microsoft.com/v2/azurelinux/3.0/image/minimal-os/blobs/sha256:2018e5437d72420072dd1839e4bd70acb95c7537b1010e8e83fe3010de9af9dc",
+  "ChecksumSource": "https://mcr.microsoft.com/v2/azurelinux/3.0/image/minimal-os/manifests/latest",
+  "PublishedDigest": null,
+  "OriginalSha256": "2018e5437d72420072dd1839e4bd70acb95c7537b1010e8e83fe3010de9af9dc",
+  "Sha256": "b15bf074fb0ed956a757dd6950a623d1734ff2f05eeb9696e6526dfbfcc06e1f"
+}

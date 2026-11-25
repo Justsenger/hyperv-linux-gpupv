@@ -1,0 +1,5 @@
+systemd
+f5da924b-c081-4ab3-bf53-784e68078ecf
+SecureBoot disabled
+OE
+crw-rw---- 1 root video 10, 259 Nov 25 11:08 /dev/dxg

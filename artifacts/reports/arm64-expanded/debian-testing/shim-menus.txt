@@ -1,0 +1,5 @@
+25864712-93bf-4cd6-b548-aeb96721ee2e confirmed shim menu management
+25864712-93bf-4cd6-b548-aeb96721ee2e confirmed shim menu view
+25864712-93bf-4cd6-b548-aeb96721ee2e confirmed shim menu confirm
+25864712-93bf-4cd6-b548-aeb96721ee2e confirmed shim menu password
+25864712-93bf-4cd6-b548-aeb96721ee2e confirmed shim menu reboot

@@ -1,0 +1,5 @@
+51cbfd84-1201-4515-9fa4-32e46c427bc8 confirmed shim menu management
+51cbfd84-1201-4515-9fa4-32e46c427bc8 confirmed shim menu view
+51cbfd84-1201-4515-9fa4-32e46c427bc8 confirmed shim menu confirm
+51cbfd84-1201-4515-9fa4-32e46c427bc8 confirmed shim menu password
+51cbfd84-1201-4515-9fa4-32e46c427bc8 confirmed shim menu reboot

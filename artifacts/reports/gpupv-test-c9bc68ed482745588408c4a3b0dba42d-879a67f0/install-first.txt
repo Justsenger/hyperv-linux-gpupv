@@ -1,0 +1,4 @@
+dfd8615280e95cff5136c094bd3fae5e75b31911e146b4db523776fcc86df0ca  /mnt/gpupv/guest/gpupv-guest
+97bb966aecdb8c114eb84d4985c65d0850dff8e95dd82576bcd8dec33a8cabf0  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.c
+d621f18d7efab962883eaabd65367a0280d67ae467f68a2239c7be560082625c  /mnt/gpupv/kernel/drivers/hv/dxgkrnl/dxgvmbus.h
+glibc 2.38, aarch64, kernel 6.4.0-150600.23.103-default, preflight OK

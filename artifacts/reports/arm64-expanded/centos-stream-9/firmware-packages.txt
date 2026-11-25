@@ -1,0 +1,32 @@
+CentOS Stream 9 - BaseOS                        277 kB/s | 3.4 MB     00:12    
+CentOS Stream 9 - AppStream                     806 kB/s |  11 MB     00:14    
+CentOS Stream 9 - Extras packages                45 kB/s |  22 kB     00:00    
+Package shim-aa64-16.1-1.el9.aarch64 is already installed.
+Package grub2-efi-aa64-1:2.06-135.el9.aarch64 is already installed.
+Package efibootmgr-16-12.el9.aarch64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:00:03 ago on Tue Nov 24 21:58:57 2026.
+Dependencies resolved.
+Nothing to do.
+Complete!
+shim-aa64-16.1-1.el9.aarch64
+grub2-efi-aa64-2.06-135.el9.aarch64
+/boot/efi/EFI/BOOT/BOOTAA64.EFI
+/boot/efi/EFI/BOOT/fbaa64.efi
+/boot/efi/EFI/centos/grubaa64.efi
+/boot/efi/EFI/centos/mmaa64.efi
+/boot/efi/EFI/centos/shim.efi
+/boot/efi/EFI/centos/shimaa64-centos.efi
+/boot/efi/EFI/centos/shimaa64.efi
+BootCurrent: 0001
+Timeout: 0 seconds
+BootOrder: 0005,0001,0000,0002,0003
+Boot0000* EFI Network	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,635161f83edfc546913ff2d2f965ed0e818bd8e8816cea46a3cc838b9eec554a)/MAC(000000000000,0)/IPv4(0.0.0.00.0.0.0,0,0)
+Boot0001* EFI SCSI Device	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,d96361baa104294db60572e2ffb1dc7f51a382e1d28fc8489bc17d2506ff315b)/SCSI(0,0)
+Boot0002* EFI SCSI Device	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,d96361baa104294db60572e2ffb1dc7f51a382e1d28fc8489bc17d2506ff315b)/SCSI(0,1)
+Boot0003* EFI SCSI Device	AcpiEx(VMBus,,)/VenHw(9b17e5a2-0891-42dd-b653-80b5c22809ba,d96361baa104294db60572e2ffb1dc7f51a382e1d28fc8489bc17d2506ff315b)/SCSI(0,2)
+Boot0004* FrontPage	MemoryMapped(11,0x200000,0x7fffff)/FvFile(4042708a-0f2d-4823-ac60-0d77b3111889)
+Boot0005* Red Hat Enterprise Linux	HD(1,GPT,8ae0377a-a356-4735-8598-003b1863e8f5,0x800,0x64000)/File(\EFI\centos\shimaa64.efi)
+retry_secure_boot

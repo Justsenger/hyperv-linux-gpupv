@@ -1,0 +1,5 @@
+4322d21b-0f9c-436c-ad2d-755f370c92c1 confirmed shim menu management
+4322d21b-0f9c-436c-ad2d-755f370c92c1 confirmed shim menu view
+4322d21b-0f9c-436c-ad2d-755f370c92c1 confirmed shim menu confirm
+4322d21b-0f9c-436c-ad2d-755f370c92c1 confirmed shim menu password
+4322d21b-0f9c-436c-ad2d-755f370c92c1 confirmed shim menu reboot

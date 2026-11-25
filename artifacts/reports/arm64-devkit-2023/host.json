@@ -1,0 +1,28 @@
+{
+  "host": "Windows Dev Kit 2023",
+  "windows": "10.0.29671.0",
+  "arch": "Arm64",
+  "gpu": "Qualcomm(R) Adreno(TM) 8cx Gen 3",
+  "device": "ACPI\\VEN_QCOM&DEV_0636&SUBSYS_MSWW8280&REV_1823\\0",
+  "driver": "30.0.4122.4000",
+  "inf": "oem38.inf",
+  "package": "qcdx8280.inf_arm64_ce29b34c1ddc2154",
+  "validPartitionCounts": [
+    32
+  ],
+  "wslUmdPresent": true,
+  "libraries": [
+    {
+      "name": "libqcdx12arm64wslum.so",
+      "elfMachine": 183,
+      "sha256": "5654dd76e632703a609eda2bae009c9681783aad53dcf6de188b764348cbc448"
+    },
+    {
+      "name": "libqcdxarm64wslcompiler.so",
+      "elfMachine": 183,
+      "sha256": "079b0af60fc6b8d87a017535fa6d2745b472fee3f9c0767fa557d23c0eb34b6f"
+    }
+  ],
+  "bundleVersion": "v0.1.0-rc1.arm64-local.2",
+  "kernelCount": 118
+}

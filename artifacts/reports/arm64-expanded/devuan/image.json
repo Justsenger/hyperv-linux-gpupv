@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-arm64.qcow2",
+  "ChecksumSource": "https://cloud.debian.org/images/cloud/bookworm/latest/SHA512SUMS",
+  "PublishedDigest": null,
+  "OriginalSha256": null,
+  "Sha256": "97A181EA6E74F7621CEA6FA8DB4FC5062E21AE4EA163E3CA978F3EA378A3CC0D"
+}

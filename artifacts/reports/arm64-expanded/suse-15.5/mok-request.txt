@@ -1,0 +1,12 @@
+Generating a RSA private key
+.........................................++++
+.....++++
+writing new private key to '/var/lib/gpupv-signing/tmpwx2edjlf/MOK.priv'
+-----
+绛惧悕鍏挜灏氭湭鍙椾俊浠汇€傝繍琛?sudo mokutil --import /var/lib/gpupv-signing/MOK.der锛岃缃竴娆℃€у瘑鐮侊紝閲嶅惎骞跺湪 MOK Manager 涓€夋嫨 Enroll MOK锛岀‘璁ゅ悗閲嶆柊鎵ц瀹夎銆?subject=CN = GPU-PV module signing
+SHA256 Fingerprint=AD:7A:12:78:A7:7F:22:AA:2C:4D:75:93:2F:1F:10:96:02:B7:64:2B:7B:12:E6:25:26:CA:75:A3:43:DD:BB:48
+input password: 
+input password again: 
+Running timer as unit: run-rc47286b629224bbf9df3e3c88a6cba0a.timer
+Will run service as unit: run-rc47286b629224bbf9df3e3c88a6cba0a.service
+enrollment_requested

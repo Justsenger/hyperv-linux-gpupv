@@ -1,0 +1,5 @@
+994f9a37-fa67-4165-89eb-320a22fc5e01 confirmed shim menu management
+994f9a37-fa67-4165-89eb-320a22fc5e01 confirmed shim menu view
+994f9a37-fa67-4165-89eb-320a22fc5e01 confirmed shim menu confirm
+994f9a37-fa67-4165-89eb-320a22fc5e01 confirmed shim menu password
+994f9a37-fa67-4165-89eb-320a22fc5e01 confirmed shim menu reboot

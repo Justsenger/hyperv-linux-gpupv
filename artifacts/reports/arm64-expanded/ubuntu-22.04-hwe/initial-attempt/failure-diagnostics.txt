@@ -1,0 +1,164 @@
+Linux gpupv-test-25a51c94d78b4aeb9907e7fd2cd2ee61 5.15.0-203-generic #213-Ubuntu SMP Fri Oct 23 13:20:09 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+[    2.468971] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    2.475567] hv_vmbus: registering driver hyperv_keyboard
+[    2.482241] hid: raw HID events driver (C) Jiri Kosina
+[    2.487195] hv_utils: Registering HyperV Utility Driver
+[    2.490248] hv_vmbus: registering driver hv_utils
+[    2.500314] hv_vmbus: registering driver hv_storvsc
+[    2.505711] hv_vmbus: registering driver hv_netvsc
+[    2.509715] scsi host0: storvsc_host_t
+[    2.512351] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    2.521453] input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio0/input/input0
+[    2.530109] hv_utils: Heartbeat IC version 3.0
+[    2.533456] hv_utils: VSS IC version 5.0
+[    2.535970] scsi 0:0:0:1: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    2.540734] hv_utils: Shutdown IC version 3.2
+[    2.540740] hv_utils: TimeSync IC version 4.0
+[    2.554241] scsi 0:0:0:2: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[    2.563106] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    2.567291] sd 0:0:0:0: [sda] 67108864 512-byte logical blocks: (34.4 GB/32.0 GiB)
+[    2.576959] sd 0:0:0:0: [sda] Write Protect is off
+[    2.578838] sd 0:0:0:0: [sda] Mode Sense: 0f 00 00 00
+[    2.578898] sr 0:0:0:1: [sr0] scsi-1 drive
+[    2.580581] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    2.583422] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    2.592576] sr 0:0:0:1: Attached scsi CD-ROM sr0
+[    2.592631] sr 0:0:0:1: Attached scsi generic sg1 type 5
+[    2.596591] sr 0:0:0:2: [sr1] scsi-1 drive
+[    2.601098] sr 0:0:0:2: Attached scsi CD-ROM sr1
+[    2.601392] sr 0:0:0:2: Attached scsi generic sg2 type 5
+[    2.606649] GPT:Primary header thinks Alt. header is not at the end of the disk.
+[    2.611178] GPT:4612095 != 67108863
+[    2.612920] GPT:Alternate GPT header not at the end of the disk.
+[    2.616661] GPT:4612095 != 67108863
+[    2.619096] GPT: Use GNU Parted to correct GPT errors.
+[    2.622024]  sda: sda1 sda15
+[    2.624594] sd 0:0:0:0: [sda] Attached SCSI disk
+[    2.628515] hv_vmbus: registering driver hid_hyperv
+[    2.640049] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input1
+[    2.648608] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    3.951261] raid6: neonx8   gen() 24228 MB/s
+[    4.019256] raid6: neonx8   xor() 19684 MB/s
+[    4.087256] raid6: neonx4   gen() 23333 MB/s
+[    4.155255] raid6: neonx4   xor() 17954 MB/s
+[    4.223255] raid6: neonx2   gen() 19310 MB/s
+[    4.291255] raid6: neonx2   xor() 16941 MB/s
+[    4.363256] raid6: neonx1   gen() 16389 MB/s
+[    4.431256] raid6: neonx1   xor() 15136 MB/s
+[    4.503290] raid6: int64x8  gen()  4175 MB/s
+[    4.571865] raid6: int64x8  xor()  2418 MB/s
+[    4.639258] raid6: int64x4  gen()  9362 MB/s
+[    4.707256] raid6: int64x4  xor()  5455 MB/s
+[    4.779316] raid6: int64x2  gen()  4725 MB/s
+[    4.851424] raid6: int64x2  xor()  2550 MB/s
+[    4.923281] raid6: int64x1  gen()  3179 MB/s
+[    4.999271] raid6: int64x1  xor()  2117 MB/s
+[    5.001978] raid6: using algorithm neonx8 gen() 24228 MB/s
+[    5.006151] raid6: .... xor() 19684 MB/s, rmw enabled
+[    5.016162] raid6: using neon recovery algorithm
+[    5.030852] xor: measuring software checksum speed
+[    5.032522]    8regs           : 18770 MB/sec
+[    5.033957]    32regs          : 18764 MB/sec
+[    5.035598]    arm64_neon      : 27035 MB/sec
+[    5.037570] xor: using function: arm64_neon (27035 MB/sec)
+[    5.045694] async_tx: api initialized (async)
+[    5.118204] Btrfs loaded, crc32c=crc32c-generic, zoned=yes, fsverity=yes
+[    5.175501] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+[    5.371943] systemd[1]: Inserted module 'autofs4'
+[    5.404138] systemd[1]: systemd 249.11-0ubuntu3.23 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    5.459948] systemd[1]: Detected virtualization microsoft.
+[    5.464408] systemd[1]: Detected architecture arm64.
+[    5.475314] systemd[1]: Hostname set to <ubuntu>.
+[    5.483036] systemd[1]: Initializing machine ID from random generator.
+[    5.487633] systemd[1]: Installed transient /etc/machine-id file.
+[    5.677004] systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    5.715301] systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+[    5.797073] systemd[1]: Queued start job for default target Graphical Interface.
+[    5.803136] systemd[1]: Created slice Slice /system/modprobe.
+[    5.814343] systemd[1]: Created slice Slice /system/serial-getty.
+[    5.825737] systemd[1]: Created slice Slice /system/systemd-fsck.
+[    5.837932] systemd[1]: Created slice User and Session Slice.
+[    5.845584] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    5.857939] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    5.871080] systemd[1]: Reached target Slice Units.
+[    5.877687] systemd[1]: Reached target Mounting snaps.
+[    5.884134] systemd[1]: Reached target Swaps.
+[    5.891416] systemd[1]: Reached target Local Verity Protected Volumes.
+[    5.902608] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    5.913918] systemd[1]: Listening on LVM2 poll daemon socket.
+[    5.926413] systemd[1]: Listening on multipathd control socket.
+[    5.954869] systemd[1]: Listening on Syslog Socket.
+[    5.964959] systemd[1]: Listening on fsck to fsckd communication Socket.
+[    5.982185] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    5.995573] systemd[1]: Listening on Journal Audit Socket.
+[    6.006995] systemd[1]: Listening on Journal Socket (/dev/log).
+[    6.024840] systemd[1]: Listening on Journal Socket.
+[    6.033402] systemd[1]: Listening on Network Service Netlink Socket.
+[    6.048783] systemd[1]: Listening on udev Control Socket.
+[    6.059799] systemd[1]: Listening on udev Kernel Socket.
+[    6.070403] systemd[1]: Mounting Huge Pages File System...
+[    6.084384] systemd[1]: Mounting POSIX Message Queue File System...
+[    6.097883] systemd[1]: Mounting Kernel Debug File System...
+[    6.112282] systemd[1]: Mounting Kernel Trace File System...
+[    6.126508] systemd[1]: Starting Journal Service...
+[    6.149173] systemd[1]: Starting Set the console keyboard layout...
+[    6.167893] systemd[1]: Starting Create List of Static Device Nodes...
+[    6.194230] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    6.243729] systemd[1]: Condition check resulted in LXD - agent being skipped.
+[    6.263860] systemd[1]: Starting Load Kernel Module configfs...
+[    6.279299] systemd[1]: Starting Load Kernel Module drm...
+[    6.297134] systemd[1]: Starting Load Kernel Module efi_pstore...
+[    6.334465] systemd[1]: Starting Load Kernel Module fuse...
+[    6.379664] pstore: Using crash dump compression: deflate
+[    6.391646] pstore: Registered efi as persistent store backend
+[    6.405353] systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+[    6.425047] systemd[1]: Starting File System Check on Root Device...
+[    6.472202] systemd[1]: Starting Load Kernel Modules...
+[    6.512818] systemd[1]: Starting Coldplug All udev Devices...
+[    6.554036] systemd[1]: Started Journal Service.
+[    7.085900] EXT4-fs (sda1): re-mounted. Opts: discard,errors=remount-ro. Quota mode: none.
+[    7.273563] alua: device handler registered
+[    7.275287] emc: device handler registered
+[    7.287682] rdac: device handler registered
+[    7.290337] systemd-journald[390]: Received client request to flush runtime journal.
+[    7.694185] loop0: detected capacity change from 0 to 141400
+[    7.737058] loop1: detected capacity change from 0 to 212648
+[    7.756401] loop2: detected capacity change from 0 to 57152
+[    8.456779] hv_vmbus: registering driver hyperv_fb
+[    8.458420] hyperv_fb: Synthvid Version major 3, minor 5
+[    8.458539] hyperv_fb: Screen resolution: 1024x768, Color depth: 32, Frame buffer size: 8388608
+[    8.467099] Console: switching to colour frame buffer device 128x48
+[    8.485838] hv_vmbus: registering driver hv_balloon
+[    8.488106] hv_balloon: Using Dynamic Memory protocol version 2.0
+[    8.488111] hv_balloon: Memory hot add disabled on ARM64
+[   10.182574] audit: type=1400 audit(1795572437.333:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=552 comm="apparmor_parser"
+[   10.319147] audit: type=1400 audit(1795572437.469:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=555 comm="apparmor_parser"
+[   10.320454] audit: type=1400 audit(1795572437.473:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=555 comm="apparmor_parser"
+[   10.920431] audit: type=1400 audit(1795572438.073:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=561 comm="apparmor_parser"
+[   10.924370] audit: type=1400 audit(1795572438.077:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=561 comm="apparmor_parser"
+[   10.926943] audit: type=1400 audit(1795572438.077:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=561 comm="apparmor_parser"
+[   10.934535] audit: type=1400 audit(1795572438.085:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=561 comm="apparmor_parser"
+[   11.188867] audit: type=1400 audit(1795572438.341:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=563 comm="apparmor_parser"
+[   11.534671] ISO 9660 Extensions: Microsoft Joliet Level 3
+[   11.534806] ISOFS: changing to secondary root
+[   12.055081] audit: type=1400 audit(1795572439.205:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache" pid=564 comm="apparmor_parser"
+[   12.061429] audit: type=1400 audit(1795572439.213:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods" pid=564 comm="apparmor_parser"
+[   12.171753] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   15.352630] kauditd_printk_skb: 16 callbacks suppressed
+[   15.352635] audit: type=1400 audit(1795572442.505:28): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.buginfo" pid=669 comm="apparmor_parser"
+[   15.446526] EXT4-fs (sda1): resizing filesystem from 550651 to 8362747 blocks
+[   15.506658] EXT4-fs (sda1): resized filesystem to 8362747
+[   15.689173] audit: type=1400 audit(1795572442.841:29): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.check-kernel" pid=699 comm="apparmor_parser"
+[   15.971367] audit: type=1400 audit(1795572443.125:30): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.daemon" pid=718 comm="apparmor_parser"
+[   16.287390] audit: type=1400 audit(1795572443.441:31): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.hook.configure" pid=755 comm="apparmor_parser"
+[   16.799437] audit: type=1400 audit(1795572443.953:32): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.hook.install" pid=756 comm="apparmor_parser"
+[   17.332872] audit: type=1400 audit(1795572444.485:33): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.hook.remove" pid=757 comm="apparmor_parser"
+[   17.988498] audit: type=1400 audit(1795572445.141:34): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxc" pid=758 comm="apparmor_parser"
+[   18.439809] audit: type=1400 audit(1795572445.593:35): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxc-to-lxd" pid=762 comm="apparmor_parser"
+[   18.734755] audit: type=1400 audit(1795572445.885:36): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxd" pid=763 comm="apparmor_parser"
+[   18.966868] audit: type=1400 audit(1795572446.117:37): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.migrate" pid=764 comm="apparmor_parser"
+[   20.650261] loop3: detected capacity change from 0 to 8
+[   21.119571] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.
+ls: cannot access '/dev/dxg': No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        31G  1.7G   30G   6% /

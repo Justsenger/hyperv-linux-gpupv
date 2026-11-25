@@ -1,0 +1,22 @@
+{
+  "target": "fedora-41",
+  "vm": "gpupv-test-e67f5fee01564cb8bf6fb6cc07beec87",
+  "vmId": "c93020b8-cdc4-4dd6-879f-3fc5eb9d273f",
+  "started": "2026-11-25T10:55:35.0958411+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": false,
+  "route": "source",
+  "kernel": "6.11.4-301.fc41.aarch64",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T11:08:29.0418130+08:00"
+}

@@ -1,0 +1,10 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)
+systemd
+92655cce-9d2f-468d-82c0-85961faafd7e
+SecureBoot enabled
+
+O
+crw-rw---- 1 root video 10, 263 Nov 25 03:03 /dev/dxg
+CMS Verification successful
+module_signature_verified_with_enrolled_certificate
+signature_warnings=0

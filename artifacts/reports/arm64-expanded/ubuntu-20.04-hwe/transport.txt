@@ -1,0 +1,10 @@
+sudo: unable to resolve host gpupv-test-dd44526d2572421e8799d4b5fc940085: Name or service not known
+Reading package lists...
+Building dependency tree...
+Reading state information...
+linux-modules-extra-5.15.0-139-generic is already the newest version (5.15.0-139.149~20.04.1).
+linux-modules-extra-5.15.0-139-generic set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 25 not upgraded.
+modprobe: FATAL: Module pci_hyperv not found in directory /lib/modules/5.15.0-139-generic
+grep: /sys/bus/pci/devices/*/device: No such file or directory
+install_route=prebuilt

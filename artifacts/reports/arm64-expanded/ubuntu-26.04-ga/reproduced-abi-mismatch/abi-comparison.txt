@@ -1,0 +1,14 @@
+0xa0f12abe	module_layout
+0x28615977	module_layout	vmlinux	EXPORT_SYMBOL	
+linux-headers-7.0.0-43-generic	7.0.0-43.43
+linux-image-7.0.0-43-generic	7.0.0-43.43
+CONFIG_CC_VERSION_TEXT="aarch64-linux-gnu-gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0"
+CONFIG_RUSTC_VERSION=109301
+CONFIG_RUST_IS_AVAILABLE=y
+CONFIG_RUSTC_LLVM_VERSION=210108
+CONFIG_RUSTC_HAS_SLICE_AS_FLATTENED=y
+CONFIG_RUSTC_HAS_COERCE_POINTEE=y
+CONFIG_RUSTC_HAS_SPAN_FILE=y
+CONFIG_RUSTC_HAS_UNNECESSARY_TRANSMUTES=y
+7.0.0-43-generic SMP preempt mod_unload modversions aarch64
+7.0.0-43-generic SMP preempt mod_unload modversions aarch64

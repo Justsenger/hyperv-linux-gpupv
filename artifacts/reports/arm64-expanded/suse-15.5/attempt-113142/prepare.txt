@@ -1,0 +1,20 @@
+Linux gpupv-test-9fb4bb71765c4ab79ff69eab183a2664 5.14.21-150500.55.88-default #1 SMP PREEMPT_DYNAMIC Fri Dec 6 16:43:20 UTC 2024 (e102a89) aarch64 aarch64 aarch64 GNU/Linux
+NAME="openSUSE Leap"
+VERSION="15.5"
+ID="opensuse-leap"
+ID_LIKE="suse opensuse"
+VERSION_ID="15.5"
+PRETTY_NAME="openSUSE Leap 15.5"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:opensuse:leap:15.5"
+BUG_REPORT_URL="https://bugs.opensuse.org"
+HOME_URL="https://www.opensuse.org/"
+DOCUMENTATION_URL="https://en.opensuse.org/Portal:Leap"
+LOGO="distributor-logo-Leap"
+systemd
+
+status: done
+time: Wed, 25 Nov 2026 03:29:43 +0000
+detail:
+DataSourceNoCloud [seed=/dev/sr0][dsmode=net]
+Required guest utilities are installed

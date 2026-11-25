@@ -1,0 +1,5 @@
+ce1ead4f-51d1-4bb8-b2df-bcd3d39ec35a confirmed shim menu management
+ce1ead4f-51d1-4bb8-b2df-bcd3d39ec35a confirmed shim menu view
+ce1ead4f-51d1-4bb8-b2df-bcd3d39ec35a confirmed shim menu confirm
+ce1ead4f-51d1-4bb8-b2df-bcd3d39ec35a confirmed shim menu password
+ce1ead4f-51d1-4bb8-b2df-bcd3d39ec35a confirmed shim menu reboot

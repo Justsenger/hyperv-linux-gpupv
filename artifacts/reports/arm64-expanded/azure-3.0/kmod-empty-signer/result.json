@@ -1,0 +1,18 @@
+{
+  "target": "azure-3.0",
+  "vm": "gpupv-test-9d9a3b3dc2ca428d8920425ad5b31276",
+  "vmId": "f6efc35d-b4ac-4f68-adb5-8011653ec108",
+  "started": "2026-11-25T10:45:22.2813233+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "Welcome to Microsoft Azure Linux 3.0 (aarch64) 6.6.161.1-1.azl3",
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "trust exited 1"
+  ],
+  "diagnostics": [],
+  "stage": "trust",
+  "finished": "2026-11-25T10:48:21.1534695+08:00"
+}

@@ -1,8 +1,14 @@
 # 第一阶段计算版兼容性
 
+## ARM64 实机扩测
+
+Adreno 8cx Gen 3 的实机矩阵按发行版列出运行内核、预编译或源码路径、签名状态、计算与卸载结果。Oracle Linux 8 UEK 能加载签名模块，但本机 Qualcomm 用户态库要求 GLIBC_2.29，其编译器库还要求 GLIBCXX_3.4.26。[ARM64 扩测矩阵](artifacts/reports/arm64-expanded/results.md) · [EL8 动态加载器诊断](artifacts/reports/arm64-expanded/oracle-8-uek/loader-diagnostics.txt)
+
 ## GitHub Actions 成品验收
 
-原生 x86_64 和 aarch64 runner 分别生成包含 166 和 118 个不同内核 release 的部署包。两包均通过三份微软运行库的固定摘要、模块 ELF、manifest 和跨架构拒绝检查。Debian 12 x86_64 是本次硬件验收环境。ARM64 已完成原生编译和成品检查，尚无 ARM64 Hyper-V GPU 运行证据。[发行版和内核逐项记录](artifacts/reports/actions-native-matrix.md) · [成品打包记录](https://github.com/Justsenger/hyperv-linux-gpupv/actions/runs/45390694286)
+原生 x86_64 和 aarch64 runner 分别生成包含 166 和 118 个不同内核 release 的部署包。两包均通过三份微软运行库的固定摘要、模块 ELF、manifest 和跨架构拒绝检查。[发行版和内核逐项记录](artifacts/reports/actions-native-matrix.md) · [成品打包记录](https://github.com/Justsenger/hyperv-linux-gpupv/actions/runs/45390694286)
+
+2026-11-25 在 Windows Dev Kit 2023（Windows build 29671）上实测 Qualcomm Adreno 8cx Gen 3，驱动版本为 30.0.4122.4000。Debian 12、Debian 13、Ubuntu 22.04、Ubuntu 24.04、Fedora 44、Rocky Linux 9 和 openSUSE Leap 15.6 的 ARM64 来宾均由普通用户回读 64/64。Ubuntu 22.04 使用 HWE 内核，Ubuntu 24.04 另实测源码编译和 DKMS。计算期间 dxgkrnl 仍记录查询返回 -22 和 -2，严格零错误验收未通过。[ARM64 环境、介质与原始证据](artifacts/reports/arm64-devkit-2023/results.md)
 
 本机将试构建成品与 RTX 2060、Iris Xe 宿主驱动合并为 UDF 光盘。全新 Debian 12 来宾在 6.1.0-56-amd64 上无需 gcc、make 或内核头。关闭 Secure Boot 时重复安装及重启后读写 /dev/dxg 均通过。开启 Secure Boot 后，首次安装提示 MOK 导入；录入公钥并真实重启后以受信任签名加载，启动日志中模块签名验证警告为零。
 
@@ -13,7 +19,7 @@
 | 架构 | 本地包内的全部预编译内核 | 验证环境 |
 | --- | --- | --- |
 | x86_64 | Debian 12，6.1.0-56-amd64 | Debian 原生编译，Hyper-V 双卡 UDF 与 SSH 部署；签名启动、重启和普通用户数值验证 |
-| aarch64 | Debian 12，6.1.0-56-arm64 | 真实 Debian ARM64 头文件交叉编译，ELF 与包内容校验。尚待 ARM64 Hyper-V 实机验证 |
+| aarch64 | Debian 12，6.1.0-56-arm64 | 当时验证了 Debian ARM64 头文件交叉编译、ELF 与包内容。后续真机实测见本页上方的 Dev Kit 2023 记录 |
 
 [本轮测试结果与限制](artifacts/reports/phase1/results.md)。精确内核未命中时走源码编译。Void glibc、Artix、Devuan、Slackware 等非 systemd 系统使用 udev PCI 事件触发加载，需有可工作的 udev 守护进程。此路径尚无独立启动实测。Alpine/musl、不可变根和未提供所需页固定接口的内核不适用。每个 CI 目标的声明、容器与架构可查看 [targets/matrix.json](targets/matrix.json)。衍生版自有内核需要自己的头文件包。
 

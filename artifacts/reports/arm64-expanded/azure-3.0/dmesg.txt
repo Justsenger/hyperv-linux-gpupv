@@ -1,0 +1,13 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)
+[   10.515374] gpupv-sample-c3d9a67de39b4715a0a62151528b3490
+[   10.700876] audit: type=1006 audit(1795575807.721:76): pid=645 uid=0 subj=unconfined old-auid=4294967295 auid=1001 tty=(none) old-ses=4294967295 ses=5 res=1
+[   10.700882] audit: type=1300 audit(1795575807.721:76): arch=c00000b7 syscall=64 success=yes exit=4 a0=5 a1=ffffc1b8ac00 a2=4 a3=1 items=0 ppid=566 pid=645 auid=1001 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=5 comm="sshd-session" exe="/usr/libexec/sshd-session" subj=unconfined key=(null)
+[   10.700884] audit: type=1327 audit(1795575807.721:76): proctitle=737368642D73657373696F6E3A20746573746572205B707269765D
+[   10.872540] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   10.873879] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   10.873928] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   10.873967] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   10.874085] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   11.323986] audit: type=1006 audit(1795575808.345:77): pid=661 uid=0 subj=unconfined old-auid=4294967295 auid=1001 tty=(none) old-ses=4294967295 ses=6 res=1
+[   11.323993] audit: type=1300 audit(1795575808.345:77): arch=c00000b7 syscall=64 success=yes exit=4 a0=5 a1=ffffc0bef390 a2=4 a3=1 items=0 ppid=566 pid=661 auid=1001 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=6 comm="sshd-session" exe="/usr/libexec/sshd-session" subj=unconfined key=(null)
+[   11.324154] audit: type=1327 audit(1795575808.345:77): proctitle=737368642D73657373696F6E3A20746573746572205B707269765D

@@ -1,0 +1,95 @@
+Linux gpupv-test-431e96d875df45e594f47204f17a7990 7.0.0-43-generic #43-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct 23 13:33:03 UTC 2026 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04.1 LTS (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo
+systemd
+........status: done
+Get:1 https://ports.ubuntu.com/ubuntu-ports resolute InRelease [136 kB]
+Get:2 https://ports.ubuntu.com/ubuntu-ports resolute-updates InRelease [137 kB]
+Get:3 https://ports.ubuntu.com/ubuntu-ports resolute-backports InRelease [137 kB]
+Get:4 https://ports.ubuntu.com/ubuntu-ports resolute-security InRelease [137 kB]
+Get:5 https://ports.ubuntu.com/ubuntu-ports resolute/main arm64 Packages [1468 kB]
+Get:6 https://ports.ubuntu.com/ubuntu-ports resolute/main Translation-en [524 kB]
+Get:7 https://ports.ubuntu.com/ubuntu-ports resolute/main arm64 Components [377 kB]
+Get:8 https://ports.ubuntu.com/ubuntu-ports resolute/main arm64 c-n-f Metadata [32.2 kB]
+Get:9 https://ports.ubuntu.com/ubuntu-ports resolute/universe arm64 Packages [16.2 MB]
+Get:10 https://ports.ubuntu.com/ubuntu-ports resolute/universe Translation-en [6329 kB]
+Get:11 https://ports.ubuntu.com/ubuntu-ports resolute/universe arm64 Components [3947 kB]
+Get:12 https://ports.ubuntu.com/ubuntu-ports resolute/universe arm64 c-n-f Metadata [306 kB]
+Get:13 https://ports.ubuntu.com/ubuntu-ports resolute/restricted arm64 Packages [187 kB]
+Get:14 https://ports.ubuntu.com/ubuntu-ports resolute/restricted Translation-en [25.8 kB]
+Get:15 https://ports.ubuntu.com/ubuntu-ports resolute/restricted arm64 Components [196 B]
+Get:16 https://ports.ubuntu.com/ubuntu-ports resolute/restricted arm64 c-n-f Metadata [376 B]
+Get:17 https://ports.ubuntu.com/ubuntu-ports resolute/multiverse arm64 Packages [245 kB]
+Get:18 https://ports.ubuntu.com/ubuntu-ports resolute/multiverse Translation-en [127 kB]
+Get:19 https://ports.ubuntu.com/ubuntu-ports resolute/multiverse arm64 Components [44.1 kB]
+Get:20 https://ports.ubuntu.com/ubuntu-ports resolute/multiverse arm64 c-n-f Metadata [7076 B]
+Get:21 https://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 Packages [956 kB]
+Get:22 https://ports.ubuntu.com/ubuntu-ports resolute-updates/main Translation-en [202 kB]
+Get:23 https://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 Components [108 kB]
+Get:24 https://ports.ubuntu.com/ubuntu-ports resolute-updates/main arm64 c-n-f Metadata [5752 B]
+Get:25 https://ports.ubuntu.com/ubuntu-ports resolute-updates/universe arm64 Packages [385 kB]
+Get:26 https://ports.ubuntu.com/ubuntu-ports resolute-updates/universe Translation-en [126 kB]
+Get:27 https://ports.ubuntu.com/ubuntu-ports resolute-updates/universe arm64 Components [185 kB]
+Get:28 https://ports.ubuntu.com/ubuntu-ports resolute-updates/universe arm64 c-n-f Metadata [4624 B]
+Get:29 https://ports.ubuntu.com/ubuntu-ports resolute-updates/restricted arm64 Packages [855 kB]
+Get:30 https://ports.ubuntu.com/ubuntu-ports resolute-updates/restricted Translation-en [132 kB]
+Get:31 https://ports.ubuntu.com/ubuntu-ports resolute-updates/restricted arm64 Components [212 B]
+Get:32 https://ports.ubuntu.com/ubuntu-ports resolute-updates/restricted arm64 c-n-f Metadata [380 B]
+Get:33 https://ports.ubuntu.com/ubuntu-ports resolute-updates/multiverse arm64 Packages [21.3 kB]
+Get:34 https://ports.ubuntu.com/ubuntu-ports resolute-updates/multiverse Translation-en [4168 B]
+Get:35 https://ports.ubuntu.com/ubuntu-ports resolute-updates/multiverse arm64 Components [216 B]
+Get:36 https://ports.ubuntu.com/ubuntu-ports resolute-updates/multiverse arm64 c-n-f Metadata [256 B]
+Get:37 https://ports.ubuntu.com/ubuntu-ports resolute-backports/main arm64 Components [212 B]
+Get:38 https://ports.ubuntu.com/ubuntu-ports resolute-backports/main arm64 c-n-f Metadata [112 B]
+Get:39 https://ports.ubuntu.com/ubuntu-ports resolute-backports/universe arm64 Packages [3136 B]
+Get:40 https://ports.ubuntu.com/ubuntu-ports resolute-backports/universe Translation-en [7988 B]
+Get:41 https://ports.ubuntu.com/ubuntu-ports resolute-backports/universe arm64 Components [1056 B]
+Get:42 https://ports.ubuntu.com/ubuntu-ports resolute-backports/universe arm64 c-n-f Metadata [116 B]
+Get:43 https://ports.ubuntu.com/ubuntu-ports resolute-backports/restricted arm64 Components [216 B]
+Get:44 https://ports.ubuntu.com/ubuntu-ports resolute-backports/restricted arm64 c-n-f Metadata [120 B]
+Get:45 https://ports.ubuntu.com/ubuntu-ports resolute-backports/multiverse arm64 Components [216 B]
+Get:46 https://ports.ubuntu.com/ubuntu-ports resolute-backports/multiverse arm64 c-n-f Metadata [120 B]
+Get:47 https://ports.ubuntu.com/ubuntu-ports resolute-security/main arm64 Packages [798 kB]
+Get:48 https://ports.ubuntu.com/ubuntu-ports resolute-security/main Translation-en [162 kB]
+Get:49 https://ports.ubuntu.com/ubuntu-ports resolute-security/main arm64 Components [44.9 kB]
+Get:50 https://ports.ubuntu.com/ubuntu-ports resolute-security/main arm64 c-n-f Metadata [4616 B]
+Get:51 https://ports.ubuntu.com/ubuntu-ports resolute-security/universe arm64 Packages [212 kB]
+Get:52 https://ports.ubuntu.com/ubuntu-ports resolute-security/universe Translation-en [73.2 kB]
+Get:53 https://ports.ubuntu.com/ubuntu-ports resolute-security/universe arm64 Components [62.7 kB]
+Get:54 https://ports.ubuntu.com/ubuntu-ports resolute-security/universe arm64 c-n-f Metadata [3476 B]
+Get:55 https://ports.ubuntu.com/ubuntu-ports resolute-security/restricted arm64 Packages [830 kB]
+Get:56 https://ports.ubuntu.com/ubuntu-ports resolute-security/restricted Translation-en [128 kB]
+Get:57 https://ports.ubuntu.com/ubuntu-ports resolute-security/restricted arm64 Components [212 B]
+Get:58 https://ports.ubuntu.com/ubuntu-ports resolute-security/restricted arm64 c-n-f Metadata [384 B]
+Get:59 https://ports.ubuntu.com/ubuntu-ports resolute-security/multiverse arm64 Packages [20.0 kB]
+Get:60 https://ports.ubuntu.com/ubuntu-ports resolute-security/multiverse Translation-en [3728 B]
+Get:61 https://ports.ubuntu.com/ubuntu-ports resolute-security/multiverse arm64 Components [212 B]
+Get:62 https://ports.ubuntu.com/ubuntu-ports resolute-security/multiverse arm64 c-n-f Metadata [120 B]
+Fetched 35.7 MB in 41s (871 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mokutil is already the newest version (0.7.2-2).
+mokutil set to manually installed.
+openssl is already the newest version (3.5.5-1ubuntu3.7).
+openssl set to manually installed.
+kmod is already the newest version (34.2-2ubuntu2).
+kmod set to manually installed.
+udev is already the newest version (259.9-0ubuntu0.1).
+udev set to manually installed.
+python3 is already the newest version (3.14.3-0ubuntu2).
+python3 set to manually installed.
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 35 not upgraded.

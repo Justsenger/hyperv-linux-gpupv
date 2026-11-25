@@ -1,0 +1,18 @@
+Linux gpupv-test-4207456d208445aaa20a8bdef02c6eec 6.12.117+deb13-arm64 #1 SMP Debian 6.12.117-1 (2026-11-12) aarch64 GNU/Linux
+PRETTY_NAME="Devuan GNU/Linux 6 (excalibur)"
+NAME="Devuan GNU/Linux"
+VERSION_ID="6"
+VERSION="6 (excalibur)"
+VERSION_CODENAME="excalibur"
+ID=devuan
+ID_LIKE=debian
+HOME_URL="https://www.devuan.org/"
+SUPPORT_URL="https://devuan.org/os/community"
+BUG_REPORT_URL="https://bugs.devuan.org/"
+init
+Hit:1 http://deb.devuan.org/merged excalibur InRelease
+Hit:2 http://deb.devuan.org/merged excalibur-security InRelease
+Hit:3 http://deb.devuan.org/merged excalibur-updates InRelease
+Reading package lists...
+E: Release file for http://deb.devuan.org/merged/dists/excalibur-security/InRelease is not valid yet (invalid for another 6h 55min 33s). Updates for this repository will not be applied.
+E: Release file for http://deb.devuan.org/merged/dists/excalibur-updates/InRelease is not valid yet (invalid for another 7h 17min 30s). Updates for this repository will not be applied.

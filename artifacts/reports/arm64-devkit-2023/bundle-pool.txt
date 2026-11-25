@@ -1,0 +1,6 @@
+v0.1.0-rc1 118 kernel releases, 44 target records, 118 target/kernel pairs
+probe: 77da1bbf588e6dde919483ede949025985cc852798247074efedbb602c32ee24
+v0.1.0-rc1.arm64-local 118 kernel releases, 44 target records, 118 target/kernel pairs
+probe: 77da1bbf588e6dde919483ede949025985cc852798247074efedbb602c32ee24
+v0.1.0-rc1.arm64-local.2 118 kernel releases, 44 target records, 118 target/kernel pairs
+probe: 77da1bbf588e6dde919483ede949025985cc852798247074efedbb602c32ee24

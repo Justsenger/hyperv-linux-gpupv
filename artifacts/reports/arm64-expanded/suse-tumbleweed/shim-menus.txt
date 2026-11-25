@@ -1,0 +1,5 @@
+fc0452b3-bbcf-44d2-bbe6-aa1ce7a3c50a confirmed shim menu management
+fc0452b3-bbcf-44d2-bbe6-aa1ce7a3c50a confirmed shim menu view
+fc0452b3-bbcf-44d2-bbe6-aa1ce7a3c50a confirmed shim menu confirm
+fc0452b3-bbcf-44d2-bbe6-aa1ce7a3c50a confirmed shim menu password
+fc0452b3-bbcf-44d2-bbe6-aa1ce7a3c50a confirmed shim menu reboot

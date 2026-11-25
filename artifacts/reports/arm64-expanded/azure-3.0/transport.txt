@@ -1,0 +1,3 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)
+/sys/bus/pci/devices/8af1:00:00.0/device:0x008e
+install_route=prebuilt

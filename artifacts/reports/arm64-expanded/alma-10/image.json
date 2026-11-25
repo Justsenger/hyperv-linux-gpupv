@@ -1,0 +1,6 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://repo.almalinux.org/almalinux/10/cloud/aarch64/images/AlmaLinux-10-GenericCloud-10.3-20261116.0.aarch64.qcow2",
+  "ChecksumSource": "https://repo.almalinux.org/almalinux/10/cloud/aarch64/images/CHECKSUM",
+  "Sha256": "4e8901ee8d8b280bca6fcc5735e8fd8fa253c4607fe9fa1cba22b20e0bc3b417"
+}

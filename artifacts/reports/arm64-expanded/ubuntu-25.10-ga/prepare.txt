@@ -1,0 +1,80 @@
+Linux gpupv-test-7ed160b582e6408c827674a1af6eb7d8 6.17.0-40-generic #40-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 19 16:24:16 UTC 2026 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 25.10"
+NAME="Ubuntu"
+VERSION_ID="25.10"
+VERSION="25.10 (Questing Quokka)"
+VERSION_CODENAME=questing
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=questing
+LOGO=ubuntu-logo
+systemd
+status: done
+Hit:1 https://ports.ubuntu.com/ubuntu-ports questing InRelease
+Get:2 https://ports.ubuntu.com/ubuntu-ports questing-updates InRelease [138 kB]
+Get:3 https://ports.ubuntu.com/ubuntu-ports questing-backports InRelease [134 kB]
+Get:4 https://ports.ubuntu.com/ubuntu-ports questing-security InRelease [137 kB]
+Get:5 https://ports.ubuntu.com/ubuntu-ports questing/universe arm64 Packages [15.4 MB]
+Get:6 https://ports.ubuntu.com/ubuntu-ports questing/universe Translation-en [6283 kB]
+Get:7 https://ports.ubuntu.com/ubuntu-ports questing/universe arm64 Components [4017 kB]
+Get:8 https://ports.ubuntu.com/ubuntu-ports questing/universe arm64 c-n-f Metadata [304 kB]
+Get:9 https://ports.ubuntu.com/ubuntu-ports questing/multiverse arm64 Packages [228 kB]
+Get:10 https://ports.ubuntu.com/ubuntu-ports questing/multiverse Translation-en [121 kB]
+Get:11 https://ports.ubuntu.com/ubuntu-ports questing/multiverse arm64 Components [48.2 kB]
+Get:12 https://ports.ubuntu.com/ubuntu-ports questing/multiverse arm64 c-n-f Metadata [5756 B]
+Get:13 https://ports.ubuntu.com/ubuntu-ports questing-updates/main arm64 Packages [399 kB]
+Get:14 https://ports.ubuntu.com/ubuntu-ports questing-updates/main Translation-en [121 kB]
+Get:15 https://ports.ubuntu.com/ubuntu-ports questing-updates/main arm64 Components [58.9 kB]
+Get:16 https://ports.ubuntu.com/ubuntu-ports questing-updates/universe arm64 Packages [325 kB]
+Get:17 https://ports.ubuntu.com/ubuntu-ports questing-updates/universe Translation-en [108 kB]
+Get:18 https://ports.ubuntu.com/ubuntu-ports questing-updates/universe arm64 Components [85.9 kB]
+Get:19 https://ports.ubuntu.com/ubuntu-ports questing-updates/universe arm64 c-n-f Metadata [7092 B]
+Get:20 https://ports.ubuntu.com/ubuntu-ports questing-updates/restricted arm64 Packages [390 kB]
+Get:21 https://ports.ubuntu.com/ubuntu-ports questing-updates/restricted Translation-en [58.9 kB]
+Get:22 https://ports.ubuntu.com/ubuntu-ports questing-updates/multiverse arm64 Packages [15.7 kB]
+Get:23 https://ports.ubuntu.com/ubuntu-ports questing-updates/multiverse Translation-en [4368 B]
+Get:24 https://ports.ubuntu.com/ubuntu-ports questing-updates/multiverse arm64 Components [212 B]
+Get:25 https://ports.ubuntu.com/ubuntu-ports questing-updates/multiverse arm64 c-n-f Metadata [408 B]
+Get:26 https://ports.ubuntu.com/ubuntu-ports questing-backports/main arm64 Components [212 B]
+Get:27 https://ports.ubuntu.com/ubuntu-ports questing-backports/universe arm64 Packages [3796 B]
+Get:28 https://ports.ubuntu.com/ubuntu-ports questing-backports/universe Translation-en [1496 B]
+Get:29 https://ports.ubuntu.com/ubuntu-ports questing-backports/universe arm64 Components [5744 B]
+Get:30 https://ports.ubuntu.com/ubuntu-ports questing-backports/universe arm64 c-n-f Metadata [176 B]
+Get:31 https://ports.ubuntu.com/ubuntu-ports questing-backports/restricted arm64 Components [216 B]
+Get:32 https://ports.ubuntu.com/ubuntu-ports questing-backports/restricted arm64 c-n-f Metadata [120 B]
+Get:33 https://ports.ubuntu.com/ubuntu-ports questing-backports/multiverse arm64 Components [216 B]
+Get:34 https://ports.ubuntu.com/ubuntu-ports questing-backports/multiverse arm64 c-n-f Metadata [120 B]
+Get:35 https://ports.ubuntu.com/ubuntu-ports questing-security/main arm64 Packages [337 kB]
+Get:36 https://ports.ubuntu.com/ubuntu-ports questing-security/main Translation-en [100 kB]
+Get:37 https://ports.ubuntu.com/ubuntu-ports questing-security/main arm64 Components [24.3 kB]
+Get:38 https://ports.ubuntu.com/ubuntu-ports questing-security/universe arm64 Packages [267 kB]
+Get:39 https://ports.ubuntu.com/ubuntu-ports questing-security/universe Translation-en [81.4 kB]
+Get:40 https://ports.ubuntu.com/ubuntu-ports questing-security/universe arm64 Components [57.1 kB]
+Get:41 https://ports.ubuntu.com/ubuntu-ports questing-security/universe arm64 c-n-f Metadata [5780 B]
+Get:42 https://ports.ubuntu.com/ubuntu-ports questing-security/restricted arm64 Packages [369 kB]
+Get:43 https://ports.ubuntu.com/ubuntu-ports questing-security/restricted Translation-en [55.2 kB]
+Get:44 https://ports.ubuntu.com/ubuntu-ports questing-security/multiverse arm64 Packages [15.1 kB]
+Get:45 https://ports.ubuntu.com/ubuntu-ports questing-security/multiverse Translation-en [3300 B]
+Get:46 https://ports.ubuntu.com/ubuntu-ports questing-security/multiverse arm64 Components [212 B]
+Get:47 https://ports.ubuntu.com/ubuntu-ports questing-security/multiverse arm64 c-n-f Metadata [252 B]
+Fetched 29.7 MB in 20s (1458 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mokutil is already the newest version (0.7.2-1).
+mokutil set to manually installed.
+openssl is already the newest version (3.5.3-1ubuntu3.4).
+openssl set to manually installed.
+kmod is already the newest version (34.2-2ubuntu1.1).
+kmod set to manually installed.
+udev is already the newest version (257.9-0ubuntu2.5).
+udev set to manually installed.
+python3 is already the newest version (3.13.7-1).
+python3 set to manually installed.
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.

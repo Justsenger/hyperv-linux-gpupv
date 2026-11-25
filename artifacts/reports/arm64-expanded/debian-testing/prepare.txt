@@ -1,0 +1,44 @@
+Linux gpupv-test-9890bfbeda7c4b23a99b1a1b7e698b43 7.3.5+deb14-arm64 #1 SMP PREEMPT Debian 7.3.5-1 (2026-11-18) aarch64 GNU/Linux
+PRETTY_NAME="Debian GNU/Linux forky/sid"
+NAME="Debian GNU/Linux"
+VERSION_CODENAME=forky
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+systemd
+status: done
+Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+Get:3 file:/etc/apt/mirrors/debian-security.list Mirrorlist [39 B]
+Get:2 https://deb.debian.org/debian forky InRelease [151 kB]
+Get:4 https://deb.debian.org/debian forky-updates InRelease [45.1 kB]
+Get:5 https://deb.debian.org/debian forky-backports InRelease [45.3 kB]
+Get:6 https://deb.debian.org/debian-security forky-security InRelease [48.0 kB]
+Get:7 https://deb.debian.org/debian forky/main Sources [11.5 MB]
+Get:8 https://deb.debian.org/debian forky/non-free-firmware Sources [7964 B]
+Get:9 https://deb.debian.org/debian forky/main arm64 Packages [10.1 MB]
+Get:10 https://deb.debian.org/debian forky/main Translation-en [6717 kB]
+Get:11 https://deb.debian.org/debian forky/non-free-firmware arm64 Packages [10.9 kB]
+Get:12 https://deb.debian.org/debian forky/non-free-firmware Translation-en [6716 B]
+Fetched 28.6 MB in 43s (672 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mokutil is already the newest version (0.7.2-2).
+mokutil set to manually installed.
+openssl is already the newest version (3.6.5-1).
+kmod is already the newest version (34.3-3).
+kmod set to manually installed.
+udev is already the newest version (262.2-1).
+udev set to manually installed.
+python3 is already the newest version (3.14.7-3).
+python3 set to manually installed.
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+linux-image-arm64 is already the newest version (7.3.5-1).
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.

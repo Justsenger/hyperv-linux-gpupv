@@ -1,0 +1,1 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)

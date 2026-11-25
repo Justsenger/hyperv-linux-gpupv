@@ -1,0 +1,7 @@
+systemd
+e94cdc7d-bea4-478d-a37e-d3a3a2b4efda
+SecureBoot enabled
+GPU-PV module signing
+O
+crw-rw---- 1 root video 10, 263 Nov 25 03:25 /dev/dxg
+signature_warnings=0

@@ -1,0 +1,8 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)
+systemd
+6183426e-ceb6-4f79-8799-91d0754ab7ff
+SecureBoot enabled
+
+O
+crw-rw---- 1 root video 10, 263 Nov 25 02:55 /dev/dxg
+/var/lib/gpupv-signing/MOK.der is already enrolled

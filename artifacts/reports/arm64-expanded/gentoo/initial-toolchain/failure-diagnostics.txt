@@ -1,0 +1,164 @@
+Linux gpupv-test-11a9dc3628a24813aab4deaf04a97acb 6.18.64-p1-gentoo-dist #1 SMP PREEMPT_DYNAMIC Mon Nov 23 03:03:30 UTC 2026 aarch64 GNU/Linux
+[    7.744164] systemd[1]: Reached target Socket Units.
+[    7.748881] systemd[1]: dracut ask for additional cmdline parameters skipped, no trigger condition checks were met.
+[    7.751756] systemd[1]: Starting dracut cmdline hook...
+[    7.778303] systemd[1]: Starting Create List of Static Device Nodes...
+[    7.792617] systemd[1]: Early Battery Level Check skipped, unmet condition check ConditionDirectoryNotEmpty=/sys/class/power_supply
+[    7.819298] systemd[1]: Starting Journal Service...
+[    7.836323] systemd[1]: Load Kernel Modules skipped, no trigger condition checks were met.
+[    7.845163] systemd[1]: Starting Apply Kernel Variables...
+[    7.876576] systemd[1]: Finished Create List of Static Device Nodes.
+[    7.891895] systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+[    7.933313] systemd-journald[216]: Collecting audit messages is disabled.
+[    7.940732] systemd[1]: Finished Apply Kernel Variables.
+[    7.957623] systemd[1]: Finished Create Static Device Nodes in /dev gracefully.
+[    7.973986] systemd[1]: Starting Create Static Device Nodes in /dev...
+[    7.994108] systemd[1]: Started Journal Service.
+[    9.526037] hv_vmbus: hv_mmio=[mem 0xe0000000-0xfed3ffff],[mem 0x800000000-0xfffffffff] fb=[mem 0xe0000000-0xe7ffffff]
+[    9.790579] hv_vmbus: Vmbus version:5.3
+[   10.012637] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[   10.302729] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[   10.580043] hv_vmbus: registering driver hid_hyperv
+[   10.668167] hv_vmbus: registering driver hyperv_keyboard
+[   10.741484] hv_vmbus: registering driver hv_pci
+[   10.896704] hv_vmbus: registering driver hv_storvsc
+[   10.980261] scsi host0: storvsc_host_t
+[   11.087740] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[   11.151881] input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio0/input/input0
+[   11.179444] hv_pci 12c1c730-d001-441b-9588-ac9ececb7c7f: PCI VMBus probing: Using version 0x10004
+[   11.179933] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input1
+[   11.182762] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[   11.208738] hv_pci 12c1c730-d001-441b-9588-ac9ececb7c7f: PCI host bridge to bus d001:00
+[   11.208748] PCI: OF: of_root node is NULL, cannot create PCI host bridge node
+[   11.208750] pci_bus d001:00: No busn resource found for root bus, will use [bus 00-ff]
+[   11.209613] pci d001:00:00.0: [1414:008e] type 00 class 0x030200 conventional PCI endpoint
+[   11.303061] pci_bus d001:00: busn_res: [bus 00-ff] end is updated to 00
+[   11.364244] scsi 0:0:0:1: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[   11.380764] scsi 0:0:0:2: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+[   11.398327] scsi 0:0:0:0: Attached scsi generic sg0 type 0
+[   11.400748] sr 0:0:0:1: [sr0] scsi-1 drive
+[   11.401000] sd 0:0:0:0: [sda] 67108864 512-byte logical blocks: (34.4 GB/32.0 GiB)
+[   11.401252] sd 0:0:0:0: [sda] Write Protect is off
+[   11.401417] sd 0:0:0:0: [sda] Mode Sense: 0f 00 00 00
+[   11.401460] cdrom: Uniform CD-ROM driver Revision: 3.20
+[   11.412732] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[   11.425403] sr 0:0:0:1: Attached scsi CD-ROM sr0
+[   11.425564] sr 0:0:0:1: Attached scsi generic sg1 type 5
+[   11.427679] sr 0:0:0:2: [sr1] scsi-1 drive
+[   11.451838] sr 0:0:0:2: Attached scsi CD-ROM sr1
+[   11.452566] sr 0:0:0:2: Attached scsi generic sg2 type 5
+[   11.453394] GPT:Primary header thinks Alt. header is not at the end of the disk.
+[   11.453675] GPT:41943039 != 67108863
+[   11.453796] GPT:Alternate GPT header not at the end of the disk.
+[   11.453935] GPT:41943039 != 67108863
+[   11.454228] GPT: Use GNU Parted to correct GPT errors.
+[   11.454371]  sda: sda1 sda2
+[   11.455853] sd 0:0:0:0: [sda] Attached SCSI disk
+[   11.551524] hv_storvsc a1dac2f4-1499-4de5-8d67-9012be741a76: tag#278 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[   11.578679] hv_storvsc a1dac2f4-1499-4de5-8d67-9012be741a76: tag#289 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[   11.736413] hv_storvsc a1dac2f4-1499-4de5-8d67-9012be741a76: tag#298 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[   11.736691] hv_storvsc a1dac2f4-1499-4de5-8d67-9012be741a76: tag#301 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[   11.933694] XFS (sda2): Mounting V5 Filesystem b81b013e-afc5-4a22-9985-a1301272bc6a
+[   11.973582] XFS (sda2): Ending clean mount
+[   12.359552] systemd-journald[216]: Received SIGTERM from PID 1 (systemd).
+[   12.561728] NET: Registered PF_VSOCK protocol family
+[   12.569878] hv_vmbus: registering driver hv_sock
+[   12.906864] systemd[1]: systemd 261.2 running in system mode (+PAM -AUDIT -SELINUX -APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 +IDN2 +KMOD -LIBCRYPTSETUP -LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 +LZ4 -XZ -ZLIB +ZSTD -BPF_FRAMEWORK -BTF -XKBCOMMON +UTMP +LIBARCHIVE)
+[   12.917287] systemd[1]: Detected virtualization microsoft.
+[   12.917412] systemd[1]: Detected architecture arm64.
+[   13.055067] systemd[1]: Initializing machine ID from random generator.
+[   13.055257] systemd[1]: Installed transient '/etc/machine-id' file.
+[   14.289073] systemd[1]: initrd-switch-root.service: Deactivated successfully.
+[   14.297785] systemd[1]: Stopped Switch Root.
+[   14.299151] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[   14.299769] systemd[1]: Created slice Slice /system/getty.
+[   14.300664] systemd[1]: Created slice Slice /system/systemd-fsck.
+[   14.301527] systemd[1]: Created slice User and Session Slice.
+[   14.302154] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[   14.302605] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   14.303217] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   14.303702] systemd[1]: Expecting device /dev/disk/by-label/gentooefi...
+[   14.304146] systemd[1]: Stopped target Switch Root.
+[   14.304452] systemd[1]: Stopped target Initrd File Systems.
+[   14.304911] systemd[1]: Stopped target Initrd Root File System.
+[   14.306790] systemd[1]: Reached target Path Units.
+[   14.308501] systemd[1]: Reached target Remote File Systems.
+[   14.309119] systemd[1]: Reached target Slice Units.
+[   14.309435] systemd[1]: Reached target Swaps.
+[   14.317042] systemd[1]: Listening on Query the User Interactively for a Password.
+[   14.322433] systemd[1]: Listening on Process Core Dump Socket.
+[   14.324075] systemd[1]: Listening on Credential Encryption/Decryption.
+[   14.328462] systemd[1]: Listening on Factory Reset Management.
+[   14.328950] systemd[1]: Listening on Hostname Service Socket.
+[   14.329333] systemd[1]: Journal Audit Socket skipped, unmet condition check ConditionSecurity=audit
+[   14.329537] systemd[1]: Listening on DDI File System Mounter Socket.
+[   14.361920] systemd[1]: Listening on Console Output Muting Service Socket.
+[   14.396272] systemd[1]: Listening on Network Management Metrics Varlink Socket.
+[   14.396737] systemd[1]: Listening on Network Management Varlink Socket.
+[   14.397155] systemd[1]: Listening on Network Management Netlink Socket.
+[   14.397528] systemd[1]: Listening on Namespace Resource Manager Socket.
+[   14.419055] systemd[1]: Listening on Disk Repartitioning Service Socket.
+[   14.437483] systemd[1]: Listening on Report System Basic Metrics Socket.
+[   14.439578] systemd[1]: Listening on CGroup Report Varlink Socket.
+[   14.440459] systemd[1]: Listening on Resolve Monitor Varlink Socket.
+[   14.440872] systemd[1]: Listening on Resolve Service Varlink Socket.
+[   14.442294] systemd[1]: Listening on Simple Block Device Backed Storage Provider.
+[   14.443670] systemd[1]: Listening on Simple File System Backed Storage Provider.
+[   14.444386] systemd[1]: Listening on udev Control Socket.
+[   14.444901] systemd[1]: Listening on udev Varlink Socket.
+[   14.445333] systemd[1]: Listening on User Database Manager Socket.
+[   14.463336] systemd[1]: Mounting Huge Pages File System...
+[   14.480978] systemd[1]: Mounting POSIX Message Queue File System...
+[   14.485132] systemd[1]: Mounting Kernel Debug File System...
+[   14.496114] systemd[1]: Mounting Kernel Trace File System...
+[   14.508544] systemd[1]: Mounting Temporary Directory /tmp...
+[   14.535641] systemd[1]: Starting Create List of Static Device Nodes...
+[   14.581878] systemd[1]: Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+[   14.582067] systemd[1]: Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+[   14.582227] systemd[1]: Load Kernel Module efi_pstore skipped, unmet condition check ConditionKernelModuleLoaded=!efi_pstore
+[   14.595117] systemd[1]: Starting Load Kernel Module fuse...
+[   14.596433] systemd[1]: Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+[   14.609155] systemd[1]: Starting Journal Service...
+[   14.725110] systemd[1]: Load Kernel Modules skipped, no trigger condition checks were met.
+[   14.816937] fuse: init (API version 7.45)
+[   14.857867] systemd[1]: Starting Generate Network Units from Kernel Command Line...
+[   14.865117] systemd-journald[560]: Collecting audit messages is disabled.
+[   14.869996] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   14.894343] systemd[1]: Starting Apply Kernel Variables...
+[   14.947871] systemd[1]: Starting Load udev Rules from Credentials...
+[   14.985886] systemd[1]: Starting Coldplug All udev Devices...
+[   15.116135] systemd[1]: Started Journal Service.
+[   15.374363] systemd-journald[560]: Received client request to flush runtime journal.
+[   15.727270] tun: Universal TUN/TAP device driver, 1.6
+[   18.506165] hv_storvsc a1dac2f4-1499-4de5-8d67-9012be741a76: tag#262 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[   18.567669] hv_storvsc a1dac2f4-1499-4de5-8d67-9012be741a76: tag#276 cmd 0x85 status: scsi 0x2 srb 0x6 host 0xc0000001
+[   19.020196] hv_vmbus: registering driver hv_balloon
+[   19.057700] hv_utils: Registering HyperV Utility Driver
+[   19.057839] hv_vmbus: registering driver hv_utils
+[   19.063515] hv_utils: Heartbeat IC version 3.0
+[   19.080641] hv_utils: Shutdown IC version 3.2
+[   19.084222] hv_utils: TimeSync IC version 4.0
+[   19.085151] hv_utils: VSS IC version 5.0
+[   19.117469] hv_vmbus: registering driver hv_netvsc
+[   19.284392] hv_balloon: Using Dynamic Memory protocol version 2.0
+[   19.308390] hv_balloon: Memory hot add disabled on ARM64
+[   19.322003] hv_vmbus: registering driver hyperv_drm
+[   19.327287] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] Synthvid Version major 3, minor 5
+[   19.327532] Console: switching to colour dummy device 80x25
+[   19.347104] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] Registered 1 planes with drm panic
+[   19.347118] [drm] Initialized hyperv_drm 1.0.0 for 5620e0c7-8062-4dce-aeb7-520c7ef76171 on minor 0
+[   19.348590] Console: switching to colour frame buffer device 128x48
+[   19.351776] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] fb0: hyperv_drmdrmfb frame buffer device
+[   23.478328] ISO 9660 Extensions: Microsoft Joliet Level 3
+[   23.478550] ISOFS: changing to secondary root
+[   23.763352] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   23.798682] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   23.799046] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[   23.799599] Loading firmware: regulatory.db
+[   23.802160] faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+[   23.802575] cfg80211: failed to load regulatory.db
+[   30.861981] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.
+[   37.068990] UDF-fs: INFO Mounting volume 'GPUPV', timestamp 2026/11/25 02:05 (1000)
+ls: cannot access '/dev/dxg': No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        32G  3.5G   28G  12% /

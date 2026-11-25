@@ -1,0 +1,95 @@
+Linux gpupv-test-2b4f8d33a9ae409d93c8db5ef0ff8b34 6.14.0-37-generic #37-Ubuntu SMP PREEMPT_DYNAMIC Fri Nov 14 23:05:04 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 25.04"
+NAME="Ubuntu"
+VERSION_ID="25.04"
+VERSION="25.04 (Plucky Puffin)"
+VERSION_CODENAME=plucky
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=plucky
+LOGO=ubuntu-logo
+systemd
+..status: done
+Get:1 https://mirrors.ustc.edu.cn/ubuntu-ports plucky InRelease [265 kB]
+Get:2 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates InRelease [126 kB]
+Get:3 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-backports InRelease [126 kB]
+Get:4 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security InRelease [126 kB]
+Get:5 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/main arm64 Packages [1432 kB]
+Get:6 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/main Translation-en [519 kB]
+Get:7 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/main arm64 Components [398 kB]
+Get:8 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/main arm64 c-n-f Metadata [31.5 kB]
+Get:9 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/universe arm64 Packages [15.8 MB]
+Get:10 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/universe Translation-en [6281 kB]
+Get:11 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/universe arm64 Components [3974 kB]
+Get:12 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/universe arm64 c-n-f Metadata [303 kB]
+Get:13 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/restricted arm64 Packages [76.5 kB]
+Get:14 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/restricted Translation-en [13.1 kB]
+Get:15 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/restricted arm64 Components [196 B]
+Get:16 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/restricted arm64 c-n-f Metadata [372 B]
+Get:17 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/multiverse arm64 Packages [220 kB]
+Get:18 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/multiverse Translation-en [119 kB]
+Get:19 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/multiverse arm64 Components [40.6 kB]
+Get:20 https://mirrors.ustc.edu.cn/ubuntu-ports plucky/multiverse arm64 c-n-f Metadata [6188 B]
+Get:21 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/main arm64 Packages [369 kB]
+Get:22 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/main Translation-en [105 kB]
+Get:23 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/main arm64 Components [56.0 kB]
+Get:24 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/main arm64 c-n-f Metadata [9972 B]
+Get:25 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/universe arm64 Packages [256 kB]
+Get:26 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/universe Translation-en [86.5 kB]
+Get:27 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/universe arm64 Components [50.0 kB]
+Get:28 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/universe arm64 c-n-f Metadata [7156 B]
+Get:29 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/restricted arm64 Packages [454 kB]
+Get:30 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/restricted Translation-en [66.6 kB]
+Get:31 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/restricted arm64 Components [212 B]
+Get:32 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/restricted arm64 c-n-f Metadata [404 B]
+Get:33 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/multiverse arm64 Packages [24.8 kB]
+Get:34 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/multiverse Translation-en [3764 B]
+Get:35 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/multiverse arm64 Components [212 B]
+Get:36 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-updates/multiverse arm64 c-n-f Metadata [388 B]
+Get:37 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-backports/main arm64 Components [212 B]
+Get:38 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-backports/main arm64 c-n-f Metadata [112 B]
+Get:39 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-backports/universe arm64 Packages [3824 B]
+Get:40 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-backports/universe Translation-en [1404 B]
+Get:41 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-backports/universe arm64 Components [3124 B]
+Get:42 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-backports/universe arm64 c-n-f Metadata [176 B]
+Get:43 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-backports/restricted arm64 Components [216 B]
+Get:44 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-backports/restricted arm64 c-n-f Metadata [116 B]
+Get:45 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-backports/multiverse arm64 Components [216 B]
+Get:46 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-backports/multiverse arm64 c-n-f Metadata [116 B]
+Get:47 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/main arm64 Packages [246 kB]
+Get:48 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/main Translation-en [68.7 kB]
+Get:49 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/main arm64 Components [16.7 kB]
+Get:50 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/main arm64 c-n-f Metadata [6600 B]
+Get:51 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/universe arm64 Packages [183 kB]
+Get:52 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/universe Translation-en [62.5 kB]
+Get:53 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/universe arm64 Components [24.4 kB]
+Get:54 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/universe arm64 c-n-f Metadata [5320 B]
+Get:55 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/restricted arm64 Packages [433 kB]
+Get:56 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/restricted Translation-en [62.0 kB]
+Get:57 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/restricted arm64 Components [212 B]
+Get:58 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/restricted arm64 c-n-f Metadata [420 B]
+Get:59 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/multiverse arm64 Packages [24.3 kB]
+Get:60 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/multiverse Translation-en [3880 B]
+Get:61 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/multiverse arm64 Components [212 B]
+Get:62 https://mirrors.ustc.edu.cn/ubuntu-ports plucky-security/multiverse arm64 c-n-f Metadata [432 B]
+Fetched 32.5 MB in 5s (6662 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mokutil is already the newest version (0.6.0-2build3).
+mokutil set to manually installed.
+openssl is already the newest version (3.4.1-1ubuntu4).
+openssl set to manually installed.
+kmod is already the newest version (33+20240816-2ubuntu1).
+kmod set to manually installed.
+udev is already the newest version (257.4-1ubuntu3.2).
+udev set to manually installed.
+python3 is already the newest version (3.13.3-1).
+python3 set to manually installed.
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.

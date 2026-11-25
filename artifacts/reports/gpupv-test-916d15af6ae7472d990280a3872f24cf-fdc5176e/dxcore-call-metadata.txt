@@ -1,0 +1,32 @@
+dxcore ioctl observer bound in ordinary guest process
+dxcore feature_failed adapter=0 feature=268435456
+dxcore enumerated_adapter handle=0x40000000
+dxcore query_failed type=1 bytes=524 KMTUMDVERSION=0
+dxcore query_failed type=1 bytes=524 KMTUMDVERSION=1
+dxcore query_failed type=1 bytes=524 KMTUMDVERSION=2
+dxcore query_failed type=48 bytes=552 query_type=1 flags=0 ValueName=DXCoreWSLAttributes
+dxcore open_adapter handle=0x40000040
+dxcore close_adapter handle=0x40000040
+dxcore close_adapter handle=0x40000000
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1

@@ -1,0 +1,6 @@
+[   19.605266] gpupv-sample-d37d0dcc8a644ed2af5773b26ab76aff
+[   20.410022] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   20.422878] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   20.422988] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   20.423063] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   20.423276] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2

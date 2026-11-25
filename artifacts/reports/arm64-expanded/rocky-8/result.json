@@ -1,0 +1,17 @@
+{
+  "target": "rocky-8",
+  "vm": "gpupv-test-e7fdba18d32741ec9cfbd4d205341368",
+  "vmId": "8c247079-c41c-43aa-abde-1b9039f19e0f",
+  "started": "2026-11-25T10:38:47.4337906+08:00",
+  "secureBoot": true,
+  "route": "source",
+  "kernel": "4.18.0-553.el8_10.aarch64",
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "install exited 1"
+  ],
+  "diagnostics": [],
+  "stage": "install",
+  "finished": "2026-11-25T10:43:30.7774846+08:00"
+}

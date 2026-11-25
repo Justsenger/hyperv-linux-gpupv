@@ -1,0 +1,165 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)
+Linux gpupv-test-e401bd1c3e6d44b499aaa70e31563845 6.6.161.1-1.azl3 #1 SMP Thu Nov  5 04:30:06 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+[    0.606874] evm: security.SMACK64TRANSMUTE (disabled)
+[    0.607032] evm: security.SMACK64MMAP (disabled)
+[    0.607189] evm: security.apparmor
+[    0.607344] evm: security.ima
+[    0.608894] evm: security.capability
+[    0.609055] evm: HMAC attrs: 0x1
+[    0.609346] audit: type=1807 audit(1795575298.801:2): action=measure func=KEXEC_KERNEL_CHECK res=1
+[    0.609503] audit: type=1807 audit(1795575298.801:3): action=measure func=MODULE_CHECK res=1
+[    0.647061] Lockdown: swapper/0: hibernation is restricted; see man kernel_lockdown.7
+[    0.648372] clk: Disabling unused clocks
+[    0.660529] Freeing unused kernel memory: 9728K
+[    0.663301] Checked W+X mappings: passed, no W+X pages found
+[    0.663551] Run /init as init process
+[    0.663771]   with arguments:
+[    0.663773]     /init
+[    0.663774]   with environment:
+[    0.663774]     HOME=/
+[    0.663775]     TERM=linux
+[    0.723249] systemd[1]: systemd 255-37.azl3 running in system mode (+PAM +AUDIT +SELINUX -APPARMOR +IMA +SMACK +SECCOMP -GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS -FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT -QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    0.741714] systemd[1]: Detected virtualization microsoft.
+[    0.741966] systemd[1]: Detected architecture arm64.
+[    0.742208] systemd[1]: Running in initrd.
+[    0.743687] systemd[1]: Hostname set to <gpupv-test-e401bd1c3e6d44b499aaa70e31563845>.
+[    0.879355] systemd[1]: Queued start job for default target initrd.target.
+[    0.892910] systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+[    0.896112] systemd[1]: Reached target initrd-usr-fs.target - Initrd /usr File System.
+[    0.897279] systemd[1]: Reached target paths.target - Path Units.
+[    0.898255] systemd[1]: Reached target slices.target - Slice Units.
+[    0.898992] systemd[1]: Reached target swap.target - Swaps.
+[    0.900446] systemd[1]: Reached target timers.target - Timer Units.
+[    0.901308] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[    0.902101] systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+[    0.907413] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[    0.908187] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[    0.909042] systemd[1]: Reached target sockets.target - Socket Units.
+[    0.934585] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[    0.944340] systemd[1]: Starting systemd-journald.service - Journal Service...
+[    0.945210] systemd[1]: systemd-modules-load.service - Load Kernel Modules was skipped because no trigger condition checks were met.
+[    0.970194] systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+[    0.982903] systemd-journald[199]: Collecting audit messages is disabled.
+[    0.997701] systemd[1]: Starting systemd-vconsole-setup.service - Virtual Console Setup...
+[    1.000220] systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[    1.037008] systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+[    1.056928] systemd[1]: Finished systemd-sysctl.service - Apply Kernel Variables.
+[    1.070798] systemd[1]: Started systemd-journald.service - Journal Service.
+[    2.183574] hv_storvsc 49c3fdb5-994d-49ff-a7a9-c1bd2c4dee68: tag#207 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    2.218593] hv_storvsc 49c3fdb5-994d-49ff-a7a9-c1bd2c4dee68: tag#218 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    2.698796] hid: raw HID events driver (C) Jiri Kosina
+[    2.718235] hv_vmbus: registering driver hid_hyperv
+[    2.723561] input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input1
+[    2.730982] hid-hyperv 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+[    2.931949] EXT4-fs (sda2): mounted filesystem 8b72ff6a-83a2-46a7-8f36-48f1c72b8b39 ro with ordered data mode. Quota mode: none.
+[    3.286221] systemd-journald[199]: Received SIGTERM from PID 1 (systemd).
+[    3.492592] systemd[1]: systemd 255-37.azl3 running in system mode (+PAM +AUDIT +SELINUX -APPARMOR +IMA +SMACK +SECCOMP -GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS -FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 +PWQUALITY +P11KIT -QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    3.492602] systemd[1]: Detected virtualization microsoft.
+[    3.492609] systemd[1]: Detected architecture arm64.
+[    3.520276] systemd[1]: memfd_create() called without MFD_EXEC or MFD_NOEXEC_SEAL set
+[    3.570776] systemd[1]: bpf-lsm: BPF LSM hook not enabled in the kernel, BPF LSM not supported
+[    4.039010] systemd[1]: /usr/lib/systemd/system/cloud-init.service:25: Failed to parse output specifier, ignoring: journalconsole
+[    4.211372] systemd[1]: initrd-switch-root.service: Deactivated successfully.
+[    4.211560] systemd[1]: Stopped initrd-switch-root.service - Switch Root.
+[    4.215805] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[    4.216705] systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+[    4.217431] systemd[1]: Created slice user.slice - User and Session Slice.
+[    4.217742] systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+[    4.221308] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[    4.221730] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[    4.221973] systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+[    4.222196] systemd[1]: Stopped target initrd-switch-root.target - Switch Root.
+[    4.222403] systemd[1]: Stopped target initrd-fs.target - Initrd File Systems.
+[    4.222602] systemd[1]: Stopped target initrd-root-fs.target - Initrd Root File System.
+[    4.222806] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[    4.223021] systemd[1]: Reached target paths.target - Path Units.
+[    4.223229] systemd[1]: Reached target remote-cryptsetup.target - Remote Encrypted Volumes.
+[    4.223435] systemd[1]: Reached target remote-fs.target - Remote File Systems.
+[    4.223638] systemd[1]: Reached target slices.target - Slice Units.
+[    4.223845] systemd[1]: Reached target swap.target - Swaps.
+[    4.224114] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[    4.226311] systemd[1]: Listening on systemd-coredump.socket - Process Core Dump Socket.
+[    4.228209] systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+[    4.231144] systemd[1]: Listening on systemd-journald-audit.socket - Journal Audit Socket.
+[    4.231852] systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+[    4.232549] systemd[1]: systemd-pcrextend.socket - TPM2 PCR Extension (Varlink) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    4.233568] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[    4.235676] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[    4.236625] systemd[1]: Listening on systemd-userdbd.socket - User Database Manager Socket.
+[    4.256275] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+[    4.257727] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+[    4.265628] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+[    4.289240] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+[    4.312649] systemd[1]: Mounting tmp.mount - Temporary Directory /tmp...
+[    4.316333] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[    4.352829] systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+[    4.386403] systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+[    4.400361] systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+[    4.401764] systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[    4.412127] systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+[    4.428546] systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+[    4.429673] pstore: Using crash dump compression: deflate
+[    4.435202] systemd[1]: Starting systemd-journald.service - Journal Service...
+[    4.481153] pstore: Registered efi_pstore as persistent store backend
+[    4.508572] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[    4.513547] systemd[1]: Starting systemd-network-generator.service - Generate network units from Kernel command line...
+[    4.526950] systemd[1]: systemd-pcrmachine.service - TPM2 PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    4.536868] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[    4.538083] systemd[1]: systemd-tpm2-setup-early.service - TPM2 SRK Setup (Early) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    4.564184] systemd-journald[438]: Collecting audit messages is enabled.
+[    4.573382] fuse: init (API version 7.39)
+[    4.648463] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[    4.669152] systemd[1]: Started systemd-journald.service - Journal Service.
+[    4.676562] audit: type=1130 audit(1795575302.865:4): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    4.676568] audit: type=1130 audit(1795575302.869:5): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=kmod-static-nodes comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    4.676570] audit: type=1130 audit(1795575302.869:6): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=modprobe@configfs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    4.676572] audit: type=1131 audit(1795575302.869:7): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=modprobe@configfs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    4.676573] audit: type=1130 audit(1795575302.869:8): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=modprobe@dm_mod comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    4.676574] audit: type=1131 audit(1795575302.869:9): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=modprobe@dm_mod comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    4.680882] audit: type=1130 audit(1795575302.877:10): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=modprobe@drm comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    4.681747] dxgkrnl: loading out-of-tree module taints kernel.
+[    4.683444] EXT4-fs (sda2): re-mounted 8b72ff6a-83a2-46a7-8f36-48f1c72b8b39 r/w.
+[    4.684819] hv_vmbus: registering driver dxgkrnl
+[    4.884125] systemd-journald[438]: Received client request to flush runtime journal.
+[    4.926524] systemd-journald[438]: /var/log/journal/879caea4be274ba8bf1805fd7469419e/system.journal: Journal file uses a different sequence number ID, rotating.
+[    4.926532] systemd-journald[438]: Rotating system journal.
+[    5.122401] kauditd_printk_skb: 10 callbacks suppressed
+[    5.122405] audit: type=1130 audit(1795575303.313:21): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-random-seed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    5.122410] audit: type=1130 audit(1795575303.313:22): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-sysctl comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    5.122412] audit: type=1130 audit(1795575303.313:23): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-tmpfiles-setup-dev-early comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    5.192682] audit: type=1130 audit(1795575303.389:24): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    5.193351] audit: type=1130 audit(1795575303.389:25): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-tmpfiles-setup-dev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    5.194756] audit: type=1334 audit(1795575303.389:26): prog-id=29 op=LOAD
+[    5.194794] audit: type=1334 audit(1795575303.389:27): prog-id=30 op=LOAD
+[    5.194810] audit: type=1334 audit(1795575303.389:28): prog-id=6 op=UNLOAD
+[    5.194821] audit: type=1334 audit(1795575303.389:29): prog-id=7 op=UNLOAD
+[    5.224373] audit: type=1130 audit(1795575303.421:30): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[    5.750038] hv_storvsc 49c3fdb5-994d-49ff-a7a9-c1bd2c4dee68: tag#241 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    5.781773] hv_storvsc 49c3fdb5-994d-49ff-a7a9-c1bd2c4dee68: tag#249 cmd 0x85 status: scsi 0x2 srb 0x6 hv 0xc0000001
+[    6.055332] hv_vmbus: registering driver hyperv_fb
+[    6.056645] hyperv_fb: Synthvid Version major 3, minor 5
+[    6.056719] hyperv_fb: Screen resolution: 1024x768, Color depth: 32, Frame buffer size: 8388608
+[    6.063634] Console: switching to colour dummy device 80x25
+[    6.070774] Console: switching to colour frame buffer device 128x48
+[    8.368767] ISO 9660 Extensions: Microsoft Joliet Level 3
+[    8.368882] ISOFS: changing to secondary root
+[    8.719027] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    8.720251] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    8.720367] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[    8.720428] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    8.720433] cfg80211: failed to load regulatory.db
+[   10.227354] kauditd_printk_skb: 23 callbacks suppressed
+[   10.227358] audit: type=1130 audit(1795575308.421:54): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-networkd-wait-online comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   11.190560] audit: type=1130 audit(1795575309.389:55): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=cloud-init comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   11.249184] audit: type=1130 audit(1795575309.445:56): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sshd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   11.320635] audit: type=1130 audit(1795575309.517:57): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-user-sessions comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   11.351659] audit: type=1130 audit(1795575309.549:58): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=getty@tty1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   11.454969] audit: type=1129 audit(1795575309.649:59): pid=570 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='old-level=N new-level=5 comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+[   11.470759] audit: type=1130 audit(1795575309.665:60): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-update-utmp-runlevel comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   11.471726] audit: type=1131 audit(1795575309.665:61): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-update-utmp-runlevel comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   11.838962] audit: type=1130 audit(1795575310.037:62): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=cloud-config comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   12.625642] audit: type=1130 audit(1795575310.817:63): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=cloud-final comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   14.272100] systemd-journald[438]: /var/log/journal/879caea4be274ba8bf1805fd7469419e/user-1001.journal: Journal file uses a different sequence number ID, rotating.
+crw-rw---- 1 root video 10, 263 Nov 25 02:55 /dev/dxg
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        32G  1.3G   29G   5% /

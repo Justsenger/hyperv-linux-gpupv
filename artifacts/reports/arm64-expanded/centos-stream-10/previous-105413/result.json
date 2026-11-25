@@ -1,0 +1,17 @@
+{
+  "target": "centos-stream-10",
+  "vm": "gpupv-test-194d8d64cd0942aa8a2a95fe259fb479",
+  "vmId": "21ff5094-4646-4839-9959-ebed9450a4a8",
+  "started": "2026-11-25T10:26:24.0618083+08:00",
+  "secureBoot": null,
+  "route": null,
+  "kernel": null,
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "Guest identity or new boot ID unavailable after 100 seconds"
+  ],
+  "diagnostics": [],
+  "stage": "firmware-packages",
+  "finished": "2026-11-25T10:33:44.4051545+08:00"
+}

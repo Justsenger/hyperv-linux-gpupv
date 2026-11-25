@@ -1,0 +1,250 @@
+++ hostname -s
++ test gpupv-test-635f204dc3f2460e8d8aba512119f834 = gpupv-test-635f204dc3f2460e8d8aba512119f834
++ disk=/dev/disk/by-id/scsi-360022480490bab5dce0b5116b049f133
+++ readlink -f /dev/disk/by-id/scsi-360022480490bab5dce0b5116b049f133
++ dev=/dev/sdd
++ test -b /dev/sdd
+++ lsblk -dn -o HCTL /dev/sdd
++ test 0:0:0:21 = 0:0:0:21
++ part=/dev/disk/by-uuid/8b72ff6a-83a2-46a7-8f36-48f1c72b8b39
++ r=/mnt/az
+++ blkid -s PTUUID -o value /dev/sdd
++ test bf99c1ee-c978-4d72-a914-3570db41e0a0 = bf99c1ee-c978-4d72-a914-3570db41e0a0
++ mountpoint -q /mnt/az
++ umount /mnt/az
++ growpart /dev/sdd 2
+CHANGED: partition=2 start=18432 old: size=1208320 end=1226751 new: size=67090399 end=67108830
++ e2fsck -pf /dev/disk/by-uuid/8b72ff6a-83a2-46a7-8f36-48f1c72b8b39
+/dev/disk/by-uuid/8b72ff6a-83a2-46a7-8f36-48f1c72b8b39: 11543/37760 files (0.2% non-contiguous), 119235/151040 blocks
++ resize2fs /dev/disk/by-uuid/8b72ff6a-83a2-46a7-8f36-48f1c72b8b39
+resize2fs 1.47.0 (5-Feb-2023)
+Resizing the filesystem on /dev/disk/by-uuid/8b72ff6a-83a2-46a7-8f36-48f1c72b8b39 to 8386299 (4k) blocks.
+The filesystem on /dev/disk/by-uuid/8b72ff6a-83a2-46a7-8f36-48f1c72b8b39 is now 8386299 (4k) blocks long.
+
++ mount /dev/disk/by-uuid/8b72ff6a-83a2-46a7-8f36-48f1c72b8b39 /mnt/az
++ trap cleanup EXIT
++ mount /dev/disk/by-uuid/5CAC-CE18 /mnt/az/boot/efi
++ mount --bind /dev /mnt/az/dev
++ mount -t devpts devpts /mnt/az/dev/pts
++ mount -t proc proc /mnt/az/proc
++ mount -t sysfs -o ro sysfs /mnt/az/sys
++ rm -f /mnt/az/etc/resolv.conf
++ cp -L /etc/resolv.conf /mnt/az/etc/resolv.conf
++ chroot /mnt/az /bin/bash -se
+Loaded plugin: tdnfrepogpgcheck
+Refreshing metadata for: 'Azure Linux Official Base 3.0 aarch64'
+Package sudo is already installed.
+Package kmod is already installed.
+Package openssl is already installed.
+Package shadow-utils is already installed.
+
+Installing:
+python3-pyparsing noarch       3.1.1-2.azl3     azurelinux-official-base 840.52k   228.66k
+python3-pyasn1   noarch       0.4.8-3.azl3     azurelinux-official-base 747.25k   182.65k
+python3-packaging noarch       23.2-3.azl3      azurelinux-official-base 394.30k   118.49k
+python3-asn1crypto noarch       1.5.1-2.azl3     azurelinux-official-base 1006.71k  241.16k
+python3-jwt      noarch       2.15.1-1.azl3    azurelinux-official-base 245.75k    86.77k
+python3-pycparser noarch       2.21-1.azl3      azurelinux-official-base   1.35M   263.75k
+python3-cffi     aarch64      1.16.0-1.azl3    azurelinux-official-base   1.33M   331.48k
+python3-cryptography aarch64      42.0.5-6.azl3    azurelinux-official-base   5.20M     1.33M
+python3-urllib3  noarch       2.0.7-7.azl3     azurelinux-official-base 946.53k   254.54k
+python3-pyOpenSSL noarch       24.2.1-3.azl3    azurelinux-official-base 748.81k   131.44k
+python3-idna     noarch       3.7-1.azl3       azurelinux-official-base 594.60k   144.46k
+python3-setuptools noarch       69.0.3-6.azl3    azurelinux-official-base   6.45M     1.59M
+python3-charset-normalizer noarch       3.2.0-1.azl3     azurelinux-official-base 301.25k   104.66k
+python3-certifi  noarch       2024.02.02-1.azl3 azurelinux-official-base   6.68k    15.31k
+python3-requests noarch       2.31.0-4.azl3    azurelinux-official-base 455.84k   152.45k
+python3-wcwidth  noarch       0.2.6-2.azl3     azurelinux-official-base 496.88k    45.85k
+python3-prettytable noarch       3.10.0-2.azl3    azurelinux-official-base 338.39k    71.92k
+python3-blinker  noarch       1.9.0-1.azl3     azurelinux-official-base  76.38k    33.01k
+python3-oauthlib noarch       3.2.2-5.azl3     azurelinux-official-base 1008.88k  225.47k
+python3-jsonschema noarch       2.6.0-8.azl3     azurelinux-official-base 335.66k   105.12k
+python3-jinja2   noarch       3.1.2-3.azl3     azurelinux-official-base   1.52M   337.26k
+net-tools        aarch64      2.10-4.azl3      azurelinux-official-base   1.04M   212.94k
+dhcpcd           aarch64      10.0.8-4.azl3    azurelinux-official-base 456.30k   221.11k
+python3-six      noarch       1.16.0-4.azl3    azurelinux-official-base  76.99k    37.27k
+ncurses-term     aarch64      6.4-3.azl3       azurelinux-official-base   1.79M   578.51k
+gdbm             aarch64      1.23-1.azl3      azurelinux-official-base 587.71k   148.40k
+libyaml          aarch64      0.2.5-3.azl3     azurelinux-official-base 134.05k    66.05k
+python3-jsonpointer noarch       2.4-1.azl3       azurelinux-official-base  42.99k    21.36k
+python3-libs     aarch64      3.12.16-2.azl3   azurelinux-official-base  37.06M    10.04M
+PyYAML           aarch64      6.0.1-1.azl3     azurelinux-official-base 548.89k   143.27k
+python3-netifaces aarch64      0.11.0-1.azl3    azurelinux-official-base  85.07k    24.03k
+python3-markupsafe aarch64      2.1.3-1.azl3     azurelinux-official-base 110.37k    31.74k
+python3-jsonpatch noarch       1.33-1.azl3      azurelinux-official-base  73.23k    33.76k
+python3-configobj noarch       5.0.6-7.azl3     azurelinux-official-base 405.75k    82.06k
+openssh-clients  aarch64      9.8p1-11.azl3    azurelinux-official-base   5.22M     1.04M
+python3          aarch64      3.12.16-2.azl3   azurelinux-official-base  96.54k    40.80k
+cloud-init       noarch       24.3.1-3.azl3    azurelinux-official-base   5.16M     1.61M
+openssh-server   aarch64      9.8p1-11.azl3    azurelinux-official-base   1.70M   607.14k
+
+Total installed size:  78.72M
+Total download size:  20.81M
+warning: /var/cache/tdnf/azurelinux-official-base/rpms/Packages/p/python3-pyparsing-3.1.1-2.azl3.noarch.rpm: Header V4 RSA/SHA256 Signature, key ID 3135ce90: NOKEY
+importing key from file:///etc/pki/rpm-gpg/MICROSOFT-RPM-GPG-KEY
+Testing transaction
+Running transaction
+Installing/Updating: openssh-clients-9.8p1-11.azl3.aarch64
+Installing/Updating: libyaml-0.2.5-3.azl3.aarch64
+Installing/Updating: gdbm-1.23-1.azl3.aarch64
+Installing/Updating: python3-3.12.16-2.azl3.aarch64
+Installing/Updating: python3-libs-3.12.16-2.azl3.aarch64
+Installing/Updating: python3-six-1.16.0-4.azl3.noarch
+Installing/Updating: python3-idna-3.7-1.azl3.noarch
+Installing/Updating: python3-markupsafe-2.1.3-1.azl3.aarch64
+Installing/Updating: python3-jinja2-3.1.2-3.azl3.noarch
+Installing/Updating: python3-configobj-5.0.6-7.azl3.noarch
+Installing/Updating: PyYAML-6.0.1-1.azl3.aarch64
+Installing/Updating: python3-pyparsing-3.1.1-2.azl3.noarch
+Installing/Updating: python3-packaging-23.2-3.azl3.noarch
+Installing/Updating: python3-pyasn1-0.4.8-3.azl3.noarch
+Installing/Updating: python3-asn1crypto-1.5.1-2.azl3.noarch
+Installing/Updating: python3-pycparser-2.21-1.azl3.noarch
+Installing/Updating: python3-cffi-1.16.0-1.azl3.aarch64
+Installing/Updating: python3-cryptography-42.0.5-6.azl3.aarch64
+Installing/Updating: python3-jwt-2.15.1-1.azl3.noarch
+Installing/Updating: python3-pyOpenSSL-24.2.1-3.azl3.noarch
+Installing/Updating: python3-urllib3-2.0.7-7.azl3.noarch
+Installing/Updating: python3-setuptools-69.0.3-6.azl3.noarch
+Installing/Updating: python3-charset-normalizer-3.2.0-1.azl3.noarch
+Installing/Updating: python3-certifi-2024.02.02-1.azl3.noarch
+Installing/Updating: python3-requests-2.31.0-4.azl3.noarch
+Installing/Updating: python3-wcwidth-0.2.6-2.azl3.noarch
+Installing/Updating: python3-prettytable-3.10.0-2.azl3.noarch
+Installing/Updating: python3-blinker-1.9.0-1.azl3.noarch
+Installing/Updating: python3-oauthlib-3.2.2-5.azl3.noarch
+Installing/Updating: python3-jsonschema-2.6.0-8.azl3.noarch
+Installing/Updating: python3-jsonpointer-2.4-1.azl3.noarch
+Installing/Updating: python3-jsonpatch-1.33-1.azl3.noarch
+Installing/Updating: python3-netifaces-0.11.0-1.azl3.aarch64
+Installing/Updating: ncurses-term-6.4-3.azl3.aarch64
+Installing/Updating: dhcpcd-10.0.8-4.azl3.aarch64
+Installing/Updating: net-tools-2.10-4.azl3.aarch64
+Installing/Updating: cloud-init-24.3.1-3.azl3.noarch
+Created symlink /etc/systemd/system/cloud-init.target.wants/cloud-config.service → /usr/lib/systemd/system/cloud-config.service.
+Created symlink /etc/systemd/system/cloud-init.target.wants/cloud-final.service → /usr/lib/systemd/system/cloud-final.service.
+Created symlink /etc/systemd/system/cloud-init.target.wants/cloud-init.service → /usr/lib/systemd/system/cloud-init.service.
+Created symlink /etc/systemd/system/cloud-init.target.wants/cloud-init-local.service → /usr/lib/systemd/system/cloud-init-local.service.
+Installing/Updating: openssh-server-9.8p1-11.azl3.aarch64
+ownership of '/var/lib/sshd' retained as root:sys
+Created symlink /etc/systemd/system/multi-user.target.wants/sshd.service → /usr/lib/systemd/system/sshd.service.
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.6.161.1-1.azl3
+Found initrd image: /boot/initramfs-6.6.161.1-1.azl3.img
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+done
+Loaded plugin: tdnfrepogpgcheck
+
+Installing:
+keyutils         aarch64      1.6.3-2.azl3     azurelinux-official-base 336.24k    91.48k
+efivar           aarch64      39-1.azl3        azurelinux-official-base 627.82k   172.11k
+mokutil          aarch64      0.6.0-2.azl3     azurelinux-official-base 106.39k    54.88k
+
+Total installed size:   1.05M
+Total download size: 318.47k
+Testing transaction
+Running transaction
+Installing/Updating: efivar-39-1.azl3.aarch64
+Installing/Updating: keyutils-1.6.3-2.azl3.aarch64
+Installing/Updating: mokutil-0.6.0-2.azl3.aarch64
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.6.161.1-1.azl3
+Found initrd image: /boot/initramfs-6.6.161.1-1.azl3.img
+Warning: os-prober will not be executed to detect other bootable partitions.
+Systems on them will not be added to the GRUB boot configuration.
+Check GRUB_DISABLE_OS_PROBER documentation entry.
+done
+/boot/efi/EFI/BOOT/mmaa64.efi
+/boot/efi/EFI/BOOT/bootaa64.efi
+/boot/efi/EFI/BOOT/grubaa64.efi
+CONFIG_PCI_HYPERV=y
+CONFIG_HYPERV_STORAGE=y
+CONFIG_HYPERV_NET=y
+CONFIG_HYPERV=y
+dracut[I]: Executing: /usr/bin/dracut --force --no-hostonly /boot/initramfs-6.6.161.1-1.azl3.img 6.6.161.1-1.azl3
+dracut[I]: 62bluetooth: Could not find any command of '/usr/lib/bluetooth/bluetoothd /usr/libexec/bluetooth/bluetoothd'!
+dracut[I]: 95nfs: Could not find any command of 'rpcbind portmap'!
+dracut[I]: *** Including module: systemd ***
+dracut[I]: *** Including module: systemd-ask-password ***
+dracut[I]: *** Including module: systemd-initrd ***
+dracut[I]: *** Including module: systemd-journald ***
+dracut[I]: *** Including module: systemd-modules-load ***
+dracut[I]: *** Including module: systemd-pcrphase ***
+dracut[I]: *** Including module: systemd-sysctl ***
+dracut[I]: *** Including module: systemd-sysusers ***
+dracut[I]: *** Including module: systemd-tmpfiles ***
+dracut[I]: *** Including module: systemd-udevd ***
+dracut[I]: *** Including module: modsign ***
+dracut[I]: *** Including module: i18n ***
+dracut[I]: *** Including module: crypt ***
+dracut[I]: *** Including module: dm ***
+dracut[I]: *** Including module: kernel-modules ***
+dracut[I]: *** Including module: kernel-modules-extra ***
+dracut[I]: *** Including module: nvdimm ***
+dracut[I]: *** Including module: pcmcia ***
+dracut[I]: *** Including module: qemu ***
+dracut[I]: *** Including module: qemu-net ***
+dracut[I]: *** Including module: systemd-cryptsetup ***
+dracut[I]: *** Including module: fido2 ***
+dracut[I]: *** Including module: pkcs11 ***
+dracut[I]: *** Including module: lunmask ***
+dracut[I]: *** Including module: resume ***
+dracut[I]: *** Including module: rootfs-block ***
+dracut[I]: *** Including module: terminfo ***
+dracut[I]: *** Including module: udev-rules ***
+dracut[I]: *** Including module: virtiofs ***
+dracut[I]: *** Including module: dracut-systemd ***
+dracut[I]: *** Including module: usrmount ***
+dracut[I]: *** Including module: base ***
+dracut[I]: *** Including module: fs-lib ***
+dracut[I]: *** Including module: shutdown ***
+dracut[I]: *** Including modules done ***
+dracut[I]: *** Installing kernel module dependencies ***
+dracut[I]: *** Installing kernel module dependencies done ***
+dracut[I]: *** Resolving executable dependencies ***
+dracut[I]: *** Resolving executable dependencies done ***
+dracut[I]: *** Hardlinking files ***
+dracut[I]: *** Hardlinking files done ***
+dracut[I]: *** Store current command line parameters ***
+dracut[I]: *** Stripping files ***
+dracut[I]: *** Stripping files done ***
+dracut[I]: *** Creating image file '/boot/initramfs-6.6.161.1-1.azl3.img' ***
+dracut[I]: Using auto-determined compression method 'gzip'
+dracut[I]: *** Creating initramfs image file '/boot/initramfs-6.6.161.1-1.azl3.img' done ***
+NAME="Microsoft Azure Linux"
+VERSION="3.0.20261116"
+ID=azurelinux
+VERSION_ID="3.0"
+PRETTY_NAME="Microsoft Azure Linux 3.0"
+ANSI_COLOR="1;34"
+HOME_URL="https://aka.ms/azurelinux"
+BUG_REPORT_URL="https://aka.ms/azurelinux"
+SUPPORT_URL="https://aka.ms/azurelinux"
++ sync
+azure_disk_ready
++ echo azure_disk_ready
++ cleanup
++ for p in sys proc dev/pts dev boot/efi ''
++ mountpoint -q /mnt/az/sys
++ umount /mnt/az/sys
++ for p in sys proc dev/pts dev boot/efi ''
++ mountpoint -q /mnt/az/proc
++ umount /mnt/az/proc
++ for p in sys proc dev/pts dev boot/efi ''
++ mountpoint -q /mnt/az/dev/pts
++ umount /mnt/az/dev/pts
++ for p in sys proc dev/pts dev boot/efi ''
++ mountpoint -q /mnt/az/dev
++ umount /mnt/az/dev
+umount: /mnt/az/dev: target is busy.
++ true
++ for p in sys proc dev/pts dev boot/efi ''
++ mountpoint -q /mnt/az/boot/efi
++ umount /mnt/az/boot/efi
++ for p in sys proc dev/pts dev boot/efi ''
++ mountpoint -q /mnt/az/
++ umount /mnt/az/
+umount: /mnt/az/: target is busy.
++ true

@@ -1,0 +1,15 @@
+Linux 6.18.38-arm64-desktop-rolling aarch64 GNU/Linux
+PRETTY_NAME="Deepin 25"
+NAME="Deepin"
+VERSION_CODENAME=crimson
+ID=deepin
+HOME_URL="https://www.deepin.org/"
+BUG_REPORT_URL="https://bbs.deepin.org"
+VERSION_ID="25"
+VERSION="25"
+init=systemd
+/usr/bin/gcc
+/usr/bin/make
+headers=present
+SecureBoot disabled
+/sys/bus/pci/devices/c768:00:00.0/device:0x008e

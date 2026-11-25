@@ -1,0 +1,18 @@
+SecureBoot enabled
+/var/lib/gpupv-signing/MOK.der is already enrolled
+        Issuer: C=GB, O=Sectigo Limited, CN=Sectigo Public Code Signing CA EV R36
+        Subject: serialNumber=5561017/jurisdictionC=US/jurisdictionST=Delaware/businessCategory=Private Organization, C=US, ST=Florida, O=AlmaLinux OS Foundation, CN=AlmaLinux OS Foundation
+        Issuer: C=US, ST=Texas, L=Houston, O=SSL Corp, CN=SSL.com EV Code Signing Intermediate CA RSA R3
+        Subject: C=US, ST=Florida, L=Fort Myers, O=AlmaLinux OS Foundation/serialNumber=5561017, CN=AlmaLinux OS Foundation/businessCategory=Private Organization/jurisdictionST=Delaware/jurisdictionC=US
+        Issuer: emailAddress=security@almalinux.org, O=AlmaLinux OS Foundation, CN=AlmaLinux Secure Boot CA
+        Subject: emailAddress=security@almalinux.org, O=AlmaLinux OS Foundation, CN=AlmaLinux Secure Boot CA
+        Issuer: CN=GPU-PV module signing
+        Subject: CN=GPU-PV module signing
+ls: cannot access '/sys/module/dxgkrnl': No such file or directory
+modinfo: ERROR: Module dxgkrnl not found.
+ls: cannot access '/dev/dxg': No such file or directory
+cat: /sys/module/dxgkrnl/taint: No such file or directory
+[   33.541796] dxgkrnl: loading out-of-tree module taints kernel.
+[   33.552415] dxgkrnl: module verification failed: signature and/or required key missing - tainting kernel
+[   33.568363] hv_vmbus: registering driver dxgkrnl
+[   33.625706] hv_vmbus: unregistering driver dxgkrnl

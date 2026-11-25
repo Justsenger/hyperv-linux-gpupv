@@ -1,0 +1,17 @@
+{
+  "target": "alma-8",
+  "vm": "gpupv-test-a987cd6ab0d448508a471fa657c5dcbb",
+  "vmId": "0ae3662f-5fae-4507-9330-81149e7cc02a",
+  "started": "2026-11-25T10:31:33.9970522+08:00",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "4.18.0-553.187.1.el8_10.aarch64",
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "Unrecognized guest MOK screen (management, D603FF7C620BD463DD9308DE84E6513CEC587D750DD3669B418491C7709A76E8)"
+  ],
+  "diagnostics": [],
+  "stage": "mok",
+  "finished": "2026-11-25T10:33:47.1254964+08:00"
+}

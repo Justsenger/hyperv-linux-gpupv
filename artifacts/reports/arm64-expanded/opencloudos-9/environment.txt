@@ -1,0 +1,18 @@
+Linux 6.6.119-52.7.oc9.aarch64 aarch64 GNU/Linux
+NAME="OpenCloudOS"
+VERSION="9.6"
+ID="opencloudos"
+ID_LIKE="opencloudos"
+VERSION_ID="9.6"
+PLATFORM_ID="platform:oc9"
+PRETTY_NAME="OpenCloudOS 9.6"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:opencloudos:opencloudos:9"
+HOME_URL="https://www.opencloudos.org/"
+BUG_REPORT_URL="https://bugs.opencloudos.tech/"
+init=systemd
+/usr/bin/gcc
+/usr/bin/make
+headers=present
+SecureBoot disabled
+/sys/bus/pci/devices/d078:00:00.0/device:0x008e

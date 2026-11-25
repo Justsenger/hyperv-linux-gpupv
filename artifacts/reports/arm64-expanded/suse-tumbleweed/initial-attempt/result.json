@@ -1,0 +1,17 @@
+{
+  "target": "suse-tumbleweed",
+  "vm": "gpupv-test-0fa8cea691dd4524bb8586928a5c8eac",
+  "vmId": "8962005d-5e50-459c-a807-f3e31736617f",
+  "started": "2026-11-25T09:57:08.8475891+08:00",
+  "secureBoot": null,
+  "route": null,
+  "kernel": null,
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "prepare exited 124"
+  ],
+  "diagnostics": [],
+  "stage": "prepare",
+  "finished": "2026-11-25T10:10:13.4927467+08:00"
+}

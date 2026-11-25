@@ -1,0 +1,17 @@
+{
+  "target": "alma-8",
+  "vm": "gpupv-test-1e63ea8756c447a08eff67d5ce02237b",
+  "vmId": "00c9ebfc-3295-45b7-9adb-1e2409a19859",
+  "started": "2026-11-25T10:27:17.2008314+08:00",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "4.18.0-553.187.1.el8_10.aarch64",
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "MOK request exited 1"
+  ],
+  "diagnostics": [],
+  "stage": "mok",
+  "finished": "2026-11-25T10:27:51.9549509+08:00"
+}

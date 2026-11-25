@@ -1,0 +1,28 @@
+{
+  "target": "oracle-8-uek",
+  "vm": "gpupv-test-edf5d08e233f412cbc2525910d7d84cd",
+  "vmId": "6e030c42-8def-4625-8264-8cd8943556a0",
+  "started": "2026-11-25T10:34:00.8595485+08:00",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "5.15.0-326.224.5.2.el8uek.aarch64",
+  "compute": false,
+  "clean": true,
+  "errors": [
+    "workload exited 1"
+  ],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2",
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "workload",
+  "finished": "2026-11-25T10:37:26.8233264+08:00"
+}

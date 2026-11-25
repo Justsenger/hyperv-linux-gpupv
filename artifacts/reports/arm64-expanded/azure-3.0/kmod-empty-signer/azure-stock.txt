@@ -1,0 +1,43 @@
+Welcome to Microsoft Azure Linux 3.0 (aarch64)
+stock_module=/lib/modules/6.6.161.1-1.azl3/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko.xz
+filename:       /lib/modules/6.6.161.1-1.azl3/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko.xz
+version:        2.0.3
+description:    Microsoft Dxgkrnl virtual compute device Driver
+license:        GPL
+srcversion:     BFBF37FABCFC53C0F764D70
+alias:          pci:v00001414d0000008Asv*sd*bc*sc*i*
+alias:          pci:v00001414d0000008Esv*sd*bc*sc*i*
+alias:          vmbus:c0cbe9dd605036449448ea1254a5d177
+alias:          vmbus:182d386e36334b4facc42b7703d4df4a
+depends:        
+intree:         Y
+name:           dxgkrnl
+vermagic:       6.6.161.1-1.azl3 SMP mod_unload modversions aarch64
+sig_id:         PKCS#7
+signer:         
+sig_key:        
+sig_hashalgo:   unknown
+signature:      
+uid=1001(tester) gid=1001(tester) groups=1001(tester),12(video),27(sudo),28(wheel)
+DXCoreCreateAdapterFactory HRESULT=0x00000000
+CreateAdapterList(CORE_COMPUTE) HRESULT=0x00000000
+Adapter count=1
+GetAdapter HRESULT=0x00000000
+HardwareID HRESULT=0x00000000
+IsHardware HRESULT=0x00000000
+Adapter 4d4f4351:36333630 hardware=1
+D3D12CreateDevice HRESULT=0x00000000
+SerializeRootSignature HRESULT=0x00000000
+CreateRootSignature HRESULT=0x00000000
+CreateComputePipelineState HRESULT=0x00000000
+CreateCommandQueue HRESULT=0x00000000
+CreateCommandAllocator HRESULT=0x00000000
+CreateCommandList HRESULT=0x00000000
+CreateOutput HRESULT=0x00000000
+CreateReadback HRESULT=0x00000000
+Close HRESULT=0x00000000
+CreateFence HRESULT=0x00000000
+Signal HRESULT=0x00000000
+Map HRESULT=0x00000000
+Dispatch readback: [0]=3 [31]=220 [63]=444 matched=64/64
+Verified hardware adapters=1

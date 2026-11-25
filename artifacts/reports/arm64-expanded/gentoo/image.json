@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://distfiles.gentoo.org/releases/arm64/autobuilds/current-di-arm64-cloudinit/di-arm64-cloudinit-20261122T234603Z.qcow2",
+  "ChecksumSource": "https://distfiles.gentoo.org/releases/arm64/autobuilds/current-di-arm64-cloudinit/di-arm64-cloudinit-20261122T234603Z.qcow2.sha256",
+  "PublishedDigest": "c54d1596c1defb2d47c98aa84a29232125504ee7f06b24ccd72c1641d80d1166",
+  "OriginalSha256": null,
+  "Sha256": "c54d1596c1defb2d47c98aa84a29232125504ee7f06b24ccd72c1641d80d1166"
+}

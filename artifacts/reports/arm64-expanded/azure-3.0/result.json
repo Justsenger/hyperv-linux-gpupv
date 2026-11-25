@@ -1,0 +1,22 @@
+{
+  "target": "azure-3.0",
+  "vm": "gpupv-test-e18f3887d2e445c480f89d1427c47837",
+  "vmId": "9f407cdb-e106-46a5-b547-84501ef37869",
+  "started": "2026-11-25T11:01:41.9129598+08:00",
+  "mediaSha256": "47c13d671990ca37ff479018132ccc766409e669616533ab9d5b651d62c29586",
+  "secureBoot": true,
+  "route": "prebuilt",
+  "kernel": "6.6.161.1-1.azl3",
+  "compute": true,
+  "clean": true,
+  "errors": [],
+  "diagnostics": [
+    "-22",
+    "-22",
+    "-22",
+    "-22",
+    "-2"
+  ],
+  "stage": "finished",
+  "finished": "2026-11-25T11:03:53.9058405+08:00"
+}

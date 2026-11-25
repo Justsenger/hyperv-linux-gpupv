@@ -1,0 +1,16 @@
+[   17.310374] gpupv-sample-52d6244c-f2b3-41ab-a964-c55b27435777
+[   17.983766] hv_vmbus: registering driver hv_balloon
+[   17.985431] hv_balloon: Using Dynamic Memory protocol version 2.0
+[   17.985443] hv_balloon: Memory hot add disabled on ARM64
+[   17.993107] hv_vmbus: registering driver hyperv_drm
+[   17.994249] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] Synthvid Version major 3, minor 5
+[   17.997581] Console: switching to colour dummy device 80x25
+[   18.002618] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[   18.003465] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] Registered 1 planes with drm panic
+[   18.003484] [drm] Initialized hyperv_drm 1.0.0 for 5620e0c7-8062-4dce-aeb7-520c7ef76171 on minor 1
+[   18.013845] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   18.013965] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   18.014434] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[   18.015242] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[   18.023458] Console: switching to colour frame buffer device 128x48
+[   18.040755] hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] fb0: hyperv_drmdrmfb frame buffer device

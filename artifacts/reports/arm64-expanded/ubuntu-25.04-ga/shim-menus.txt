@@ -1,0 +1,5 @@
+878bcc38-201c-40fc-b580-74cd60b7c891 confirmed shim menu management
+878bcc38-201c-40fc-b580-74cd60b7c891 confirmed shim menu view
+878bcc38-201c-40fc-b580-74cd60b7c891 confirmed shim menu confirm
+878bcc38-201c-40fc-b580-74cd60b7c891 confirmed shim menu password
+878bcc38-201c-40fc-b580-74cd60b7c891 confirmed shim menu reboot

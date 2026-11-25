@@ -1,0 +1,19 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.88.1-10+deb12u15).
+ca-certificates is already the newest version (20250419~deb12u2).
+cpio is already the newest version (2.13+dfsg-7.1).
+cpio set to manually installed.
+grub-common is already the newest version (2.06-13+deb12u2).
+grub-common set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+./netboot/debian-installer/arm64/linux: OK
+./netboot/debian-installer/arm64/initrd.gz: OK
+8 blocks
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.1.0-56-arm64
+Found initrd image: /boot/initrd.img-6.1.0-56-arm64
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+saved_entry=gpupv-devuan

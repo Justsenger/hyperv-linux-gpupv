@@ -1,0 +1,5 @@
+f6efc35d-b4ac-4f68-adb5-8011653ec108 confirmed shim menu management
+f6efc35d-b4ac-4f68-adb5-8011653ec108 confirmed shim menu view
+f6efc35d-b4ac-4f68-adb5-8011653ec108 confirmed shim menu confirm
+f6efc35d-b4ac-4f68-adb5-8011653ec108 confirmed shim menu password
+f6efc35d-b4ac-4f68-adb5-8011653ec108 confirmed shim menu reboot

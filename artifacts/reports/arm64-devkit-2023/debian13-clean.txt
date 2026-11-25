@@ -1,0 +1,5 @@
+6.12.118+deb13-arm64
+gpupv-test-663b6517c5904b4ab83be3c0bced1ba7
+SecureBoot enabled
+0d8f036d-e660-4d78-a0df-a55d3d9c7f3a
+managed_paths_clean_after_reboot

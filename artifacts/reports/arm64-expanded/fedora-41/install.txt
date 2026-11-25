@@ -1,0 +1,44 @@
+glibc 2.40, aarch64, kernel 6.11.4-301.fc41.aarch64, preflight OK
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (GCC) 14.2.1 20240912 (Red Hat 14.2.1-3)
+  You are using:           gcc (GCC) 14.3.1 20251022 (Red Hat 14.3.1-4)
+/tmp/tmp.OHXrNZIDnW/probe.c: In function 'p':
+/tmp/tmp.OHXrNZIDnW/probe.c:2:86: error: passing argument 1 of '__dma_fence_is_later' makes integer from pointer without a cast [-Wint-conversion]
+    2 | bool p(struct dma_fence *f); bool p(struct dma_fence *f){return __dma_fence_is_later(f,1,0);}
+      |                                                                                      ^
+      |                                                                                      |
+      |                                                                                      struct dma_fence *
+In file included from /tmp/tmp.OHXrNZIDnW/probe.c:1:
+./include/linux/dma-fence.h:472:45: note: expected 'u64' {aka 'long long unsigned int'} but argument is of type 'struct dma_fence *'
+  472 | static inline bool __dma_fence_is_later(u64 f1, u64 f2,
+      |                                         ~~~~^~
+make[2]: *** [scripts/Makefile.build:244: /tmp/tmp.OHXrNZIDnW/probe.o] Error 1
+make[1]: *** [/usr/src/kernels/6.11.4-301.fc41.aarch64/Makefile:1966: /tmp/tmp.OHXrNZIDnW] Error 2
+make: *** [Makefile:236: __sub-make] Error 2
+#define GPUPV_KBUILD_WORKS 1
+#define GPUPV_PIN_PAGES 1
+#define GPUPV_EVENTFD_ONE 1
+#define GPUPV_FENCE_STR 1
+#define GPUPV_FENCE_FIRST 0
+#define GPUPV_STRUCT_GPADL 1
+#define GPUPV_REMOVE_VOID 1
+#define GPUPV_CHANNEL_MAX_PKT 1
+make: Entering directory '/usr/src/kernels/6.11.4-301.fc41.aarch64'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: gcc (GCC) 14.2.1 20240912 (Red Hat 14.2.1-3)
+  You are using:           gcc (GCC) 14.3.1 20251022 (Red Hat 14.3.1-4)
+  CC [M]  /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/dxgmodule.o
+  CC [M]  /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/hmgr.o
+  CC [M]  /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/misc.o
+  CC [M]  /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/dxgadapter.o
+  CC [M]  /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/ioctl.o
+  CC [M]  /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/dxgvmbus.o
+  CC [M]  /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/dxgprocess.o
+  CC [M]  /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/dxgsyncfile.o
+  LD [M]  /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/dxgkrnl.o
+  MODPOST /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/Module.symvers
+  CC [M]  /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/dxgkrnl.mod.o
+  LD [M]  /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+  BTF [M] /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko
+Skipping BTF generation for /tmp/tmpo2gz8the/kernel/drivers/hv/dxgkrnl/dxgkrnl.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/kernels/6.11.4-301.fc41.aarch64'

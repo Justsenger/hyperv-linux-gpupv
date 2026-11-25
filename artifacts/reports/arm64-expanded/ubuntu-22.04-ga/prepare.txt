@@ -1,0 +1,85 @@
+Linux gpupv-test-86b6255531b0448590dfe38ce4eff40a 5.15.0-203-generic #213-Ubuntu SMP Fri Oct 23 13:20:09 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+systemd
+.....................status: done
+extended_status: done
+boot_status_code: enabled-by-generator
+last_update: Thu, 01 Jan 1970 00:00:32 +0000
+detail: DataSourceNoCloud [seed=/dev/sr0]
+errors: []
+recoverable_errors: {}
+Get:1 https://mirrors.ustc.edu.cn/ubuntu-ports jammy InRelease [270 kB]
+Get:2 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates InRelease [128 kB]
+Get:3 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-backports InRelease [127 kB]
+Get:4 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security InRelease [129 kB]
+Get:5 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/main arm64 Packages [1369 kB]
+Get:6 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/main Translation-en [510 kB]
+Get:7 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/main arm64 c-n-f Metadata [29.8 kB]
+Get:8 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/restricted arm64 Packages [19.6 kB]
+Get:9 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/restricted Translation-en [18.6 kB]
+Get:10 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/restricted arm64 c-n-f Metadata [372 B]
+Get:11 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/universe arm64 Packages [13.9 MB]
+Get:12 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/universe Translation-en [5652 kB]
+Get:13 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/universe arm64 c-n-f Metadata [277 kB]
+Get:14 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/multiverse arm64 Packages [184 kB]
+Get:15 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/multiverse Translation-en [112 kB]
+Get:16 https://mirrors.ustc.edu.cn/ubuntu-ports jammy/multiverse arm64 c-n-f Metadata [7064 B]
+Get:17 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/main arm64 Packages [3876 kB]
+Get:18 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/main Translation-en [589 kB]
+Get:19 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/main arm64 c-n-f Metadata [19.7 kB]
+Get:20 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/restricted arm64 Packages [7122 kB]
+Get:21 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/restricted Translation-en [1329 kB]
+Get:22 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/restricted arm64 c-n-f Metadata [440 B]
+Get:23 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/universe arm64 Packages [1374 kB]
+Get:24 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/universe Translation-en [327 kB]
+Get:25 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/universe arm64 c-n-f Metadata [27.6 kB]
+Get:26 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/multiverse arm64 Packages [66.8 kB]
+Get:27 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/multiverse Translation-en [16.5 kB]
+Get:28 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-updates/multiverse arm64 c-n-f Metadata [488 B]
+Get:29 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-backports/main arm64 Packages [69.8 kB]
+Get:30 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-backports/main Translation-en [11.4 kB]
+Get:31 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-backports/main arm64 c-n-f Metadata [416 B]
+Get:32 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-backports/restricted arm64 c-n-f Metadata [116 B]
+Get:33 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-backports/universe arm64 Packages [29.2 kB]
+Get:34 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-backports/universe Translation-en [16.9 kB]
+Get:35 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-backports/universe arm64 c-n-f Metadata [604 B]
+Get:36 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-backports/multiverse arm64 c-n-f Metadata [116 B]
+Get:37 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/main arm64 Packages [3618 kB]
+Get:38 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/main Translation-en [521 kB]
+Get:39 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/main arm64 c-n-f Metadata [14.3 kB]
+Get:40 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/restricted arm64 Packages [6866 kB]
+Get:41 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/restricted Translation-en [1283 kB]
+Get:42 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/restricted arm64 c-n-f Metadata [448 B]
+Get:43 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/universe arm64 Packages [1147 kB]
+Get:44 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/universe Translation-en [239 kB]
+Get:45 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/universe arm64 c-n-f Metadata [20.5 kB]
+Get:46 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/multiverse arm64 Packages [61.8 kB]
+Get:47 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/multiverse Translation-en [13.6 kB]
+Get:48 https://mirrors.ustc.edu.cn/ubuntu-ports jammy-security/multiverse arm64 c-n-f Metadata [452 B]
+Fetched 51.4 MB in 8s (6633 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+mokutil is already the newest version (0.6.0-2~22.04.2).
+mokutil set to manually installed.
+openssl is already the newest version (3.0.2-0ubuntu1.30).
+openssl set to manually installed.
+python3 is already the newest version (3.10.6-1~22.04.1).
+python3 set to manually installed.
+udev is already the newest version (249.11-0ubuntu3.23).
+udev set to manually installed.
+kmod is already the newest version (29-1ubuntu1.1).
+kmod set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 21 not upgraded.

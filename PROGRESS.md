@@ -1,6 +1,6 @@
 # 进度记录
 
-第一阶段计算版生成独立 x86_64 / aarch64 部署包。当前的介质、数值、启动及内核日志结论见[计算版实测记录](artifacts/reports/phase1/results.md)。全量远端 Actions 等待仓库建立。
+第一阶段计算版生成独立 x86_64 / aarch64 部署包。在 Windows Dev Kit 2023 上，ARM64 实测覆盖 Adreno 计算、Secure Boot 签名重启、非 systemd 来宾和卸载重启。扩测按内核分别记录计算结果、内核返回码及环境限制。[ARM64 扩测矩阵](artifacts/reports/arm64-expanded/results.md) · [首轮 ARM64 实测](artifacts/reports/arm64-devkit-2023/results.md) · [此前计算版实测](artifacts/reports/phase1/results.md)
 
 ## 此前单卡视频版
 

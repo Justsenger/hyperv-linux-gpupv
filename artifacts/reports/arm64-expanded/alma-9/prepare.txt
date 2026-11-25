@@ -1,0 +1,23 @@
+Linux gpupv-test-be7917ecd8c647b99224a8d367634238 5.14.0-741.22.1.el9_9.aarch64 #1 SMP PREEMPT_DYNAMIC Thu Nov 12 10:20:32 EST 2026 aarch64 aarch64 aarch64 GNU/Linux
+NAME="AlmaLinux"
+VERSION="9.9 (Chartreuse Bobcat)"
+ID="almalinux"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="9.9"
+PLATFORM_ID="platform:el9"
+PRETTY_NAME="AlmaLinux 9.9 (Chartreuse Bobcat)"
+ANSI_COLOR="0;34"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:almalinux:almalinux:9::baseos"
+HOME_URL="https://almalinux.org/"
+DOCUMENTATION_URL="https://wiki.almalinux.org/"
+BUG_REPORT_URL="https://bugs.almalinux.org/"
+
+ALMALINUX_MANTISBT_PROJECT="AlmaLinux-9"
+ALMALINUX_MANTISBT_PROJECT_VERSION="9.9"
+REDHAT_SUPPORT_PRODUCT="AlmaLinux"
+REDHAT_SUPPORT_PRODUCT_VERSION="9.9"
+SUPPORT_END=2032-06-01
+systemd
+status: done
+Required guest utilities are installed

@@ -1,0 +1,8 @@
+{
+  "Arch": "aarch64",
+  "Source": "https://mirrors.openanolis.cn/anolis/8.10/isos/GA/aarch64/AnolisOS-8.10-aarch64-RHCK.qcow2",
+  "ChecksumSource": "https://mirrors.openanolis.cn/anolis/8.10/isos/GA/aarch64/AnolisOS-8.10-aarch64-RHCK.qcow2.md5sum",
+  "PublishedDigest": "485f204453a8a4dfcdc4c24ddce18d80",
+  "OriginalSha256": "9626bd7ac8dad3f4b94d9355b4da8f01b29983b93f7a6af92f9989ee9375399c",
+  "Sha256": "65836639fed8693002a6a2b2e69eb175273b5e2c19b3678f4c796f70a83a2e5f"
+}

@@ -1,0 +1,17 @@
+{
+  "target": "fedora-43",
+  "vm": "gpupv-test-d185b69d798841ed8f02585df16df0b5",
+  "vmId": "552767dc-b5ee-4a74-92c9-9eaf0635d2c6",
+  "started": "2026-11-25T10:31:44.2007219+08:00",
+  "secureBoot": null,
+  "route": null,
+  "kernel": null,
+  "compute": false,
+  "clean": false,
+  "errors": [
+    "“gpupv-test-d185b69d798841ed8f02585df16df0b5”无法启动。\n\n无法分配 1792 MB 的 RAM: 系统资源不足，无法完成请求的服务。 (0x800705AA)。\r\n\r\n“gpupv-test-d185b69d798841ed8f02585df16df0b5”无法启动。(虚拟机 ID 552767DC-B5EE-4A74-92C9-9EAF0635D2C6)\n\n“gpupv-test-d185b69d798841ed8f02585df16df0b5”无法分配 1792 MB 的 RAM: 系统资源不足，无法完成请求的服务。 (0x800705AA)。(虚拟机 ID 552767DC-B5EE-4A74-92C9-9EAF0635D2C6)"
+  ],
+  "diagnostics": [],
+  "stage": "boot",
+  "finished": "2026-11-25T10:35:08.9408748+08:00"
+}

@@ -1,0 +1,3 @@
+/usr/lib/modules/6.12.118+deb13-arm64/updates/gpupv/dxgkrnl.ko
+-rw-r--r-- 1 root root ? 4369771 Nov 25 00:57 /lib/modules/6.12.118+deb13-arm64/updates/gpupv/dxgkrnl.ko
+GPU-PV module signing
