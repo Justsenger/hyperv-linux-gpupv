@@ -7,6 +7,34 @@
 - `linuxpv-bundle-x86_64-<version>.zip`（Windows x64 宿主与 `x86_64` Linux 虚拟机）
 - `linuxpv-bundle-aarch64-<version>.zip`（Windows ARM64 宿主与 `aarch64` Linux 虚拟机）
 
+## 整体流程
+
+```mermaid
+flowchart LR
+    subgraph S["1. 组件来源（宿主免 WSL）"]
+        B1["部署包（内核模块与 DirectX 库）"]
+        B2["宿主显卡驱动（提取原厂 .so）"]
+    end
+
+    subgraph H["2. 宿主配置（二选一）"]
+        P1["ExHyperV 2.0.0+（自动分卡合盘挂载）"]
+        P2["单独用脚本（手动分卡并制盘 / 推送）"]
+    end
+
+    subgraph G["3. Linux 来宾"]
+        L1["运行 guest/setup 安装驱动"]
+        L2["/dev/dxg（CUDA / OpenCL / D3D12）"]
+    end
+
+    B1 --> P1
+    B2 --> P1
+    B1 --> P2
+    B2 --> P2
+    P1 --> L1
+    P2 --> L1
+    L1 --> L2
+```
+
 ## 适用范围
 
 | 项目 | 说明 |
