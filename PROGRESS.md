@@ -1,5 +1,9 @@
 # 进度记录
 
+## 2026-11-25 · x86_64 矩阵收尾
+
+首轮覆盖 66 项，45 个原生目标完成双卡闭环。EL8 单卡与 NVML 限制、Amazon Linux 2023 的内核配置限制已写入兼容性记录。同步 f540b68 后仅复核 Ubuntu 三项。24.04 HWE、26.04 GA 自动回退编译通过，25.04 开启 Secure Boot 后复用 Ubuntu DKMS 密钥通过。三项均完成普通用户数值验证与卸载重启。保留逐目标结果和驱动文件访问汇总。[x64 总报告](artifacts/reports/x64-rc1-matrix/REPORT.md)
+
 第一阶段计算版生成独立 x86_64 / aarch64 部署包。在 Windows Dev Kit 2023 上，ARM64 实测覆盖 Adreno 计算、Secure Boot 签名重启、非 systemd 来宾和卸载重启。扩测按内核分别记录计算结果、内核返回码及环境限制。[ARM64 扩测矩阵](artifacts/reports/arm64-expanded/results.md) · [首轮 ARM64 实测](artifacts/reports/arm64-devkit-2023/results.md) · [此前计算版实测](artifacts/reports/phase1/results.md)
 
 ## 此前单卡视频版

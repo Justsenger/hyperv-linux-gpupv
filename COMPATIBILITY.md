@@ -1,5 +1,11 @@
 # 第一阶段计算版兼容性
 
+## x86_64 双卡计算
+
+RTX 2060 + Iris Xe 在首轮 66 个目标中完成 45 个原生发行版双卡闭环，其中 36 个验证了 Secure Boot + MOK。Rocky 8、Alma 8 的 NVIDIA 单卡通过，双卡时 Intel 创建设备返回 0x887a0004。Oracle 8 RHCK 和 UEK 可加载模块，verify 停在 NVML 加载。Amazon Linux 2023 实测内核未启用 CONFIG_PCI_HYPERV。[逐目标内核与结果](artifacts/reports/x64-rc1-matrix/MATRIX-66.md)
+
+在 f540b68 上，Ubuntu 24.04 HWE（7.0.0-44）和 26.04 GA（7.0.0-43）识别了同名模块 ABI 冲突，使用匹配头文件编译后通过双卡计算。Ubuntu 25.04（6.14.0-36）录入发行版 MOK 后由 DKMS 自动签名，Secure Boot 开启时重启计算通过，签名告警为零。[三项复核](artifacts/reports/x64-rc1-matrix/REPORT.md)
+
 ## ARM64 实机扩测
 
 Adreno 8cx Gen 3 的实机矩阵按发行版列出运行内核、预编译或源码路径、签名状态、计算与卸载结果。Oracle Linux 8 UEK 能加载签名模块，但本机 Qualcomm 用户态库要求 GLIBC_2.29，其编译器库还要求 GLIBCXX_3.4.26。[ARM64 扩测矩阵](artifacts/reports/arm64-expanded/results.md) · [EL8 动态加载器诊断](artifacts/reports/arm64-expanded/oracle-8-uek/loader-diagnostics.txt)
