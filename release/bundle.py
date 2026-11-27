@@ -42,6 +42,7 @@ def build(arch, version, pool, probe, output, cache=None):
                             raise ValueError("Unexpected binary in source tree: " + str(path))
                         z.write(path,path.relative_to(ROOT).as_posix())
             z.write(ROOT/"LICENSE","LICENSE")
+            z.write(ROOT/"setup","setup")
             for row in inventory["files"]:
                 if row["arch"]!=arch:
                     continue

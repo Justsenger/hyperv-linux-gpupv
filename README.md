@@ -30,7 +30,7 @@ flowchart LR
     end
 
     subgraph G["3. Linux 来宾"]
-        L1["运行 guest/setup 安装驱动"]
+        L1["运行 setup 安装驱动"]
         L2["/dev/dxg（CUDA / OpenCL / D3D12）"]
     end
 
@@ -64,7 +64,7 @@ flowchart LR
 3. 进入 Linux 虚拟机终端挂载光盘并执行安装：
 
 ```sh
-sudo mkdir -p /mnt/gpupv && sudo mount -o ro -L GPUPV /mnt/gpupv && sudo sh /mnt/gpupv/guest/setup
+sudo mount -L GPUPV /mnt && sudo sh /mnt/setup
 ```
 
 ### 手动使用宿主脚本（不依赖 ExHyperV）

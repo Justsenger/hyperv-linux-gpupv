@@ -52,7 +52,7 @@ def verify(path, arch):
                 with z.open(name) as member:
                     if member.read(4).startswith((b"\x7fELF", b"MZ")):
                         raise ValueError("Unexpected executable: "+name)
-        for n in ("guest/setup","guest/gpupv-guest","guest/sign-module.py","kernel/build","kernel/dkms.conf"):
+        for n in ("setup","guest/setup","guest/gpupv-guest","guest/sign-module.py","kernel/build","kernel/dkms.conf"):
             z.getinfo(n)
         return sorted(modules)
 

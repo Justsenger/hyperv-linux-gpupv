@@ -1,4 +1,4 @@
-#requires -Version 7.4
+﻿#requires -Version 7.4
 [CmdletBinding(PositionalBinding=$false)]
 param([Parameter(Position=0)][ValidateSet('list','doctor','pack','iso','push','fetch-wsl-libs')]$Command='list',[string[]]$Gpu,[string]$Bundle,
       [ValidateSet('x86_64','aarch64')][string]$Arch,[string]$Output,[string]$Destination,[string]$VMName,
@@ -170,6 +170,9 @@ try {
         @{name=$card.Name;device=$card.Pnp;version=$card.Driver;package=$runtime.primary}
     })
     @{schemaVersion=1;arch=$Arch;adapters=$devices} | ConvertTo-Json -Depth 4 | Set-Content "$payload/device.json" -Encoding utf8NoBOM
+    if(!(Test-Path -LiteralPath "$payload/setup")){
+        [IO.File]::WriteAllText("$payload/setup", "#!/bin/sh`nexec sh `"`$(dirname `"`$0`")/guest/setup`" `"`$@`"`n", [Text.UTF8Encoding]::new($false))
+    }
     if($Command -eq 'iso'){
         & "$PSScriptRoot/New-GpuPvIso.ps1" -Source $payload -Output $Output
         if($VMName){

@@ -11,7 +11,7 @@
 }
 ```
 
-将 ZIP 解到新的暂存目录。保留 lib/、kernel/、guest/、prebuilt/index.json、prebuilt/ARCH/RELEASE/dxgkrnl.ko 和 LICENSE。prebuilt/index.json 与 manifest.kernels 相同。ELF 为小端 64 位，x86_64 的 e_machine 为 62，aarch64 为 183；模块为 ET_REL，运行库为 ET_DYN，探针可为 ET_EXEC 或 ET_DYN。
+将 ZIP 解到新的暂存目录。保留 lib/、kernel/、guest/、prebuilt/index.json、prebuilt/ARCH/RELEASE/dxgkrnl.ko、LICENSE 与根目录引导脚本 setup（转发至 guest/setup）。prebuilt/index.json 与 manifest.kernels 相同。ELF 为小端 64 位，x86_64 的 e_machine 为 62，aarch64 为 183；模块为 ET_REL，运行库为 ET_DYN，探针可为 ET_EXEC 或 ET_DYN。
 
 对每个已分配的 GPU，读取实际 PnP 驱动软件键、主和伴随 INF，将原厂目录完整复制至 drivers/PackageDir。带 NTamd64 或 NTarm64 装饰的 INF Directory/CopyFiles 节按宿主架构筛选。lib/ 采用 INF 的 lxss 别名，若同包的原文件名被 INF 用作加载器别名，真实厂商文件仍保留在 drivers/PackageDir 下。其余 Linux ELF（包括组件驱动）按文件名导出。合并不同显卡、伴随组件或微软运行库时，已有同名文件只接受相同 SHA-256，冲突立即报错。按 ELF 头选择架构，不能从 INF 文件夹中的 amd64 或 arm64 字符串推断文件架构。
 
@@ -28,10 +28,10 @@
 ./host/gpupv-host.ps1 iso -Bundle .\linuxpv-bundle-x86_64-v1.0.0.zip -Gpu @('NVIDIA GeForce RTX 2060','Intel(R) Iris(R) Xe Graphics') -Output .\local.iso -VMName 'your-vm'
 ```
 
-来宾单行安装：
+来宾单行安装（将光盘挂载到 `/mnt` 并运行根目录 `setup` 引导至 `guest/setup`）：
 
 ```sh
-sudo mkdir -p /mnt/gpupv && { mountpoint -q /mnt/gpupv || sudo mount -o ro "$(sudo blkid -L GPUPV)" /mnt/gpupv; } && sudo sh /mnt/gpupv/guest/setup
+sudo mount -L GPUPV /mnt && sudo sh /mnt/setup
 ```
 
 已录入 MOK 或关闭 Secure Boot 时可一次完成。首次录入由管理员在 shim 菜单确认。安装后以 video 组普通用户执行 `gpupv-guest verify`，可选视频步骤使用 `--with-video`。卸载执行 `sudo gpupv-guest uninstall`。光盘上的私有宿主 UMD 仅用于该宿主的部署；公开源码归档与按架构发布的微软运行库部署包分别生成。
