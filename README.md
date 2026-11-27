@@ -1,4 +1,12 @@
-# hyperv-linux-gpupv
+<p align="center">
+  <img src=".github/assets/logo.png" alt="hyperv-linux-gpupv" width="148" />
+</p>
+
+<h1 align="center">hyperv-linux-gpupv</h1>
+
+<p align="center">
+  <strong>还在费劲给 Linux 虚拟机装显卡驱动呢？我们早都研究完了。</strong>
+</p>
 
 在 Windows Hyper-V（x64 与 ARM64）的 Linux 虚拟机中使用宿主物理显卡（GPU-PV），**宿主机无需安装 WSL**。支持单卡或多卡同时接入，目前优先用于 **GPU 计算**（`/dev/dxg`、CUDA、`nvidia-smi`、OpenCL、D3D12 Compute）。
 
@@ -34,8 +42,6 @@ flowchart LR
     P2 --> L1
     L1 --> L2
 ```
-
-在 Windows Dev Kit 2023（Adreno 8cx Gen 3）上，44 个 ARM64 矩阵条目已有真机结果。38 个完成普通用户 D3D12 回读 64/64 和卸载重启，其中 27 个在 Secure Boot 与 MOK 下通过。窗口内的内核错误码、关闭安全启动的原因和未通过的 6 项均有逐项记录。本轮使用本地修订部署包，已发布的 RC1 与本轮包的修复内容有所不同。[ARM64 实测矩阵](artifacts/reports/arm64-expanded/results.md)
 
 ## 适用范围
 
@@ -84,7 +90,7 @@ $bundle = './linuxpv-bundle-x86_64-<version>.zip'
 
 ### Windows ARM64 与 Adreno 8cx Gen 3
 
-本机新建第 2 代 VM 的默认高位 MMIO 基址为 65024 MiB，高位和低位大小各为 512 MiB。对采用这个默认布局的**关机测试 VM**，以下参数使高位窗口从 32768 MiB 开始，并在 64 GiB 地址空间顶部保留 1024 MiB。Debian 12 已在此配置下完成签名加载和普通用户计算。[WMI 原值、配置公式与文件访问采样](artifacts/reports/arm64-expanded/mmio-trace/sampling.md)
+若手动配置第 2 代 ARM64 虚拟机（关机状态下），可将高位 MMIO 调至 `32GB` 起址后再制盘挂载：
 
 ```powershell
 $vm = Get-VM -Name '你的虚拟机'
@@ -95,7 +101,7 @@ $gpu = 'Qualcomm(R) Adreno(TM) 8cx Gen 3'
 ./host/gpupv-host.ps1 iso -Bundle $bundle -Gpu $gpu -Output ./gpu.iso -VMName $vm.Name
 ```
 
-Ubuntu ARM64 来宾可用 `grep CONFIG_PCI_HYPERV /boot/config-$(uname -r)` 核对 Hyper-V PCI 支持。配置为模块时，可安装匹配的 `linux-modules-extra-$(uname -r)`，然后执行 `sudo modprobe pci_hyperv`。实测 Ubuntu 22.04 GA 5.15 和 20.04 HWE 5.15 缺少该模块。22.04 换用 `linux-generic-hwe-22.04` 并重启后完成了计算。[Ubuntu 22.04 HWE 原始结果](artifacts/reports/arm64-expanded/ubuntu-22.04-hwe/result.json)
+Ubuntu ARM64 如安装自检提示缺少 `pci_hyperv`，请安装匹配内核的 `linux-modules-extra-$(uname -r)` 并执行 `sudo modprobe pci_hyperv`，Ubuntu 22.04 需升级至 `linux-generic-hwe-22.04` 后重启再安装。
 
 ## 验证与卸载
 
@@ -111,11 +117,11 @@ sudo gpupv-guest uninstall
 
 ## 后续计划
 
-- 扩展到其他 ARM64 实机和 AMD 显卡，并跟踪 ARM64 矩阵中未通过的发行版与内核
+- 扩展到更多 ARM64 实机、AMD 显卡以及主流与衍生 Linux 发行版的适配
 - 完善 ExHyperV 2.0.0 及以上版本图形界面中的选包、自动合盘与配置引导体验
 - 精简宿主驱动合盘文件以减小光盘体积，并逐步推进硬件视频编解码和桌面图形（VA-API / Vulkan / Wayland）支持
 
 ## 文档与许可
 
 - 本仓工具代码采用 [MIT](LICENSE) 协议，`kernel/` 目录下内核代码遵循各文件自带的 SPDX 许可。部署包内置的微软 DirectX 运行库（依据 [host/wsl-runtime.json](host/wsl-runtime.json)）及宿主机显卡驱动分别适用各自原厂专有许可，源码包（`hyperv-linux-gpupv-source.zip`）不包含专有二进制。
-- 相关文档：[兼容性与实测记录](COMPATIBILITY.md)、[发行版与内核列表](artifacts/reports/actions-native-matrix.md)、[模块构建与定制内核指南](docs/COMPUTE-BUILD.md)、[ExHyperV 合盘契约](docs/EXHYPERV-BUNDLE-CONTRACT.md)。
+- 相关文档：[兼容性与实测记录](COMPATIBILITY.md)、[ARM64 实测矩阵](artifacts/reports/arm64-expanded/results.md)、[发行版与内核列表](artifacts/reports/actions-native-matrix.md)、[模块构建与定制内核指南](docs/COMPUTE-BUILD.md)、[ExHyperV 合盘契约](docs/EXHYPERV-BUNDLE-CONTRACT.md)。

@@ -2,6 +2,7 @@
 """Prepare one MOK request on the disposable Hyper-V guest before a signed test."""
 import os
 from pathlib import Path
+import re
 import runpy
 import struct
 import subprocess
@@ -19,7 +20,7 @@ except RuntimeError as error:
     token = "sudo mokutil --import "
     if token not in text:
         raise
-    cert = Path(text.split(token, 1)[1].split("，", 1)[0])
+    cert = Path(re.split(r"[\s,，]+", text.split(token, 1)[1].strip(), maxsplit=1)[0])
     subprocess.run(["openssl","x509","-in",str(cert),"-inform","DER","-noout","-subject","-fingerprint","-sha256"],check=True)
     password = sys.stdin.readline().strip()
     if not password.isalnum() or len(password) < 8:

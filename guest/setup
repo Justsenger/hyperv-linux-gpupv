@@ -4,11 +4,11 @@ set -eu
 if ! command -v python3 >/dev/null 2>&1; then
     for loader in /lib/ld-musl-*.so.1; do
         if test -f "$loader"; then
-            echo '当前来宾使用 musl。请改用 glibc 虚拟机镜像。' >&2
+            echo 'Unsupported C library: musl detected. Please use a glibc-based Linux VM image.' >&2
             exit 1
         fi
     done
-    echo '缺少 Python 3。请从发行版官方离线介质安装 Python 3 及其标准库。' >&2
+    echo 'Missing python3. Install Python 3 from your distribution packages (for example apt install python3, dnf install python3, or pacman -S python) and re-run setup.' >&2
     exit 1
 fi
 exec python3 -B "$(dirname "$0")/gpupv-guest" install "$@"

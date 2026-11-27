@@ -56,11 +56,51 @@ def secure_boot():
         return False
     variables = list(Path("/sys/firmware/efi/efivars").glob("SecureBoot-*"))
     if len(variables) != 1:
-        fail("无法读取 Secure Boot 状态，请检查 efivarfs。")
+        fail("Unable to read Secure Boot state from efivarfs (/sys/firmware/efi/efivars).")
     flag = variables[0].read_bytes()[4:]
     if flag not in (b"\0", b"\1"):
         fail("Invalid Secure Boot variable")
     return flag == b"\1"
+
+
+def distro_pkg_manager():
+    for mgr in ("apt-get", "dnf", "yum", "zypper", "pacman", "tdnf"):
+        if shutil.which(mgr):
+            return mgr
+    return None
+
+
+def build_deps_hint(compiler):
+    mgr = distro_pkg_manager()
+    if mgr == "apt-get":
+        return f"sudo apt-get update && sudo apt-get install -y linux-headers-{RELEASE} make {compiler}"
+    if mgr in ("dnf", "yum"):
+        hdr = f"kernel-uek-devel-{RELEASE}" if "uek" in RELEASE else f"kernel-devel-{RELEASE}"
+        return f"sudo {mgr} install -y {hdr} make {compiler}"
+    if mgr == "zypper":
+        return f"sudo zypper install -y kernel-default-devel make {compiler}"
+    if mgr == "pacman":
+        return f"sudo pacman -S --needed base-devel {compiler} (plus matching kernel headers)"
+    if mgr == "tdnf":
+        return f"sudo tdnf install -y kernel-devel make {compiler}"
+    return f"install matching kernel headers for {RELEASE}, make, and {compiler}"
+
+
+def runtime_tools_hint(missing):
+    pkg_map = {
+        "modprobe": "kmod", "modinfo": "kmod", "depmod": "kmod",
+        "udevadm": "udev", "ldconfig": "glibc", "make": "make",
+        "gcc": "gcc", "clang": "clang",
+    }
+    pkgs = " ".join(dict.fromkeys(pkg_map.get(t, t) for t in missing))
+    mgr = distro_pkg_manager()
+    if mgr == "apt-get":
+        return f"sudo apt-get update && sudo apt-get install -y {pkgs}"
+    if mgr in ("dnf", "yum", "zypper", "tdnf"):
+        return f"sudo {mgr} install -y {pkgs}"
+    if mgr == "pacman":
+        return f"sudo pacman -S --needed {pkgs}"
+    return f"install required packages ({pkgs})"
 
 
 def adapters(device):
@@ -89,7 +129,7 @@ def bundle_info():
         return None
     meta = json.loads(path.read_text())
     if meta["schemaVersion"] != 1 or meta["arch"] != platform.machine():
-        fail("部署包架构或 schemaVersion 与来宾不匹配")
+        fail(f"Bundle arch ({meta['arch']}) or schemaVersion ({meta['schemaVersion']}) does not match guest ({platform.machine()}).")
     return meta
 
 
@@ -167,44 +207,47 @@ def doctor():
     except (ValueError, OSError):
         libc = ""
     if not libc.startswith("glibc "):
-        problems.append("需要 glibc 来宾。请使用发行版的 glibc 镜像。")
+        problems.append("Unsupported C library: glibc is required (musl systems such as Alpine are not supported).")
     try:
         grp.getgrnam("video")
     except KeyError:
-        problems.append("未找到 video 组。请先创建该组并将需要访问显卡的用户加入其中。")
+        problems.append("Group 'video' does not exist. Run: sudo groupadd video && sudo usermod -aG video $USER")
     if os.statvfs("/").f_flag & os.ST_RDONLY or Path("/etc/NIXOS").exists() or Path("/run/ostree-booted").exists():
-        problems.append("当前系统使用只读或不可变根目录。请使用可写的普通虚拟机镜像。")
+        problems.append("Read-only or immutable root filesystem detected (e.g. NixOS or ostree). A writable VM root is required.")
     secure_boot()
     meta = bundle_info()
     module = prebuilt(meta)
     tools = ["modprobe", "modinfo", "depmod", "ldconfig", "udevadm"]
     if module is None:
+        conf = HEADERS/"include/config/auto.conf"
+        compiler = "clang" if conf.exists() and "CONFIG_CC_IS_CLANG=y" in conf.read_text() else "gcc"
         release_files = (HEADERS / "include/generated/utsrelease.h", HEADERS / "include/config/kernel.release")
         if not any(p.is_file() and RELEASE in re.findall(r'[^"\s]+', p.read_text()) for p in release_files):
-            problems.append(f"缺少当前内核 {RELEASE} 的匹配头文件。请安装 linux-headers 或 kernel-devel。")
-        conf = HEADERS/"include/config/auto.conf"
-        tools += ["make", "clang" if conf.exists() and "CONFIG_CC_IS_CLANG=y" in conf.read_text() else "gcc"]
+            problems.append(f"Missing kernel headers matching {RELEASE} at {HEADERS}. Run: {build_deps_hint(compiler)}")
+        tools += ["make", compiler]
     if RELEASE.startswith("5.4.") and "Ubuntu" in platform.version():
-        problems.append("Ubuntu 5.4 GA 缺少所需页固定接口，请升级到 HWE。")
+        problems.append("Ubuntu 5.4 GA kernel lacks required pin_user_pages_fast API. Upgrade to an Ubuntu HWE kernel and reboot.")
     if not any(p.read_text().strip()=="0x008e" and (p.parent/"vendor").read_text().strip()=="0x1414"
                for p in Path("/sys/bus/pci/devices").glob("*/device")):
         driver = Path("/sys/bus/vmbus/drivers/hv_pci")
         if not driver.exists() and shutil.which("modinfo") and sp.run(
                 ["modinfo", "pci_hyperv"], stdout=sp.DEVNULL, stderr=sp.DEVNULL).returncode:
-            problems.append("缺少 pci_hyperv 驱动。请检查 CONFIG_PCI_HYPERV，Ubuntu 来宾请安装与当前内核匹配的 linux-modules-extra。")
+            extra = (f" Run: sudo apt-get update && sudo apt-get install -y linux-modules-extra-{RELEASE} && sudo modprobe pci_hyperv"
+                     if distro_pkg_manager() == "apt-get" else "")
+            problems.append(f"Missing pci_hyperv kernel driver (CONFIG_PCI_HYPERV disabled or module not installed).{extra}")
         else:
-            problems.append("未枚举 GPU-PV PCI 设备 1414:008e。请检查 VM 的 GPU 分区分配及 pci_hyperv 驱动绑定。")
-    for tool in tools:
-        if not shutil.which(tool):
-            problems.append(f"缺少 {tool}，请从本发行版官方介质补装。")
+            problems.append("GPU-PV virtual PCI device (1414:008e) not detected. Ensure a GPU partition is assigned to this VM in Hyper-V / ExHyperV.")
+    missing_tools = [tool for tool in tools if not shutil.which(tool)]
+    if missing_tools:
+        problems.append(f"Missing required tools ({', '.join(missing_tools)}). Run: {runtime_tools_hint(missing_tools)}")
     manifest = BUNDLE / "device.json"
     if not manifest.is_file():
-        problems.append("缺少宿主设备清单，请用宿主 CLI 重新打包。")
+        problems.append("Host device manifest (device.json) is missing. Recreate the GPUPV ISO using ExHyperV 2.0.0+ or gpupv-host.ps1.")
     else:
         device = json.loads(manifest.read_text())
         arch = platform.machine()
         if device["arch"] != arch:
-            problems.append(f"宿主包架构 {device['arch']} 与来宾 {arch} 不一致。")
+            problems.append(f"Host bundle arch ({device['arch']}) does not match guest arch ({arch}).")
         for name in REQUIRED:
             p = BUNDLE / "lib" / name
             head = b""
@@ -214,25 +257,26 @@ def doctor():
             if (len(head) != 64 or head[:6] != b"\x7fELF\x02\x01" or
                 int.from_bytes(head[16:18], "little") != 3 or
                 int.from_bytes(head[18:20], "little") != {"x86_64":62,"aarch64":183}.get(arch)):
-                problems.append(f"{name} 缺失或架构错误。请检查宿主运行库目录或执行 fetch-wsl-libs 后重新打包。")
+                problems.append(f"Microsoft runtime {name} is missing or has the wrong ELF architecture. Rebuild media with the matching {arch} bundle.")
         for card in adapters(device):
             if not (BUNDLE/"drivers"/card["package"]).is_dir():
-                problems.append("驱动包目录缺失: "+card["package"])
+                problems.append("Host GPU driver directory missing from media: " + card["package"])
         if meta:
             for name in REQUIRED:
                 if digest(BUNDLE/"lib"/name) != meta["libraries"][name]:
-                    fail("运行库摘要错误: "+name)
+                    fail("Runtime library checksum mismatch: " + name)
             probe = BUNDLE/"guest/d3d12-compute"
             elf(probe, arch, (2,3))
             if digest(probe) != meta["probeSha256"]:
                 fail("Compute probe checksum mismatch")
     if problems:
-        fail("\n".join(problems))
+        fail("Preflight check failed:\n  - " + "\n  - ".join(problems))
     print(f"{libc}, {platform.machine()}, kernel {RELEASE}, preflight OK", flush=True)
+    return module
 
 
 def preflight():
-    doctor()
+    return doctor()
 
 
 def links(release, dkms=False, nv_smi=False):
@@ -257,7 +301,7 @@ def links(release, dkms=False, nv_smi=False):
 def check_owner():
     stamp = HOME / "install.json"
     if HOME.is_symlink() or not stamp.is_file() or stamp.is_symlink():
-        fail(f"发现无法确认归属的 {HOME}，请检查目录。")
+        fail(f"Found unowned or incomplete directory at {HOME} (missing install.json). Inspect or remove it before retrying.")
     return json.loads(stamp.read_text())
 
 
@@ -302,7 +346,7 @@ def unload():
 
 def signing_pair(dkms=False):
     if not shutil.which("mokutil") or not shutil.which("openssl"):
-        fail("模块签名需要发行版的 mokutil 和 openssl。")
+        fail("Secure Boot module signing requires 'mokutil' and 'openssl'. Install both from your distribution packages.")
     pairs = [(Path(k), Path(c)) for k, c in (
         ("/var/lib/shim-signed/mok/MOK.priv", "/var/lib/shim-signed/mok/MOK.der"),
         ("/var/lib/dkms/mok.key", "/var/lib/dkms/mok.pub"),
@@ -314,7 +358,7 @@ def signing_pair(dkms=False):
         if not os.path.lexists(key) and not os.path.lexists(cert):
             sp.run(["update-secureboot-policy", "--new-key"], check=True)
         if not (key.is_file() and cert.is_file()):
-            fail(f"Ubuntu DKMS 签名需要完整的 {key} 和 {cert}。")
+            fail(f"Ubuntu DKMS signing requires both {key} and {cert}.")
         pairs = [(key, cert)]
     available = [(k,c) for k,c in pairs if k.is_file() and c.is_file()]
     if not available and shutil.which("dkms"):
@@ -324,9 +368,9 @@ def signing_pair(dkms=False):
         key, cert = pairs[-1]
         key.parent.mkdir(mode=0o700, exist_ok=True)
         if key.parent.is_symlink() or key.parent.stat().st_uid != 0 or key.parent.stat().st_mode & 0o077:
-            fail(f"签名密钥目录 {key.parent} 必须归 root 所有且权限为 0700。")
+            fail(f"Signing key directory {key.parent} must be owned by root with mode 0700.")
         if os.path.lexists(key) or os.path.lexists(cert):
-            fail(f"{key.parent} 中存在不完整的密钥对，请检查已有密钥。")
+            fail(f"Incomplete MOK key pair found in {key.parent}. Inspect or clean up existing key files.")
         with tempfile.TemporaryDirectory(dir=str(key.parent)) as tmp:
             private, public = Path(tmp)/key.name, Path(tmp)/cert.name
             sp.run(["openssl","req","-new","-x509","-newkey","rsa:3072","-nodes",
@@ -346,32 +390,38 @@ def signing_pair(dkms=False):
             if cert.read_bytes() in trusted:
                 return key, cert
     cert = available[0][1]
-    fail(f"签名公钥尚未受信任。运行 sudo mokutil --import {cert}，设置一次性密码，"
-         "重启并在 MOK Manager 中选择 Enroll MOK，确认后重新执行安装。")
+    fail(f"Secure Boot MOK certificate is not enrolled in firmware yet.\nRun:\n  sudo mokutil --import {cert}\n"
+         "Set a one-time password, reboot into the blue MOK Manager screen -> Enroll MOK, then re-run setup.")
 
 
 def load_trusted():
-    sp.run(["modprobe", "dxgkrnl"], check=True)
+    try:
+        sp.run(["modprobe", "dxgkrnl"], check=True)
+    except sp.CalledProcessError as err:
+        fail(f"Failed to load dxgkrnl kernel module (modprobe exited {err.returncode}). "
+             "Check 'dmesg | tail -n 30' for details. Under Secure Boot or openSUSE third-party module policy, verify MOK enrollment and kernel trust.")
     if secure_boot() and "E" in Path("/sys/module/dxgkrnl/taint").read_text():
-        fail("运行内核未信任模块签名。请使用 shim 引导，并检查 MOK 是否进入内核受信任密钥环。")
+        fail("Running kernel rejected the dxgkrnl signature (module tainted 'E'). Boot via trusted shim and confirm the MOK key is in the kernel keyring.")
 
 
 def uninstall():
     if not os.path.lexists(HOME):
+        print("GPU-PV runtime is not installed.", flush=True)
         return
+    print("Uninstalling GPU-PV kernel module, udev rules, and /usr/lib/wsl links...", flush=True)
     info = check_owner()
     dkms = info.get("dkms",False)
     paths = links(info["release"],dkms,info.get("nv_smi",False))
     for dest, src in paths.items():
         if os.path.lexists(dest) and not owned_path(dest, src, info):
-            fail(f"已存在其他文件 {dest}，请先检查归属。")
+            fail(f"Refusing to remove unmanaged file at {dest}. Check ownership before retrying.")
     if info["release"] == RELEASE or dkms:
         unload()
     if dkms:
         source = Path("/var/lib/dkms/gpupv-dxgkrnl/0.1/source")
         if os.path.lexists(source):
             if source.resolve() != HOME / "kernel":
-                fail("DKMS 注册源已改变，请检查后卸载。")
+                fail("Existing DKMS registration for gpupv-dxgkrnl/0.1 points elsewhere. Inspect DKMS before uninstalling.")
             sp.run(["dkms","remove","gpupv-dxgkrnl/0.1","--all"],check=True)
     for dest, src in paths.items():
         if owned_path(dest, src, info):
@@ -383,6 +433,7 @@ def uninstall():
     sp.run(["depmod", "-a", info["release"]], check=True)
     sp.run(["ldconfig"], check=True)
     sp.run(["udevadm", "control", "--reload"], check=True)
+    print("Uninstall complete. Any enrolled MOK keys in firmware were preserved.", flush=True)
 
 
 def install(dkms=False, with_video=False):
@@ -393,6 +444,7 @@ def install(dkms=False, with_video=False):
     nv_smi = (BUNDLE / "lib/nvidia-smi").is_file()
     paths = links(RELEASE,dkms,nv_smi)
     device = json.loads((BUNDLE / "device.json").read_text())
+    cards_label = ", ".join(card["name"] for card in adapters(device))
     if os.path.lexists(HOME):
         info = check_owner()
         if ((info["release"] == RELEASE or dkms) and info.get("dkms",False) == dkms
@@ -404,25 +456,37 @@ def install(dkms=False, with_video=False):
                     publish_module(src, dest, info)
             load_trusted()
             if not Path("/dev/dxg").is_char_device():
-                fail("已安装但缺少 /dev/dxg，请检查 VM 的 GPU 分区。")
+                fail("Installed, but /dev/dxg is missing. Check the VM GPU partition assignment.")
+            print(f"GPU-PV runtime is already installed for {RELEASE} ({cards_label}).", flush=True)
+            print("Run 'gpupv-guest verify' as a non-root user in the 'video' group.", flush=True)
             return
-        fail("检测到旧版本或未完成的安装，请先运行 uninstall。")
+        fail("Existing or incomplete installation found. Run 'sudo gpupv-guest uninstall' first.")
     for d in paths:
         if os.path.lexists(d):
-            fail(f"保留已有文件 {d}。请先处理已有安装。")
+            fail(f"Refusing to overwrite existing path {d}. Remove or clean up the prior installation first.")
     if dkms:
         if not shutil.which("dkms"):
-            fail("已选择 DKMS 安装，请先从发行版官方介质安装 dkms。")
+            fail("DKMS mode requested, but 'dkms' is not installed. Install dkms from your distribution packages.")
         if Path("/var/lib/dkms/gpupv-dxgkrnl/0.1").exists():
-            fail("检测到已有的 gpupv-dxgkrnl/0.1 注册。请检查其来源。")
+            fail("Existing DKMS registration gpupv-dxgkrnl/0.1 found. Inspect or remove it before installing.")
     if Path("/sys/module/dxgkrnl").exists() or sp.run(["modinfo","dxgkrnl"],stdout=sp.DEVNULL,stderr=sp.DEVNULL).returncode == 0:
-        fail("已有 dxgkrnl 驱动，请确认其来源。")
+        fail("An existing dxgkrnl module is already present on this kernel. Verify its origin before replacing it.")
+    route = "prebuilt module" if module is not None else ("DKMS source build" if dkms else "source build")
+    print(f"[1/4] Module strategy for kernel {RELEASE}: {route}.", flush=True)
+    if pair:
+        print(f"[2/4] Secure Boot enabled, signing module with enrolled MOK ({pair[1]}).", flush=True)
+    else:
+        print("[2/4] Secure Boot disabled, skipping module signing.", flush=True)
+    print(f"[3/4] Installing dxgkrnl and GPU-PV libraries to {HOME} ({WSL})...", flush=True)
     with tempfile.TemporaryDirectory() as temp:
         build = Path(temp) / "kernel"
         if module is None:
             shutil.copytree(BUNDLE / "kernel", build)
             if not dkms:
-                sp.run(["sh", str(build / "build"), str(HEADERS)], check=True)
+                try:
+                    sp.run(["sh", str(build / "build"), str(HEADERS)], check=True)
+                except sp.CalledProcessError as err:
+                    fail(f"Kernel module build failed for {RELEASE} (exit {err.returncode}). Verify headers at {HEADERS} match the running kernel.")
                 module = build/"drivers/hv/dxgkrnl/dxgkrnl.ko"
         if not dkms and pair:
             sign_target = Path(temp)/"signed.ko"
@@ -481,8 +545,11 @@ def install(dkms=False, with_video=False):
                 else:
                     dest.symlink_to(src)
             if dkms:
-                sp.run(["dkms","add","gpupv-dxgkrnl/0.1"],check=True)
-                sp.run(["dkms","install","gpupv-dxgkrnl/0.1","-k",RELEASE],check=True)
+                try:
+                    sp.run(["dkms","add","gpupv-dxgkrnl/0.1"],check=True)
+                    sp.run(["dkms","install","gpupv-dxgkrnl/0.1","-k",RELEASE],check=True)
+                except sp.CalledProcessError as err:
+                    fail(f"DKMS build/install failed for {RELEASE} (exit {err.returncode}). Check DKMS build logs above.")
             sp.run(["depmod","-a",RELEASE],check=True)
             sp.run(["ldconfig"],check=True)
             sp.run(["udevadm","control","--reload"],check=True)
@@ -491,9 +558,11 @@ def install(dkms=False, with_video=False):
                 sp.run(["modprobe", "vgem"], check=True)
             sp.run(["udevadm","settle","--timeout=10"],check=True)
             if not Path("/dev/dxg").is_char_device():
-                fail("模块已加载，仍缺少 /dev/dxg。请检查绑定的 GPU 分区。")
+                fail("Module loaded, but /dev/dxg was not created. Check the VM GPU partition assignment.")
             info["complete"] = True
             record_install(info)
+            print(f"[4/4] Install complete ({route}, GPU: {cards_label}).", flush=True)
+            print("Next step: switch to a non-root user in the 'video' group and run 'gpupv-guest verify'.", flush=True)
         except BaseException:
             uninstall()
             raise
@@ -501,11 +570,14 @@ def install(dkms=False, with_video=False):
 
 def check_device():
     if os.getuid() == 0:
-        fail("请使用普通用户运行 verify。")
+        fail("Run 'gpupv-guest verify' as a non-root user in the 'video' group, not as root.")
     if not Path("/dev/dxg").is_char_device():
-        fail("没有 /dev/dxg 字符设备。")
-    with open("/dev/dxg","rb+",buffering=0):
-        pass
+        fail("/dev/dxg character device not found. Verify dxgkrnl is loaded and a GPU partition is assigned to this VM.")
+    try:
+        with open("/dev/dxg","rb+",buffering=0):
+            pass
+    except PermissionError:
+        fail("Permission denied opening /dev/dxg. Add your user to the 'video' group (sudo usermod -aG video $USER) and start a new login session.")
     device = check_owner()["device"]
     print("boot_id={} uid={} gpu={}".format(Path('/proc/sys/kernel/random/boot_id').read_text().strip(),
           os.getuid(), ", ".join(card["name"] for card in adapters(device))),flush=True)
@@ -540,14 +612,18 @@ def verify(with_video=False, va_runtime=None):
     guest = HOME/"guest"
     result = sp.run([str(guest/"d3d12-compute")], stdout=sp.PIPE, universal_newlines=True)
     print(result.stdout, end="", flush=True)
-    result.check_returncode()
+    if result.returncode:
+        fail(f"D3D12 compute probe failed (exit {result.returncode}). Possible causes: guest glibc too old for host driver (e.g. Qualcomm ARM64 needs glibc 2.29+), missing host WSL driver files, or invalid VM MMIO/GPU partition.")
     verify_adapter_ids(adapters(device), result.stdout)
     if ctypes.util.find_library("cuda") or (HOME/"lib/libcuda.so.1").is_file():
-        sp.run([sys.executable,str(guest/"cuda-compute.py")],check=True)
+        try:
+            sp.run([sys.executable,str(guest/"cuda-compute.py")],check=True)
+        except sp.CalledProcessError as err:
+            fail(f"CUDA compute verification failed (exit {err.returncode}). Check host NVIDIA driver compatibility and /usr/lib/wsl/lib.")
     if ctypes.util.find_library("OpenCL"):
         rc = sp.run([sys.executable,str(guest/"intel-opencl.py")]).returncode
         if rc not in (0,77):
-            fail("GPU OpenCL compute failed: "+str(rc))
+            fail(f"GPU OpenCL compute failed (exit {rc}). Verify GPU OpenCL ICD configuration and confirm non-GPU system ICDs are not interfering.")
     if with_video:
         env=os.environ.copy()
         if va_runtime:
@@ -558,6 +634,7 @@ def verify(with_video=False, va_runtime=None):
             sp.run(["sh",str(guest/"verify-codec")],env=env,check=True)
         if list((HOME/"drivers").glob("*/libigd12dxva64.so")):
             sp.run(["sh",str(guest/"verify-intel-codec")],env=env,check=True)
+    print("All compute verification checks passed.", flush=True)
 
 
 def main():
@@ -571,14 +648,17 @@ def main():
     if args.va_runtime and action != "verify":
         parser.error("--va-runtime requires verify")
     if action in ("doctor","install"):
-        preflight()
+        matched = preflight()
+        if action == "doctor":
+            route = f"prebuilt module ({RELEASE})" if matched is not None else f"source build using {HEADERS}"
+            print(f"Module route: {route}", flush=True)
     if action == "verify":
         verify(args.with_video or bool(args.va_runtime),args.va_runtime)
     if action == "check":
         check_device()
     if action in ("install","uninstall"):
         if os.geteuid():
-            fail("安装和卸载需要 sudo。")
+            fail("Install and uninstall require root privileges (use sudo).")
         os.umask(0o022)
         lock = os.open("/run",os.O_RDONLY | os.O_DIRECTORY)
         try:
